@@ -1,0 +1,684 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU04",
+  "audio_num": "AU04",
+  "filename": "04_Starter_Know your school_1 Read and complete.mp3",
+  "duration_ms": 85891,
+  "segment_count": 14,
+  "word_count": 119,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1720,
+      "text": "Know your school"
+    },
+    {
+      "start_ms": 3000,
+      "end_ms": 3960,
+      "text": "Activity 1"
+    },
+    {
+      "start_ms": 4840,
+      "end_ms": 6580,
+      "text": "Read and complete"
+    },
+    {
+      "start_ms": 9040,
+      "end_ms": 9400,
+      "text": "Welcome"
+    },
+    {
+      "start_ms": 11320,
+      "end_ms": 13860,
+      "text": "This is your new school"
+    },
+    {
+      "start_ms": 14640,
+      "end_ms": 18400,
+      "text": "There are three buildings and a playground"
+    },
+    {
+      "start_ms": 19440,
+      "end_ms": 23380,
+      "text": "It's not big, but it is beautiful"
+    },
+    {
+      "start_ms": 24520,
+      "end_ms": 27460,
+      "text": "Let's go around the school together"
+    },
+    {
+      "start_ms": 28940,
+      "end_ms": 38640,
+      "text": "This is the teaching building. It has three floors. There are 30 classrooms on the first"
+    },
+    {
+      "start_ms": 38640,
+      "end_ms": 47140,
+      "text": "and second floors. And there are 10 science labs and eight computer labs on the third"
+    },
+    {
+      "start_ms": 47140,
+      "end_ms": 47560,
+      "text": "floor."
+    },
+    {
+      "start_ms": 49120,
+      "end_ms": 60200,
+      "text": "This is our library. It has got many books. There are also reading rooms. We can read and study here."
+    },
+    {
+      "start_ms": 61680,
+      "end_ms": 74280,
+      "text": "This is our playground. We do morning exercises here. After school we come to run or play football here."
+    },
+    {
+      "start_ms": 75720,
+      "end_ms": 82480,
+      "text": "This is our dining hall. It's not big but the food is good."
+    }
+  ],
+  "words": [
+    {
+      "word": "Know",
+      "start_ms": 0,
+      "end_ms": 620
+    },
+    {
+      "word": "your",
+      "start_ms": 620,
+      "end_ms": 1020
+    },
+    {
+      "word": "school",
+      "start_ms": 1020,
+      "end_ms": 1720
+    },
+    {
+      "word": "Activity",
+      "start_ms": 2840,
+      "end_ms": 3440
+    },
+    {
+      "word": "1",
+      "start_ms": 3440,
+      "end_ms": 3960
+    },
+    {
+      "word": "Read",
+      "start_ms": 4840,
+      "end_ms": 5440
+    },
+    {
+      "word": "and",
+      "start_ms": 5440,
+      "end_ms": 6060
+    },
+    {
+      "word": "complete",
+      "start_ms": 6060,
+      "end_ms": 6580
+    },
+    {
+      "word": "Welcome",
+      "start_ms": 8800,
+      "end_ms": 9400
+    },
+    {
+      "word": "This",
+      "start_ms": 11240,
+      "end_ms": 11840
+    },
+    {
+      "word": "is",
+      "start_ms": 11840,
+      "end_ms": 12420
+    },
+    {
+      "word": "your",
+      "start_ms": 12420,
+      "end_ms": 12740
+    },
+    {
+      "word": "new",
+      "start_ms": 12740,
+      "end_ms": 13180
+    },
+    {
+      "word": "school",
+      "start_ms": 13180,
+      "end_ms": 13860
+    },
+    {
+      "word": "There",
+      "start_ms": 14500,
+      "end_ms": 15100
+    },
+    {
+      "word": "are",
+      "start_ms": 15100,
+      "end_ms": 15420
+    },
+    {
+      "word": "three",
+      "start_ms": 15420,
+      "end_ms": 15900
+    },
+    {
+      "word": "buildings",
+      "start_ms": 15900,
+      "end_ms": 16660
+    },
+    {
+      "word": "and",
+      "start_ms": 16660,
+      "end_ms": 17640
+    },
+    {
+      "word": "a",
+      "start_ms": 17640,
+      "end_ms": 17860
+    },
+    {
+      "word": "playground",
+      "start_ms": 17860,
+      "end_ms": 18400
+    },
+    {
+      "word": "It's",
+      "start_ms": 19440,
+      "end_ms": 20080
+    },
+    {
+      "word": "not",
+      "start_ms": 20080,
+      "end_ms": 20360
+    },
+    {
+      "word": "big,",
+      "start_ms": 20360,
+      "end_ms": 21020
+    },
+    {
+      "word": "but",
+      "start_ms": 21020,
+      "end_ms": 21860
+    },
+    {
+      "word": "it",
+      "start_ms": 21860,
+      "end_ms": 22060
+    },
+    {
+      "word": "is",
+      "start_ms": 22060,
+      "end_ms": 22540
+    },
+    {
+      "word": "beautiful",
+      "start_ms": 22540,
+      "end_ms": 23380
+    },
+    {
+      "word": "Let's",
+      "start_ms": 24520,
+      "end_ms": 25200
+    },
+    {
+      "word": "go",
+      "start_ms": 25200,
+      "end_ms": 25480
+    },
+    {
+      "word": "around",
+      "start_ms": 25480,
+      "end_ms": 26000
+    },
+    {
+      "word": "the",
+      "start_ms": 26000,
+      "end_ms": 26300
+    },
+    {
+      "word": "school",
+      "start_ms": 26300,
+      "end_ms": 26780
+    },
+    {
+      "word": "together",
+      "start_ms": 26780,
+      "end_ms": 27460
+    },
+    {
+      "word": "This",
+      "start_ms": 28940,
+      "end_ms": 29940
+    },
+    {
+      "word": "is",
+      "start_ms": 29940,
+      "end_ms": 30420
+    },
+    {
+      "word": "the",
+      "start_ms": 30420,
+      "end_ms": 30680
+    },
+    {
+      "word": "teaching",
+      "start_ms": 30680,
+      "end_ms": 31160
+    },
+    {
+      "word": "building.",
+      "start_ms": 31160,
+      "end_ms": 31680
+    },
+    {
+      "word": "It",
+      "start_ms": 32540,
+      "end_ms": 33060
+    },
+    {
+      "word": "has",
+      "start_ms": 33060,
+      "end_ms": 33420
+    },
+    {
+      "word": "three",
+      "start_ms": 33420,
+      "end_ms": 33920
+    },
+    {
+      "word": "floors.",
+      "start_ms": 33920,
+      "end_ms": 34480
+    },
+    {
+      "word": "There",
+      "start_ms": 35420,
+      "end_ms": 35840
+    },
+    {
+      "word": "are",
+      "start_ms": 35840,
+      "end_ms": 36020
+    },
+    {
+      "word": "30",
+      "start_ms": 36020,
+      "end_ms": 36560
+    },
+    {
+      "word": "classrooms",
+      "start_ms": 36560,
+      "end_ms": 37200
+    },
+    {
+      "word": "on",
+      "start_ms": 37200,
+      "end_ms": 37960
+    },
+    {
+      "word": "the",
+      "start_ms": 37960,
+      "end_ms": 38180
+    },
+    {
+      "word": "first",
+      "start_ms": 38180,
+      "end_ms": 38640
+    },
+    {
+      "word": "and",
+      "start_ms": 38640,
+      "end_ms": 39260
+    },
+    {
+      "word": "second",
+      "start_ms": 39260,
+      "end_ms": 39720
+    },
+    {
+      "word": "floors.",
+      "start_ms": 39720,
+      "end_ms": 40240
+    },
+    {
+      "word": "And",
+      "start_ms": 41060,
+      "end_ms": 41660
+    },
+    {
+      "word": "there",
+      "start_ms": 41660,
+      "end_ms": 41920
+    },
+    {
+      "word": "are",
+      "start_ms": 41920,
+      "end_ms": 42120
+    },
+    {
+      "word": "10",
+      "start_ms": 42120,
+      "end_ms": 42540
+    },
+    {
+      "word": "science",
+      "start_ms": 42540,
+      "end_ms": 43080
+    },
+    {
+      "word": "labs",
+      "start_ms": 43080,
+      "end_ms": 43540
+    },
+    {
+      "word": "and",
+      "start_ms": 43540,
+      "end_ms": 44400
+    },
+    {
+      "word": "eight",
+      "start_ms": 44400,
+      "end_ms": 44820
+    },
+    {
+      "word": "computer",
+      "start_ms": 44820,
+      "end_ms": 45320
+    },
+    {
+      "word": "labs",
+      "start_ms": 45320,
+      "end_ms": 45900
+    },
+    {
+      "word": "on",
+      "start_ms": 45900,
+      "end_ms": 46560
+    },
+    {
+      "word": "the",
+      "start_ms": 46560,
+      "end_ms": 46740
+    },
+    {
+      "word": "third",
+      "start_ms": 46740,
+      "end_ms": 47140
+    },
+    {
+      "word": "floor.",
+      "start_ms": 47140,
+      "end_ms": 47560
+    },
+    {
+      "word": "This",
+      "start_ms": 49120,
+      "end_ms": 50120
+    },
+    {
+      "word": "is",
+      "start_ms": 50120,
+      "end_ms": 50540
+    },
+    {
+      "word": "our",
+      "start_ms": 50540,
+      "end_ms": 50900
+    },
+    {
+      "word": "library.",
+      "start_ms": 50900,
+      "end_ms": 51420
+    },
+    {
+      "word": "It",
+      "start_ms": 52300,
+      "end_ms": 52700
+    },
+    {
+      "word": "has",
+      "start_ms": 52700,
+      "end_ms": 52920
+    },
+    {
+      "word": "got",
+      "start_ms": 52920,
+      "end_ms": 53180
+    },
+    {
+      "word": "many",
+      "start_ms": 53180,
+      "end_ms": 53660
+    },
+    {
+      "word": "books.",
+      "start_ms": 53660,
+      "end_ms": 54160
+    },
+    {
+      "word": "There",
+      "start_ms": 55260,
+      "end_ms": 55560
+    },
+    {
+      "word": "are",
+      "start_ms": 55560,
+      "end_ms": 55720
+    },
+    {
+      "word": "also",
+      "start_ms": 55720,
+      "end_ms": 56180
+    },
+    {
+      "word": "reading",
+      "start_ms": 56180,
+      "end_ms": 56640
+    },
+    {
+      "word": "rooms.",
+      "start_ms": 56640,
+      "end_ms": 57280
+    },
+    {
+      "word": "We",
+      "start_ms": 57960,
+      "end_ms": 58280
+    },
+    {
+      "word": "can",
+      "start_ms": 58280,
+      "end_ms": 58500
+    },
+    {
+      "word": "read",
+      "start_ms": 58500,
+      "end_ms": 58920
+    },
+    {
+      "word": "and",
+      "start_ms": 58920,
+      "end_ms": 59260
+    },
+    {
+      "word": "study",
+      "start_ms": 59260,
+      "end_ms": 59720
+    },
+    {
+      "word": "here.",
+      "start_ms": 59720,
+      "end_ms": 60200
+    },
+    {
+      "word": "This",
+      "start_ms": 61680,
+      "end_ms": 62600
+    },
+    {
+      "word": "is",
+      "start_ms": 62600,
+      "end_ms": 63180
+    },
+    {
+      "word": "our",
+      "start_ms": 63180,
+      "end_ms": 63580
+    },
+    {
+      "word": "playground.",
+      "start_ms": 63580,
+      "end_ms": 64180
+    },
+    {
+      "word": "We",
+      "start_ms": 65220,
+      "end_ms": 65760
+    },
+    {
+      "word": "do",
+      "start_ms": 65760,
+      "end_ms": 66080
+    },
+    {
+      "word": "morning",
+      "start_ms": 66080,
+      "end_ms": 66600
+    },
+    {
+      "word": "exercises",
+      "start_ms": 66600,
+      "end_ms": 67600
+    },
+    {
+      "word": "here.",
+      "start_ms": 67600,
+      "end_ms": 68280
+    },
+    {
+      "word": "After",
+      "start_ms": 69220,
+      "end_ms": 69880
+    },
+    {
+      "word": "school",
+      "start_ms": 69880,
+      "end_ms": 70460
+    },
+    {
+      "word": "we",
+      "start_ms": 70460,
+      "end_ms": 71140
+    },
+    {
+      "word": "come",
+      "start_ms": 71140,
+      "end_ms": 71460
+    },
+    {
+      "word": "to",
+      "start_ms": 71460,
+      "end_ms": 71800
+    },
+    {
+      "word": "run",
+      "start_ms": 71800,
+      "end_ms": 72260
+    },
+    {
+      "word": "or",
+      "start_ms": 72260,
+      "end_ms": 72840
+    },
+    {
+      "word": "play",
+      "start_ms": 72840,
+      "end_ms": 73240
+    },
+    {
+      "word": "football",
+      "start_ms": 73240,
+      "end_ms": 73780
+    },
+    {
+      "word": "here.",
+      "start_ms": 73780,
+      "end_ms": 74280
+    },
+    {
+      "word": "This",
+      "start_ms": 75720,
+      "end_ms": 76760
+    },
+    {
+      "word": "is",
+      "start_ms": 76760,
+      "end_ms": 77020
+    },
+    {
+      "word": "our",
+      "start_ms": 77020,
+      "end_ms": 77320
+    },
+    {
+      "word": "dining",
+      "start_ms": 77320,
+      "end_ms": 77840
+    },
+    {
+      "word": "hall.",
+      "start_ms": 77840,
+      "end_ms": 78420
+    },
+    {
+      "word": "It's",
+      "start_ms": 79020,
+      "end_ms": 79680
+    },
+    {
+      "word": "not",
+      "start_ms": 79680,
+      "end_ms": 79860
+    },
+    {
+      "word": "big",
+      "start_ms": 79860,
+      "end_ms": 80340
+    },
+    {
+      "word": "but",
+      "start_ms": 80340,
+      "end_ms": 81120
+    },
+    {
+      "word": "the",
+      "start_ms": 81120,
+      "end_ms": 81320
+    },
+    {
+      "word": "food",
+      "start_ms": 81320,
+      "end_ms": 81840
+    },
+    {
+      "word": "is",
+      "start_ms": 81840,
+      "end_ms": 82100
+    },
+    {
+      "word": "good.",
+      "start_ms": 82100,
+      "end_ms": 82480
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 10.1
+  }
+}

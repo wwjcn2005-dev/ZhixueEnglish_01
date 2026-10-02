@@ -1,0 +1,264 @@
+{
+  "task": "P1-06-B1.7-G1-C 独立验收",
+  "generated_at": "2026-09-12T15:13:26+08:00",
+  "verdict": "G1_C_ACCEPTANCE_PASS",
+  "sha256": {
+    "v4": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+    "v4_expected": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+    "v5": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A"
+  },
+  "sizes": {
+    "v4": 2404352,
+    "v5": 2457600
+  },
+  "counts": {
+    "Vocabulary": 287,
+    "Phrase": 23,
+    "Sentence Pattern": 52,
+    "learning_item": 362,
+    "source_ref": 815,
+    "new_source_ref": 53
+  },
+  "surface_distribution": {
+    "communication_bank": 18,
+    "unit_useful_expression": 34,
+    "language_note": 1
+  },
+  "learning_attributes": {
+    "requirement": {
+      "CORE": 1,
+      "NEED_REVIEW": 51
+    },
+    "review": {
+      "AUTO_OK": 1,
+      "NEED_REVIEW": 51
+    },
+    "conflict": {
+      "OK": 52
+    }
+  },
+  "snapshot": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+  "checks": [
+    {
+      "id": "V4-SHA",
+      "name": "v4 SHA256 未变",
+      "status": "PASS",
+      "detail": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E"
+    },
+    {
+      "id": "V4-SIZE",
+      "name": "v4 大小未变",
+      "status": "PASS",
+      "detail": "2404352"
+    },
+    {
+      "id": "V4-INT",
+      "name": "v4 integrity/fk",
+      "status": "PASS",
+      "detail": "ok/0"
+    },
+    {
+      "id": "V5-INT",
+      "name": "v5 integrity/fk",
+      "status": "PASS",
+      "detail": "ok/0"
+    },
+    {
+      "id": "SP-COUNT",
+      "name": "Sentence Pattern = 52",
+      "status": "PASS",
+      "detail": "52"
+    },
+    {
+      "id": "TYPES",
+      "name": "Vocabulary 287 / Phrase 23 / learning_item 362",
+      "status": "PASS",
+      "detail": "{\"phrase\": 23, \"sentence_pattern\": 52, \"vocabulary\": 287}"
+    },
+    {
+      "id": "SET-EQ",
+      "name": "候选集合精确相等（无多/少/换/合并/拆分）",
+      "status": "PASS",
+      "detail": "frozen=52 stored=52"
+    },
+    {
+      "id": "FROZEN-UNIQUE",
+      "name": "冻结 item_id / template 唯一",
+      "status": "PASS",
+      "detail": "52/52"
+    },
+    {
+      "id": "ID-RECOMPUTE",
+      "name": "item_id 独立重算 52/52",
+      "status": "PASS",
+      "detail": "不一致=0"
+    },
+    {
+      "id": "HASH-RECOMPUTE",
+      "name": "content_hash 独立重算 52/52",
+      "status": "PASS",
+      "detail": "不一致=0"
+    },
+    {
+      "id": "TEMPLATE-MATCH",
+      "name": "canonical_text/lemma = 冻结模板",
+      "status": "PASS",
+      "detail": "不一致=0"
+    },
+    {
+      "id": "DISPLAY-MATCH",
+      "name": "display_text/surface_form = 教材原文",
+      "status": "PASS",
+      "detail": "不一致=0"
+    },
+    {
+      "id": "SLOT-COUNT",
+      "name": "槽位数 = 教材 '...' 数量（T-SP-1）",
+      "status": "PASS",
+      "detail": "不一致=0"
+    },
+    {
+      "id": "NO-CLASH",
+      "name": "与 v4 既有 310 个 item_id 无冲突",
+      "status": "PASS",
+      "detail": "冲突=0"
+    },
+    {
+      "id": "VOC/PHRASE-UNCHANGED",
+      "name": "既有 Vocabulary 287 + Phrase 23 逐行完全未变",
+      "status": "PASS",
+      "detail": "310 行"
+    },
+    {
+      "id": "SOURCEREF-UNCHANGED",
+      "name": "既有 762 条 source_ref 逐行未变",
+      "status": "PASS",
+      "detail": "762/762"
+    },
+    {
+      "id": "SR-COUNT",
+      "name": "新增 source_ref = 53",
+      "status": "PASS",
+      "detail": "53"
+    },
+    {
+      "id": "SR-TRACE",
+      "name": "53/53 可追溯到 content_block → page",
+      "status": "PASS",
+      "detail": "断链=0"
+    },
+    {
+      "id": "EMPHASIS",
+      "name": "textbook_emphasis 全部 UNKNOWN",
+      "status": "PASS",
+      "detail": "{'UNKNOWN'}"
+    },
+    {
+      "id": "SURFACE",
+      "name": "来源面保留（bank/useful/note）",
+      "status": "PASS",
+      "detail": "{\"communication_bank\": 18, \"unit_useful_expression\": 34, \"language_note\": 1}"
+    },
+    {
+      "id": "SURFACE-BANK",
+      "name": "Communication bank 引用=18（17 候选 + 1 跨块）",
+      "status": "PASS",
+      "detail": "18"
+    },
+    {
+      "id": "EVIDENCE-SHAPE",
+      "name": "证据 JSON 形状正确（ref_role=pattern_source, font_name=null）",
+      "status": "PASS",
+      "detail": "异常=0"
+    },
+    {
+      "id": "NO-EXAMPLE-ROWS",
+      "name": "无 example / paired_response 行（未扩范围）",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "NR5-EXCLUDED",
+      "name": "5 条 NEED_REVIEW 排除",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "GRAMMAR-EXCLUDED",
+      "name": "Grammar-only 排除（there be / had better / used to / stop doing）",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "PHRASE-BOUNDARY",
+      "name": "protect... from... / along the way 仍为 Phrase",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "id": "FIXED-ITEM",
+      "name": "it's no secret that... 作为唯一固定句型入库",
+      "status": "PASS",
+      "detail": "('FLTRP-EN-7A-2022CUR:SP:9B749BCF8492',)"
+    },
+    {
+      "id": "LEARNING-ATTR",
+      "name": "requirement CORE1/NEED_REVIEW51 ｜ review AUTO_OK1/NEED_REVIEW51 ｜ conflict OK52",
+      "status": "PASS",
+      "detail": "{\"req\": {\"CORE\": 1, \"NEED_REVIEW\": 51}, \"rev\": {\"AUTO_OK\": 1, \"NEED_REVIEW\": 51}, \"conf\": {\"OK\": 52}}"
+    },
+    {
+      "id": "TABLES",
+      "name": "表数量 21（无新表）",
+      "status": "PASS",
+      "detail": "21"
+    },
+    {
+      "id": "OTHERTABLES",
+      "name": "其余表逐行完全等同（音频/页面/结构等）",
+      "status": "PASS",
+      "detail": "17 表"
+    },
+    {
+      "id": "AUDIO",
+      "name": "audio_asset 54 / audio_mapping 54 全 CANDIDATE / SP 无音频映射",
+      "status": "PASS",
+      "detail": "54 / 0 / 0"
+    },
+    {
+      "id": "AI",
+      "name": "ai_artifact = 0",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "SNAPSHOT",
+      "name": "active 快照唯一且为 G1-C；v4 快照 SUPERSEDED",
+      "status": "PASS",
+      "detail": "FLTRP-EN-7A-2022CUR:S20260912T151307"
+    },
+    {
+      "id": "BATCH",
+      "name": "import_batch 无失败",
+      "status": "PASS",
+      "detail": "{\"SUCCESS\": 5}"
+    }
+  ],
+  "checks_failed": [],
+  "boundaries": {
+    "v4_modified": false,
+    "schema_change": false,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "zhixue_ai": false,
+    "g1a_notes": "保持冻结，未处理",
+    "new_files": [
+      "audit/P1-06-B1.7-G1-C_sentence_pattern_v5_build.md",
+      "audit/P1-06-B1.7-G1-C_sentence_pattern_v5_build.json",
+      "audit/P1-06-B1.7-G1-C_sentence_pattern_v5_acceptance.md",
+      "audit/P1-06-B1.7-G1-C_sentence_pattern_v5_acceptance.json",
+      "builder/build_sentence_pattern_v01.py"
+    ]
+  }
+}

@@ -1,0 +1,360 @@
+{
+ "run": "revalidate cached sentence distractors (no AI)",
+ "prompt_version": "sentence-distractor-v1",
+ "rules_version": "rules-v3",
+ "cache_file": "D:\\ZhixueEnglish\\demo\\ai_cache\\sentence_distractors.json",
+ "entries_in": 38,
+ "entries_out": 38,
+ "distractors_in": 82,
+ "distractors_kept": 82,
+ "dropped": [],
+ "entries": [
+  {
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "Are you ready?",
+   "distractors": [
+    "Are you nervous?"
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "What are you going to wear tomorrow for school?",
+   "distractors": [
+    "What shoes are you going to wear?",
+    "What jacket are you going to wear tomorrow for school?"
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "How about you?",
+   "distractors": [
+    "What about you?",
+    "How are you?"
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "What shoes are you going to wear?",
+   "distractors": [
+    "What are you going to wear tomorrow for school?",
+    "What uniform are you going to wear?"
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "KNOW_YOUR_SCHOOL",
+   "correct_answer": "Let’s go around the school together!",
+   "distractors": [
+    "Let’s explore the school together!",
+    "Let’s go around the lab together!"
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "Hello everyone!",
+   "distractors": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "My name is Zhu Xiaomeng.",
+   "distractors": [
+    "My birthday is in May.",
+    "I’m thirteen years old."
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I’m thirteen years old.",
+   "distractors": [
+    "My name is Zhu Xiaomeng.",
+    "My birthday is in May.",
+    "I love sports very much."
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "My birthday is in May.",
+   "distractors": [
+    "My name is Zhu Xiaomeng.",
+    "I’m thirteen years old."
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I love sports very much.",
+   "distractors": [
+    "I like sports very much.",
+    "I like running, playing football and swimming."
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I like running, playing football and swimming.",
+   "distractors": [
+    "I love running, playing football and swimming.",
+    "I like running and playing football."
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I’m a bit nervous now, but I’m also happy to meet you.",
+   "distractors": [
+    "I’m a bit nervous now, but I’m happy to meet you.",
+    "I’m a bit nervous, but I’m also happy to meet you."
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I want to make friends with you all!",
+   "distractors": [
+    "I want to make friends with everyone.",
+    "I want to meet you all!",
+    "I want to make friends with you."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "The new school year is beginning.",
+   "distractors": [
+    "The new school life is beginning.",
+    "The school year is beginning."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "What are the new students' problems?",
+   "distractors": [
+    "What are the new students' activities?"
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "They have more subjects and more homework.",
+   "distractors": [
+    "They have more problems and more homework.",
+    "They have more subjects and more activities.",
+    "They have many subjects and more homework."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "They also have many activities.",
+   "distractors": [
+    "They also have many problems.",
+    "They also have more activities.",
+    "They also have more subjects and more homework."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "How can they make good use of their time?",
+   "distractors": [
+    "How do they make good use of their time?",
+    "How can they plan their time?",
+    "How can they make good use of their life?"
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "The Students' Union will hold a talk this Thursday to help you.",
+   "distractors": [
+    "The Students' Union will plan a talk this Thursday to help you."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Mia, how do you feel about your first day in junior high tomorrow?",
+   "distractors": [
+    "Mia, are you ready for your first day in junior high tomorrow?",
+    "Mia, how do you feel about your new life in junior high?"
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Well, I'm a little nervous.",
+   "distractors": [
+    "Well, I'm really nervous."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "We've got something for you!",
+   "distractors": [
+    "We've got some thoughts for you!",
+    "We want something for you!",
+    "We've got something for Mum and me!"
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Yes, and it's also a letter from Mum and me.",
+   "distractors": [
+    "Yes, and it's also a letter from Dad and Mum.",
+    "Yes, and it's also a problem from Mum and me."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "We want to share some thoughts with you.",
+   "distractors": [
+    "We need to share some thoughts with you.",
+    "We want to share some advice with you.",
+    "We want to share some problems with you."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Are you ready for your new life?",
+   "distractors": [
+    "Are you ready for your new school year?",
+    "Are you ready for your new journey?"
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Dad and Mum can protect it from winds.",
+   "distractors": [
+    "Dad and Mum can protect it from wind."
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Just try your best and work hard.",
+   "distractors": [
+    "Just try your best and plan hard.",
+    "Just remember your homework and work hard."
+   ]
+  },
+  {
+   "unit": "Unit 2",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "“Why don’t we put our music together?",
+   "distractors": [
+    "Why don’t we put our sound together?",
+    "Why don’t we put our band together?",
+    "Why don’t we put our guitar together?"
+   ]
+  },
+  {
+   "unit": "Unit 2",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "Why do you know so much about birds?",
+   "distractors": [
+    "Why do you know so much about nature?",
+    "Why do you know so much about bird-watching?",
+    "What do you know so much about birds?"
+   ]
+  },
+  {
+   "unit": "Unit 2",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "What do you like about bird-watching?",
+   "distractors": [
+    "What do you like about birds?",
+    "What do you know about bird-watching?"
+   ]
+  },
+  {
+   "unit": "Unit 2",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Let’s meet here on Wednesday after lunch.",
+   "distractors": [
+    "Let’s meet here on Wednesday at midnight.",
+    "Let’s meet at the club on Wednesday after lunch.",
+    "Let’s meet here on Wednesday after practice."
+   ]
+  },
+  {
+   "unit": "Unit 3",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "Can you change your clothes before you come?",
+   "distractors": [
+    "Can you carry your clothes before you come?",
+    "Can you hide your clothes before you come?",
+    "Can you change your clothes before you race?"
+   ]
+  },
+  {
+   "unit": "Unit 4",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "How I wish to have four hands now!",
+   "distractors": [
+    "How I wish to have four balloons now!",
+    "How I wish to have four lanterns now!"
+   ]
+  },
+  {
+   "unit": "Unit 4",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "“Are you joking?",
+   "distractors": [
+    "Are you shocked?"
+   ]
+  },
+  {
+   "unit": "Unit 5",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "What does tea mean to you?",
+   "distractors": [
+    "What does coffee mean to you?",
+    "What does culture mean to you?"
+   ]
+  },
+  {
+   "unit": "Unit 6",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "Do you remember your first meeting?",
+   "distractors": [
+    "Do you know me?",
+    "Are you looking at me?",
+    "Do you remember your first surprise?"
+   ]
+  },
+  {
+   "unit": "Unit 6",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Are you looking at me?",
+   "distractors": [
+    "Are you looking at the pigeon?",
+    "Do you know me?",
+    "Do you remember your first meeting?"
+   ]
+  },
+  {
+   "unit": "Unit 6",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Do you know me?",
+   "distractors": [
+    "Do you know the pigeon?",
+    "Are you looking at me?",
+    "Do you remember your first meeting?"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2136 @@
+{
+ "counts": {
+  "CONFIRMED": 0,
+  "CANDIDATE": 2,
+  "NEEDS_REVIEW": 13
+ },
+ "confirmed_sentences": 0,
+ "candidate_sentences": 17,
+ "rows": [
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+   "code": "AU01",
+   "unit": "Starter",
+   "section": "GET_READY",
+   "activity_id": "A:E43CCEC75481",
+   "activity_no": 2,
+   "audio_file": "01_Starter_Get ready_2 Read and complete. Then listen and check.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 60709,
+   "speech_runs": 25,
+   "speech_runs_ms": [
+    [
+     480,
+     2160
+    ],
+    [
+     2700,
+     3280
+    ],
+    [
+     3900,
+     5490
+    ],
+    [
+     6110,
+     7090
+    ],
+    [
+     9120,
+     10060
+    ],
+    [
+     11000,
+     13480
+    ],
+    [
+     14920,
+     15890
+    ],
+    [
+     16810,
+     18200
+    ],
+    [
+     19140,
+     20750
+    ],
+    [
+     21390,
+     22360
+    ],
+    [
+     22710,
+     23580
+    ],
+    [
+     25600,
+     29750
+    ],
+    [
+     30360,
+     31410
+    ],
+    [
+     32140,
+     33100
+    ],
+    [
+     33960,
+     35780
+    ],
+    [
+     36520,
+     37480
+    ],
+    [
+     38450,
+     40860
+    ],
+    [
+     41750,
+     42350
+    ],
+    [
+     42680,
+     43940
+    ],
+    [
+     44480,
+     45590
+    ],
+    [
+     46120,
+     47070
+    ],
+    [
+     47670,
+     49290
+    ],
+    [
+     50020,
+     51990
+    ],
+    [
+     53270,
+     55220
+    ],
+    [
+     56070,
+     56670
+    ]
+   ],
+   "sentences": [],
+   "sentence_count": 0,
+   "material_method": "text_references",
+   "material_blank_bearing": false,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材文本未解析出完整句子（文本关系缺失或该音频内容不印在教材上）",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU02",
+   "code": "AU02",
+   "unit": "Starter",
+   "section": "GET_READY",
+   "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+   "activity_no": 3,
+   "audio_file": "02_Starter_Get ready_3 Listen and complete the conversation with aan or a number.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 33541,
+   "speech_runs": 16,
+   "speech_runs_ms": [
+    [
+     320,
+     1850
+    ],
+    [
+     2650,
+     3230
+    ],
+    [
+     3620,
+     6150
+    ],
+    [
+     6380,
+     6720
+    ],
+    [
+     7300,
+     7630
+    ],
+    [
+     7910,
+     8420
+    ],
+    [
+     9010,
+     10000
+    ],
+    [
+     11810,
+     13610
+    ],
+    [
+     14610,
+     16510
+    ],
+    [
+     17060,
+     17690
+    ],
+    [
+     18310,
+     20480
+    ],
+    [
+     20920,
+     21210
+    ],
+    [
+     21440,
+     22740
+    ],
+    [
+     23770,
+     26060
+    ],
+    [
+     26570,
+     27950
+    ],
+    [
+     29050,
+     31800
+    ]
+   ],
+   "sentences": [
+    "oneseventwoeightthreefourfivesix nineteneleventwelve Mum: How about you, Li Meng?",
+    "Li Meng: \u0007I am ready, too.",
+    "I have 2 pens.",
+    "I also have 1 pencils and 4 ruler.",
+    "They are all in my pencil case. 3 eraser and Know more about numbers and articles ⇢ p131 4"
+   ],
+   "sentence_count": 5,
+   "material_method": "instruction_walk",
+   "material_blank_bearing": true,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+   "code": "AU03",
+   "unit": "Starter",
+   "section": "GET_READY",
+   "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+   "activity_no": 10,
+   "audio_file": "03_Starter_Get ready_10 Listen and choose.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 58149,
+   "speech_runs": 21,
+   "speech_runs_ms": [
+    [
+     330,
+     1860
+    ],
+    [
+     2810,
+     3430
+    ],
+    [
+     3730,
+     4800
+    ],
+    [
+     6730,
+     8110
+    ],
+    [
+     9280,
+     12330
+    ],
+    [
+     12910,
+     15500
+    ],
+    [
+     16460,
+     19960
+    ],
+    [
+     20670,
+     23090
+    ],
+    [
+     24050,
+     25170
+    ],
+    [
+     26120,
+     29410
+    ],
+    [
+     30070,
+     32120
+    ],
+    [
+     32660,
+     33900
+    ],
+    [
+     34260,
+     35900
+    ],
+    [
+     36700,
+     39050
+    ],
+    [
+     39830,
+     43180
+    ],
+    [
+     43550,
+     44630
+    ],
+    [
+     45660,
+     48570
+    ],
+    [
+     49270,
+     49670
+    ],
+    [
+     50320,
+     52570
+    ],
+    [
+     53270,
+     53930
+    ],
+    [
+     54360,
+     55100
+    ]
+   ],
+   "sentences": [
+    "10 Nana: Hi, Wang Tao.",
+    "What are you going to wear tomorrow for school?",
+    "Wang Tao: \u0007My school uniform, of course.",
+    "I’m going to wear a 2 .",
+    "How about you?",
+    "Nana: \u0007I’m also going to wear my school uniform.",
+    "I have a 3 , a 5 .",
+    "Wang Tao: What shoes are you going to wear?",
+    "Nana: I’m going to wear a pair of 4 and a 6 .",
+    "How about you?",
+    "Wang Tao: I’ll wear 7 .",
+    "Nana: Oh, don’t forget your 8 .",
+    "Wang Tao: Thanks, I won’t."
+   ],
+   "sentence_count": 13,
+   "material_method": "text_references",
+   "material_blank_bearing": true,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU04",
+   "code": "AU04",
+   "unit": "Starter",
+   "section": "KNOW_YOUR_SCHOOL",
+   "activity_id": "A:40EEA0B8FBEF",
+   "activity_no": 1,
+   "audio_file": "04_Starter_Know your school_1 Read and complete.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 85891,
+   "speech_runs": 27,
+   "speech_runs_ms": [
+    [
+     290,
+     1830
+    ],
+    [
+     2740,
+     4150
+    ],
+    [
+     5120,
+     6910
+    ],
+    [
+     8910,
+     9880
+    ],
+    [
+     11580,
+     14080
+    ],
+    [
+     14980,
+     16970
+    ],
+    [
+     17400,
+     18890
+    ],
+    [
+     19810,
+     21170
+    ],
+    [
+     21730,
+     23730
+    ],
+    [
+     24750,
+     27900
+    ],
+    [
+     29760,
+     32060
+    ],
+    [
+     32910,
+     34780
+    ],
+    [
+     35760,
+     40490
+    ],
+    [
+     41420,
+     43880
+    ],
+    [
+     44180,
+     46180
+    ],
+    [
+     46420,
+     47680
+    ],
+    [
+     49760,
+     51670
+    ],
+    [
+     52590,
+     54360
+    ],
+    [
+     55390,
+     57430
+    ],
+    [
+     58150,
+     60280
+    ],
+    [
+     62260,
+     64670
+    ],
+    [
+     65570,
+     68450
+    ],
+    [
+     69560,
+     70650
+    ],
+    [
+     70980,
+     74410
+    ],
+    [
+     76510,
+     78650
+    ],
+    [
+     79440,
+     80590
+    ],
+    [
+     81050,
+     82780
+    ]
+   ],
+   "sentences": [
+    "teaching buildingdining hallplaygroundlibrary This is your new school.",
+    "There are three buildings and a playground.",
+    "It’s not big, but it is beautiful.",
+    "Let’s go around the school together! 1 .",
+    "It has three floors.",
+    "There are 30 classrooms on the first and second floors.",
+    "And there are 10 science labs and eight computer labs on the third floor.",
+    "This is the"
+   ],
+   "sentence_count": 8,
+   "material_method": "text_references",
+   "material_blank_bearing": true,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "code": "AU05",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_id": "A:069B23C293AF",
+   "activity_no": 1,
+   "audio_file": "05_Starter_Get to know each other_1 Read and complete.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 56320,
+   "speech_runs": 18,
+   "speech_runs_ms": [
+    [
+     300,
+     2310
+    ],
+    [
+     3510,
+     4910
+    ],
+    [
+     5810,
+     6320
+    ],
+    [
+     6580,
+     7670
+    ],
+    [
+     9530,
+     11570
+    ],
+    [
+     12070,
+     13910
+    ],
+    [
+     14490,
+     16740
+    ],
+    [
+     17350,
+     20660
+    ],
+    [
+     21400,
+     23910
+    ],
+    [
+     25240,
+     27330
+    ],
+    [
+     27830,
+     30370
+    ],
+    [
+     30950,
+     34270
+    ],
+    [
+     35480,
+     39480
+    ],
+    [
+     40110,
+     42030
+    ],
+    [
+     43330,
+     46650
+    ],
+    [
+     47410,
+     49230
+    ],
+    [
+     49590,
+     50610
+    ],
+    [
+     51670,
+     53290
+    ]
+   ],
+   "sentences": [
+    "Good morning, everyone!",
+    "Good morning, Teacher!",
+    "Welcome to junior high.",
+    "I’m Mr Pan, your English teacher.",
+    "I’m so happy to meet you all.",
+    "I like playing the piano, reading books and travelling.",
+    "And I love working with students.",
+    "This year, we’ll explore the world of English together.",
+    "It’ll be a lot of fun!",
+    "Now, it’s your turn to introduce yourselves.",
+    "Please tell us your name and your hobby.",
+    "Who wants to go first? 1 Mr Pan is a(n) teacher.2 Mr Pan likes , and .3 The students will the world of English together.4 The students are going to themselves.",
+    "Good morning.",
+    "Good afternoon.",
+    "Good evening.",
+    "Good night."
+   ],
+   "sentence_count": 16,
+   "material_method": "text_references",
+   "material_blank_bearing": true,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "code": "AU06",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_id": "A:02FCFB87E6C8",
+   "activity_no": 4,
+   "audio_file": "06_Starter_Get to know each other_4 Read and check your answers.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 43337,
+   "speech_runs": 14,
+   "speech_runs_ms": [
+    [
+     590,
+     2060
+    ],
+    [
+     2910,
+     3400
+    ],
+    [
+     3700,
+     5430
+    ],
+    [
+     7360,
+     8730
+    ],
+    [
+     9990,
+     13100
+    ],
+    [
+     14210,
+     16310
+    ],
+    [
+     17450,
+     19860
+    ],
+    [
+     21260,
+     23800
+    ],
+    [
+     24830,
+     26150
+    ],
+    [
+     26850,
+     28150
+    ],
+    [
+     28650,
+     29800
+    ],
+    [
+     30820,
+     32960
+    ],
+    [
+     33600,
+     36270
+    ],
+    [
+     37470,
+     40190
+    ]
+   ],
+   "sentences": [
+    "Hello everyone!",
+    "My name is Zhu Xiaomeng.",
+    "I’m thirteen years old.",
+    "My birthday is in May.",
+    "I love sports very much.",
+    "I like running, playing football and swimming.",
+    "I’m a bit nervous now, but I’m also happy to meet you.",
+    "I want to make friends with you all!"
+   ],
+   "sentence_count": 8,
+   "material_method": "text_references",
+   "material_blank_bearing": false,
+   "verification_status": "CANDIDATE",
+   "reason": "教材句子完整、音频归属确定；一段音频含多句，句级边界需人工/转写核验",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "medium"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "code": "AU07",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+   "activity_no": 2,
+   "audio_file": "07_Unit 1_Understanding ideas_2 Read the passage. What does the writer do in his first lesson.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 109427,
+   "speech_runs": 42,
+   "speech_runs_ms": [
+    [
+     300,
+     1350
+    ],
+    [
+     2100,
+     3510
+    ],
+    [
+     4840,
+     6680
+    ],
+    [
+     7540,
+     8880
+    ],
+    [
+     9840,
+     11220
+    ],
+    [
+     12150,
+     15520
+    ],
+    [
+     17530,
+     19030
+    ],
+    [
+     20740,
+     22430
+    ],
+    [
+     22780,
+     23720
+    ],
+    [
+     24120,
+     26590
+    ],
+    [
+     26780,
+     27170
+    ],
+    [
+     27570,
+     28350
+    ],
+    [
+     29060,
+     30880
+    ],
+    [
+     31840,
+     33450
+    ],
+    [
+     34700,
+     36920
+    ],
+    [
+     37320,
+     38110
+    ],
+    [
+     39090,
+     40480
+    ],
+    [
+     41090,
+     44030
+    ],
+    [
+     44870,
+     47460
+    ],
+    [
+     48520,
+     50770
+    ],
+    [
+     51840,
+     54360
+    ],
+    [
+     55330,
+     57480
+    ],
+    [
+     58250,
+     60130
+    ],
+    [
+     60930,
+     61670
+    ],
+    [
+     62000,
+     63130
+    ],
+    [
+     64130,
+     67840
+    ],
+    [
+     68760,
+     70100
+    ],
+    [
+     71410,
+     72360
+    ],
+    [
+     73070,
+     74360
+    ],
+    [
+     74700,
+     75310
+    ],
+    [
+     76410,
+     79600
+    ],
+    [
+     80270,
+     81920
+    ],
+    [
+     82700,
+     85210
+    ],
+    [
+     85560,
+     86400
+    ],
+    [
+     86780,
+     90160
+    ],
+    [
+     90670,
+     91540
+    ],
+    [
+     91740,
+     93720
+    ],
+    [
+     94000,
+     96150
+    ],
+    [
+     96780,
+     97450
+    ],
+    [
+     97650,
+     99510
+    ],
+    [
+     100270,
+     102530
+    ],
+    [
+     103350,
+     106140
+    ]
+   ],
+   "sentences": [
+    "1 Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.” 2 We start to write.",
+    "I write down the first word and stop. 3 “That’s not right.",
+    "But is it OK to point out the mistake?",
+    "Is that polite, in the first lesson?” Questions jump into my mind. 4 “Why aren’t you writing, Wang Han?” 5 I look up at Ms Chen.",
+    "My eyes meet hers.",
+    "My mouth feels dry. 6 But then I think about the meaning of the sentence.",
+    "I put up my hand. 7 “Ms Chen, there’s a mistake,” I say.",
+    "“That sentence is from Confucius, not from Mencius.” 8 “Well done, Wang Han.",
+    "In fact, this is my first lesson for all of you.",
+    "You are now in junior high school.",
+    "Learning will be more difficult.",
+    "You need to think more in your learning.",
+    "Please always remember this.” 9 That’s really an important lesson! 3"
+   ],
+   "sentence_count": 13,
+   "material_method": "instruction_walk",
+   "material_blank_bearing": true,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+   "code": "AU08",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+   "activity_no": 8,
+   "audio_file": "08_Unit 1_Understanding ideas_8 Work in pairs. Talk about a teacher you like.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 72464,
+   "speech_runs": 22,
+   "speech_runs_ms": [
+    [
+     490,
+     2010
+    ],
+    [
+     3180,
+     4560
+    ],
+    [
+     5440,
+     7600
+    ],
+    [
+     8540,
+     10030
+    ],
+    [
+     10270,
+     12280
+    ],
+    [
+     13270,
+     15450
+    ],
+    [
+     15640,
+     17100
+    ],
+    [
+     17370,
+     20060
+    ],
+    [
+     21260,
+     23000
+    ],
+    [
+     24930,
+     27680
+    ],
+    [
+     28340,
+     30250
+    ],
+    [
+     31050,
+     32940
+    ],
+    [
+     33660,
+     35530
+    ],
+    [
+     36370,
+     41050
+    ],
+    [
+     41940,
+     45190
+    ],
+    [
+     45720,
+     49150
+    ],
+    [
+     49820,
+     52520
+    ],
+    [
+     53260,
+     55300
+    ],
+    [
+     56190,
+     60370
+    ],
+    [
+     61110,
+     62970
+    ],
+    [
+     63280,
+     65420
+    ],
+    [
+     66100,
+     68480
+    ]
+   ],
+   "sentences": [
+    "8 Example What lesson does he / she teach?",
+    "Who is he / she?",
+    "Why do you like him / her?",
+    "What do you learn from his / her lessons?"
+   ],
+   "sentence_count": 4,
+   "material_method": "text_references",
+   "material_blank_bearing": true,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+   "code": "AU09",
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+   "activity_no": 1,
+   "audio_file": "09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 51096,
+   "speech_runs": 18,
+   "speech_runs_ms": [
+    [
+     560,
+     2550
+    ],
+    [
+     3280,
+     4660
+    ],
+    [
+     5840,
+     7510
+    ],
+    [
+     8620,
+     10410
+    ],
+    [
+     10620,
+     12050
+    ],
+    [
+     14050,
+     17100
+    ],
+    [
+     17530,
+     19780
+    ],
+    [
+     20500,
+     23060
+    ],
+    [
+     23670,
+     25030
+    ],
+    [
+     26380,
+     27690
+    ],
+    [
+     27940,
+     29320
+    ],
+    [
+     29770,
+     31430
+    ],
+    [
+     31760,
+     33240
+    ],
+    [
+     34170,
+     36690
+    ],
+    [
+     37440,
+     40780
+    ],
+    [
+     41990,
+     44660
+    ],
+    [
+     44890,
+     46580
+    ],
+    [
+     47380,
+     48540
+    ]
+   ],
+   "sentences": [],
+   "sentence_count": 0,
+   "material_method": "text_references",
+   "material_blank_bearing": false,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材文本未解析出完整句子（文本关系缺失或该音频内容不印在教材上）",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU10",
+   "code": "AU10",
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "activity_id": null,
+   "activity_no": null,
+   "audio_file": "10_Unit 1_Developing ideas _Phonetics in use.mp3",
+   "audio_scope": "section",
+   "duration_ms": 68284,
+   "speech_runs": 29,
+   "speech_runs_ms": [
+    [
+     300,
+     1790
+    ],
+    [
+     2810,
+     4060
+    ],
+    [
+     6010,
+     6490
+    ],
+    [
+     8190,
+     8740
+    ],
+    [
+     9920,
+     10600
+    ],
+    [
+     12630,
+     12980
+    ],
+    [
+     14460,
+     15520
+    ],
+    [
+     16530,
+     17190
+    ],
+    [
+     19260,
+     19600
+    ],
+    [
+     20980,
+     21830
+    ],
+    [
+     22710,
+     23580
+    ],
+    [
+     25650,
+     27240
+    ],
+    [
+     28890,
+     29510
+    ],
+    [
+     29750,
+     30680
+    ],
+    [
+     32680,
+     33220
+    ],
+    [
+     34590,
+     35500
+    ],
+    [
+     37040,
+     37660
+    ],
+    [
+     39240,
+     40110
+    ],
+    [
+     41930,
+     42550
+    ],
+    [
+     44680,
+     45030
+    ],
+    [
+     46730,
+     47500
+    ],
+    [
+     49030,
+     49430
+    ],
+    [
+     51210,
+     51920
+    ],
+    [
+     53410,
+     54070
+    ],
+    [
+     56260,
+     56580
+    ],
+    [
+     58390,
+     59110
+    ],
+    [
+     60450,
+     61260
+    ],
+    [
+     62660,
+     63240
+    ],
+    [
+     64730,
+     65360
+    ]
+   ],
+   "sentences": [],
+   "sentence_count": 0,
+   "material_method": null,
+   "material_blank_bearing": false,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "section 级音频（词表 / 语音板块），不是完整句子材料",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+   "code": "AU11",
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+   "activity_no": 2,
+   "audio_file": "11_Unit 1_Developing ideas _2 Listen again and complete the poster.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 44147,
+   "speech_runs": 16,
+   "speech_runs_ms": [
+    [
+     360,
+     1660
+    ],
+    [
+     2770,
+     3720
+    ],
+    [
+     4200,
+     5850
+    ],
+    [
+     7120,
+     10170
+    ],
+    [
+     10610,
+     12860
+    ],
+    [
+     13570,
+     16130
+    ],
+    [
+     16740,
+     18100
+    ],
+    [
+     19450,
+     20770
+    ],
+    [
+     21010,
+     22390
+    ],
+    [
+     22840,
+     24500
+    ],
+    [
+     24840,
+     26320
+    ],
+    [
+     27240,
+     29760
+    ],
+    [
+     30510,
+     33850
+    ],
+    [
+     35060,
+     37740
+    ],
+    [
+     37960,
+     39650
+    ],
+    [
+     40450,
+     41620
+    ]
+   ],
+   "sentences": [
+    "1 is beginning.",
+    "What are the The new school 2 students’ problems?",
+    "The biggest problem 3 and more homework.",
+    "They have more 4 activities.",
+    "They also have 5 ?",
+    "How can they make good use of their The Students’ Union will hold a talk this 6 to help you."
+   ],
+   "sentence_count": 6,
+   "material_method": "text_references",
+   "material_blank_bearing": true,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU12",
+   "code": "AU12",
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "activity_id": "A:26AB1A30FD52",
+   "activity_no": 3,
+   "audio_file": "12_Unit 1_Developing ideas _3 Listen to the conversation and complete the table.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 175020,
+   "speech_runs": 60,
+   "speech_runs_ms": [
+    [
+     2070,
+     3570
+    ],
+    [
+     4630,
+     6380
+    ],
+    [
+     6760,
+     8470
+    ],
+    [
+     10480,
+     11240
+    ],
+    [
+     11690,
+     14840
+    ],
+    [
+     15600,
+     17140
+    ],
+    [
+     17960,
+     18550
+    ],
+    [
+     18910,
+     23480
+    ],
+    [
+     24420,
+     28120
+    ],
+    [
+     28760,
+     30690
+    ],
+    [
+     31640,
+     33530
+    ],
+    [
+     34350,
+     35040
+    ],
+    [
+     36100,
+     38760
+    ],
+    [
+     39770,
+     40640
+    ],
+    [
+     41240,
+     43250
+    ],
+    [
+     43630,
+     46100
+    ],
+    [
+     46840,
+     49120
+    ],
+    [
+     49800,
+     52670
+    ],
+    [
+     53640,
+     56650
+    ],
+    [
+     57360,
+     59830
+    ],
+    [
+     60570,
+     61940
+    ],
+    [
+     62710,
+     64130
+    ],
+    [
+     64970,
+     67480
+    ],
+    [
+     68320,
+     68900
+    ],
+    [
+     69090,
+     70130
+    ],
+    [
+     70510,
+     72010
+    ],
+    [
+     72720,
+     75160
+    ],
+    [
+     75860,
+     76340
+    ],
+    [
+     76820,
+     78650
+    ],
+    [
+     79160,
+     80330
+    ],
+    [
+     82280,
+     87570
+    ],
+    [
+     89210,
+     90270
+    ],
+    [
+     90980,
+     95400
+    ],
+    [
+     97370,
+     98120
+    ],
+    [
+     98580,
+     101730
+    ],
+    [
+     102490,
+     104030
+    ],
+    [
+     104840,
+     105440
+    ],
+    [
+     105800,
+     110370
+    ],
+    [
+     111310,
+     115010
+    ],
+    [
+     115640,
+     117580
+    ],
+    [
+     118530,
+     120420
+    ],
+    [
+     121240,
+     121920
+    ],
+    [
+     122990,
+     125650
+    ],
+    [
+     126650,
+     127520
+    ],
+    [
+     128130,
+     130140
+    ],
+    [
+     130510,
+     132990
+    ],
+    [
+     133730,
+     136010
+    ],
+    [
+     136680,
+     139560
+    ],
+    [
+     140530,
+     143540
+    ],
+    [
+     144250,
+     146720
+    ],
+    [
+     147450,
+     148830
+    ],
+    [
+     149600,
+     151020
+    ],
+    [
+     151860,
+     154370
+    ],
+    [
+     155210,
+     155780
+    ],
+    [
+     155970,
+     157020
+    ],
+    [
+     157390,
+     158900
+    ],
+    [
+     159600,
+     162050
+    ],
+    [
+     162740,
+     163230
+    ],
+    [
+     163710,
+     165540
+    ],
+    [
+     166040,
+     167220
+    ]
+   ],
+   "sentences": [
+    "Wang Peng Li Lin They have more subjects and more homework.",
+    "It’s 2 down your tasks and the time for each task.",
+    "Every day, 1 to plan their time.",
+    "There are so many tasks.",
+    "A project may take weeks.",
+    "Turn a big task into 5 on them day by day.",
+    "Describing problems Sometimes, we need to describe our problems to get help.",
+    "We can first state our problem.",
+    "For example, It’s hard to plan time.",
+    "Then we can provide more details.",
+    "For example, There are so many tasks.",
+    "There is a lot of homework today.",
+    "It’s hard to decide what to do first.",
+    "Problem 1 I have a problem.",
+    "It’s hard to...",
+    "Can you give me some advice?",
+    "A It takes one month to finish a book report.",
+    "It’s hard to finish it on time.",
+    "Problem 2 But how about...?"
+   ],
+   "sentence_count": 19,
+   "material_method": "text_references",
+   "material_blank_bearing": true,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+   "code": "AU13",
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "activity_id": "A:46D86F27A64D",
+   "activity_no": 2,
+   "audio_file": "13_Unit 1_Developing ideas _Reading for writing_2 Read the passage and find out the meaning of the title.mp3",
+   "audio_scope": "activity",
+   "duration_ms": 101381,
+   "speech_runs": 42,
+   "speech_runs_ms": [
+    [
+     260,
+     1830
+    ],
+    [
+     2390,
+     3710
+    ],
+    [
+     4550,
+     5780
+    ],
+    [
+     6190,
+     8720
+    ],
+    [
+     10630,
+     12760
+    ],
+    [
+     14640,
+     15130
+    ],
+    [
+     15850,
+     20670
+    ],
+    [
+     21440,
+     22170
+    ],
+    [
+     22840,
+     24800
+    ],
+    [
+     25500,
+     26670
+    ],
+    [
+     27070,
+     29070
+    ],
+    [
+     29540,
+     30130
+    ],
+    [
+     30890,
+     31160
+    ],
+    [
+     31410,
+     31980
+    ],
+    [
+     32170,
+     32860
+    ],
+    [
+     33690,
+     34280
+    ],
+    [
+     35000,
+     38400
+    ],
+    [
+     39530,
+     41680
+    ],
+    [
+     42450,
+     43240
+    ],
+    [
+     43460,
+     44550
+    ],
+    [
+     46610,
+     47260
+    ],
+    [
+     48110,
+     49380
+    ],
+    [
+     50500,
+     52270
+    ],
+    [
+     52960,
+     54680
+    ],
+    [
+     56180,
+     58690
+    ],
+    [
+     59560,
+     61170
+    ],
+    [
+     61980,
+     64770
+    ],
+    [
+     65820,
+     67200
+    ],
+    [
+     67420,
+     68270
+    ],
+    [
+     69210,
+     72600
+    ],
+    [
+     73740,
+     75520
+    ],
+    [
+     76650,
+     78180
+    ],
+    [
+     78900,
+     80000
+    ],
+    [
+     80400,
+     82630
+    ],
+    [
+     83620,
+     83930
+    ],
+    [
+     84240,
+     85180
+    ],
+    [
+     85540,
+     86430
+    ],
+    [
+     87620,
+     90260
+    ],
+    [
+     91700,
+     94570
+    ],
+    [
+     95460,
+     95920
+    ],
+    [
+     96950,
+     97270
+    ],
+    [
+     97730,
+     98290
+    ]
+   ],
+   "sentences": [
+    "Dad Mia, how do you feel about your first day in junior high tomorrow?",
+    "Mia Don’t worry.",
+    "We’ve got something for you!",
+    "Well, I’m a little nervous.",
+    "Mum MiaA paper boat?",
+    "MiaA paper boat?",
+    "Dad Yes, and it’s also a letter from Mum and me.",
+    "We want to share some thoughts with you.",
+    "Mia Oh, thank you!"
+   ],
+   "sentence_count": 9,
+   "material_method": "text_references",
+   "material_blank_bearing": false,
+   "verification_status": "CANDIDATE",
+   "reason": "教材句子完整、音频归属确定；一段音频含多句，句级边界需人工/转写核验",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "medium"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU48",
+   "code": "AU48",
+   "unit": "Starter",
+   "section": "WORDS_AND_EXPRESSIONS",
+   "activity_id": null,
+   "activity_no": null,
+   "audio_file": "48_Starter_Words and expressions_Words and expressions-Starter.mp3",
+   "audio_scope": "section",
+   "duration_ms": 90175,
+   "speech_runs": 34,
+   "speech_runs_ms": [
+    [
+     360,
+     2100
+    ],
+    [
+     2580,
+     3320
+    ],
+    [
+     5550,
+     6240
+    ],
+    [
+     7760,
+     8650
+    ],
+    [
+     10330,
+     11160
+    ],
+    [
+     12830,
+     13970
+    ],
+    [
+     15660,
+     16590
+    ],
+    [
+     18330,
+     19290
+    ],
+    [
+     20950,
+     21710
+    ],
+    [
+     23660,
+     24270
+    ],
+    [
+     25990,
+     26780
+    ],
+    [
+     28480,
+     29710
+    ],
+    [
+     31450,
+     32330
+    ],
+    [
+     34050,
+     34930
+    ],
+    [
+     36540,
+     37940
+    ],
+    [
+     39770,
+     40640
+    ],
+    [
+     42390,
+     43090
+    ],
+    [
+     45060,
+     46370
+    ],
+    [
+     48350,
+     49350
+    ],
+    [
+     51150,
+     51850
+    ],
+    [
+     54290,
+     54910
+    ],
+    [
+     56260,
+     57120
+    ],
+    [
+     59040,
+     59870
+    ],
+    [
+     61310,
+     62120
+    ],
+    [
+     64020,
+     64970
+    ],
+    [
+     66370,
+     66950
+    ],
+    [
+     68350,
+     69410
+    ],
+    [
+     70940,
+     71910
+    ],
+    [
+     73630,
+     74210
+    ],
+    [
+     76050,
+     76780
+    ],
+    [
+     78790,
+     79660
+    ],
+    [
+     81250,
+     81850
+    ],
+    [
+     83390,
+     84020
+    ],
+    [
+     85610,
+     86770
+    ]
+   ],
+   "sentences": [],
+   "sentence_count": 0,
+   "material_method": null,
+   "material_blank_bearing": false,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "section 级音频（词表 / 语音板块），不是完整句子材料",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  },
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU49",
+   "code": "AU49",
+   "unit": "Unit 1",
+   "section": "WORDS_AND_EXPRESSIONS",
+   "activity_id": null,
+   "activity_no": null,
+   "audio_file": "49_Unit 1_Words and expressions_Words and expressions-Unit 1.mp3",
+   "audio_scope": "section",
+   "duration_ms": 92082,
+   "speech_runs": 37,
+   "speech_runs_ms": [
+    [
+     330,
+     1950
+    ],
+    [
+     2440,
+     3330
+    ],
+    [
+     5830,
+     6620
+    ],
+    [
+     8240,
+     9270
+    ],
+    [
+     10780,
+     11730
+    ],
+    [
+     13560,
+     14390
+    ],
+    [
+     16020,
+     16770
+    ],
+    [
+     18510,
+     19180
+    ],
+    [
+     20440,
+     21180
+    ],
+    [
+     22670,
+     23350
+    ],
+    [
+     25090,
+     25800
+    ],
+    [
+     27790,
+     28550
+    ],
+    [
+     30040,
+     30940
+    ],
+    [
+     32540,
+     33140
+    ],
+    [
+     34750,
+     35580
+    ],
+    [
+     37220,
+     37930
+    ],
+    [
+     39560,
+     40530
+    ],
+    [
+     42320,
+     42880
+    ],
+    [
+     44570,
+     45200
+    ],
+    [
+     47060,
+     47830
+    ],
+    [
+     49530,
+     50250
+    ],
+    [
+     51940,
+     52740
+    ],
+    [
+     54310,
+     55140
+    ],
+    [
+     56900,
+     57550
+    ],
+    [
+     59480,
+     60270
+    ],
+    [
+     62190,
+     62760
+    ],
+    [
+     64270,
+     64940
+    ],
+    [
+     66810,
+     67960
+    ],
+    [
+     69280,
+     69900
+    ],
+    [
+     71750,
+     72560
+    ],
+    [
+     74320,
+     74940
+    ],
+    [
+     76760,
+     77400
+    ],
+    [
+     79290,
+     79990
+    ],
+    [
+     81230,
+     81840
+    ],
+    [
+     83640,
+     84380
+    ],
+    [
+     85690,
+     86560
+    ],
+    [
+     88270,
+     88680
+    ]
+   ],
+   "sentences": [],
+   "sentence_count": 0,
+   "material_method": null,
+   "material_blank_bearing": false,
+   "verification_status": "NEEDS_REVIEW",
+   "reason": "section 级音频（词表 / 语音板块），不是完整句子材料",
+   "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+   "confidence": "low"
+  }
+ ]
+}

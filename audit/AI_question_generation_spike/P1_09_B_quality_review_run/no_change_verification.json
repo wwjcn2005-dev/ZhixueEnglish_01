@@ -1,0 +1,103 @@
+{
+  "stage": "P1-09-B",
+  "db_sha256_before": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+  "db_sha256_after": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+  "db_sha256_unchanged": true,
+  "db_size_after": 180224,
+  "per_question": [
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "unchanged": true,
+      "diff": {}
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "unchanged": true,
+      "diff": {}
+    }
+  ],
+  "questions_changed": [],
+  "all_sample_questions_unchanged": true,
+  "row_counts": {
+    "generation_run": 12,
+    "ai_question": 21,
+    "question_evidence": 22,
+    "question_learning_object": 37,
+    "question_validation": 21,
+    "question_event": 44
+  },
+  "lifecycle": {
+    "ACTIVE": 1,
+    "PENDING_REVIEW": 19,
+    "REJECTED": 1
+  },
+  "events": {
+    "ACTIVATED": 1,
+    "MARKED_STALE": 1,
+    "PENDING_REVIEW": 19,
+    "REVIEW_APPROVED": 1,
+    "REVIEW_REJECTED": 1,
+    "VALIDATED": 21
+  },
+  "integrity_check": [
+    "ok"
+  ],
+  "foreign_key_check": [],
+  "expected": {
+    "lifecycle": {
+      "ACTIVE": 1,
+      "PENDING_REVIEW": 19,
+      "REJECTED": 1
+    },
+    "row_counts": {
+      "generation_run": 12,
+      "ai_question": 21,
+      "question_evidence": 22,
+      "question_learning_object": 37,
+      "question_validation": 21,
+      "question_event": 44
+    }
+  },
+  "lifecycle_matches_expected": true,
+  "row_counts_match_expected": true
+}

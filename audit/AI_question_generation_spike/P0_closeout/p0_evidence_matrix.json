@@ -1,0 +1,247 @@
+{
+ "audit": "P0_closeout",
+ "audited_at": "2026-09-17",
+ "mode": "read_only",
+ "ai_calls_during_audit": 0,
+ "local_ai_calls_during_audit": 0,
+ "audited_spikes": [
+  "20260917_1450_deepseek_min3",
+  "20260917_1520_validator_fix",
+  "20260917_1610_deepseek_second_section",
+  "20260917_1630_deepseek_second_section_8192",
+  "20260917_1650_evidence_insufficient"
+ ],
+ "summary": {
+  "items_total": 22,
+  "freezable_now": 13,
+  "freezable_with_conditions": 4,
+  "not_freezable_yet": 5,
+  "p0_conclusion": "P0_CLOSE",
+  "cloud_generation_calls_total_across_p0": 4,
+  "cloud_metadata_calls_total_across_p0": 1,
+  "local_ai_calls_total_across_p0": 2,
+  "official_ai_artifact_rows": 0
+ },
+ "items": [
+  {
+   "id": "M01",
+   "item": "正式教材资源可只读组装出 AI 可用上下文",
+   "spike": "1450 / 1630 / 1650",
+   "evidence": "input_context.json 三次组装成功：Unit 3 RfW（34 blocks / 40 vocab / 13 packages）、Unit 1 UI（63 / 35 / 19）、Unit 1 DI A1（14 / 35 / 5）",
+   "result": "PASS",
+   "freezable": "YES",
+   "unresolved_risk": "上下文集装仍依赖脚本；尚未形成正式的 context builder 契约"
+  },
+  {
+   "id": "M02",
+   "item": "上下文复现性（同一范围可得到字节一致上下文）",
+   "spike": "1630",
+   "evidence": "input_context.json 与 1610 轮字节级一致，SHA256 471E6FA7…DFA4（复制前后双次校验）",
+   "result": "PASS",
+   "freezable": "YES",
+   "unresolved_risk": "无"
+  },
+  {
+   "id": "M03",
+   "item": "提示词在跨轮之间可逐字复现",
+   "spike": "1630",
+   "evidence": "system/user prompt 由 AST 从上一轮脚本字面量重建；system_prompt_sha256 / user_prompt_sha256 已落盘",
+   "result": "PASS",
+   "freezable": "YES",
+   "unresolved_risk": "提示词尚未版本化编号（建议 P1 引入 prompt_version）"
+  },
+  {
+   "id": "M04",
+   "item": "云端 DeepSeek 可完成结构化 JSON 输出",
+   "spike": "1450 / 1630",
+   "evidence": "1450: finish_reason=stop，3 题，63.0s；1630: finish_reason=stop，3 题，113.3s",
+   "result": "PASS",
+   "freezable": "YES",
+   "unresolved_risk": "样本量仅 2 次成功调用"
+  },
+  {
+   "id": "M05",
+   "item": "推理模型输出预算不足会导致截断（工程事实）",
+   "spike": "1610",
+   "evidence": "finish_reason=length，reasoning_tokens 占满 4096，content 0 字符，0 题；prompt 9451 tokens",
+   "result": "FAIL（截断，非数据/模型质量失败）",
+   "freezable": "YES（作为已知工程约束冻结）",
+   "unresolved_risk": "更长上下文或更多题量下 8192 仍可能不足"
+  },
+  {
+   "id": "M06",
+   "item": "max_tokens=8192 足以完成 reasoning + 结构化输出",
+   "spike": "1630",
+   "evidence": "reasoning 5648 tokens 后仍输出 1,685 字符 JSON；completion 6123；finish_reason=stop",
+   "result": "PASS",
+   "freezable": "YES（作为当前默认值）",
+   "unresolved_risk": "只在该 Section 的上下文规模下验证过；尚未验证更大上下文/更多题量"
+  },
+  {
+   "id": "M07",
+   "item": "生成结果受教材证据约束（evidence_block_ids / evidence_quote）",
+   "spike": "1450 / 1630",
+   "evidence": "6 道题的全部 evidence_quote 均为对应 block 文本的逐字子串；block id 全部真实存在",
+   "result": "PASS",
+   "freezable": "YES",
+   "unresolved_risk": "仅覆盖 2 个 Section / 6 道题"
+  },
+  {
+   "id": "M08",
+   "item": "validator v1 存在两处口径误报",
+   "spike": "1450",
+   "evidence": "3 题中 2 题 FAIL：q2『疑似超纲词: trailer states』、q3『答案无原文支持 + 超纲词 text』——均为口径问题而非 AI 编造",
+   "result": "FAIL（已定位并修正）",
+   "freezable": "YES（作为历史事实）",
+   "unresolved_risk": "无"
+  },
+  {
+   "id": "M09",
+   "item": "validator v2 修正后原始 3 题回归 3/3 PASS",
+   "spike": "1520",
+   "evidence": "validation_result_v2.json：pass 3 / fail 0；q1 EXACT、q2 EXACT、q3 VERIFIABLE_REFERENCE；ai_calls=0；原始 AI 输出未修改",
+   "result": "PASS",
+   "freezable": "YES",
+   "unresolved_risk": "无"
+  },
+  {
+   "id": "M10",
+   "item": "validator v2 单元测试",
+   "spike": "1520",
+   "evidence": "test_validator_v2.py 共 9 个用例；本次审计实机重跑：Ran 9 tests，OK",
+   "result": "PASS（9/9）",
+   "freezable": "YES",
+   "unresolved_risk": "无"
+  },
+  {
+   "id": "M11",
+   "item": "validator v2 对抗性坏样本拦截",
+   "spike": "1520",
+   "evidence": "adversarial_result.json：6 个合成坏样本 all_caught=true（超纲选项词 / 无支持答案 / 编造引用 / 无效 block id / fill 无空位 / correct_option 不一致）",
+   "result": "PASS（6/6）",
+   "freezable": "YES",
+   "unresolved_risk": "样本为人工构造，非真实模型错误"
+  },
+  {
+   "id": "M12",
+   "item": "证据不足时模型主动停止生成",
+   "spike": "1650",
+   "evidence": "0 题；insufficient_evidence_reason 明确说明缺少转写；reasoning 中主动否决“改从可见文本凑题”的退路",
+   "result": "PASS（分类 A 真正宁缺毋滥）",
+   "freezable": "NO（单样本，不可作为系统安全机制）",
+   "unresolved_risk": "只有 1 次观测；不能推断模型具备稳定拒题能力"
+  },
+  {
+   "id": "M13",
+   "item": "跨 Section 泛化（不同课文类型）",
+   "spike": "1450 / 1630",
+   "evidence": "Unit 3 READING_FOR_WRITING（3 题）与 Unit 1 UNDERSTANDING_IDEAS（3 题）均 3/3 PASS",
+   "result": "PARTIAL PASS",
+   "freezable": "NO（仅 2 个 Section，7 个 Unit 中剩余 36 个 Section 未验证）",
+   "unresolved_risk": "尚无证据说明在听力、语法、写作类 Section 上同样成立"
+  },
+  {
+   "id": "M14",
+   "item": "题型多样性 / 段落覆盖度",
+   "spike": "1630",
+   "evidence": "Unit 1 UI 的 3 题全部落在教材第 17 页同一段落；q1 与 q2 形态相同（教材原句挖空填回）；未使用第 18–20 页证据",
+   "result": "观察项（未达缺陷，但明显偏窄）",
+   "freezable": "NO（需要 P1 设计覆盖度约束）",
+   "unresolved_risk": "批量生成可能产出高度同质的题"
+  },
+  {
+   "id": "M15",
+   "item": "干扰项是否被教材排除",
+   "spike": "1450 / 1630",
+   "evidence": "validator 只校验“选项不重复 + 正确答案唯一且与 answer 一致”；干扰项与教材的一致性仍靠人工判断",
+   "result": "NOT VERIFIED BY MACHINE",
+   "freezable": "NO",
+   "unresolved_risk": "可能出现‘语法上说得通但不是教材答案’的干扰项（如 1630 q2 的 point out the meaning）"
+  },
+  {
+   "id": "M16",
+   "item": "答案唯一性是否被机器保证",
+   "spike": "1450 / 1630",
+   "evidence": "answer_support 只判断“答案是否被引用支持”，不判断“是否存在其他同样合理的答案”",
+   "result": "NOT VERIFIED BY MACHINE",
+   "freezable": "NO",
+   "unresolved_risk": "多解题目可能通过校验"
+  },
+  {
+   "id": "M17",
+   "item": "‘选项本身在教材证据中’时 EXACT 的语义边界",
+   "spike": "1450 / 1630 / 1650",
+   "evidence": "当选项文本印在教材上（如听力题干选项、per gap 原文词），answer 与 evidence_quote 会形成 EXACT 命中，但模型并未真正证明答案；1650 reasoning 显示模型自述该情况下仍无法确定答案",
+   "result": "结构性风险（已知）",
+   "freezable": "NO",
+   "unresolved_risk": "validator 无法识别‘猜中教材选项’，只能靠人工复核兜底"
+  },
+  {
+   "id": "M18",
+   "item": "教育价值 / 语言自然度 / 是否适合初一",
+   "spike": "1450 / 1630",
+   "evidence": "6 道题均经人工复核判定可入库候选，但判断依据是人工阅读，不在确定性规则内",
+   "result": "人工通过（无机器保证）",
+   "freezable": "NO",
+   "unresolved_risk": "批次放量后人工负担会线性增长"
+  },
+  {
+   "id": "M19",
+   "item": "听力层文本证据缺口",
+   "spike": "1650（并核对正式结构）",
+   "evidence": "contentpack：transcript 0 行、audio_token_annotation 0 行、audio_sentence_annotation 仅 15 行；exercise_catalog_v3 中 21 个 listening 活动 audio_required=true、121 个证据包带 related_listening",
+   "result": "DATA GAP（真实存在）",
+   "freezable": "YES（作为已知缺口冻结并移交 P1）",
+   "unresolved_risk": "所有依赖音频内容出题的场景目前只能放弃或标注为听力专用"
+  },
+  {
+   "id": "M20",
+   "item": "正式教材答案来源",
+   "spike": "1450 / 1630 / 1650（并核对正式结构）",
+   "evidence": "evidence map 360 个包 answer_source 全部为 NO_RELIABLE_SOURCE；exercise_catalog_v3 157 个 exercise 的 answer_status 也全部为 NO_RELIABLE_SOURCE",
+   "result": "DATA GAP（题池无标准答案）",
+   "freezable": "YES（作为已知约束冻结）",
+   "unresolved_risk": "AI 生成的答案只能回溯到教材正文，不能与官方答案核对"
+  },
+  {
+   "id": "M21",
+   "item": "本地模型路线（Qwen3:8B / Ollama）可用性",
+   "spike": "1410 / 1430_cpu",
+   "evidence": "1410：CUDA 加载失败、HTTP 500、0 模型输出；1430_cpu：CPU 推理约 2.02 tok/s，客户端超时",
+   "result": "FAIL（不作为当前路线）",
+   "freezable": "YES（可冻结为‘暂不采用本地模型’）",
+   "unresolved_risk": "未来若更换本地模型仍需重新评估，不能沿用该结论"
+  },
+  {
+   "id": "M22",
+   "item": "正式数据零污染基线",
+   "spike": "全部",
+   "evidence": "learning.db 118,784 B / SHA256 0C27267B…CF91 / mtime 2026-09-13 15:50:09 未变；contentpack ai_artifact 0 行；learning.db 无任何 AI 表；教材 PDF 未重新解析；54 个 MP3 未改",
+   "result": "PASS",
+   "freezable": "YES",
+   "unresolved_risk": "无（P0 全程未写入正式数据）"
+  }
+ ],
+ "cost_and_latency": {
+  "cloud_generation_calls": {
+   "1450": 1,
+   "1610": 1,
+   "1630": 1,
+   "1650": 1,
+   "total": 4
+  },
+  "local_ai_calls": {
+   "1410": 1,
+   "1430_cpu": 1,
+   "note": "其余轮次为 0；P0 本地调用合计 2 次（均已判定不可用）"
+  },
+  "latency_s": {"1450": 63.0, "1610": 73.1, "1630": 113.3, "1650": 6.5},
+  "tokens": {
+   "1450": {"prompt": 6837, "completion": 3904, "reasoning": 3296},
+   "1610": {"prompt": 9451, "completion": 4096, "reasoning": 4096},
+   "1630": {"prompt": 9451, "completion": 6123, "reasoning": 5648},
+   "1650": {"prompt": 4154, "completion": 243, "reasoning": 179}
+  },
+  "cost_risk_note": "单次成功生成最长耗时 113.3 s；若按页面实时生成，孩子等待时间不可接受——这正是必须坚持‘先查库、后生成’的工程理由。"
+ }
+}

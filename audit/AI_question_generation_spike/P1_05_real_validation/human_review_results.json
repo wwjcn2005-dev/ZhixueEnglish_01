@@ -1,0 +1,13 @@
+{
+ "reviewed_questions": 0,
+ "review_possible": false,
+ "reason": "本轮生成 0 题，没有可审核的对象。按 P1-05-A 模板的六项判断与四类归类均无样本，因此 APPROVE / REJECT_CONTENT / REJECT_QUALITY / REJECT_SCOPE 全部为 0，且均不代表质量结论。",
+ "counts": {
+  "APPROVE": 0,
+  "REJECT_CONTENT": 0,
+  "REJECT_QUALITY": 0,
+  "REJECT_SCOPE": 0
+ },
+ "items": [],
+ "template_used": "audit/AI_question_generation_spike/P1_05_sample_design/p1_05_human_review_template.md"
+}

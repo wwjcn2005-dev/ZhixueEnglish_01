@@ -1,0 +1,172 @@
+{
+ "spike": "P1-12-AI sentence distractors",
+ "model": "deepseek-v4-pro",
+ "prompt_version": "sentence-distractor-v1",
+ "rules_version": "rules-v1",
+ "ai_calls": 1,
+ "retry_count": 0,
+ "api_error": null,
+ "finish_reason": "length",
+ "usage": {
+  "prompt_tokens": 14555,
+  "completion_tokens": 8192,
+  "total_tokens": 22747,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8133
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 14555
+ },
+ "latency_ms": 78266,
+ "candidates_for_dispatch_verified": true,
+ "samples": [
+  {
+   "sentence_index": 0,
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "Are you ready?",
+   "sentence_uid": "PREVIEW:AU01:S0005",
+   "textbook_page": 8,
+   "raw_ai_candidates": [],
+   "raw_count": 0,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [],
+   "simulated_baseline": [
+    "What shoes are you going to wear?",
+    "What are you going to wear tomorrow for school?",
+    "Are you nervous"
+   ]
+  },
+  {
+   "sentence_index": 1,
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "What are you going to wear tomorrow for school?",
+   "sentence_uid": "PREVIEW:AU03:S0063",
+   "textbook_page": 10,
+   "raw_ai_candidates": [],
+   "raw_count": 0,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [],
+   "simulated_baseline": [
+    "What shoes are you going to wear?",
+    "Are you ready?"
+   ]
+  },
+  {
+   "sentence_index": 2,
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "The new school year is beginning.",
+   "sentence_uid": "P3-07:AU11-B01",
+   "textbook_page": 27,
+   "raw_ai_candidates": [],
+   "raw_count": 0,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [],
+   "simulated_baseline": [
+    "What are the new students' problems?",
+    "Are you ready for your new life?"
+   ]
+  },
+  {
+   "sentence_index": 3,
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "What are the new students' problems?",
+   "sentence_uid": "P3-07:AU11-B02",
+   "textbook_page": 27,
+   "raw_ai_candidates": [],
+   "raw_count": 0,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [],
+   "simulated_baseline": [
+    "Are you ready for your new life?",
+    "The new school year is beginning."
+   ]
+  },
+  {
+   "sentence_index": 4,
+   "unit": "Unit 2",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "“Why don’t we put our music together?",
+   "sentence_uid": "PREVIEW:AU14:S0294",
+   "textbook_page": 38,
+   "raw_ai_candidates": [],
+   "raw_count": 0,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [],
+   "simulated_baseline": [
+    "Why do you know so much about birds?"
+   ]
+  },
+  {
+   "sentence_index": 5,
+   "unit": "Unit 2",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "Why do you know so much about birds?",
+   "sentence_uid": "PREVIEW:AU19:S0367",
+   "textbook_page": 44,
+   "raw_ai_candidates": [],
+   "raw_count": 0,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [],
+   "simulated_baseline": [
+    "What do you like about bird-watching?",
+    "“Why don’t we put our music together?"
+   ]
+  },
+  {
+   "sentence_index": 6,
+   "unit": "Unit 3",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "Can you change your clothes before you come?",
+   "sentence_uid": "PREVIEW:AU26:S0508",
+   "textbook_page": 60,
+   "raw_ai_candidates": [],
+   "raw_count": 0,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [],
+   "simulated_baseline": []
+  },
+  {
+   "sentence_index": 7,
+   "unit": "Unit 4",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "How I wish to have four hands now!",
+   "sentence_uid": "PREVIEW:AU28:S0583",
+   "textbook_page": 69,
+   "raw_ai_candidates": [],
+   "raw_count": 0,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [],
+   "simulated_baseline": []
+  }
+ ],
+ "summary": {
+  "sentences": 8,
+  "ai_calls": 1,
+  "candidates_for_dispatch_verified": true,
+  "raw_candidates": 0,
+  "kept_candidates": 0,
+  "kept_distribution": {
+   "0": 8,
+   "1": 0,
+   "2": 0,
+   "3": 0
+  },
+  "filtered_reasons": {},
+  "filter_ratio": null
+ }
+}

@@ -1,0 +1,524 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU43",
+  "audio_num": "AU43",
+  "filename": "43_Unit 6_Developing ideas _1 Listen to the radio programme. What is it about.mp3",
+  "duration_ms": 65933,
+  "segment_count": 10,
+  "word_count": 91,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1820,
+      "text": "Developing ideas"
+    },
+    {
+      "start_ms": 3000,
+      "end_ms": 4280,
+      "text": "Activity 1"
+    },
+    {
+      "start_ms": 5500,
+      "end_ms": 10480,
+      "text": "Listen to the radio programme. What is it about?"
+    },
+    {
+      "start_ms": 13000,
+      "end_ms": 15120,
+      "text": "Welcome to Animal Stars."
+    },
+    {
+      "start_ms": 16000,
+      "end_ms": 20740,
+      "text": "Today's Animal Star is a special dog, Bingjie."
+    },
+    {
+      "start_ms": 22000,
+      "end_ms": 25740,
+      "text": "He was a rescue dog and worked with firemen."
+    },
+    {
+      "start_ms": 25740,
+      "end_ms": 35720,
+      "text": "Bingjie had a good sense of smell. He worked after many earthquakes and helped find missing"
+    },
+    {
+      "start_ms": 35720,
+      "end_ms": 45340,
+      "text": "people. Over the years he saved many lives. His most famous rescue took place after the"
+    },
+    {
+      "start_ms": 45340,
+      "end_ms": 51680,
+      "text": "2008 when Chuan earthquake. He helped to find 13 people."
+    },
+    {
+      "start_ms": 52900,
+      "end_ms": 62440,
+      "text": "Binhjia died on 2 October 2021 at the age of 14. He was a hero."
+    }
+  ],
+  "words": [
+    {
+      "word": "Developing",
+      "start_ms": 0,
+      "end_ms": 1080
+    },
+    {
+      "word": "ideas",
+      "start_ms": 1080,
+      "end_ms": 1820
+    },
+    {
+      "word": "Activity",
+      "start_ms": 3000,
+      "end_ms": 3820
+    },
+    {
+      "word": "1",
+      "start_ms": 3820,
+      "end_ms": 4280
+    },
+    {
+      "word": "Listen",
+      "start_ms": 5310,
+      "end_ms": 5880
+    },
+    {
+      "word": "to",
+      "start_ms": 5880,
+      "end_ms": 6400
+    },
+    {
+      "word": "the",
+      "start_ms": 6400,
+      "end_ms": 6560
+    },
+    {
+      "word": "radio",
+      "start_ms": 6560,
+      "end_ms": 7200
+    },
+    {
+      "word": "programme.",
+      "start_ms": 7200,
+      "end_ms": 7980
+    },
+    {
+      "word": "What",
+      "start_ms": 8580,
+      "end_ms": 9540
+    },
+    {
+      "word": "is",
+      "start_ms": 9540,
+      "end_ms": 9820
+    },
+    {
+      "word": "it",
+      "start_ms": 9820,
+      "end_ms": 10040
+    },
+    {
+      "word": "about?",
+      "start_ms": 10040,
+      "end_ms": 10480
+    },
+    {
+      "word": "Welcome",
+      "start_ms": 12750,
+      "end_ms": 13320
+    },
+    {
+      "word": "to",
+      "start_ms": 13320,
+      "end_ms": 13920
+    },
+    {
+      "word": "Animal",
+      "start_ms": 13920,
+      "end_ms": 14580
+    },
+    {
+      "word": "Stars.",
+      "start_ms": 14580,
+      "end_ms": 15120
+    },
+    {
+      "word": "Today's",
+      "start_ms": 16000,
+      "end_ms": 16880
+    },
+    {
+      "word": "Animal",
+      "start_ms": 16880,
+      "end_ms": 17240
+    },
+    {
+      "word": "Star",
+      "start_ms": 17240,
+      "end_ms": 17720
+    },
+    {
+      "word": "is",
+      "start_ms": 17720,
+      "end_ms": 18380
+    },
+    {
+      "word": "a",
+      "start_ms": 18380,
+      "end_ms": 18540
+    },
+    {
+      "word": "special",
+      "start_ms": 18540,
+      "end_ms": 19160
+    },
+    {
+      "word": "dog,",
+      "start_ms": 19160,
+      "end_ms": 19680
+    },
+    {
+      "word": "Bingjie.",
+      "start_ms": 20220,
+      "end_ms": 20740
+    },
+    {
+      "word": "He",
+      "start_ms": 21630,
+      "end_ms": 22200
+    },
+    {
+      "word": "was",
+      "start_ms": 22200,
+      "end_ms": 22440
+    },
+    {
+      "word": "a",
+      "start_ms": 22440,
+      "end_ms": 22580
+    },
+    {
+      "word": "rescue",
+      "start_ms": 22580,
+      "end_ms": 23080
+    },
+    {
+      "word": "dog",
+      "start_ms": 23080,
+      "end_ms": 23600
+    },
+    {
+      "word": "and",
+      "start_ms": 23600,
+      "end_ms": 24240
+    },
+    {
+      "word": "worked",
+      "start_ms": 24240,
+      "end_ms": 24660
+    },
+    {
+      "word": "with",
+      "start_ms": 24660,
+      "end_ms": 25080
+    },
+    {
+      "word": "firemen.",
+      "start_ms": 25080,
+      "end_ms": 25740
+    },
+    {
+      "word": "Bingjie",
+      "start_ms": 25740,
+      "end_ms": 27740
+    },
+    {
+      "word": "had",
+      "start_ms": 27740,
+      "end_ms": 28320
+    },
+    {
+      "word": "a",
+      "start_ms": 28320,
+      "end_ms": 28580
+    },
+    {
+      "word": "good",
+      "start_ms": 28580,
+      "end_ms": 28960
+    },
+    {
+      "word": "sense",
+      "start_ms": 28960,
+      "end_ms": 29400
+    },
+    {
+      "word": "of",
+      "start_ms": 29400,
+      "end_ms": 29740
+    },
+    {
+      "word": "smell.",
+      "start_ms": 29740,
+      "end_ms": 30200
+    },
+    {
+      "word": "He",
+      "start_ms": 31060,
+      "end_ms": 31380
+    },
+    {
+      "word": "worked",
+      "start_ms": 31380,
+      "end_ms": 31780
+    },
+    {
+      "word": "after",
+      "start_ms": 31780,
+      "end_ms": 32340
+    },
+    {
+      "word": "many",
+      "start_ms": 32340,
+      "end_ms": 32760
+    },
+    {
+      "word": "earthquakes",
+      "start_ms": 32760,
+      "end_ms": 33420
+    },
+    {
+      "word": "and",
+      "start_ms": 33420,
+      "end_ms": 34200
+    },
+    {
+      "word": "helped",
+      "start_ms": 34200,
+      "end_ms": 34600
+    },
+    {
+      "word": "find",
+      "start_ms": 34600,
+      "end_ms": 35100
+    },
+    {
+      "word": "missing",
+      "start_ms": 35100,
+      "end_ms": 35720
+    },
+    {
+      "word": "people.",
+      "start_ms": 35720,
+      "end_ms": 36240
+    },
+    {
+      "word": "Over",
+      "start_ms": 37260,
+      "end_ms": 37860
+    },
+    {
+      "word": "the",
+      "start_ms": 37860,
+      "end_ms": 38020
+    },
+    {
+      "word": "years",
+      "start_ms": 38020,
+      "end_ms": 38420
+    },
+    {
+      "word": "he",
+      "start_ms": 38420,
+      "end_ms": 38980
+    },
+    {
+      "word": "saved",
+      "start_ms": 38980,
+      "end_ms": 39560
+    },
+    {
+      "word": "many",
+      "start_ms": 39560,
+      "end_ms": 40040
+    },
+    {
+      "word": "lives.",
+      "start_ms": 40040,
+      "end_ms": 40640
+    },
+    {
+      "word": "His",
+      "start_ms": 41580,
+      "end_ms": 41860
+    },
+    {
+      "word": "most",
+      "start_ms": 41860,
+      "end_ms": 42120
+    },
+    {
+      "word": "famous",
+      "start_ms": 42120,
+      "end_ms": 42660
+    },
+    {
+      "word": "rescue",
+      "start_ms": 42660,
+      "end_ms": 43360
+    },
+    {
+      "word": "took",
+      "start_ms": 43360,
+      "end_ms": 44000
+    },
+    {
+      "word": "place",
+      "start_ms": 44000,
+      "end_ms": 44500
+    },
+    {
+      "word": "after",
+      "start_ms": 44500,
+      "end_ms": 45140
+    },
+    {
+      "word": "the",
+      "start_ms": 45140,
+      "end_ms": 45340
+    },
+    {
+      "word": "2008",
+      "start_ms": 45340,
+      "end_ms": 46220
+    },
+    {
+      "word": "when",
+      "start_ms": 46220,
+      "end_ms": 46720
+    },
+    {
+      "word": "Chuan",
+      "start_ms": 46720,
+      "end_ms": 47120
+    },
+    {
+      "word": "earthquake.",
+      "start_ms": 47120,
+      "end_ms": 47820
+    },
+    {
+      "word": "He",
+      "start_ms": 48880,
+      "end_ms": 49160
+    },
+    {
+      "word": "helped",
+      "start_ms": 49160,
+      "end_ms": 49480
+    },
+    {
+      "word": "to",
+      "start_ms": 49480,
+      "end_ms": 49740
+    },
+    {
+      "word": "find",
+      "start_ms": 49740,
+      "end_ms": 50140
+    },
+    {
+      "word": "13",
+      "start_ms": 50140,
+      "end_ms": 50960
+    },
+    {
+      "word": "people.",
+      "start_ms": 50960,
+      "end_ms": 51680
+    },
+    {
+      "word": "Binhjia",
+      "start_ms": 52900,
+      "end_ms": 53860
+    },
+    {
+      "word": "died",
+      "start_ms": 53860,
+      "end_ms": 54580
+    },
+    {
+      "word": "on",
+      "start_ms": 54580,
+      "end_ms": 55020
+    },
+    {
+      "word": "2",
+      "start_ms": 55020,
+      "end_ms": 55400
+    },
+    {
+      "word": "October",
+      "start_ms": 55400,
+      "end_ms": 56360
+    },
+    {
+      "word": "2021",
+      "start_ms": 56360,
+      "end_ms": 57880
+    },
+    {
+      "word": "at",
+      "start_ms": 57880,
+      "end_ms": 58680
+    },
+    {
+      "word": "the",
+      "start_ms": 58680,
+      "end_ms": 58840
+    },
+    {
+      "word": "age",
+      "start_ms": 58840,
+      "end_ms": 59160
+    },
+    {
+      "word": "of",
+      "start_ms": 59160,
+      "end_ms": 59360
+    },
+    {
+      "word": "14.",
+      "start_ms": 59360,
+      "end_ms": 59920
+    },
+    {
+      "word": "He",
+      "start_ms": 60880,
+      "end_ms": 61120
+    },
+    {
+      "word": "was",
+      "start_ms": 61120,
+      "end_ms": 61500
+    },
+    {
+      "word": "a",
+      "start_ms": 61500,
+      "end_ms": 61960
+    },
+    {
+      "word": "hero.",
+      "start_ms": 61960,
+      "end_ms": 62440
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 9.7
+  }
+}

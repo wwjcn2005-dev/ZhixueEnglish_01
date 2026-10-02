@@ -1,0 +1,17 @@
+{
+  "stage": "P1-09-G",
+  "anchor": "P1-09-D protect_after.json (recorded before P1-09-E/F/G)",
+  "files_checked": 1160,
+  "mismatched": 0,
+  "missing": 0,
+  "all_match": true,
+  "problems": [],
+  "key_hashes": {
+    "question_library.db": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+    "learning.db": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+    "contentpack_v5": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39"
+  },
+  "ai_calls": 0,
+  "retry_count": 0,
+  "note": "本阶段未调用任何模型；只读取数据库与既有审计产物，产物只写入 P1_09_G。"
+}

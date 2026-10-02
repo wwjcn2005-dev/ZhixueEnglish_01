@@ -1,0 +1,93 @@
+{
+ "endpoint": "https://api.deepseek.com/chat/completions",
+ "model": "deepseek-v4-pro",
+ "cloud_calls": 1,
+ "local_ai_calls": 0,
+ "elapsed_s": 63.0,
+ "requested_max": 3,
+ "returned": 3,
+ "pass": 1,
+ "fail": 2,
+ "candidate_yes_program": 1,
+ "context_sha256": "D8C57F28100018191C98C1E2D19E6032C38680D1DA007EBE6ED0D0265F2AE8EA",
+ "whitelist_size": 306,
+ "results": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "pass": true,
+   "issues": [],
+   "codes": [],
+   "page": 56,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P61:B5"
+   ],
+   "evidence_quote": "But Robert has a serious disease and cannot move at all.",
+   "question": "But Robert has a serious ___ and cannot move at all.",
+   "options": [],
+   "correct_option": "",
+   "answer": "disease",
+   "explanation": "The story directly says Robert has a serious disease and cannot move at all.",
+   "database_candidate_program": "YES"
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "pass": false,
+   "issues": [
+    "疑似超纲词: 'trailer' states"
+   ],
+   "codes": [
+    "5"
+   ],
+   "page": 56,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P61:B7"
+   ],
+   "evidence_quote": "He puts Robert in a trailer and pulls it along with his bike.",
+   "question": "He puts Robert in a ___ and pulls it along with his bike.",
+   "options": [
+    "trailer",
+    "road",
+    "disease",
+    "result"
+   ],
+   "correct_option": "A",
+   "answer": "trailer",
+   "explanation": "The story states that John puts Robert in a trailer, so 'trailer' is the correct word.",
+   "database_candidate_program": "NO"
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "pass": false,
+   "issues": [
+    "答案无原文支持",
+    "疑似超纲词: text"
+   ],
+   "codes": [
+    "4",
+    "5"
+   ],
+   "page": 57,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P62:B0"
+   ],
+   "evidence_quote": "Now, the brothers often take part in bike races together.",
+   "question": "What do the brothers often do now?",
+   "options": [
+    "They often refuse to race.",
+    "They often take part in bike races together.",
+    "They often win the race.",
+    "They often stay at home."
+   ],
+   "correct_option": "B",
+   "answer": "They often take part in bike races together.",
+   "explanation": "The text says the brothers often take part in bike races together.",
+   "database_candidate_program": "NO"
+  }
+ ]
+}

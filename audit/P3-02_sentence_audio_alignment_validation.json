@@ -1,0 +1,200 @@
+{
+ "task_id": "P3-02",
+ "title": "教材完整短句恢复 → 官方音频定位 → 短句切片可行性验证",
+ "date": "2026-09-13",
+ "read_only": true,
+ "ai_calls": 0,
+ "external_network_requests": 0,
+ "installs": 0,
+ "environment": {
+  "python": "Python 3.12.10",
+  "modules": {
+   "wave": true,
+   "audioop": true,
+   "numpy": false,
+   "pydub": false,
+   "soundfile": false,
+   "librosa": false,
+   "whisper": false,
+   "faster_whisper": false,
+   "vosk": false,
+   "speech_recognition": false,
+   "torch": false,
+   "ctranslate2": false
+  },
+  "binaries": {
+   "ffmpeg": false,
+   "ffprobe": false,
+   "sox": false,
+   "gentle": false,
+   "mfa": false
+  },
+  "libreoffice": false,
+  "official_audio_dir": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材",
+  "official_audio_count": 54,
+  "mp3_decoder": "builder/mp3_to_wav.ps1 (WinRT, offline)",
+  "mp3_encoder": null
+ },
+ "environment_verdict": {
+  "local_asr": "LOCAL_ASR_UNAVAILABLE",
+  "ffmpeg_ffprobe_sox": "UNAVAILABLE",
+  "force_alignment": "UNAVAILABLE",
+  "mp3_decode": "AVAILABLE(builder/mp3_to_wav.ps1, WinRT, offline)",
+  "mp3_encode": "UNAVAILABLE"
+ },
+ "samples": [
+  {
+   "sample": "S1_word_list_control",
+   "category": "对照样（词表）",
+   "audio": "AU48",
+   "textbook_original": "ready",
+   "textbook_with_blanks": null,
+   "recovered_sentence": "ready",
+   "recovery_method": "existing_resource_mapping(derived manifest)",
+   "confidence": "medium（派生资源，非官方独立单词音频）",
+   "start_ms": 5550,
+   "end_ms": 6240,
+   "matching_method": "existing_resource_mapping",
+   "status": "CANDIDATE",
+   "slice_file": "sample_01_word_01.wav",
+   "slice_check": {
+    "slice_runs": 1,
+    "peak_db": -24.9,
+    "head_starts_at_ms": 0,
+    "tail_ends_at_ms": 19210,
+    "head_ok": true,
+    "tail_ok": true,
+    "slice_total_ms": 690
+   }
+  },
+  {
+   "sample": "S2_single_sentence",
+   "category": "A/C 完整短句（连续句首句）",
+   "audio": "AU06",
+   "textbook_original": "Hello everyone! My name is Zhu Xiaomeng. I’m thirteen years old. My birthday is in May. I love sports very much. I like running, playing football and swimming. I’m a bit nervous now, but I’m also happy to meet you. I want to make friends with you all!",
+   "textbook_with_blanks": null,
+   "recovered_sentence": "Hello everyone!",
+   "recovery_method": "textbook_complete_text（P15:B3 无空位）",
+   "confidence": "medium",
+   "start_ms": 560,
+   "end_ms": 2090,
+   "matching_method": "order_position（第 1 个语音段 = 教材第 1 句）",
+   "status": "CANDIDATE",
+   "slice_file": "sample_02_sentence_01.wav",
+   "slice_check": {
+    "slice_runs": 2,
+    "peak_db": null,
+    "head_starts_at_ms": 0,
+    "tail_ends_at_ms": 1530,
+    "head_ok": true,
+    "tail_ok": true,
+    "slice_total_ms": 1530
+   },
+   "note": "句级对应依靠顺序位置，未经转写/人工确认 → 不得升级 CONFIRMED"
+  },
+  {
+   "sample": "S3_fill_single_blank",
+   "category": "A 单个填空句",
+   "audio": "AU02",
+   "textbook_original": "oneseventwoeightthreefourfivesix nineteneleventwelve Mum:\t How about you, Li Meng?Li Meng:\t \u0007I am ready, too. Look. I have 2  pens. I also have 1  pencils and 4  ruler. They are all in my pencil case. 3  eraser and Know more about numbers and articles ⇢ p131 4",
+   "textbook_with_blanks": true,
+   "recovered_sentence": null,
+   "recovery_method": null,
+   "matching_method": null,
+   "status": "NEEDS_REVIEW",
+   "reason": "教材原题为填空（a/an 或数字），完整句只在音频里；无 ASR 无法恢复",
+   "speech_runs": 16,
+   "duration_ms": 33541
+  },
+  {
+   "sample": "S4_fill_multi_blank",
+   "category": "B 一句多空 / E 长音频（175s）",
+   "audio": "AU12",
+   "textbook_original": "Wang Peng Li Lin They have more subjects and more homework. It’s 2  down your tasks and the time for each task. Every day, 1  to plan their time. There are so many tasks. A project may take weeks. Turn a big task into 5  on them day by day. Describing problems  Sometimes, we need to describe our pro",
+   "textbook_with_blanks": true,
+   "recovered_sentence": null,
+   "recovery_method": null,
+   "matching_method": null,
+   "status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位；完整句不在教材事实内，无法唯一恢复",
+   "speech_runs": 60,
+   "duration_ms": 175020
+  },
+  {
+   "sample": "S5_dialogue_artifacts",
+   "category": "D 多人对话",
+   "audio": "AU13",
+   "textbook_original": "Dad Mia, how do you feel about your first day in junior high tomorrow? Mia Don’t worry. We’ve got something for you! Look! Well, I’m a little nervous. Mum MiaA paper boat? MiaA paper boat? Dad Yes, and it’s also a letter from Mum and me. We want to share some thoughts with you. Mia Oh, thank you!",
+   "textbook_with_blanks": null,
+   "recovered_sentence": null,
+   "recovery_method": null,
+   "matching_method": null,
+   "status": "NEEDS_REVIEW",
+   "reason": "对话文本存在提取瑕疵（重复片段、说话人标签粘连），句级对应不可靠",
+   "speech_runs": 42,
+   "duration_ms": 101381
+  }
+ ],
+ "statistics": {
+  "samples_total": 5,
+  "recovered_ok": 2,
+  "recovered_fail": 3,
+  "unique_located": 2,
+  "not_located": 3,
+  "slices_created": 2,
+  "slices_failed": 3,
+  "CONFIRMED": 0,
+  "CANDIDATE": 2,
+  "NEEDS_REVIEW": 3,
+  "recovery_rate": 0.4,
+  "unique_locate_rate": 0.4,
+  "usable_slice_rate": 0.4
+ },
+ "hypothesis": {
+  "question": "知道完整句子后，定位是否明显更容易？",
+  "answer": "在当前无 ASR/转写条件下：不明显更容易（两条路线瓶颈相同，都是缺匹配器）",
+  "evidence": [
+   "AU06：教材 8 句 vs 声学 14 段；AU13：9 句 vs 42 段；AU07：42 段 —— 段数≠句数",
+   "完整句只回答'找什么'，不回答'在哪里'",
+   "有 ASR 后：完整句可做精确文本匹配 → 路线分岔，完整句方案明显占优"
+  ]
+ },
+ "final_verdict": {
+  "choice": "C",
+  "text": "只能对部分教材音频可靠实现",
+  "reliable": [
+   "枚举类音频（词表，结构与印刷文本一一对应）",
+   "完整无空位且位于音频开头的短句（首句）"
+  ],
+  "unreliable": [
+   "填空/听力类（完整句不在教材事实内）",
+   "多人对话（需说话人切分）",
+   "长音频（句级边界需转写）"
+  ],
+  "confirmed_zero_reason": "无 ASR → 无法完成'切片重新识别与目标句一致'这一 CONFIRMED 必要条件",
+  "activity_level_alternative": "活动级跟读（官方完整音频 + 教材完整文本）可直接进入小规模建设",
+  "sentence_level_prerequisite": "补齐本地离线转写/强制对齐能力"
+ },
+ "artifacts": {
+  "report_md": "audit/P3-02_sentence_audio_alignment_validation.md",
+  "report_json": "audit/P3-02_sentence_audio_alignment_validation.json",
+  "experiment_script": "audit/P3-02_samples/p302_experiment.py",
+  "slices": [
+   "audit/P3-02_samples/sample_01_word_01.wav",
+   "audit/P3-02_samples/sample_02_sentence_01.wav"
+  ],
+  "slice_format_note": "仅 WAV（无 MP3 编码器，且不得安装依赖）"
+ },
+ "baseline": {
+  "learning_db_sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+  "learning_db_mtime": "2026-09-13 15:50:09",
+  "learning_db_note": "与 P2-6-F 基线的差异来自 2026-09-13 15:50:08 的真机词汇学习记录（V:EAB999ECEC5C, done），发生在 P3-01/P3-02 之前；本任务 start=end 一致",
+  "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+  "official_mp3_modified": 0,
+  "v121_modified": false,
+  "official_code_modified": false,
+  "tests_run": false,
+  "git": "UNAVAILABLE（本机无 git 命令）"
+ },
+ "stop": "只读实验完成，立即停止；不进入 P3-03。"
+}

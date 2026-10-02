@@ -1,0 +1,49 @@
+{
+  "stage": "P1-09-F",
+  "candidate_map": {
+    "FIX-C1": {
+      "options": [
+        {
+          "option": "A",
+          "text": "friends"
+        },
+        {
+          "option": "B",
+          "text": "students"
+        },
+        {
+          "option": "C",
+          "text": "parents"
+        },
+        {
+          "option": "D",
+          "text": "teachers"
+        }
+      ],
+      "current_answer": "friends",
+      "options_count": 4
+    },
+    "FIX-C2": {
+      "options": [
+        {
+          "option": "A",
+          "text": "sentence"
+        },
+        {
+          "option": "B",
+          "text": "word"
+        },
+        {
+          "option": "C",
+          "text": "picture"
+        },
+        {
+          "option": "D",
+          "text": "name"
+        }
+      ],
+      "current_answer": "sentence",
+      "options_count": 4
+    }
+  }
+}

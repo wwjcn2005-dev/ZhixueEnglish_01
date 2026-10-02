@@ -1,0 +1,26 @@
+{
+  "task": "P1-06-DOC AI 数据复用优先原则正式纳入最高指导原则（归档）",
+  "archived_at": "2026-09-12T16:45:47+08:00",
+  "verdict": "PASS",
+  "modified_files": [
+    "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.0.md"
+  ],
+  "sha256_before": "C07B0D3B5B8681D4346A8FAC3127E9DB2DA8FB05CCA434066BD88DA18690C690",
+  "sha256_after": "AB890E413740FE1781E5326889F747BE4CC50775C14CC7BA6D8E00A848D47FD1",
+  "added_section": "第八章 AI 功能边界 → ### AI 数据复用优先原则",
+  "additive_only_verified": true,
+  "size_before": 18914,
+  "size_after": 22151,
+  "safety": {
+    "other_files_modified": false,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "network": 0,
+    "new_deps": 0
+  },
+  "known_open_items": [
+    "头部归档说明注释与新小节表述落差（未改）",
+    "文件名仍 V1.0（文档无修订规则）"
+  ]
+}

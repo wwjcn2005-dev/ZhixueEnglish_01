@@ -1,0 +1,245 @@
+{
+  "rule_doc": {
+    "T1_SHORT_CONTEXT_FILL": "fill 去掉空位后英文实词少于 6 个：学生只看题干无法确定唯一答案",
+    "T2_MULTI_BLANK_FILL": "fill 有两个以上空位",
+    "T3_MECHANICAL_SHORT_STEM": "mechanical_rewrite=true 且去空位后少于 8 词",
+    "T4_DISTRACTOR_SAME_POS_UNIT_VOCAB": "选择题干扰项是同一 Unit 词表中与答案同词性的词，语法上同样可填空，只能靠课文排除",
+    "T5_FILL_WITH_OPTIONS": "fill 题型却带 options（validator v3 type_rules 必判不合法）"
+  },
+  "questions": [
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "question_type": "fill",
+      "question_text": "It feels great to ___ our hobby together.",
+      "correct_answer": "enjoy",
+      "stem_word_count_without_blank": 7,
+      "mechanical_rewrite": true,
+      "triage_flags": [
+        "T3_MECHANICAL_SHORT_STEM"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "question_type": "fill",
+      "question_text": "What colour is it? It’s ___.",
+      "correct_answer": "grey",
+      "stem_word_count_without_blank": 6,
+      "mechanical_rewrite": false,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "question_type": "fill",
+      "question_text": "I am ___, too.",
+      "correct_answer": "ready",
+      "stem_word_count_without_blank": 3,
+      "mechanical_rewrite": true,
+      "triage_flags": [
+        "T1_SHORT_CONTEXT_FILL",
+        "T3_MECHANICAL_SHORT_STEM"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "question_type": "fill",
+      "question_text": "___ ___, this is my first lesson for all of you.",
+      "correct_answer": "In fact",
+      "stem_word_count_without_blank": 9,
+      "mechanical_rewrite": true,
+      "triage_flags": [
+        "T2_MULTI_BLANK_FILL"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:3179968E3E74",
+      "question_type": "vocab_choice",
+      "question_text": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+      "correct_answer": "polite",
+      "stem_word_count_without_blank": 15,
+      "mechanical_rewrite": null,
+      "triage_flags": [
+        "T4_DISTRACTOR_SAME_POS_UNIT_VOCAB"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:3C02F6486DFF",
+      "question_type": "fill",
+      "question_text": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+      "correct_answer": "eraser",
+      "stem_word_count_without_blank": 13,
+      "mechanical_rewrite": true,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:5B4C80443D5F",
+      "question_type": "vocab_choice",
+      "question_text": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+      "correct_answer": "mistake",
+      "stem_word_count_without_blank": 13,
+      "mechanical_rewrite": false,
+      "triage_flags": [
+        "T4_DISTRACTOR_SAME_POS_UNIT_VOCAB"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:6721EC6C5D1F",
+      "question_type": "vocab_choice",
+      "question_text": "Water from the ___ will rise to the leaf through the stem.",
+      "correct_answer": "root",
+      "stem_word_count_without_blank": 11,
+      "mechanical_rewrite": false,
+      "triage_flags": [
+        "T4_DISTRACTOR_SAME_POS_UNIT_VOCAB"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "question_type": "reading_choice",
+      "question_text": "At the school art festival, the writer and Grandpa ___.",
+      "correct_answer": "fire up instruments",
+      "stem_word_count_without_blank": 9,
+      "mechanical_rewrite": false,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "question_type": "vocab_choice",
+      "question_text": "But it’s a ___ kind of music.",
+      "correct_answer": "different",
+      "stem_word_count_without_blank": 7,
+      "mechanical_rewrite": true,
+      "triage_flags": [
+        "T3_MECHANICAL_SHORT_STEM",
+        "T4_DISTRACTOR_SAME_POS_UNIT_VOCAB"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "question_type": "reading_judge",
+      "question_text": "The Great Bear Rainforest is in Canada.",
+      "correct_answer": "True",
+      "stem_word_count_without_blank": 7,
+      "mechanical_rewrite": false,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:7EBCDBC29563",
+      "question_type": "fill",
+      "question_text": "Our English teacher Ms Chen writes the ___ on the blackboard and says, “Please write this down.”",
+      "correct_answer": "sentence",
+      "stem_word_count_without_blank": 16,
+      "mechanical_rewrite": null,
+      "triage_flags": [
+        "T5_FILL_WITH_OPTIONS"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:80F1D28C3101",
+      "question_type": "reading_judge",
+      "question_text": "Plants are not important to us.",
+      "correct_answer": "False",
+      "stem_word_count_without_blank": 6,
+      "mechanical_rewrite": false,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "question_type": "reading_choice",
+      "question_text": "Grandpa likes playing the erhu ___.",
+      "correct_answer": "in the park",
+      "stem_word_count_without_blank": 5,
+      "mechanical_rewrite": false,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:A9D1F3EC6020",
+      "question_type": "vocab_choice",
+      "question_text": "Ms Chen writes a ___ on the blackboard.",
+      "correct_answer": "sentence",
+      "stem_word_count_without_blank": 7,
+      "mechanical_rewrite": false,
+      "triage_flags": [
+        "T4_DISTRACTOR_SAME_POS_UNIT_VOCAB"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "question_type": "reading_choice",
+      "question_text": "In the Great Bear Rainforest, what can the trees make?",
+      "correct_answer": "their own rain",
+      "stem_word_count_without_blank": 10,
+      "mechanical_rewrite": false,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "question_type": "vocab_choice",
+      "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+      "correct_answer": "band",
+      "stem_word_count_without_blank": 13,
+      "mechanical_rewrite": true,
+      "triage_flags": [
+        "T4_DISTRACTOR_SAME_POS_UNIT_VOCAB"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:C3E6FD29F680",
+      "question_type": "fill",
+      "question_text": "I look up at Ms Chen. My eyes meet ___.",
+      "correct_answer": "hers",
+      "stem_word_count_without_blank": 9,
+      "mechanical_rewrite": true,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:CD8B21681B4C",
+      "question_type": "reading_choice",
+      "question_text": "What is Wang Tao going to wear tomorrow for school?",
+      "correct_answer": "school uniform",
+      "stem_word_count_without_blank": 10,
+      "mechanical_rewrite": false,
+      "triage_flags": [
+        "T4_DISTRACTOR_SAME_POS_UNIT_VOCAB"
+      ],
+      "needs_ai_quality_review": true
+    },
+    {
+      "question_id": "AIQ:D976787A0A43",
+      "question_type": "fill",
+      "question_text": "In the first lesson, some questions jump into my ___.",
+      "correct_answer": "mind",
+      "stem_word_count_without_blank": 9,
+      "mechanical_rewrite": false,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    },
+    {
+      "question_id": "AIQ:E5F4C046FA61",
+      "question_type": "fill",
+      "question_text": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+      "correct_answer": "sound",
+      "stem_word_count_without_blank": 11,
+      "mechanical_rewrite": true,
+      "triage_flags": [],
+      "needs_ai_quality_review": false
+    }
+  ]
+}

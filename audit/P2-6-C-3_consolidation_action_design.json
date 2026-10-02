@@ -1,0 +1,238 @@
+{
+  "phase": "P2-6-C-3",
+  "title": "Consolidation Action 与“错误 → 巩固 → 新证据 → 再诊断”闭环设计",
+  "status": "PASS_WITH_GAPS",
+  "mode": "read_only_design",
+  "designed_at": "2026-09-13",
+  "scope": "Consolidation Action 语义、类型、生命周期、关系链、Current/Historical Error 语义、Re-diagnosis、持久化边界；不含实现",
+  "source_documents": [
+    "audit/P2-6-C-1_learning_object_evidence_loop_audit.md",
+    "audit/P2-6-C-1_learning_object_evidence_loop_audit.json",
+    "audit/P2-6-C-2_learning_object_design.md",
+    "audit/P2-6-C-2_learning_object_design.json",
+    "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+    "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.md",
+    "audit/P2-6-B_mastery_and_intervention_implementation.md",
+    "learning/evidence_service.py",
+    "learning/mastery_service.py",
+    "learning/diagnosis_service.py",
+    "learning/intervention_service.py",
+    "structured/learning/mastery_rules_v1.json"
+  ],
+  "current_loop": {
+    "evidence": "exists（只读派生，item 级）",
+    "diagnosis": "exists（item 级：current_error / suspected_weak / needs_textbook_review）",
+    "suggestion": "exists（教材优先，只读，含教材定位）",
+    "child_click": "plain link only（无记录）",
+    "consolidation_action": "missing",
+    "new_evidence": "exists（但与诊断无关联）",
+    "rediagnosis": "partial（只看 latest，无 LO 聚合）",
+    "learning_object": "designed in C-2, not implemented"
+  },
+  "consolidation_action_definition": {
+    "one_line": "孩子主动开始并执行的、指向某个教材巩固目标的最小学习行为单元（含类型、目标、起止时间与完成判据）",
+    "distinctions": [
+      {"concept": "suggestion_card_rendered", "persisted": false, "can_change_current_error": false},
+      {"concept": "child_clicked", "persisted": false, "can_change_current_error": false,
+       "note": "行为入口，不是状态"},
+      {"concept": "action_started", "persisted": true, "can_change_current_error": false},
+      {"concept": "action_completed", "persisted": true, "can_change_current_error": false},
+      {"concept": "new_evidence", "persisted": "derived from learning_record", "can_change_current_error": true},
+      {"concept": "rediagnosis", "persisted": false, "can_change_current_error": true}
+    ],
+    "core_rule": "建议展示 ≠ 点击 ≠ 开始 ≠ 完成 ≠ 已解决；只有新的有效判断证据能改变 Current Error"
+  },
+  "action_types": {
+    "set": ["reread_text", "replay_audio", "grammar_pointer", "model_text_review",
+            "redo_exercise", "cross_section_practice"],
+    "source": "V1.2 二十二·6 教材优先顺序（同源，不新增类型）",
+    "action_type_vs_target": "必须分离（action_type = 孩子行为；target_resource = 教材目标）",
+    "generic_fallback": "不设；无法归类 → 不构成 Action（unmapped，不记录）",
+    "new_types_allowed": false
+  },
+  "lifecycle": {
+    "states": ["started", "completed", "abandoned"],
+    "terminal_states": ["completed", "abandoned"],
+    "not_recorded": ["suggestion 展示", "child_clicked"],
+    "cancelled": "归入 abandoned（不区分，均不产生负面结论）",
+    "interrupted": "不需要（必要时作为 abandoned.reason 取值，不新增状态）",
+    "completed_minimum_definition": {
+      "reread_text": "在目标教材文本上完成一次学习行为确认（复用 study/done 语义）",
+      "grammar_pointer": "在教材语法提示页完成一次学习行为确认",
+      "model_text_review": "在教材范文上完成一次学习行为确认",
+      "replay_audio": "完整听完目标教材官方音频",
+      "redo_exercise": "提交至少 1 道教材题（产生 learning_record）",
+      "cross_section_practice": "提交至少 1 道教材题（产生 learning_record）"
+    },
+    "completed_requires_new_evidence": false
+  },
+  "relation_model": {
+    "chain": ["E1", "D1", "S1", "A1", "E2", "D2"],
+    "persistence": {
+      "E1": "事实层已有（learning_record）+ 派生证据",
+      "D1": "不持久化（派生；如需追溯用 diagnosis_key 派生指纹）",
+      "S1": "不持久化（派生）",
+      "A1": "必须持久化（唯一无法派生的事实）",
+      "E2": "派生自新的 learning_record",
+      "D2": "不持久化（派生）"
+    },
+    "action_evidence_cardinality": {"0": "允许（只看/只听，或仅 study/done）", "1": "允许",
+                                    "many": "允许（cross_section_practice 多题）"},
+    "action_multiple_lo": true,
+    "evidence_multiple_lo": true,
+    "provenance_required": true,
+    "intent_vs_fact": "target_lo_ids[]（意图）与 Evidence 的 LO 引用（事实）分开记录，互不覆盖"
+  },
+  "current_error_semantics": {
+    "definition": "该 LO 最近一条有效判断证据为 incorrect，且未被后续有效判断证据取代（行动状态，可进可出）",
+    "single_source_of_truth": "只有有效判断证据可改变；Action/click/completion 均不可",
+    "cases": [
+      {"case": 1, "scenario": "建议展示，未点击", "current_error": "保持"},
+      {"case": 2, "scenario": "点击但未开始", "current_error": "保持"},
+      {"case": 3, "scenario": "开始后中途退出（abandoned）", "current_error": "保持"},
+      {"case": 4, "scenario": "完成巩固但无新证据", "current_error": "保持（≠已解决）"},
+      {"case": 5, "scenario": "新证据 incorrect", "current_error": "保持（错误计数+1，可能升级 suspected_weak）"},
+      {"case": 6, "scenario": "新证据 partial", "current_error": "退出；进入“需要再看”语义"},
+      {"case": 7, "scenario": "新证据 correct", "current_error": "退出；但需按五项条件判定（≠掌握）"},
+      {"case": 8, "scenario": "之后再次错误", "current_error": "重新进入"}
+    ]
+  },
+  "historical_error_semantics": {
+    "definition": "learning_record 中所有 result=incorrect 的记录（事实）",
+    "mutability": "永久保留；不删除、不修改、不因答对或巩固完成而消失",
+    "usage": "参与 mastery 的最近 3 次与错误计数；不得用历史错误总数直接判薄弱"
+  },
+  "rediagnosis": {
+    "recommended_inputs": ["current_error：该 LO 最新一条有效证据",
+                           "最近窗口：最近 3 次有效判断",
+                           "全量计数：证据条数 / 任务类型数 / 自然日数"],
+    "final_state_rule": "mastery_rules_v1.json 五项条件（阈值不变，不改 JSON）",
+    "rejected_inputs": ["只看最新证据（丢失多维条件）",
+                        "只看全部历史（违反重复不增值与近期性）"],
+    "cross_item_chain": "E1（item A，错）→ LO → A1（reread_text）→ E2（item B，对）→ 同一 LO → D2",
+    "unmapped_rule": "无法映射到 LO 的证据不参与 D2，不强行绑定"
+  },
+  "evidence_relation": {
+    "action_to_evidence_binding": "related_evidence_ids[]（派生引用）+ 事实侧 provenance（record_id/item_id/LO ids）",
+    "no_single_evidence_id": true,
+    "no_evidence_copying": true
+  },
+  "learning_object_relation": {
+    "from_c2": "叶 LO 六类；一条证据可引用多 LO；unmapped 明确保留",
+    "action_can_span_multiple_lo": true,
+    "action_cannot_change_mastery": true
+  },
+  "child_autonomy": {
+    "checks": [
+      "Suggestion ≠ Command", "Suggestion ≠ Action", "展示建议不创建 Action",
+      "点击 ≠ 完成学习", "系统不自动开始/播放/跳转/推进", "不因 current_error 强制巩固",
+      "Action 完成不提升 mastery", "Abandoned/Cancelled 不产生负面结论",
+      "AI 不决定是否继续/是否巩固"
+    ],
+    "all_satisfied": true
+  },
+  "persistence_assessment": {
+    "scheme_a_no_table": {"feasible": false,
+                          "reason": "孩子开始/完成巩固无法由 learning_record 派生；若强行定义则 Action 退化为 Evidence 同义词"},
+    "scheme_b_minimal_table": {"feasible": true, "recommended": true,
+                               "fields_required": ["action_id", "learner_id", "action_type",
+                                                   "target_resource", "status", "started_at",
+                                                   "ended_at", "related_evidence_ids",
+                                                   "created_at"],
+                               "fields_optional": ["target_lo_ids", "source_ref（diagnosis_key/suggestion_key 派生指纹）"],
+                               "fields_rejected": ["suggestion_id（不持久化建议）",
+                                                   "diagnosis_id（不持久化诊断）"]}
+  },
+  "db_assessment": {
+    "migration_required": "maybe（仅可能新增 1 张最小 Action 表）",
+    "executed_this_phase": false,
+    "mapping_and_evidence_need_db": false
+  },
+  "frozen_boundaries": {
+    "frozen_services": ["learning/learning_service.py", "learning/session_service.py",
+                        "learning/activity_service.py", "learning/behavior_service.py",
+                        "learning/vocabulary_service.py", "learning/resource_pool_service.py"],
+    "must_not_modify": ["learning.db", "contentpack", "P2-4 成果", "P2-5 成果", "V1.2", "Android"],
+    "implementation_path": "新增独立最小层（consolidation_service + 可选最小表），不扩展冻结服务职责",
+    "conclusion": "A/B（不修改 frozen service）"
+  },
+  "spec_sync": {
+    "required": false,
+    "reason": "六类 action_type 直接来自 V1.2 二十二·6；“完成≠已解决”“只有新证据改变判定”是二十二·4/5 的推论；孩子自主与 AI 边界未变；阈值未改。Consolidation Action 属实现层概念，不属规范级原则"
+  },
+  "acceptance_criteria": [
+    "AC-01 Suggestion ≠ Action",
+    "AC-02 Click ≠ Started",
+    "AC-03 Started ≠ Completed",
+    "AC-04 Completed ≠ mastery 提升",
+    "AC-05 Completed without Evidence 不清除 current_error",
+    "AC-06 只有新有效证据参与重新诊断",
+    "AC-07 新证据可来自不同 item",
+    "AC-08 新证据可映射同一 LO",
+    "AC-09 Historical Error 不删除",
+    "AC-10 Current Error 可重新出现",
+    "AC-11 一个 Action 可 0/1/多个 Evidence",
+    "AC-12 一个 Evidence 可关联多个 LO",
+    "AC-13 Action provenance 保留",
+    "AC-14 Child autonomy 不被破坏",
+    "AC-15 AI 调用 0",
+    "AC-16 不修改数据库（本轮）",
+    "AC-17 不修改冻结代码",
+    "AC-18 不修改 V1.2",
+    "AC-19 可进入 P2-6-C-4 综合设计评审"
+  ],
+  "edge_cases": [
+    {"id": 1, "scenario": "建议展示但从未点击", "handling": "无 Action/证据；current_error 保持"},
+    {"id": 2, "scenario": "点击后立即退出", "handling": "未 started；无 Action；current_error 保持"},
+    {"id": 3, "scenario": "开始后退出", "handling": "abandoned；无证据；不影响 mastery"},
+    {"id": 4, "scenario": "完成但无 Evidence", "handling": "completed；current_error 保持"},
+    {"id": 5, "scenario": "完成并 incorrect", "handling": "current_error 保持；错误计数+1"},
+    {"id": 6, "scenario": "完成并 partial", "handling": "current_error 退出；进入需要再看"},
+    {"id": 7, "scenario": "完成并 correct（历史错误多）", "handling": "current_error 退出；mastery 按五项条件"},
+    {"id": 8, "scenario": "之后再次错误", "handling": "current_error 重新进入"},
+    {"id": 9, "scenario": "一个 Action 涉及多个 LO", "handling": "target_lo_ids 记录意图；归属以证据为准"},
+    {"id": 10, "scenario": "一个 Evidence 涉及多个 LO", "handling": "一条证据 + 多引用（不复制）"},
+    {"id": 11, "scenario": "一个 Action 产生多个 Evidence", "handling": "related_evidence_ids 全量回填"},
+    {"id": 12, "scenario": "Action 完成后孩子没有继续", "handling": "无自动推进；状态即事实"},
+    {"id": 13, "scenario": "Action 被取消", "handling": "归入 abandoned；无负面结论"},
+    {"id": 14, "scenario": "新证据来自不同题目但同一 LO", "handling": "正常参与 D2"},
+    {"id": 15, "scenario": "找不到可靠 LO 映射", "handling": "unmapped；不强行绑定"}
+  ],
+  "open_decisions": [
+    "Action 是否落库（推荐方案 B）",
+    "started 的交互触发点（进入页面 vs 首次互动；不得用时间阈值发明规则）",
+    "completed 的确认方式（是否需显式完成按钮；属 UI 阶段决定）",
+    "cross_section_practice 的范围（建议同 Unit 内跨 Section；跨 Unit 属阶段验证）",
+    "历史 Action 是否在 UI 中呈现（产品决策）",
+    "Grammar LO 前置数据（来自 C-2）"
+  ],
+  "protection_baseline": {
+    "code_modified": false,
+    "learning_db_sha256_16": "DBAB743BF6D8F0A3",
+    "learning_db_mtime": "2026-09-12T23:15:13",
+    "contentpack_sha256_16": "ACEBC8C29CF5D11B",
+    "spec_v12_sha256_16": "6D3595CF7D83879A",
+    "mastery_rules_sha256_16": "E7EC99DB55DDCF04",
+    "tests_modified": false,
+    "android_modified": false,
+    "modified_files": [],
+    "created_files": ["audit/P2-6-C-3_consolidation_action_design.md",
+                      "audit/P2-6-C-3_consolidation_action_design.json"]
+  },
+  "tests": {"learning": 89, "workbench": 50, "web": 224, "total": 363, "fail": 0, "skip": 0,
+            "matches_baseline": true, "read_only": true},
+  "ai_calls": 0,
+  "next_step": "提交 P2-6-C-4 综合设计评审（重点：§20 的 6 项 Open Decisions）；本阶段不实施，不建表、不迁库、不写代码",
+  "answers_to_10_questions": {
+    "q1_action_definition": "孩子主动开始并执行的、指向某个教材巩固目标的最小学习行为单元（6 类，含目标、起止时间与完成判据）",
+    "q2_suggestion_vs_action": "建议是派生展示物（不落库、不改变状态）；Action 是孩子主动行为的持久化事实（仅 started 时创建）",
+    "q3_click_started_completed": "只记录 started 与终态（completed/abandoned）；click 不单独记录",
+    "q4_completed_without_evidence": "current_error 保持（未解决）",
+    "q5_when_rediagnosed": "当该 LO 出现新的有效判断证据时（correct 退出 / partial 转需要再看 / incorrect 保持并可能升级）",
+    "q6_how_new_evidence_links_lo": "通过 C-2 的确定性 item→LO 映射（可跨 item，一条证据可多引用），item_id 保留为 provenance",
+    "q7_historical_vs_current": "历史错误永久保留（事实）；Current Error 为 LO 级派生行动状态（可进可出）；互不删除",
+    "q8_need_persist_action": true,
+    "q9_need_db_change": "可能需要（仅 1 张最小 Action 表；本轮不实施）",
+    "q10_c4_ready": true
+  }
+}

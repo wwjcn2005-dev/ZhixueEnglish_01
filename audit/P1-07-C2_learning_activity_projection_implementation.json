@@ -1,0 +1,77 @@
+{
+  "task": "P1-07-C2 LearningActivity 最小模型与消费接口（归档）",
+  "archived_at": "2026-09-12T16:46:09+08:00",
+  "verdict": "PASS",
+  "new_files": [
+    "learning/activity_service.py",
+    "learning/test_activity_service.py"
+  ],
+  "modified_existing_files": [],
+  "schema_change": false,
+  "persisted": false,
+  "p1_04_defines_learning_activity": false,
+  "model_fields": {
+    "derived": [
+      "activity_id"
+    ],
+    "from_contentpack": [
+      "activity_type",
+      "resource_id",
+      "resource_type",
+      "item_id",
+      "textbook_id"
+    ],
+    "from_task_item": [
+      "task_id",
+      "ordinal",
+      "task_status"
+    ],
+    "trace": [
+      "source",
+      "contentpack",
+      "item_id",
+      "textbook_id"
+    ]
+  },
+  "undefined_fields_not_implemented": [
+    "source_kind",
+    "prompt_ref",
+    "options_ref",
+    "answer_key_ref",
+    "status",
+    "ai",
+    "mastery",
+    "review",
+    "question",
+    "difficulty",
+    "score",
+    "ui"
+  ],
+  "interfaces": [
+    "resolve_activity",
+    "list_task_activities",
+    "check_resource_type"
+  ],
+  "resource_types": [
+    "vocabulary",
+    "phrase",
+    "sentence_pattern"
+  ],
+  "tests": {
+    "file": "learning/test_activity_service.py",
+    "ran": 9,
+    "result": "OK",
+    "covers": "任务书 §十五 19 项"
+  },
+  "safety": {
+    "learning_db_written": false,
+    "contentpack_written": false,
+    "ai": 0,
+    "network": 0,
+    "new_deps": 0
+  },
+  "known_open_items": [
+    "activity_type 双重含义（未统一）",
+    "LearningActivity 未持久化（无表、无冻结设计）"
+  ]
+}

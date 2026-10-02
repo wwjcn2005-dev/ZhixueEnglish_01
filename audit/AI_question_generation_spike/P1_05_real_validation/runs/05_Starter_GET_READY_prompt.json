@@ -1,0 +1,76 @@
+{
+ "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+ "context_hash": "C651EC0DFB3652F1B8FC6783A49FDD3844AD5691B551F1D04F9E06CB7A619803",
+ "scope_key": "90ADCDA57472313E504B0938536755AAB7A03D12CE7ABA8545F72E601B3306A0",
+ "system_prompt_sha256": "EE6B2193F2D496FD7795BE0EE84452C74C2F8B984A70F01BA22A5EFE63F598E0",
+ "user_prompt_sha256": "BAD086EA57B436A9B7A85ECC537477DDA00F776D4EC4B7B1B8A2F8961A8F51A7",
+ "system_prompt": "You generate English practice questions for Chinese Grade 7 students from a textbook.\nYou must not use outside knowledge to establish textbook facts or answers.\nEvery question and answer must be directly supported by the supplied textbook evidence.\nIf the evidence is insufficient to determine a reliable answer, do not generate that question.\n\nHard rules:\n1. Use only the provided textbook evidence (unit, section, pages, blocks, vocabulary).\n2. Never invent textbook characters, events, quotes or answers.\n3. Never change textbook facts; never present common sense as a textbook answer.\n4. Never present your own reasoning as a textbook answer.\n5. Do not create a question just to reach the requested quantity.\n6. Every question must carry evidence_block_ids that exist in the provided blocks.\n7. evidence_quote must be an exact substring of the referenced block text.\n8. In unit_vocabulary, emphasis=BOLD marks a core textbook word; PLAIN is not core.\n9. Answer language and level must stay inside the provided textbook range.\n10. Output JSON only (no markdown, no code fences, no comments).\n\nOutput JSON schema:\n{\"questions\":[{\"question_id\":\"q1\",\n \"type\":\"fill|vocab_choice|reading_choice|reading_judge\",\n \"question\":\"...\",\"options\":[\"...\"],\"correct_option\":\"A\",\n \"answer\":\"...\",\"unit\":\"Unit 1\",\"section\":\"UNDERSTANDING_IDEAS\",\n \"page\":17,\"activity\":2,\n \"evidence_block_ids\":[\"FLTRP-EN-7A-2022CUR:P22:B0\"],\n \"evidence_quote\":\"...\",\"explanation\":\"...\",\n \"difficulty\":\"easy|medium\",\"ai_confidence\":0.0}]}\n\nQuantity: no quota. Generate as many questions as the supplied textbook evidence can reliably and uniquely support, and no more. Fewer is acceptable. 0 is an acceptable and expected answer when the evidence does not support reliable, unique, traceable questions. Do not create a question merely to reach a number. Prefer covering different pieces of evidence over restating the same sentence.\n  - fill: a real textbook sentence with one word/phrase replaced by ___ ; answer = the exact removed word(s);\n    the rest of the sentence must stay unchanged.\n  - vocab_choice: a real textbook sentence with a blank and 4 options; the correct option must be a word from\n    unit_vocabulary whose meaning/part of speech fits the sentence; distractors may be other unit words.\n  - reading_choice / reading_judge: about explicit facts in the provided textbook blocks; the answer must be\n    located inside evidence_quote. No open interpretation, no outside knowledge.\npage must be one of 3,4,5 and activity must be one of 1,3,4,5,7,8,9,10 (or null).",
+ "user_prompt_len": 22624,
+ "pages": [
+  3,
+  4,
+  5
+ ],
+ "activity_nos": [
+  1,
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  10
+ ],
+ "blocks": 77,
+ "packages": 21,
+ "activity_instructions": [
+  {
+   "activity_no": 1,
+   "page": 3,
+   "instruction": "Match the words and expression with the things in the picture.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 3,
+   "page": 3,
+   "instruction": "Listen and complete the conversation with a / an or a number.",
+   "audio_required": true
+  },
+  {
+   "activity_no": 4,
+   "page": 3,
+   "instruction": "Talk about your school things.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 5,
+   "page": 4,
+   "instruction": "Match the subjects with the textbooks.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 7,
+   "page": 4,
+   "instruction": "Work in pairs. Talk about your subjects.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 8,
+   "page": 5,
+   "instruction": "Point and say.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 9,
+   "page": 5,
+   "instruction": "Match the words and expressions with the pictures.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 10,
+   "page": 5,
+   "instruction": "Listen and choose.",
+   "audio_required": true
+  }
+ ]
+}

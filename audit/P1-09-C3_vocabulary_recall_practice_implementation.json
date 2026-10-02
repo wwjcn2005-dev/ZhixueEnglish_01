@@ -1,0 +1,100 @@
+{
+  "task": "P1-09-C3 Vocabulary Recall 最小练习（归档）",
+  "archived_at": "2026-09-12T17:18:58+08:00",
+  "verdict": "PASS",
+  "prerequisite": "P1-09-C3 只读设计侦察 = READY for implementation",
+  "new_files": [],
+  "modified_existing_files": [
+    "workbench/vocabulary_learning_v01.py",
+    "workbench/test_vocabulary_learning_v01.py"
+  ],
+  "deleted_files": [],
+  "schema_change": false,
+  "flow": [
+    "/start",
+    "学习页",
+    "/study → study·done（Session 不结束）",
+    "Recall 页（释义隐藏）",
+    "/recall（显示释义，不产生记录）",
+    "/practice（记得/模糊/忘了，恰好一条记录）",
+    "end_learning_session",
+    "结果页"
+  ],
+  "recall_mapping": {
+    "记得": { "learning_record": "practice · correct", "pool": "出池" },
+    "模糊": { "learning_record": "practice · partial", "pool": "current_weak" },
+    "忘了": { "learning_record": "practice · incorrect", "pool": "current_error" }
+  },
+  "ui_copy_rules": {
+    "allowed": ["记得", "模糊", "忘了", "回忆状态"],
+    "forbidden": ["答对", "答错", "部分正确", "系统判定", "已掌握"],
+    "semantics": "孩子自我回忆判断，不是系统客观判分；correct 不得表述为已证明掌握"
+  },
+  "implementation_points": {
+    "activity_type": "继续使用 practice（未新增 recall）",
+    "attempt_no": "仍由 learning_service._next_attempt_no() 计算",
+    "mastery": "完全复用；mastery_level 保持 unknown；无掌握率/百分比算法",
+    "resource_pool": "完全复用 resource_pool_service，页面不重实现池逻辑",
+    "records": "append-only（只 INSERT，不 UPDATE/DELETE）",
+    "single_click": "一次点击只产生一条判断记录；重复提交只读重放",
+    "no_inference": "显示释义/停留时间/点击顺序/打开次数均不推断结果"
+  },
+  "interfaces": {
+    "render_recall_page": "workbench/vocabulary_learning_v01.py:201",
+    "render_result_page": "workbench/vocabulary_learning_v01.py:249",
+    "routes": { "/recall": 322, "/practice": 324 },
+    "handlers": { "_recall": 387, "_practice": 402 }
+  },
+  "tests": {
+    "file": "workbench/test_vocabulary_learning_v01.py",
+    "ran": 20,
+    "result": "OK",
+    "new": {
+      "RecallRenderTest": 5,
+      "RecallFlowTest": 5
+    },
+    "classification": {
+      "P1-09-C2 既有": 10,
+      "P1-09-C3 新增": 10
+    }
+  },
+  "regression": {
+    "suites": {
+      "P1-06-C1": 14,
+      "P1-06-C2-A": 10,
+      "P1-07-C1": 9,
+      "P1-07-C2": 9,
+      "P1-08-C1": 8,
+      "P1-09-C1": 8
+    },
+    "result": "OK"
+  },
+  "safety": {
+    "ai": 0,
+    "network": 0,
+    "ocr_tts": 0,
+    "new_dependencies": 0,
+    "contentpack_written": false,
+    "official_db_polluted": false,
+    "tests_isolated": "%TEMP% learning.db 副本，已清理"
+  },
+  "frozen_hashes": {
+    "learning_service.py": "01341A05231EFCA6E0C801CF95D8A96F3DF732753F1F679688D44708586DF1D6",
+    "session_service.py": "0CF7A20615780831F544BDF295202028CE2EEFB15D234820CD1184AD4A6B665F",
+    "activity_service.py": "AAFF907C869797EE697D5F756C7E03C62CEB942809B2406933761195DA092028",
+    "resource_pool_service.py": "D4488E1FFBA6B553EB6932BE195932A4C464D9526790B138C0C55DAA612D2F37",
+    "behavior_service.py": "0C6EF4822F60D9251B68382C95A5D3D9987650811F4FC93C70875AF48249FC6D",
+    "vocabulary_service.py": "D06DCC76A5A4CCAF5C0BC3C17BB33CFF5D6056B7C872406A3934223C8870D632",
+    "workbench_vocabulary_learning_v01.py": "596EB9CFA5EC37BC1ABFC0085EA14FD1D7527F00A8A89B20762B4AFE5601BD65",
+    "workbench_test_vocabulary_learning_v01.py": "DCB16EF542FD4E48337E44FF49B5C479CBD2723D5B796B8B121B43140288CB37",
+    "learning.db": "DB97E460CDEC59CDC27AD2CAF0CC8FDF671E4832BAC0A09E6CE9BB986A0C311C",
+    "contentpack_v5": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A"
+  },
+  "known_open_items": [
+    "同秒 tie-break 未修复（一次点击只写一条，风险可控）",
+    "自评 ≠ 客观判分：correct 表示孩子自评记得，不得表述为系统判定掌握",
+    "practice 无客观判分能力（无定义/例句/标准答案/逐词官方音频）",
+    "任务书 §二十二 之后的内容在粘贴文本中被截断",
+    "P1-09-C2 页面测试两条流程断言按 §十/§十一 做了最小更正"
+  ]
+}

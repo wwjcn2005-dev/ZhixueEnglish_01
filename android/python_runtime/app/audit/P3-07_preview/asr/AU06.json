@@ -1,0 +1,314 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+  "audio_num": "AU06",
+  "filename": "06_Starter_Get to know each other_4 Read and check your answers.mp3",
+  "duration_ms": 43337,
+  "segment_count": 4,
+  "word_count": 55,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 5140,
+      "text": "Activity 4 Read and check your answers"
+    },
+    {
+      "start_ms": 7000,
+      "end_ms": 19620,
+      "text": "Hello everyone! My name is Zhu Xiaomeng. I'm 13 years old. My birthday is in May."
+    },
+    {
+      "start_ms": 19620,
+      "end_ms": 32800,
+      "text": "I love sports very much. I like running, playing football and swimming. I'm a bit nervous now,"
+    },
+    {
+      "start_ms": 33020,
+      "end_ms": 40040,
+      "text": "but I'm also happy to meet you. I want to make friends with you all."
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1300
+    },
+    {
+      "word": "4",
+      "start_ms": 1300,
+      "end_ms": 1800
+    },
+    {
+      "word": "Read",
+      "start_ms": 1800,
+      "end_ms": 3220
+    },
+    {
+      "word": "and",
+      "start_ms": 3220,
+      "end_ms": 3860
+    },
+    {
+      "word": "check",
+      "start_ms": 3860,
+      "end_ms": 4260
+    },
+    {
+      "word": "your",
+      "start_ms": 4260,
+      "end_ms": 4580
+    },
+    {
+      "word": "answers",
+      "start_ms": 4580,
+      "end_ms": 5140
+    },
+    {
+      "word": "Hello",
+      "start_ms": 6940,
+      "end_ms": 7600
+    },
+    {
+      "word": "everyone!",
+      "start_ms": 7600,
+      "end_ms": 8560
+    },
+    {
+      "word": "My",
+      "start_ms": 9520,
+      "end_ms": 10340
+    },
+    {
+      "word": "name",
+      "start_ms": 10340,
+      "end_ms": 10780
+    },
+    {
+      "word": "is",
+      "start_ms": 10780,
+      "end_ms": 11440
+    },
+    {
+      "word": "Zhu",
+      "start_ms": 11440,
+      "end_ms": 11900
+    },
+    {
+      "word": "Xiaomeng.",
+      "start_ms": 11900,
+      "end_ms": 12880
+    },
+    {
+      "word": "I'm",
+      "start_ms": 13160,
+      "end_ms": 14480
+    },
+    {
+      "word": "13",
+      "start_ms": 14480,
+      "end_ms": 15140
+    },
+    {
+      "word": "years",
+      "start_ms": 15140,
+      "end_ms": 15680
+    },
+    {
+      "word": "old.",
+      "start_ms": 15680,
+      "end_ms": 16220
+    },
+    {
+      "word": "My",
+      "start_ms": 16880,
+      "end_ms": 17740
+    },
+    {
+      "word": "birthday",
+      "start_ms": 17740,
+      "end_ms": 18300
+    },
+    {
+      "word": "is",
+      "start_ms": 18300,
+      "end_ms": 19000
+    },
+    {
+      "word": "in",
+      "start_ms": 19000,
+      "end_ms": 19220
+    },
+    {
+      "word": "May.",
+      "start_ms": 19220,
+      "end_ms": 19620
+    },
+    {
+      "word": "I",
+      "start_ms": 19620,
+      "end_ms": 21460
+    },
+    {
+      "word": "love",
+      "start_ms": 21460,
+      "end_ms": 21820
+    },
+    {
+      "word": "sports",
+      "start_ms": 21820,
+      "end_ms": 22520
+    },
+    {
+      "word": "very",
+      "start_ms": 22520,
+      "end_ms": 23000
+    },
+    {
+      "word": "much.",
+      "start_ms": 23000,
+      "end_ms": 23580
+    },
+    {
+      "word": "I",
+      "start_ms": 24380,
+      "end_ms": 24980
+    },
+    {
+      "word": "like",
+      "start_ms": 24980,
+      "end_ms": 25420
+    },
+    {
+      "word": "running,",
+      "start_ms": 25420,
+      "end_ms": 25980
+    },
+    {
+      "word": "playing",
+      "start_ms": 26680,
+      "end_ms": 27180
+    },
+    {
+      "word": "football",
+      "start_ms": 27180,
+      "end_ms": 27780
+    },
+    {
+      "word": "and",
+      "start_ms": 27780,
+      "end_ms": 28940
+    },
+    {
+      "word": "swimming.",
+      "start_ms": 28940,
+      "end_ms": 29500
+    },
+    {
+      "word": "I'm",
+      "start_ms": 30580,
+      "end_ms": 31140
+    },
+    {
+      "word": "a",
+      "start_ms": 31140,
+      "end_ms": 31280
+    },
+    {
+      "word": "bit",
+      "start_ms": 31280,
+      "end_ms": 31500
+    },
+    {
+      "word": "nervous",
+      "start_ms": 31500,
+      "end_ms": 32260
+    },
+    {
+      "word": "now,",
+      "start_ms": 32260,
+      "end_ms": 32800
+    },
+    {
+      "word": "but",
+      "start_ms": 33020,
+      "end_ms": 33720
+    },
+    {
+      "word": "I'm",
+      "start_ms": 33720,
+      "end_ms": 34080
+    },
+    {
+      "word": "also",
+      "start_ms": 34080,
+      "end_ms": 34520
+    },
+    {
+      "word": "happy",
+      "start_ms": 34520,
+      "end_ms": 35140
+    },
+    {
+      "word": "to",
+      "start_ms": 35140,
+      "end_ms": 35460
+    },
+    {
+      "word": "meet",
+      "start_ms": 35460,
+      "end_ms": 35700
+    },
+    {
+      "word": "you.",
+      "start_ms": 35700,
+      "end_ms": 36140
+    },
+    {
+      "word": "I",
+      "start_ms": 37000,
+      "end_ms": 37640
+    },
+    {
+      "word": "want",
+      "start_ms": 37640,
+      "end_ms": 37900
+    },
+    {
+      "word": "to",
+      "start_ms": 37900,
+      "end_ms": 38200
+    },
+    {
+      "word": "make",
+      "start_ms": 38200,
+      "end_ms": 38440
+    },
+    {
+      "word": "friends",
+      "start_ms": 38440,
+      "end_ms": 39060
+    },
+    {
+      "word": "with",
+      "start_ms": 39060,
+      "end_ms": 39420
+    },
+    {
+      "word": "you",
+      "start_ms": 39420,
+      "end_ms": 39680
+    },
+    {
+      "word": "all.",
+      "start_ms": 39680,
+      "end_ms": 40040
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 5.0
+  }
+}

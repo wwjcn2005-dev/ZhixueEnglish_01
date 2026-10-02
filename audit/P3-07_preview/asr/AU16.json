@@ -1,0 +1,589 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU16",
+  "audio_num": "AU16",
+  "filename": "16_Unit 2_Developing ideas _1 Listen to the conversation. What does Wang Chen do.mp3",
+  "duration_ms": 77976,
+  "segment_count": 11,
+  "word_count": 103,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 10600,
+      "text": "Developing ideas. Activity 1. Listen to the conversation. What does Wang Chen do?"
+    },
+    {
+      "start_ms": 12480,
+      "end_ms": 16880,
+      "text": "Look, Wei Feng. There's a brown bird over there."
+    },
+    {
+      "start_ms": 17680,
+      "end_ms": 24420,
+      "text": "Let's go closer. Oh no, it can't fly."
+    },
+    {
+      "start_ms": 25420,
+      "end_ms": 27300,
+      "text": "Shall we get the teacher?"
+    },
+    {
+      "start_ms": 29620,
+      "end_ms": 38020,
+      "text": "I have an idea. Wang Chen is in the bird watching club. Let's ask him."
+    },
+    {
+      "start_ms": 38960,
+      "end_ms": 41120,
+      "text": "Wang Chen, help!"
+    },
+    {
+      "start_ms": 42140,
+      "end_ms": 43320,
+      "text": "Let me see."
+    },
+    {
+      "start_ms": 45120,
+      "end_ms": 54040,
+      "text": "Don't worry, I know this kind of bird. I can help. We just need to hold it up to the window."
+    },
+    {
+      "start_ms": 54040,
+      "end_ms": 58660,
+      "text": "Wow! The bird flies away!"
+    },
+    {
+      "start_ms": 59700,
+      "end_ms": 71000,
+      "text": "Wang Chen, you know so much about birds! I'm in the school news station. Can I interview you next week?"
+    },
+    {
+      "start_ms": 71860,
+      "end_ms": 72500,
+      "text": "Sure!"
+    }
+  ],
+  "words": [
+    {
+      "word": "Developing",
+      "start_ms": 0,
+      "end_ms": 1460
+    },
+    {
+      "word": "ideas.",
+      "start_ms": 1460,
+      "end_ms": 2240
+    },
+    {
+      "word": "Activity",
+      "start_ms": 3380,
+      "end_ms": 4160
+    },
+    {
+      "word": "1.",
+      "start_ms": 4160,
+      "end_ms": 4600
+    },
+    {
+      "word": "Listen",
+      "start_ms": 5940,
+      "end_ms": 6240
+    },
+    {
+      "word": "to",
+      "start_ms": 6240,
+      "end_ms": 6560
+    },
+    {
+      "word": "the",
+      "start_ms": 6560,
+      "end_ms": 6700
+    },
+    {
+      "word": "conversation.",
+      "start_ms": 6700,
+      "end_ms": 7420
+    },
+    {
+      "word": "What",
+      "start_ms": 8660,
+      "end_ms": 8960
+    },
+    {
+      "word": "does",
+      "start_ms": 8960,
+      "end_ms": 9300
+    },
+    {
+      "word": "Wang",
+      "start_ms": 9300,
+      "end_ms": 9620
+    },
+    {
+      "word": "Chen",
+      "start_ms": 9620,
+      "end_ms": 9980
+    },
+    {
+      "word": "do?",
+      "start_ms": 9980,
+      "end_ms": 10600
+    },
+    {
+      "word": "Look,",
+      "start_ms": 12480,
+      "end_ms": 13260
+    },
+    {
+      "word": "Wei",
+      "start_ms": 13460,
+      "end_ms": 13640
+    },
+    {
+      "word": "Feng.",
+      "start_ms": 13640,
+      "end_ms": 13960
+    },
+    {
+      "word": "There's",
+      "start_ms": 14660,
+      "end_ms": 15140
+    },
+    {
+      "word": "a",
+      "start_ms": 15140,
+      "end_ms": 15240
+    },
+    {
+      "word": "brown",
+      "start_ms": 15240,
+      "end_ms": 15640
+    },
+    {
+      "word": "bird",
+      "start_ms": 15640,
+      "end_ms": 16160
+    },
+    {
+      "word": "over",
+      "start_ms": 16160,
+      "end_ms": 16580
+    },
+    {
+      "word": "there.",
+      "start_ms": 16580,
+      "end_ms": 16880
+    },
+    {
+      "word": "Let's",
+      "start_ms": 17680,
+      "end_ms": 18500
+    },
+    {
+      "word": "go",
+      "start_ms": 18500,
+      "end_ms": 18720
+    },
+    {
+      "word": "closer.",
+      "start_ms": 18720,
+      "end_ms": 19440
+    },
+    {
+      "word": "Oh",
+      "start_ms": 21020,
+      "end_ms": 21480
+    },
+    {
+      "word": "no,",
+      "start_ms": 21480,
+      "end_ms": 22040
+    },
+    {
+      "word": "it",
+      "start_ms": 22920,
+      "end_ms": 23260
+    },
+    {
+      "word": "can't",
+      "start_ms": 23260,
+      "end_ms": 23840
+    },
+    {
+      "word": "fly.",
+      "start_ms": 23840,
+      "end_ms": 24420
+    },
+    {
+      "word": "Shall",
+      "start_ms": 25420,
+      "end_ms": 26040
+    },
+    {
+      "word": "we",
+      "start_ms": 26040,
+      "end_ms": 26340
+    },
+    {
+      "word": "get",
+      "start_ms": 26340,
+      "end_ms": 26640
+    },
+    {
+      "word": "the",
+      "start_ms": 26640,
+      "end_ms": 26860
+    },
+    {
+      "word": "teacher?",
+      "start_ms": 26860,
+      "end_ms": 27300
+    },
+    {
+      "word": "I",
+      "start_ms": 29620,
+      "end_ms": 30420
+    },
+    {
+      "word": "have",
+      "start_ms": 30420,
+      "end_ms": 30720
+    },
+    {
+      "word": "an",
+      "start_ms": 30720,
+      "end_ms": 30920
+    },
+    {
+      "word": "idea.",
+      "start_ms": 30920,
+      "end_ms": 31500
+    },
+    {
+      "word": "Wang",
+      "start_ms": 32600,
+      "end_ms": 33040
+    },
+    {
+      "word": "Chen",
+      "start_ms": 33040,
+      "end_ms": 33480
+    },
+    {
+      "word": "is",
+      "start_ms": 33480,
+      "end_ms": 34140
+    },
+    {
+      "word": "in",
+      "start_ms": 34140,
+      "end_ms": 34320
+    },
+    {
+      "word": "the",
+      "start_ms": 34320,
+      "end_ms": 34580
+    },
+    {
+      "word": "bird",
+      "start_ms": 34580,
+      "end_ms": 34800
+    },
+    {
+      "word": "watching",
+      "start_ms": 34800,
+      "end_ms": 35280
+    },
+    {
+      "word": "club.",
+      "start_ms": 35280,
+      "end_ms": 35840
+    },
+    {
+      "word": "Let's",
+      "start_ms": 36500,
+      "end_ms": 37240
+    },
+    {
+      "word": "ask",
+      "start_ms": 37240,
+      "end_ms": 37580
+    },
+    {
+      "word": "him.",
+      "start_ms": 37580,
+      "end_ms": 38020
+    },
+    {
+      "word": "Wang",
+      "start_ms": 38960,
+      "end_ms": 39460
+    },
+    {
+      "word": "Chen,",
+      "start_ms": 39460,
+      "end_ms": 39960
+    },
+    {
+      "word": "help!",
+      "start_ms": 40420,
+      "end_ms": 41120
+    },
+    {
+      "word": "Let",
+      "start_ms": 42140,
+      "end_ms": 42540
+    },
+    {
+      "word": "me",
+      "start_ms": 42540,
+      "end_ms": 42840
+    },
+    {
+      "word": "see.",
+      "start_ms": 42840,
+      "end_ms": 43320
+    },
+    {
+      "word": "Don't",
+      "start_ms": 45120,
+      "end_ms": 45920
+    },
+    {
+      "word": "worry,",
+      "start_ms": 45920,
+      "end_ms": 46260
+    },
+    {
+      "word": "I",
+      "start_ms": 46820,
+      "end_ms": 47280
+    },
+    {
+      "word": "know",
+      "start_ms": 47280,
+      "end_ms": 47540
+    },
+    {
+      "word": "this",
+      "start_ms": 47540,
+      "end_ms": 47860
+    },
+    {
+      "word": "kind",
+      "start_ms": 47860,
+      "end_ms": 48200
+    },
+    {
+      "word": "of",
+      "start_ms": 48200,
+      "end_ms": 48440
+    },
+    {
+      "word": "bird.",
+      "start_ms": 48440,
+      "end_ms": 48820
+    },
+    {
+      "word": "I",
+      "start_ms": 49460,
+      "end_ms": 49840
+    },
+    {
+      "word": "can",
+      "start_ms": 49840,
+      "end_ms": 50060
+    },
+    {
+      "word": "help.",
+      "start_ms": 50060,
+      "end_ms": 50440
+    },
+    {
+      "word": "We",
+      "start_ms": 51260,
+      "end_ms": 51660
+    },
+    {
+      "word": "just",
+      "start_ms": 51660,
+      "end_ms": 52020
+    },
+    {
+      "word": "need",
+      "start_ms": 52020,
+      "end_ms": 52340
+    },
+    {
+      "word": "to",
+      "start_ms": 52340,
+      "end_ms": 52560
+    },
+    {
+      "word": "hold",
+      "start_ms": 52560,
+      "end_ms": 52880
+    },
+    {
+      "word": "it",
+      "start_ms": 52880,
+      "end_ms": 53140
+    },
+    {
+      "word": "up",
+      "start_ms": 53140,
+      "end_ms": 53380
+    },
+    {
+      "word": "to",
+      "start_ms": 53380,
+      "end_ms": 53600
+    },
+    {
+      "word": "the",
+      "start_ms": 53600,
+      "end_ms": 53700
+    },
+    {
+      "word": "window.",
+      "start_ms": 53700,
+      "end_ms": 54040
+    },
+    {
+      "word": "Wow!",
+      "start_ms": 54040,
+      "end_ms": 55520
+    },
+    {
+      "word": "The",
+      "start_ms": 56640,
+      "end_ms": 56980
+    },
+    {
+      "word": "bird",
+      "start_ms": 56980,
+      "end_ms": 57440
+    },
+    {
+      "word": "flies",
+      "start_ms": 57440,
+      "end_ms": 57980
+    },
+    {
+      "word": "away!",
+      "start_ms": 57980,
+      "end_ms": 58660
+    },
+    {
+      "word": "Wang",
+      "start_ms": 59700,
+      "end_ms": 60160
+    },
+    {
+      "word": "Chen,",
+      "start_ms": 60160,
+      "end_ms": 60620
+    },
+    {
+      "word": "you",
+      "start_ms": 61360,
+      "end_ms": 61660
+    },
+    {
+      "word": "know",
+      "start_ms": 61660,
+      "end_ms": 62000
+    },
+    {
+      "word": "so",
+      "start_ms": 62000,
+      "end_ms": 62460
+    },
+    {
+      "word": "much",
+      "start_ms": 62460,
+      "end_ms": 63120
+    },
+    {
+      "word": "about",
+      "start_ms": 63120,
+      "end_ms": 63480
+    },
+    {
+      "word": "birds!",
+      "start_ms": 63480,
+      "end_ms": 64120
+    },
+    {
+      "word": "I'm",
+      "start_ms": 65140,
+      "end_ms": 65820
+    },
+    {
+      "word": "in",
+      "start_ms": 65820,
+      "end_ms": 66020
+    },
+    {
+      "word": "the",
+      "start_ms": 66020,
+      "end_ms": 66260
+    },
+    {
+      "word": "school",
+      "start_ms": 66260,
+      "end_ms": 66660
+    },
+    {
+      "word": "news",
+      "start_ms": 66660,
+      "end_ms": 67060
+    },
+    {
+      "word": "station.",
+      "start_ms": 67060,
+      "end_ms": 67680
+    },
+    {
+      "word": "Can",
+      "start_ms": 68640,
+      "end_ms": 68940
+    },
+    {
+      "word": "I",
+      "start_ms": 68940,
+      "end_ms": 69280
+    },
+    {
+      "word": "interview",
+      "start_ms": 69280,
+      "end_ms": 69880
+    },
+    {
+      "word": "you",
+      "start_ms": 69880,
+      "end_ms": 70280
+    },
+    {
+      "word": "next",
+      "start_ms": 70280,
+      "end_ms": 70660
+    },
+    {
+      "word": "week?",
+      "start_ms": 70660,
+      "end_ms": 71000
+    },
+    {
+      "word": "Sure!",
+      "start_ms": 71860,
+      "end_ms": 72500
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 8.1
+  }
+}

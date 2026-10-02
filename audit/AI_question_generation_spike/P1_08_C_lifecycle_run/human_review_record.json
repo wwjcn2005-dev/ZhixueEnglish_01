@@ -1,0 +1,103 @@
+{
+  "stage": "P1-08-C",
+  "reviewed_at": "2026-09-17",
+  "reviewer_identity": {
+    "actor": "human:project-owner",
+    "actor_kind": "human",
+    "basis": "项目所有者（人类）在本轮明确指令中要求执行 PENDING_REVIEW → 人工审核 → APPROVED → 显式启用 → ACTIVE 全流程实跑；agent 只提供只读的事实性追溯核对结果（教材定位、引文命中、依赖完整性、provenance），不代替人类做质量判断。",
+    "limitation": "本轮审核发生在同一工作流内，属于受指令授权的演练审核。正式生产需要可归责的审核人身份与审核时间戳（由审核命令/界面捕获）。当前仓库只有数据库层硬门槛，尚无人机审核命令或界面 —— 记为工程缺口，不阻塞本轮验证。"
+  },
+  "sample_A_approved": {
+    "question_id": "AIQ:BD59C5958D45",
+    "lifecycle_before": "PENDING_REVIEW",
+    "lifecycle_after": "APPROVED",
+    "review_conclusion": "APPROVE",
+    "question_type": "vocab_choice",
+    "textbook_location": {
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "page": 32
+    },
+    "question": {
+      "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+      "options": ["band", "club", "stage", "instrument"],
+      "correct_option": "A",
+      "correct_answer": "band",
+      "difficulty": "easy"
+    },
+    "textbook_basis": {
+      "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+      "evidence_quote": "As a rock music lover, I play the electric guitar in the school band.",
+      "answer_appears_verbatim_in_quote": true,
+      "traceable_in_seconds": true
+    },
+    "checklist": {
+      "textbook_basis_exists": "PASS",
+      "stem_comprehensible": "PASS",
+      "answer_reasonable": "PASS",
+      "answer_unique": "PASS",
+      "learning_object_present": "PASS",
+      "evidence_present": "PASS",
+      "validator_passed": "PASS (validator v3, answer_support_type=EXACT)",
+      "provenance_complete": "PASS (generation_run/model/prompt_version/context_hash/generated_at/fingerprint)"
+    },
+    "notes": [
+      "四个选项均为当前 Unit 教材英语素材，干扰项与语境相关且只有 'band' 与教材原句一致。",
+      "该题被判为 mechanical_rewrite=true（教材原句挖空），但答案是教材重点词且唯一，按 V1.0 §9 允许作为基础练习候选。",
+      "needs_human_review=1 来自 EXACT 陷阱触发器，本轮人工审核正是对该标记的响应。"
+    ]
+  },
+  "sample_B_rejected": {
+    "question_id": "AIQ:1B3AF72923C4",
+    "lifecycle_before": "PENDING_REVIEW",
+    "lifecycle_after": "REJECTED",
+    "review_conclusion": "REJECT_CONTENT",
+    "recorded_reason_code": "LOW_VALUE",
+    "question_type": "fill",
+    "textbook_location": {
+      "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+      "page": 3
+    },
+    "question": {
+      "question_text": "I am ___, too.",
+      "correct_answer": "ready"
+    },
+    "textbook_basis": {
+      "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+      "evidence_quote": "I am ready, too"
+    },
+    "rejection_reasons": [
+      "LOW_VALUE（写入事件的 reason_code）：题干是教材短句的三词机械挖空片段，答案只靠与教材原句比对得到，学习增量低于可入库标准（mechanical_rewrite=true）。",
+      "次要观察（未写成第二个事件，因事件表 append-only 且本轮不追加非必要事件）：题干 'I am ___, too.' 单独看并不唯一 —— happy / fine / tired 等同样成立；唯一性依赖学生手上就有教材原句。这类'未加教材锚点的填空'应在后续入库闸门中显式处理。"
+    ],
+    "post_rejection": {
+      "lifecycle_status": "REJECTED",
+      "active": 0,
+      "direct_to_active_blocked": true
+    }
+  },
+  "sample_C_untouched": {
+    "question_id": "AIQ:75AAEBFE06DF",
+    "lifecycle_after": "PENDING_REVIEW",
+    "role": "未审核题；用于验证 PENDING_REVIEW 直接 ACTIVE 必须被硬门槛拒绝"
+  },
+  "sample_E_untouched": {
+    "question_id": "AIQ:7EBCDBC29563",
+    "lifecycle_after": "PENDING_REVIEW",
+    "stale": 1,
+    "stale_reason": "VALIDATOR_CHANGED",
+    "role": "STALE 题；用于验证 STALE 不能绕过（重新）审核直接 ACTIVE"
+  },
+  "sample_D_untouched": {
+    "question_id": "AIQ:BD59C5958D45",
+    "role": "APPROVED 但未启用的中间态样本；提交 REVIEW_APPROVED 后、写入 ACTIVATED 前读取状态，确认未自动升为 ACTIVE"
+  },
+  "sample_F_not_available": {
+    "role": "缺 evidence / validation / learning_object 的题",
+    "status": "NOT_TESTED_NO_ELIGIBLE_OBJECT",
+    "detail": "当前 21 道题的五表依赖均完整（缺依赖行为 0 条）。不伪造数据，故未实测。"
+  }
+}

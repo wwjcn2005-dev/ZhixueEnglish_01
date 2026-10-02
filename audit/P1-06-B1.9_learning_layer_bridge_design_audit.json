@@ -1,0 +1,161 @@
+{
+  "task": "P1-06-B1.9 教材资源 → 学习层桥接设计审计",
+  "generated_at": "2026-09-12T15:24:38+08:00",
+  "verdict": "PASS",
+  "baseline": {
+    "v5_sha256": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+    "v5_size": 2457600,
+    "task_listed_hash": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36EEF7F8386F4CE452A",
+    "task_listed_hash_len": 58,
+    "hash_matches_frozen_record": true,
+    "note": "任务书 hash 串为 58 位、非法 SHA256 长度，判定为任务书笔误；真实 v5 hash 与 G1-C/G1-D/G1-E/B1.8 冻结记录完全一致"
+  },
+  "counts": {
+    "Vocabulary": 287,
+    "Phrase": 23,
+    "Sentence Pattern": 52,
+    "total_resources": 362,
+    "source_ref": 815,
+    "tables": 21
+  },
+  "layers": {
+    "1_Textbook Resource": {
+      "present": true,
+      "carrier": "learning_item",
+      "rows": 362,
+      "user_independent": true,
+      "verdict": "PASS"
+    },
+    "2_Learning Goal": {
+      "present": true,
+      "carrier": "learning_goal",
+      "rows": 6,
+      "scope": "unit",
+      "goal_origin": "TEXTBOOK_EXPLICIT",
+      "verdict": "PASS"
+    },
+    "3_Learning Task": {
+      "present": false,
+      "status": "NOT PRESENT"
+    },
+    "4_Learning Record": {
+      "present": false,
+      "status": "NOT PRESENT"
+    },
+    "5_Mastery": {
+      "present": false,
+      "status": "NOT PRESENT"
+    },
+    "6_AI Artifact": {
+      "present": true,
+      "carrier": "ai_artifact",
+      "rows": 0,
+      "verdict": "PASS"
+    }
+  },
+  "schema_facts": {
+    "learning_item_columns": 19,
+    "learning_goal_columns": 9,
+    "ai_artifact_columns": 11,
+    "foreign_keys_learning_item": 0,
+    "foreign_keys_learning_goal": 0
+  },
+  "recommended_relations": {
+    "resource_to_goal": "当前解耦（0 关联）；未来引入派生目标时用 resource_goal 多对多（LATER）",
+    "goal_to_task": "Task 必引 goal_id",
+    "resource_to_task": "TaskItem 多对多直接引用 item_id（并冗余 goal_id）",
+    "resource_to_record": "Record 引用 task_id + item_id + learner_id，不写回教材资源",
+    "resource_to_mastery": "MasteryState(learner_id, item_id)，教材资源保持用户无关",
+    "resource_to_ai": "AIArtifact 单向引用 (target_layer='textbook_resource', target_id=item_id; context_ref_ids)；不得反向污染"
+  },
+  "key_conclusions": [
+    "Resource ≠ Task",
+    "Resource ≠ AI Artifact",
+    "Phrase 不是 Vocabulary 子类",
+    "Sentence Pattern 不是完整句实例",
+    "Sentence Pattern 不是 Grammar",
+    "BOLD ≠ 学习任务；CORE ≠ 今天必须学",
+    "教材资源必须保持用户无关"
+  ],
+  "grammar_extension": {
+    "recommended_item_type": "grammar",
+    "namespace": ":G:",
+    "reuse": "learning_item",
+    "schema_change": false
+  },
+  "future_extensions": [
+    {
+      "type": "Grammar",
+      "ns": ":G:"
+    },
+    {
+      "type": "Pronunciation",
+      "ns": ":PR:"
+    },
+    {
+      "type": "Communication Expression",
+      "ns": ":CE:"
+    },
+    {
+      "type": "Writing Expression",
+      "ns": ":WE:"
+    }
+  ],
+  "ai_cost_control": {
+    "textbook_layer_ai": 0,
+    "learning_layer_policy": "规则优先",
+    "ai_layer": "按需生成 + 可缓存 + 可审核",
+    "forbidden": [
+      "浏览触发 AI",
+      "每次打开资源调用 AI",
+      "把 AI 当资源基础设施"
+    ]
+  },
+  "ready": "READY FOR LEARNING-LAYER DESIGN",
+  "backlog": {
+    "P0": 0,
+    "P1": 0,
+    "P2": [
+      "G1D-01",
+      "G1D-02"
+    ],
+    "P3": [
+      "G1D-03",
+      "G1D-04",
+      "G1D-05",
+      "G1D-06",
+      "G1D-07",
+      "B19-01",
+      "B19-02",
+      "B19-03"
+    ]
+  },
+  "not_to_do": [
+    "不补 meaning_zh",
+    "不补 example / paired_response",
+    "不处理 P2/P3",
+    "不建 Grammar",
+    "不改 v5",
+    "不建关系表",
+    "不做 AI 生成",
+    "不做训练题",
+    "不做学习卡/UI",
+    "不引入依赖",
+    "不提前改 schema"
+  ],
+  "boundaries": {
+    "db_writes": 0,
+    "code_changes": 0,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "new_deps": 0,
+    "network": 0,
+    "zhixue_ai": false,
+    "v5_modified": false,
+    "new_files": [
+      "audit/P1-06-B1.9_learning_layer_bridge_design_audit.md",
+      "audit/P1-06-B1.9_learning_layer_bridge_design_audit.json"
+    ]
+  }
+}

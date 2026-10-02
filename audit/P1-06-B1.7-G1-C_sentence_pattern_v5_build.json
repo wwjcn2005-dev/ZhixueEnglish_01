@@ -1,0 +1,1200 @@
+{
+  "task": "P1-06-B1.7-G1-C Sentence Pattern 首批构建与 v5 原子发布",
+  "generated_at": "2026-09-12T15:13:08+08:00",
+  "rule_set": "P1-06-B1.7-G1-C",
+  "schema_version": "p1-04-v2",
+  "verdict": "PASS",
+  "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+  "import_batch": "FLTRP-EN-7A-2022CUR:S20260912T151307:B0",
+  "sha256": {
+    "v4 (输入, 构建后复核)": {
+      "hash": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+      "size": 2404352,
+      "status": "UNCHANGED"
+    },
+    "v5 (输出)": {
+      "hash": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+      "size": 2457600,
+      "status": "PUBLISHED"
+    },
+    "pdf (复核)": {
+      "hash": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+      "size": 123040213,
+      "status": "UNCHANGED"
+    }
+  },
+  "counts": {
+    "Vocabulary": [
+      287,
+      287
+    ],
+    "Phrase": [
+      23,
+      23
+    ],
+    "Sentence Pattern": [
+      0,
+      52
+    ],
+    "learning_item": [
+      310,
+      362
+    ],
+    "source_ref": [
+      762,
+      815
+    ]
+  },
+  "inserted": {
+    "learning_item": 52,
+    "source_ref": 53
+  },
+  "candidates": [
+    {
+      "seq": 1,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "{1} is a problem for me.",
+      "display_text": "... is a problem for me.",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:6A4FFA3BD5A9",
+      "content_hash": "ad50d8c8d3f339c2b1a708ac530126260aa18b00e6b21e5f6602ad53ecb116e7",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B2"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 2,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "One way is to {1}",
+      "display_text": "One way is to...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:4ECB1B7B9469",
+      "content_hash": "f749e997605dccdc6ce9ffff75ca18302de6348b77a4993144d3cc64d965ae52",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B5"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 3,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "It makes me feel {1}",
+      "display_text": "It makes me feel...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:0ABF4AB0A35D",
+      "content_hash": "0527495aa19a0efe5edb8c7e074f87823a7ed0b28d95191a4b7df29540e9bb48",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B3"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 4,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "Also, you can {1}",
+      "display_text": "Also, you can...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:B860E4DE2820",
+      "content_hash": "71c9968fde66cd43dc73818058427198dea333ab40191b9764b4b9c751971eb6",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B6"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 5,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "What are some solutions for {1}?",
+      "display_text": "What are some solutions for...?",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:8BEC263BDC6B",
+      "content_hash": "2464ac02c6f040030c9174558cf1d89eef09680a7cdd8883c7e0a86df0f2dc7e",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B4"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 6,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "We can learn {1} because {2}",
+      "display_text": "We can learn... because...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:9FC4B53D98A8",
+      "content_hash": "b4dae5aa9d6dc3f4aabe5bb6d7fab8d3476c2a0483e76dc1300903665476fd13",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B9"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 7,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "I feel {1} because {2}",
+      "display_text": "I feel... because...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:B39BB9033598",
+      "content_hash": "a24cb25359020d2c61f3455fab6c1e9b5bbb73905c68a156039502b8c055ce61",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B14"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 8,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "I think {1} is a new way to celebrate, because {2}",
+      "display_text": "I think... is a new way to celebrate, because...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:E68C79742B7E",
+      "content_hash": "28a5ece72f18e53e285d21a5d2baa459721719a132e06b22ee72fbadae248232",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B20",
+        "FLTRP-EN-7A-2022CUR:P117:B21"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 9,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "That’s a(n){1} idea!",
+      "display_text": "That’s a(n)... idea!",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:253B89E57824",
+      "content_hash": "ad0b07d61da95d4c8c2fe6e99ede82a8fc1363f4e6da738419510da97d799550",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B23"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 10,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "I agree. Another idea is to {1}",
+      "display_text": "I agree. Another idea is to...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:8B7218AD9A84",
+      "content_hash": "b8d84ee1f6047e5217372ad7dfe580a20cf004a101377da676289c817122b79b",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B22"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 11,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "I see it differently, because {1}",
+      "display_text": "I see it differently, because...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:517D024D1458",
+      "content_hash": "9b6d1867581d3ed1cd608c8da3c63efc0cbaad819df52114da44fbf8023a3316",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P117:B25"
+      ],
+      "pdf_pages": [
+        117
+      ]
+    },
+    {
+      "seq": 12,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "I am hoping to know {1}, may I?",
+      "display_text": "I am hoping to know..., may I?",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:54DFF8C74D22",
+      "content_hash": "b79e16382892e30c09f6437c720ecd6348af3b04a9eb43c5ef790fd1fb84d6fb",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P118:B7"
+      ],
+      "pdf_pages": [
+        118
+      ]
+    },
+    {
+      "seq": 13,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "Could I know {1}?",
+      "display_text": "Could I know...?",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:369D19DB7F05",
+      "content_hash": "4a5c54647838a65636ccc349a8a2a5dcc2a58ff20e1e1dc4bf60f67bafdbc3ef",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P118:B9"
+      ],
+      "pdf_pages": [
+        118
+      ]
+    },
+    {
+      "seq": 14,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "How does {1} do that?",
+      "display_text": "How does... do that?",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:61853BFC20BC",
+      "content_hash": "c2ba41c549751626068d280ed6864af9cadf9eed71625917dfcb186e57aff7c2",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P118:B0"
+      ],
+      "pdf_pages": [
+        118
+      ]
+    },
+    {
+      "seq": 15,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "{1} is very touching.",
+      "display_text": "... is very touching.",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:840DE6CF356D",
+      "content_hash": "8bb57991a4a51dcb55ec9e03ac9d0919f3c8187566caef685b5653d0db8f5012",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P118:B1"
+      ],
+      "pdf_pages": [
+        118
+      ]
+    },
+    {
+      "seq": 16,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "{1} acts as {2}",
+      "display_text": "... acts as...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:5C4E2A693BB2",
+      "content_hash": "57d676ba77b85476fcce200499e57d98fb72aad993e67521d53399fd9b44d8ab",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P118:B2"
+      ],
+      "pdf_pages": [
+        118
+      ]
+    },
+    {
+      "seq": 17,
+      "source": "COMMUNICATION_BANK",
+      "unit": "",
+      "template": "{1} not only {2}, but also {3}",
+      "display_text": "... not only..., but also...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:CF6FBFC2638B",
+      "content_hash": "526ecbf50bdc6e657ae3c845ad489cc02871997cf852d133676c78485cccc8c2",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_COMMUNICATION_BANK",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P118:B3"
+      ],
+      "pdf_pages": [
+        118
+      ]
+    },
+    {
+      "seq": 18,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 1",
+      "template": "Mr / Ms {1} is our {2} teacher.",
+      "display_text": "Mr / Ms... is our... teacher.",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:BA9E14A1269C",
+      "content_hash": "d962ea6916177eb860b9531f75fd3d2883a72eb798fa8174eca4a30c40f518b3",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P25:B2"
+      ],
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "seq": 19,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 1",
+      "template": "I’m so lucky to have a teacher like {1}",
+      "display_text": "I’m so lucky to have a teacher like...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:CB6F8380010D",
+      "content_hash": "cb6a123ab46d37fe133989e6592853998938faad8332d3289dc8ce106ac338b5",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P25:B8"
+      ],
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "seq": 20,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 1",
+      "template": "Mr / Ms {1} tells us {2}",
+      "display_text": "Mr / Ms... tells us...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:6790F7FDD91F",
+      "content_hash": "0c895f29c0e0d7b204057347e0b9674b9662417dd9a976cb074f5783dbda4c90",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P25:B3"
+      ],
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "seq": 21,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 1",
+      "template": "We need to {1}",
+      "display_text": "We need to...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:28988530D0B9",
+      "content_hash": "401c63a46e23e23ee20542100b4992a5461645a6de2bfbb9e0a1f513c5c42737",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P25:B9"
+      ],
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "seq": 22,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 1",
+      "template": "His / Her {1} make(s) me feel {2}",
+      "display_text": "His / Her... make(s) me feel...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:3B910559BBF7",
+      "content_hash": "427b37b3b15d11d0645c01881924c73ea65a36907466d75356933eafbb771cca",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P25:B4"
+      ],
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "seq": 23,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 1",
+      "template": "That’s really a(n){1} lesson!",
+      "display_text": "That’s really a(n)... lesson!",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:C8609BABF66E",
+      "content_hash": "33b3aeb9648ceb9bd0779dc679db87709fda1198b371de89bbfb791c0fdef59c",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P25:B10"
+      ],
+      "pdf_pages": [
+        25
+      ]
+    },
+    {
+      "seq": 24,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 2",
+      "template": "As a {1} lover, I {2}",
+      "display_text": "As a... lover, I...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:8305139849C0",
+      "content_hash": "8fcd04ac60c65622587ef8ace7d691150c687c5cda49374bb569be8582c06728",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P41:B3"
+      ],
+      "pdf_pages": [
+        41
+      ]
+    },
+    {
+      "seq": 25,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 2",
+      "template": "I like {1}",
+      "display_text": "I like...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:DD2DD189575C",
+      "content_hash": "c66e84214d280d2cd699c01afb75901553c80e8feeb87bb810742b33efe322a9",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P41:B1"
+      ],
+      "pdf_pages": [
+        41
+      ]
+    },
+    {
+      "seq": 26,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 2",
+      "template": "It feels great to {1}",
+      "display_text": "It feels great to...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:94B92CEF4BE5",
+      "content_hash": "8fd33a7b8f91b884b47a06ee451f5b3aea6a4cdd1ff0177912cbf4e2b646ab75",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P41:B4"
+      ],
+      "pdf_pages": [
+        41
+      ]
+    },
+    {
+      "seq": 27,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 2",
+      "template": "There is so much fun in {1}",
+      "display_text": "There is so much fun in...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:96B65125E679",
+      "content_hash": "4a0395729a41bc8e13d05bde5759dd6153b79e6f017c342b67f46fe2ab728a9f",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P41:B2"
+      ],
+      "pdf_pages": [
+        41
+      ]
+    },
+    {
+      "seq": 28,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 3",
+      "template": "I’m happy about {1}",
+      "display_text": "I’m happy about...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:ABE3685E593B",
+      "content_hash": "cd97b95f87a26b6b5df2fd8be05c40604af42adeb7689eeda4d1e210a3339d73",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P57:B5"
+      ],
+      "pdf_pages": [
+        57
+      ]
+    },
+    {
+      "seq": 29,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 3",
+      "template": "It is about {1}",
+      "display_text": "It is about...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:4DACBADEB90D",
+      "content_hash": "daca520cd0592433770ba8ed42138dc526dc6161afc71eafac5351e559746797",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P57:B2"
+      ],
+      "pdf_pages": [
+        57
+      ]
+    },
+    {
+      "seq": 30,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 3",
+      "template": "{1} ’s love may be {2}",
+      "display_text": "...’s love may be...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:83B1EF71579F",
+      "content_hash": "007795e91b93924214071fed2ae1e2f7d88f41982fdf8586cc2210f0d3e038ef",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P57:B6"
+      ],
+      "pdf_pages": [
+        57
+      ]
+    },
+    {
+      "seq": 31,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 3",
+      "template": "It brings back my memory of {1}",
+      "display_text": "It brings back my memory of...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:3C9DB6EA1919",
+      "content_hash": "8b1b8e86ca0df4c9ad706e91643c05c36e8d2af13f720a2243b4e3303fec56f2",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P57:B3"
+      ],
+      "pdf_pages": [
+        57
+      ]
+    },
+    {
+      "seq": 32,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 4",
+      "template": "I often {1}, but I never {2}",
+      "display_text": "I often..., but I never...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:8C044F5E24C6",
+      "content_hash": "0759566b2914599f900539e819b93c9f111c1e5530d34645466e34259236a3d3",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P73:B8"
+      ],
+      "pdf_pages": [
+        73
+      ]
+    },
+    {
+      "seq": 33,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 4",
+      "template": "The best part of the festival is {1}",
+      "display_text": "The best part of the festival is...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:15D219FB83CF",
+      "content_hash": "e1409d3b512f19fc8b99f0c4564a22c5956772f779f154d2727d4f3e21b20ed7",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P73:B11"
+      ],
+      "pdf_pages": [
+        73
+      ]
+    },
+    {
+      "seq": 34,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 4",
+      "template": "{1} hang(s) balloons and lanterns in {2}",
+      "display_text": "... hang(s) balloons and lanterns in...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:87F3F495B233",
+      "content_hash": "e64bab1b88582ff2edc2754bdc843cdea743d766ccc2da4a94d2de6f9a5c2f29",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P73:B9"
+      ],
+      "pdf_pages": [
+        73
+      ]
+    },
+    {
+      "seq": 35,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 4",
+      "template": "{1} is a must for {2}",
+      "display_text": "... is a must for...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:A9741B5C4DC6",
+      "content_hash": "fc33e9784df23cf42fb8f820cde51c7e62287e92ec120837608f4b90b555f73b",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P73:B12"
+      ],
+      "pdf_pages": [
+        73
+      ]
+    },
+    {
+      "seq": 36,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 4",
+      "template": "My family always have {1} at {2}",
+      "display_text": "My family always have... at...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:8A3F4FFEE3B2",
+      "content_hash": "82ca641ceda8b396fa398a4e33ccbd770db9b45f87b6cc3dd2ddfd5ca95b846c",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P73:B10"
+      ],
+      "pdf_pages": [
+        73
+      ]
+    },
+    {
+      "seq": 37,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 4",
+      "template": "I feel like {1}",
+      "display_text": "I feel like...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:09B522F70DF6",
+      "content_hash": "5331577778ec12a22637f50c4d564d4338cd81dbc553ae3d1f83abd2c86a193f",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P73:B13"
+      ],
+      "pdf_pages": [
+        73
+      ]
+    },
+    {
+      "seq": 38,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 5",
+      "template": "Without plants, {1} will / won’t {2}",
+      "display_text": "Without plants, ... will / won’t...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:F0CE3FB01C0B",
+      "content_hash": "e425c09a9add65560aadb4466fa9636f411cf3cde1798ee8f96f3e1bbe9eaa06",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P89:B0"
+      ],
+      "pdf_pages": [
+        89
+      ]
+    },
+    {
+      "seq": 39,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 5",
+      "template": "{1} need {2} to {3}",
+      "display_text": "... need... to...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:B9ABFBC3BE18",
+      "content_hash": "a31d18f54081756b03b2f25ec15f7377d39b20cdfa31f8c52fe4a2be2d16fe78",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P89:B3"
+      ],
+      "pdf_pages": [
+        89
+      ]
+    },
+    {
+      "seq": 40,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 5",
+      "template": "{1} mean a lot to {2}",
+      "display_text": "... mean a lot to...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:F81319841961",
+      "content_hash": "907e9160273452c12d02173227a7bc212c3f49afd04424d3d446ed93430d34f9",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P89:B1"
+      ],
+      "pdf_pages": [
+        89
+      ]
+    },
+    {
+      "seq": 41,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 5",
+      "template": "{1} can make {2}",
+      "display_text": "... can make...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:0A9238637DA0",
+      "content_hash": "2c8deaaf1ac48b51fe77bbdbf8ec810280be48085cbea8f5653f6e0467bb5592",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P89:B4"
+      ],
+      "pdf_pages": [
+        89
+      ]
+    },
+    {
+      "seq": 42,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 5",
+      "template": "{1} is useful for {2}",
+      "display_text": "... is useful for...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:693A979724F3",
+      "content_hash": "48011706c3d574f4a76918fbcbcd888e461e3355a3b80de5579d5270bac5758d",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P89:B2"
+      ],
+      "pdf_pages": [
+        89
+      ]
+    },
+    {
+      "seq": 43,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 5",
+      "template": "{1} give more than {2}",
+      "display_text": "... give more than...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:12F884F5C801",
+      "content_hash": "264d07c3623c20245a8e942e72878170bb89592e72b80ad028c087e334050024",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P89:B5"
+      ],
+      "pdf_pages": [
+        89
+      ]
+    },
+    {
+      "seq": 44,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 6",
+      "template": "It is a {1}",
+      "display_text": "It is a...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:12A9B6DD3826",
+      "content_hash": "e97da527946524818910a0aae611313c618cc8c37d269cb597a577b39cbd37ea",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P105:B11"
+      ],
+      "pdf_pages": [
+        105
+      ]
+    },
+    {
+      "seq": 45,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 6",
+      "template": "It can {1}",
+      "display_text": "It can...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:F87BE64B13C8",
+      "content_hash": "fd1f4c53705a3edaa0f17507d73f42d4ca98364c11c612a305b80e9ee47090fd",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P105:B18"
+      ],
+      "pdf_pages": [
+        105
+      ]
+    },
+    {
+      "seq": 46,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 6",
+      "template": "It eats {1}",
+      "display_text": "It eats...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:CA09B2FB5F1E",
+      "content_hash": "457f3bc19ef333e505dda2b05e4ed273b0070e3a0432723c4f7d70eee02fc3b5",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P105:B14"
+      ],
+      "pdf_pages": [
+        105
+      ]
+    },
+    {
+      "seq": 47,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 6",
+      "template": "It looks like {1}",
+      "display_text": "It looks like...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:87B87F45AF71",
+      "content_hash": "8a6bb1904a4e00d0d05c0502371f2775a40fe47c9290c7f7fb6d9392f6351e1c",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P105:B12"
+      ],
+      "pdf_pages": [
+        105
+      ]
+    },
+    {
+      "seq": 48,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 6",
+      "template": "It has long / big {1}",
+      "display_text": "It has long / big...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:DB503EB08E20",
+      "content_hash": "2101910f31a84a3caa839e1502d336f3d779f5369b7cb34bd0804d20cd2f631b",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P105:B19"
+      ],
+      "pdf_pages": [
+        105
+      ]
+    },
+    {
+      "seq": 49,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 6",
+      "template": "It’s amazing / clever / {1}",
+      "display_text": "It’s amazing / clever / ...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:90094E4358B0",
+      "content_hash": "25caa27b07d546a17ee3116b8762d2a2022d07d834ce1c85eacfd8ba910c06d0",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P105:B15"
+      ],
+      "pdf_pages": [
+        105
+      ]
+    },
+    {
+      "seq": 50,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 6",
+      "template": "Look, it’s {1}",
+      "display_text": "Look, it’s...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:C5BA4B319510",
+      "content_hash": "ebaf524be502dae24b13bf75df744bdb7534f270dbdd99f86f7ea23b66badb98",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P105:B13"
+      ],
+      "pdf_pages": [
+        105
+      ]
+    },
+    {
+      "seq": 51,
+      "source": "UNIT_USEFUL_EXPRESSIONS",
+      "unit": "Unit 6",
+      "template": "People call it {1}",
+      "display_text": "People call it...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:C1F32F02FBF6",
+      "content_hash": "810893d39df30af4e4102a8ec766de10f29a3189d8bd9eadea1b90765dc730bd",
+      "meaning_zh": null,
+      "learning_requirement": "NEED_REVIEW",
+      "review_status": "NEED_REVIEW",
+      "derivation_type": "FROM_UNIT_USEFUL_EXPRESSIONS",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P105:B20"
+      ],
+      "pdf_pages": [
+        105
+      ]
+    },
+    {
+      "seq": 52,
+      "source": "LANGUAGE_NOTE",
+      "unit": "Unit 5",
+      "template": "it’s no secret that {1}",
+      "display_text": "it’s no secret that...",
+      "item_id": "FLTRP-EN-7A-2022CUR:SP:9B749BCF8492",
+      "content_hash": "8bdb30f76d3bfa900964f430d7b738b0fbde53cbb5f8cf51dbab0476142bc128",
+      "meaning_zh": "众所周知......,...... 不是秘密",
+      "learning_requirement": "CORE",
+      "review_status": "AUTO_OK",
+      "derivation_type": "FROM_TEXTBOOK_NOTE",
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P131:B21"
+      ],
+      "pdf_pages": [
+        131
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "integrity_check",
+        "status": "PASS",
+        "detail": "ok"
+      },
+      {
+        "name": "foreign_key_check",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "name": "A_vocabulary_287",
+        "status": "PASS",
+        "detail": "287"
+      },
+      {
+        "name": "B_phrase_23",
+        "status": "PASS",
+        "detail": "23"
+      },
+      {
+        "name": "C_sentence_pattern_52",
+        "status": "PASS",
+        "detail": "52"
+      },
+      {
+        "name": "D_learning_item_362",
+        "status": "PASS",
+        "detail": "362"
+      },
+      {
+        "name": "E_vocabulary_rows_unchanged",
+        "status": "PASS",
+        "detail": "287 行"
+      },
+      {
+        "name": "F_phrase_rows_unchanged",
+        "status": "PASS",
+        "detail": "23 行"
+      },
+      {
+        "name": "G_existing_source_ref_unchanged",
+        "status": "PASS",
+        "detail": "762 行"
+      },
+      {
+        "name": "H_audio_asset_54",
+        "status": "PASS",
+        "detail": "54"
+      },
+      {
+        "name": "I_audio_mapping_54_candidate",
+        "status": "PASS",
+        "detail": "54 CANDIDATE"
+      },
+      {
+        "name": "J_table_count_21",
+        "status": "PASS",
+        "detail": "21"
+      },
+      {
+        "name": "no_sp_audio_mapping",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "name": "52_items_field_exact",
+        "status": "PASS",
+        "detail": "不一致=0"
+      },
+      {
+        "name": "source_ref_count_53",
+        "status": "PASS",
+        "detail": "53"
+      },
+      {
+        "name": "source_ref_block_exists",
+        "status": "PASS",
+        "detail": "断链=0"
+      },
+      {
+        "name": "textbook_emphasis_all_unknown",
+        "status": "PASS",
+        "detail": "{'UNKNOWN'}"
+      },
+      {
+        "name": "evidence_shape_ok",
+        "status": "PASS",
+        "detail": "异常=0"
+      },
+      {
+        "name": "source_surface_preserved",
+        "status": "PASS",
+        "detail": "{\"communication_bank\": 18, \"language_note\": 1, \"unit_useful_expression\": 34}（期望 {\"communication_bank\": 18, \"unit_useful_expression\": 34, \"language_note\": 1}）"
+      },
+      {
+        "name": "no_example_rows",
+        "status": "PASS",
+        "detail": "无实例/配对行（G1-C 仅写入冻结的 pattern_source）"
+      },
+      {
+        "name": "no_need_review_5_stored",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "name": "no_grammar_only_stored",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "name": "no_ai_artifact",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "name": "single_active_snapshot",
+        "status": "PASS",
+        "detail": "1"
+      }
+    ],
+    "failures": [],
+    "context_type_distribution": {
+      "communication_bank": 18,
+      "language_note": 1,
+      "unit_useful_expression": 34
+    },
+    "source_ref": 53
+  },
+  "exclusions": {
+    "5 NEED_REVIEW": "prefer A to B / ... provide... with... / How surprising, amazing! / What + a/an + adj + n + S + V! / it is hard to do sth —— 全部未入库",
+    "13 COMMUNICATION_EXPRESSION": "未升级为 Sentence Pattern（未写入任何行）",
+    "3 PHRASE_ONLY": "protect... from... / along the way / ... with a... face. —— 保持词组级",
+    "23 Phrase": "v4 既有 Phrase 未改动",
+    "Grammar-only": "there be 句型的用法 / 简单句的基本句型 / had better / used to / stop doing vs stop to do 等 —— 未入库"
+  },
+  "boundaries": {
+    "v4 是否修改": "否（只读 + 复制工作副本）",
+    "既有 287 Vocabulary": "逐行完全未变",
+    "既有 23 Phrase": "逐行完全未变",
+    "既有 source_ref": "逐行完全未变（仅新增 53 条 sentence_pattern 引用）",
+    "audio_asset / audio_mapping": "未改动（54 / 54 CANDIDATE）",
+    "schema": "未变更（21 张表不变，无 CREATE/ALTER/DROP）",
+    "PDF / MP3": "未修改",
+    "parser / 既有 builder / 规范 / 既有报告": "未修改",
+    "AI / OCR / TTS": "0 / 0 / 0",
+    "D:\\ZhixueAI": "未访问",
+    "G1-A 两个 Note": "保持冻结，未处理"
+  },
+  "notes": [
+    "source_ref 仅写入 G1-B 冻结的 53 条 pattern_source（不生成 example / paired_response 行），以保证候选集合与冻结清单精确相等。",
+    "G1-B 的 paired_response / example 设计保持有效，但需专门受控任务才可落库。",
+    "G1-A 两个 Note 保持冻结（Language notes 的 section 归属、pdf118 阅读顺序）。"
+  ]
+}

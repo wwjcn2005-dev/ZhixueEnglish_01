@@ -1,0 +1,64 @@
+{
+ "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+ "context_hash": "512200059B9827BD0855D5B9D6A771E4B3D455C97CCF5C686D62A9651B243448",
+ "scope_key": "7B737E2CC95FFCA10EDFB3B9AE875EF6175CF8E0F36A98B3DEF23C75ED181122",
+ "system_prompt_sha256": "9E4C64B59F78EAEEE98E615BF8B74F76DE9AF0091CA2E515DD280BF340A60217",
+ "user_prompt_sha256": "34F6F6E9578CAC033ACA01AC3E701FB48277EB359A834146793B8AC08514C1F0",
+ "system_prompt": "You generate English practice questions for Chinese Grade 7 students from a textbook.\nYou must not use outside knowledge to establish textbook facts or answers.\nEvery question and answer must be directly supported by the supplied textbook evidence.\nIf the evidence is insufficient to determine a reliable answer, do not generate that question.\n\nHard rules:\n1. Use only the provided textbook evidence (unit, section, pages, blocks, vocabulary).\n2. Never invent textbook characters, events, quotes or answers.\n3. Never change textbook facts; never present common sense as a textbook answer.\n4. Never present your own reasoning as a textbook answer.\n5. Do not create a question just to reach the requested quantity.\n6. Every question must carry evidence_block_ids that exist in the provided blocks.\n7. evidence_quote must be an exact substring of the referenced block text.\n8. In unit_vocabulary, emphasis=BOLD marks a core textbook word; PLAIN is not core.\n9. Answer language and level must stay inside the provided textbook range.\n10. Output JSON only (no markdown, no code fences, no comments).\n\nOutput JSON schema:\n{\"questions\":[{\"question_id\":\"q1\",\n \"type\":\"fill|vocab_choice|reading_choice|reading_judge\",\n \"question\":\"...\",\"options\":[\"...\"],\"correct_option\":\"A\",\n \"answer\":\"...\",\"unit\":\"Unit 1\",\"section\":\"UNDERSTANDING_IDEAS\",\n \"page\":17,\"activity\":2,\n \"evidence_block_ids\":[\"FLTRP-EN-7A-2022CUR:P22:B0\"],\n \"evidence_quote\":\"...\",\"explanation\":\"...\",\n \"difficulty\":\"easy|medium\",\"ai_confidence\":0.0}]}\n\nQuantity: no quota. Generate as many questions as the supplied textbook evidence can reliably and uniquely support, and no more. Fewer is acceptable. 0 is an acceptable and expected answer when the evidence does not support reliable, unique, traceable questions. Do not create a question merely to reach a number. Prefer covering different pieces of evidence over restating the same sentence.\n  - fill: a real textbook sentence with one word/phrase replaced by ___ ; answer = the exact removed word(s);\n    the rest of the sentence must stay unchanged.\n  - vocab_choice: a real textbook sentence with a blank and 4 options; the correct option must be a word from\n    unit_vocabulary whose meaning/part of speech fits the sentence; distractors may be other unit words.\n  - reading_choice / reading_judge: about explicit facts in the provided textbook blocks; the answer must be\n    located inside evidence_quote. No open interpretation, no outside knowledge.\npage must be one of 16,17,18,19,20 and activity must be one of 2,3,4,5,6,8 (or null).",
+ "user_prompt_len": 23460,
+ "pages": [
+  16,
+  17,
+  18,
+  19,
+  20
+ ],
+ "activity_nos": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  8
+ ],
+ "blocks": 53,
+ "packages": 19,
+ "activity_instructions": [
+  {
+   "activity_no": 2,
+   "page": 16,
+   "instruction": "Read the passage. What does the writer do in his first lesson?",
+   "audio_required": true
+  },
+  {
+   "activity_no": 3,
+   "page": 18,
+   "instruction": "Choose the main idea of the passage.a We should learn from great thinkers. b Teachers sometimes make mistakes.c Students need to think for themselves.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 4,
+   "page": 18,
+   "instruction": "Complete the summary with the words and expression from the passage.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 5,
+   "page": 19,
+   "instruction": "Read the sentences from the reading passage and summarise the grammar rules.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 6,
+   "page": 19,
+   "instruction": "Circle the correct words. 1 Ms Wang is my / I Chinese teacher.2 When is we / our next English class?3 Fang Wei is a new friend of mine / my in junior high.4 Jack’s teacher asks their / them to get to school early.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 8,
+   "page": 20,
+   "instruction": "Work in pairs. Talk about a teacher you like. Use the thinking map to organise your ideas. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+   "audio_required": true
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+  "phase": "P2-6-E",
+  "title": "V1.2 产品实现差距总审计",
+  "mode": "read_only_audit",
+  "status": "ISSUES_CONFIRMED",
+  "audited_at": "2026-09-13",
+  "headline": {
+    "A_true_completed": 6, "B_code_exists_product_missing": 6, "C_partial": 5,
+    "D_noncompliant_or_unusable": 2, "E_deferred": 4,
+    "exercises_total": 157, "fully_answerable": 98, "not_fully_answerable": 59,
+    "answerable_rate": 0.624,
+    "P0": 0, "P1": 6, "P2": 7, "P3": 4,
+    "ai_calls": 0, "modified_files": 0
+  },
+  "kpi_scan": {
+    "ui_kind_distribution": {"spelling": 26, "fill": 27, "self_check": 59,
+                             "short_answer": 35, "choice": 6, "match": 4},
+    "textbook_question_type_distribution": {"match": 9, "fill": 45, "speaking": 16,
+                                            "short_answer": 34, "choice": 12, "other": 14,
+                                            "writing": 7, "reflection": 18, "order": 1,
+                                            "judge": 1},
+    "audio_exercises": 41, "audio_without_answer_control": 8
+  },
+  "not_answerable_breakdown": {
+    "reflection": 18, "speaking": 16, "other": 13, "writing": 7, "choice": 4, "judge": 1
+  },
+  "defects_recheck": [
+    {"id": 1, "defect": "Exercise 10 (Starter GET_READY A10, choice)", "status": "CONFIRMED",
+     "detail": "options=[] → UI 降级 self_check", "severity": "P1"},
+    {"id": 2, "defect": "choice/judge 缺 options", "count": 5,
+     "items": ["Starter GET_READY A10", "Unit 1 UNDERSTANDING_IDEAS A6",
+               "Unit 3 UNDERSTANDING_IDEAS A3", "Unit 4 DEVELOPING_IDEAS A2(judge)",
+               "Unit 6 UNDERSTANDING_IDEAS A1"], "severity": "P1"},
+    {"id": 3, "defect": "fill 的 blanks 与 UI 输入框不一致", "detail":
+     "45 条 fill 中 18 条落成 spelling（无教材空位输入）；2 条数量不一致（9→8、0→1）",
+     "severity": "P1/P3"},
+    {"id": 4, "defect": "音频多、题目少", "detail": "41 条带音频练习中 8 条无作答控件",
+     "severity": "P1"},
+    {"id": 5, "defect": "dialogue/text 被当成 question", "detail": "questions[].text 为对话正文",
+     "severity": "P2"},
+    {"id": 6, "defect": "question_type 与 UI 不一致", "detail":
+     "12 条 choice 中仅 6 条渲染选择控件；judge 1 条未渲染", "severity": "P1"},
+    {"id": 7, "defect": "有 Exercise 无作答控件", "count": 59,
+     "detail": "其中 5 条为真缺陷，其余为设计性自评", "severity": "P1"},
+    {"id": 8, "defect": "有作答但无法产生有效 Evidence", "status": "CONFIRMED",
+     "severity": "P1"}
+  ],
+  "evidence_production": {
+    "valid_evidence_results": ["correct", "incorrect", "partial"],
+    "done_is_valid": false,
+    "only_path_producing_valid_evidence": "词汇词表自测（spelling，26 条，规则判分）",
+    "choice_fill_match": "由自评决定（done 无效；仅 partial 有效）",
+    "short_answer": "全部作答→done（无效）；部分作答→partial（有效）",
+    "self_check": "done（无效）",
+    "conclusion": "教材练习几乎无法产生有效证据，掌握判定拿不到教材练习证据"
+  },
+  "textbook_content_into_product": {
+    "vocabulary": {"data": true, "page": true, "reachable": true, "complete": true},
+    "phrase_sentence_pattern": {"data": true, "page": true, "reachable": true},
+    "text_dialogue_reading": {"data": true, "page": false, "reachable": false,
+                              "status": "B（数据有、页面无）"},
+    "grammar": {"data": "仅 13 条指针", "page": false, "status": "E（暂缓）"},
+    "listening_material": {"data": true, "page": "仅练习页可播放", "status": "C（部分）"}
+  },
+  "loop_status": {
+    "textbook_structures_and_audio": "A", "learning_object": "A（416 LO；89/157 映射；68 unmapped 显式）",
+    "learning_activity": "C（词汇可用；正文/语法/听力原文无学习页）",
+    "exercise_question": "C/D（62.4% 可作答；题目结构缺失）",
+    "child_response": "C（59 条只能自评；写作无输入框）",
+    "evidence": "D（仅词汇自测路径有效）",
+    "mastery": "A（LO 级派生；stable=0 属数据不足）",
+    "diagnosis": "A", "suggestion": "A", "child_choice": "A",
+    "consolidation_action": "E（DEFERRED，无记录）",
+    "new_evidence_rediagnosis": "A（读时派生，受 evidence 限制）"
+  },
+  "autonomy_check": {"auto_jump": false, "auto_start": false, "auto_play": false,
+                     "auto_select_content": false, "auto_path": false, "auto_next": false,
+                     "forced_consolidation": false, "forced_stage_test": false,
+                     "gamification": false, "violations": 0},
+  "ai_status": {"entry": "web/ai_grading.py（本地规则预检，not_connected）",
+                "in_main_learning_chain": false, "auto_decision": false,
+                "rule_completable_but_ai_dependent": false, "calls": 0},
+  "gap_matrix": [
+    {"capability": "Vocabulary 学习闭环", "status": "A", "gap": ""},
+    {"capability": "教材中心/Unit/词汇·短语·句型", "status": "A", "gap": ""},
+    {"capability": "教材音频播放", "status": "A", "gap": ""},
+    {"capability": "LO/证据聚合/掌握/诊断（派生）", "status": "A", "gap": "待真实数据"},
+    {"capability": "Review 教材建议", "status": "A", "gap": ""},
+    {"capability": "教材练习按题型作答", "status": "C", "gap": "62.4%；5 条无选项"},
+    {"capability": "教材练习产生有效证据", "status": "D", "gap": "仅词汇自测路径有效"},
+    {"capability": "教材正文/阅读/对话进入产品", "status": "B", "gap": "无页面"},
+    {"capability": "Grammar 学习", "status": "E", "gap": "教材数据前置"},
+    {"capability": "Listening 任务（原文+题目）", "status": "C", "gap": "8 条仅音频"},
+    {"capability": "Writing 任务作答", "status": "C", "gap": "无文本输入框"},
+    {"capability": "Consolidation Action", "status": "E", "gap": "DEFERRED"},
+    {"capability": "阶段验证/专项学习", "status": "E", "gap": "未实施"},
+    {"capability": "AI 批改/辅助", "status": "E", "gap": "本阶段不实现"},
+    {"capability": "孩子自主权/无游戏化", "status": "A", "gap": ""}
+  ],
+  "backlog": {
+    "P0": [],
+    "P1": [
+      "教材练习无法产生有效证据（仅词汇自测路径有效）",
+      "5 条 choice/judge 无选项控件（教材有题、APP 无控件）",
+      "18 条 fill 被替换为词表拼写自测（教材空位不可作答）",
+      "教材正文/阅读/对话未进入产品（数据有、页面无）",
+      "写作任务无输入框（7 条 writing 只能自评）",
+      "8 条带音频练习只有音频+自评（听力任务无法完成）"
+    ],
+    "P2": [
+      "Grammar 仅 13 条指针，无条目/练习/页面",
+      "练习解题结构未落库（无 Question 实体；questions 为正文；blanks 与题型不符）",
+      "53 条 exercises 无 activity_id（影响映射）",
+      "LO 级 mastery 未持久化",
+      "练习结果页教材定位不完整",
+      "首页最近学过仅覆盖词汇",
+      "G-Audio-1/2（12 条文字缺口；无转写）"
+    ],
+    "P3": [
+      "2 条 fill 的 blanks 与输入框数量不一致",
+      "Review 同词并置可能重复（G1，未触发）",
+      "练习列表未标注是否可在 APP 作答",
+      "既有 C4-06/09/10/12 等文案与长列表 Backlog"
+    ]
+  },
+  "twenty_minutes_answer": {
+    "can_do": [
+      "首页→教材中心→Unit→词汇/短语/句型 学习闭环（Study→Recall→Result，产生有效证据）",
+      "首页/需要再学→再次进入同一学习链",
+      "/review 查看池分组与教材学习建议（当前空态）",
+      "157 条练习中的 98 条可在 APP 内作答并提交（含 41 条带 🎧 官方音频）",
+      "查看结果页（无分数、无等级）"
+    ],
+    "cannot_do": [
+      "读教材正文/阅读/对话（无页面）",
+      "做语法学习/练习（无页面）",
+      "完成 59 条无作答控件的练习（含 5 条选择题、7 条写作）",
+      "完成 8 条只有音频+自评的听力任务",
+      "让教材练习的作答变成掌握证据（多为 done，无效）",
+      "让系统记录巩固行为（无 Action 记录）"
+    ],
+    "one_line": "20 分钟里孩子可完整学词汇/短语/句型（真闭环）、可在 62.4% 的教材练习里作答提交，但读不到正文、做不了语法与部分选择题、写作无处下笔，且这些练习的作答大多不会成为掌握证据。"
+  },
+  "spec_conflict": {
+    "v12_change_required": false,
+    "partially_unmet": ["教材是主线（正文/语法/听力材料层）", "教材练习准确还原"],
+    "not_violated": ["孩子做主", "AI 是助手", "Exercise/Question/Evidence 分离",
+                     "Audio playback ≠ Evidence", "不伪造答案"]
+  },
+  "tests": {"learning": 112, "workbench": 50, "web": 235, "total": 397,
+            "fail": 0, "skip": 0, "matches_baseline": true},
+  "protection": {
+    "learning_db_sha256": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "learning_db_mtime": "2026-09-12T23:15:13", "learning_db_tables": 7,
+    "learning_record_rows": 20, "mastery_state_rows": 7,
+    "integrity_check": "ok", "foreign_key_check": 0,
+    "contentpack_sha256_20": "ACEBC8C29CF5D11BAB50",
+    "spec_v12_sha256_20": "6D3595CF7D83879ADF3E",
+    "code_modified": 0, "database_writes": 0, "textbook_modified": 0,
+    "audio_modified": 0, "tests_modified": 0, "android_modified": 0, "ai_calls": 0,
+    "created_files": ["audit/P2-6-E_V1.2_product_gap_audit.md",
+                      "audit/P2-6-E_V1.2_product_gap_audit.json"]
+  },
+  "final": {"verdict": "ISSUES CONFIRMED（不阻塞 P2-6-D 冻结）",
+            "stopped": "审计完成即停止，不进入修复阶段"}
+}

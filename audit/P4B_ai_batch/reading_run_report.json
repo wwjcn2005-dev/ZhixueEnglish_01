@@ -1,0 +1,60 @@
+{
+ "run": "P4B reading comprehension",
+ "model": "deepseek-v4-pro",
+ "prompt_version": "p4b-reading-v1",
+ "started_at": "2026-09-19T22:01:38",
+ "tasks": [
+  {
+   "audio_code": "AU05",
+   "unit": "Starter",
+   "blocks": 8,
+   "chars": 952,
+   "kept": 3,
+   "dropped": [],
+   "usage": {
+    "prompt_tokens": 703,
+    "completion_tokens": 3167,
+    "total_tokens": 3870,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2872
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 447
+   },
+   "elapsed_s": 45.7
+  },
+  {
+   "audio_code": "AU11",
+   "unit": "Unit 1",
+   "blocks": 37,
+   "chars": 2509,
+   "kept": 3,
+   "dropped": [],
+   "usage": {
+    "prompt_tokens": 1434,
+    "completion_tokens": 3098,
+    "total_tokens": 4532,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2846
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 1178
+   },
+   "elapsed_s": 40.6
+  }
+ ],
+ "calls": 2,
+ "usage_total": {
+  "prompt_tokens": 2137,
+  "completion_tokens": 6265,
+  "total_tokens": 8402
+ },
+ "kept": 6,
+ "finished_at": "2026-09-19T22:03:04"
+}

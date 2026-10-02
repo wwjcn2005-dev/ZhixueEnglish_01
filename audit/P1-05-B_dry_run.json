@@ -1,0 +1,366 @@
+{
+  "task": "P1-05-B 第一阶段 Dry-run",
+  "generated_at": "2026-09-12T11:11:45+08:00",
+  "verdict": "PASS",
+  "schema_version": "p1-04-v1",
+  "rule_set_version": "P1-03-C",
+  "textbook_id": "FLTRP-EN-7A-2022CUR",
+  "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T111145",
+  "inputs": {
+    "pdf_filename": "（根据2022年版课程标准修订）义务教育教科书·英语 七年级上册.pdf",
+    "pdf_sha256": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+    "pdf_size": 123040213,
+    "mp3_count": 54,
+    "other_files": []
+  },
+  "projected_table_counts": {
+    "textbook_edition": 1,
+    "source_artifact": 55,
+    "page": 178,
+    "unit": 8,
+    "section": 46,
+    "activity": 96,
+    "content_block": 3854,
+    "content_asset": 628,
+    "evidence": 351,
+    "activity_content": 31,
+    "sub_question": 13,
+    "audio_asset": 54,
+    "audio_mapping": 54,
+    "source_ref": 0,
+    "learning_item": 0,
+    "learning_goal": 0,
+    "ai_artifact": 0,
+    "learner": 0,
+    "image_block_total": 3793
+  },
+  "checks": [
+    {
+      "name": "pdf_present",
+      "status": "PASS",
+      "hard": true,
+      "detail": "PDF 文件数 1"
+    },
+    {
+      "name": "pdf_sha256",
+      "status": "PASS",
+      "hard": true,
+      "detail": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F (期望 C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F)"
+    },
+    {
+      "name": "mp3_count",
+      "status": "PASS",
+      "hard": true,
+      "detail": "54 (期望 54)"
+    },
+    {
+      "name": "no_other_files",
+      "status": "PASS",
+      "hard": false,
+      "detail": "其他类型文件 []"
+    },
+    {
+      "name": "frozen_unit",
+      "status": "PASS",
+      "hard": true,
+      "detail": "8 (期望 8)"
+    },
+    {
+      "name": "frozen_section",
+      "status": "PASS",
+      "hard": true,
+      "detail": "46 (期望 46)"
+    },
+    {
+      "name": "frozen_activity",
+      "status": "PASS",
+      "hard": true,
+      "detail": "96 (期望 96)"
+    },
+    {
+      "name": "frozen_duplicate",
+      "status": "PASS",
+      "hard": true,
+      "detail": "0 (期望 0)"
+    },
+    {
+      "name": "frozen_boundary_need_review",
+      "status": "PASS",
+      "hard": true,
+      "detail": "23 (期望 23)"
+    },
+    {
+      "name": "frozen_reading_order_need_review",
+      "status": "PASS",
+      "hard": true,
+      "detail": "88 (期望 88)"
+    },
+    {
+      "name": "parser_quality_control_chars",
+      "status": "PASS",
+      "hard": true,
+      "detail": "status=PASS"
+    },
+    {
+      "name": "parser_quality_ligature",
+      "status": "PASS",
+      "hard": true,
+      "detail": "status=PASS"
+    },
+    {
+      "name": "parser_quality_units",
+      "status": "PASS",
+      "hard": true,
+      "detail": "status=PASS"
+    },
+    {
+      "name": "parser_quality_page_mapping",
+      "status": "PASS",
+      "hard": true,
+      "detail": "status=PASS"
+    },
+    {
+      "name": "parser_quality_cross_unit",
+      "status": "PASS",
+      "hard": true,
+      "detail": "status=PASS"
+    },
+    {
+      "name": "parser_quality_activity_numbering",
+      "status": "PASS",
+      "hard": true,
+      "detail": "status=PASS"
+    },
+    {
+      "name": "parser_quality_activity_gaps",
+      "status": "PASS",
+      "hard": false,
+      "detail": "status=REVIEW（编号缺口保留待审，属预期）"
+    },
+    {
+      "name": "pk_unique_textbook_edition",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=1 dup=0"
+    },
+    {
+      "name": "pk_unique_source_artifact",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=55 dup=0"
+    },
+    {
+      "name": "pk_unique_page",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=178 dup=0"
+    },
+    {
+      "name": "pk_unique_unit",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=8 dup=0"
+    },
+    {
+      "name": "pk_unique_section",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=46 dup=0"
+    },
+    {
+      "name": "pk_unique_activity",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=96 dup=0"
+    },
+    {
+      "name": "pk_unique_content_block",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=3854 dup=0"
+    },
+    {
+      "name": "pk_unique_content_asset",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=628 dup=0"
+    },
+    {
+      "name": "pk_unique_evidence",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=351 dup=0"
+    },
+    {
+      "name": "pk_unique_audio_asset",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=54 dup=0"
+    },
+    {
+      "name": "pk_unique_audio_mapping",
+      "status": "PASS",
+      "hard": true,
+      "detail": "rows=54 dup=0"
+    },
+    {
+      "name": "business_key_unique_page",
+      "status": "PASS",
+      "hard": true,
+      "detail": "178 rows"
+    },
+    {
+      "name": "business_key_unique_activity",
+      "status": "PASS",
+      "hard": true,
+      "detail": "96 rows, dup=0"
+    },
+    {
+      "name": "fk_activity_section",
+      "status": "PASS",
+      "hard": true,
+      "detail": "activities=96"
+    },
+    {
+      "name": "fk_section_unit",
+      "status": "PASS",
+      "hard": true,
+      "detail": "sections=46"
+    },
+    {
+      "name": "fk_block_page",
+      "status": "PASS",
+      "hard": true,
+      "detail": "blocks=3854"
+    },
+    {
+      "name": "fk_asset_page",
+      "status": "PASS",
+      "hard": true,
+      "detail": "assets=628"
+    },
+    {
+      "name": "fk_audio_mapping_audio",
+      "status": "PASS",
+      "hard": true,
+      "detail": "mappings=54"
+    },
+    {
+      "name": "fk_audio_mapping_target",
+      "status": "PASS",
+      "hard": true,
+      "detail": "候选目标必须存在或为空"
+    },
+    {
+      "name": "fk_activity_content",
+      "status": "PASS",
+      "hard": true,
+      "detail": "relations=31"
+    },
+    {
+      "name": "source_ref_completeness",
+      "status": "PASS",
+      "hard": false,
+      "detail": "L2 rows=0 source_ref rows=0（首次 Dry-run 未生成派生资源，规则暂为空集校验）"
+    },
+    {
+      "name": "isolation_single_textbook",
+      "status": "PASS",
+      "hard": true,
+      "detail": "textbook_ids=['FLTRP-EN-7A-2022CUR']"
+    },
+    {
+      "name": "isolation_single_snapshot",
+      "status": "PASS",
+      "hard": true,
+      "detail": "FLTRP-EN-7A-2022CUR:S20260912T111145"
+    },
+    {
+      "name": "audio_all_candidate",
+      "status": "PASS",
+      "hard": true,
+      "detail": "状态分布 {'CANDIDATE': 54}；CONFIRMED_BY_HUMAN=0"
+    },
+    {
+      "name": "content_hash_present",
+      "status": "PASS",
+      "hard": true,
+      "detail": "blocks=3854 empty_hash=0"
+    },
+    {
+      "name": "content_hash_deterministic",
+      "status": "PASS",
+      "hard": true,
+      "detail": "digest=8D1E451230FA4CFB…"
+    },
+    {
+      "name": "need_review_preserved",
+      "status": "PASS",
+      "hard": false,
+      "detail": "boundary=23 order=88"
+    },
+    {
+      "name": "l3_ai_empty",
+      "status": "PASS",
+      "hard": true,
+      "detail": "ai_artifact rows=0"
+    },
+    {
+      "name": "l4_learner_empty",
+      "status": "PASS",
+      "hard": true,
+      "detail": "learner rows=0"
+    }
+  ],
+  "schema_probe": {
+    "ok": true,
+    "tables": [
+      "activity",
+      "activity_content",
+      "ai_artifact",
+      "audio_asset",
+      "audio_mapping",
+      "content_asset",
+      "content_block",
+      "evidence",
+      "import_batch",
+      "learning_goal",
+      "learning_item",
+      "page",
+      "parse_snapshot",
+      "section",
+      "source_artifact",
+      "source_ref",
+      "sub_question",
+      "textbook_edition",
+      "transcript",
+      "unit"
+    ],
+    "count": 20,
+    "location": "in-memory (:memory:)，未创建任何 SQLite 文件"
+  },
+  "audio": {
+    "audio_asset": 54,
+    "audio_mapping": 54,
+    "candidate": 54,
+    "confirmed": 0,
+    "target_resolved": 23
+  },
+  "frozen": {
+    "unit": 8,
+    "section": 46,
+    "activity": 96,
+    "duplicate_anomaly": 0,
+    "boundary_need_review": 23,
+    "reading_order_need_review": 88
+  },
+  "boundaries": {
+    "formal_db_created": false,
+    "learner_db_created": false,
+    "source_pdf_modified": false,
+    "source_mp3_modified": false,
+    "parser_modified": false,
+    "ai_calls": 0,
+    "transcripts_generated": 0
+  }
+}

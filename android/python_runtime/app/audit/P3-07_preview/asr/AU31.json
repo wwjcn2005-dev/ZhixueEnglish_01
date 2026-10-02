@@ -1,0 +1,224 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU31",
+  "audio_num": "AU31",
+  "filename": "31_Unit 4_Developing ideas _Phonetics in use.mp3",
+  "duration_ms": 49371,
+  "segment_count": 15,
+  "word_count": 26,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3120,
+      "text": "phonetics in use pronunciation"
+    },
+    {
+      "start_ms": 5000,
+      "end_ms": 5740,
+      "text": "or"
+    },
+    {
+      "start_ms": 7000,
+      "end_ms": 7440,
+      "text": "for"
+    },
+    {
+      "start_ms": 9000,
+      "end_ms": 9360,
+      "text": "more"
+    },
+    {
+      "start_ms": 11000,
+      "end_ms": 11740,
+      "text": "are"
+    },
+    {
+      "start_ms": 13000,
+      "end_ms": 13880,
+      "text": "problem"
+    },
+    {
+      "start_ms": 15000,
+      "end_ms": 15440,
+      "text": "along"
+    },
+    {
+      "start_ms": 16880,
+      "end_ms": 19420,
+      "text": "now practice more"
+    },
+    {
+      "start_ms": 21000,
+      "end_ms": 22840,
+      "text": "listen and repeat"
+    },
+    {
+      "start_ms": 25000,
+      "end_ms": 25320,
+      "text": "or"
+    },
+    {
+      "start_ms": 27000,
+      "end_ms": 27520,
+      "text": "talk"
+    },
+    {
+      "start_ms": 27520,
+      "end_ms": 31980,
+      "text": "short call"
+    },
+    {
+      "start_ms": 33520,
+      "end_ms": 36980,
+      "text": "bored are"
+    },
+    {
+      "start_ms": 38520,
+      "end_ms": 41620,
+      "text": "because clock"
+    },
+    {
+      "start_ms": 42520,
+      "end_ms": 46140,
+      "text": "what watch"
+    }
+  ],
+  "words": [
+    {
+      "word": "phonetics",
+      "start_ms": 0,
+      "end_ms": 700
+    },
+    {
+      "word": "in",
+      "start_ms": 700,
+      "end_ms": 1020
+    },
+    {
+      "word": "use",
+      "start_ms": 1020,
+      "end_ms": 1460
+    },
+    {
+      "word": "pronunciation",
+      "start_ms": 1460,
+      "end_ms": 3120
+    },
+    {
+      "word": "or",
+      "start_ms": 5000,
+      "end_ms": 5740
+    },
+    {
+      "word": "for",
+      "start_ms": 6740,
+      "end_ms": 7440
+    },
+    {
+      "word": "more",
+      "start_ms": 8660,
+      "end_ms": 9360
+    },
+    {
+      "word": "are",
+      "start_ms": 11000,
+      "end_ms": 11740
+    },
+    {
+      "word": "problem",
+      "start_ms": 13000,
+      "end_ms": 13880
+    },
+    {
+      "word": "along",
+      "start_ms": 14740,
+      "end_ms": 15440
+    },
+    {
+      "word": "now",
+      "start_ms": 16880,
+      "end_ms": 18280
+    },
+    {
+      "word": "practice",
+      "start_ms": 18280,
+      "end_ms": 18840
+    },
+    {
+      "word": "more",
+      "start_ms": 18840,
+      "end_ms": 19420
+    },
+    {
+      "word": "listen",
+      "start_ms": 21000,
+      "end_ms": 21900
+    },
+    {
+      "word": "and",
+      "start_ms": 21900,
+      "end_ms": 22480
+    },
+    {
+      "word": "repeat",
+      "start_ms": 22480,
+      "end_ms": 22840
+    },
+    {
+      "word": "or",
+      "start_ms": 24620,
+      "end_ms": 25320
+    },
+    {
+      "word": "talk",
+      "start_ms": 26820,
+      "end_ms": 27520
+    },
+    {
+      "word": "short",
+      "start_ms": 27520,
+      "end_ms": 29600
+    },
+    {
+      "word": "call",
+      "start_ms": 29600,
+      "end_ms": 31980
+    },
+    {
+      "word": "bored",
+      "start_ms": 33520,
+      "end_ms": 34280
+    },
+    {
+      "word": "are",
+      "start_ms": 34280,
+      "end_ms": 36980
+    },
+    {
+      "word": "because",
+      "start_ms": 38460,
+      "end_ms": 39160
+    },
+    {
+      "word": "clock",
+      "start_ms": 39160,
+      "end_ms": 41620
+    },
+    {
+      "word": "what",
+      "start_ms": 42520,
+      "end_ms": 43620
+    },
+    {
+      "word": "watch",
+      "start_ms": 43620,
+      "end_ms": 46140
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 4.6
+  }
+}

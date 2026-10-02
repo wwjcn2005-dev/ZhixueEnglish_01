@@ -1,0 +1,109 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "question": "I look up at Ms Chen. My eyes meet ___.",
+   "options": [],
+   "correct_option": "",
+   "answer": "hers",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 19,
+   "activity": 5,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P24:B1"
+   ],
+   "evidence_quote": "My eyes meet hers.",
+   "explanation": "The reading passage uses the possessive pronoun 'hers' to refer to Ms Chen's eyes. The grammar focus of Activity 5 is on possessive pronouns and adjectives.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "question": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+   "options": [
+    "mistake",
+    "mind",
+    "meaning",
+    "fact"
+   ],
+   "correct_option": "A",
+   "answer": "mistake",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 18,
+   "activity": 4,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P23:B6"
+   ],
+   "evidence_quote": "point out the mistake",
+   "explanation": "In the summary, the student says 'point out the mistake', and 'mistake' is a core word in the Unit vocabulary list.",
+   "difficulty": "easy",
+   "ai_confidence": 0.9
+  },
+  {
+   "question_id": "q3",
+   "type": "fill",
+   "question": "In the first lesson, some questions jump into my ___.",
+   "options": [],
+   "correct_option": "",
+   "answer": "mind",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 18,
+   "activity": 4,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P23:B5"
+   ],
+   "evidence_quote": "jump into my mind",
+   "explanation": "The summary shows that questions jump into the writer's mind. 'Mind' is a core vocabulary word in this unit.",
+   "difficulty": "easy",
+   "ai_confidence": 0.9
+  },
+  {
+   "question_id": "q4",
+   "type": "fill",
+   "question": "___ ___, this is my first lesson for all of you.",
+   "options": [],
+   "correct_option": "",
+   "answer": "In fact",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 19,
+   "activity": 5,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P24:B2"
+   ],
+   "evidence_quote": "In fact, this is my first lesson for all of you.",
+   "explanation": "The reading passage uses 'in fact' as a key expression. It is listed in the Unit vocabulary list.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q5",
+   "type": "vocab_choice",
+   "question": "Ms Chen writes a ___ on the blackboard.",
+   "options": [
+    "sentence",
+    "mistake",
+    "mind",
+    "meaning"
+   ],
+   "correct_option": "A",
+   "answer": "sentence",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 18,
+   "activity": 4,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P23:B4"
+   ],
+   "evidence_quote": "a sentence on the blackboard",
+   "explanation": "The summary states that Ms Chen writes a sentence on the blackboard. 'Sentence' is a core word in the Unit vocabulary list.",
+   "difficulty": "easy",
+   "ai_confidence": 0.9
+  }
+ ]
+}

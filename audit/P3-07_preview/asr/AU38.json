@@ -1,0 +1,264 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU38",
+  "audio_num": "AU38",
+  "filename": "38_Unit 5_Developing ideas _Phonetics in use.mp3",
+  "duration_ms": 64209,
+  "segment_count": 13,
+  "word_count": 36,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3680,
+      "text": "phonetics in use, pronunciation"
+    },
+    {
+      "start_ms": 5640,
+      "end_ms": 9660,
+      "text": "A. Amazing. Play."
+    },
+    {
+      "start_ms": 10980,
+      "end_ms": 15100,
+      "text": "I. Size. Like."
+    },
+    {
+      "start_ms": 16620,
+      "end_ms": 20740,
+      "text": "Oy. Toy. Boy."
+    },
+    {
+      "start_ms": 22720,
+      "end_ms": 24320,
+      "text": "Now practice more."
+    },
+    {
+      "start_ms": 26000,
+      "end_ms": 27480,
+      "text": "Listen and repeat."
+    },
+    {
+      "start_ms": 27480,
+      "end_ms": 31760,
+      "text": "eat a make"
+    },
+    {
+      "start_ms": 32980,
+      "end_ms": 37920,
+      "text": "cake great taste"
+    },
+    {
+      "start_ms": 40260,
+      "end_ms": 44960,
+      "text": "eye buy try"
+    },
+    {
+      "start_ms": 46900,
+      "end_ms": 49300,
+      "text": "light high"
+    },
+    {
+      "start_ms": 51300,
+      "end_ms": 54560,
+      "text": "oi and joy"
+    },
+    {
+      "start_ms": 54560,
+      "end_ms": 58680,
+      "text": "oil coin"
+    },
+    {
+      "start_ms": 60720,
+      "end_ms": 60800,
+      "text": "joy"
+    }
+  ],
+  "words": [
+    {
+      "word": "phonetics",
+      "start_ms": 0,
+      "end_ms": 880
+    },
+    {
+      "word": "in",
+      "start_ms": 880,
+      "end_ms": 1240
+    },
+    {
+      "word": "use,",
+      "start_ms": 1240,
+      "end_ms": 1700
+    },
+    {
+      "word": "pronunciation",
+      "start_ms": 1960,
+      "end_ms": 3680
+    },
+    {
+      "word": "A.",
+      "start_ms": 5340,
+      "end_ms": 6040
+    },
+    {
+      "word": "Amazing.",
+      "start_ms": 6840,
+      "end_ms": 8020
+    },
+    {
+      "word": "Play.",
+      "start_ms": 9280,
+      "end_ms": 9660
+    },
+    {
+      "word": "I.",
+      "start_ms": 10980,
+      "end_ms": 11900
+    },
+    {
+      "word": "Size.",
+      "start_ms": 12940,
+      "end_ms": 13380
+    },
+    {
+      "word": "Like.",
+      "start_ms": 14600,
+      "end_ms": 15100
+    },
+    {
+      "word": "Oy.",
+      "start_ms": 16620,
+      "end_ms": 17380
+    },
+    {
+      "word": "Toy.",
+      "start_ms": 18500,
+      "end_ms": 18900
+    },
+    {
+      "word": "Boy.",
+      "start_ms": 20020,
+      "end_ms": 20740
+    },
+    {
+      "word": "Now",
+      "start_ms": 22720,
+      "end_ms": 23300
+    },
+    {
+      "word": "practice",
+      "start_ms": 23300,
+      "end_ms": 23780
+    },
+    {
+      "word": "more.",
+      "start_ms": 23780,
+      "end_ms": 24320
+    },
+    {
+      "word": "Listen",
+      "start_ms": 26000,
+      "end_ms": 26440
+    },
+    {
+      "word": "and",
+      "start_ms": 26440,
+      "end_ms": 27100
+    },
+    {
+      "word": "repeat.",
+      "start_ms": 27100,
+      "end_ms": 27480
+    },
+    {
+      "word": "eat",
+      "start_ms": 27480,
+      "end_ms": 27840
+    },
+    {
+      "word": "a",
+      "start_ms": 27840,
+      "end_ms": 29480
+    },
+    {
+      "word": "make",
+      "start_ms": 29480,
+      "end_ms": 31760
+    },
+    {
+      "word": "cake",
+      "start_ms": 32960,
+      "end_ms": 33660
+    },
+    {
+      "word": "great",
+      "start_ms": 33660,
+      "end_ms": 35720
+    },
+    {
+      "word": "taste",
+      "start_ms": 35720,
+      "end_ms": 37920
+    },
+    {
+      "word": "eye",
+      "start_ms": 40000,
+      "end_ms": 40700
+    },
+    {
+      "word": "buy",
+      "start_ms": 40700,
+      "end_ms": 42660
+    },
+    {
+      "word": "try",
+      "start_ms": 42660,
+      "end_ms": 44960
+    },
+    {
+      "word": "light",
+      "start_ms": 46540,
+      "end_ms": 47240
+    },
+    {
+      "word": "high",
+      "start_ms": 47240,
+      "end_ms": 49300
+    },
+    {
+      "word": "oi",
+      "start_ms": 51300,
+      "end_ms": 52700
+    },
+    {
+      "word": "and",
+      "start_ms": 52700,
+      "end_ms": 54100
+    },
+    {
+      "word": "joy",
+      "start_ms": 54100,
+      "end_ms": 54560
+    },
+    {
+      "word": "oil",
+      "start_ms": 54560,
+      "end_ms": 56780
+    },
+    {
+      "word": "coin",
+      "start_ms": 56780,
+      "end_ms": 58680
+    },
+    {
+      "word": "joy",
+      "start_ms": 60100,
+      "end_ms": 60800
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 7.1
+  }
+}

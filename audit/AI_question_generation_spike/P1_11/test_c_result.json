@@ -1,0 +1,63 @@
+{
+  "stage": "P1-11",
+  "test": "C_cache",
+  "ai_calls": 0,
+  "retry_count": 0,
+  "checks": [
+    {
+      "question_id": "FIX-C1",
+      "question_fingerprint": "D267340CB812490023626C841B938956015D3CBC314F15874960596CE5676E26",
+      "review_context_hash": "EC89C23C99B6B30B3EEE8C1BC4F33616300289F38DA84F7BF3F95769F5401020",
+      "identical_key": {
+        "hit": true,
+        "file": "D:\\ZhixueEnglish\\structured\\ai\\quality_review\\AIRV_20260918T105827_P111_B.json",
+        "reason": "fingerprint + review_context_hash + review_version 三项完全一致（取最新一条）",
+        "ai_calls_needed": 0,
+        "reused_decision": "CAUTION",
+        "reused_answer_unique": "FAIL",
+        "reused_status": "UNIQUE_RISK"
+      },
+      "changed_review_version": {
+        "hit": false,
+        "ai_calls_allowed": 1,
+        "executed": false,
+        "note": "仅判定允许重新审核，按成本纪律**未实际调用**"
+      },
+      "changed_review_context": {
+        "hit": false,
+        "ai_calls_allowed": 1,
+        "executed": false,
+        "note": "仅判定允许重新审核，按成本纪律**未实际调用**"
+      }
+    },
+    {
+      "question_id": "FIX-C2",
+      "question_fingerprint": "37705D53BF99232ADAE447D987AF53E1E53C664D24F2A4C2B2B94D2276533244",
+      "review_context_hash": "7126D0E1FF5FF6EE844057357EB91EA64EE39838E33EB8B8FF24C63C4EDBE28D",
+      "identical_key": {
+        "hit": true,
+        "file": "D:\\ZhixueEnglish\\structured\\ai\\quality_review\\AIRV_20260918T105827_P111_B.json",
+        "reason": "fingerprint + review_context_hash + review_version 三项完全一致（取最新一条）",
+        "ai_calls_needed": 0,
+        "reused_decision": "CAUTION",
+        "reused_answer_unique": "FAIL",
+        "reused_status": "UNIQUE_RISK"
+      },
+      "changed_review_version": {
+        "hit": false,
+        "ai_calls_allowed": 1,
+        "executed": false,
+        "note": "仅判定允许重新审核，按成本纪律**未实际调用**"
+      },
+      "changed_review_context": {
+        "hit": false,
+        "ai_calls_allowed": 1,
+        "executed": false,
+        "note": "仅判定允许重新审核，按成本纪律**未实际调用**"
+      }
+    }
+  ],
+  "all_identical_keys_hit": true,
+  "all_changed_keys_miss": true,
+  "ai_calls_performed_in_this_test": 0
+}

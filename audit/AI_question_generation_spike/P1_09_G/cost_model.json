@@ -1,0 +1,60 @@
+{
+  "stage": "P1-09-G",
+  "ai_calls": 0,
+  "measured_basis": {
+    "p1_09_f_tokens_per_question": 5152.0,
+    "p1_09_d_tokens_per_question": 1024.7,
+    "source": "P1-09-F 真实调用（2 题 / 10,304 tokens）"
+  },
+  "schemes": [
+    {
+      "scheme": "A_100pct",
+      "share_entering_ai": 1.0,
+      "basis": "以 100 道选择题为单位",
+      "ai_calls": 100,
+      "tokens": 515200,
+      "tokens_per_choice_item": 5152.0,
+      "multiple_of_p1_09_d_per_item": 5.03,
+      "multiple_of_full_per_candidate": 1.0,
+      "estimated_human_review_items": 100,
+      "note": "纯模型估算；人工复核量按进入 AI 的题数计（AI 结论只作人工阅读辅助）"
+    },
+    {
+      "scheme": "B_50pct",
+      "share_entering_ai": 0.5,
+      "basis": "以 100 道选择题为单位",
+      "ai_calls": 50,
+      "tokens": 257600,
+      "tokens_per_choice_item": 2576.0,
+      "multiple_of_p1_09_d_per_item": 2.51,
+      "multiple_of_full_per_candidate": 0.5,
+      "estimated_human_review_items": 50,
+      "note": "纯模型估算；人工复核量按进入 AI 的题数计（AI 结论只作人工阅读辅助）"
+    },
+    {
+      "scheme": "C_30pct",
+      "share_entering_ai": 0.3,
+      "basis": "以 100 道选择题为单位",
+      "ai_calls": 30,
+      "tokens": 154560,
+      "tokens_per_choice_item": 1545.6,
+      "multiple_of_p1_09_d_per_item": 1.51,
+      "multiple_of_full_per_candidate": 0.3,
+      "estimated_human_review_items": 30,
+      "note": "纯模型估算；人工复核量按进入 AI 的题数计（AI 结论只作人工阅读辅助）"
+    },
+    {
+      "scheme": "D_20pct",
+      "share_entering_ai": 0.2,
+      "basis": "以 100 道选择题为单位",
+      "ai_calls": 20,
+      "tokens": 103040,
+      "tokens_per_choice_item": 1030.4,
+      "multiple_of_p1_09_d_per_item": 1.01,
+      "multiple_of_full_per_candidate": 0.2,
+      "estimated_human_review_items": 20,
+      "note": "纯模型估算；人工复核量按进入 AI 的题数计（AI 结论只作人工阅读辅助）"
+    }
+  ],
+  "estimates_only": true
+}

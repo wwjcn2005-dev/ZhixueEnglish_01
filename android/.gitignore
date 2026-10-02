@@ -1,0 +1,12 @@
+# 签名密钥与口令：绝不入库
+keystore/
+*.jks
+*.keystore
+
+# 本机配置
+local.properties
+
+# 构建产物与缓存
+build/
+.gradle/
+.kotlin/

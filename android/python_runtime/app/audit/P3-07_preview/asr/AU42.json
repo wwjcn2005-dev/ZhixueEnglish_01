@@ -1,0 +1,1109 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU42",
+  "audio_num": "AU42",
+  "filename": "42_Unit 6_Understanding ideas_2 Read the blogs and find out the words Henry used.mp3",
+  "duration_ms": 131605,
+  "segment_count": 23,
+  "word_count": 195,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3760,
+      "text": "Unit 6 Fantastic Friends"
+    },
+    {
+      "start_ms": 5500,
+      "end_ms": 6900,
+      "text": "Understanding ideas"
+    },
+    {
+      "start_ms": 8000,
+      "end_ms": 9140,
+      "text": "Activity too"
+    },
+    {
+      "start_ms": 11000,
+      "end_ms": 15620,
+      "text": "Read the blogs and find out the words Henry used."
+    },
+    {
+      "start_ms": 18000,
+      "end_ms": 18780,
+      "text": "Pigeon surprise"
+    },
+    {
+      "start_ms": 20500,
+      "end_ms": 21060,
+      "text": "Day 1"
+    },
+    {
+      "start_ms": 22500,
+      "end_ms": 25760,
+      "text": "We're studying birds for bird week at school."
+    },
+    {
+      "start_ms": 25760,
+      "end_ms": 32560,
+      "text": "Some lucky kids got penguins, but I have to write about pigeons."
+    },
+    {
+      "start_ms": 34140,
+      "end_ms": 35440,
+      "text": "Day 2"
+    },
+    {
+      "start_ms": 36520,
+      "end_ms": 45000,
+      "text": "I'm watching pigeons in the park now. They just knock around for the whole morning. They leave"
+    },
+    {
+      "start_ms": 45000,
+      "end_ms": 54360,
+      "text": "droppings here and there. Pigeons are boring and dirty. A girl is feeding them."
+    },
+    {
+      "start_ms": 54360,
+      "end_ms": 60380,
+      "text": "The birds are flying madly to her. They're scary!"
+    },
+    {
+      "start_ms": 62120,
+      "end_ms": 62760,
+      "text": "Day 3"
+    },
+    {
+      "start_ms": 63800,
+      "end_ms": 72400,
+      "text": "I'm doing some online research. Pigeons can recognize themselves in mirrors. How surprising!"
+    },
+    {
+      "start_ms": 73360,
+      "end_ms": 77000,
+      "text": "Are they so clever? I'd better go and watch them again."
+    },
+    {
+      "start_ms": 78520,
+      "end_ms": 79680,
+      "text": "Day 4"
+    },
+    {
+      "start_ms": 80740,
+      "end_ms": 89000,
+      "text": "I'm back at the park again. Oh, that pigeon is looking at itself in the water. Maybe I"
+    },
+    {
+      "start_ms": 89000,
+      "end_ms": 90260,
+      "text": "was wrong about pigeons."
+    },
+    {
+      "start_ms": 92420,
+      "end_ms": 93140,
+      "text": "Day 5"
+    },
+    {
+      "start_ms": 94840,
+      "end_ms": 104280,
+      "text": "I'm reading in the library now. Oh, there are over 200 kinds of pigeons. Some can fly"
+    },
+    {
+      "start_ms": 104280,
+      "end_ms": 111860,
+      "text": "several thousand kilometers and don't get lost. They can also fly at speeds of"
+    },
+    {
+      "start_ms": 111860,
+      "end_ms": 121480,
+      "text": "over 100 kilometers per hour. That's as fast as my dad's car. Well, pigeons aren't"
+    },
+    {
+      "start_ms": 121480,
+      "end_ms": 128320,
+      "text": "boring or scary. They are amazing. I just didn't know enough about them."
+    }
+  ],
+  "words": [
+    {
+      "word": "Unit",
+      "start_ms": 0,
+      "end_ms": 640
+    },
+    {
+      "word": "6",
+      "start_ms": 640,
+      "end_ms": 1200
+    },
+    {
+      "word": "Fantastic",
+      "start_ms": 1200,
+      "end_ms": 2740
+    },
+    {
+      "word": "Friends",
+      "start_ms": 2740,
+      "end_ms": 3760
+    },
+    {
+      "word": "Understanding",
+      "start_ms": 5420,
+      "end_ms": 5980
+    },
+    {
+      "word": "ideas",
+      "start_ms": 5980,
+      "end_ms": 6900
+    },
+    {
+      "word": "Activity",
+      "start_ms": 8000,
+      "end_ms": 8580
+    },
+    {
+      "word": "too",
+      "start_ms": 8580,
+      "end_ms": 9140
+    },
+    {
+      "word": "Read",
+      "start_ms": 10660,
+      "end_ms": 11220
+    },
+    {
+      "word": "the",
+      "start_ms": 11220,
+      "end_ms": 11620
+    },
+    {
+      "word": "blogs",
+      "start_ms": 11620,
+      "end_ms": 12120
+    },
+    {
+      "word": "and",
+      "start_ms": 12120,
+      "end_ms": 12960
+    },
+    {
+      "word": "find",
+      "start_ms": 12960,
+      "end_ms": 13360
+    },
+    {
+      "word": "out",
+      "start_ms": 13360,
+      "end_ms": 13640
+    },
+    {
+      "word": "the",
+      "start_ms": 13640,
+      "end_ms": 13820
+    },
+    {
+      "word": "words",
+      "start_ms": 13820,
+      "end_ms": 14280
+    },
+    {
+      "word": "Henry",
+      "start_ms": 14280,
+      "end_ms": 14820
+    },
+    {
+      "word": "used.",
+      "start_ms": 14820,
+      "end_ms": 15620
+    },
+    {
+      "word": "Pigeon",
+      "start_ms": 17740,
+      "end_ms": 18300
+    },
+    {
+      "word": "surprise",
+      "start_ms": 18300,
+      "end_ms": 18780
+    },
+    {
+      "word": "Day",
+      "start_ms": 20080,
+      "end_ms": 20640
+    },
+    {
+      "word": "1",
+      "start_ms": 20640,
+      "end_ms": 21060
+    },
+    {
+      "word": "We're",
+      "start_ms": 22220,
+      "end_ms": 22780
+    },
+    {
+      "word": "studying",
+      "start_ms": 22780,
+      "end_ms": 23220
+    },
+    {
+      "word": "birds",
+      "start_ms": 23220,
+      "end_ms": 23960
+    },
+    {
+      "word": "for",
+      "start_ms": 23960,
+      "end_ms": 24420
+    },
+    {
+      "word": "bird",
+      "start_ms": 24420,
+      "end_ms": 24760
+    },
+    {
+      "word": "week",
+      "start_ms": 24760,
+      "end_ms": 25060
+    },
+    {
+      "word": "at",
+      "start_ms": 25060,
+      "end_ms": 25340
+    },
+    {
+      "word": "school.",
+      "start_ms": 25340,
+      "end_ms": 25760
+    },
+    {
+      "word": "Some",
+      "start_ms": 25760,
+      "end_ms": 27140
+    },
+    {
+      "word": "lucky",
+      "start_ms": 27140,
+      "end_ms": 27480
+    },
+    {
+      "word": "kids",
+      "start_ms": 27480,
+      "end_ms": 27960
+    },
+    {
+      "word": "got",
+      "start_ms": 27960,
+      "end_ms": 28340
+    },
+    {
+      "word": "penguins,",
+      "start_ms": 28340,
+      "end_ms": 29160
+    },
+    {
+      "word": "but",
+      "start_ms": 29680,
+      "end_ms": 29940
+    },
+    {
+      "word": "I",
+      "start_ms": 29940,
+      "end_ms": 30400
+    },
+    {
+      "word": "have",
+      "start_ms": 30400,
+      "end_ms": 30680
+    },
+    {
+      "word": "to",
+      "start_ms": 30680,
+      "end_ms": 30840
+    },
+    {
+      "word": "write",
+      "start_ms": 30840,
+      "end_ms": 31060
+    },
+    {
+      "word": "about",
+      "start_ms": 31060,
+      "end_ms": 31540
+    },
+    {
+      "word": "pigeons.",
+      "start_ms": 31540,
+      "end_ms": 32560
+    },
+    {
+      "word": "Day",
+      "start_ms": 34140,
+      "end_ms": 35020
+    },
+    {
+      "word": "2",
+      "start_ms": 35020,
+      "end_ms": 35440
+    },
+    {
+      "word": "I'm",
+      "start_ms": 36520,
+      "end_ms": 37400
+    },
+    {
+      "word": "watching",
+      "start_ms": 37400,
+      "end_ms": 37700
+    },
+    {
+      "word": "pigeons",
+      "start_ms": 37700,
+      "end_ms": 38220
+    },
+    {
+      "word": "in",
+      "start_ms": 38220,
+      "end_ms": 38720
+    },
+    {
+      "word": "the",
+      "start_ms": 38720,
+      "end_ms": 38840
+    },
+    {
+      "word": "park",
+      "start_ms": 38840,
+      "end_ms": 39180
+    },
+    {
+      "word": "now.",
+      "start_ms": 39180,
+      "end_ms": 39500
+    },
+    {
+      "word": "They",
+      "start_ms": 40460,
+      "end_ms": 40680
+    },
+    {
+      "word": "just",
+      "start_ms": 40680,
+      "end_ms": 40920
+    },
+    {
+      "word": "knock",
+      "start_ms": 40920,
+      "end_ms": 41280
+    },
+    {
+      "word": "around",
+      "start_ms": 41280,
+      "end_ms": 41860
+    },
+    {
+      "word": "for",
+      "start_ms": 41860,
+      "end_ms": 42700
+    },
+    {
+      "word": "the",
+      "start_ms": 42700,
+      "end_ms": 42820
+    },
+    {
+      "word": "whole",
+      "start_ms": 42820,
+      "end_ms": 43020
+    },
+    {
+      "word": "morning.",
+      "start_ms": 43020,
+      "end_ms": 43520
+    },
+    {
+      "word": "They",
+      "start_ms": 44480,
+      "end_ms": 44600
+    },
+    {
+      "word": "leave",
+      "start_ms": 44600,
+      "end_ms": 45000
+    },
+    {
+      "word": "droppings",
+      "start_ms": 45000,
+      "end_ms": 45620
+    },
+    {
+      "word": "here",
+      "start_ms": 45620,
+      "end_ms": 46120
+    },
+    {
+      "word": "and",
+      "start_ms": 46120,
+      "end_ms": 46360
+    },
+    {
+      "word": "there.",
+      "start_ms": 46360,
+      "end_ms": 46740
+    },
+    {
+      "word": "Pigeons",
+      "start_ms": 47640,
+      "end_ms": 48360
+    },
+    {
+      "word": "are",
+      "start_ms": 48360,
+      "end_ms": 48680
+    },
+    {
+      "word": "boring",
+      "start_ms": 48680,
+      "end_ms": 49560
+    },
+    {
+      "word": "and",
+      "start_ms": 49560,
+      "end_ms": 50520
+    },
+    {
+      "word": "dirty.",
+      "start_ms": 50520,
+      "end_ms": 51260
+    },
+    {
+      "word": "A",
+      "start_ms": 52720,
+      "end_ms": 53000
+    },
+    {
+      "word": "girl",
+      "start_ms": 53000,
+      "end_ms": 53320
+    },
+    {
+      "word": "is",
+      "start_ms": 53320,
+      "end_ms": 53600
+    },
+    {
+      "word": "feeding",
+      "start_ms": 53600,
+      "end_ms": 54000
+    },
+    {
+      "word": "them.",
+      "start_ms": 54000,
+      "end_ms": 54360
+    },
+    {
+      "word": "The",
+      "start_ms": 54360,
+      "end_ms": 55080
+    },
+    {
+      "word": "birds",
+      "start_ms": 55080,
+      "end_ms": 56520
+    },
+    {
+      "word": "are",
+      "start_ms": 56520,
+      "end_ms": 56700
+    },
+    {
+      "word": "flying",
+      "start_ms": 56700,
+      "end_ms": 57100
+    },
+    {
+      "word": "madly",
+      "start_ms": 57100,
+      "end_ms": 57840
+    },
+    {
+      "word": "to",
+      "start_ms": 57840,
+      "end_ms": 58080
+    },
+    {
+      "word": "her.",
+      "start_ms": 58080,
+      "end_ms": 58380
+    },
+    {
+      "word": "They're",
+      "start_ms": 59460,
+      "end_ms": 60380
+    },
+    {
+      "word": "scary!",
+      "start_ms": 60380,
+      "end_ms": 60380
+    },
+    {
+      "word": "Day",
+      "start_ms": 62120,
+      "end_ms": 62360
+    },
+    {
+      "word": "3",
+      "start_ms": 62360,
+      "end_ms": 62760
+    },
+    {
+      "word": "I'm",
+      "start_ms": 63800,
+      "end_ms": 64720
+    },
+    {
+      "word": "doing",
+      "start_ms": 64720,
+      "end_ms": 64960
+    },
+    {
+      "word": "some",
+      "start_ms": 64960,
+      "end_ms": 65260
+    },
+    {
+      "word": "online",
+      "start_ms": 65260,
+      "end_ms": 65740
+    },
+    {
+      "word": "research.",
+      "start_ms": 65740,
+      "end_ms": 66400
+    },
+    {
+      "word": "Pigeons",
+      "start_ms": 67280,
+      "end_ms": 68200
+    },
+    {
+      "word": "can",
+      "start_ms": 68200,
+      "end_ms": 68640
+    },
+    {
+      "word": "recognize",
+      "start_ms": 68640,
+      "end_ms": 69260
+    },
+    {
+      "word": "themselves",
+      "start_ms": 69260,
+      "end_ms": 69720
+    },
+    {
+      "word": "in",
+      "start_ms": 69720,
+      "end_ms": 70500
+    },
+    {
+      "word": "mirrors.",
+      "start_ms": 70500,
+      "end_ms": 70880
+    },
+    {
+      "word": "How",
+      "start_ms": 71620,
+      "end_ms": 71880
+    },
+    {
+      "word": "surprising!",
+      "start_ms": 71880,
+      "end_ms": 72400
+    },
+    {
+      "word": "Are",
+      "start_ms": 73360,
+      "end_ms": 73600
+    },
+    {
+      "word": "they",
+      "start_ms": 73600,
+      "end_ms": 73740
+    },
+    {
+      "word": "so",
+      "start_ms": 73740,
+      "end_ms": 74060
+    },
+    {
+      "word": "clever?",
+      "start_ms": 74060,
+      "end_ms": 74380
+    },
+    {
+      "word": "I'd",
+      "start_ms": 75140,
+      "end_ms": 75640
+    },
+    {
+      "word": "better",
+      "start_ms": 75640,
+      "end_ms": 75820
+    },
+    {
+      "word": "go",
+      "start_ms": 75820,
+      "end_ms": 76040
+    },
+    {
+      "word": "and",
+      "start_ms": 76040,
+      "end_ms": 76180
+    },
+    {
+      "word": "watch",
+      "start_ms": 76180,
+      "end_ms": 76460
+    },
+    {
+      "word": "them",
+      "start_ms": 76460,
+      "end_ms": 76640
+    },
+    {
+      "word": "again.",
+      "start_ms": 76640,
+      "end_ms": 77000
+    },
+    {
+      "word": "Day",
+      "start_ms": 78520,
+      "end_ms": 79220
+    },
+    {
+      "word": "4",
+      "start_ms": 79220,
+      "end_ms": 79680
+    },
+    {
+      "word": "I'm",
+      "start_ms": 80740,
+      "end_ms": 81520
+    },
+    {
+      "word": "back",
+      "start_ms": 81520,
+      "end_ms": 81740
+    },
+    {
+      "word": "at",
+      "start_ms": 81740,
+      "end_ms": 81920
+    },
+    {
+      "word": "the",
+      "start_ms": 81920,
+      "end_ms": 82020
+    },
+    {
+      "word": "park",
+      "start_ms": 82020,
+      "end_ms": 82320
+    },
+    {
+      "word": "again.",
+      "start_ms": 82320,
+      "end_ms": 82660
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 83360,
+      "end_ms": 83920
+    },
+    {
+      "word": "that",
+      "start_ms": 84440,
+      "end_ms": 84760
+    },
+    {
+      "word": "pigeon",
+      "start_ms": 84760,
+      "end_ms": 85160
+    },
+    {
+      "word": "is",
+      "start_ms": 85160,
+      "end_ms": 85420
+    },
+    {
+      "word": "looking",
+      "start_ms": 85420,
+      "end_ms": 85660
+    },
+    {
+      "word": "at",
+      "start_ms": 85660,
+      "end_ms": 85900
+    },
+    {
+      "word": "itself",
+      "start_ms": 85900,
+      "end_ms": 86300
+    },
+    {
+      "word": "in",
+      "start_ms": 86300,
+      "end_ms": 86780
+    },
+    {
+      "word": "the",
+      "start_ms": 86780,
+      "end_ms": 86900
+    },
+    {
+      "word": "water.",
+      "start_ms": 86900,
+      "end_ms": 87300
+    },
+    {
+      "word": "Maybe",
+      "start_ms": 88180,
+      "end_ms": 88700
+    },
+    {
+      "word": "I",
+      "start_ms": 88700,
+      "end_ms": 89000
+    },
+    {
+      "word": "was",
+      "start_ms": 89000,
+      "end_ms": 89180
+    },
+    {
+      "word": "wrong",
+      "start_ms": 89180,
+      "end_ms": 89500
+    },
+    {
+      "word": "about",
+      "start_ms": 89500,
+      "end_ms": 89800
+    },
+    {
+      "word": "pigeons.",
+      "start_ms": 89800,
+      "end_ms": 90260
+    },
+    {
+      "word": "Day",
+      "start_ms": 92420,
+      "end_ms": 92680
+    },
+    {
+      "word": "5",
+      "start_ms": 92680,
+      "end_ms": 93140
+    },
+    {
+      "word": "I'm",
+      "start_ms": 94840,
+      "end_ms": 95620
+    },
+    {
+      "word": "reading",
+      "start_ms": 95620,
+      "end_ms": 95960
+    },
+    {
+      "word": "in",
+      "start_ms": 95960,
+      "end_ms": 96360
+    },
+    {
+      "word": "the",
+      "start_ms": 96360,
+      "end_ms": 96480
+    },
+    {
+      "word": "library",
+      "start_ms": 96480,
+      "end_ms": 96900
+    },
+    {
+      "word": "now.",
+      "start_ms": 96900,
+      "end_ms": 97280
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 98060,
+      "end_ms": 98700
+    },
+    {
+      "word": "there",
+      "start_ms": 99080,
+      "end_ms": 99440
+    },
+    {
+      "word": "are",
+      "start_ms": 99440,
+      "end_ms": 99620
+    },
+    {
+      "word": "over",
+      "start_ms": 99620,
+      "end_ms": 99980
+    },
+    {
+      "word": "200",
+      "start_ms": 99980,
+      "end_ms": 100540
+    },
+    {
+      "word": "kinds",
+      "start_ms": 100540,
+      "end_ms": 101460
+    },
+    {
+      "word": "of",
+      "start_ms": 101460,
+      "end_ms": 101840
+    },
+    {
+      "word": "pigeons.",
+      "start_ms": 101840,
+      "end_ms": 102240
+    },
+    {
+      "word": "Some",
+      "start_ms": 103200,
+      "end_ms": 103640
+    },
+    {
+      "word": "can",
+      "start_ms": 103640,
+      "end_ms": 103880
+    },
+    {
+      "word": "fly",
+      "start_ms": 103880,
+      "end_ms": 104280
+    },
+    {
+      "word": "several",
+      "start_ms": 104280,
+      "end_ms": 105000
+    },
+    {
+      "word": "thousand",
+      "start_ms": 105000,
+      "end_ms": 105580
+    },
+    {
+      "word": "kilometers",
+      "start_ms": 105580,
+      "end_ms": 106100
+    },
+    {
+      "word": "and",
+      "start_ms": 106100,
+      "end_ms": 106960
+    },
+    {
+      "word": "don't",
+      "start_ms": 106960,
+      "end_ms": 107460
+    },
+    {
+      "word": "get",
+      "start_ms": 107460,
+      "end_ms": 107660
+    },
+    {
+      "word": "lost.",
+      "start_ms": 107660,
+      "end_ms": 108120
+    },
+    {
+      "word": "They",
+      "start_ms": 108960,
+      "end_ms": 109240
+    },
+    {
+      "word": "can",
+      "start_ms": 109240,
+      "end_ms": 109460
+    },
+    {
+      "word": "also",
+      "start_ms": 109460,
+      "end_ms": 109880
+    },
+    {
+      "word": "fly",
+      "start_ms": 109880,
+      "end_ms": 110420
+    },
+    {
+      "word": "at",
+      "start_ms": 110420,
+      "end_ms": 110760
+    },
+    {
+      "word": "speeds",
+      "start_ms": 110760,
+      "end_ms": 111220
+    },
+    {
+      "word": "of",
+      "start_ms": 111220,
+      "end_ms": 111860
+    },
+    {
+      "word": "over",
+      "start_ms": 111860,
+      "end_ms": 112280
+    },
+    {
+      "word": "100",
+      "start_ms": 112280,
+      "end_ms": 113180
+    },
+    {
+      "word": "kilometers",
+      "start_ms": 113180,
+      "end_ms": 113640
+    },
+    {
+      "word": "per",
+      "start_ms": 113640,
+      "end_ms": 114320
+    },
+    {
+      "word": "hour.",
+      "start_ms": 114320,
+      "end_ms": 114740
+    },
+    {
+      "word": "That's",
+      "start_ms": 115440,
+      "end_ms": 116060
+    },
+    {
+      "word": "as",
+      "start_ms": 116060,
+      "end_ms": 116180
+    },
+    {
+      "word": "fast",
+      "start_ms": 116180,
+      "end_ms": 116600
+    },
+    {
+      "word": "as",
+      "start_ms": 116600,
+      "end_ms": 116880
+    },
+    {
+      "word": "my",
+      "start_ms": 116880,
+      "end_ms": 117120
+    },
+    {
+      "word": "dad's",
+      "start_ms": 117120,
+      "end_ms": 117580
+    },
+    {
+      "word": "car.",
+      "start_ms": 117580,
+      "end_ms": 117960
+    },
+    {
+      "word": "Well,",
+      "start_ms": 119320,
+      "end_ms": 119760
+    },
+    {
+      "word": "pigeons",
+      "start_ms": 120160,
+      "end_ms": 120680
+    },
+    {
+      "word": "aren't",
+      "start_ms": 120680,
+      "end_ms": 121480
+    },
+    {
+      "word": "boring",
+      "start_ms": 121480,
+      "end_ms": 121940
+    },
+    {
+      "word": "or",
+      "start_ms": 121940,
+      "end_ms": 122420
+    },
+    {
+      "word": "scary.",
+      "start_ms": 122420,
+      "end_ms": 122920
+    },
+    {
+      "word": "They",
+      "start_ms": 123580,
+      "end_ms": 123880
+    },
+    {
+      "word": "are",
+      "start_ms": 123880,
+      "end_ms": 124280
+    },
+    {
+      "word": "amazing.",
+      "start_ms": 124280,
+      "end_ms": 125260
+    },
+    {
+      "word": "I",
+      "start_ms": 126060,
+      "end_ms": 126440
+    },
+    {
+      "word": "just",
+      "start_ms": 126440,
+      "end_ms": 126640
+    },
+    {
+      "word": "didn't",
+      "start_ms": 126640,
+      "end_ms": 127100
+    },
+    {
+      "word": "know",
+      "start_ms": 127100,
+      "end_ms": 127360
+    },
+    {
+      "word": "enough",
+      "start_ms": 127360,
+      "end_ms": 127700
+    },
+    {
+      "word": "about",
+      "start_ms": 127700,
+      "end_ms": 128000
+    },
+    {
+      "word": "them.",
+      "start_ms": 128000,
+      "end_ms": 128320
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 13.8
+  }
+}

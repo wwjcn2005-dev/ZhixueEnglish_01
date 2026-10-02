@@ -1,0 +1,64 @@
+{
+  "task": "P1-08-C1 最小学习行为模型与记录协议（归档）",
+  "archived_at": "2026-09-12T16:46:09+08:00",
+  "verdict": "PASS",
+  "new_files": [
+    "learning/behavior_service.py",
+    "learning/test_behavior_service.py"
+  ],
+  "modified_existing_files": [
+    "learning/learning_service.py"
+  ],
+  "modification_detail": {
+    "file": "learning/learning_service.py",
+    "type": "additive 2 lines",
+    "content": "BEHAVIOR_EXTENSION=('study','practice'); ACTIVITY_TYPES = ACTIVITY_TYPES + BEHAVIOR_EXTENSION",
+    "sha256_before": "D8A174567263BEADBB3732795FFDA4E485BDD1D617D82C77E69D8F5442EF9B37",
+    "sha256_after": "01341A05231EFCA6E0C801CF95D8A96F3DF732753F1F679688D44708586DF1D6",
+    "size_before": 16752,
+    "size_after": 17034,
+    "behavior_before": "9 activity types",
+    "behavior_after": "11 activity types (9 + study + practice)"
+  },
+  "schema_change": false,
+  "behaviors": {
+    "study": [
+      "done",
+      "skipped",
+      null
+    ],
+    "practice": [
+      "correct",
+      "incorrect",
+      "partial",
+      "done",
+      "skipped",
+      null
+    ]
+  },
+  "interfaces": [
+    "record_behavior",
+    "record_study",
+    "record_practice",
+    "record_activity_behavior",
+    "check_behavior",
+    "check_behavior_result",
+    "list_behaviors"
+  ],
+  "tests": {
+    "file": "learning/test_behavior_service.py",
+    "ran": 8,
+    "result": "OK",
+    "covers": "任务书 §十五 22 项"
+  },
+  "safety": {
+    "ai": 0,
+    "network": 0,
+    "contentpack_written": false,
+    "official_db_polluted": false
+  },
+  "known_open_items": [
+    "同秒 tie-break 未修复",
+    "activity_type 双重含义未统一"
+  ]
+}

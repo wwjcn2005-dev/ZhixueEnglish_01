@@ -1,0 +1,300 @@
+{
+ "stage": "P1-04",
+ "audited_at": "2026-09-17T18:46:29",
+ "problem_A_exact_rule": {
+  "old_condition": "answer_support_type='EXACT' AND 答案文本出现在 question_text 或 options",
+  "new_condition": "answer_support_type='EXACT' AND 题目可选型（有 options） AND 正确答案文本出现在教材 evidence_quote 中",
+  "applied_to": "question_library.db 触发器 trg_validation_exact_trap",
+  "python_semantics": "validator_v3.exact_print_risk()",
+  "trigger_sql": "CREATE TRIGGER trg_validation_exact_trap\n    AFTER INSERT ON question_validation\n    WHEN NEW.answer_support_type = 'EXACT'\n     AND EXISTS (\n       SELECT 1\n         FROM ai_question q\n         JOIN question_evidence e\n           ON e.question_id = q.question_id AND e.version = q.version\n        WHERE q.question_id = NEW.question_id\n          AND q.version = NEW.version\n          AND q.options_json IS NOT NULL\n          AND instr(lower(replace(replace(replace(replace(e.evidence_quote, char(8220), '\"'), char(8221), '\"'), char(8217), char(39)), char(8216), char(39))), lower(q.correct_answer)) > 0\n     )\n    BEGIN\n      UPDATE question_validation\n         SET needs_human_review = 1\n       WHERE question_id = NEW.question_id\n         AND version = NEW.version\n         AND validator_version = NEW.validator_version;\n      UPDATE ai_question\n         SET needs_human_review = 1,\n             updated_at = NEW.validated_at\n       WHERE question_id = NEW.question_id\n         AND version = NEW.version;\n    END"
+ },
+ "problem_B_fill_rule": {
+  "rule": "fill = 纯填空：必须有 '___'；不得有 options；不得有 correct_option",
+  "applied_to": "validator_v3.type_rules()（validator_v2 未修改，v3 只收紧）",
+  "v3_keeps_v2": [
+   "tokens",
+   "answer_support",
+   "build_whitelist",
+   "checked_language",
+   "out_of_scope"
+  ]
+ },
+ "problem_C_event_enum": {
+  "schema_version_before": 1,
+  "schema_version_after": 2,
+  "migrated": true,
+  "event_types_v1": [
+   "VALIDATED",
+   "REVIEW_APPROVED",
+   "REVIEW_REJECTED",
+   "ACTIVATED",
+   "DISABLED",
+   "MARKED_STALE"
+  ],
+  "event_types_v2": [
+   "GENERATED",
+   "VALIDATED",
+   "PENDING_REVIEW",
+   "REVIEW_APPROVED",
+   "REVIEW_REJECTED",
+   "ACTIVATED",
+   "DISABLED",
+   "MARKED_STALE"
+  ],
+  "enum_sql_has_generated": true,
+  "enum_sql_has_pending_review": true,
+  "migration_detail": {
+   "migrated_at": "2026-09-17T18:45:12",
+   "user_version_before": 1,
+   "user_version_after": 2,
+   "row_counts_before": {
+    "generation_run": 1,
+    "ai_question": 2,
+    "question_evidence": 2,
+    "question_learning_object": 4,
+    "question_validation": 2,
+    "question_event": 2
+   },
+   "row_counts_after": {
+    "generation_run": 1,
+    "ai_question": 2,
+    "question_evidence": 2,
+    "question_learning_object": 4,
+    "question_validation": 2,
+    "question_event": 2
+   },
+   "row_hashes_before": {
+    "generation_run": "7B2ACF6E44BDFCD0F3DBDB417E11AC2D2EEB19A76E4907BF05661F7680893AC1",
+    "ai_question": "8C35F57F10E8A545A34FC32AA96A3F80C9AE82E55300DE80B32F45FDD98C95D6",
+    "question_evidence": "824C35DBA062921F4B2A19CD7C43FBFCB48C6D3A1DBF2CC6C99C68F9274EFEE6",
+    "question_learning_object": "3F9B8451FC7081177BF76EE2A475EC80255E63AFF8F34B2BB73EA715FDA8A856",
+    "question_validation": "59C8216FD5D19766E357C4E02D81083EA9271B6DEA77427E0F4F0F44A73B9297",
+    "question_event": "A775A2FCC52C005DB8F2BA973A9C280E179993C45EB4D90079BE3A62F6494227"
+   },
+   "row_hashes_after": {
+    "generation_run": "7B2ACF6E44BDFCD0F3DBDB417E11AC2D2EEB19A76E4907BF05661F7680893AC1",
+    "ai_question": "8C35F57F10E8A545A34FC32AA96A3F80C9AE82E55300DE80B32F45FDD98C95D6",
+    "question_evidence": "824C35DBA062921F4B2A19CD7C43FBFCB48C6D3A1DBF2CC6C99C68F9274EFEE6",
+    "question_learning_object": "3F9B8451FC7081177BF76EE2A475EC80255E63AFF8F34B2BB73EA715FDA8A856",
+    "question_validation": "59C8216FD5D19766E357C4E02D81083EA9271B6DEA77427E0F4F0F44A73B9297",
+    "question_event": "A775A2FCC52C005DB8F2BA973A9C280E179993C45EB4D90079BE3A62F6494227"
+   },
+   "event_enum_probe": {
+    "GENERATED": true,
+    "PENDING_REVIEW": true
+   },
+   "problems": [],
+   "result": "PASS",
+   "event_types_v1": [
+    "VALIDATED",
+    "REVIEW_APPROVED",
+    "REVIEW_REJECTED",
+    "ACTIVATED",
+    "DISABLED",
+    "MARKED_STALE"
+   ],
+   "event_types_v2": [
+    "GENERATED",
+    "VALIDATED",
+    "PENDING_REVIEW",
+    "REVIEW_APPROVED",
+    "REVIEW_REJECTED",
+    "ACTIVATED",
+    "DISABLED",
+    "MARKED_STALE"
+   ]
+  }
+ },
+ "tests": {
+  "p1_04_suite": {
+   "file": "test_p1_04_rules.py",
+   "ran": 28,
+   "ok": 28,
+   "failed": 0
+  },
+  "p1_02_regression": {
+   "file": "P1_02_question_library_implementation/test_question_library.py",
+   "ran": 19,
+   "pass": 18,
+   "fail": 1,
+   "failed_test": "test_T15_official_db_has_no_real_questions",
+   "why": "该断言「正式题库为空」已被 P1-03 的合法入库取代（题库现有 2 道真实题）；其原始意图「建库脚本不插入任何数据」由 P1-04 的 FrozenV1SchemaTests 等价测试覆盖并通过。"
+  }
+ },
+ "existing_questions": {
+  "count": 2,
+  "business_content_unchanged": true,
+  "regenerated": false,
+  "deleted": false,
+  "stale_marking": {
+   "marked_at": "2026-09-17T19:10:00+08:00",
+   "marked": [
+    {
+     "question_id": "AIQ:7EBCDBC29563",
+     "version": 1,
+     "reason": "fill must not carry options (P1-04: fill = 纯填空)",
+     "lifecycle_unchanged": "PENDING_REVIEW"
+    }
+   ],
+   "business_fields_changed": [],
+   "result": "PASS"
+  },
+  "rows": [
+   {
+    "question_id": "AIQ:3179968E3E74",
+    "version": 1,
+    "question_type": "vocab_choice",
+    "question_text": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+    "options_json": "[\"polite\", \"dry\", \"important\", \"mistake\"]",
+    "correct_option": "A",
+    "correct_answer": "polite",
+    "explanation": "The passage uses “polite” to describe whether it is OK to point out the mistake in the first lesson.",
+    "difficulty": "easy",
+    "page": 17,
+    "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "generation_run_id": "AIRUN:20260917T1840:P103",
+    "question_fingerprint": "3179968E3E7400B28A2312579728FF0B6DDA54DB3B50C16761445908D12A63F1",
+    "lifecycle_status": "PENDING_REVIEW",
+    "active": 0,
+    "stale": 0,
+    "stale_reason": null,
+    "needs_human_review": 1,
+    "validator_version": "v2"
+   },
+   {
+    "question_id": "AIQ:7EBCDBC29563",
+    "version": 1,
+    "question_type": "fill",
+    "question_text": "Our English teacher Ms Chen writes the ___ on the blackboard and says, “Please write this down.”",
+    "options_json": "[\"sentence\", \"mistake\", \"polite\", \"meaning\"]",
+    "correct_option": "A",
+    "correct_answer": "sentence",
+    "explanation": "The reading passage says the English teacher writes the sentence on the blackboard.",
+    "difficulty": "easy",
+    "page": 17,
+    "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "generation_run_id": "AIRUN:20260917T1840:P103",
+    "question_fingerprint": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD",
+    "lifecycle_status": "PENDING_REVIEW",
+    "active": 0,
+    "stale": 1,
+    "stale_reason": "VALIDATOR_CHANGED",
+    "needs_human_review": 1,
+    "validator_version": "v2"
+   }
+  ]
+ },
+ "events": [
+  {
+   "event_id": "AIEV:3179968E3E74:V1",
+   "question_id": "AIQ:3179968E3E74",
+   "version": 1,
+   "event_type": "VALIDATED",
+   "from_status": "GENERATED",
+   "to_status": "PENDING_REVIEW",
+   "event_at": "2026-09-17T18:40:00+08:00",
+   "actor": "validator_v2",
+   "actor_kind": "machine"
+  },
+  {
+   "event_id": "AIEV:7EBCDBC29563:STALE1",
+   "question_id": "AIQ:7EBCDBC29563",
+   "version": 1,
+   "event_type": "MARKED_STALE",
+   "from_status": "PENDING_REVIEW",
+   "to_status": "PENDING_REVIEW",
+   "event_at": "2026-09-17T19:10:00+08:00",
+   "actor": "validator_v3",
+   "actor_kind": "machine"
+  },
+  {
+   "event_id": "AIEV:7EBCDBC29563:V1",
+   "question_id": "AIQ:7EBCDBC29563",
+   "version": 1,
+   "event_type": "VALIDATED",
+   "from_status": "GENERATED",
+   "to_status": "PENDING_REVIEW",
+   "event_at": "2026-09-17T18:40:00+08:00",
+   "actor": "validator_v2",
+   "actor_kind": "machine"
+  }
+ ],
+ "counts": {
+  "generation_run": 1,
+  "ai_question": 2,
+  "question_evidence": 2,
+  "question_learning_object": 4,
+  "question_validation": 2,
+  "question_event": 3
+ },
+ "learning_objects": {
+  "refs": [
+   "FLTRP-EN-7A-2022CUR:V:3571476C132A",
+   "FLTRP-EN-7A-2022CUR:V:813A79C77A94",
+   "FLTRP-EN-7A-2022CUR:X:0F6BF1CC2913"
+  ],
+  "all_exist_in_contentpack": true,
+  "dangling": []
+ },
+ "evidence_blocks": {
+  "refs": [
+   "FLTRP-EN-7A-2022CUR:P22:B0",
+   "FLTRP-EN-7A-2022CUR:P22:B2"
+  ],
+  "all_exist_in_contentpack": true,
+  "dangling": []
+ },
+ "database": {
+  "user_version": 2,
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "triggers": [
+   "trg_ai_question_active_requires_human_approval",
+   "trg_ai_question_insert_active_forbidden",
+   "trg_ai_question_no_delete",
+   "trg_question_event_no_delete",
+   "trg_question_event_no_update",
+   "trg_validation_exact_trap"
+  ],
+  "file": {
+   "path": "D:\\ZhixueEnglish\\structured\\ai\\question_library.db",
+   "size_bytes": 126976,
+   "mtime": "2026-09-17T18:46:04",
+   "sha256": "13F643E555E5ED084703CBA573F92CE7478F9DB81E92E9C64E91616E1BC8FA0C"
+  }
+ },
+ "protection": {
+  "learning_db": {
+   "path": "D:\\ZhixueEnglish\\structured\\learning\\learning.db",
+   "size_bytes": 118784,
+   "mtime": "2026-09-13T15:50:09",
+   "sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91"
+  },
+  "learning_db_expected_sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+  "validator_v2": {
+   "path": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\20260917_1520_validator_fix\\validator_v2.py",
+   "size_bytes": 5910,
+   "mtime": "2026-09-17T14:31:02",
+   "sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683"
+  },
+  "contentpack": {
+   "path": "D:\\ZhixueEnglish\\structured\\contentpack\\v5\\FLTRP-EN-7A-2022CUR.sqlite",
+   "size_bytes": 2715648,
+   "mtime": "2026-09-14T14:37:54",
+   "sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39"
+  },
+  "p1_02_ql_schema_py": {
+   "path": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\P1_02_question_library_implementation\\ql_schema.py",
+   "size_bytes": 14730,
+   "mtime": "2026-09-17T18:23:25",
+   "sha256": "E152E9A82648C44F3B1B3F73CCDB4610467632E7E3F4E7243B3BF0DF5B06DAF9"
+  }
+ },
+ "ai_calls": 0,
+ "pdf_reparsed": false,
+ "new_ai_questions_generated": 0
+}

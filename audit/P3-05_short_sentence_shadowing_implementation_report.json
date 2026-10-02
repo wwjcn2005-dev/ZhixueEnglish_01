@@ -1,0 +1,284 @@
+{
+ "task_id": "P3-05",
+ "title": "短句跟读最小闭环实施",
+ "date": "2026-09-13",
+ "status": "PASS",
+ "gaps": [
+  "音频为完整活动录音（FULL_ACTIVITY_AUDIO），孩子需多听几次定位目标句",
+  "Unit 1 仅 2 句样本"
+ ],
+ "scope": {
+  "units": [
+   "Starter",
+   "Unit 1"
+  ],
+  "sentences": 10,
+  "activities": [
+   "A2",
+   "A4"
+  ],
+  "audios": [
+   "AU06",
+   "AU13"
+  ]
+ },
+ "samples": [
+  {
+   "sentence_id": "P3-05-S001",
+   "text": "Hello everyone!",
+   "speaker": null,
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S002",
+   "text": "My name is Zhu Xiaomeng.",
+   "speaker": null,
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S003",
+   "text": "I’m thirteen years old.",
+   "speaker": null,
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S004",
+   "text": "My birthday is in May.",
+   "speaker": null,
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S005",
+   "text": "I love sports very much.",
+   "speaker": null,
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S006",
+   "text": "I like running, playing football and swimming.",
+   "speaker": null,
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S007",
+   "text": "I’m a bit nervous now, but I’m also happy to meet you.",
+   "speaker": null,
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S008",
+   "text": "I want to make friends with you all!",
+   "speaker": null,
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S009",
+   "text": "Yes, and it’s also a letter from Mum and me.",
+   "speaker": "Dad",
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "activity_no": "A2",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P29",
+   "status": "CANDIDATE"
+  },
+  {
+   "sentence_id": "P3-05-S010",
+   "text": "We want to share some thoughts with you.",
+   "speaker": null,
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "activity_no": "A2",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P29",
+   "status": "CANDIDATE"
+  }
+ ],
+ "files_changed": [
+  {
+   "file": "web/content.py",
+   "change": "新增只读 shadowing_sentences()"
+  },
+  {
+   "file": "web/ui.py",
+   "change": "新增 shadowing_page() + Unit 页跟读入口卡"
+  },
+  {
+   "file": "web/app.py",
+   "change": "新增只读路由 /unit/<slug>/shadowing?i=N + shadowing_count"
+  },
+  {
+   "file": "web/test_p3_05_shadowing.py",
+   "change": "新增 9 项测试"
+  },
+  {
+   "file": "audit/P3-05_samples/shadowing_manifest.json",
+   "change": "实验样本清单（不进入正式 contentpack）"
+  }
+ ],
+ "not_modified": [
+  "learning.db",
+  "contentpack",
+  "54 MP3",
+  "learning/ 服务",
+  "Android",
+  "V1.2.1",
+  "既有测试文件",
+  "数据库结构"
+ ],
+ "acceptance": {
+  "enter": true,
+  "see_textbook_sentence": true,
+  "play_official_audio": true,
+  "replay": true,
+  "next_sentence": true,
+  "exit": true,
+  "no_auto_navigate": true,
+  "no_auto_play_next": true,
+  "no_auto_start": true,
+  "no_self_judgement": true,
+  "audio_files_modified": 0,
+  "audio_sliced": false,
+  "tts_or_ai_voice": false
+ },
+ "tests": {
+  "web": "265 PASS",
+  "learning": "112 PASS",
+  "workbench": "50 PASS",
+  "total": "427 PASS / 0 FAIL / 0 SKIP",
+  "old_tests_modified": false
+ },
+ "s24_verification": {
+  "device": "SM-S9260 (Samsung S24+)",
+  "base_url": "http://192.168.2.3:8770/",
+  "checks": [
+   {
+    "item": "GET /unit/starter",
+    "result": "200"
+   },
+   {
+    "item": "GET /unit/starter/shadowing",
+    "result": "200"
+   },
+   {
+    "item": "GET /unit/starter/shadowing?i=1",
+    "result": "200"
+   },
+   {
+    "item": "页面含教材原句 Hello everyone!",
+    "result": true
+   },
+   {
+    "item": "页面含 /audio/official/AU06.mp3",
+    "result": true
+   },
+   {
+    "item": "设备分片请求音频",
+    "result": "206"
+   },
+   {
+    "item": "无 autoplay / 无评分词",
+    "result": true
+   },
+   {
+    "item": "局域网抓取页面含“听教材原音”标注",
+    "result": true
+   }
+  ],
+  "android_modified": false
+ },
+ "child_perspective": {
+  "knows_what_to_do": true,
+  "understands_in_seconds": true,
+  "loop_listen_repeat": true,
+  "confusing": [
+   "整段活动音频需多次聆听定位目标句",
+   "Unit 1 样本仅 2 句"
+  ],
+  "full_activity_audio_impact": "43 秒音频影响有限；若换 100 秒以上长音频代价明显上升",
+  "needs_extra_learning": false,
+  "more_value_than_textbook_copying": true
+ },
+ "decision": {
+  "continue": [
+   "短句跟读（教材原句 + 活动级官方原音）为主线",
+   "扩大到更多 Unit/Activity（优先短音频活动）"
+  ],
+  "defer": [
+   "Phrase/Pattern 跟读",
+   "Dialogue 角色扮演"
+  ],
+  "drop": [
+   "句子级音频切片",
+   "ASR/强制对齐",
+   "发音评分"
+  ]
+ },
+ "baseline": {
+  "database_changed": false,
+  "contentpack_changed": false,
+  "audio_changed": false,
+  "code_changed": true,
+  "code_change_note": "仅本任务声明的 4 个 web 文件 + 1 个新测试 + 实验 manifest（不改冻结服务）",
+  "learning_services_changed": false,
+  "android_changed": false,
+  "v121_changed": false,
+  "ai_calls": 0,
+  "external_network": 0,
+  "dependencies_installed": 0,
+  "learning_db_sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+  "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F"
+ },
+ "one_line": "P3-05 证明：“教材原句 + 官方教材原音 + 极简听/再听操作”是一个值得继续扩展的学习单元。",
+ "stop": "P3-05 完成，立即停止；未进入 P3-06。"
+}

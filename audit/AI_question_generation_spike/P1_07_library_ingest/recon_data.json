@@ -1,0 +1,628 @@
+{
+ "stage": "P1-07",
+ "mode": "reconnaissance_only",
+ "ai_calls": 0,
+ "fixture": {
+  "dir": "audit\\AI_question_generation_spike\\P1_06_batch_stability",
+  "files": {
+   "S1": {
+    "file": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S1_parsed.json",
+    "sha256": "D4520E288D7651B59B59C0F75F09FBE87E6B9AB0ACB9D2F900647E1210856BA3",
+    "questions": 6,
+    "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS"
+   },
+   "S2": {
+    "file": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S2_parsed.json",
+    "sha256": "4F705951CAF743BD62AD07C175C0EE06F491B4C4EE7B2F0D760E2372ADFAAA1E",
+    "questions": 5,
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS"
+   },
+   "S3": {
+    "file": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S3_parsed.json",
+    "sha256": "4F9679CAFF393E6CD33D6FDC6C957563A852ECE1C569180C383F0EB55C7D08AC",
+    "questions": 6,
+    "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS"
+   },
+   "S4": {
+    "file": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S4_parsed.json",
+    "sha256": "5D1C21032B1C5F4CC23AACD2120EA297F6FF5776BBB36C18529A4FFF946E8B87",
+    "questions": 5,
+    "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY"
+   }
+  },
+  "total_questions": 22,
+  "questions": [
+   {
+    "src": "S1-Q1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+    "type": "fill",
+    "answer": "sound",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P37:B11"
+    ],
+    "keys": {
+     "dedupe": "514D5A302F161BAB3560F1D3164AB10747AD69FE05244B494973CF0014830CED"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S1-Q2",
+    "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+    "type": "fill",
+    "answer": "enjoy",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P38:B5"
+    ],
+    "keys": {
+     "dedupe": "ABEB18A6041745526704B201EAD411E0315B4B9A0EA33B4BFFF452D147C3B113"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S1-Q3",
+    "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+    "type": "vocab_choice",
+    "answer": "band",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P37:B10"
+    ],
+    "keys": {
+     "dedupe": "EBDE08BAF2A13D20E2E0745EE9AE748C1D85654B37715D7D2BD9CF7A68E29219"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S1-Q4",
+    "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+    "type": "vocab_choice",
+    "answer": "different",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P37:B12"
+    ],
+    "keys": {
+     "dedupe": "97D16FFC8F937CDA842803836172CCB3F65FA0B12584510FDD70700999A67419"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S1-Q5",
+    "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+    "type": "reading_choice",
+    "answer": "in the park",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P37:B12"
+    ],
+    "keys": {
+     "dedupe": "480090F33EB171368A2B180380FFEE6E3C4E362A74683CAF87F3771BD9EA6F6E"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S1-Q6",
+    "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+    "type": "reading_choice",
+    "answer": "fire up instruments",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P38:B3"
+    ],
+    "keys": {
+     "dedupe": "7EDDAAB7E7D5E5807EC7F2C48D4484A4B7445B306686D355B53E9FC152C57CD5"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "VERIFIABLE_REPHRASE"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S2-Q1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+    "type": "fill",
+    "answer": "hers",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P24:B1"
+    ],
+    "keys": {
+     "dedupe": "D88B289DA230C5EE03F08FE4480603A4D914316DDC29E2DD565FC033A195E888"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S2-Q2",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+    "type": "vocab_choice",
+    "answer": "mistake",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P23:B6"
+    ],
+    "keys": {
+     "dedupe": "C8E7452D47597F0C349EE35105E98146C477A383C50EAA9126F54360BF457BD7"
+    },
+    "validator_v3": {
+     "pass": false,
+     "failed": [
+      "5_vocab_scope"
+     ],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S2-Q3",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+    "type": "fill",
+    "answer": "mind",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P23:B5"
+    ],
+    "keys": {
+     "dedupe": "8F683ED6E9C2C6A39560EAC203E8A9236A88B9AA3F520D56D39130188AB3E7E1"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S2-Q4",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+    "type": "fill",
+    "answer": "In fact",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P24:B2"
+    ],
+    "keys": {
+     "dedupe": "FAC67D8814215070A74E065E16CF4E0952A8F13D67E8AB8FE048C230FB5AE639"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S2-Q5",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+    "type": "vocab_choice",
+    "answer": "sentence",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P23:B4"
+    ],
+    "keys": {
+     "dedupe": "7790C234413399B4BD0DE0EBBC2E6FB822E6FF8276735B0A507F60C01ED9A21B"
+    },
+    "validator_v3": {
+     "pass": false,
+     "failed": [
+      "5_vocab_scope"
+     ],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S3-Q1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+    "type": "vocab_choice",
+    "answer": "root",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P85:B12",
+     "FLTRP-EN-7A-2022CUR:P87:B7"
+    ],
+    "keys": {
+     "dedupe": "200414C32D03C3A8736029A0041762A63B02D828653500D117DB4510B966EAF8"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S3-Q2",
+    "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+    "type": "fill",
+    "answer": "leaf",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P87:B9",
+     "FLTRP-EN-7A-2022CUR:P85:B5"
+    ],
+    "keys": {
+     "dedupe": "72F1BD6C4382EDB5A7AC983B743743530E49BA9FB666F35EDDAE3F3F53B748AE"
+    },
+    "validator_v3": {
+     "pass": false,
+     "failed": [
+      "4_answer_support"
+     ],
+     "answer_support": "UNSUPPORTED"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S3-Q3",
+    "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+    "type": "fill",
+    "answer": "rise",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P87:B7",
+     "FLTRP-EN-7A-2022CUR:P87:B8"
+    ],
+    "keys": {
+     "dedupe": "8AAD34AC63DE174E6D0001835B6ECF49E06AC9C3BFC1FF2AE929C97BE9F7CA06"
+    },
+    "validator_v3": {
+     "pass": false,
+     "failed": [
+      "4_answer_support"
+     ],
+     "answer_support": "UNSUPPORTED"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S3-Q4",
+    "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+    "type": "reading_choice",
+    "answer": "their own rain",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P88:B14"
+    ],
+    "keys": {
+     "dedupe": "0B63271F7A51277FD671DEF277ECE4C0846E2AB6D1EAC64A01C212D54814432D"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S3-Q5",
+    "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+    "type": "reading_judge",
+    "answer": "True",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P88:B12"
+    ],
+    "keys": {
+     "dedupe": "2496A101D857484910CE29E91C342BA1088D61FB7DEA16D65C89383C2A73311B"
+    },
+    "validator_v3": {
+     "pass": false,
+     "failed": [
+      "4_answer_support"
+     ],
+     "answer_support": "UNSUPPORTED"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S3-Q6",
+    "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+    "type": "reading_judge",
+    "answer": "False",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P88:B20"
+    ],
+    "keys": {
+     "dedupe": "019370AE74C24C799F5A01AE906ED6EE1B9024E3B48A7ED5682A4E407E2DB45A"
+    },
+    "validator_v3": {
+     "pass": false,
+     "failed": [
+      "4_answer_support"
+     ],
+     "answer_support": "UNSUPPORTED"
+    },
+    "questions_total_in_section": 6
+   },
+   {
+    "src": "S4-Q1",
+    "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+    "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+    "type": "fill",
+    "answer": "ready",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P8:B16"
+    ],
+    "keys": {
+     "dedupe": "8FC1B600F5CD35C75C8B2DDED4BB079254A937A775B675F1E2D1D7D28C5AB924"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S4-Q2",
+    "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+    "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+    "type": "fill",
+    "answer": "eraser",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P8:B32"
+    ],
+    "keys": {
+     "dedupe": "B0B1455A82D385ED9802BFF48025A097F6A2B80F6225CFD6448C1B0AA0182745"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S4-Q3",
+    "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+    "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+    "type": "fill",
+    "answer": "grey",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P10:B20"
+    ],
+    "keys": {
+     "dedupe": "6AC8985DA68EA72AEF683EC52600555AB58E7913685C1F05F19569A6F9EB500E"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S4-Q4",
+    "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+    "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+    "type": "vocab_choice",
+    "answer": "forget",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P10:B12"
+    ],
+    "keys": {
+     "dedupe": "4B0FE062C1B5DD5338DD83F80DAAC6C413CB742041FF1B8573BAC68C769EAD13"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   },
+   {
+    "src": "S4-Q5",
+    "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+    "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+    "type": "reading_choice",
+    "answer": "school uniform",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P10:B5"
+    ],
+    "keys": {
+     "dedupe": "8E725BCD5BE30C17D4744A6C3258F1E39A72F90B55CDA449AEDC475F4B9D9377"
+    },
+    "validator_v3": {
+     "pass": true,
+     "failed": [],
+     "answer_support": "EXACT"
+    },
+    "questions_total_in_section": 5
+   }
+  ]
+ },
+ "library_before": {
+  "user_version": 2,
+  "integrity": "ok",
+  "sha256": "3970408E3C0FE341C38EFAA9E5208AB61FC363465BE71AD10192ABF49F01CAAA",
+  "size": 135168,
+  "counts": {
+   "generation_run": 8,
+   "ai_question": 2,
+   "question_evidence": 2,
+   "question_learning_object": 4,
+   "question_validation": 2,
+   "question_event": 3
+  },
+  "lifecycle": {
+   "PENDING_REVIEW": 2,
+   "APPROVED": 0,
+   "ACTIVE": 0
+  },
+  "existing_questions": [
+   {
+    "question_id": "AIQ:7EBCDBC29563",
+    "question_type": "fill",
+    "correct_answer": "sentence",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "lifecycle_status": "PENDING_REVIEW",
+    "stale": 1,
+    "stale_reason": "VALIDATOR_CHANGED",
+    "question_fingerprint": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P22:B0"
+    ],
+    "keys": {
+     "dedupe": "96BB6CCB332A7963848BA70BB5D1CC491FE2D6F3EDB8B9AA37FCFF225A1CDCC7"
+    }
+   },
+   {
+    "question_id": "AIQ:3179968E3E74",
+    "question_type": "vocab_choice",
+    "correct_answer": "polite",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "lifecycle_status": "PENDING_REVIEW",
+    "stale": 0,
+    "stale_reason": null,
+    "question_fingerprint": "3179968E3E7400B28A2312579728FF0B6DDA54DB3B50C16761445908D12A63F1",
+    "blocks": [
+     "FLTRP-EN-7A-2022CUR:P22:B2"
+    ],
+    "keys": {
+     "dedupe": "E84DC6A2684CA1A5FF49D09994F749C7A61E6231593B5D4D6B05BCA938D11B46"
+    }
+   }
+  ]
+ },
+ "validator_v3_recheck": {
+  "pass": 16,
+  "fail": 6,
+  "failed_questions": [
+   {
+    "src": "S2-Q2",
+    "answer": "mistake",
+    "failed": [
+     "5_vocab_scope"
+    ],
+    "answer_support": "EXACT"
+   },
+   {
+    "src": "S2-Q5",
+    "answer": "sentence",
+    "failed": [
+     "5_vocab_scope"
+    ],
+    "answer_support": "EXACT"
+   },
+   {
+    "src": "S3-Q2",
+    "answer": "leaf",
+    "failed": [
+     "4_answer_support"
+    ],
+    "answer_support": "UNSUPPORTED"
+   },
+   {
+    "src": "S3-Q3",
+    "answer": "rise",
+    "failed": [
+     "4_answer_support"
+    ],
+    "answer_support": "UNSUPPORTED"
+   },
+   {
+    "src": "S3-Q5",
+    "answer": "True",
+    "failed": [
+     "4_answer_support"
+    ],
+    "answer_support": "UNSUPPORTED"
+   },
+   {
+    "src": "S3-Q6",
+    "answer": "False",
+    "failed": [
+     "4_answer_support"
+    ],
+    "answer_support": "UNSUPPORTED"
+   }
+  ],
+  "fail_by_check": {
+   "5_vocab_scope": 2,
+   "4_answer_support": 4
+  }
+ },
+ "dedupe_rehearsal": {
+  "key_formula": "sha256(section_id \\x01 activity_id \\x01 question_type \\x01 normalized_answer \\x01 sorted(evidence_block_ids))",
+  "duplicate_groups_within_scope": {},
+  "duplicate_count": 0,
+  "counterfactual_vs_historical_rounds": [
+   {
+    "fixture": "S1-Q1",
+    "historical": "P1-05-G-Q2"
+   },
+   {
+    "fixture": "S1-Q5",
+    "historical": "P1-05-F-Q2"
+   }
+  ]
+ },
+ "learning_object_coverage": {
+  "S1": {
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "activities_with_exercise_lo": 8,
+   "activities_total": 8,
+   "answers_mapping_first_word": 4,
+   "questions_total": 6
+  },
+  "S2": {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "activities_with_exercise_lo": 6,
+   "activities_total": 6,
+   "answers_mapping_first_word": 4,
+   "questions_total": 5
+  },
+  "S3": {
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "activities_with_exercise_lo": 7,
+   "activities_total": 7,
+   "answers_mapping_first_word": 3,
+   "questions_total": 6
+  },
+  "S4": {
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "activities_with_exercise_lo": 8,
+   "activities_total": 8,
+   "answers_mapping_first_word": 4,
+   "questions_total": 5
+  }
+ }
+}

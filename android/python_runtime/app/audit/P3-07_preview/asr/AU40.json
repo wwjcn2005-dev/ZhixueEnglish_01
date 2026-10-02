@@ -1,0 +1,1554 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU40",
+  "audio_num": "AU40",
+  "filename": "40_Unit 5_Developing ideas _3 Listen to the conversation and complete the sentences.mp3",
+  "duration_ms": 191713,
+  "segment_count": 38,
+  "word_count": 269,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 6220,
+      "text": "Activity 3. Listen to the conversation and complete the sentences."
+    },
+    {
+      "start_ms": 7840,
+      "end_ms": 10240,
+      "text": "Can I try the taco?"
+    },
+    {
+      "start_ms": 11200,
+      "end_ms": 11720,
+      "text": "Sure."
+    },
+    {
+      "start_ms": 12560,
+      "end_ms": 18040,
+      "text": "Mmm, yum! Are tacos a traditional Mexican food?"
+    },
+    {
+      "start_ms": 18800,
+      "end_ms": 22540,
+      "text": "They are. We make them from corn seeds."
+    },
+    {
+      "start_ms": 23500,
+      "end_ms": 25460,
+      "text": "Is this beef inside?"
+    },
+    {
+      "start_ms": 25460,
+      "end_ms": 30600,
+      "text": "Yeah, you can put almost anything in a taco."
+    },
+    {
+      "start_ms": 31540,
+      "end_ms": 33600,
+      "text": "Now try these chips."
+    },
+    {
+      "start_ms": 34520,
+      "end_ms": 37180,
+      "text": "We make them with corn seeds too."
+    },
+    {
+      "start_ms": 38040,
+      "end_ms": 39660,
+      "text": "Oh, what's that?"
+    },
+    {
+      "start_ms": 40760,
+      "end_ms": 42780,
+      "text": "It's corn silk tea."
+    },
+    {
+      "start_ms": 43660,
+      "end_ms": 44720,
+      "text": "Corn silk?"
+    },
+    {
+      "start_ms": 45520,
+      "end_ms": 47920,
+      "text": "It's the hair of corn."
+    },
+    {
+      "start_ms": 49000,
+      "end_ms": 52420,
+      "text": "People in many countries make tea with it."
+    },
+    {
+      "start_ms": 52420,
+      "end_ms": 56200,
+      "text": "It is good for your health. Try it."
+    },
+    {
+      "start_ms": 57560,
+      "end_ms": 62040,
+      "text": "It's sweet. Oh, what are these?"
+    },
+    {
+      "start_ms": 63080,
+      "end_ms": 67540,
+      "text": "They're traditional dolls. We make them with corn husks."
+    },
+    {
+      "start_ms": 68460,
+      "end_ms": 73040,
+      "text": "So colourful. May I take a video of them?"
+    },
+    {
+      "start_ms": 73700,
+      "end_ms": 74540,
+      "text": "Certainly."
+    },
+    {
+      "start_ms": 75560,
+      "end_ms": 80580,
+      "text": "Corn has so many uses. This is amazing."
+    },
+    {
+      "start_ms": 80580,
+      "end_ms": 89720,
+      "text": "There's a saying in Mexico, without corn there is no country. Do you agree?"
+    },
+    {
+      "start_ms": 98360,
+      "end_ms": 104740,
+      "text": "Listen again. Then talk about how people ask for and give permission."
+    },
+    {
+      "start_ms": 106360,
+      "end_ms": 110140,
+      "text": "Can I try the taco? Sure."
+    },
+    {
+      "start_ms": 111020,
+      "end_ms": 116480,
+      "text": "Mmm, yum! Are tacos a traditional Mexican food?"
+    },
+    {
+      "start_ms": 117320,
+      "end_ms": 120960,
+      "text": "They are. We make them from corn seeds."
+    },
+    {
+      "start_ms": 121920,
+      "end_ms": 129080,
+      "text": "Is this beef inside? Yeah. You can put almost anything in a taco."
+    },
+    {
+      "start_ms": 129080,
+      "end_ms": 135620,
+      "text": "Now try these chips. We make them with corn seeds too."
+    },
+    {
+      "start_ms": 136400,
+      "end_ms": 138140,
+      "text": "Oh, what's that?"
+    },
+    {
+      "start_ms": 139240,
+      "end_ms": 141220,
+      "text": "It's corn silk tea."
+    },
+    {
+      "start_ms": 142140,
+      "end_ms": 143160,
+      "text": "Corn silk?"
+    },
+    {
+      "start_ms": 144120,
+      "end_ms": 154660,
+      "text": "It's the hair of corn. People in many countries make tea with it. It is good for your health. Try it."
+    },
+    {
+      "start_ms": 154660,
+      "end_ms": 160520,
+      "text": "Hmm, it's sweet. Oh, what are these?"
+    },
+    {
+      "start_ms": 161440,
+      "end_ms": 166040,
+      "text": "They're traditional dolls. We make them with corn husks."
+    },
+    {
+      "start_ms": 166880,
+      "end_ms": 171520,
+      "text": "So colourful! May I take a video of them?"
+    },
+    {
+      "start_ms": 172220,
+      "end_ms": 173060,
+      "text": "Certainly!"
+    },
+    {
+      "start_ms": 173940,
+      "end_ms": 179040,
+      "text": "Corn has so many uses. This is amazing!"
+    },
+    {
+      "start_ms": 179040,
+      "end_ms": 186260,
+      "text": "There's a saying in Mexico, without corn there is no country."
+    },
+    {
+      "start_ms": 187120,
+      "end_ms": 188200,
+      "text": "Do you agree?"
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 960
+    },
+    {
+      "word": "3.",
+      "start_ms": 960,
+      "end_ms": 1420
+    },
+    {
+      "word": "Listen",
+      "start_ms": 2180,
+      "end_ms": 2920
+    },
+    {
+      "word": "to",
+      "start_ms": 2920,
+      "end_ms": 3200
+    },
+    {
+      "word": "the",
+      "start_ms": 3200,
+      "end_ms": 3300
+    },
+    {
+      "word": "conversation",
+      "start_ms": 3300,
+      "end_ms": 3840
+    },
+    {
+      "word": "and",
+      "start_ms": 3840,
+      "end_ms": 4840
+    },
+    {
+      "word": "complete",
+      "start_ms": 4840,
+      "end_ms": 5280
+    },
+    {
+      "word": "the",
+      "start_ms": 5280,
+      "end_ms": 5620
+    },
+    {
+      "word": "sentences.",
+      "start_ms": 5620,
+      "end_ms": 6220
+    },
+    {
+      "word": "Can",
+      "start_ms": 7840,
+      "end_ms": 8820
+    },
+    {
+      "word": "I",
+      "start_ms": 8820,
+      "end_ms": 9080
+    },
+    {
+      "word": "try",
+      "start_ms": 9080,
+      "end_ms": 9440
+    },
+    {
+      "word": "the",
+      "start_ms": 9440,
+      "end_ms": 9860
+    },
+    {
+      "word": "taco?",
+      "start_ms": 9860,
+      "end_ms": 10240
+    },
+    {
+      "word": "Sure.",
+      "start_ms": 11200,
+      "end_ms": 11720
+    },
+    {
+      "word": "Mmm,",
+      "start_ms": 12560,
+      "end_ms": 13160
+    },
+    {
+      "word": "yum!",
+      "start_ms": 13400,
+      "end_ms": 13820
+    },
+    {
+      "word": "Are",
+      "start_ms": 14860,
+      "end_ms": 15160
+    },
+    {
+      "word": "tacos",
+      "start_ms": 15160,
+      "end_ms": 15620
+    },
+    {
+      "word": "a",
+      "start_ms": 15620,
+      "end_ms": 16220
+    },
+    {
+      "word": "traditional",
+      "start_ms": 16220,
+      "end_ms": 16720
+    },
+    {
+      "word": "Mexican",
+      "start_ms": 16720,
+      "end_ms": 17520
+    },
+    {
+      "word": "food?",
+      "start_ms": 17520,
+      "end_ms": 18040
+    },
+    {
+      "word": "They",
+      "start_ms": 18800,
+      "end_ms": 19220
+    },
+    {
+      "word": "are.",
+      "start_ms": 19220,
+      "end_ms": 19560
+    },
+    {
+      "word": "We",
+      "start_ms": 20280,
+      "end_ms": 20740
+    },
+    {
+      "word": "make",
+      "start_ms": 20740,
+      "end_ms": 21080
+    },
+    {
+      "word": "them",
+      "start_ms": 21080,
+      "end_ms": 21340
+    },
+    {
+      "word": "from",
+      "start_ms": 21340,
+      "end_ms": 21620
+    },
+    {
+      "word": "corn",
+      "start_ms": 21620,
+      "end_ms": 22060
+    },
+    {
+      "word": "seeds.",
+      "start_ms": 22060,
+      "end_ms": 22540
+    },
+    {
+      "word": "Is",
+      "start_ms": 23500,
+      "end_ms": 23860
+    },
+    {
+      "word": "this",
+      "start_ms": 23860,
+      "end_ms": 24240
+    },
+    {
+      "word": "beef",
+      "start_ms": 24240,
+      "end_ms": 24740
+    },
+    {
+      "word": "inside?",
+      "start_ms": 24740,
+      "end_ms": 25460
+    },
+    {
+      "word": "Yeah,",
+      "start_ms": 25460,
+      "end_ms": 26600
+    },
+    {
+      "word": "you",
+      "start_ms": 27440,
+      "end_ms": 27820
+    },
+    {
+      "word": "can",
+      "start_ms": 27820,
+      "end_ms": 28060
+    },
+    {
+      "word": "put",
+      "start_ms": 28060,
+      "end_ms": 28360
+    },
+    {
+      "word": "almost",
+      "start_ms": 28360,
+      "end_ms": 28960
+    },
+    {
+      "word": "anything",
+      "start_ms": 28960,
+      "end_ms": 29700
+    },
+    {
+      "word": "in",
+      "start_ms": 29700,
+      "end_ms": 30120
+    },
+    {
+      "word": "a",
+      "start_ms": 30120,
+      "end_ms": 30300
+    },
+    {
+      "word": "taco.",
+      "start_ms": 30300,
+      "end_ms": 30600
+    },
+    {
+      "word": "Now",
+      "start_ms": 31540,
+      "end_ms": 32060
+    },
+    {
+      "word": "try",
+      "start_ms": 32060,
+      "end_ms": 32620
+    },
+    {
+      "word": "these",
+      "start_ms": 32620,
+      "end_ms": 33080
+    },
+    {
+      "word": "chips.",
+      "start_ms": 33080,
+      "end_ms": 33600
+    },
+    {
+      "word": "We",
+      "start_ms": 34520,
+      "end_ms": 34820
+    },
+    {
+      "word": "make",
+      "start_ms": 34820,
+      "end_ms": 35160
+    },
+    {
+      "word": "them",
+      "start_ms": 35160,
+      "end_ms": 35460
+    },
+    {
+      "word": "with",
+      "start_ms": 35460,
+      "end_ms": 35820
+    },
+    {
+      "word": "corn",
+      "start_ms": 35820,
+      "end_ms": 36160
+    },
+    {
+      "word": "seeds",
+      "start_ms": 36160,
+      "end_ms": 36600
+    },
+    {
+      "word": "too.",
+      "start_ms": 36600,
+      "end_ms": 37180
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 38040,
+      "end_ms": 38440
+    },
+    {
+      "word": "what's",
+      "start_ms": 38800,
+      "end_ms": 39400
+    },
+    {
+      "word": "that?",
+      "start_ms": 39400,
+      "end_ms": 39660
+    },
+    {
+      "word": "It's",
+      "start_ms": 40760,
+      "end_ms": 41100
+    },
+    {
+      "word": "corn",
+      "start_ms": 41100,
+      "end_ms": 41600
+    },
+    {
+      "word": "silk",
+      "start_ms": 41600,
+      "end_ms": 42140
+    },
+    {
+      "word": "tea.",
+      "start_ms": 42140,
+      "end_ms": 42780
+    },
+    {
+      "word": "Corn",
+      "start_ms": 43660,
+      "end_ms": 44180
+    },
+    {
+      "word": "silk?",
+      "start_ms": 44180,
+      "end_ms": 44720
+    },
+    {
+      "word": "It's",
+      "start_ms": 45520,
+      "end_ms": 46140
+    },
+    {
+      "word": "the",
+      "start_ms": 46140,
+      "end_ms": 46300
+    },
+    {
+      "word": "hair",
+      "start_ms": 46300,
+      "end_ms": 46900
+    },
+    {
+      "word": "of",
+      "start_ms": 46900,
+      "end_ms": 47500
+    },
+    {
+      "word": "corn.",
+      "start_ms": 47500,
+      "end_ms": 47920
+    },
+    {
+      "word": "People",
+      "start_ms": 49000,
+      "end_ms": 49600
+    },
+    {
+      "word": "in",
+      "start_ms": 49600,
+      "end_ms": 50040
+    },
+    {
+      "word": "many",
+      "start_ms": 50040,
+      "end_ms": 50400
+    },
+    {
+      "word": "countries",
+      "start_ms": 50400,
+      "end_ms": 51000
+    },
+    {
+      "word": "make",
+      "start_ms": 51000,
+      "end_ms": 51560
+    },
+    {
+      "word": "tea",
+      "start_ms": 51560,
+      "end_ms": 51960
+    },
+    {
+      "word": "with",
+      "start_ms": 51960,
+      "end_ms": 52200
+    },
+    {
+      "word": "it.",
+      "start_ms": 52200,
+      "end_ms": 52420
+    },
+    {
+      "word": "It",
+      "start_ms": 52420,
+      "end_ms": 53400
+    },
+    {
+      "word": "is",
+      "start_ms": 53400,
+      "end_ms": 53600
+    },
+    {
+      "word": "good",
+      "start_ms": 53600,
+      "end_ms": 53880
+    },
+    {
+      "word": "for",
+      "start_ms": 53880,
+      "end_ms": 54160
+    },
+    {
+      "word": "your",
+      "start_ms": 54160,
+      "end_ms": 54360
+    },
+    {
+      "word": "health.",
+      "start_ms": 54360,
+      "end_ms": 54900
+    },
+    {
+      "word": "Try",
+      "start_ms": 55480,
+      "end_ms": 55860
+    },
+    {
+      "word": "it.",
+      "start_ms": 55860,
+      "end_ms": 56200
+    },
+    {
+      "word": "It's",
+      "start_ms": 57560,
+      "end_ms": 58520
+    },
+    {
+      "word": "sweet.",
+      "start_ms": 58520,
+      "end_ms": 59000
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 60100,
+      "end_ms": 60480
+    },
+    {
+      "word": "what",
+      "start_ms": 60900,
+      "end_ms": 61500
+    },
+    {
+      "word": "are",
+      "start_ms": 61500,
+      "end_ms": 61700
+    },
+    {
+      "word": "these?",
+      "start_ms": 61700,
+      "end_ms": 62040
+    },
+    {
+      "word": "They're",
+      "start_ms": 63080,
+      "end_ms": 63420
+    },
+    {
+      "word": "traditional",
+      "start_ms": 63420,
+      "end_ms": 63980
+    },
+    {
+      "word": "dolls.",
+      "start_ms": 63980,
+      "end_ms": 64560
+    },
+    {
+      "word": "We",
+      "start_ms": 65340,
+      "end_ms": 65660
+    },
+    {
+      "word": "make",
+      "start_ms": 65660,
+      "end_ms": 65980
+    },
+    {
+      "word": "them",
+      "start_ms": 65980,
+      "end_ms": 66360
+    },
+    {
+      "word": "with",
+      "start_ms": 66360,
+      "end_ms": 66680
+    },
+    {
+      "word": "corn",
+      "start_ms": 66680,
+      "end_ms": 67000
+    },
+    {
+      "word": "husks.",
+      "start_ms": 67000,
+      "end_ms": 67540
+    },
+    {
+      "word": "So",
+      "start_ms": 68460,
+      "end_ms": 69060
+    },
+    {
+      "word": "colourful.",
+      "start_ms": 69060,
+      "end_ms": 70100
+    },
+    {
+      "word": "May",
+      "start_ms": 70780,
+      "end_ms": 71220
+    },
+    {
+      "word": "I",
+      "start_ms": 71220,
+      "end_ms": 71440
+    },
+    {
+      "word": "take",
+      "start_ms": 71440,
+      "end_ms": 71760
+    },
+    {
+      "word": "a",
+      "start_ms": 71760,
+      "end_ms": 71960
+    },
+    {
+      "word": "video",
+      "start_ms": 71960,
+      "end_ms": 72360
+    },
+    {
+      "word": "of",
+      "start_ms": 72360,
+      "end_ms": 72820
+    },
+    {
+      "word": "them?",
+      "start_ms": 72820,
+      "end_ms": 73040
+    },
+    {
+      "word": "Certainly.",
+      "start_ms": 73700,
+      "end_ms": 74540
+    },
+    {
+      "word": "Corn",
+      "start_ms": 75560,
+      "end_ms": 76020
+    },
+    {
+      "word": "has",
+      "start_ms": 76020,
+      "end_ms": 76440
+    },
+    {
+      "word": "so",
+      "start_ms": 76440,
+      "end_ms": 76980
+    },
+    {
+      "word": "many",
+      "start_ms": 76980,
+      "end_ms": 77460
+    },
+    {
+      "word": "uses.",
+      "start_ms": 77460,
+      "end_ms": 78040
+    },
+    {
+      "word": "This",
+      "start_ms": 78920,
+      "end_ms": 79540
+    },
+    {
+      "word": "is",
+      "start_ms": 79540,
+      "end_ms": 79860
+    },
+    {
+      "word": "amazing.",
+      "start_ms": 79860,
+      "end_ms": 80580
+    },
+    {
+      "word": "There's",
+      "start_ms": 80580,
+      "end_ms": 82260
+    },
+    {
+      "word": "a",
+      "start_ms": 82260,
+      "end_ms": 82360
+    },
+    {
+      "word": "saying",
+      "start_ms": 82360,
+      "end_ms": 82800
+    },
+    {
+      "word": "in",
+      "start_ms": 82800,
+      "end_ms": 83180
+    },
+    {
+      "word": "Mexico,",
+      "start_ms": 83180,
+      "end_ms": 83740
+    },
+    {
+      "word": "without",
+      "start_ms": 84380,
+      "end_ms": 85160
+    },
+    {
+      "word": "corn",
+      "start_ms": 85160,
+      "end_ms": 85780
+    },
+    {
+      "word": "there",
+      "start_ms": 85780,
+      "end_ms": 86540
+    },
+    {
+      "word": "is",
+      "start_ms": 86540,
+      "end_ms": 86780
+    },
+    {
+      "word": "no",
+      "start_ms": 86780,
+      "end_ms": 87120
+    },
+    {
+      "word": "country.",
+      "start_ms": 87120,
+      "end_ms": 87780
+    },
+    {
+      "word": "Do",
+      "start_ms": 88660,
+      "end_ms": 89120
+    },
+    {
+      "word": "you",
+      "start_ms": 89120,
+      "end_ms": 89320
+    },
+    {
+      "word": "agree?",
+      "start_ms": 89320,
+      "end_ms": 89720
+    },
+    {
+      "word": "Listen",
+      "start_ms": 98360,
+      "end_ms": 99280
+    },
+    {
+      "word": "again.",
+      "start_ms": 99280,
+      "end_ms": 99740
+    },
+    {
+      "word": "Then",
+      "start_ms": 100660,
+      "end_ms": 101020
+    },
+    {
+      "word": "talk",
+      "start_ms": 101020,
+      "end_ms": 101320
+    },
+    {
+      "word": "about",
+      "start_ms": 101320,
+      "end_ms": 101720
+    },
+    {
+      "word": "how",
+      "start_ms": 101720,
+      "end_ms": 102020
+    },
+    {
+      "word": "people",
+      "start_ms": 102020,
+      "end_ms": 102420
+    },
+    {
+      "word": "ask",
+      "start_ms": 102420,
+      "end_ms": 102920
+    },
+    {
+      "word": "for",
+      "start_ms": 102920,
+      "end_ms": 103260
+    },
+    {
+      "word": "and",
+      "start_ms": 103260,
+      "end_ms": 103780
+    },
+    {
+      "word": "give",
+      "start_ms": 103780,
+      "end_ms": 104160
+    },
+    {
+      "word": "permission.",
+      "start_ms": 104160,
+      "end_ms": 104740
+    },
+    {
+      "word": "Can",
+      "start_ms": 106360,
+      "end_ms": 107240
+    },
+    {
+      "word": "I",
+      "start_ms": 107240,
+      "end_ms": 107520
+    },
+    {
+      "word": "try",
+      "start_ms": 107520,
+      "end_ms": 107920
+    },
+    {
+      "word": "the",
+      "start_ms": 107920,
+      "end_ms": 108300
+    },
+    {
+      "word": "taco?",
+      "start_ms": 108300,
+      "end_ms": 108680
+    },
+    {
+      "word": "Sure.",
+      "start_ms": 109680,
+      "end_ms": 110140
+    },
+    {
+      "word": "Mmm,",
+      "start_ms": 111020,
+      "end_ms": 111560
+    },
+    {
+      "word": "yum!",
+      "start_ms": 111880,
+      "end_ms": 112260
+    },
+    {
+      "word": "Are",
+      "start_ms": 113320,
+      "end_ms": 113600
+    },
+    {
+      "word": "tacos",
+      "start_ms": 113600,
+      "end_ms": 114080
+    },
+    {
+      "word": "a",
+      "start_ms": 114080,
+      "end_ms": 114640
+    },
+    {
+      "word": "traditional",
+      "start_ms": 114640,
+      "end_ms": 115180
+    },
+    {
+      "word": "Mexican",
+      "start_ms": 115180,
+      "end_ms": 115960
+    },
+    {
+      "word": "food?",
+      "start_ms": 115960,
+      "end_ms": 116480
+    },
+    {
+      "word": "They",
+      "start_ms": 117320,
+      "end_ms": 117680
+    },
+    {
+      "word": "are.",
+      "start_ms": 117680,
+      "end_ms": 118020
+    },
+    {
+      "word": "We",
+      "start_ms": 118820,
+      "end_ms": 119180
+    },
+    {
+      "word": "make",
+      "start_ms": 119180,
+      "end_ms": 119520
+    },
+    {
+      "word": "them",
+      "start_ms": 119520,
+      "end_ms": 119780
+    },
+    {
+      "word": "from",
+      "start_ms": 119780,
+      "end_ms": 120060
+    },
+    {
+      "word": "corn",
+      "start_ms": 120060,
+      "end_ms": 120520
+    },
+    {
+      "word": "seeds.",
+      "start_ms": 120520,
+      "end_ms": 120960
+    },
+    {
+      "word": "Is",
+      "start_ms": 121920,
+      "end_ms": 122320
+    },
+    {
+      "word": "this",
+      "start_ms": 122320,
+      "end_ms": 122680
+    },
+    {
+      "word": "beef",
+      "start_ms": 122680,
+      "end_ms": 123200
+    },
+    {
+      "word": "inside?",
+      "start_ms": 123200,
+      "end_ms": 123920
+    },
+    {
+      "word": "Yeah.",
+      "start_ms": 124700,
+      "end_ms": 125100
+    },
+    {
+      "word": "You",
+      "start_ms": 125860,
+      "end_ms": 126280
+    },
+    {
+      "word": "can",
+      "start_ms": 126280,
+      "end_ms": 126500
+    },
+    {
+      "word": "put",
+      "start_ms": 126500,
+      "end_ms": 126780
+    },
+    {
+      "word": "almost",
+      "start_ms": 126780,
+      "end_ms": 127420
+    },
+    {
+      "word": "anything",
+      "start_ms": 127420,
+      "end_ms": 128140
+    },
+    {
+      "word": "in",
+      "start_ms": 128140,
+      "end_ms": 128580
+    },
+    {
+      "word": "a",
+      "start_ms": 128580,
+      "end_ms": 128760
+    },
+    {
+      "word": "taco.",
+      "start_ms": 128760,
+      "end_ms": 129080
+    },
+    {
+      "word": "Now",
+      "start_ms": 129080,
+      "end_ms": 130400
+    },
+    {
+      "word": "try",
+      "start_ms": 130400,
+      "end_ms": 131080
+    },
+    {
+      "word": "these",
+      "start_ms": 131080,
+      "end_ms": 131580
+    },
+    {
+      "word": "chips.",
+      "start_ms": 131580,
+      "end_ms": 132060
+    },
+    {
+      "word": "We",
+      "start_ms": 132960,
+      "end_ms": 133260
+    },
+    {
+      "word": "make",
+      "start_ms": 133260,
+      "end_ms": 133600
+    },
+    {
+      "word": "them",
+      "start_ms": 133600,
+      "end_ms": 133940
+    },
+    {
+      "word": "with",
+      "start_ms": 133940,
+      "end_ms": 134260
+    },
+    {
+      "word": "corn",
+      "start_ms": 134260,
+      "end_ms": 134600
+    },
+    {
+      "word": "seeds",
+      "start_ms": 134600,
+      "end_ms": 135020
+    },
+    {
+      "word": "too.",
+      "start_ms": 135020,
+      "end_ms": 135620
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 136400,
+      "end_ms": 136880
+    },
+    {
+      "word": "what's",
+      "start_ms": 137160,
+      "end_ms": 137860
+    },
+    {
+      "word": "that?",
+      "start_ms": 137860,
+      "end_ms": 138140
+    },
+    {
+      "word": "It's",
+      "start_ms": 139240,
+      "end_ms": 139560
+    },
+    {
+      "word": "corn",
+      "start_ms": 139560,
+      "end_ms": 140040
+    },
+    {
+      "word": "silk",
+      "start_ms": 140040,
+      "end_ms": 140580
+    },
+    {
+      "word": "tea.",
+      "start_ms": 140580,
+      "end_ms": 141220
+    },
+    {
+      "word": "Corn",
+      "start_ms": 142140,
+      "end_ms": 142600
+    },
+    {
+      "word": "silk?",
+      "start_ms": 142600,
+      "end_ms": 143160
+    },
+    {
+      "word": "It's",
+      "start_ms": 144120,
+      "end_ms": 144600
+    },
+    {
+      "word": "the",
+      "start_ms": 144600,
+      "end_ms": 144760
+    },
+    {
+      "word": "hair",
+      "start_ms": 144760,
+      "end_ms": 145360
+    },
+    {
+      "word": "of",
+      "start_ms": 145360,
+      "end_ms": 145940
+    },
+    {
+      "word": "corn.",
+      "start_ms": 145940,
+      "end_ms": 146360
+    },
+    {
+      "word": "People",
+      "start_ms": 147460,
+      "end_ms": 148040
+    },
+    {
+      "word": "in",
+      "start_ms": 148040,
+      "end_ms": 148500
+    },
+    {
+      "word": "many",
+      "start_ms": 148500,
+      "end_ms": 148840
+    },
+    {
+      "word": "countries",
+      "start_ms": 148840,
+      "end_ms": 149480
+    },
+    {
+      "word": "make",
+      "start_ms": 149480,
+      "end_ms": 150000
+    },
+    {
+      "word": "tea",
+      "start_ms": 150000,
+      "end_ms": 150400
+    },
+    {
+      "word": "with",
+      "start_ms": 150400,
+      "end_ms": 150660
+    },
+    {
+      "word": "it.",
+      "start_ms": 150660,
+      "end_ms": 150880
+    },
+    {
+      "word": "It",
+      "start_ms": 151380,
+      "end_ms": 151760
+    },
+    {
+      "word": "is",
+      "start_ms": 151760,
+      "end_ms": 151960
+    },
+    {
+      "word": "good",
+      "start_ms": 151960,
+      "end_ms": 152240
+    },
+    {
+      "word": "for",
+      "start_ms": 152240,
+      "end_ms": 152500
+    },
+    {
+      "word": "your",
+      "start_ms": 152500,
+      "end_ms": 152700
+    },
+    {
+      "word": "health.",
+      "start_ms": 152700,
+      "end_ms": 153180
+    },
+    {
+      "word": "Try",
+      "start_ms": 153880,
+      "end_ms": 154340
+    },
+    {
+      "word": "it.",
+      "start_ms": 154340,
+      "end_ms": 154660
+    },
+    {
+      "word": "Hmm,",
+      "start_ms": 154660,
+      "end_ms": 155880
+    },
+    {
+      "word": "it's",
+      "start_ms": 156520,
+      "end_ms": 157060
+    },
+    {
+      "word": "sweet.",
+      "start_ms": 157060,
+      "end_ms": 157460
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 158520,
+      "end_ms": 158960
+    },
+    {
+      "word": "what",
+      "start_ms": 159360,
+      "end_ms": 160000
+    },
+    {
+      "word": "are",
+      "start_ms": 160000,
+      "end_ms": 160180
+    },
+    {
+      "word": "these?",
+      "start_ms": 160180,
+      "end_ms": 160520
+    },
+    {
+      "word": "They're",
+      "start_ms": 161440,
+      "end_ms": 161900
+    },
+    {
+      "word": "traditional",
+      "start_ms": 161900,
+      "end_ms": 162460
+    },
+    {
+      "word": "dolls.",
+      "start_ms": 162460,
+      "end_ms": 163060
+    },
+    {
+      "word": "We",
+      "start_ms": 163780,
+      "end_ms": 164140
+    },
+    {
+      "word": "make",
+      "start_ms": 164140,
+      "end_ms": 164480
+    },
+    {
+      "word": "them",
+      "start_ms": 164480,
+      "end_ms": 164820
+    },
+    {
+      "word": "with",
+      "start_ms": 164820,
+      "end_ms": 165160
+    },
+    {
+      "word": "corn",
+      "start_ms": 165160,
+      "end_ms": 165480
+    },
+    {
+      "word": "husks.",
+      "start_ms": 165480,
+      "end_ms": 166040
+    },
+    {
+      "word": "So",
+      "start_ms": 166880,
+      "end_ms": 167600
+    },
+    {
+      "word": "colourful!",
+      "start_ms": 167600,
+      "end_ms": 168540
+    },
+    {
+      "word": "May",
+      "start_ms": 169280,
+      "end_ms": 169700
+    },
+    {
+      "word": "I",
+      "start_ms": 169700,
+      "end_ms": 169920
+    },
+    {
+      "word": "take",
+      "start_ms": 169920,
+      "end_ms": 170240
+    },
+    {
+      "word": "a",
+      "start_ms": 170240,
+      "end_ms": 170460
+    },
+    {
+      "word": "video",
+      "start_ms": 170460,
+      "end_ms": 170840
+    },
+    {
+      "word": "of",
+      "start_ms": 170840,
+      "end_ms": 171300
+    },
+    {
+      "word": "them?",
+      "start_ms": 171300,
+      "end_ms": 171520
+    },
+    {
+      "word": "Certainly!",
+      "start_ms": 172220,
+      "end_ms": 173060
+    },
+    {
+      "word": "Corn",
+      "start_ms": 173940,
+      "end_ms": 174500
+    },
+    {
+      "word": "has",
+      "start_ms": 174500,
+      "end_ms": 174920
+    },
+    {
+      "word": "so",
+      "start_ms": 174920,
+      "end_ms": 175460
+    },
+    {
+      "word": "many",
+      "start_ms": 175460,
+      "end_ms": 175940
+    },
+    {
+      "word": "uses.",
+      "start_ms": 175940,
+      "end_ms": 176540
+    },
+    {
+      "word": "This",
+      "start_ms": 177460,
+      "end_ms": 178040
+    },
+    {
+      "word": "is",
+      "start_ms": 178040,
+      "end_ms": 178340
+    },
+    {
+      "word": "amazing!",
+      "start_ms": 178340,
+      "end_ms": 179040
+    },
+    {
+      "word": "There's",
+      "start_ms": 179040,
+      "end_ms": 180740
+    },
+    {
+      "word": "a",
+      "start_ms": 180740,
+      "end_ms": 180840
+    },
+    {
+      "word": "saying",
+      "start_ms": 180840,
+      "end_ms": 181280
+    },
+    {
+      "word": "in",
+      "start_ms": 181280,
+      "end_ms": 181660
+    },
+    {
+      "word": "Mexico,",
+      "start_ms": 181660,
+      "end_ms": 182200
+    },
+    {
+      "word": "without",
+      "start_ms": 183180,
+      "end_ms": 183640
+    },
+    {
+      "word": "corn",
+      "start_ms": 183640,
+      "end_ms": 184240
+    },
+    {
+      "word": "there",
+      "start_ms": 184240,
+      "end_ms": 185020
+    },
+    {
+      "word": "is",
+      "start_ms": 185020,
+      "end_ms": 185260
+    },
+    {
+      "word": "no",
+      "start_ms": 185260,
+      "end_ms": 185580
+    },
+    {
+      "word": "country.",
+      "start_ms": 185580,
+      "end_ms": 186260
+    },
+    {
+      "word": "Do",
+      "start_ms": 187120,
+      "end_ms": 187600
+    },
+    {
+      "word": "you",
+      "start_ms": 187600,
+      "end_ms": 187800
+    },
+    {
+      "word": "agree?",
+      "start_ms": 187800,
+      "end_ms": 188200
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 21.5
+  }
+}

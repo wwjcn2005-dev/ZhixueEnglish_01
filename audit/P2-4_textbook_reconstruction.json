@@ -1,0 +1,2728 @@
+{
+  "task": "P2-4 教材完整重构与学习关系建模",
+  "generated_at": "2026-09-13T10:19:50+08:00",
+  "rule_set": "P2-4-textbook-reconstruction-v1",
+  "scanned": {
+    "pdf_pages": [
+      8,
+      114
+    ],
+    "audio_files": 54
+  },
+  "counts": {
+    "units": 7,
+    "sections": 40,
+    "activities": 157,
+    "questions": 360,
+    "listening_activities": 21,
+    "blank_lines": 850
+  },
+  "visual": {
+    "images": 139,
+    "drawings": 2653,
+    "decoration_zones": 157,
+    "blank_lines": 850,
+    "icons": 33,
+    "role_known": 1210,
+    "role_unknown": 1739,
+    "by_role": {
+      "context_image": 33,
+      "instruction_support": 94,
+      "listening_context": 23,
+      "reading_context": 4,
+      "vocabulary_support": 0,
+      "writing_model": 10,
+      "question_context": 0,
+      "decorative": 196,
+      "unknown": 1739
+    }
+  },
+  "audio": {
+    "total": 54,
+    "confirmed": 54,
+    "needs_review": 0,
+    "by_scope": {
+      "activity": 41,
+      "section": 13,
+      "null": 0
+    },
+    "audio_question_relations": 121
+  },
+  "questions": {
+    "total": 360,
+    "with_audio": 121,
+    "with_image": 344,
+    "with_text": 315,
+    "with_vocabulary": 303
+  },
+  "evidence_packages": 360,
+  "consistency": {
+    "issue_count": 133,
+    "by_kind": {
+      "ambiguous": 133
+    },
+    "issues": [
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A1",
+        "ids": [
+          "VO:046BEC2C3C64"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（5 个）：A:E43CCEC75481",
+        "ids": [
+          "VO:7B773E856F8A",
+          "VO:06633C043F2B",
+          "VO:CEE65F101F7B",
+          "VO:2F3B4CA3C9B5",
+          "VO:797AF34C160D"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+        "ids": [
+          "VO:692142A24D92",
+          "VO:4BEA79205486",
+          "VO:4EAD4DE12DD8",
+          "VO:04F6644FD63B",
+          "VO:4E18EBABF37F",
+          "VO:B9AC4F5D4FA4"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+        "ids": [
+          "VO:8BBA09CACC81"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:379FE87616D8",
+        "ids": [
+          "VO:042E70EA3BFF"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（4 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A7",
+        "ids": [
+          "VO:F42DAB17D0C5",
+          "VO:A612E8F2A92F",
+          "VO:1F9840627468",
+          "VO:D289A16630EE"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（2 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+        "ids": [
+          "VO:7D25AB60DA55",
+          "VO:71D79621C095"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A9",
+        "ids": [
+          "VO:C429A2F2B919"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+        "ids": [
+          "VO:F402108B66F1"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（49 个）：A:40EEA0B8FBEF",
+        "ids": [
+          "VO:022A1ED6A98A",
+          "VO:2C5ED4518BD8",
+          "VO:BE2775F13604",
+          "VO:AD9CA2CFD8B3",
+          "VO:4C48A485D894",
+          "VO:BF305AF0B3B6",
+          "VO:29480274EFE3",
+          "VO:52BDDE1AA6AF",
+          "VO:607AFD5BD45A",
+          "VO:3BC317C7DF5A",
+          "VO:986DBBB87634",
+          "VO:75D66BCF87F9",
+          "VO:FD92E05E00F9",
+          "VO:BF7D43F4D2F9",
+          "VO:CD113236BC16",
+          "VO:9A25D5D98767",
+          "VO:284DF5C64DE8",
+          "VO:C56CF7A9365A",
+          "VO:954EAB5BEF58",
+          "VO:3450713715DA",
+          "VO:C86266F2358D",
+          "VO:4E8CC716B5C1",
+          "VO:53FB451DC7F2",
+          "VO:B5D715D0AE9A",
+          "VO:CBE681B5A2FA",
+          "VO:B0D435ADEA93",
+          "VO:103423B340E8",
+          "VO:CA6153141832",
+          "VO:9831B7FDA03A",
+          "VO:45D54D242035",
+          "VO:B18D101F5169",
+          "VO:71526959522E",
+          "VO:0FC9B7160F2F",
+          "VO:07C421872F8F",
+          "VO:FAD4F9A491B4",
+          "VO:A61AED999184",
+          "VO:D27ED1296F34",
+          "VO:7500B1DF4916",
+          "VO:9F04679870C0",
+          "VO:8328D8919D21",
+          "VO:DBD30A1FFE68",
+          "VO:5EE331991296",
+          "VO:997B790701CE",
+          "VO:FB19704CC48B",
+          "VO:8742F1136AC8",
+          "VO:96CD85FF6E2E",
+          "VO:0C1A51E9E7A1",
+          "VO:6F601F3BEA06",
+          "VO:0EF5504F2656"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（52 个）：A:287720C6C596",
+        "ids": [
+          "VO:6F666959B122",
+          "VO:E7310047D3D5",
+          "VO:E8EC1EBCC6C0",
+          "VO:929F99B31D28",
+          "VO:2546A0C910BD",
+          "VO:932548DB54FB",
+          "VO:4F982A3BE438",
+          "VO:30CA85D3A1C3",
+          "VO:3C9781D99391",
+          "VO:5EA0FD11C5FE",
+          "VO:D060B578FC68",
+          "VO:F2800A8988C4",
+          "VO:C548A6B64799",
+          "VO:FD2E2A88C7F5",
+          "VO:9CD7F1F2D0C6",
+          "VO:71D4A1C03E36",
+          "VO:E5CEC7AF4044",
+          "VO:31ADE41B27E8",
+          "VO:EDD2A48BD473",
+          "VO:BDC8841B260E",
+          "VO:37DC4404C170",
+          "VO:6864226FC2A8",
+          "VO:BDE830590226",
+          "VO:2A84D8991D87",
+          "VO:A97ECCFAEA88",
+          "VO:A94EDD53CE34",
+          "VO:23482DD04C26",
+          "VO:28FE43BFCDC2",
+          "VO:E21514C123F2",
+          "VO:706A45865665",
+          "VO:124E888404A9",
+          "VO:1E027380126B",
+          "VO:E246A3051302",
+          "VO:BBAF1A488493",
+          "VO:4E3DE14199E1",
+          "VO:7B0171809FD0",
+          "VO:443749D6D407",
+          "VO:216E918CE1AA",
+          "VO:001D8D7C4256",
+          "VO:70AF6DEC88E9",
+          "VO:C635F51683AF",
+          "VO:71DA39F4F51F",
+          "VO:AF70C0399A31",
+          "VO:F712947B327B",
+          "VO:B843CF7864DC",
+          "VO:37D79F4F43B4",
+          "VO:DBF0CFD72975",
+          "VO:0ED10FAC2C29",
+          "VO:395BC709F1F7",
+          "VO:B819164650E8",
+          "VO:8CB867108ED0",
+          "VO:EB80E68B95A3"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（10 个）：FLTRP-EN-7A-2022CUR:STARTER:KNOW_YOUR_SCHOOL:A3",
+        "ids": [
+          "VO:3AD10794D230",
+          "VO:679E66522DE1",
+          "VO:D62B6AC3A885",
+          "VO:6E4BD44BE963",
+          "VO:492A2DC422CB",
+          "VO:C0394B4919B1",
+          "VO:3ECBA01FA00D",
+          "VO:C3DC5796BBFA",
+          "VO:9EC8EFC3B970",
+          "VO:89B6ADD6AB23"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（72 个）：A:BAC19B1D8586",
+        "ids": [
+          "VO:91BCAE129D42",
+          "VO:80DB7FA4BC86",
+          "VO:4A19A8CDA1DC",
+          "VO:240D7FF58D01",
+          "VO:00CE74DF73A0",
+          "VO:056D161EB55D",
+          "VO:781ADF2DBCD5",
+          "VO:FBD5057DB1F3",
+          "VO:0BBC8022EB41",
+          "VO:7B4A78E6F61F",
+          "VO:82919F08375C",
+          "VO:4A43FAC82622",
+          "VO:C4B52E0CBA06",
+          "VO:17E049D3136A",
+          "VO:52DEE821516D",
+          "VO:DD50729CA5A5",
+          "VO:294779D5492D",
+          "VO:3821C8236411",
+          "VO:B7E688B8B226",
+          "VO:2BDEBCC83F4E",
+          "VO:55197DB9B953",
+          "VO:266CBFE86ADE",
+          "VO:275F8A563BE3",
+          "VO:50D4E6DFF17A",
+          "VO:0131EB771919",
+          "VO:6FE704A68AD6",
+          "VO:CEA49F1F23A7",
+          "VO:5449DB9D8DA0",
+          "VO:1A16EA10C0ED",
+          "VO:F7E793DF07C6",
+          "VO:345A1054ADFC",
+          "VO:84C8135E2060",
+          "VO:25988C1E248A",
+          "VO:EEA5F6A53A25",
+          "VO:025F23BAC606",
+          "VO:DF759BB56AC7",
+          "VO:B39BC17E35F6",
+          "VO:48D82B01F39D",
+          "VO:4D140AB7767C",
+          "VO:E55A9663C582",
+          "VO:CA64359C3D35",
+          "VO:1A1B3464E82B",
+          "VO:FBC238E9D20F",
+          "VO:3302AFB5E4EA",
+          "VO:27AB3C44D998",
+          "VO:1BD977666981",
+          "VO:056B0449B365",
+          "VO:4DC456A47865",
+          "VO:11A15022BC72",
+          "VO:515E29D2A776",
+          "VO:6A422215678B",
+          "VO:391D5122FBEA",
+          "VO:A4E8D6809745",
+          "VO:5E725D90E503",
+          "VO:7A09E1A120D6",
+          "VO:F9BD0478B151",
+          "VO:AA66AF554A3D",
+          "VO:CE2EC8594AED",
+          "VO:2CD1D4D4EC2E",
+          "VO:F5143E91951B",
+          "VO:A348E0EEF03A",
+          "VO:B6EC31B0E02D",
+          "VO:B8248B50BEB6",
+          "VO:3B373AEBAD72",
+          "VO:6EF156F7C309",
+          "VO:70411D6064CB",
+          "VO:378C75D17A29",
+          "VO:939AD9360D52",
+          "VO:95E08841824A",
+          "VO:110CAC6BF37A",
+          "VO:EC3FD7086DCB",
+          "VO:71BB747EBCA3"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（5 个）：A:069B23C293AF",
+        "ids": [
+          "VO:C0DD135A1BF8",
+          "VO:97CD22E10C6E",
+          "VO:08ACE7EDD9B0",
+          "VO:96A75DEA682E",
+          "VO:DD38F9CA62F3"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：A:02FCFB87E6C8",
+        "ids": [
+          "VO:F1CE2EBA4067",
+          "VO:517009C4DFE6",
+          "VO:57646013DC56",
+          "VO:61BE045C8F0B",
+          "VO:E716CC0F27C9",
+          "VO:56169B979D00",
+          "VO:589AF8610B01"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（8 个）：A:589A5BE8915C",
+        "ids": [
+          "VO:4760F3BFAD77",
+          "VO:6BED2B50849E",
+          "VO:738E0CF6536C",
+          "VO:852CF0F2BC38",
+          "VO:95F9487E5A50",
+          "VO:75C8B0C5AB70",
+          "VO:EE3580BDEAB1",
+          "VO:2EE72BBC32E9"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（12 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_TO_KNOW_EACH_OTHER:A6",
+        "ids": [
+          "VO:30D312EE08D8",
+          "VO:70F68F384271",
+          "VO:4AA02B3B7E09",
+          "VO:7FF343F0FE3A",
+          "VO:4DD60907B924",
+          "VO:4D28D7CC8BCC",
+          "VO:4DA5183B8173",
+          "VO:8A6A6718653D",
+          "VO:752C3E0DE64B",
+          "VO:37F09D4B5484",
+          "VO:C8D89B6822DC",
+          "VO:9B1EB5ED0350"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:STARTER:GET_TO_KNOW_EACH_OTHER:A7",
+        "ids": [
+          "VO:350A0243E5F7"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：A:F1251140E401",
+        "ids": [
+          "VO:1421394E7119",
+          "VO:C14B4B6CFA94",
+          "VO:210EAAEF650F",
+          "VO:4174B7324449",
+          "VO:A7C0E04AE373",
+          "VO:4F124DBD84F6"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（24 个）：A:79A3C98CF2C7",
+        "ids": [
+          "VO:F990EAD00C5C",
+          "VO:78BED54C168A",
+          "VO:2EF8AEF9D0A5",
+          "VO:92031D439C97",
+          "VO:A1C5C09158FB",
+          "VO:128648FA464A",
+          "VO:DF0D97376BCF",
+          "VO:CF8CD08AD564",
+          "VO:5C4DED994600",
+          "VO:69A81F7EB802",
+          "VO:19B8E408EA22",
+          "VO:4B9AE1A78980",
+          "VO:8EE2BDA05903",
+          "VO:0109FB46EA80",
+          "VO:37250A581E78",
+          "VO:44D4D24EDBCF",
+          "VO:93C5F67031EE",
+          "VO:E2BA7E3052A1",
+          "VO:25896FCFFAC4",
+          "VO:6A31935D76CE",
+          "VO:FD25F53D161C",
+          "VO:6AAD69015692",
+          "VO:4E2C52E6C000",
+          "VO:EB9C55F35D66"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：FLTRP-EN-7A-2022CUR:U1:STARTING_OUT:A1",
+        "ids": [
+          "VO:1EBC6178D0D4",
+          "VO:DCACF4D5997B",
+          "VO:6437447824AB",
+          "VO:4CD976114C69",
+          "VO:4446D8C6A628",
+          "VO:0736827B1B6B"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:1DFCD91F448A",
+        "ids": [
+          "VO:741A7DE0EE96"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（4 个）：FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+        "ids": [
+          "VO:0A14B983AD78",
+          "VO:35DEB8AF8E02",
+          "VO:FC72C97C605E",
+          "VO:42477B39580A"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：A:788E5928CB34",
+        "ids": [
+          "VO:D4A167760212",
+          "VO:A75265937428",
+          "VO:C99C1C805E35",
+          "VO:CB73B077922C",
+          "VO:0C1D298095F4",
+          "VO:4CBC80DB81C0",
+          "VO:29AC18202BAC"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（10 个）：FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+        "ids": [
+          "VO:13B9B82ADC0F",
+          "VO:E28D3794355D",
+          "VO:2CE4376A3B39",
+          "VO:2CB247FDFF47",
+          "VO:40EF30B1A41D",
+          "VO:9A82CF2940DB",
+          "VO:2B87D6706A37",
+          "VO:28A6764CEE34",
+          "VO:8918060822F1",
+          "VO:71E99808D8E7"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+        "ids": [
+          "VO:11A2E4DD101E",
+          "VO:8D9BED6D3FC0",
+          "VO:2977637E6164"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（27 个）：FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+        "ids": [
+          "VO:1525CB016C91",
+          "VO:E0EA6F9F36E4",
+          "VO:ECF89D78DD1D",
+          "VO:99B20D65CE72",
+          "VO:3EB5C3EF7C51",
+          "VO:3D633B4E070C",
+          "VO:BB4E7C12CAA8",
+          "VO:D45BC0133091",
+          "VO:083C9A5E1DA9",
+          "VO:F4D7BADE34CB",
+          "VO:DEEBEBC20C0D",
+          "VO:F4E6C1CEEF67",
+          "VO:9426B093DE27",
+          "VO:D36B7FB47A34",
+          "VO:47C79C1CC189",
+          "VO:C7EED1984232",
+          "VO:330194802462",
+          "VO:C24FF962ED64",
+          "VO:87E2E7FD9A6E",
+          "VO:648BDB13AFC9",
+          "VO:F6843AE0EAFB",
+          "VO:A2FC447F7765",
+          "VO:116B04D7737F",
+          "VO:2ED259D1F340",
+          "VO:E2A42E4D14FD",
+          "VO:BC94AD42F59E",
+          "VO:FC5D626F5C6B"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（66 个）：A:26AB1A30FD52",
+        "ids": [
+          "VO:C14CF0371D1E",
+          "VO:BE9B8AA11237",
+          "VO:5F3DB0EA5EED",
+          "VO:5C927D98EB78",
+          "VO:83A28FF3F4C6",
+          "VO:738EB5A3BDA2",
+          "VO:2A4B4185694D",
+          "VO:6AF76DEDCCEC",
+          "VO:FB1EADF703E9",
+          "VO:B5A276F67DFC",
+          "VO:D7AF0548FEDE",
+          "VO:F768913D9BB5",
+          "VO:32806A147C43",
+          "VO:5C4EF63E5CD8",
+          "VO:38F671BC93AC",
+          "VO:4A56D4774309",
+          "VO:0A52FD272F92",
+          "VO:FA509B0303E5",
+          "VO:BB519E0AD9E3",
+          "VO:C55A74E2DE78",
+          "VO:77872619E9A9",
+          "VO:B1D559A2DBCD",
+          "VO:2B4A5591A0C7",
+          "VO:ED0A68A3BE99",
+          "VO:61F492D9508E",
+          "VO:3475D7D8A7D3",
+          "VO:ABD15E06216D",
+          "VO:B27908F619A1",
+          "VO:0A90C7E992AE",
+          "VO:C0FC03CD3DD0",
+          "VO:18AFA43D725C",
+          "VO:9F5CC5704E3C",
+          "VO:D12C7302E4D7",
+          "VO:58C258F26CB0",
+          "VO:1D010E14D924",
+          "VO:FB88184E1A4A",
+          "VO:8ADC6AAFF48E",
+          "VO:BAF255C3F42C",
+          "VO:C0B0558D2A11",
+          "VO:84741CDB155C",
+          "VO:FF9BDC7CFF27",
+          "VO:73BCA5D03A32",
+          "VO:D089E3A0F620",
+          "VO:3E7589468FE8",
+          "VO:000398840E7F",
+          "VO:D842B645BF51",
+          "VO:EE329C72ED9E",
+          "VO:538B5514E266",
+          "VO:AA60EC5351A5",
+          "VO:A49D355F6FC3",
+          "VO:5AF6A6BA7162",
+          "VO:8F9C4779951D",
+          "VO:85A6B9D347A6",
+          "VO:8777D95F272A",
+          "VO:51C3EB5806C7",
+          "VO:EBE9A6B41398",
+          "VO:E2BB52A94226",
+          "VO:2A212773DA16",
+          "VO:411744D46A20",
+          "VO:A12C24C680CD",
+          "VO:5CF21E03988F",
+          "VO:D6E0D7DCD47E",
+          "VO:42A24FF8CC28",
+          "VO:7146872B00F3",
+          "VO:4DF61E512A60",
+          "VO:3186C04AC99B"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A4",
+        "ids": [
+          "VO:2A2C1DFA722F",
+          "VO:6E92086FB83F",
+          "VO:B967E5067ECD",
+          "VO:4A28C9D7E824",
+          "VO:A93E4B70D7A4",
+          "VO:0C5B5A5AE889"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "填空类活动未识别到教材空白线：A:D9D2CC997AD5",
+        "ids": [
+          "A:D9D2CC997AD5"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（5 个）：A:D9D2CC997AD5",
+        "ids": [
+          "VO:34E9A54FFF21",
+          "VO:A4C72C7355F3",
+          "VO:8B31CBA8241D",
+          "VO:7EFA3444FACC",
+          "VO:70657422BE57"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（38 个）：A:46D86F27A64D",
+        "ids": [
+          "VO:BA382A4D98DD",
+          "VO:2ED80B7B783E",
+          "VO:122ED547A8DF",
+          "VO:63A36C6C4C87",
+          "VO:6CD53E22AD69",
+          "VO:43A105BBC9DE",
+          "VO:3D72C82827E8",
+          "VO:242EABBC21B7",
+          "VO:B6D215C1FF03",
+          "VO:2B8B569B088E",
+          "VO:9A58B28EF734",
+          "VO:C0CF74DCF5B1",
+          "VO:5CB005296A5B",
+          "VO:F4AB45184AC8",
+          "VO:D79658747C21",
+          "VO:DD42F8E3C2E2",
+          "VO:7D5C7F43D908",
+          "VO:FE67A71EFA73",
+          "VO:A09A5242AB9E",
+          "VO:1FBC5F8568B9",
+          "VO:B367D3820DC7",
+          "VO:DFF9B1C0ECA0",
+          "VO:521AF854D70F",
+          "VO:39BD33BAB23C",
+          "VO:545762153FBA",
+          "VO:E76FDF7E1193",
+          "VO:02C8B1369990",
+          "VO:60DDA5846E42",
+          "VO:626A035EA8BA",
+          "VO:A17E683AE18F",
+          "VO:316893104449",
+          "VO:21A901A26D0D",
+          "VO:B900C7864034",
+          "VO:3A111BAD7195",
+          "VO:318995F6E4EE",
+          "VO:79F8CE23A330",
+          "VO:A3399DBAA3AD",
+          "VO:5CCDC8A4AF1B"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：A:CA1E55915AE7",
+        "ids": [
+          "VO:91A3ADF96961",
+          "VO:186012B59C6A",
+          "VO:9353E17B0146",
+          "VO:5349CB4D2DD5",
+          "VO:5609A2EF837F",
+          "VO:B30EF4D485CB"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U1:READING_FOR_WRITING:A4",
+        "ids": [
+          "VO:AD887C486A6D",
+          "VO:A19B34BAD928",
+          "VO:134AA12494B1"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（48 个）：FLTRP-EN-7A-2022CUR:U1:READING_FOR_WRITING:A5",
+        "ids": [
+          "VO:989AA6159DF8",
+          "VO:16488C39DA9F",
+          "VO:736C8523E990",
+          "VO:4DBB42F7B3A8",
+          "VO:6F8BDF2E9E29",
+          "VO:9A46524005F4",
+          "VO:7FCA1F766413",
+          "VO:957128DB705A",
+          "VO:131CED29EE50",
+          "VO:B49CCE75F7C8",
+          "VO:E9899A0CEAB4",
+          "VO:0403AEF0C1DD",
+          "VO:BD98C32EFCA1",
+          "VO:E04DFE878E52",
+          "VO:06046FF60FD3",
+          "VO:20F91BFC2400",
+          "VO:548249B4B238",
+          "VO:4EDC89B0C297",
+          "VO:3D79C0E327CE",
+          "VO:B72ABDBE2AC2",
+          "VO:18C944F1C587",
+          "VO:175BF86D3C19",
+          "VO:CD2C1C708120",
+          "VO:A4756487578A",
+          "VO:73F41A08B78E",
+          "VO:CE7706628C37",
+          "VO:D64A985A66FD",
+          "VO:BEE577144D6B",
+          "VO:35C99DA8D33E",
+          "VO:74E40BB9D2FF",
+          "VO:3FE1E4E36869",
+          "VO:0C1905AE1320",
+          "VO:0AE77EF28A2C",
+          "VO:AFCFF57095D2",
+          "VO:83B743D10214",
+          "VO:14D796AFA14E",
+          "VO:05256E82D254",
+          "VO:92FFD2C5D577",
+          "VO:DE76606E5324",
+          "VO:FA6D22203D33",
+          "VO:E00C9D04381F",
+          "VO:9DE19D23AF07",
+          "VO:E35A66D0E2EF",
+          "VO:473245A9184E",
+          "VO:307CC9770689",
+          "VO:9DCBB95D4689",
+          "VO:AE6D3812175D",
+          "VO:D779BA688447"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（13 个）：A:C01A734E22D1",
+        "ids": [
+          "VO:384287814A83",
+          "VO:D83C8A319AA3",
+          "VO:6445B0A48CDF",
+          "VO:9BAB5AD4D4A3",
+          "VO:A631ABCF0F74",
+          "VO:D1E03AB44529",
+          "VO:189A7FE21CF4",
+          "VO:174ABA7236F8",
+          "VO:2E3471D062CB",
+          "VO:3892330798CD",
+          "VO:E52E3540DD16",
+          "VO:F5F35AF58285",
+          "VO:B7C628D5A413"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:A01119C398D8",
+        "ids": [
+          "VO:BD807359B1C5"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：A:22DDC6234BEC",
+        "ids": [
+          "VO:877C5340C7C4",
+          "VO:37A3D3C169AA",
+          "VO:F7F2E7845952",
+          "VO:616907C6D265",
+          "VO:733CD5270C7D",
+          "VO:13B53F9F44AB",
+          "VO:0C1BF5DF7251",
+          "VO:2B94B6CAB6F8",
+          "VO:6A55A445E5B0"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：A:07EFFCA30BAB",
+        "ids": [
+          "VO:A2D916AE0273",
+          "VO:8E27BA358BD0",
+          "VO:1E4EE0EBEF59"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+        "ids": [
+          "VO:5E8AD3C8DC13",
+          "VO:47C1C29B44ED",
+          "VO:035169EB9106",
+          "VO:3CCD4D7701D1",
+          "VO:4DF2D417A133",
+          "VO:CED53D8152F1",
+          "VO:D04075955D5C",
+          "VO:20480A5AFAD3",
+          "VO:F1850D9F1C18"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（27 个）：FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A4",
+        "ids": [
+          "VO:82D49FBB8D80",
+          "VO:2961EDC1E168",
+          "VO:2F14CE730FFD",
+          "VO:369F90B88378",
+          "VO:85B044C3F6B8",
+          "VO:A2477AE38A0B",
+          "VO:EFD5E78B3E3E",
+          "VO:902CE1C6F748",
+          "VO:9E2F7FF723B5",
+          "VO:F774317F724D",
+          "VO:30FB58E0C62B",
+          "VO:84E9913519A8",
+          "VO:80C3A7CCF7A1",
+          "VO:15704608451E",
+          "VO:97C444C6E33F",
+          "VO:13F0395E7565",
+          "VO:01C37078076E",
+          "VO:C344CD4171EC",
+          "VO:10F230033C8E",
+          "VO:2DDA5F65356B",
+          "VO:5F9EACFEE47D",
+          "VO:193F7DA929B9",
+          "VO:92B2A960D784",
+          "VO:1AA6E8D9AC38",
+          "VO:96A220086F10",
+          "VO:7DDC8B1E8703",
+          "VO:31711974ADDF"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A6",
+        "ids": [
+          "VO:BA378A2CE1E3"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（10 个）：FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A7",
+        "ids": [
+          "VO:9008530E6E05",
+          "VO:7412A5C64A27",
+          "VO:30E066EAA3AD",
+          "VO:16ED2EFC5C90",
+          "VO:09FF39049200",
+          "VO:719A4466B29D",
+          "VO:FB865553D14A",
+          "VO:20541ECBE357",
+          "VO:096D5C7FB6F8",
+          "VO:9E2C7C1775B7"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A8",
+        "ids": [
+          "VO:94D3952A7E7E",
+          "VO:5C93CC941732",
+          "VO:66F1CF549565",
+          "VO:8CE9F3D50187",
+          "VO:0487951B04CE",
+          "VO:4B560A018096",
+          "VO:E8517C53047C"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A1",
+        "ids": [
+          "VO:39B359981F6E",
+          "VO:EBA90FCE546E",
+          "VO:C07ABF6B4D7F"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（8 个）：FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A2",
+        "ids": [
+          "VO:C47E1CCDDBF9",
+          "VO:74CCFAAE3206",
+          "VO:E4F7026A7C5C",
+          "VO:C50B03BBE58E",
+          "VO:F05B4A72481E",
+          "VO:B5900262008B",
+          "VO:D79D5C9BDEC2",
+          "VO:B7874A207320"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：A:2E0FB15EF0E1",
+        "ids": [
+          "VO:9D240E067A15",
+          "VO:EA901AC1E710",
+          "VO:56943AEBC4F1",
+          "VO:6EE7005A4EAD",
+          "VO:CB7E3B8FE547",
+          "VO:36F8BD6CABDE",
+          "VO:C5E3E430C8B1"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（13 个）：FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A4",
+        "ids": [
+          "VO:43D3A0FC1C64",
+          "VO:19F84A721A61",
+          "VO:539E2FFFF528",
+          "VO:F68815BADE89",
+          "VO:A35F244CEA08",
+          "VO:80E32F5E536E",
+          "VO:39B8872AF1A9",
+          "VO:DD51118D77F5",
+          "VO:657A69CE14D9",
+          "VO:46A49B60E629",
+          "VO:AADE9F504935",
+          "VO:157E0110C97C",
+          "VO:5CEBD65233ED"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A1",
+        "ids": [
+          "VO:3B305E29A4D7",
+          "VO:67F2E9752AC7",
+          "VO:72E2878AFB84",
+          "VO:D1266B8DAC77",
+          "VO:80127E261718",
+          "VO:0BE532A42C7D"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（10 个）：FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A3",
+        "ids": [
+          "VO:6E510384E015",
+          "VO:BFDC3EA1A698",
+          "VO:6919D71D5E0C",
+          "VO:DB8BF0FE348A",
+          "VO:A30157FBD72E",
+          "VO:F9D1EF7E1966",
+          "VO:57298F178232",
+          "VO:D4947AAF1F71",
+          "VO:ED4BD3D527DE",
+          "VO:B4344C9BDBCF"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A4",
+        "ids": [
+          "VO:15547F3CCEFE",
+          "VO:E2C9B7ECE7FC",
+          "VO:EF82FD5795CD"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（12 个）：FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A5",
+        "ids": [
+          "VO:F7CA1A74A943",
+          "VO:2FC633CF2633",
+          "VO:136784A82049",
+          "VO:19F153E838D2",
+          "VO:05E65EB5C40F",
+          "VO:9499EE6A4B35",
+          "VO:BA0FD639E88E",
+          "VO:E9F7472C4B82",
+          "VO:35D70E3413A1",
+          "VO:F8E9F2E2F385",
+          "VO:1D58ED921B79",
+          "VO:0003D5765593"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（32 个）：A:46BD323A0792",
+        "ids": [
+          "VO:61CE877BC224",
+          "VO:30BBB3566BEE",
+          "VO:B8527BAB6EFB",
+          "VO:A67B47B5A593",
+          "VO:A98CAABA3EC3",
+          "VO:B108C51D5447",
+          "VO:C97581ACA74F",
+          "VO:BC1CFC7D7FC3",
+          "VO:C98F1A4FBC62",
+          "VO:CB7BF41328EF",
+          "VO:05925A6F7E71",
+          "VO:C31E28B55ACC",
+          "VO:A2A79A24E90B",
+          "VO:AC5FC226D07F",
+          "VO:AAD7C60D150A",
+          "VO:407ACC9DF7DF",
+          "VO:46057E355159",
+          "VO:BF73C622A4EB",
+          "VO:2AA1A509CEF2",
+          "VO:23902E93999C",
+          "VO:FFB26AE92460",
+          "VO:6E779C2F967D",
+          "VO:F7C2D41BAE13",
+          "VO:453867137073",
+          "VO:7B198E03F341",
+          "VO:7CD8083EED01",
+          "VO:E3D84D116D4D",
+          "VO:7EC1397AB232",
+          "VO:43654AB8E8E4",
+          "VO:7263E6515F3C",
+          "VO:DA7307D153A3",
+          "VO:AF186E59819C"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:9653B09876D2",
+        "ids": [
+          "VO:636C452B61A4"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:1FE8EE7E9AB8",
+        "ids": [
+          "VO:D1B7E229A7AA"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（8 个）：FLTRP-EN-7A-2022CUR:U3:STARTING_OUT:A1",
+        "ids": [
+          "VO:88CBAEA0FDC4",
+          "VO:4E0EA3CD0C27",
+          "VO:31F4E11EF5F5",
+          "VO:F6460FFEC4C5",
+          "VO:F199AF326186",
+          "VO:0AFD55F1DACD",
+          "VO:351023129342",
+          "VO:E6ADB2CE7572"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：A:F140030B3353",
+        "ids": [
+          "VO:33A0597CF160",
+          "VO:065E124FBB55",
+          "VO:C538CDA0BF5E"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A1",
+        "ids": [
+          "VO:99687DD5B7AC",
+          "VO:A0A29589939F",
+          "VO:C928BA7849B9",
+          "VO:B668FDC2390C",
+          "VO:E8C28D859F2F",
+          "VO:B4AB1241A7F9",
+          "VO:A8923F112D7A"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（2 个）：FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A2",
+        "ids": [
+          "VO:74D8FDCE4812",
+          "VO:3B2FD815BD95"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（4 个）：FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A4",
+        "ids": [
+          "VO:8EA2F94F56C8",
+          "VO:C51C6477CA64",
+          "VO:65E311BAD0AA",
+          "VO:F52CA6303C85"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（29 个）：A:32D135C025CA",
+        "ids": [
+          "VO:85F1251882CE",
+          "VO:975C8E637432",
+          "VO:264A3AE6C4BB",
+          "VO:8D9666BA5011",
+          "VO:AEADD10FA5B5",
+          "VO:57A75FC88E4C",
+          "VO:EBFD9168F6D7",
+          "VO:DB5142292596",
+          "VO:2B2E43334319",
+          "VO:F81CB74742D4",
+          "VO:A5358DFDBD90",
+          "VO:95126653F198",
+          "VO:B5694AD9A24A",
+          "VO:BE67E6299589",
+          "VO:B2C54A9FE7AF",
+          "VO:D15D022DDA6B",
+          "VO:26DBB6D64A52",
+          "VO:FB7080AF855E",
+          "VO:03020364C6BC",
+          "VO:839B74D9D446",
+          "VO:304DCF714FEC",
+          "VO:A0EAE44B23D9",
+          "VO:983B076DD46D",
+          "VO:D9C42A0C1EC2",
+          "VO:14FF78AFA29C",
+          "VO:863C45F4654A",
+          "VO:1DCAFF717B7C",
+          "VO:5E56C3BDDA1B",
+          "VO:B8105A0ED839"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（169 个）：A:FE43D75C0D59",
+        "ids": [
+          "VO:FE91B1DD5B9F",
+          "VO:7A94BCD1F334",
+          "VO:71C45162A5AB",
+          "VO:DCE79E9246BC",
+          "VO:014495ACC031",
+          "VO:7F5370818A76",
+          "VO:B38E7F7F4024",
+          "VO:85F1251882CE",
+          "VO:975C8E637432",
+          "VO:264A3AE6C4BB",
+          "VO:8D9666BA5011",
+          "VO:AEADD10FA5B5",
+          "VO:57A75FC88E4C",
+          "VO:EBFD9168F6D7",
+          "VO:DB5142292596",
+          "VO:2B2E43334319",
+          "VO:F81CB74742D4",
+          "VO:A5358DFDBD90",
+          "VO:95126653F198",
+          "VO:B5694AD9A24A",
+          "VO:BE67E6299589",
+          "VO:B2C54A9FE7AF",
+          "VO:D15D022DDA6B",
+          "VO:26DBB6D64A52",
+          "VO:FB7080AF855E",
+          "VO:03020364C6BC",
+          "VO:839B74D9D446",
+          "VO:304DCF714FEC",
+          "VO:A0EAE44B23D9",
+          "VO:983B076DD46D",
+          "VO:D9C42A0C1EC2",
+          "VO:14FF78AFA29C",
+          "VO:863C45F4654A",
+          "VO:1DCAFF717B7C",
+          "VO:5E56C3BDDA1B",
+          "VO:B8105A0ED839",
+          "VO:F2E8E0E02AAB",
+          "VO:4FE952FC39D5",
+          "VO:5CCB6AA7997C",
+          "VO:FC631C6E520D",
+          "VO:C19624A6813B",
+          "VO:E1A5237D1C02",
+          "VO:5930FF35034F",
+          "VO:C9CB8D79A3B1",
+          "VO:5E8D9FCB6F3F",
+          "VO:F2F2A29EAF10",
+          "VO:E5006BF285AB",
+          "VO:3F500416F17B",
+          "VO:C4B41B0C9FC0",
+          "VO:A4FCB091A1BF",
+          "VO:B59F5AB007B9",
+          "VO:1DAB68227688",
+          "VO:51B7620D9B43",
+          "VO:4D4771946809",
+          "VO:2DEA6020C7E7",
+          "VO:D8723675166E",
+          "VO:8046AD4CC874",
+          "VO:E07CE3E15977",
+          "VO:7F56656DA9E6",
+          "VO:9092B04EC85B",
+          "VO:EF7A3E1F59AF",
+          "VO:7BF53EE5EFDB",
+          "VO:E7D5FC276178",
+          "VO:915C9CA503E1",
+          "VO:D96BA8FEAC04",
+          "VO:2015B1A80E8E",
+          "VO:55FF0E416CF8",
+          "VO:88FF423C41DF",
+          "VO:6C95933C5B0B",
+          "VO:0CF49FA467FA",
+          "VO:24C5742ECF64",
+          "VO:4E99D5C99A9A",
+          "VO:C987D9E76F98",
+          "VO:D15E49CF64DF",
+          "VO:2B5FF836E101",
+          "VO:892E33B26DB9",
+          "VO:B8F984D8FA7A",
+          "VO:BE18F5B0CA9A",
+          "VO:93A469ACEDF5",
+          "VO:33ED72E87859",
+          "VO:0CE6E9834F64",
+          "VO:461E0A8C8705",
+          "VO:0F345A390543",
+          "VO:47DED185FB00",
+          "VO:E491D31C109D",
+          "VO:34092D5DFB90",
+          "VO:5FE411FD5417",
+          "VO:9A689145DB11",
+          "VO:7B24A86945F9",
+          "VO:22DDAC988DB3",
+          "VO:1B133D6F90A9",
+          "VO:71AA42AF8920",
+          "VO:D7011E7C978A",
+          "VO:6002E703EABD",
+          "VO:D96CAC6221AF",
+          "VO:869B25EC5D45",
+          "VO:0DFE3BAB6B72",
+          "VO:99D29779E029",
+          "VO:371DC7B68636",
+          "VO:5B00CD3D0B3D",
+          "VO:6F9162B06A70",
+          "VO:70230314A038",
+          "VO:EED1C6ECDF67",
+          "VO:5523F1A3A0E6",
+          "VO:A52273FC3057",
+          "VO:75D70DF329EA",
+          "VO:85C7F4FD70BC",
+          "VO:35A241CF2EDC",
+          "VO:2D222471D85A",
+          "VO:B6FA6EAD7D3D",
+          "VO:8EFCF5A43719",
+          "VO:2ABAA6D30DF3",
+          "VO:CF907480492C",
+          "VO:363149767F7C",
+          "VO:A9BD176F25BB",
+          "VO:46ABC8AA294E",
+          "VO:DBB34C8558B1",
+          "VO:A230478EB778",
+          "VO:E6B394E3620F",
+          "VO:6D011A04B547",
+          "VO:3922BEE80330",
+          "VO:67DA3EBDCEEA",
+          "VO:6066F6D13C90",
+          "VO:886904C474DB",
+          "VO:164C82AC6C73",
+          "VO:956CB9545459",
+          "VO:01A7887CEA7F",
+          "VO:CC73FCD28729",
+          "VO:EB27C04A0B85",
+          "VO:0608E7064F46",
+          "VO:5EEA84B54DD1",
+          "VO:B745CA2B6C30",
+          "VO:50E20E80135A",
+          "VO:0F8D158C0BE0",
+          "VO:C7F7EB8A95D4",
+          "VO:0EDF41205034",
+          "VO:F1DD67F10E2A",
+          "VO:36483AFF952C",
+          "VO:525237A8AE97",
+          "VO:D9E642FC57F1",
+          "VO:6BAB662D263E",
+          "VO:74D08E7226D5",
+          "VO:8D7A0FF85BEB",
+          "VO:6E41330F2B9B",
+          "VO:117743874498",
+          "VO:427AD484012E",
+          "VO:F1C5E1F7AE53",
+          "VO:391C7CBAB722",
+          "VO:4FF56C4EB184",
+          "VO:E8AF03449C91",
+          "VO:95EA08A32998",
+          "VO:ADDC1A92CC8E",
+          "VO:EC086AF2B015",
+          "VO:F20D8CAAA8C7",
+          "VO:02408CA1AE9B",
+          "VO:8541A7AF940D",
+          "VO:D5411623444D",
+          "VO:9450CF9EB349",
+          "VO:F39F3F201D8F",
+          "VO:1A7734997226",
+          "VO:7E43063BE4B0",
+          "VO:9482C61B4FA8",
+          "VO:A0B56DB85BA3",
+          "VO:7B0708A93AEA",
+          "VO:F7C281BE9A11",
+          "VO:5C4E583F581E",
+          "VO:BFE5C483C8DF",
+          "VO:125F41C42263",
+          "VO:A02251E3C098"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A8",
+        "ids": [
+          "VO:3F310A89CBEE",
+          "VO:001C3F47CB7A",
+          "VO:AB4C3F429294",
+          "VO:5C3AB37A6CC8",
+          "VO:319188E24F3F",
+          "VO:19205877BB5F",
+          "VO:E764F47659EE"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A1",
+        "ids": [
+          "VO:1CC4E35F6FC4",
+          "VO:017C12ADA1C8",
+          "VO:CFEFB2846B44"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（13 个）：FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A2",
+        "ids": [
+          "VO:76F596CE8589",
+          "VO:A504FD42FF02",
+          "VO:F68F0721CDC2",
+          "VO:1D14AC1B524A",
+          "VO:E9DBC433F875",
+          "VO:A68310608BC9",
+          "VO:C79A2CC1A0C0",
+          "VO:2A550335B10E",
+          "VO:A0C0A4ED14BE",
+          "VO:D25D3EF38242",
+          "VO:1710CC8305D5",
+          "VO:42E32B59A1EE",
+          "VO:CC5A954EF3FF"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（15 个）：A:9ED922915588",
+        "ids": [
+          "VO:7E24645A9A3D",
+          "VO:ADB01FFFB52D",
+          "VO:3B8A472B9241",
+          "VO:FFCE2FB20896",
+          "VO:AF2B45DD3018",
+          "VO:E7D426FE9C3E",
+          "VO:3EDF2838AD36",
+          "VO:24F4E86A681E",
+          "VO:C890B4C7E21B",
+          "VO:982798E82F21",
+          "VO:ADD03B7347F0",
+          "VO:C60198A9B9ED",
+          "VO:EBA64131159B",
+          "VO:065ED90D5CA8",
+          "VO:80D73E5E1B0E"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（5 个）：FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A4",
+        "ids": [
+          "VO:782DFBA13A51",
+          "VO:B220BF86AD5F",
+          "VO:8AB5D523C930",
+          "VO:5093F3C1E782",
+          "VO:AD398C8A19B3"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "填空类活动未识别到教材空白线：FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A1",
+        "ids": [
+          "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A1"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A1",
+        "ids": [
+          "VO:557C31303E1C",
+          "VO:88583FE1C8D7",
+          "VO:92AF077C13EC",
+          "VO:BB340898BC5A",
+          "VO:B639EA721647",
+          "VO:A14FEACF536F"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（21 个）：A:2171C85B16F5",
+        "ids": [
+          "VO:161488B173B4",
+          "VO:7E53605E1DF9",
+          "VO:EEEE43F5CD7A",
+          "VO:EFC3D4430C6D",
+          "VO:D9463779F62A",
+          "VO:09E3B5952800",
+          "VO:3247C323278E",
+          "VO:9E132CF9546E",
+          "VO:A4614037D6D5",
+          "VO:097E61C2871C",
+          "VO:5DBB3FC9885E",
+          "VO:83876CB8E425",
+          "VO:21C31B94922B",
+          "VO:FC57504D7CDC",
+          "VO:A5ED324CED14",
+          "VO:184667B236FE",
+          "VO:8E8CE0924D28",
+          "VO:37BD2B20F3E7",
+          "VO:5AE74966E4C0",
+          "VO:2CA89437299F",
+          "VO:AD50ED66FA96"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（5 个）：FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A4",
+        "ids": [
+          "VO:7691FAC9C272",
+          "VO:4E7B3A1CB70E",
+          "VO:D2747046BA91",
+          "VO:9E132CF9546E",
+          "VO:2CA89437299F"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（13 个）：FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A5",
+        "ids": [
+          "VO:8690BA5D938A",
+          "VO:4E43F27233CE",
+          "VO:99D8421537B5",
+          "VO:50184348150B",
+          "VO:CE89E9696F34",
+          "VO:F180853FB4CC",
+          "VO:F34226006521",
+          "VO:289D21380E06",
+          "VO:94C854CDB7D2",
+          "VO:BB2F2416FD66",
+          "VO:747920BF0606",
+          "VO:680EEB854CFC",
+          "VO:385581E0BC79"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（32 个）：A:A5466CD09C73",
+        "ids": [
+          "VO:CB8032D03D7B",
+          "VO:FCBB8D72FEFA",
+          "VO:D50DCF637AC9",
+          "VO:36AE00E1B403",
+          "VO:97A9C8794B12",
+          "VO:84E8FD879A18",
+          "VO:4AFEF87F135E",
+          "VO:D670662B07C4",
+          "VO:13D070637AD7",
+          "VO:692B89D674B0",
+          "VO:D1C3BB7C72CB",
+          "VO:B98EC9FE4770",
+          "VO:DE4EA6BCEFF9",
+          "VO:433CCB9DEB88",
+          "VO:736A32203310",
+          "VO:88997E81A2B3",
+          "VO:6BE640966FA7",
+          "VO:6CB6FAD93D6C",
+          "VO:6B145084BE54",
+          "VO:70893CD27A49",
+          "VO:8E6B73651F3E",
+          "VO:C2D8353F151E",
+          "VO:C4CD2F44001A",
+          "VO:92D24BDC6444",
+          "VO:879FD4442706",
+          "VO:B02EDD537431",
+          "VO:C1F32D739253",
+          "VO:34917985A0ED",
+          "VO:FEDF7EC05659",
+          "VO:C0EF346609E2",
+          "VO:CA1FDB0AB5A6",
+          "VO:62DD8BCC2E4F"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:B17D7FA3C399",
+        "ids": [
+          "VO:42D7ADF3CA9D"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:AD2861E5F454",
+        "ids": [
+          "VO:89B564814BFE"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：FLTRP-EN-7A-2022CUR:U4:STARTING_OUT:A1",
+        "ids": [
+          "VO:02036397AF78",
+          "VO:E2F175DB92E9",
+          "VO:D1F2F1242C9C",
+          "VO:693146F73559",
+          "VO:243CAADD1C5C",
+          "VO:5916D7EDAAB6",
+          "VO:965E604B7EEE",
+          "VO:991AF7A0D462",
+          "VO:D0DC789A10D2"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U4:STARTING_OUT:A2",
+        "ids": [
+          "VO:078B8EAD63AA",
+          "VO:73950582E076",
+          "VO:8C94CF573986"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A1",
+        "ids": [
+          "VO:96920C0DC543",
+          "VO:B9EC6BD5CBC6",
+          "VO:189FC7B24DD0"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（2 个）：FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+        "ids": [
+          "VO:F3CE362EDE72",
+          "VO:6D7BDFE2E5BC"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（13 个）：FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A4",
+        "ids": [
+          "VO:B53A560B7122",
+          "VO:E202ACD2DA55",
+          "VO:6EB883757FA9",
+          "VO:7396B8833EBD",
+          "VO:4CA47A396E35",
+          "VO:3B29CD61E5EF",
+          "VO:C00D0FE97A19",
+          "VO:00F991FF54AA",
+          "VO:A7C000DE02BD",
+          "VO:CCF80F5F24B0",
+          "VO:53EE90D6B41B",
+          "VO:2E19D84C9DDD",
+          "VO:B5BDFAB59C35"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（2 个）：FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A6",
+        "ids": [
+          "VO:E15CA626BD08",
+          "VO:E3E1FECAA193"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：A:ADFF64246523",
+        "ids": [
+          "VO:446EE008AD32",
+          "VO:AFE5BA33D35F",
+          "VO:F6D039D5B037",
+          "VO:5C92611187A8",
+          "VO:1A2695D45B8A",
+          "VO:2B909BD5AD07",
+          "VO:2BD86CBC65E0",
+          "VO:1492E4631960",
+          "VO:E3E1FECAA193"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（10 个）：FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A8",
+        "ids": [
+          "VO:9BE8AF3F2834",
+          "VO:7161DD069A07",
+          "VO:C1B5C9299A7F",
+          "VO:32159DDA1E56",
+          "VO:DB59341873DE",
+          "VO:211EAFFA8AC4",
+          "VO:2EB427D050D2",
+          "VO:EC0D5030F7FD",
+          "VO:67F4B04D3B53",
+          "VO:5C8F23E6D099"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A1",
+        "ids": [
+          "VO:162E85090BD0",
+          "VO:66A84E7386BC",
+          "VO:727B88DC1BBF",
+          "VO:1335170A703B",
+          "VO:AFBC005EE122",
+          "VO:61DFD688D493",
+          "VO:7BB2B04193B8",
+          "VO:48917EDF0338",
+          "VO:B7DAF548F22D"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（20 个）：FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A2",
+        "ids": [
+          "VO:C8091A410B71",
+          "VO:E79D67981482",
+          "VO:A4089ACC0FC2",
+          "VO:C7CE75645473",
+          "VO:DC118EB5589A",
+          "VO:D609AF80008A",
+          "VO:8C702FF638C4",
+          "VO:3A87D25752F5",
+          "VO:998FD9E5540B",
+          "VO:B98A51F0BF78",
+          "VO:77B5F192F367",
+          "VO:A08DCC4976AB",
+          "VO:A71E4302144B",
+          "VO:E5BCCF9BB0AD",
+          "VO:EA6E1DF20DED",
+          "VO:98FF6E70F002",
+          "VO:B3BDCFB74600",
+          "VO:2A2AC620E9F8",
+          "VO:935CE2104486",
+          "VO:C84FF39584D0"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A3",
+        "ids": [
+          "VO:0F1A9BE49389",
+          "VO:2406ADC9E93B",
+          "VO:BE60DD5E628A",
+          "VO:FF6D658428CD",
+          "VO:94014E0F7056",
+          "VO:0E49EB5715CA",
+          "VO:70DBC05DA56D",
+          "VO:1E3087A7CED2",
+          "VO:8ED6B43CE4C8"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：A:467EE5C5CFF3",
+        "ids": [
+          "VO:BA02F37B38D3",
+          "VO:E779F2B264A9",
+          "VO:8CD661F43F52",
+          "VO:7D43CEDB3BF0",
+          "VO:2F9AC86FD407",
+          "VO:557926CBA8D7"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：A:CD1092824DF7",
+        "ids": [
+          "VO:06A9688F0BEC",
+          "VO:E388FB45C49F",
+          "VO:D3C1FDF627DF",
+          "VO:06EDBB05A681",
+          "VO:9CE80E0A73F9",
+          "VO:16B862D8B06C",
+          "VO:49A9906671BC",
+          "VO:D91CB975E4FF",
+          "VO:4B74D2EF59D3"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（10 个）：A:E0B44CF8D07C",
+        "ids": [
+          "VO:56B4F190FA5F",
+          "VO:819C80B5B4CC",
+          "VO:3A001619D950",
+          "VO:C3E2FB7875AB",
+          "VO:72F8F2F41E31",
+          "VO:ACA617B3B25F",
+          "VO:98E332D4A996",
+          "VO:DB6A55412F94",
+          "VO:284876EC62B9",
+          "VO:1A9E2754F665"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U4:READING_FOR_WRITING:A4",
+        "ids": [
+          "VO:D71D7691FC97",
+          "VO:2A4F42CBC702",
+          "VO:1B5B6F5338DE"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（14 个）：FLTRP-EN-7A-2022CUR:U4:READING_FOR_WRITING:A5",
+        "ids": [
+          "VO:24218B9B153C",
+          "VO:013C147CF32C",
+          "VO:7C13865D8BD7",
+          "VO:D7C943B049A8",
+          "VO:4AA494F11042",
+          "VO:9C0CF0A9A249",
+          "VO:61F965B3E6A1",
+          "VO:7300A6DFB54D",
+          "VO:155CF086371C",
+          "VO:6416461AF49A",
+          "VO:C65F70971520",
+          "VO:FEB6AA87A7DD",
+          "VO:00C12F7B2C43",
+          "VO:CC0495BE5909"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（11 个）：A:64749005A3C1",
+        "ids": [
+          "VO:A46C36D5C3D0",
+          "VO:17F6A7BEB914",
+          "VO:13EB24A35BD8",
+          "VO:178E54D241F3",
+          "VO:8BE6A84B1CD2",
+          "VO:FEAAD5D8B90A",
+          "VO:8AC407792246",
+          "VO:2A6000DCA3F9",
+          "VO:5B86565A53CE",
+          "VO:37D7254179E1",
+          "VO:F4BB20767E22"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:BC54CCA5E3FD",
+        "ids": [
+          "VO:3625958CCF91"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（2 个）：A:B1CD1C7146B1",
+        "ids": [
+          "VO:9C4786FBE9FF",
+          "VO:2B63EC63A062"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：FLTRP-EN-7A-2022CUR:U5:STARTING_OUT:A2",
+        "ids": [
+          "VO:2B63EC63A062",
+          "VO:496335E7DCC8",
+          "VO:C29711D53337",
+          "VO:B8FACDE86CDF",
+          "VO:31ADF21D5F73",
+          "VO:A5A027F3DF06",
+          "VO:2C59B5BB5DCF"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（29 个）：FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A1",
+        "ids": [
+          "VO:D36251EA6082",
+          "VO:B52B039DF2E4",
+          "VO:BF5596488CE2",
+          "VO:8EDAD5771D36",
+          "VO:13CF8FD9A94F",
+          "VO:1528D99DFDF5",
+          "VO:8B677EC64717",
+          "VO:1AE6FA0FD53E",
+          "VO:33066C68D942",
+          "VO:2CCF75788620",
+          "VO:D05C4F41EFE0",
+          "VO:C903358DA66E",
+          "VO:7CCF29F692C4",
+          "VO:3BAEE3224EDE",
+          "VO:0ABF76F9218F",
+          "VO:1D4845ECC4F6",
+          "VO:E83A7FFB4245",
+          "VO:D7B4F7DF5812",
+          "VO:6B2BCA315D69",
+          "VO:3EC0F98BA54E",
+          "VO:03F406A29FE7",
+          "VO:41EC806CB297",
+          "VO:A432B4B07560",
+          "VO:4F327B97E409",
+          "VO:61DA31A373E9",
+          "VO:9E187CC40A72",
+          "VO:DED35920B133",
+          "VO:09E3F3A69E60",
+          "VO:99ED78753DF8"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：A:1803BD32748C",
+        "ids": [
+          "VO:F91A0AB2C09E",
+          "VO:96DEB18EA275",
+          "VO:6ED13E6940AD"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A3",
+        "ids": [
+          "VO:806CB4AFC57E"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+        "ids": [
+          "VO:806CB4AFC57E"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+        "ids": [
+          "VO:56797111EA78",
+          "VO:B950EA264F25",
+          "VO:EF39C8555A9D",
+          "VO:5BE8625EFF60",
+          "VO:019329806111",
+          "VO:E8EEF4353702",
+          "VO:D71E1966E591",
+          "VO:371B4E3AEBA4",
+          "VO:6F9D5F4450EC"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（4 个）：FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A8",
+        "ids": [
+          "VO:46FC31D2C131",
+          "VO:A29D0A728942",
+          "VO:4A83FD5E6982",
+          "VO:BE5CCA86AB07"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A1",
+        "ids": [
+          "VO:7DA10B0EFA11",
+          "VO:464D0E9BCE1F",
+          "VO:558EBD791297"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（34 个）：FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A2",
+        "ids": [
+          "VO:28F3C416EFC5",
+          "VO:79D51034CE6A",
+          "VO:B1CD4D795815",
+          "VO:69F6F59ACBCE",
+          "VO:C3126BCD5312",
+          "VO:2A9F64A0AB1C",
+          "VO:5B58D54D0F1C",
+          "VO:0044DB52BE6D",
+          "VO:A95592119900",
+          "VO:437F9CE10C08",
+          "VO:7872E6638333",
+          "VO:4FBC2DB4C97C",
+          "VO:1616BB55F559",
+          "VO:1AA2430A50F1",
+          "VO:D999666386B6",
+          "VO:C5F791EF99BF",
+          "VO:1015DA17CBCD",
+          "VO:AD33B357DF4F",
+          "VO:10D881A38940",
+          "VO:35B5AB5FE410",
+          "VO:9DAD8750E0D7",
+          "VO:2E6FAC2B35FA",
+          "VO:CCC1DF1AB00A",
+          "VO:C4C00D437F8C",
+          "VO:211D57CCBBB7",
+          "VO:3E7AC64DF1FF",
+          "VO:1DB5C1B2E151",
+          "VO:5A9AE21B0E5E",
+          "VO:D0F1864831F6",
+          "VO:D8DB2FF728DF",
+          "VO:2086F22E8690",
+          "VO:6FE2C0ACC572",
+          "VO:4A4C91ED7AAB",
+          "VO:BDE59993F644"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：A:7EB38E889232",
+        "ids": [
+          "VO:CE278FD0B1F0",
+          "VO:B56ADAE3F0BB",
+          "VO:D361750324E7",
+          "VO:A3736027067F",
+          "VO:60EDEA1E33DE",
+          "VO:1332B210A6C2",
+          "VO:61519AE5B99D",
+          "VO:4374ECF7D987",
+          "VO:FD38D4BD4A56"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：A:269C22981DA5",
+        "ids": [
+          "VO:362B9B77F6F1",
+          "VO:8C11FA8B2344",
+          "VO:DD75D09411BD",
+          "VO:47F223F6D610",
+          "VO:35266F252365",
+          "VO:40786EAE0C9B",
+          "VO:938412297651"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（5 个）：FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A1",
+        "ids": [
+          "VO:DED117B4BA89",
+          "VO:966112F35DC8",
+          "VO:2C1EB868A1FB",
+          "VO:D714A71372EC",
+          "VO:E76903761EDE"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（2 个）：FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A2",
+        "ids": [
+          "VO:24F3C489B3F8",
+          "VO:A7C536FB4880"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（14 个）：FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A3",
+        "ids": [
+          "VO:A1F6EF239530",
+          "VO:D728D9A2AC78",
+          "VO:7302BFBF58F7",
+          "VO:349DFB4D160E",
+          "VO:B5764D620F2B",
+          "VO:04B1FB22CAD6",
+          "VO:94769B3BE09C",
+          "VO:2CAC7B820178",
+          "VO:57EDFACBE45D",
+          "VO:E69D162AACB7",
+          "VO:7CCBC82AF2E9",
+          "VO:627833FA7883",
+          "VO:1BBA04FE118A",
+          "VO:7DA52BC38116"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A4",
+        "ids": [
+          "VO:2D64DFC1193B",
+          "VO:0507FF710E81",
+          "VO:20289F396CC6"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（20 个）：FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A5",
+        "ids": [
+          "VO:9E7DA8E39000",
+          "VO:2784E58A0393",
+          "VO:93FEA53398AB",
+          "VO:B935F536E2A3",
+          "VO:02BA464E648D",
+          "VO:04AFE3A4E512",
+          "VO:C20FBCF11977",
+          "VO:E90FB358AECF",
+          "VO:671C70072F1E",
+          "VO:D74C1B12D0C6",
+          "VO:74940FBD70AF",
+          "VO:E185ECEE974E",
+          "VO:A32BE87F54C9",
+          "VO:90A407B27860",
+          "VO:571676687858",
+          "VO:9C773E53ADF5",
+          "VO:65F6F2B2E7FF",
+          "VO:32075FE74C3B",
+          "VO:222D7EFE5524",
+          "VO:5902EC01EE81"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：A:2A54004B3F4C",
+        "ids": [
+          "VO:B21A533A18FF",
+          "VO:3352667A37E0",
+          "VO:B1CBEEF8216F",
+          "VO:AA0F57DA159A",
+          "VO:6FB0FD1BE03D",
+          "VO:55978B01FE40"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:1DE67FFC6983",
+        "ids": [
+          "VO:64035A4E5413"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:488A06F3EDBC",
+        "ids": [
+          "VO:E902901A11D0"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（52 个）：A:A65AB59A2781",
+        "ids": [
+          "VO:B78078FE4B2E",
+          "VO:0048CF90824F",
+          "VO:DD23CE62596B",
+          "VO:2AA65DC3FE46",
+          "VO:02981BB6BD52",
+          "VO:1275DC670385",
+          "VO:D05E66EE6083",
+          "VO:402CB7BD27DD",
+          "VO:C658BE6AFA9E",
+          "VO:A23B4DE0B098",
+          "VO:604C89FB2A84",
+          "VO:403FEEFF5C41",
+          "VO:B890A441F708",
+          "VO:2BCB82E1AD1C",
+          "VO:11BF3F66ADA8",
+          "VO:9C4D8F342450",
+          "VO:64BE256BECB4",
+          "VO:BBBEEA0F4E8F",
+          "VO:649A3227F8EA",
+          "VO:2AB02D291804",
+          "VO:584BF5F4E4B8",
+          "VO:6554276CFCD7",
+          "VO:E88FF9400E3C",
+          "VO:00055D9ED715",
+          "VO:945D2F564B58",
+          "VO:6226CB72C48F",
+          "VO:977BEBF50EAE",
+          "VO:06DF602EDB0D",
+          "VO:45B78B8B4B5D",
+          "VO:B312F346CB3F",
+          "VO:F8C44F2DD36F",
+          "VO:BC1444FB8652",
+          "VO:FA7943597963",
+          "VO:64483888610B",
+          "VO:863BC0056ED5",
+          "VO:34BB21413322",
+          "VO:C8D7B56341B4",
+          "VO:80ADF3744AD0",
+          "VO:AB869CEA55BD",
+          "VO:04476058E33B",
+          "VO:921556EE3154",
+          "VO:B0CFC330E177",
+          "VO:20D9395516F1",
+          "VO:D926318C59C2",
+          "VO:2F37194D07FC",
+          "VO:F8A9A39AA117",
+          "VO:14BFFDB9303A",
+          "VO:1AD28DC9DB06",
+          "VO:235EBE18F9A8",
+          "VO:A2CDEF9B772E",
+          "VO:9F8B42353F25",
+          "VO:0063A55C5ACE"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（230 个）：A:693BB2D321D2",
+        "ids": [
+          "VO:EB488B14044A",
+          "VO:BABCE4E10461",
+          "VO:72042B37A0EA",
+          "VO:BE4455925F9A",
+          "VO:DF798A1652EF",
+          "VO:B16890ABC745",
+          "VO:F91CF24106EB",
+          "VO:0547804448ED",
+          "VO:AF97E3E8E4D6",
+          "VO:60A0EFC744D9",
+          "VO:F958FF819430",
+          "VO:4E548658FFA7",
+          "VO:CBF45D7B8541",
+          "VO:30AD662AFD53",
+          "VO:107F9D914BF9",
+          "VO:C68F5A5B98B9",
+          "VO:7927B0EF1080",
+          "VO:E0DD907EFE1C",
+          "VO:AD5143883616",
+          "VO:3E96B2A33015",
+          "VO:1662F485B47C",
+          "VO:CFA06E1468B7",
+          "VO:A1AE0AC55C96",
+          "VO:3A4C9F9E641F",
+          "VO:1C81237A48C2",
+          "VO:BFAA8262D73B",
+          "VO:36AD532EDF09",
+          "VO:8F713B9E4780",
+          "VO:FA7632C36936",
+          "VO:EDF922D25D28",
+          "VO:AE1B24BF37B4",
+          "VO:EFE931E27EEE",
+          "VO:63B83F639624",
+          "VO:53FA90A86818",
+          "VO:76EC82668968",
+          "VO:06104FFA7E7B",
+          "VO:FDD29706E987",
+          "VO:17846F0E584F",
+          "VO:5FC187193EA9",
+          "VO:B890A441F708",
+          "VO:2B032CE47694",
+          "VO:098AC0CCF5F9",
+          "VO:02AEBE46BD9D",
+          "VO:1C27EA0618CF",
+          "VO:02D1D5C214C1",
+          "VO:E047AC5320DC",
+          "VO:FD05BADA751A",
+          "VO:660312E8A86B",
+          "VO:C92A5F494EA4",
+          "VO:1ABEF43C9425",
+          "VO:BFACA8900F1D",
+          "VO:517CA610E0A7",
+          "VO:CB440C844EE6",
+          "VO:12B165D646E3",
+          "VO:DDF90650954E",
+          "VO:325C4020FFAF",
+          "VO:E01BE91F061D",
+          "VO:ACBDB046AEE3",
+          "VO:E63867428705",
+          "VO:E99945E43553",
+          "VO:2F7495133676",
+          "VO:52A0015799E7",
+          "VO:0B71623B94A4",
+          "VO:1BDB9931A411",
+          "VO:42C7407F190D",
+          "VO:26D15E411457",
+          "VO:43FAADC63553",
+          "VO:B79123FE2A78",
+          "VO:C581801AE4C4",
+          "VO:F4A229B1A426",
+          "VO:22039298FC63",
+          "VO:84E475231199",
+          "VO:509295EF004A",
+          "VO:1F811055922C",
+          "VO:56492F98DFF0",
+          "VO:021539A614C1",
+          "VO:3481AB76350B",
+          "VO:7C634F199BCD",
+          "VO:80D046BFC731",
+          "VO:3A2D48458FD3",
+          "VO:204C7F8D0632",
+          "VO:BB45061B1948",
+          "VO:2545BFD2B9F2",
+          "VO:C572C19D20EB",
+          "VO:C0A4DC58AD7C",
+          "VO:E1376BB4B03A",
+          "VO:A6152939E201",
+          "VO:8ABCEEB30C9F",
+          "VO:25DBFF5C09A6",
+          "VO:4A27F2B3D3FB",
+          "VO:E2E7D37306FD",
+          "VO:1FFC30102BC2",
+          "VO:3F8550833F61",
+          "VO:03359C572B43",
+          "VO:CFB35CD6E44B",
+          "VO:F6226FC65EBF",
+          "VO:6580B8EA124F",
+          "VO:0B6BD42AE054",
+          "VO:EBC9D49E4513",
+          "VO:06AF55CFA96D",
+          "VO:D74A1F22285C",
+          "VO:1E965F83A25B",
+          "VO:E1F6E7C4AF89",
+          "VO:01C2A93F9209",
+          "VO:6774FB6E8451",
+          "VO:33EC1BA4792E",
+          "VO:DCB356FEC536",
+          "VO:6BF43A44E9F8",
+          "VO:24910A0B279E",
+          "VO:B8C9013C8A36",
+          "VO:F2729C967B60",
+          "VO:543B53DCEFE9",
+          "VO:B0E09AE13814",
+          "VO:7B45B58E84B3",
+          "VO:C1FC79225875",
+          "VO:EA5B71BFC00B",
+          "VO:0BEDD4BA4684",
+          "VO:605AEDF12B05",
+          "VO:2383F8366B14",
+          "VO:CA85C749852C",
+          "VO:25B32BEDC07E",
+          "VO:93E1D068910F",
+          "VO:EAFE16CB4BB8",
+          "VO:ED20248F2EE6",
+          "VO:84A7B7082D25",
+          "VO:1FA6EC2A5763",
+          "VO:34694E170056",
+          "VO:1AACDB0DDAD0",
+          "VO:49D07E5FD397",
+          "VO:599004E38FE6",
+          "VO:E3CA66236E7F",
+          "VO:10D55653FB0A",
+          "VO:9F28F48C14E8",
+          "VO:ABA0AAF196BF",
+          "VO:45E3FD44823C",
+          "VO:64BE256BECB4",
+          "VO:EB6013019784",
+          "VO:DBCAEF62E562",
+          "VO:ACD61AC46542",
+          "VO:B818B0E94E00",
+          "VO:071FFA8B674D",
+          "VO:2F189C84233D",
+          "VO:DAF6E80C4D9A",
+          "VO:1EFEDDA4AA06",
+          "VO:0E5A13B552A0",
+          "VO:18C13DCB0F22",
+          "VO:CD835DB7AD71",
+          "VO:5BFB38F81D68",
+          "VO:526B27C0594A",
+          "VO:3C0F6E637B2E",
+          "VO:15A5DE4179B6",
+          "VO:60B2896880AF",
+          "VO:DC5934DE18A2",
+          "VO:62A069893723",
+          "VO:3DC49BEC645F",
+          "VO:6D504C47173A",
+          "VO:0DE8C2073A76",
+          "VO:C2C7BC95FE5F",
+          "VO:D08D4A14D4C5",
+          "VO:F9CAD663FFD2",
+          "VO:43BE9F76F84B",
+          "VO:BEBDBE34FF61",
+          "VO:4370F781E469",
+          "VO:BA908B983ECF",
+          "VO:CFE20F02EBA9",
+          "VO:FA7943597963",
+          "VO:64483888610B",
+          "VO:863BC0056ED5",
+          "VO:34BB21413322",
+          "VO:3D77E7702A32",
+          "VO:88DF4A6E1071",
+          "VO:C2469C673C35",
+          "VO:7E76CCA5B2CA",
+          "VO:FF9E994302C1",
+          "VO:EA21EE94F0E2",
+          "VO:4CE8B8F3D637",
+          "VO:CF1925866DA5",
+          "VO:84A36EC484EC",
+          "VO:ABB3C55D82C9",
+          "VO:2D9A30CC8469",
+          "VO:1F1D94519530",
+          "VO:A482602F46D8",
+          "VO:618BF0F96D59",
+          "VO:2A1D6D28632D",
+          "VO:F67A0EE78CF5",
+          "VO:1E079065DF0D",
+          "VO:2F37194D07FC",
+          "VO:F8A9A39AA117",
+          "VO:1ECD26543075",
+          "VO:14BFFDB9303A",
+          "VO:1AD28DC9DB06",
+          "VO:BAA5D6281845",
+          "VO:FA529FD6CB80",
+          "VO:10414CA22804",
+          "VO:67290DFF49B5",
+          "VO:E71CA1CB4BF6",
+          "VO:3C74CCBF3F0C",
+          "VO:C09BA28EFD3E",
+          "VO:EB31C081110B",
+          "VO:ED55B72B8DDE",
+          "VO:25D2327CFA88",
+          "VO:C49CDF689A20",
+          "VO:F71B5A44104D",
+          "VO:6E9A17F2B0B1",
+          "VO:C0BB590D80BB",
+          "VO:17702B32F952",
+          "VO:B18F40AC5D2A",
+          "VO:C6C4E26F0CE3",
+          "VO:32939E5AD825",
+          "VO:3EFC27725329",
+          "VO:3EF118E9A05D",
+          "VO:E1C612295455",
+          "VO:012CF2985F66",
+          "VO:1CBB4AD9713E",
+          "VO:B4A98FC516D9",
+          "VO:AD8CA92727C2",
+          "VO:422F5FB5C2ED",
+          "VO:085D34AC7D9C",
+          "VO:EAC43F21BCA7",
+          "VO:C37F2623DDCC",
+          "VO:1DA362DF9398",
+          "VO:7788E7A9D12D",
+          "VO:7B17450081C8",
+          "VO:6A40E1982626",
+          "VO:5EC8725AFF28",
+          "VO:7572918D33AC",
+          "VO:5088DB998776",
+          "VO:196B9FF5D86F",
+          "VO:D2C6C4F2E0C8",
+          "VO:636108B72EF1"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：A:B660609E150E",
+        "ids": [
+          "VO:DCD5D800413E",
+          "VO:946DF9ADBFD5",
+          "VO:B02AAD143223"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A2",
+        "ids": [
+          "VO:DCD5D800413E",
+          "VO:A6D397BE7ED3",
+          "VO:946DF9ADBFD5",
+          "VO:B02AAD143223",
+          "VO:800ED371D86D",
+          "VO:FCB1B64DC463",
+          "VO:B1F1A3BB96CF"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A3",
+        "ids": [
+          "VO:9A6092276DF5"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（26 个）：FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A4",
+        "ids": [
+          "VO:68F54FF7052D",
+          "VO:08B8DAE6E4DC",
+          "VO:9EF7A0F106E0",
+          "VO:D0732350422F",
+          "VO:67873B97A9C2",
+          "VO:BACC46609DF6",
+          "VO:74CA8A43B061",
+          "VO:DBD81A3B0794",
+          "VO:7441391000DE",
+          "VO:7FA1E4B9194F",
+          "VO:B3106C94481D",
+          "VO:14659539E5EF",
+          "VO:BCACAF81381E",
+          "VO:5A3E4A5F2FFC",
+          "VO:11FA412956B5",
+          "VO:F4DADA752A3C",
+          "VO:88E7A67AA0B2",
+          "VO:68D70B62D994",
+          "VO:3096037A0047",
+          "VO:8E874745E816",
+          "VO:7826648EF64A",
+          "VO:C732B27A2542",
+          "VO:3D288ACC5EE6",
+          "VO:30EF9CE94DAD",
+          "VO:0C1BE9AD266A",
+          "VO:9A6092276DF5"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A6",
+        "ids": [
+          "VO:3761529E1005"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：A:B7EC624B83A5",
+        "ids": [
+          "VO:347F560D3052",
+          "VO:59654411B58A",
+          "VO:10C24E326D67",
+          "VO:9D21691B1AD3",
+          "VO:97A334DADC88",
+          "VO:5DAD0ABC64B1",
+          "VO:DA3CBB241AE8",
+          "VO:FBB76DBC9471",
+          "VO:CC28843912AF"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（8 个）：FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A8",
+        "ids": [
+          "VO:D27CEDBE1B6B",
+          "VO:D6DA795CCA79",
+          "VO:CD864CD31298",
+          "VO:D257891E419B",
+          "VO:9A0014E1894B",
+          "VO:E82BD4F3CAD4",
+          "VO:F087F3313AD7",
+          "VO:6C866CB6FF0A"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（3 个）：FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A1",
+        "ids": [
+          "VO:2545AE5AA6C0",
+          "VO:B5192B90E07F",
+          "VO:96B788BA4401"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（9 个）：FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A2",
+        "ids": [
+          "VO:E63CD2594ACE",
+          "VO:5CC7CAF58AD9",
+          "VO:3EF8F9F4A163",
+          "VO:54A90E3391F2",
+          "VO:0DA0306A448B",
+          "VO:2693C87A5E9E",
+          "VO:55257764037D",
+          "VO:312A3BB13D84",
+          "VO:2888FB370318"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（8 个）：A:FE914DC224A7",
+        "ids": [
+          "VO:E2967DF10118",
+          "VO:4BA23FE832BE",
+          "VO:1885DC24770B",
+          "VO:06F84478DAD9",
+          "VO:AE135626960B",
+          "VO:5E5FF8C15655",
+          "VO:FA14B8A57D1C",
+          "VO:18EEA25B219C"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（6 个）：FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A4",
+        "ids": [
+          "VO:23D5EF69A9BC",
+          "VO:ED7975CC9A48",
+          "VO:BC949AF3FF2A",
+          "VO:50FC0D90E4EC",
+          "VO:42526BDDAAA5",
+          "VO:630A38265364"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：A:93C8160CCA97",
+        "ids": [
+          "VO:EC501FEC998B",
+          "VO:A0CBF223D13A",
+          "VO:BF99E0CDCF73",
+          "VO:B9D0056CE0FB",
+          "VO:623137EDE565",
+          "VO:58AF3ED26957",
+          "VO:1795058F4F31"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（7 个）：A:6D9B69C91E20",
+        "ids": [
+          "VO:72E7FE32F9B4",
+          "VO:D2D2378F2BA6",
+          "VO:7ADBED010C53",
+          "VO:E82186DA1E9E",
+          "VO:8CAB05F0B6D2",
+          "VO:922954A0A940",
+          "VO:4C240160A1F8"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（2 个）：FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A4",
+        "ids": [
+          "VO:8CAB05F0B6D2",
+          "VO:922954A0A940"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（12 个）：FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A5",
+        "ids": [
+          "VO:6FD4DC1EF3D8",
+          "VO:4C7C388BD147",
+          "VO:660E97F7388C",
+          "VO:69065DFC6828",
+          "VO:B3234AA23701",
+          "VO:A3E1711433A8",
+          "VO:EB31A496509C",
+          "VO:C4AAF90D6647",
+          "VO:A9E29D44302C",
+          "VO:6732DC42C6CE",
+          "VO:0F651A52C889",
+          "VO:3363D6584D2B"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（24 个）：A:0DF5A156ADDA",
+        "ids": [
+          "VO:5CF81304DE9A",
+          "VO:AF266B6B4433",
+          "VO:725170B145F0",
+          "VO:EDC909D8ABD8",
+          "VO:6D0C57335C75",
+          "VO:DC596D165A60",
+          "VO:B0B33C38E0F0",
+          "VO:4A1DF9C31FEA",
+          "VO:0E465063DAFE",
+          "VO:EC77D14D715E",
+          "VO:2F9CA0D63CFE",
+          "VO:977335C73B24",
+          "VO:17A7CD130CAE",
+          "VO:7695E19026D5",
+          "VO:AD7FA2C90B02",
+          "VO:46837A20B81A",
+          "VO:93CF3B628C5D",
+          "VO:36152FA65023",
+          "VO:D9B55C4BF6A4",
+          "VO:CF00F0ABF0DA",
+          "VO:3CFF6A3466C9",
+          "VO:7C035586DA8B",
+          "VO:887F22A5A23E",
+          "VO:03C3D61F58D2"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:59272CE78939",
+        "ids": [
+          "VO:FC2F73D48BC0"
+        ]
+      },
+      {
+        "kind": "ambiguous",
+        "detail": "视觉对象语义未确认（1 个）：A:D1EFAE536B83",
+        "ids": [
+          "VO:E18313D96E15"
+        ]
+      }
+    ],
+    "audio_files": 54,
+    "checks": [
+      "Unit→Section→Activity",
+      "Section→Activity→Question",
+      "Activity→Audio",
+      "Question→Audio",
+      "Activity→Image",
+      "Question→Text/Vocabulary/Grammar"
+    ]
+  },
+  "model_assessment": {
+    "KEEP": [
+      {
+        "object": "contentpack.unit / section 页边界",
+        "reason": "与真实教材页范围一致，可直接作为教材骨架"
+      },
+      {
+        "object": "contentpack.source_ref / textbook_emphasis",
+        "reason": "教材事实可追溯（页码 + 引用 + 强调证据），继续使用"
+      },
+      {
+        "object": "learning_item（vocabulary / phrase / sentence_pattern）",
+        "reason": "教材词条与学习资源身份稳定，P2-4 未发现冲突"
+      },
+      {
+        "object": "P2-3 官方音频证据链（54/54 CONFIRMED）",
+        "reason": "本阶段重新验证未发现错误匹配，可继续作为音频事实"
+      }
+    ],
+    "EXTEND": [
+      {
+        "object": "activity（96 行 / P1-05 快照）",
+        "reason": "真实教材有 157 个活动；P2-3/P2-4 以覆盖层表达，contentpack.activity 需要补齐活动与边界状态",
+        "fields": [
+          "boundary_status 与真实版面一致性",
+          "activity 与 question 层级"
+        ]
+      },
+      {
+        "object": "audio_mapping（59 行）",
+        "reason": "缺少 audio_scope（activity/question/section）与 question 级关系字段",
+        "fields": [
+          "audio_scope",
+          "question_scope",
+          "evidence_json"
+        ]
+      },
+      {
+        "object": "question / sub_question（sub_question 仅 13 行）",
+        "reason": "真实教材题目结构远多于现有 13 条，需要按活动层级扩展",
+        "fields": [
+          "question_no",
+          "question_type",
+          "options",
+          "blank_count",
+          "blank_order"
+        ]
+      }
+    ],
+    "REBUILD": [
+      {
+        "object": "纸面视觉语义层（图片 / 色块 / 框线 / 填空线 / 图标）",
+        "reason": "现有模型完全没有视觉对象表，无法表达“这张图属于哪个活动、这条下划线是第几个空”",
+        "proposal": "新增 textbook_visual_relations（本轮已产出 v2 JSON，下一阶段再决定是否入库）"
+      },
+      {
+        "object": "教材上下文/内容关系图",
+        "reason": "现有模型只有线性 page/block，没有关系表，无法表达 precedes/uses/tests/depends_on 等教材逻辑",
+        "proposal": "新增关系表（from_id/to_id/relation/evidence/confidence）"
+      },
+      {
+        "object": "教材证据包（AI 批改用）",
+        "reason": "现有模型无法为单题提供“教材范围内证据”，下一阶段 AI 批改缺少依据",
+        "proposal": "新增 textbook_evidence_map（本轮已产出 v1 JSON）"
+      }
+    ]
+  },
+  "boundaries": {
+    "pdf_modified": false,
+    "mp3_modified": false,
+    "learning_db_touched": false,
+    "ai_calls": 0,
+    "network_calls": 0,
+    "contentpack_modified": false
+  },
+  "written": {
+    "structure": {
+      "path": "D:\\ZhixueEnglish\\structured\\textbook\\textbook_structure_v2.json",
+      "bytes": 105553
+    },
+    "visual": {
+      "path": "D:\\ZhixueEnglish\\structured\\textbook\\textbook_visual_relations_v2.json",
+      "bytes": 1433875
+    },
+    "context": {
+      "path": "D:\\ZhixueEnglish\\structured\\textbook\\textbook_context_relations_v2.json",
+      "bytes": 1032976
+    },
+    "content": {
+      "path": "D:\\ZhixueEnglish\\structured\\textbook\\textbook_content_relations_v2.json",
+      "bytes": 483922
+    },
+    "catalog_v3": {
+      "path": "D:\\ZhixueEnglish\\structured\\exercises\\exercise_catalog_v3.json",
+      "bytes": 416453
+    },
+    "question_rel": {
+      "path": "D:\\ZhixueEnglish\\structured\\exercises\\exercise_question_relations_v3.json",
+      "bytes": 670457
+    },
+    "audio_map_v3": {
+      "path": "D:\\ZhixueEnglish\\structured\\audio\\exercise_audio_map_v3.json",
+      "bytes": 87491
+    },
+    "audio_question": {
+      "path": "D:\\ZhixueEnglish\\structured\\audio\\audio_question_relations_v3.json",
+      "bytes": 50114
+    },
+    "evidence": {
+      "path": "D:\\ZhixueEnglish\\structured\\ai\\textbook_evidence_map_v1.json",
+      "bytes": 1484385
+    }
+  }
+}

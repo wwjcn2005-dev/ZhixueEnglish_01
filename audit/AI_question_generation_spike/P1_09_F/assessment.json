@@ -1,0 +1,166 @@
+{
+  "stage": "P1-09-F",
+  "ai_calls": 0,
+  "aggregation_rule": {
+    "step1": "任一非当前答案选项 grammar=YES 且 semantic=YES 且 textbook_context=YES → UNIQUE_RISK",
+    "step2": "否则若任一候选 need_more_context=YES → UNIQUE_UNCERTAIN",
+    "step3": "否则若 coverage=COMPLETE 且其余选项全部被排除 → UNIQUE_SUPPORTED",
+    "note": "valid_alternative 由程序按三个字段重算，不使用模型的自我汇总；模型不得输出任何整体唯一性结论（本轮输出中已确认没有）。"
+  },
+  "items": [
+    {
+      "question_id": "FIX-C1",
+      "question_type": "vocab_choice",
+      "current_textbook_answer": "friends",
+      "candidate_coverage": "COMPLETE",
+      "coverage_reason": "选择题的候选集合就是题目给出的全部选项（4 个），无需生成，覆盖度天然完整",
+      "assessment": "UNIQUE_RISK",
+      "assessment_basis": "存在 3 个非当前答案选项同时满足 grammar/semantic/textbook_context = YES",
+      "flagged_candidates": [
+        "students",
+        "parents",
+        "teachers"
+      ],
+      "flagged_letters": [
+        "B",
+        "C",
+        "D"
+      ],
+      "current_answer_valid": true,
+      "current_answer_included": true,
+      "need_more_context_candidates": [],
+      "candidate_count": 4,
+      "excluded_count": 0,
+      "candidates": [
+        {
+          "candidate": "A",
+          "candidate_text": "friends",
+          "is_current_answer": true,
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "ai_valid_alternative": "YES",
+          "program_valid_alternative": true,
+          "ai_vs_program_agreement": true,
+          "reason_cn": "课文原句为“with his friends”，语法和语义均正确。"
+        },
+        {
+          "candidate": "B",
+          "candidate_text": "students",
+          "is_current_answer": false,
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "ai_valid_alternative": "YES",
+          "program_valid_alternative": true,
+          "ai_vs_program_agreement": true,
+          "reason_cn": "“和他的学生一起拉二胡”语法正确，语义通顺，未被课文排除。"
+        },
+        {
+          "candidate": "C",
+          "candidate_text": "parents",
+          "is_current_answer": false,
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "ai_valid_alternative": "YES",
+          "program_valid_alternative": true,
+          "ai_vs_program_agreement": true,
+          "reason_cn": "“和他的父母一起拉二胡”语法正确，语义可理解，未被课文排除。"
+        },
+        {
+          "candidate": "D",
+          "candidate_text": "teachers",
+          "is_current_answer": false,
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "ai_valid_alternative": "YES",
+          "program_valid_alternative": true,
+          "ai_vs_program_agreement": true,
+          "reason_cn": "“和他的老师一起拉二胡”语法正确，语义通顺，未被课文排除。"
+        }
+      ]
+    },
+    {
+      "question_id": "FIX-C2",
+      "question_type": "vocab_choice",
+      "current_textbook_answer": "sentence",
+      "candidate_coverage": "COMPLETE",
+      "coverage_reason": "选择题的候选集合就是题目给出的全部选项（4 个），无需生成，覆盖度天然完整",
+      "assessment": "UNIQUE_RISK",
+      "assessment_basis": "存在 2 个非当前答案选项同时满足 grammar/semantic/textbook_context = YES",
+      "flagged_candidates": [
+        "word",
+        "name"
+      ],
+      "flagged_letters": [
+        "B",
+        "D"
+      ],
+      "current_answer_valid": true,
+      "current_answer_included": true,
+      "need_more_context_candidates": [],
+      "candidate_count": 4,
+      "excluded_count": 1,
+      "candidates": [
+        {
+          "candidate": "A",
+          "candidate_text": "sentence",
+          "is_current_answer": true,
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "ai_valid_alternative": "YES",
+          "program_valid_alternative": true,
+          "ai_vs_program_agreement": true,
+          "reason_cn": "课文原句为“writes the sentence”，语法和语义均正确。"
+        },
+        {
+          "candidate": "B",
+          "candidate_text": "word",
+          "is_current_answer": false,
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "ai_valid_alternative": "YES",
+          "program_valid_alternative": true,
+          "ai_vs_program_agreement": true,
+          "reason_cn": "“写一个单词”语法正确，语义通顺，未被课文排除。"
+        },
+        {
+          "candidate": "C",
+          "candidate_text": "picture",
+          "is_current_answer": false,
+          "grammar_valid": "YES",
+          "semantic_valid": "NO",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "ai_valid_alternative": "NO",
+          "program_valid_alternative": false,
+          "ai_vs_program_agreement": true,
+          "reason_cn": "“write a picture”动宾搭配不当，应为 draw a picture。"
+        },
+        {
+          "candidate": "D",
+          "candidate_text": "name",
+          "is_current_answer": false,
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "ai_valid_alternative": "YES",
+          "program_valid_alternative": true,
+          "ai_vs_program_agreement": true,
+          "reason_cn": "“写一个名字”语法正确，语义通顺，未被课文排除。"
+        }
+      ]
+    }
+  ]
+}

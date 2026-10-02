@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 1\nSECTION: READING_FOR_WRITING\nACTIVITY_INSTRUCTION: 13_Unit 1_Developing ideas _Reading for writing_2 Read the passage and find out the meaning of the title.mp3\nPASSAGE BLOCKS (id + verbatim textbook text):\n[FLTRP-EN-7A-2022CUR:P29:B0] Look at the word and expressions and look up their meanings in a dictionary.\n[FLTRP-EN-7A-2022CUR:P29:B2] by yourselfproblemtry your bestwork hard\n[FLTRP-EN-7A-2022CUR:P29:B6] Steps of looking up an entry in a dictionary ⇢ p116\n[FLTRP-EN-7A-2022CUR:P29:B13] Mia, how do you feel about your first day in junior high tomorrow?\n[FLTRP-EN-7A-2022CUR:P29:B15] Don’t worry. We’ve got something for you! Look! Well, I’m a little nervous.\n[FLTRP-EN-7A-2022CUR:P29:B7] MiaA paper boat?\n[FLTRP-EN-7A-2022CUR:P29:B17] MiaA paper boat?\n[FLTRP-EN-7A-2022CUR:P29:B14] Yes, and it’s also a letter from Mum and me. We want to share some thoughts with you.\n[FLTRP-EN-7A-2022CUR:P29:B16] Oh, thank you!\n[FLTRP-EN-7A-2022CUR:P30:B1] 1\t Time flies! You are now in junior high! Are you ready for your new life?\n[FLTRP-EN-7A-2022CUR:P30:B2] 2\t Primary school is like a small pool. Your boat is safe there. Dad and Mum can protect it from winds. But junior high is like a river. It is wide and the water moves fast. You will face new problems. We are still here to help. But sometimes you have to sail your boat by yourself. Just try your best and work hard. You will go through storms towards the sea.\n[FLTRP-EN-7A-2022CUR:P30:B3] 3\t We hope this letter helps you in the coming years!\n[FLTRP-EN-7A-2022CUR:P30:B4] With love, \t Dad and Mum\n\nWrite 2-3 multiple-choice reading questions about this passage.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"In the letter, junior high is compared to what?\",\n      \"options\": [\n        \"A river\",\n        \"A small pool\",\n        \"A paper boat\",\n        \"The sea\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P30:B2\",\n      \"evidence_quote\": \"But junior high is like a river.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What do Mia's parents tell her to do when she has to sail her boat by herself?\",\n      \"options\": [\n        \"Try her best and work hard\",\n        \"Protect the boat from winds\",\n        \"Stay in the small pool\",\n        \"Write a letter to them\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P30:B2\",\n      \"evidence_quote\": \"Just try your best and work hard.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"Who wrote the letter to Mia?\",\n      \"options\": [\n        \"Dad and Mum\",\n        \"Mia's friends\",\n        \"Her teacher\",\n        \"Mia herself\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P29:B14\",\n      \"evidence_quote\": \"Yes, and it’s also a letter from Mum and me.\",\n      \"skill\": \"inference\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 864,
+  "completion_tokens": 2609,
+  "total_tokens": 3473,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2259
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 608
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 2\nSECTION: DEVELOPING_IDEAS\nACTIVITY_AUDIO: 16_Unit 2_Developing ideas _1 Listen to the conversation. What does Wang Chen do.mp3\nOFFICIAL AUDIO TRANSCRIPT SEGMENTS (id, time range, text):\n[ASR:AU16:001 0-10600ms] Developing ideas. Activity 1. Listen to the conversation. What does Wang Chen do?\n[ASR:AU16:002 12480-16880ms] Look, Wei Feng. There's a brown bird over there.\n[ASR:AU16:003 17680-24420ms] Let's go closer. Oh no, it can't fly.\n[ASR:AU16:004 25420-27300ms] Shall we get the teacher?\n[ASR:AU16:005 29620-38020ms] I have an idea. Wang Chen is in the bird watching club. Let's ask him.\n[ASR:AU16:006 38960-41120ms] Wang Chen, help!\n[ASR:AU16:007 42140-43320ms] Let me see.\n[ASR:AU16:008 45120-54040ms] Don't worry, I know this kind of bird. I can help. We just need to hold it up to the window.\n[ASR:AU16:009 54040-58660ms] Wow! The bird flies away!\n[ASR:AU16:010 59700-71000ms] Wang Chen, you know so much about birds! I'm in the school news station. Can I interview you next week?\n[ASR:AU16:011 71860-72500ms] Sure!\n\nWrite 2-3 multiple-choice listening questions about what is said in this audio.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What does Wang Chen do?\",\n      \"options\": [\n        \"He is in the bird watching club.\",\n        \"He is in the school news station.\",\n        \"He is a teacher.\",\n        \"He is a bird.\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU16:005\",\n      \"evidence_quote\": \"Wang Chen is in the bird watching club. Let's ask him.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What is wrong with the bird?\",\n      \"options\": [\n        \"It can't fly.\",\n        \"It is brown.\",\n        \"It is over there.\",\n        \"It flies away.\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU16:003\",\n      \"evidence_quote\": \"Oh no, it can't fly.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What does Wang Chen say they need to do?\",\n      \"options\": [\n        \"Hold it up to the window.\",\n        \"Get the teacher.\",\n        \"Go closer.\",\n        \"Let me see.\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU16:008\",\n      \"evidence_quote\": \"We just need to hold it up to the window.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 717,
+  "completion_tokens": 3632,
+  "total_tokens": 4349,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3315
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 461
+ }
+}

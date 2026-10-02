@@ -1,0 +1,944 @@
+{
+  "stage": "P1-09-G",
+  "ai_calls": 0,
+  "rules_definition": {
+    "R1": "选项重复或互相包含（归一化去冠词/标点后）",
+    "R2": "两个选项共享同一词元（词形变化对）",
+    "R3": ">=2 个非答案选项与答案同词性（同词性不等于多答案）",
+    "R4": "R3 且空位为实词槽（语义槽位相容性的确定性代理）",
+    "R5": "选项教材来源刻画（词表 / Section / Unit / 全书）",
+    "R6": "选项与证据块的关系（是否与答案同处证据块）",
+    "R7": "题干上下文长度（少于 6 词视为短上下文）"
+  },
+  "items": [
+    {
+      "question_id": "AIQ:3179968E3E74",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+      "options": [
+        "polite",
+        "dry",
+        "important",
+        "mistake"
+      ],
+      "answer": "polite",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": true,
+          "answer_pos": "adj",
+          "answer_pos_known": true,
+          "same_pos_options": [
+            "dry",
+            "important"
+          ],
+          "count": 2,
+          "pos_known_non_answer_options": 3
+        },
+        "R4_content_slot_parallel": {
+          "fired": true,
+          "answer_pos": "adj",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": true,
+          "answer_in_section_text": true,
+          "options_in_section_text": [
+            "polite",
+            "dry",
+            "important",
+            "mistake"
+          ],
+          "non_answer_in_section_text": [
+            "dry",
+            "important",
+            "mistake"
+          ],
+          "non_answer_in_unit_text": [
+            "dry",
+            "important",
+            "mistake"
+          ],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [
+            "dry",
+            "important",
+            "mistake"
+          ],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": true,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [
+            "mistake"
+          ],
+          "non_answer_count_in_evidence": 1,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 15,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R3_same_pos_parallel",
+        "R4_content_slot_parallel",
+        "R5_textbook_origin",
+        "R6_evidence_relation"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    },
+    {
+      "question_id": "AIQ:5B4C80443D5F",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+      "options": [
+        "mistake",
+        "mind",
+        "meaning",
+        "fact"
+      ],
+      "answer": "mistake",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": true,
+          "answer_pos": "n",
+          "answer_pos_known": true,
+          "same_pos_options": [
+            "mind",
+            "meaning",
+            "fact"
+          ],
+          "count": 3,
+          "pos_known_non_answer_options": 3
+        },
+        "R4_content_slot_parallel": {
+          "fired": true,
+          "answer_pos": "n",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": true,
+          "answer_in_section_text": true,
+          "options_in_section_text": [
+            "mistake",
+            "mind",
+            "meaning",
+            "fact"
+          ],
+          "non_answer_in_section_text": [
+            "mind",
+            "meaning",
+            "fact"
+          ],
+          "non_answer_in_unit_text": [
+            "mind",
+            "meaning",
+            "fact"
+          ],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [
+            "mind",
+            "meaning",
+            "fact"
+          ],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 13,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R3_same_pos_parallel",
+        "R4_content_slot_parallel",
+        "R5_textbook_origin"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    },
+    {
+      "question_id": "AIQ:6721EC6C5D1F",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "Water from the ___ will rise to the leaf through the stem.",
+      "options": [
+        "root",
+        "stem",
+        "sugar",
+        "oxygen"
+      ],
+      "answer": "root",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": true,
+          "answer_pos": "n",
+          "answer_pos_known": true,
+          "same_pos_options": [
+            "stem",
+            "sugar",
+            "oxygen"
+          ],
+          "count": 3,
+          "pos_known_non_answer_options": 3
+        },
+        "R4_content_slot_parallel": {
+          "fired": true,
+          "answer_pos": "n",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": true,
+          "answer_in_section_text": true,
+          "options_in_section_text": [
+            "root",
+            "stem",
+            "sugar",
+            "oxygen"
+          ],
+          "non_answer_in_section_text": [
+            "stem",
+            "sugar",
+            "oxygen"
+          ],
+          "non_answer_in_unit_text": [
+            "stem",
+            "sugar",
+            "oxygen"
+          ],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [
+            "stem",
+            "sugar",
+            "oxygen"
+          ],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 11,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R3_same_pos_parallel",
+        "R4_content_slot_parallel",
+        "R5_textbook_origin"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "question_type": "reading_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "At the school art festival, the writer and Grandpa ___.",
+      "options": [
+        "write songs",
+        "share songs online",
+        "fire up instruments",
+        "sing Beijing opera"
+      ],
+      "answer": "fire up instruments",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "answer_pos_known": false,
+          "same_pos_options": [],
+          "count": 0,
+          "pos_known_non_answer_options": 0
+        },
+        "R4_content_slot_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": false,
+          "answer_in_section_text": false,
+          "options_in_section_text": [],
+          "non_answer_in_section_text": [],
+          "non_answer_in_unit_text": [],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": false,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 9,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [],
+      "state": "NO_AI_SIGNAL"
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "But it’s a ___ kind of music.",
+      "options": [
+        "different",
+        "traditional",
+        "electric",
+        "weak"
+      ],
+      "answer": "different",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": true,
+          "answer_pos": "adj",
+          "answer_pos_known": true,
+          "same_pos_options": [
+            "traditional",
+            "electric",
+            "weak"
+          ],
+          "count": 3,
+          "pos_known_non_answer_options": 3
+        },
+        "R4_content_slot_parallel": {
+          "fired": true,
+          "answer_pos": "adj",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": true,
+          "answer_in_section_text": true,
+          "options_in_section_text": [
+            "different",
+            "traditional",
+            "electric"
+          ],
+          "non_answer_in_section_text": [
+            "traditional",
+            "electric"
+          ],
+          "non_answer_in_unit_text": [
+            "traditional",
+            "electric",
+            "weak"
+          ],
+          "non_answer_book_only": [
+            "weak"
+          ],
+          "non_answer_in_vocabulary": [
+            "traditional",
+            "electric",
+            "weak"
+          ],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 7,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R3_same_pos_parallel",
+        "R4_content_slot_parallel",
+        "R5_textbook_origin"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "question_type": "reading_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "Grandpa likes playing the erhu ___.",
+      "options": [
+        "in the park",
+        "in the school band",
+        "on the stage",
+        "in his room"
+      ],
+      "answer": "in the park",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "answer_pos_known": false,
+          "same_pos_options": [],
+          "count": 0,
+          "pos_known_non_answer_options": 0
+        },
+        "R4_content_slot_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": false,
+          "answer_in_section_text": false,
+          "options_in_section_text": [],
+          "non_answer_in_section_text": [],
+          "non_answer_in_unit_text": [],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": true,
+          "stem_word_count": 5,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R7_stem_context_length"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    },
+    {
+      "question_id": "AIQ:A9D1F3EC6020",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "Ms Chen writes a ___ on the blackboard.",
+      "options": [
+        "sentence",
+        "mistake",
+        "mind",
+        "meaning"
+      ],
+      "answer": "sentence",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": true,
+          "answer_pos": "n",
+          "answer_pos_known": true,
+          "same_pos_options": [
+            "mistake",
+            "mind",
+            "meaning"
+          ],
+          "count": 3,
+          "pos_known_non_answer_options": 3
+        },
+        "R4_content_slot_parallel": {
+          "fired": true,
+          "answer_pos": "n",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": true,
+          "answer_in_section_text": true,
+          "options_in_section_text": [
+            "sentence",
+            "mistake",
+            "mind",
+            "meaning"
+          ],
+          "non_answer_in_section_text": [
+            "mistake",
+            "mind",
+            "meaning"
+          ],
+          "non_answer_in_unit_text": [
+            "mistake",
+            "mind",
+            "meaning"
+          ],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [
+            "mistake",
+            "mind",
+            "meaning"
+          ],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 7,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R3_same_pos_parallel",
+        "R4_content_slot_parallel",
+        "R5_textbook_origin"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "question_type": "reading_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "In the Great Bear Rainforest, what can the trees make?",
+      "options": [
+        "their own rain",
+        "sugar",
+        "oxygen",
+        "food"
+      ],
+      "answer": "their own rain",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "answer_pos_known": false,
+          "same_pos_options": [],
+          "count": 0,
+          "pos_known_non_answer_options": 2
+        },
+        "R4_content_slot_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": true,
+          "answer_in_section_text": false,
+          "options_in_section_text": [
+            "sugar",
+            "oxygen",
+            "food"
+          ],
+          "non_answer_in_section_text": [
+            "sugar",
+            "oxygen",
+            "food"
+          ],
+          "non_answer_in_unit_text": [
+            "sugar",
+            "oxygen",
+            "food"
+          ],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [
+            "sugar",
+            "oxygen"
+          ],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 10,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R5_textbook_origin"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    },
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "ACTIVE",
+      "source": "question_library",
+      "question": "As a rock music lover, I play the electric guitar in the school ___.",
+      "options": [
+        "band",
+        "club",
+        "stage",
+        "instrument"
+      ],
+      "answer": "band",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": true,
+          "answer_pos": "n",
+          "answer_pos_known": true,
+          "same_pos_options": [
+            "club",
+            "stage",
+            "instrument"
+          ],
+          "count": 3,
+          "pos_known_non_answer_options": 3
+        },
+        "R4_content_slot_parallel": {
+          "fired": true,
+          "answer_pos": "n",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": true,
+          "answer_in_section_text": true,
+          "options_in_section_text": [
+            "band",
+            "club",
+            "stage",
+            "instrument"
+          ],
+          "non_answer_in_section_text": [
+            "club",
+            "stage",
+            "instrument"
+          ],
+          "non_answer_in_unit_text": [
+            "club",
+            "stage",
+            "instrument"
+          ],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [
+            "club",
+            "stage",
+            "instrument"
+          ],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 13,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R3_same_pos_parallel",
+        "R4_content_slot_parallel",
+        "R5_textbook_origin"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    },
+    {
+      "question_id": "AIQ:CD8B21681B4C",
+      "question_type": "reading_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "source": "question_library",
+      "question": "What is Wang Tao going to wear tomorrow for school?",
+      "options": [
+        "school uniform",
+        "sports jacket",
+        "T-shirt",
+        "red scarf"
+      ],
+      "answer": "school uniform",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "answer_pos_known": false,
+          "same_pos_options": [],
+          "count": 0,
+          "pos_known_non_answer_options": 1
+        },
+        "R4_content_slot_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": false,
+          "answer_in_section_text": false,
+          "options_in_section_text": [],
+          "non_answer_in_section_text": [],
+          "non_answer_in_unit_text": [],
+          "non_answer_book_only": [],
+          "non_answer_in_vocabulary": [
+            "red scarf"
+          ],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 10,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [],
+      "state": "NO_AI_SIGNAL"
+    },
+    {
+      "question_id": "FIX-C1",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "FIXTURE",
+      "source": "P1-09-D fixture (known true second answer)",
+      "question": "Grandpa likes playing the erhu in the park with his ___.",
+      "options": [
+        "friends",
+        "students",
+        "parents",
+        "teachers"
+      ],
+      "answer": "friends",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "answer_pos_known": false,
+          "same_pos_options": [],
+          "count": 0,
+          "pos_known_non_answer_options": 0
+        },
+        "R4_content_slot_parallel": {
+          "fired": false,
+          "answer_pos": "",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": false,
+          "answer_in_section_text": true,
+          "options_in_section_text": [
+            "friends",
+            "students"
+          ],
+          "non_answer_in_section_text": [
+            "students"
+          ],
+          "non_answer_in_unit_text": [
+            "students"
+          ],
+          "non_answer_book_only": [
+            "parents",
+            "teachers"
+          ],
+          "non_answer_in_vocabulary": [],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 10,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [],
+      "state": "NO_AI_SIGNAL"
+    },
+    {
+      "question_id": "FIX-C2",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "FIXTURE",
+      "source": "P1-09-D fixture (known true second answer)",
+      "question": "Ms Chen writes a ___ on the blackboard.",
+      "options": [
+        "sentence",
+        "word",
+        "picture",
+        "name"
+      ],
+      "answer": "sentence",
+      "rules": {
+        "R1_option_duplicate_or_containment": {
+          "fired": false,
+          "pairs": []
+        },
+        "R2_same_lemma_pair": {
+          "fired": false,
+          "pairs": []
+        },
+        "R3_same_pos_parallel": {
+          "fired": false,
+          "answer_pos": "n",
+          "answer_pos_known": true,
+          "same_pos_options": [],
+          "count": 0,
+          "pos_known_non_answer_options": 0
+        },
+        "R4_content_slot_parallel": {
+          "fired": false,
+          "answer_pos": "n",
+          "note": "R4 = 语义槽位相容性的确定性代理：空位是实词槽且至少两个同词性候选可入槽"
+        },
+        "R5_textbook_origin": {
+          "fired": true,
+          "answer_in_section_text": true,
+          "options_in_section_text": [
+            "sentence",
+            "word",
+            "name"
+          ],
+          "non_answer_in_section_text": [
+            "word",
+            "name"
+          ],
+          "non_answer_in_unit_text": [
+            "word",
+            "name"
+          ],
+          "non_answer_book_only": [
+            "picture"
+          ],
+          "non_answer_in_vocabulary": [],
+          "note": "来自教材不等于正确；这里只刻画来源"
+        },
+        "R6_evidence_relation": {
+          "fired": false,
+          "answer_in_evidence": true,
+          "non_answer_in_evidence": [],
+          "non_answer_count_in_evidence": 0,
+          "note": "非答案选项也出现在证据块内 → 语境相邻，提高风险信号"
+        },
+        "R7_stem_context_length": {
+          "fired": false,
+          "stem_word_count": 7,
+          "note": "短题干 → 语境不足以排除其他候选（仅风险信号）"
+        }
+      },
+      "fired_rules": [
+        "R5_textbook_origin"
+      ],
+      "state": "AI_REVIEW_CANDIDATE"
+    }
+  ]
+}

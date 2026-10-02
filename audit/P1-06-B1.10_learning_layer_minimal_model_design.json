@@ -1,0 +1,237 @@
+{
+  "task": "P1-06-B1.10 Learning Layer 最小实体与职责设计审计",
+  "generated_at": "2026-09-12T15:28:10+08:00",
+  "verdict": "PASS",
+  "baseline": {
+    "v5_sha256": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+    "v5_size": 2457600,
+    "Vocabulary": 287,
+    "Phrase": 23,
+    "Sentence Pattern": 52,
+    "total_resources": 362,
+    "tables": 21,
+    "integrity": "ok",
+    "fk": 0
+  },
+  "existing": {
+    "learning_item": 362,
+    "learning_goal": 6,
+    "learning_goal_origin": [
+      "TEXTBOOK_EXPLICIT"
+    ],
+    "learning_goal_scope": [
+      "unit"
+    ],
+    "ai_artifact": 0
+  },
+  "not_present": [
+    "learner",
+    "learning_record",
+    "mastery_state",
+    "review_item",
+    "question",
+    "exercise",
+    "learning_session",
+    "attempt"
+  ],
+  "entities": [
+    {
+      "name": "Learner",
+      "must_exist": true,
+      "layer": "用户层",
+      "role": "学习状态根节点",
+      "min_fields": [
+        "learner_id",
+        "display_name",
+        "created_at",
+        "status"
+      ],
+      "notes": "教材资源不需要 learner_id；教材 item_id 不因孩子改变"
+    },
+    {
+      "name": "LearningGoal",
+      "must_exist": true,
+      "layer": "学习层(意图)",
+      "role": "区分教材显式目标(A)与系统派生目标(B)",
+      "needs": [
+        "goal_origin(已有)",
+        "derived_from(建议)",
+        "target_item_id(暂缓/改用关系表)"
+      ]
+    },
+    {
+      "name": "LearningTask",
+      "must_exist": true,
+      "layer": "运行层(计划)",
+      "role": "一次有计划的学习活动集合",
+      "recommended_scheme": "B: Resource → Task → Activity/Question → Record"
+    },
+    {
+      "name": "TaskItem",
+      "must_exist": true,
+      "layer": "学习层(连接)",
+      "role": "Task ↔ Resource 多对多桥接",
+      "pk": [
+        "task_id",
+        "item_id"
+      ],
+      "fields": [
+        "ordinal",
+        "item_role"
+      ]
+    },
+    {
+      "name": "LearningActivity",
+      "must_exist": "P1",
+      "layer": "运行层(活动)",
+      "role": "执行单元（题目型/非题目型）",
+      "note": "answer_key_ref 可空；AI 生成的题先成为 AIArtifact 再引用"
+    },
+    {
+      "name": "LearningRecord",
+      "must_exist": true,
+      "layer": "用户层(历史)",
+      "role": "孩子实际做过什么（append-only）",
+      "core": [
+        "record_id",
+        "learner_id",
+        "task_id",
+        "item_id",
+        "activity_type",
+        "result",
+        "created_at"
+      ],
+      "optional": [
+        "activity_id",
+        "response_raw",
+        "attempt_no",
+        "duration_ms",
+        "hints_used"
+      ],
+      "forbidden": [
+        "mastery",
+        "review_due",
+        "AI 诊断正文"
+      ]
+    },
+    {
+      "name": "MasteryState",
+      "must_exist": true,
+      "layer": "用户层(状态)",
+      "role": "孩子当前对该资源的掌握程度（≠最近一次表现）",
+      "pk": [
+        "learner_id",
+        "item_id"
+      ],
+      "core": [
+        "mastery_level",
+        "evidence_count",
+        "updated_at"
+      ]
+    },
+    {
+      "name": "ReviewItem",
+      "must_exist": "Later",
+      "layer": "用户层(计划)",
+      "role": "复习排队/来源/历史",
+      "phase_recommendation": "先只用 MasteryState.review_needed + next_review_at（方案 A）",
+      "upgrade_conditions": 4
+    },
+    {
+      "name": "AIArtifact",
+      "must_exist": true,
+      "layer": "AI层(旁路)",
+      "role": "辅助产物，单向引用教材资源与学习层对象",
+      "existing_table": true,
+      "rows": 0
+    }
+  ],
+  "relations": {
+    "resource_goal": "当前解耦；未来 resource_goal 多对多（LATER）",
+    "goal_task": "LearningTask.goal_id",
+    "task_item": "TaskItem(task_id,item_id)",
+    "task_activity": "LearningActivity.task_id",
+    "activity_record": "LearningRecord.activity_id(可空) + item_id",
+    "record_mastery": "聚合：Record → MasteryState（单向）",
+    "resource_ai": "AIArtifact 单向引用（target_layer='textbook_resource'）"
+  },
+  "priority": {
+    "P0": [
+      "Learner",
+      "LearningTask",
+      "TaskItem",
+      "LearningRecord",
+      "MasteryState"
+    ],
+    "P1": [
+      "LearningActivity",
+      "派生 LearningGoal",
+      "ReviewItem 独立化"
+    ],
+    "Later": [
+      "resource_goal",
+      "题库系统",
+      "间隔复习算法",
+      "推荐系统",
+      "复杂掌握算法",
+      "AI 自动教学",
+      "游戏化",
+      "自动学习计划",
+      "复杂用户体系",
+      "多学科扩展"
+    ]
+  },
+  "autonomy": "Recommendation ≠ Task ≠ Requirement；孩子可继续/稍后/跳过/换一个；AI 推荐不得改变教材资源",
+  "non_question_learning": [
+    "阅读",
+    "认读",
+    "跟读",
+    "听音",
+    "拼写",
+    "理解",
+    "替换",
+    "造句",
+    "复习"
+  ],
+  "not_designed": [
+    "复杂掌握算法",
+    "间隔复习算法",
+    "AI 自动教学流程",
+    "完整题库系统",
+    "推荐系统",
+    "积分/游戏化",
+    "自动学习计划",
+    "复杂用户体系",
+    "任何数据库变更"
+  ],
+  "risks": {
+    "P0": 0,
+    "P1": 0,
+    "P2": [
+      "未定义 activity_type 枚举（建议文档级冻结）",
+      "未定义 mastery_level 判定门槛（建议最小证据量+规则）"
+    ],
+    "P3": [
+      "learning_item 文档级命名与命名空间登记",
+      "review_status 治理语义写入实现文档",
+      "学习层与教材 snapshot 迁移策略",
+      "多设备/离线（暂不设计）"
+    ]
+  },
+  "boundaries": {
+    "db_changes": "NONE",
+    "code_changes": "NONE",
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "new_deps": 0,
+    "network": 0,
+    "zhixue_ai": false,
+    "v5_modified": false,
+    "new_files": [
+      "audit/P1-06-B1.10_learning_layer_minimal_model_design.md",
+      "audit/P1-06-B1.10_learning_layer_minimal_model_design.json"
+    ]
+  },
+  "final": "足够清晰，可以进入学习层第一批实现设计（P0 = Learner / LearningTask / TaskItem / LearningRecord / MasteryState）"
+}

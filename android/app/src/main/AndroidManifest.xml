@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 仅用于访问本项目正式 Web UI（局域网开发阶段） -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- P6-B-7：跟读录音（孩子点击麦克风才开始，录音只留在本机页面内） -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- MODIFY_AUDIO_SETTINGS：WebView 内 getUserMedia 需要它才能通过 AudioManager
+         选择通信输入设备。缺失时表现为 NotReadableError（而非权限拒绝，易误判）。
+         仅声明即可，无需运行时请求；删除本权限会直接破坏跟读录音。 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <!-- launchMode=singleTask + alwaysRetainTaskState：
+             2026-09-30 —— 按「熄屏重载」实测结论降低 Activity / 任务被重建的概率，
+             让重新打开时复用同一任务栈与 Activity（配合应用内的「上次页面 URL」恢复层）。 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

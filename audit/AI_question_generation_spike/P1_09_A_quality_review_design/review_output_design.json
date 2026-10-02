@@ -1,0 +1,107 @@
+{
+  "stage": "P1-09-A",
+  "design_status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+  "minimal_ai_review_output": {
+    "note": "每道题一条记录；AI 只输出判断，不得输出改写后的题目内容。",
+    "fields": [
+      {"name": "question_id", "type": "string", "meaning": "与 question_library.db 的题目主键一致（AIQ:<fingerprint12>）"},
+      {"name": "suggested_decision", "enum": ["suggest_approve", "suggest_fix", "suggest_reject"],
+       "meaning": "AI 的建议；命名带 suggest_ 前缀，禁止直接输出 APPROVED / ACTIVE"},
+      {"name": "english_correct", "enum": ["ok", "issue"], "meaning": "题干/选项/答案的英语是否有错误"},
+      {"name": "answer_unique", "enum": ["unique", "ambiguous"],
+       "meaning": "是否只有一个合理答案（尤其 fill 与选择题，需要能说出替代答案）"},
+      {"name": "naturalness", "enum": ["natural", "awkward"], "meaning": "题干与选项是否像真实英语表达"},
+      {"name": "learning_value", "enum": ["high", "medium", "low"],
+       "meaning": "是否真正练到教材学习点、是否有学习增量（机械挖空的取舍在此体现）"},
+      {"name": "distractor_quality", "enum": ["good", "acceptable", "poor", "n/a"],
+       "meaning": "仅选择题有意义；fill / judge 必须为 n/a"},
+      {"name": "grade_fit", "enum": ["ok", "too_easy", "too_hard"], "meaning": "是否符合外研版初一阶段"},
+      {"name": "short_reason", "type": "string",
+       "meaning": "一句话中文理由（建议不超过 40 字），面向不会英语的家长可读，不含技术字段"},
+      {"name": "confidence", "type": "number", "range": [0, 1],
+       "meaning": "AI 自评置信度；只能用于排序或提示，不能作为放行依据"}
+    ],
+    "removed_from_candidate_field_list": [
+      {"field": "overall_decision", "why": "改名为 suggested_decision，避免与生命周期 APPROVED / ACTIVE 同形，防止越权写入"},
+      {"field": "mechanical_reproduction",
+       "why": "程序已经确定性计算 mechanical_rewrite（P1-07 入库闸门 + question_validation.note）；AI 不再重复判断，只在 learning_value 中体现代价。同一事实不设两个来源。"},
+      {"field": "evidence_consistency",
+       "why": "教材定位、evidence id 存在性、引文命中、词汇边界、答案支持由程序负责（validator v2/v3 + 6 个数据库触发器）；AI 复核不以任何形式重新裁决证据边界。"}
+    ]
+  },
+  "field_storage_classification": {
+    "A_permanent_store_if_adopted": {
+      "note": "若未来进入正式题库，只持久化这些字段；它们是某次复核意见的不可变记录，绝不覆盖题目本身。",
+      "fields": [
+        "question_id", "suggested_decision", "english_correct", "answer_unique",
+        "naturalness", "learning_value", "distractor_quality", "grade_fit",
+        "short_reason", "confidence",
+        "reviewer_model", "prompt_version", "review_context_hash", "reviewed_at"
+      ],
+      "rule": "append-only：同一题的第二次复核只能新增一条记录，不得 UPDATE 上一条。"
+    },
+    "B_process_only": {
+      "note": "只留在审计或运行包里，不进入正式数据库。",
+      "fields": [
+        "原始模型响应全文（raw_response.json）",
+        "逐题长解释（超过 short_reason 的部分）",
+        "prompt_tokens / completion_tokens / reasoning_tokens / latency",
+        "reviewer system prompt 全文与 payload",
+        "确定性 triage 命中记录与规则版本",
+        "模型中间推理过程（不展示给任何用户）"
+      ]
+    },
+    "C_must_not_store": {
+      "note": "这些一旦写入就会破坏现有的责任边界。",
+      "fields": [
+        "把 AI 结论写成 lifecycle_status 或写进 question_event（AI 复核不是审核事件，不得驱动 PENDING_REVIEW 到 APPROVED 到 ACTIVE）",
+        "把 AI 复核写进 question_validation（该表语义是程序验证结果，混入 AI 意见后无法区分机器验证与模型判断）",
+        "AI 改写后的题干 / 选项 / 答案（AI 只能给意见，不能覆盖原题）",
+        "面向孩子的评价文案（评价语言由学习层统一，不由题库侧产生）",
+        "AI 的 chain-of-thought",
+        "以 actor_kind='human' 记录的 AI 结论（伪造人工审核）"
+      ]
+    }
+  },
+  "review_input_contract": {
+    "must_include": [
+      "question_text", "options", "correct_option", "answer", "question_type",
+      "evidence_quote", "page 与 activity 的教材位置（自然语言，不含内部 ID）"
+    ],
+    "must_exclude": [
+      "生成时的 system prompt 全文",
+      "生成模型输出的 explanation 字段（避免被生成阶段的自我叙述带偏）",
+      "其它题的答案",
+      "任何必须产出 N 道题的压力指令"
+    ],
+    "must_be_stated_to_reviewer": [
+      "假设程序已经验证过教材定位、证据存在性、引文命中与词汇边界；不要重新裁决这些",
+      "你的职责是语言与教育质量判断，可以直接指出某条题不值得做",
+      "如果存在更合理的替代答案，必须写出来",
+      "不得输出改写后的题目，只输出判断"
+    ]
+  },
+  "future_review_ui_minimal_info": {
+    "note": "只设计，不实现。目标读者是不会英语的家长。",
+    "show": [
+      "题目（题干 + 选项）",
+      "正确答案",
+      "教材出处：第 X 页 + 教材原句",
+      "AI 的一句话结论（中文）",
+      "AI 建议：建议通过 / 建议修改 / 建议驳回",
+      "是否需要人工再看一眼（由 answer_unique / english_correct 推导）"
+    ],
+    "never_show": [
+      "model", "prompt_version", "context_hash", "generation_run_id",
+      "validator_version", "evidence_block_id", "lifecycle_status",
+      "question_fingerprint", "任何数据库内部 ID"
+    ],
+    "actions": ["通过", "驳回", "暂缓"],
+    "hard_rule": "界面上的通过按钮必须由人类点击并记录为 actor_kind='human' 的 REVIEW_APPROVED；AI 建议永远只是建议，不产生任何生命周期事件。"
+  },
+  "lifecycle_boundary": {
+    "statement": "AI quality review PASS != APPROVED != ACTIVE",
+    "chain": ["PENDING_REVIEW", "human REVIEW_APPROVED", "APPROVED", "explicit ACTIVATED", "ACTIVE"],
+    "verified_by": "P1-08-C 实测：未审核不能 ACTIVE；APPROVED 不会自动 ACTIVE；只有 lifecycle_status=ACTIVE 且 active=1 才能被学习候选读取"
+  }
+}

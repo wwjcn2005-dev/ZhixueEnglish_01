@@ -1,0 +1,71 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "question": "That’s really an ___ lesson!",
+   "options": [],
+   "correct_option": "",
+   "answer": "important",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 17,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P22:B9"
+   ],
+   "evidence_quote": "That’s really an important lesson!",
+   "explanation": "The original passage sentence is That’s really an important lesson! The missing word is important.",
+   "difficulty": "easy",
+   "ai_confidence": 0.97
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "question": "But is it OK to point out the ___?",
+   "options": [
+    "mistake",
+    "meaning",
+    "mind",
+    "sentence"
+   ],
+   "correct_option": "A",
+   "answer": "mistake",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 17,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P22:B2"
+   ],
+   "evidence_quote": "But is it OK to point out the mistake?",
+   "explanation": "The passage says But is it OK to point out the mistake? The missing word is mistake.",
+   "difficulty": "easy",
+   "ai_confidence": 0.96
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "question": "What does Wang Han say about the sentence?",
+   "options": [
+    "That sentence is from Confucius, not from Mencius.",
+    "That sentence is from Mencius, not from Confucius.",
+    "That sentence is from Ms Chen, not from Confucius.",
+    "That sentence has no mistake."
+   ],
+   "correct_option": "A",
+   "answer": "That sentence is from Confucius, not from Mencius.",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 17,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P22:B6"
+   ],
+   "evidence_quote": "That sentence is from Confucius, not from Mencius.",
+   "explanation": "Wang Han says that sentence is from Confucius, not from Mencius.",
+   "difficulty": "easy",
+   "ai_confidence": 0.98
+  }
+ ]
+}

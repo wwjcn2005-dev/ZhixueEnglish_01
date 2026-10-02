@@ -1,0 +1,1289 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU19",
+  "audio_num": "AU19",
+  "filename": "19_Unit 2_Developing ideas _3 Listen to the interview and complete the interviewer's notes.mp3",
+  "duration_ms": 140069,
+  "segment_count": 23,
+  "word_count": 231,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 8060,
+      "text": "Activity 3. Listen to the interview and complete the interviewer's notes."
+    },
+    {
+      "start_ms": 9800,
+      "end_ms": 14520,
+      "text": "Hello Wang Chen. Thanks for coming to the interview."
+    },
+    {
+      "start_ms": 15380,
+      "end_ms": 23400,
+      "text": "Hello. Can you tell us something about the bird last week? Why can't it fly from the"
+    },
+    {
+      "start_ms": 23400,
+      "end_ms": 23840,
+      "text": "ground?"
+    },
+    {
+      "start_ms": 23840,
+      "end_ms": 34200,
+      "text": "because it is a swift. These kinds of birds have weak legs so they can't take off from the ground."
+    },
+    {
+      "start_ms": 34820,
+      "end_ms": 42000,
+      "text": "They need to take off from a high place. Why do you know so much about birds?"
+    },
+    {
+      "start_ms": 42840,
+      "end_ms": 50560,
+      "text": "Because I love bird watching. It's my hobby. What do you like about bird watching?"
+    },
+    {
+      "start_ms": 50560,
+      "end_ms": 60540,
+      "text": "My dad takes me to watch birds every summer. I read books about birds too. It helps me know"
+    },
+    {
+      "start_ms": 60540,
+      "end_ms": 62660,
+      "text": "more about the world of nature."
+    },
+    {
+      "start_ms": 71340,
+      "end_ms": 78540,
+      "text": "Listen again. Then talk about how Wang Chen expresses cause and effect."
+    },
+    {
+      "start_ms": 80560,
+      "end_ms": 84820,
+      "text": "Hello Wang Chen. Thanks for coming to the interview."
+    },
+    {
+      "start_ms": 85840,
+      "end_ms": 86320,
+      "text": "Hello."
+    },
+    {
+      "start_ms": 87400,
+      "end_ms": 90880,
+      "text": "Can you tell us something about the bird last week?"
+    },
+    {
+      "start_ms": 91880,
+      "end_ms": 94160,
+      "text": "Why can't it fly from the ground?"
+    },
+    {
+      "start_ms": 95040,
+      "end_ms": 97180,
+      "text": "Because it is a swift."
+    },
+    {
+      "start_ms": 98260,
+      "end_ms": 101660,
+      "text": "These kinds of birds have weak legs,"
+    },
+    {
+      "start_ms": 102040,
+      "end_ms": 104560,
+      "text": "so they can't take off from the ground."
+    },
+    {
+      "start_ms": 105240,
+      "end_ms": 108340,
+      "text": "They need to take off from a high place."
+    },
+    {
+      "start_ms": 108340,
+      "end_ms": 112260,
+      "text": "Why do you know so much about birds?"
+    },
+    {
+      "start_ms": 113080,
+      "end_ms": 117540,
+      "text": "Because I love bird watching. It's my hobby."
+    },
+    {
+      "start_ms": 118300,
+      "end_ms": 120920,
+      "text": "What do you like about bird watching?"
+    },
+    {
+      "start_ms": 121700,
+      "end_ms": 125480,
+      "text": "My dad takes me to watch birds every summer."
+    },
+    {
+      "start_ms": 126180,
+      "end_ms": 133060,
+      "text": "I read books about birds too. It helps me know more about the world of nature."
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1700
+    },
+    {
+      "word": "3.",
+      "start_ms": 1700,
+      "end_ms": 2220
+    },
+    {
+      "word": "Listen",
+      "start_ms": 3140,
+      "end_ms": 4020
+    },
+    {
+      "word": "to",
+      "start_ms": 4020,
+      "end_ms": 4360
+    },
+    {
+      "word": "the",
+      "start_ms": 4360,
+      "end_ms": 4500
+    },
+    {
+      "word": "interview",
+      "start_ms": 4500,
+      "end_ms": 5060
+    },
+    {
+      "word": "and",
+      "start_ms": 5060,
+      "end_ms": 5860
+    },
+    {
+      "word": "complete",
+      "start_ms": 5860,
+      "end_ms": 6440
+    },
+    {
+      "word": "the",
+      "start_ms": 6440,
+      "end_ms": 6860
+    },
+    {
+      "word": "interviewer's",
+      "start_ms": 6860,
+      "end_ms": 7660
+    },
+    {
+      "word": "notes.",
+      "start_ms": 7660,
+      "end_ms": 8060
+    },
+    {
+      "word": "Hello",
+      "start_ms": 9800,
+      "end_ms": 10680
+    },
+    {
+      "word": "Wang",
+      "start_ms": 10680,
+      "end_ms": 11220
+    },
+    {
+      "word": "Chen.",
+      "start_ms": 11220,
+      "end_ms": 11640
+    },
+    {
+      "word": "Thanks",
+      "start_ms": 12360,
+      "end_ms": 12880
+    },
+    {
+      "word": "for",
+      "start_ms": 12880,
+      "end_ms": 13160
+    },
+    {
+      "word": "coming",
+      "start_ms": 13160,
+      "end_ms": 13480
+    },
+    {
+      "word": "to",
+      "start_ms": 13480,
+      "end_ms": 13780
+    },
+    {
+      "word": "the",
+      "start_ms": 13780,
+      "end_ms": 13940
+    },
+    {
+      "word": "interview.",
+      "start_ms": 13940,
+      "end_ms": 14520
+    },
+    {
+      "word": "Hello.",
+      "start_ms": 15380,
+      "end_ms": 15960
+    },
+    {
+      "word": "Can",
+      "start_ms": 16880,
+      "end_ms": 17400
+    },
+    {
+      "word": "you",
+      "start_ms": 17400,
+      "end_ms": 17680
+    },
+    {
+      "word": "tell",
+      "start_ms": 17680,
+      "end_ms": 17980
+    },
+    {
+      "word": "us",
+      "start_ms": 17980,
+      "end_ms": 18220
+    },
+    {
+      "word": "something",
+      "start_ms": 18220,
+      "end_ms": 18600
+    },
+    {
+      "word": "about",
+      "start_ms": 18600,
+      "end_ms": 18980
+    },
+    {
+      "word": "the",
+      "start_ms": 18980,
+      "end_ms": 19240
+    },
+    {
+      "word": "bird",
+      "start_ms": 19240,
+      "end_ms": 19680
+    },
+    {
+      "word": "last",
+      "start_ms": 19680,
+      "end_ms": 20080
+    },
+    {
+      "word": "week?",
+      "start_ms": 20080,
+      "end_ms": 20520
+    },
+    {
+      "word": "Why",
+      "start_ms": 21460,
+      "end_ms": 21960
+    },
+    {
+      "word": "can't",
+      "start_ms": 21960,
+      "end_ms": 22400
+    },
+    {
+      "word": "it",
+      "start_ms": 22400,
+      "end_ms": 22520
+    },
+    {
+      "word": "fly",
+      "start_ms": 22520,
+      "end_ms": 22820
+    },
+    {
+      "word": "from",
+      "start_ms": 22820,
+      "end_ms": 23200
+    },
+    {
+      "word": "the",
+      "start_ms": 23200,
+      "end_ms": 23400
+    },
+    {
+      "word": "ground?",
+      "start_ms": 23400,
+      "end_ms": 23840
+    },
+    {
+      "word": "because",
+      "start_ms": 23840,
+      "end_ms": 25240
+    },
+    {
+      "word": "it",
+      "start_ms": 25240,
+      "end_ms": 25880
+    },
+    {
+      "word": "is",
+      "start_ms": 25880,
+      "end_ms": 26140
+    },
+    {
+      "word": "a",
+      "start_ms": 26140,
+      "end_ms": 26380
+    },
+    {
+      "word": "swift.",
+      "start_ms": 26380,
+      "end_ms": 26820
+    },
+    {
+      "word": "These",
+      "start_ms": 28000,
+      "end_ms": 28360
+    },
+    {
+      "word": "kinds",
+      "start_ms": 28360,
+      "end_ms": 28800
+    },
+    {
+      "word": "of",
+      "start_ms": 28800,
+      "end_ms": 29080
+    },
+    {
+      "word": "birds",
+      "start_ms": 29080,
+      "end_ms": 29540
+    },
+    {
+      "word": "have",
+      "start_ms": 29540,
+      "end_ms": 30080
+    },
+    {
+      "word": "weak",
+      "start_ms": 30080,
+      "end_ms": 30680
+    },
+    {
+      "word": "legs",
+      "start_ms": 30680,
+      "end_ms": 31300
+    },
+    {
+      "word": "so",
+      "start_ms": 31300,
+      "end_ms": 32160
+    },
+    {
+      "word": "they",
+      "start_ms": 32160,
+      "end_ms": 32340
+    },
+    {
+      "word": "can't",
+      "start_ms": 32340,
+      "end_ms": 32840
+    },
+    {
+      "word": "take",
+      "start_ms": 32840,
+      "end_ms": 33100
+    },
+    {
+      "word": "off",
+      "start_ms": 33100,
+      "end_ms": 33400
+    },
+    {
+      "word": "from",
+      "start_ms": 33400,
+      "end_ms": 33660
+    },
+    {
+      "word": "the",
+      "start_ms": 33660,
+      "end_ms": 33780
+    },
+    {
+      "word": "ground.",
+      "start_ms": 33780,
+      "end_ms": 34200
+    },
+    {
+      "word": "They",
+      "start_ms": 34820,
+      "end_ms": 35320
+    },
+    {
+      "word": "need",
+      "start_ms": 35320,
+      "end_ms": 35620
+    },
+    {
+      "word": "to",
+      "start_ms": 35620,
+      "end_ms": 35860
+    },
+    {
+      "word": "take",
+      "start_ms": 35860,
+      "end_ms": 36100
+    },
+    {
+      "word": "off",
+      "start_ms": 36100,
+      "end_ms": 36540
+    },
+    {
+      "word": "from",
+      "start_ms": 36540,
+      "end_ms": 36860
+    },
+    {
+      "word": "a",
+      "start_ms": 36860,
+      "end_ms": 37000
+    },
+    {
+      "word": "high",
+      "start_ms": 37000,
+      "end_ms": 37360
+    },
+    {
+      "word": "place.",
+      "start_ms": 37360,
+      "end_ms": 38000
+    },
+    {
+      "word": "Why",
+      "start_ms": 38640,
+      "end_ms": 39160
+    },
+    {
+      "word": "do",
+      "start_ms": 39160,
+      "end_ms": 39400
+    },
+    {
+      "word": "you",
+      "start_ms": 39400,
+      "end_ms": 39660
+    },
+    {
+      "word": "know",
+      "start_ms": 39660,
+      "end_ms": 40000
+    },
+    {
+      "word": "so",
+      "start_ms": 40000,
+      "end_ms": 40420
+    },
+    {
+      "word": "much",
+      "start_ms": 40420,
+      "end_ms": 40940
+    },
+    {
+      "word": "about",
+      "start_ms": 40940,
+      "end_ms": 41260
+    },
+    {
+      "word": "birds?",
+      "start_ms": 41260,
+      "end_ms": 42000
+    },
+    {
+      "word": "Because",
+      "start_ms": 42840,
+      "end_ms": 43280
+    },
+    {
+      "word": "I",
+      "start_ms": 43280,
+      "end_ms": 43860
+    },
+    {
+      "word": "love",
+      "start_ms": 43860,
+      "end_ms": 44420
+    },
+    {
+      "word": "bird",
+      "start_ms": 44420,
+      "end_ms": 44960
+    },
+    {
+      "word": "watching.",
+      "start_ms": 44960,
+      "end_ms": 45420
+    },
+    {
+      "word": "It's",
+      "start_ms": 46120,
+      "end_ms": 46640
+    },
+    {
+      "word": "my",
+      "start_ms": 46640,
+      "end_ms": 46820
+    },
+    {
+      "word": "hobby.",
+      "start_ms": 46820,
+      "end_ms": 47180
+    },
+    {
+      "word": "What",
+      "start_ms": 47900,
+      "end_ms": 48340
+    },
+    {
+      "word": "do",
+      "start_ms": 48340,
+      "end_ms": 48600
+    },
+    {
+      "word": "you",
+      "start_ms": 48600,
+      "end_ms": 48800
+    },
+    {
+      "word": "like",
+      "start_ms": 48800,
+      "end_ms": 49160
+    },
+    {
+      "word": "about",
+      "start_ms": 49160,
+      "end_ms": 49560
+    },
+    {
+      "word": "bird",
+      "start_ms": 49560,
+      "end_ms": 50100
+    },
+    {
+      "word": "watching?",
+      "start_ms": 50100,
+      "end_ms": 50560
+    },
+    {
+      "word": "My",
+      "start_ms": 50560,
+      "end_ms": 51760
+    },
+    {
+      "word": "dad",
+      "start_ms": 51760,
+      "end_ms": 52200
+    },
+    {
+      "word": "takes",
+      "start_ms": 52200,
+      "end_ms": 52760
+    },
+    {
+      "word": "me",
+      "start_ms": 52760,
+      "end_ms": 53080
+    },
+    {
+      "word": "to",
+      "start_ms": 53080,
+      "end_ms": 53320
+    },
+    {
+      "word": "watch",
+      "start_ms": 53320,
+      "end_ms": 53600
+    },
+    {
+      "word": "birds",
+      "start_ms": 53600,
+      "end_ms": 54100
+    },
+    {
+      "word": "every",
+      "start_ms": 54100,
+      "end_ms": 54720
+    },
+    {
+      "word": "summer.",
+      "start_ms": 54720,
+      "end_ms": 55120
+    },
+    {
+      "word": "I",
+      "start_ms": 56060,
+      "end_ms": 56240
+    },
+    {
+      "word": "read",
+      "start_ms": 56240,
+      "end_ms": 56540
+    },
+    {
+      "word": "books",
+      "start_ms": 56540,
+      "end_ms": 56980
+    },
+    {
+      "word": "about",
+      "start_ms": 56980,
+      "end_ms": 57320
+    },
+    {
+      "word": "birds",
+      "start_ms": 57320,
+      "end_ms": 57960
+    },
+    {
+      "word": "too.",
+      "start_ms": 57960,
+      "end_ms": 58340
+    },
+    {
+      "word": "It",
+      "start_ms": 59380,
+      "end_ms": 59580
+    },
+    {
+      "word": "helps",
+      "start_ms": 59580,
+      "end_ms": 59980
+    },
+    {
+      "word": "me",
+      "start_ms": 59980,
+      "end_ms": 60260
+    },
+    {
+      "word": "know",
+      "start_ms": 60260,
+      "end_ms": 60540
+    },
+    {
+      "word": "more",
+      "start_ms": 60540,
+      "end_ms": 60940
+    },
+    {
+      "word": "about",
+      "start_ms": 60940,
+      "end_ms": 61260
+    },
+    {
+      "word": "the",
+      "start_ms": 61260,
+      "end_ms": 61500
+    },
+    {
+      "word": "world",
+      "start_ms": 61500,
+      "end_ms": 61980
+    },
+    {
+      "word": "of",
+      "start_ms": 61980,
+      "end_ms": 62200
+    },
+    {
+      "word": "nature.",
+      "start_ms": 62200,
+      "end_ms": 62660
+    },
+    {
+      "word": "Listen",
+      "start_ms": 71340,
+      "end_ms": 72180
+    },
+    {
+      "word": "again.",
+      "start_ms": 72180,
+      "end_ms": 72600
+    },
+    {
+      "word": "Then",
+      "start_ms": 73480,
+      "end_ms": 73900
+    },
+    {
+      "word": "talk",
+      "start_ms": 73900,
+      "end_ms": 74300
+    },
+    {
+      "word": "about",
+      "start_ms": 74300,
+      "end_ms": 74780
+    },
+    {
+      "word": "how",
+      "start_ms": 74780,
+      "end_ms": 75140
+    },
+    {
+      "word": "Wang",
+      "start_ms": 75140,
+      "end_ms": 75520
+    },
+    {
+      "word": "Chen",
+      "start_ms": 75520,
+      "end_ms": 75940
+    },
+    {
+      "word": "expresses",
+      "start_ms": 75940,
+      "end_ms": 77060
+    },
+    {
+      "word": "cause",
+      "start_ms": 77060,
+      "end_ms": 77540
+    },
+    {
+      "word": "and",
+      "start_ms": 77540,
+      "end_ms": 78080
+    },
+    {
+      "word": "effect.",
+      "start_ms": 78080,
+      "end_ms": 78540
+    },
+    {
+      "word": "Hello",
+      "start_ms": 80560,
+      "end_ms": 81080
+    },
+    {
+      "word": "Wang",
+      "start_ms": 81080,
+      "end_ms": 81560
+    },
+    {
+      "word": "Chen.",
+      "start_ms": 81560,
+      "end_ms": 82020
+    },
+    {
+      "word": "Thanks",
+      "start_ms": 82800,
+      "end_ms": 83240
+    },
+    {
+      "word": "for",
+      "start_ms": 83240,
+      "end_ms": 83520
+    },
+    {
+      "word": "coming",
+      "start_ms": 83520,
+      "end_ms": 83840
+    },
+    {
+      "word": "to",
+      "start_ms": 83840,
+      "end_ms": 84140
+    },
+    {
+      "word": "the",
+      "start_ms": 84140,
+      "end_ms": 84300
+    },
+    {
+      "word": "interview.",
+      "start_ms": 84300,
+      "end_ms": 84820
+    },
+    {
+      "word": "Hello.",
+      "start_ms": 85840,
+      "end_ms": 86320
+    },
+    {
+      "word": "Can",
+      "start_ms": 87400,
+      "end_ms": 87740
+    },
+    {
+      "word": "you",
+      "start_ms": 87740,
+      "end_ms": 88040
+    },
+    {
+      "word": "tell",
+      "start_ms": 88040,
+      "end_ms": 88340
+    },
+    {
+      "word": "us",
+      "start_ms": 88340,
+      "end_ms": 88560
+    },
+    {
+      "word": "something",
+      "start_ms": 88560,
+      "end_ms": 88980
+    },
+    {
+      "word": "about",
+      "start_ms": 88980,
+      "end_ms": 89340
+    },
+    {
+      "word": "the",
+      "start_ms": 89340,
+      "end_ms": 89600
+    },
+    {
+      "word": "bird",
+      "start_ms": 89600,
+      "end_ms": 90020
+    },
+    {
+      "word": "last",
+      "start_ms": 90020,
+      "end_ms": 90460
+    },
+    {
+      "word": "week?",
+      "start_ms": 90460,
+      "end_ms": 90880
+    },
+    {
+      "word": "Why",
+      "start_ms": 91880,
+      "end_ms": 92300
+    },
+    {
+      "word": "can't",
+      "start_ms": 92300,
+      "end_ms": 92740
+    },
+    {
+      "word": "it",
+      "start_ms": 92740,
+      "end_ms": 92880
+    },
+    {
+      "word": "fly",
+      "start_ms": 92880,
+      "end_ms": 93200
+    },
+    {
+      "word": "from",
+      "start_ms": 93200,
+      "end_ms": 93560
+    },
+    {
+      "word": "the",
+      "start_ms": 93560,
+      "end_ms": 93780
+    },
+    {
+      "word": "ground?",
+      "start_ms": 93780,
+      "end_ms": 94160
+    },
+    {
+      "word": "Because",
+      "start_ms": 95040,
+      "end_ms": 95660
+    },
+    {
+      "word": "it",
+      "start_ms": 95660,
+      "end_ms": 96240
+    },
+    {
+      "word": "is",
+      "start_ms": 96240,
+      "end_ms": 96500
+    },
+    {
+      "word": "a",
+      "start_ms": 96500,
+      "end_ms": 96760
+    },
+    {
+      "word": "swift.",
+      "start_ms": 96760,
+      "end_ms": 97180
+    },
+    {
+      "word": "These",
+      "start_ms": 98260,
+      "end_ms": 98740
+    },
+    {
+      "word": "kinds",
+      "start_ms": 98740,
+      "end_ms": 99160
+    },
+    {
+      "word": "of",
+      "start_ms": 99160,
+      "end_ms": 99440
+    },
+    {
+      "word": "birds",
+      "start_ms": 99440,
+      "end_ms": 99860
+    },
+    {
+      "word": "have",
+      "start_ms": 99860,
+      "end_ms": 100440
+    },
+    {
+      "word": "weak",
+      "start_ms": 100440,
+      "end_ms": 101040
+    },
+    {
+      "word": "legs,",
+      "start_ms": 101040,
+      "end_ms": 101660
+    },
+    {
+      "word": "so",
+      "start_ms": 102040,
+      "end_ms": 102540
+    },
+    {
+      "word": "they",
+      "start_ms": 102540,
+      "end_ms": 102740
+    },
+    {
+      "word": "can't",
+      "start_ms": 102740,
+      "end_ms": 103220
+    },
+    {
+      "word": "take",
+      "start_ms": 103220,
+      "end_ms": 103440
+    },
+    {
+      "word": "off",
+      "start_ms": 103440,
+      "end_ms": 103760
+    },
+    {
+      "word": "from",
+      "start_ms": 103760,
+      "end_ms": 104000
+    },
+    {
+      "word": "the",
+      "start_ms": 104000,
+      "end_ms": 104140
+    },
+    {
+      "word": "ground.",
+      "start_ms": 104140,
+      "end_ms": 104560
+    },
+    {
+      "word": "They",
+      "start_ms": 105240,
+      "end_ms": 105680
+    },
+    {
+      "word": "need",
+      "start_ms": 105680,
+      "end_ms": 105980
+    },
+    {
+      "word": "to",
+      "start_ms": 105980,
+      "end_ms": 106220
+    },
+    {
+      "word": "take",
+      "start_ms": 106220,
+      "end_ms": 106460
+    },
+    {
+      "word": "off",
+      "start_ms": 106460,
+      "end_ms": 106900
+    },
+    {
+      "word": "from",
+      "start_ms": 106900,
+      "end_ms": 107200
+    },
+    {
+      "word": "a",
+      "start_ms": 107200,
+      "end_ms": 107380
+    },
+    {
+      "word": "high",
+      "start_ms": 107380,
+      "end_ms": 107720
+    },
+    {
+      "word": "place.",
+      "start_ms": 107720,
+      "end_ms": 108340
+    },
+    {
+      "word": "Why",
+      "start_ms": 108340,
+      "end_ms": 109480
+    },
+    {
+      "word": "do",
+      "start_ms": 109480,
+      "end_ms": 109760
+    },
+    {
+      "word": "you",
+      "start_ms": 109760,
+      "end_ms": 110020
+    },
+    {
+      "word": "know",
+      "start_ms": 110020,
+      "end_ms": 110360
+    },
+    {
+      "word": "so",
+      "start_ms": 110360,
+      "end_ms": 110800
+    },
+    {
+      "word": "much",
+      "start_ms": 110800,
+      "end_ms": 111320
+    },
+    {
+      "word": "about",
+      "start_ms": 111320,
+      "end_ms": 111620
+    },
+    {
+      "word": "birds?",
+      "start_ms": 111620,
+      "end_ms": 112260
+    },
+    {
+      "word": "Because",
+      "start_ms": 113080,
+      "end_ms": 113620
+    },
+    {
+      "word": "I",
+      "start_ms": 113620,
+      "end_ms": 114220
+    },
+    {
+      "word": "love",
+      "start_ms": 114220,
+      "end_ms": 114780
+    },
+    {
+      "word": "bird",
+      "start_ms": 114780,
+      "end_ms": 115320
+    },
+    {
+      "word": "watching.",
+      "start_ms": 115320,
+      "end_ms": 115800
+    },
+    {
+      "word": "It's",
+      "start_ms": 116540,
+      "end_ms": 116980
+    },
+    {
+      "word": "my",
+      "start_ms": 116980,
+      "end_ms": 117180
+    },
+    {
+      "word": "hobby.",
+      "start_ms": 117180,
+      "end_ms": 117540
+    },
+    {
+      "word": "What",
+      "start_ms": 118300,
+      "end_ms": 118700
+    },
+    {
+      "word": "do",
+      "start_ms": 118700,
+      "end_ms": 118960
+    },
+    {
+      "word": "you",
+      "start_ms": 118960,
+      "end_ms": 119140
+    },
+    {
+      "word": "like",
+      "start_ms": 119140,
+      "end_ms": 119560
+    },
+    {
+      "word": "about",
+      "start_ms": 119560,
+      "end_ms": 119920
+    },
+    {
+      "word": "bird",
+      "start_ms": 119920,
+      "end_ms": 120440
+    },
+    {
+      "word": "watching?",
+      "start_ms": 120440,
+      "end_ms": 120920
+    },
+    {
+      "word": "My",
+      "start_ms": 121700,
+      "end_ms": 122160
+    },
+    {
+      "word": "dad",
+      "start_ms": 122160,
+      "end_ms": 122540
+    },
+    {
+      "word": "takes",
+      "start_ms": 122540,
+      "end_ms": 123160
+    },
+    {
+      "word": "me",
+      "start_ms": 123160,
+      "end_ms": 123440
+    },
+    {
+      "word": "to",
+      "start_ms": 123440,
+      "end_ms": 123700
+    },
+    {
+      "word": "watch",
+      "start_ms": 123700,
+      "end_ms": 123960
+    },
+    {
+      "word": "birds",
+      "start_ms": 123960,
+      "end_ms": 124540
+    },
+    {
+      "word": "every",
+      "start_ms": 124540,
+      "end_ms": 125080
+    },
+    {
+      "word": "summer.",
+      "start_ms": 125080,
+      "end_ms": 125480
+    },
+    {
+      "word": "I",
+      "start_ms": 126180,
+      "end_ms": 126600
+    },
+    {
+      "word": "read",
+      "start_ms": 126600,
+      "end_ms": 126900
+    },
+    {
+      "word": "books",
+      "start_ms": 126900,
+      "end_ms": 127320
+    },
+    {
+      "word": "about",
+      "start_ms": 127320,
+      "end_ms": 127660
+    },
+    {
+      "word": "birds",
+      "start_ms": 127660,
+      "end_ms": 128360
+    },
+    {
+      "word": "too.",
+      "start_ms": 128360,
+      "end_ms": 128720
+    },
+    {
+      "word": "It",
+      "start_ms": 129360,
+      "end_ms": 129940
+    },
+    {
+      "word": "helps",
+      "start_ms": 129940,
+      "end_ms": 130340
+    },
+    {
+      "word": "me",
+      "start_ms": 130340,
+      "end_ms": 130620
+    },
+    {
+      "word": "know",
+      "start_ms": 130620,
+      "end_ms": 130920
+    },
+    {
+      "word": "more",
+      "start_ms": 130920,
+      "end_ms": 131300
+    },
+    {
+      "word": "about",
+      "start_ms": 131300,
+      "end_ms": 131600
+    },
+    {
+      "word": "the",
+      "start_ms": 131600,
+      "end_ms": 131900
+    },
+    {
+      "word": "world",
+      "start_ms": 131900,
+      "end_ms": 132320
+    },
+    {
+      "word": "of",
+      "start_ms": 132320,
+      "end_ms": 132560
+    },
+    {
+      "word": "nature.",
+      "start_ms": 132560,
+      "end_ms": 133060
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 15.9
+  }
+}

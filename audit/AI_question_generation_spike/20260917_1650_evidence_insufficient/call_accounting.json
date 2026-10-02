@@ -1,0 +1,51 @@
+{
+ "run": "20260917_1650_evidence_insufficient",
+ "scenario": "evidence_insufficient",
+ "section": {
+  "unit": "Unit 1",
+  "section": "DEVELOPING_IDEAS",
+  "activity_no": 1,
+  "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+  "textbook_pages": [
+   21
+  ],
+  "pdf_pages": [
+   26
+  ]
+ },
+ "input_context_sha256": "7A609A49EC0CBEE9298117970250CEEF4AB3CE2A7D5DA28DBFBC437AA670A88F",
+ "system_prompt_sha256": "1FD61A37F6B14B097F0B005220E6CA3ACBD2E3E855F48FD387757D7DB56B1347",
+ "user_prompt_sha256": "994801B10B4B682B5F976A8448A6A8DA5D8A24083227269E1F9952B4683859BD",
+ "model": "deepseek-v4-pro",
+ "endpoint": "https://api.deepseek.com/chat/completions",
+ "max_tokens": 8192,
+ "cloud_generation_calls": 1,
+ "cloud_metadata_calls": 0,
+ "local_ai_calls": 0,
+ "retries": 0,
+ "elapsed_s": 6.5,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 4154,
+  "completion_tokens": 243,
+  "total_tokens": 4397,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 179
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 4154
+ },
+ "content_chars": 362,
+ "reasoning_content_chars": 965,
+ "questions_returned": 0,
+ "model_declared_reason": "The provided evidence includes only the audio reference and the printed activity instructions/options, but no transcript or content description of the radio programme. Therefore, any question whose answer depends on what the radio programme says cannot be reliably determined from the supplied textbook evidence.",
+ "validator": {
+  "executed": false,
+  "pass": 0,
+  "fail": 0,
+  "whitelist_size": 206
+ }
+}

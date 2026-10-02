@@ -1,0 +1,71 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "question": "But Robert has a serious ___ and cannot move at all.",
+   "options": [],
+   "correct_option": "",
+   "answer": "disease",
+   "unit": "Unit 3",
+   "section": "READING_FOR_WRITING",
+   "page": 56,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P61:B5"
+   ],
+   "evidence_quote": "But Robert has a serious disease and cannot move at all.",
+   "explanation": "The story directly says Robert has a serious disease and cannot move at all.",
+   "difficulty": "easy",
+   "ai_confidence": 0.99
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "question": "He puts Robert in a ___ and pulls it along with his bike.",
+   "options": [
+    "trailer",
+    "road",
+    "disease",
+    "result"
+   ],
+   "correct_option": "A",
+   "answer": "trailer",
+   "unit": "Unit 3",
+   "section": "READING_FOR_WRITING",
+   "page": 56,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P61:B7"
+   ],
+   "evidence_quote": "He puts Robert in a trailer and pulls it along with his bike.",
+   "explanation": "The story states that John puts Robert in a trailer, so 'trailer' is the correct word.",
+   "difficulty": "easy",
+   "ai_confidence": 0.98
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "question": "What do the brothers often do now?",
+   "options": [
+    "They often refuse to race.",
+    "They often take part in bike races together.",
+    "They often win the race.",
+    "They often stay at home."
+   ],
+   "correct_option": "B",
+   "answer": "They often take part in bike races together.",
+   "unit": "Unit 3",
+   "section": "READING_FOR_WRITING",
+   "page": 57,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P62:B0"
+   ],
+   "evidence_quote": "Now, the brothers often take part in bike races together.",
+   "explanation": "The text says the brothers often take part in bike races together.",
+   "difficulty": "easy",
+   "ai_confidence": 0.98
+  }
+ ]
+}

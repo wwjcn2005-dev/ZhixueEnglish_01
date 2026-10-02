@@ -1,0 +1,78 @@
+{
+ "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+ "context_hash": "D00F004A341D0927F73BD74B784EEDD377B6E5BD43570BD9F69E0B265B560F25",
+ "scope_key": "ABE3D3C3B48EF9EAA7AE68DABABFA4C8F7A2EDF29649A9ED58479473363920C1",
+ "system_prompt_sha256": "193B43B80BBB564DD89C340E07C397409F6736FA7F06165D2FCC52D58A61FC8E",
+ "user_prompt_sha256": "6846317BE314EF44E9B68EB5985C95DF68A0A831FECDB669EB9DD190C48A98F7",
+ "system_prompt": "You generate English practice questions for Chinese Grade 7 students from a textbook.\nYou must not use outside knowledge to establish textbook facts or answers.\nEvery question and answer must be directly supported by the supplied textbook evidence.\nIf the evidence is insufficient to determine a reliable answer, do not generate that question.\n\nHard rules:\n1. Use only the provided textbook evidence (unit, section, pages, blocks, vocabulary).\n2. Never invent textbook characters, events, quotes or answers.\n3. Never change textbook facts; never present common sense as a textbook answer.\n4. Never present your own reasoning as a textbook answer.\n5. Do not create a question just to reach the requested quantity.\n6. Every question must carry evidence_block_ids that exist in the provided blocks.\n7. evidence_quote must be an exact substring of the referenced block text.\n8. In unit_vocabulary, emphasis=BOLD marks a core textbook word; PLAIN is not core.\n9. Answer language and level must stay inside the provided textbook range.\n10. Output JSON only (no markdown, no code fences, no comments).\n\nOutput JSON schema:\n{\"questions\":[{\"question_id\":\"q1\",\n \"type\":\"fill|vocab_choice|reading_choice|reading_judge\",\n \"question\":\"...\",\"options\":[\"...\"],\"correct_option\":\"A\",\n \"answer\":\"...\",\"unit\":\"Unit 1\",\"section\":\"UNDERSTANDING_IDEAS\",\n \"page\":17,\"activity\":2,\n \"evidence_block_ids\":[\"FLTRP-EN-7A-2022CUR:P22:B0\"],\n \"evidence_quote\":\"...\",\"explanation\":\"...\",\n \"difficulty\":\"easy|medium\",\"ai_confidence\":0.0}]}\n\nQuantity: no quota. Generate as many questions as the supplied textbook evidence can reliably and uniquely support, and no more. Fewer is acceptable. 0 is an acceptable and expected answer when the evidence does not support reliable, unique, traceable questions. Do not create a question merely to reach a number. Prefer covering different pieces of evidence over restating the same sentence.\n  - fill: a real textbook sentence with one word/phrase replaced by ___ ; answer = the exact removed word(s);\n    the rest of the sentence must stay unchanged.\n  - vocab_choice: a real textbook sentence with a blank and 4 options; the correct option must be a word from\n    unit_vocabulary whose meaning/part of speech fits the sentence; distractors may be other unit words.\n  - reading_choice / reading_judge: about explicit facts in the provided textbook blocks; the answer must be\n    located inside evidence_quote. No open interpretation, no outside knowledge.\npage must be one of 32,33,34,35,36 and activity must be one of 1,2,3,4,5,6,7,8 (or null).",
+ "user_prompt_len": 28961,
+ "pages": [
+  32,
+  33,
+  34,
+  35,
+  36
+ ],
+ "activity_nos": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "blocks": 78,
+ "packages": 21,
+ "activity_instructions": [
+  {
+   "activity_no": 1,
+   "page": 32,
+   "instruction": "Look at the two pictures on the right. What does each picture show? Use the words and expression to help you.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 2,
+   "page": 33,
+   "instruction": "Look at the title and the pictures. What is the passage about?Now read the passage and check your answer.",
+   "audio_required": true
+  },
+  {
+   "activity_no": 3,
+   "page": 34,
+   "instruction": "Choose the best main idea of the passage. a Grandpa and I have different hobbies.b I write a new song for the school art festival.c Grandpa and I put our music together and have great fun.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 4,
+   "page": 34,
+   "instruction": "Complete the chart with the words and expression from the passage.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 5,
+   "page": 35,
+   "instruction": "Read the sentences from the reading passage and summarise the grammar rules.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 6,
+   "page": 35,
+   "instruction": "Read and complete the sentences with the correct form of the words in the box.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 7,
+   "page": 35,
+   "instruction": "Read and complete the passage with the correct form of the words in brackets.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 8,
+   "page": 36,
+   "instruction": "Work in pairs. Write about your hobby. Use the words and expressions from the reading passage and the Useful expressions to help you. Then talk with your partner and take notes of his / her hobby.",
+   "audio_required": true
+  }
+ ]
+}

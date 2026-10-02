@@ -1,0 +1,152 @@
+{
+  "task_id": "P2-6-F-1/F-2/F-4",
+  "title": "教材正文 + Question 结构 + 音频活动锚定第一批最小修复",
+  "date": "2026-09-13",
+  "project_root": "D:\\ZhixueEnglish",
+  "authority": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.1.docx",
+  "structure_version": "P2-6-F-1/F-2/F-4",
+  "ai_calls": 0,
+  "external_network_requests": 0,
+  "conclusion": {
+    "result": "PASS",
+    "notes": "含 1 项 NEEDS_REVIEW（A10 词框归属）与 1 处既有测试断言更正（原断言依赖已确认错误的目录选项值）",
+    "acceptance": {
+      "A_unit_text_visible": true,
+      "B_exercise10_structure": true,
+      "C_fill_real_blanks": true,
+      "D_match_structure": true,
+      "E_judge_control": true,
+      "F_no_vocabulary_hijack": true,
+      "G_no_cross_activity": true,
+      "H_official_audio_intact": true,
+      "I_no_ai_guess": true,
+      "J_child_not_asked_to_self_judge": true
+    }
+  },
+  "files_changed": [
+    {"file": "web/exercises.py", "type": "modified", "sha256_prefix": "71B62DCC52C6502D", "summary": "教材结构修正层 + build_questions/grade 重写（旧实现保留为 _legacy_*）"},
+    {"file": "web/ui.py", "type": "modified", "sha256_prefix": "0D86391E57CE9E7A", "summary": "unit_text_page + 教材原文入口 + 按原题型的练习页 + 结果页措辞"},
+    {"file": "web/app.py", "type": "modified", "sha256_prefix": "07E9B01FC61DAB61", "summary": "新增 /unit/<slug>/text 只读路由 + text_block_count"},
+    {"file": "web/content.py", "type": "modified", "sha256_prefix": "FE203CD345175AA7", "summary": "新增只读 unit_text_sections()"},
+    {"file": "web/test_p2_6f_structure.py", "type": "added", "sha256_prefix": "FD34192B27BD1286", "summary": "21 项新测试"},
+    {"file": "web/test_p2_3_exercises.py", "type": "modified", "sha256_prefix": "92DD20E16D8474DD", "summary": "1 处断言更正（原断言依赖属于另一页活动的目录选项值）"}
+  ],
+  "not_modified": ["learning/", "structured/", "contentpack", "learning.db", "Android", "V1.2", "V1.2.1", "教材 PDF", "54 个官方 MP3"],
+  "question_restored": {"choice": 12, "judge": 1, "fill": 45, "match_order": 10, "short_answer": 34, "total": 102, "others_without_question_structure": 56},
+  "choice_restored": {"total_choice_exercises": 12, "rendered_with_choice_kind": 10, "as_textbook_task_in_vocabulary_exercises": 2, "multi_tick": 3, "inline_choice": ["X:8D3E1E4E1B31", "X:3DCE713706DE"], "not_a_choice_task": ["X:BEF04AA1DF4C"]},
+  "fill_restored": {"total": 45, "textbook_task_fill": 45, "inline_blanks": 4, "numbered_inputs": 41},
+  "match_restored": {"total": 10, "note": "9 match + 1 order，全部按教材项目呈现"},
+  "judge_restored": {"total": 1, "groups": 6, "options": ["F（fact 事实）", "O（opinion 观点）"]},
+  "noise_removed": {
+    "values": ["great teacher", "new start 19", "new start 23", "new start 15", "pun is a word with more than one"],
+    "evidence": {
+      "great teacher": "Unit 1 p19 页面小标题",
+      "new start 19": "Unit 1 p19 页脚",
+      "new start 23": "Unit 1 p23 页脚",
+      "new start 15": "Unit 1 p15 页脚",
+      "pun is a word with more than one": "Unit 5 p82 Learning to think 侧栏"
+    },
+    "replaced_option_source": {"X:7ABB5256D7ED": "目录里 a/b/c 实为同册 PDF P13 活动 3 的句子 → 改用教材原页 ☐ 四句"},
+    "affected_exercises": 5
+  },
+  "blank_fixes": {
+    "count": 9,
+    "items": [
+      {"exercise_id": "X:88C641F5FA05", "before": 0, "after": 6, "evidence": "P14 印刷书写线 6 条（y=515.2/533.2x3/551.2/569.2）"},
+      {"exercise_id": "X:F21C9E2036F7", "before": 0, "after": 6, "evidence": "P20 表格 3 列 × 3 行，第 1 行为示例"},
+      {"exercise_id": "X:2CA1B9F43CB3", "before": 0, "after": 6, "evidence": "P32 Mia 回信印刷书写线 6 条"},
+      {"exercise_id": "X:24C80DAE6FAE", "before": 0, "after": 6, "evidence": "P40 印刷书写线 6 条（y=263.2x2/281.2x2/299.2x2）"},
+      {"exercise_id": "X:6BB271F5F101", "before": 0, "after": 3, "evidence": "P88 印刷书写线 3 条（y=191.2/209.2/227.2）"},
+      {"exercise_id": "X:5BCC4D6DC928", "before": 0, "after": 3, "evidence": "P104 印刷书写线 3 条（y=263.2/299.2/317.2）"},
+      {"exercise_id": "X:AC02902827A8", "before": "9（被截断为 8）", "after": 9, "evidence": "恢复教材原题空位数"},
+      {"exercise_id": "X:41B8D362116C", "before": "9（被截断为 8）", "after": 9, "evidence": "P40 正文 9 处编号空位（1–9）"},
+      {"exercise_id": "X:0AD8920218D8", "before": "9（被截断为 8）", "after": 9, "evidence": "P95 印刷书写线 9 条"}
+    ]
+  },
+  "vocabulary_short_circuit_fixed": {"count": 26, "breakdown": {"fill": 18, "match": 6, "choice": 2}, "mode": "并存：教材原题 + 独立词汇自测（规则判分能力保留）"},
+  "audio_anchoring_fixed": {
+    "sub_questions_by_activity": {"method": "题面 → 教材内容块 → 活动锚点；无法唯一锚定则不返回题目", "sub_question_rows": 13, "example": "Starter A4（X:FA515DD3ECF0）现在返回空，不再拿同页 A3 的题"},
+    "a9_a10_geometric_rebuild": 2,
+    "audio_files_changed": 0,
+    "split_required": 0
+  },
+  "a9_a10_result": {
+    "before": {"A9": "含 A10 的 8 空对话块", "A10": "只剩活动号块 P10:B17"},
+    "after": {"A9": "指令 + 词框（P10:B1 / P10:B14）", "A10": "指令 + 8 空对话（P10:B15 + B5–B13）"},
+    "verified_by": "web/test_p2_6f_structure.py::test_06"
+  },
+  "needs_review": {
+    "exercises_with_notes": 6,
+    "notes": 7,
+    "items": [
+      {"exercise": "X:1C4143922B1C", "reason": "教材原题只说“听录音并选择”；本页词框归属待人工核验（P2-6-F-0-A N-01）"},
+      {"exercise": "X:1C4143922B1C", "reason": "教材原页词框与同页 A9 相邻，选项来源待核验"},
+      {"exercise": "X:BEF04AA1DF4C", "reason": "教材原题是结对口语任务，不是选择题"},
+      {"exercise": "X:C2D62A46BE36", "reason": "每空填什么、每句是 F 还是 O 需听官方音频后人工核验"},
+      {"exercise": "X:F21C9E2036F7", "reason": "教材原题是表格填空（3 列 × 3 行）"},
+      {"exercise": "X:2CA1B9F43CB3", "reason": "教材原题是补全回信（印刷书写线 6 条）"},
+      {"exercise": "X:FB47DD21DABE", "reason": "order 类依赖图片顺序，图片不在数据内"}
+    ],
+    "ui_never_prints_NEEDS_REVIEW": true,
+    "global_open_items": ["173 道客观题答案", "127 道主观题评分要点", "41 条音频与题目语义对应", "A10 词框归属"]
+  },
+  "answer_fact_protection": {"answers_added": 0, "answer_available": false, "textbook_task_result": "done（事实记录）", "verified_by": "web/test_p2_6f_structure.py::test_13"},
+  "tests": {
+    "web": "256 PASS",
+    "learning": "112 PASS",
+    "workbench": "50 PASS",
+    "total": "418 PASS / 0 FAIL / 0 SKIP",
+    "previous_baseline": "397 PASS（全部保留）",
+    "new_tests": 21
+  },
+  "db_protection": {
+    "learning_db_sha256": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "learning_db_mtime": "2026-09-12 23:15:13",
+    "learning_db_size": 118784,
+    "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+    "unchanged": true,
+    "test_isolation": "%TEMP% 下的 learning.db 副本"
+  },
+  "s24_result": {
+    "device": "SM-S9260 (Samsung S24+, Android 16)",
+    "connection": "wireless adb, device IP 192.168.2.7",
+    "web_base_url": "http://192.168.2.3:8770/",
+    "checks": [
+      {"item": "App 启动", "evidence": "logcat ZhixueWebView: 页面加载完成 http://192.168.2.3:8770/", "result": "PASS"},
+      {"item": "首页 → 教材中心", "evidence": "GET /textbook 200", "result": "PASS"},
+      {"item": "教材中心 → Starter Unit", "evidence": "GET /unit/starter 200", "result": "PASS"},
+      {"item": "Unit → 教材原文", "evidence": "GET /unit/starter/text 200；含 Ms Chen，无页脚", "result": "PASS"},
+      {"item": "Unit → 教材练习", "evidence": "GET /unit/starter/exercises 200", "result": "PASS"},
+      {"item": "进入练习 10", "evidence": "GET /exercise/478514a69c05 200", "result": "PASS"},
+      {"item": "题目 / 选项 / 控件", "evidence": "设备侧抓取：8 个 select name=t1..t8 + 教材本页词框 + 提交作答", "result": "PASS"},
+      {"item": "官方音频", "evidence": "curl -r 0-2048 /audio/official/AU03.mp3 → 206", "result": "PASS"},
+      {"item": "fill 真实空位", "evidence": "Starter A1 页：6 个内联空位 + 教材原文", "result": "PASS"},
+      {"item": "无黑屏", "evidence": "练习 10 截图 dark=0.0498 / near_black=0.0377 / text_rows=277", "result": "PASS"},
+      {"item": "无 500 / 404", "evidence": "全部 URL 200", "result": "PASS"},
+      {"item": "无崩溃", "evidence": "logcat 无本应用 FATAL EXCEPTION / ANR", "result": "PASS"}
+    ],
+    "method_note": "环境无法查看图片，故采用「盲点击 + 服务端访问日志 + 设备侧 curl 抓取 + 截图程序化分析」闭环；未做人工目视检查。",
+    "server_note": "0.0.0.0:8770 原进程为旧代码实例，验证前已重启以加载新代码；验证后新实例保持运行。"
+  },
+  "child_visible_changes": [
+    "Unit 里新增“教材原文”，可直接读教材原页对话/短文（页眉页脚已剔除）",
+    "练习 10 显示 Listen and choose. + 教材原页 8 空对话 + 本页词框 9 个词，每空可选，并保留官方录音",
+    "选择题显示真选项（勾选题出现勾选框；Unit 1 A6/A7 在正文逐处二选一）",
+    "填空题出现真空位（Starter A1 等直接在教材原句上填写）",
+    "判断题出现 F/O 判断控件（Unit 4 A2 共 6 组）"
+  ],
+  "remaining_issues": [
+    "教材练习仍不能正式判分（无可靠答案，等 F-3）",
+    "A10 词框归属 NEEDS_REVIEW 未闭合",
+    "Unit 1 A4（口语）无作答载体 → F-5",
+    "writing 7 条无文本作答框、speaking 16 条无载体 → F-5",
+    "45 条 fill 中 41 条未以内联空位呈现（后续批次逐条确认材料块）",
+    "1 处既有测试断言更正（test_p2_3_exercises.py，原断言依赖另一页活动的错误选项值）"
+  ],
+  "next_phase": [
+    "F-3 答案补齐（人工核验）：先做 choice+judge 33 题",
+    "F-5 UI 作答控件：writing 文本框、speaking 最小动作",
+    "F-7 Evidence 接入：让教材练习产出 correct/partial/incorrect",
+    "后续批次：扩展内联空位渲染、正文按活动粒度细分"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+ "validator_version": "v2",
+ "whitelist_size": 320,
+ "returned": 3,
+ "pass": 2,
+ "fail": 1,
+ "rows": [
+  {
+   "source_index": 1,
+   "model_question_id": "q1",
+   "type": "fill",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT",
+   "out_of_scope_tokens": [],
+   "pass": true,
+   "fingerprint": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD",
+   "question_id": "AIQ:7EBCDBC29563",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2"
+  },
+  {
+   "source_index": 2,
+   "model_question_id": "q2",
+   "type": "vocab_choice",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT",
+   "out_of_scope_tokens": [],
+   "pass": true,
+   "fingerprint": "3179968E3E7400B28A2312579728FF0B6DDA54DB3B50C16761445908D12A63F1",
+   "question_id": "AIQ:3179968E3E74",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2"
+  },
+  {
+   "source_index": 3,
+   "model_question_id": "q3",
+   "type": "reading_choice",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": false,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT",
+   "out_of_scope_tokens": [
+    "mozi"
+   ],
+   "pass": false,
+   "fingerprint": "106C1FA0168CC75998C3113DA349E65E2201D20EF15300F959B314A650B011D9",
+   "question_id": "AIQ:106C1FA0168C",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2"
+  }
+ ]
+}

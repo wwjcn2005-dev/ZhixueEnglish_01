@@ -1,0 +1,105 @@
+{
+  "task": "P1-12-C3-C3 Vocabulary 正式学习闭环（归档）",
+  "archived_at": "2026-09-12T18:52:12+08:00",
+  "verdict": "PASS",
+  "device_verdict": "S24+ PASS",
+  "new_files": [
+    "web/flow.py",
+    "web/test_vocabulary_flow.py"
+  ],
+  "modified_files": [
+    "web/app.py",
+    "web/ui.py",
+    "web/content.py",
+    "web/test_web_app.py"
+  ],
+  "deleted_files": [],
+  "schema_change": false,
+  "android_changed": false,
+  "routes": {
+    "study_entry": "POST /vocabulary/study",
+    "study_done": "POST /vocabulary/study/done",
+    "recall_get": "GET /vocabulary/recall",
+    "recall_reveal": "POST /vocabulary/recall/reveal",
+    "practice": "POST /vocabulary/practice",
+    "result_get": "GET /vocabulary/result",
+    "relearn": "GET|POST /review"
+  },
+  "frozen_semantics": {
+    "activity_type": "study / practice（未新增 recall）",
+    "choice_mapping": {
+      "我记得": "practice/correct",
+      "有点模糊": "practice/partial",
+      "忘了": "practice/incorrect"
+    },
+    "entry_point": "vocabulary（枚举未修改）",
+    "pool": "current_error → 上次忘了；current_weak → 上次有点模糊（resource_pool_service 只读）"
+  },
+  "page_identity": {
+    "public_key": "sha256(item_id)[:12]",
+    "internal_ids_in_html": false,
+    "session_transport": "隐藏字段 + 内部 Cookie（不展示给孩子）"
+  },
+  "tests": {
+    "web": 51,
+    "learning": 58,
+    "workbench": 50,
+    "total": 159,
+    "result": "OK"
+  },
+  "device_verification": {
+    "model": "SM-S9260 (Galaxy S24+)",
+    "android": "16",
+    "database": "%TEMP% learning.db 副本（显式测试库）",
+    "requests": [
+      "GET / 200",
+      "GET /textbook 200",
+      "GET /unit/unit1 200",
+      "GET /unit/unit1/resources/vocabulary 200",
+      "POST /vocabulary/study 200",
+      "POST /vocabulary/study/done 200",
+      "POST /vocabulary/recall/reveal 200",
+      "POST /vocabulary/practice 200"
+    ],
+    "test_db_effects": {
+      "learner": 1,
+      "sessions": 2,
+      "records": ["study/done", "practice/incorrect", "study/done"],
+      "mastery_evidence_count": 3
+    },
+    "formal_db_written": false
+  },
+  "safety": {
+    "ai": 0,
+    "network": 0,
+    "ocr": 0,
+    "tts": 0,
+    "new_dependencies": 0,
+    "contentpack_written": false,
+    "official_db_polluted": false
+  },
+  "frozen_hashes": {
+    "learning/learning_service.py": "01341A05231EFCA6E0C801CF95D8A96F3DF732753F1F679688D44708586DF1D6",
+    "learning/session_service.py": "0CF7A20615780831F544BDF295202028CE2EEFB15D234820CD1184AD4A6B665F",
+    "learning/activity_service.py": "AAFF907C869797EE697D5F756C7E03C62CEB942809B2406933761195DA092028",
+    "learning/behavior_service.py": "0C6EF4822F60D9251B68382C95A5D3D9987650811F4FC93C70875AF48249FC6D",
+    "learning/vocabulary_service.py": "D06DCC76A5A4CCAF5C0BC3C17BB33CFF5D6056B7C872406A3934223C8870D632",
+    "learning/resource_pool_service.py": "D4488E1FFBA6B553EB6932BE195932A4C464D9526790B138C0C55DAA612D2F37",
+    "web/app.py": "F60243440BBF45237B71FF43836CA1F17923984CBED56C89F20DBE3EE05496BF",
+    "web/ui.py": "93289DDF2D00FF650F1CC1A759CDBE9BFCAC35BD9AE47403E8F8CAE53BE62EEC",
+    "web/content.py": "D2B39BE321B027BD279919CF44009E42B32E4B18A86A6D1560B93F2634C9B787",
+    "web/test_web_app.py": "2F7A131F0D5418D4660026CFBDC292EDD85906FC628EB58F06A1747A5C947B3D",
+    "web/flow.py": "863389AEBFCC1DF5514E268612B44EF68D15BD297D223B543EBA9AFF9BDFFFA3",
+    "web/test_vocabulary_flow.py": "613E0B70904E128EB12D2D89A944B414AE22ED8C931B667A1AE6C19DB82FD9F5",
+    "android/app/build/outputs/apk/debug/app-debug.apk": "0465C4574EE2A220DF384934E28BA4F946249D2B02529BCA6CF4248A10F36288",
+    "learning.db": "DB97E460CDEC59CDC27AD2CAF0CC8FDF671E4832BAC0A09E6CE9BB986A0C311C",
+    "contentpack_v5": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A"
+  },
+  "known_open_items": [
+    "仍不是独立运行 APK（页面与数据由电脑上的正式 Web 服务提供）",
+    "meaning_zh 去标点拼接 168/243（未修，独立任务）",
+    "C2-A 同秒 tie-break（测试用 ≥1 秒间隔规避，未修复）",
+    "Vocabulary 只显示第一条 source_ref（P2-3 未扩大处理）",
+    "Phrase / Sentence Pattern 正式学习入口未进入本阶段"
+  ]
+}

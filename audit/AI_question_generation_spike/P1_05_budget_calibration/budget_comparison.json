@@ -1,0 +1,190 @@
+{
+ "failures_p1_05b": [
+  {
+   "finish_reason": "length",
+   "prompt_tokens": 10619,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 8192,
+   "total_tokens": 18811,
+   "content_chars": 0,
+   "reasoning_chars": 33515,
+   "latency_ms": 123364,
+   "run": "P1-05-B",
+   "section": "Unit2 UNDERSTANDING_IDEAS",
+   "reasoning_over_completion": 1.0,
+   "content_tokens_over_completion": 0.0
+  },
+  {
+   "finish_reason": "length",
+   "prompt_tokens": 7732,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 8192,
+   "total_tokens": 15924,
+   "content_chars": 0,
+   "reasoning_chars": 32564,
+   "latency_ms": 125120,
+   "run": "P1-05-B",
+   "section": "Unit6 READING_FOR_WRITING",
+   "reasoning_over_completion": 1.0,
+   "content_tokens_over_completion": 0.0
+  },
+  {
+   "finish_reason": "length",
+   "prompt_tokens": 8680,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 8192,
+   "total_tokens": 16872,
+   "content_chars": 0,
+   "reasoning_chars": 32737,
+   "latency_ms": 128242,
+   "run": "P1-05-B",
+   "section": "Unit1 UNDERSTANDING_IDEAS",
+   "reasoning_over_completion": 1.0,
+   "content_tokens_over_completion": 0.0
+  },
+  {
+   "finish_reason": "length",
+   "prompt_tokens": 10044,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 8192,
+   "total_tokens": 18236,
+   "content_chars": 0,
+   "reasoning_chars": 32733,
+   "latency_ms": 118500,
+   "run": "P1-05-B",
+   "section": "Unit5 UNDERSTANDING_IDEAS",
+   "reasoning_over_completion": 1.0,
+   "content_tokens_over_completion": 0.0
+  },
+  {
+   "finish_reason": "length",
+   "prompt_tokens": 9160,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 8192,
+   "total_tokens": 17352,
+   "content_chars": 0,
+   "reasoning_chars": 32079,
+   "latency_ms": 128682,
+   "run": "P1-05-B",
+   "section": "Starter GET_READY",
+   "reasoning_over_completion": 1.0,
+   "content_tokens_over_completion": 0.0
+  },
+  {
+   "finish_reason": "length",
+   "prompt_tokens": 3663,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 7538,
+   "total_tokens": 11855,
+   "content_chars": 2520,
+   "reasoning_chars": 31839,
+   "latency_ms": 117758,
+   "run": "P1-05-B",
+   "section": "Unit3 STARTING_OUT",
+   "reasoning_over_completion": 0.92,
+   "content_tokens_over_completion": null
+  }
+ ],
+ "historical_successes": [
+  {
+   "finish_reason": "stop",
+   "prompt_tokens": 6837,
+   "completion_tokens": 3904,
+   "reasoning_tokens": 3296,
+   "total_tokens": 10741,
+   "content_chars": 2131,
+   "reasoning_chars": 13654,
+   "latency_ms": null,
+   "run": "P0-1450 (Unit 3 RfW)",
+   "reasoning_over_completion": 0.844,
+   "content_tokens_over_completion": null
+  },
+  {
+   "finish_reason": "stop",
+   "prompt_tokens": 9451,
+   "completion_tokens": 6123,
+   "reasoning_tokens": 5648,
+   "total_tokens": 15574,
+   "content_chars": 1685,
+   "reasoning_chars": 23006,
+   "latency_ms": null,
+   "run": "P0-1630 (Unit 1 UI)",
+   "reasoning_over_completion": 0.922,
+   "content_tokens_over_completion": null
+  },
+  {
+   "finish_reason": "stop",
+   "prompt_tokens": 4154,
+   "completion_tokens": 243,
+   "reasoning_tokens": 179,
+   "total_tokens": 4397,
+   "content_chars": 362,
+   "reasoning_chars": 965,
+   "latency_ms": null,
+   "run": "P0-1650 (证据不足)",
+   "reasoning_over_completion": 0.737,
+   "content_tokens_over_completion": null
+  },
+  {
+   "finish_reason": "stop",
+   "prompt_tokens": 9451,
+   "completion_tokens": 7332,
+   "reasoning_tokens": 6638,
+   "total_tokens": 16783,
+   "content_chars": 2436,
+   "reasoning_chars": 26823,
+   "latency_ms": null,
+   "run": "P1-03 (Unit 1 UI)",
+   "reasoning_over_completion": 0.905,
+   "content_tokens_over_completion": null
+  }
+ ],
+ "reasoning_ratio_failures": [
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  0.92
+ ],
+ "reasoning_ratio_successes": [
+  0.844,
+  0.922,
+  0.737,
+  0.905
+ ],
+ "absolute_reasoning_tokens_failures": [
+  8192,
+  8192,
+  8192,
+  8192,
+  8192,
+  7538
+ ],
+ "absolute_reasoning_tokens_successes": [
+  3296,
+  5648,
+  179,
+  6638
+ ],
+ "discriminator": "不是 reasoning/completion 比值（成功 0.74–0.92，失败 0.92–1.00，区间重叠），而是 reasoning 的**绝对消耗**：成功样本 179–6,638 全部低于 8,192 上限；失败样本 7,538–8,192 全部触顶并被截断。",
+ "controlled_pair": {
+  "section": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+  "P0-v1_with_cap": {
+   "run": "P0-1630",
+   "prompt_tokens": 9451,
+   "reasoning_tokens": 5648,
+   "content_chars": 1685,
+   "finish_reason": "stop"
+  },
+  "P1-05-v1_no_cap": {
+   "run": "P1-05-B #3",
+   "prompt_tokens": 8680,
+   "reasoning_tokens": 8192,
+   "content_chars": 0,
+   "finish_reason": "length"
+  },
+  "note": "同一 Section、同一教材证据；无配额版本的 prompt 更小（8,680 < 9,451），reasoning 反而更大并触顶 → 支持“去配额导致 reasoning 扩展”的解释。"
+ },
+ "root_cause_verdict": "ROOT_CAUSE_SUPPORTED"
+}

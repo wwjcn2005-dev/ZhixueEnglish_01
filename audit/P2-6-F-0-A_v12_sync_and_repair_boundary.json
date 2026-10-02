@@ -1,0 +1,314 @@
+{
+  "audit_id": "P2-6-F-0-A",
+  "title": "V1.2 最高指导原则同步审查 + F-1/F-2/F-4 最小修复实施边界确认",
+  "stage": "read-only",
+  "audit_time": "2026-09-13",
+  "project_root": "D:\\ZhixueEnglish",
+  "authority": [
+    "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+    "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.md"
+  ],
+  "inputs": [
+    "audit/P2-6-F-0_textbook_exercise_repair_readiness.md",
+    "audit/P2-6-F-0_textbook_exercise_repair_readiness.json",
+    "structured/learning/learning_flow_v1.json",
+    "structured/learning/learning_evidence_model_v1.json",
+    "structured/learning/ai_role_model_v1.json",
+    "structured/exercises/exercise_catalog_v2.json",
+    "structured/exercises/exercise_catalog_v3.json",
+    "structured/textbook/textbook_structure_v2.json",
+    "structured/textbook/textbook_content_relations_v2.json",
+    "structured/contentpack/v5/FLTRP-EN-7A-2022CUR.sqlite",
+    "web/exercises.py",
+    "web/ui.py",
+    "web/app.py",
+    "web/content.py"
+  ],
+  "ai_calls": 0,
+  "network_requests": 0,
+  "code_changes": 0,
+  "files_added": [
+    "audit/P2-6-F-0-A_v12_sync_and_repair_boundary.md",
+    "audit/P2-6-F-0-A_v12_sync_and_repair_boundary.json"
+  ],
+  "v12_review": {
+    "docx_paragraphs": 450,
+    "docx_chars": 14788,
+    "md_lines": 849,
+    "md_chars": 16226,
+    "docx_md_in_sync": true,
+    "items": [
+      {"q": "Q1 教材文字—音频—上下文—Question 严谨锚定", "verdict": "B 部分存在，需要补充",
+       "exists": ["六.6 严格匹配原则（L289-L307）", "六.7 Unit→Section→Activity→Question→Audio（L309-L313）", "七.2 层级与字段（L321-L341）", "五.3 可追溯（L189）", "五.4 结构化最低要求（L191-L207）"],
+       "gaps": ["G1 Question↔教材上下文锚定无要求", "G2 弱证据清单缺“同页多个活动/位置相邻”", "G3 缺“上下文锚点”概念", "G4 缺“文字↔音频”关系要求"]},
+      {"q": "Q2 不得用 AI 猜音频切分点", "verdict": "B 部分存在，需要补充",
+       "exists": ["六.6 禁止无证据推断（L307）", "四.5/七.6/十一.7 无法确认不得猜测", "五.2 本地优先"],
+       "gaps": ["G5 全文无“切分/切割/片段”字样", "G6 未禁止用时长/文字长度推算切点", "G7 缺“完整官方音频优先于片段”"]},
+      {"q": "Q3 官方完整音频优先", "verdict": "B（优先已存在，完整不存在）",
+       "exists": ["六.3 原始音频优先（L219）", "六.5(2) 官方教材音频第一优先级", "四.1 原始音频只读"],
+       "gaps": ["六.3 “以后可增加逐句播放”（L221）无前提，易被读成现在可切音频"]},
+      {"q": "Q4 正式教材练习由系统/规则/AI 批改", "verdict": "B 部分存在（规范正文落后于设计层）",
+       "exists": ["九章“辅助批改”（L409）", "§22.7 开放题批改（L759）", "§22.10 闭环含 AI 批改（L825）", "七.3 禁止降级成完成/未完成（L343-L347）", "learning_flow_v1.json S4 AI批改", "ai_role_model_v1.json grading_closed 规则判分"],
+       "gaps": ["G8 正文缺“客观题规则判分 / 主观题 AI 批改”分工", "G9 “辅助批改”的“辅助”易被理解为可选", "G10 未禁止“以孩子自评作为正式批改结果”"]},
+      {"q": "Q5 孩子自评不能作为正式 Evidence", "verdict": "B 部分存在，需要加强",
+       "exists": ["§22.5 自评不能单独升级（L731）", "§22.5 只看过/只听过不能单独证明（L727-L729）", "§22.4 学过只是事实记录（L705-L707）", "learning_evidence_model_v1.json CR-2/AP-2", "learning/evidence_service.py 只认 correct/incorrect/partial"],
+       "gaps": ["G11 规范用词“不能单独升级”（弱）与实现“一律不计”（强）不一致", "G12 全文“自我”0 命中，“自评”仅 1 处"]},
+      {"q": "Q6 冲突的旧文字", "verdict": "无直接冲突条款；7 处需加限定语"},
+      {"q": "Q7 模糊表述", "verdict": "存在，共 7 处（与 C-1…C-7 同一清单）"}
+    ]
+  },
+  "v12_conflicts_and_ambiguities": [
+    {"id": "C-1", "chapter": "六.2 核心流程", "line": 217, "text": "播放 → 完成教材听力任务 → 检查 → 重听 → …", "reason": "“检查”主体未指明，可被读成孩子自己检查", "direction": "改为由系统/规则/AI 批改（客观题规则判分、主观题 AI 批改）"},
+    {"id": "C-2", "chapter": "十八 最终验收标准", "line": 613, "text": "……完成教材听力任务 → 检查 → 发现问题……", "reason": "同上", "direction": "同上"},
+    {"id": "C-3", "chapter": "九 AI 功能边界", "line": 391, "text": "优先给提示和思路，而不是直接给答案。", "reason": "若套用到批改场景会与“客观题必须给出判定”冲突", "direction": "限定为解题辅导场景；批改结论不受此限"},
+    {"id": "C-4", "chapter": "十.3 错误不只记录对错", "line": 469, "text": "无法可靠判断时，应允许标记为待进一步判断……", "reason": "主体不明，可被读成交给孩子判断", "direction": "明确由系统标记；不得推回给孩子自评"},
+    {"id": "C-5", "chapter": "五.2 本地优先", "line": 183, "text": "如需音频转写，原始音频必须保留，转写结果只能作为辅助。", "reason": "无边界限定，可能被用来“用 ASR 生成听力原文再推答案”", "direction": "转写结果不得作为教材事实或答案来源"},
+    {"id": "C-6", "chapter": "六.3 原始音频优先", "line": "219-221", "text": "第一阶段优先实现……准确映射。以后可增加逐句播放……", "reason": "“以后”无定义，易被读成现在可切割音频", "direction": "逐句播放属后续能力；不得为此切割官方音频或推算切点"},
+    {"id": "C-7", "chapter": "六.6 严格匹配原则", "line": "291-297", "text": "弱证据清单：MP3 文件名 / Activity 编号 / 文件顺序 / 页面顺序 / 目录位置 / 简单编号推测", "reason": "缺“同页多个活动”“位置相邻”“文本长度与音频长度比例”", "direction": "补充弱证据项并明确同页多活动不得据位置推断归属"},
+    {"id": "C-8", "chapter": "§22.10 说明句", "line": 827, "text": "不代表必须一次性全部自动执行", "reason": "可能被读成“批改可以不做”", "direction": "补充：批改环节属教材练习最低闭环，不得以自评替代"}
+  ],
+  "code_conflicts_with_new_principle_B": [
+    {"file": "web/exercises.py", "line": 183, "text": "这是教材上的练习。做完之后，由你自己判断做得怎么样。"},
+    {"file": "web/exercises.py", "line": 285, "text": "（注释）记录孩子自己的作答，但不伪造正误；结果由孩子自己判断。"},
+    {"file": "web/exercises.py", "line": 275, "text": "（注释）按孩子自己的判断记录"},
+    {"file": "web/ui.py", "line": 513, "text": "（docstring）孩子的自我判断（教材未提供答案来源时不伪造正误）。"},
+    {"file": "web/ui.py", "line": 634, "text": "这次练习做得怎么样？"},
+    {"file": "web/ui.py", "line": "515-516", "text": "我完成了这次练习 / 还想再看一遍"}
+  ],
+  "two_principles": {
+    "principle_A": {
+      "name": "教材文字—音频—上下文—题目严谨锚定",
+      "should_write_into_v12": true,
+      "suggested_location": "第六章新增 §8",
+      "why": "现有条款只覆盖音频↔练习，无法约束 Question↔上下文；F-0 已实测 3 类真实错误",
+      "cutting_rules": [
+        "出版社已按活动分轨的官方音频，不因文字短、音频长而擅自切割",
+        "只有教材结构明确给出可验证边界时，才允许建立音频片段映射",
+        "无法确定边界时：保留官方完整音频 + 完整教材文本 + 标记 NEEDS_REVIEW + 禁止 AI 猜切点",
+        "不允许为了让 UI 看起来像短听力而制造未经验证的音频片段"
+      ],
+      "forbidden_inference": ["音频较长", "文字较短", "同页存在多个活动", "AI 认为应该是这样", "文件名相似", "位置相邻"]
+    },
+    "principle_B": {
+      "name": "正式教材练习由系统/规则/AI 负责批改与分析",
+      "should_write_into_v12": true,
+      "suggested_location": "第七章新增 §7",
+      "why": "设计层（learning_flow_v1 S4 / learning_evidence_model_v1 EV-self-check+CR-2+AP-2 / ai_role_model_v1 grading_closed）已写死；§22.7/§22.10 已引用；但正文第七章缺失，且现行代码与之矛盾",
+      "required_points": [
+        "客观题（choice/judge/fill/match/order）→ 规则 + 已核验标准答案",
+        "主观题（short_answer/writing）→ AI + 教材依据 + 人工定义的评分要点",
+        "禁止把“我完成了这次练习”作为正式正确/错误证据",
+        "禁止把“请你自己判断做得怎么样”作为教材练习核心闭环",
+        "自评可作为事实记录，但不构成正式批改结果与有效判断证据"
+      ],
+      "child_autonomy_preserved": ["学什么", "什么时候学", "学多久", "是否暂停", "是否继续", "是否主动复习"],
+      "system_owned": ["专业判断", "批改", "错误分析", "证据形成"]
+    }
+  },
+  "F1_boundary": {
+    "goal": "让已有 content_block 中与 PDF 逐块一致的教材正文（Text / Dialogue / Reading / Listening 印刷配套结构）进入 Unit/Section 页面",
+    "data_facts": {
+      "content_block_total": 3854,
+      "kinds": {"exercise_item": 2133, "vocabulary_entry": 525, "sidebar_tip": 348, "heading": 344, "instruction": 194, "footer_text": 178, "dialogue": 132},
+      "block_fields": ["page_id", "reading_order", "block_kind", "layout_role", "text_raw"],
+      "pdf_consistency_verified": "Unit 1《The first lesson》P22 全块与 PDF 文本层逐块一致",
+      "existing_routes": ["/", "/textbook", "/unit/<slug>", "/unit/<slug>/resources", "/unit/<slug>/resources/<kind>", "/unit/<slug>/exercises", "/exercise/<key>", "/review", "/vocabulary/*", "/audio/*", "/health"],
+      "unit_page_renderer": "web/ui.py::unit_page (L300)"
+    },
+    "minimal_files": [
+      {"file": "web/content.py", "change": "新增只读函数（section/unit → 有序文本块）", "existing_functions_unchanged": true},
+      {"file": "web/ui.py", "change": "新增正文视图 + Unit 页新增入口卡", "existing_functions_unchanged": true},
+      {"file": "web/app.py", "change": "新增只读 GET 路由", "existing_routes_unchanged": true}
+    ],
+    "blocker": "textbook_content_relations_v2.text_references 存在实测错误（Starter P10 的 A10 对话块归到 A9），不能直接用作活动→文本块来源",
+    "batch1_safe_scope": "按 Unit → Section 页码区间 + reading_order 渲染整段教材文本，不依赖 text_references；同页跨活动精确切分标记 NEEDS_REVIEW",
+    "human_review": ["12 篇阅读正文板块归属", "同页含两个活动的页（Starter P10、Starter P15）"]
+  },
+  "F2_boundary": {
+    "noise_option_values": [
+      {"value": "great teacher", "exercise": "X:3DCE713706DE", "location": "Unit 1 Understanding ideas A7 p19", "truth": "页面小标题"},
+      {"value": "new start 19", "exercise": "X:3DCE713706DE", "location": "Unit 1 Understanding ideas A7 p19", "truth": "页脚"},
+      {"value": "new start 23", "exercise": "X:BEF04AA1DF4C", "location": "Unit 1 Developing ideas A4 p23", "truth": "页脚；且该题不是选择题"},
+      {"value": "new start 15", "exercise": "X:F21C9E2036F7", "location": "Unit 1 Starting out A2 p15 (fill)", "truth": "页脚"},
+      {"value": "（同页其它活动的句子 ×3）", "exercise": "X:7ABB5256D7ED", "location": "Starter Know your school A2 p7", "truth": "题干里 4 个 ☐ 句子"},
+      {"value": "pun is a word with more than one", "exercise": "X:8AA3C10E358E", "location": "Unit 5 Understanding ideas A3 p82", "truth": "Learning to think 侧栏"}
+    ],
+    "structural_restore": [
+      {"exercise": "X:8D3E1E4E1B31", "basis": "PDF 文本层内联 A / B", "human_review": false},
+      {"exercise": "X:74BDDE140FAE", "basis": "题干内 ☐ 清单", "human_review": false},
+      {"exercise": "X:36ECBA5AD565", "basis": "题干内 ☐ 清单", "human_review": false},
+      {"exercise": "X:C2D62A46BE36", "basis": "指令定义 F/O", "human_review": true},
+      {"exercise": "X:7ABB5256D7ED", "basis": "题干内 4 个 ☐ 句子", "human_review": false},
+      {"exercise": "X:1C4143922B1C", "basis": "页面有 9 项 ☐ 词表但归属存疑", "human_review": true}
+    ],
+    "blank_fixes": {
+      "blanks_zero_to_one_input": ["88C641F5FA05", "F21C9E2036F7", "2CA1B9F43CB3", "24C80DAE6FAE", "6BB271F5F101", "5BCC4D6DC928"],
+      "blanks_nine_capped_to_eight": ["AC02902827A8", "41B8D362116C", "0AD8920218D8"],
+      "code_position": "web/exercises.py L210 min(max(blanks,1),8)"
+    },
+    "vocabulary_short_circuit": {
+      "corrected_total": 26,
+      "breakdown": {"fill": 18, "match": 6, "choice": 2},
+      "code_position": "web/exercises.py L187-L197",
+      "trigger": "exercise.type == vocabulary 且本单元词表非空",
+      "recommended_fix": "改为并存（保留词汇自测小卡 + 呈现教材原题型），不要先删后补"
+    },
+    "minimal_edit_points": [
+      {"file": "web/exercises.py", "line": 172, "change": "选项白名单/校正层过滤", "risk": "低"},
+      {"file": "web/exercises.py", "line": 210, "change": "去掉 8 空硬上限", "risk": "低"},
+      {"file": "web/exercises.py", "line": "187-197", "change": "词表短路改为并存", "risk": "中"},
+      {"file": "web/exercises.py", "line": 224, "change": "按活动锚点取题", "risk": "中"},
+      {"data": "新增校正层派生文件", "change": "不改 v2/v3", "risk": "中"}
+    ]
+  },
+  "F4_boundary": {
+    "audio_unchanged": {"total": 54, "activity_scope": 41, "section_scope": 13, "confirmed": "54/54", "spanning_multiple_activities": 0, "split_required": 0},
+    "playback_chain": ["web/exercises.py::audio_url (L101)", "/audio/official/<CODE>.mp3", "web/app.py::_audio (L89)", "web/audio.py::resolve_official_audio"],
+    "minimal_fixes": [
+      {"id": "A", "issue": "sub_questions() 按页取题导致同页跨活动串题", "position": "web/exercises.py::sub_questions (L122)，被 L224 调用", "fix": "文本包含 → content_block → 活动锚点；无法唯一确定时不返回题目", "human_review": false, "evidence": "13/13 sub_question 文本包含命中唯一块，且每块唯一归属一个活动"},
+      {"id": "B", "issue": "text_references 同页活动归属错误（Starter P10 A9/A10）", "position": "生成层 textbook_content_relations_v2.json", "fix": "用活动号字形 y 坐标 + 块阅读顺序做几何重建（本地 PDF，无需 AI）", "human_review": true, "evidence": "A10 对话块 B5/B7-B12 归到 A9；A10 仅剩 B17"}
+    ],
+    "sub_question_defect": {"activity_id_null": "13/13", "implication": "不能通过 WHERE activity_id=? 修复"},
+    "forbidden": ["新切音频", "AI 切音频", "猜测时间点", "根据文字长度推断片段", "根据同页位置跨活动串题"]
+  },
+  "answer_fact_review": {
+    "exercises": 157,
+    "questions": 360,
+    "with_reliable_answer": 0,
+    "catalog_answer_status": "NO_RELIABLE_SOURCE × 157",
+    "evidence_pack_answer_source": "NO_RELIABLE_SOURCE × 360",
+    "student_book_answer_page": false,
+    "teacher_book_or_answer_file_in_project": false,
+    "F3_requires_human_verification": true,
+    "objective_pending_human": {"choice": 30, "judge": 3, "fill": 124, "match": 14, "order": 2, "subtotal": 173},
+    "needs_rubric_not_fixed_answer": {"short_answer": 111, "writing": 16},
+    "not_suitable_for_fixed_answer": {"speaking": 22, "reflection": 18, "other": 20},
+    "forbidden": ["AI 猜答案", "语言模型推答案", "常识补答案", "上下文推测后写入正式数据", "搜索结果代替答案来源", "程序推测伪装成教材答案"]
+  },
+  "question_structure_trace": {
+    "runtime_catalog": "structured/exercises/exercise_catalog_v2.json",
+    "runtime_catalog_code": "web/exercises.py L29-L32",
+    "v3_consumers": ["learning/learning_object_service.py", "learning/evidence_service.py", "learning/intervention_service.py"],
+    "fields": [
+      {"element": "stem", "location": "exercise_catalog_v2.questions[].text / .instruction", "runtime_used": true, "note": "questions[].text 常为教材正文而非题干"},
+      {"element": "options", "location": "exercise_catalog_v2.options[]", "runtime_used": true, "note": "含已确认噪声；L172 仅做长度过滤"},
+      {"element": "blanks", "location": "exercise_catalog_v2.blanks", "runtime_used": true, "note": "L210 硬上限 8"},
+      {"element": "answer", "location": null, "runtime_used": false, "note": "不存在"},
+      {"element": "context", "location": "exercise_question_relations_v3.related_text + textbook_content_relations_v2.text_references", "runtime_used": false, "note": "含 A9/A10 错误"},
+      {"element": "audio", "location": "exercise_catalog_v2.audio_id → audio_url()", "runtime_used": true},
+      {"element": "exercise/activity", "location": "exercise_catalog_v2.activity_id（93/157）；textbook_structure_v2 的 (unit, section, activity_no)", "runtime_used": false, "note": "三元组实测可解析 157/157"}
+    ],
+    "v2_v3_recommendation": {"edit_v2": false, "edit_v3": false, "edit_generation_layer": true, "edit_read_layer": true, "reason": "v2/v3 是带溯源的派生数据且缺陷相同；切换版本无法修复"}
+  },
+  "needs_review": [
+    {"id": "N-01", "category": "选择题选项归属", "count": 1, "objects": ["X:1C4143922B1C"]},
+    {"id": "N-02", "category": "选项噪声需删除", "count": 4, "objects": ["great teacher", "new start 19", "new start 23", "new start 15"]},
+    {"id": "N-03", "category": "同页其它活动句子被当选项", "count": 1, "objects": ["X:7ABB5256D7ED"]},
+    {"id": "N-04", "category": "侧栏文本混入选项", "count": 1, "objects": ["X:8AA3C10E358E"]},
+    {"id": "N-05", "category": "题型误判", "count": 1, "objects": ["X:BEF04AA1DF4C"]},
+    {"id": "N-06", "category": "客观题标准答案", "count": 173, "objects": ["choice 30", "judge 3", "fill 124", "match 14", "order 2"]},
+    {"id": "N-07", "category": "主观题评分要点", "count": 127, "objects": ["short_answer 111", "writing 16"]},
+    {"id": "N-08", "category": "音频与题目语义对应", "count": 41, "objects": ["41 条活动级音频"]},
+    {"id": "N-09", "category": "活动→文本块归属", "count": ">=1 已证实，全表未核", "objects": ["text_references A9/A10", "未覆盖的 13 个 contentpack 活动"]},
+    {"id": "N-10", "category": "阅读正文板块边界", "count": 12, "objects": ["U1-U6 × 2 篇"]},
+    {"id": "N-11", "category": "依赖图片的题目", "count": ">=2", "objects": ["X:FB47DD21DABE 等"]},
+    {"id": "N-12", "category": "听力原文", "count": 41, "objects": ["transcript 表 0 行"]},
+    {"id": "N-13", "category": "sub_question.activity_id 全空", "count": 13, "objects": ["contentpack sub_question"], "note": "13/13 可用文本包含法确定性定位"},
+    {"id": "N-14", "category": "61 个练习无 contentpack activity", "count": 61, "objects": ["catalog 157 - contentpack 96"]},
+    {"id": "N-15", "category": "同页多活动归属规则", "count": "全表", "objects": ["所有一页含 >=2 活动的页面"]}
+  ],
+  "batch1_allowed_files": [
+    {"file": "web/content.py", "reason": "读取层缺正文块", "target": "新增只读函数"},
+    {"file": "web/ui.py", "reason": "无正文视图", "target": "新增正文视图 + Unit 页入口卡"},
+    {"file": "web/app.py", "reason": "无正文路由", "target": "新增只读 GET 路由"},
+    {"file": "web/exercises.py", "reason": "选项噪声 / 空位截断 / 按页取题 / 词表短路", "target": "校正上述四处，grade 语义不变"},
+    {"file": "（新增）exercise_structure_corrections_v1.json", "reason": "不改 v2/v3 前提下承载校正", "target": "新增派生数据"},
+    {"file": "（新增）section_text_blocks_v1.json", "reason": "承载板块→文本块关系", "target": "新增派生数据"},
+    {"file": "（新增）web/test_p2_6f*.py", "reason": "覆盖新行为", "target": "新增测试"}
+  ],
+  "batch1_forbidden": [
+    "structured/learning/learning.db",
+    "structured/contentpack/v5/*.sqlite",
+    "教材 PDF 与 54 个官方 MP3",
+    "structured/exercises/exercise_catalog_v2.json",
+    "structured/exercises/exercise_catalog_v3.json",
+    "structured/textbook/textbook_structure_v2.json",
+    "learning/ 下冻结服务（含 learning_object_service.py）",
+    "Android 工程 / applicationId / WebView 地址 / APK",
+    "web/ai_grading.py 的 AI provider 注入点",
+    "任何正式答案事实",
+    "V1.2（docx + md）"
+  ],
+  "child_visible_changes": [
+    {"item": "F-1", "description": "进 Unit 后能直接在 APP 里读到教材原文（对话与短文），不用翻纸质书对照"},
+    {"item": "F-4", "description": "打开听力练习时，教材上原本要填的海报/表格结构与官方录音出现在同一页"},
+    {"item": "F-2 选项", "description": "选择题显示真正的选项，不再出现 new start 19 这类页脚"},
+    {"item": "F-2 空位", "description": "填空题的输入框数量与教材空格数量一致"},
+    {"item": "F-2 短路", "description": "教材写的是 Complete the summary… 时，先看到这个任务本身，而不是被替换成看中文写单词"},
+    {"item": "仍然不变", "description": "F-3 完成前，教材练习做完后仍不会立即判分；APP 明确说明教材未提供可核对答案，不再说由你自己判断做得怎么样"}
+  ],
+  "risks": [
+    {"id": "R-1", "risk": "直接移除词表短路会切断当前唯一的有效证据路径（26 条）", "mitigation": "并存而非替换"},
+    {"id": "R-2", "risk": "F-1 复用 text_references 会继承 A9/A10 类错误", "mitigation": "第一批只按页码区间 + reading_order 渲染"},
+    {"id": "R-3", "risk": "结构/目录切换影响 397 项测试", "mitigation": "保持 build_questions 返回契约，同步回归"},
+    {"id": "R-4", "risk": "新增正文页导致移动端页面过长", "mitigation": "按 Section 分段"},
+    {"id": "R-5", "risk": "先删自评按钮而未具备批改能力会让孩子失去反馈", "mitigation": "顺序 F-1/F-4 → F-2 → F-3 → F-5 → F-6/F-7"},
+    {"id": "R-6", "risk": "v2 与运行期新结构分叉扩大", "mitigation": "明确读取层优先序，不做版本统一重构"}
+  ],
+  "v12_sync_recommendation": {
+    "must_add": [
+      "第六章新增 §8：教材文字—音频—上下文—题目严谨锚定原则",
+      "第七章新增 §7：教材练习的批改责任"
+    ],
+    "must_modify": [
+      {"priority": "高", "items": ["C-1 (L217)", "C-2 (L613)", "C-3 (L391)", "C-4 (L469)"]},
+      {"priority": "中", "items": ["C-5 (L183)", "C-6 (L219-L221)", "C-7 (L291-L297)"]},
+      {"priority": "低", "items": ["C-8 (§22.10 说明句 L827)"]}
+    ],
+    "no_change_needed": [
+      "四.1 原始教材必须保留",
+      "四.5 教材真实性优先",
+      "五.2 本地优先",
+      "五.3 可追溯",
+      "五.4 结构化最低要求",
+      "六.3 原始音频优先（方向正确，需按 C-6 加限定）",
+      "六.6 严格匹配原则（方向正确，需按 C-7 扩充清单）",
+      "六.7 听力音频不是孤立资源",
+      "七.1-七.6 教材练习规范",
+      "九章 AI 边界主体",
+      "§22.4 / §22.5 / §22.7 / §22.10",
+      "十九章 冲突时最终裁决顺序"
+    ],
+    "version_recommendation": "保持 V1.2 主版本，建立 V1.2 修订稿（V1.2.1），经人工确认后一次性同步 docx + md，并归档原文",
+    "reason": ["属于补强与澄清而非方向变更", "已有 §22“P2-5 同步”先例", "docx 与 md 必须同步，避免两个真相", "修改 V1.2 须由独立任务执行并经人工确认"]
+  },
+  "baseline": {
+    "before_and_after_identical": true,
+    "learning_db_sha256": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "learning_db_mtime": "2026-09-12 23:15:13",
+    "learning_db_tables": 7,
+    "learning_record_rows": 20,
+    "mastery_state_rows": 7,
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+    "v12_docx_sha256": "6D3595CF7D83879ADF3E6452C5E5A74C5300E89265DE1B4F2FA8A1EBDBB861A9",
+    "v12_md_sha256": "83D39D93EB9255BF6C229FB195A387B1E31C5F8DAB846C86B63D7229079EF88F",
+    "android_application_id": "com.zhixueenglish.app.dev",
+    "android_web_base_url": "http://192.168.2.3:8770/",
+    "tests": "397 PASS / 0 FAIL / 0 SKIP（本轮为只读审查，未运行测试；测试文件未修改）",
+    "ai_calls": 0,
+    "code_changes": 0
+  },
+  "conclusion": {
+    "audit_execution": "PASS",
+    "principle_A": "应正式写入 V1.2（第六章新增 §8）",
+    "principle_B": "应正式写入 V1.2（第七章新增 §7）——本质是把设计层已有结论上升为规范",
+    "v12_direct_conflicts": 0,
+    "v12_items_to_modify": 8,
+    "F1_F2_F4_boundary": "已确认，均为改读取/生成层，不改 v2/v3、不改 contentpack、不改冻结服务",
+    "F3": "必须人工核验答案后才可实施",
+    "version": "V1.2 → V1.2.1（docx + md 同步），由独立任务执行",
+    "stop": "本轮只读审查完成，立即停止，不进入 F-1。"
+  }
+}

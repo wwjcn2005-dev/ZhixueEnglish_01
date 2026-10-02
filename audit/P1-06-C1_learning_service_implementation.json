@@ -1,0 +1,148 @@
+{
+  "task": "P1-06-C1 学习层最小业务服务实施",
+  "generated_at": "2026-09-12T15:50:23+08:00",
+  "verdict": "PASS",
+  "baseline": {
+    "learning_db": {
+      "sha256": "16E3952D64E749879D8FF78814F0434D544D4CBAD7D52AAC7E0B145DE43414E9",
+      "size": 73728,
+      "user_version": 1,
+      "tables": 6,
+      "rows": {
+        "learner": 0,
+        "learning_task": 0,
+        "task_item": 0,
+        "learning_record": 0,
+        "mastery_state": 0,
+        "schema_migration": 1
+      }
+    },
+    "v5": {
+      "sha256": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+      "size": 2457600,
+      "tables": 21,
+      "learning_item": 362,
+      "source_ref": 815
+    }
+  },
+  "new_files": [
+    "learning/learning_service.py",
+    "learning/test_learning_service.py",
+    "audit/P1-06-C1_learning_service_implementation.md",
+    "audit/P1-06-C1_learning_service_implementation.json"
+  ],
+  "modified_existing_files": [],
+  "interfaces": [
+    "connect_learning_db",
+    "connect_contentpack_db",
+    "create_learner",
+    "get_learner",
+    "create_task",
+    "get_task",
+    "complete_task",
+    "drop_task",
+    "add_task_item",
+    "remove_task_item",
+    "list_task_items",
+    "record_learning_event",
+    "get_record",
+    "list_records",
+    "get_mastery"
+  ],
+  "not_provided": [
+    "update_record",
+    "delete_record",
+    "任何 Mastery 算法入口",
+    "任何 AI 入口"
+  ],
+  "implemented_rules": [
+    "Learner 显式创建/必填名/默认 active/无删除接口",
+    "Task 绑定有效 Learner；task_kind 与 status 枚举；textbook_id 来自 contentpack 只读校验",
+    "Task + ≥1 TaskItem 同一事务；状态单向不可逆；无自动完成",
+    "TaskItem 仅 4 字段；item_id 必须存在于 contentpack",
+    "Record 前校验 learner/task/归属/active/item 属于 Task",
+    "activity_type 九枚举、result 五枚举+NULL、response_raw 仅文本且空串落 NULL、hints_used 非负",
+    "attempt_no 上下文内递增（事务内计算）",
+    "Record + Mastery 同事务；失败整体回滚",
+    "evidence_count 仅计 correct/incorrect/partial/done；correct_count 仅计 correct；partial 不计",
+    "skipped/NULL 只写 Record、不改掌握派生字段",
+    "不预建 MasteryState；review_needed 不自动计算；Record append-only",
+    "completed/dropped 拒绝新 Record 与 TaskItem 变更"
+  ],
+  "tests": {
+    "framework": "unittest (stdlib)",
+    "ran": 14,
+    "result": "OK",
+    "tail": [
+      "test_validation_rules (__main__.LearningServiceTest.test_validation_rules) ... ok",
+      "----------------------------------------------------------------------",
+      "Ran 14 tests in 0.306s",
+      "OK"
+    ],
+    "coverage": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M"
+    ]
+  },
+  "contamination": {
+    "learning_db_polluted": false,
+    "contentpack_modified": false,
+    "temp_leftovers": "NONE"
+  },
+  "calls": {
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "network": 0
+  },
+  "new_dependencies": 0,
+  "deferred": [
+    "Mastery 算法",
+    "Review 算法",
+    "LearningActivity/Question/Exercise/ReviewItem",
+    "AI 建议入口",
+    "多 Learner UI",
+    "unit/section 计划",
+    "MasteryState 重建工具"
+  ],
+  "risks": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 2,
+    "P3": 3,
+    "details": {
+      "P2": [
+        "Mastery 算法未实现（有意）",
+        "MasteryState 重建工具未实现"
+      ],
+      "P3": [
+        "ordinal 唯一性由应用层保证",
+        "review 归类规则待 Activity 阶段复核",
+        "测试产生的 learning/__pycache__ 因环境策略禁止删除而保留（非源码/数据）"
+      ]
+    }
+  },
+  "next_stage": [
+    "最小学习会话入口（仍不接 AI）",
+    "MasteryState 重建工具",
+    "Activity / Question 阶段",
+    "AI 建议入口（须孩子确认）",
+    "多 Learner UI"
+  ],
+  "boundaries": {
+    "schema_changed": false,
+    "android_touched": false,
+    "zhixue_ai_touched": false
+  }
+}

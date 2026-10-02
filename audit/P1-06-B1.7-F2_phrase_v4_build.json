@@ -1,0 +1,1196 @@
+{
+  "task": "P1-06-B1.7-F2 Phrase 正式数据构建与原子发布",
+  "generated_at": "2026-09-12T14:34:42+08:00",
+  "verdict": "PASS",
+  "rule_set": "P1-06-B1.7-F2",
+  "schema_version": "p1-04-v2",
+  "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T143441",
+  "import_batch": "FLTRP-EN-7A-2022CUR:S20260912T143441:B0",
+  "task_text_truncation": "P1-06-B1.7-F2 任务文本在 §十三（protect... from... emphasis=UNKNOWN）之后被截断，§十四 及以后（along the way emphasis、source_ref/evidence 细节、item_id/content_hash 最终确认、构建后验证清单、报告格式、停止条件）未送达。本构建按 P1-06-B1.7-F1 已确认设计补齐，并在报告中逐项标注推断项，未扩大识别范围。",
+  "sha256": {
+    "v3 (输入, 构建后复核)": {
+      "hash": "13E1B961383794259907F388EDBD856C3C5E5B0303FF19ACBB0E76F569A9BE0C",
+      "status": "UNCHANGED"
+    },
+    "v1 (构建后复核)": {
+      "hash": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+      "status": "UNCHANGED"
+    },
+    "v2 (构建后复核)": {
+      "hash": "C97B0F4EB09811F2477723A40A01B695DA984DDF1BD5FA5668B59ADC61ED0430",
+      "status": "UNCHANGED"
+    },
+    "PDF (构建后复核)": {
+      "hash": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+      "status": "UNCHANGED"
+    },
+    "v4 (输出)": {
+      "hash": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+      "status": "PUBLISHED"
+    }
+  },
+  "v4": {
+    "path": "D:\\ZhixueEnglish\\structured\\contentpack\\v4\\FLTRP-EN-7A-2022CUR.sqlite",
+    "sha256": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+    "size": 2404352
+  },
+  "counts": {
+    "phrase_total": 23,
+    "from_textbook_list": 21,
+    "from_textbook_note": 2,
+    "learning_item": 310,
+    "source_ref": 762,
+    "vocabulary": 287,
+    "inserted_source_ref": 48
+  },
+  "phrases": [
+    {
+      "canonical_text": "junior high",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:960AF56EF67C",
+      "content_hash": "47726392a112080c87491a4a87e2943154e3762e24253744e0c67ecff3d9a6d4",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "初级中学",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:D14DC4EA8CC8",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B6",
+        "FLTRP-EN-7A-2022CUR:P168:B23"
+      ],
+      "pdf_pages": [
+        155,
+        168
+      ],
+      "textbook_pages": [
+        150,
+        163
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "red scarf",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:F9BDDA6BAE49",
+      "content_hash": "d634ec2c1b674eaf89593db6c0d397e43f8b8df006ae5447916ede8bf052565a",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "红领巾",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:63AB311BD180",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B12",
+        "FLTRP-EN-7A-2022CUR:P171:B1"
+      ],
+      "pdf_pages": [
+        155,
+        171
+      ],
+      "textbook_pages": [
+        150,
+        166
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "school uniform",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:61322C6D7B21",
+      "content_hash": "33e3a3e4a4f0601b615662b450d045b0130f64ef43146601cc6b27384f45f7d9",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "校服",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:9DC23D3EC118",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B15",
+        "FLTRP-EN-7A-2022CUR:P171:B24"
+      ],
+      "pdf_pages": [
+        155,
+        171
+      ],
+      "textbook_pages": [
+        150,
+        166
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "teaching building",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:F0769CCC028C",
+      "content_hash": "cc9a22d6f82289ae34bd9b0e3809ab4f7f3d48f89570c4c033f6548a7cd89868",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "教学楼",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:9FDAD1E9BC69",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B18",
+        "FLTRP-EN-7A-2022CUR:P172:B18"
+      ],
+      "pdf_pages": [
+        155,
+        172
+      ],
+      "textbook_pages": [
+        150,
+        167
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "dining hall",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:B53636B283A6",
+      "content_hash": "426f41d768e1bc7aa4240df8ac111c4500cc79537fae50bd57f3d9a22c31b8ae",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "食堂",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:C43D3DD6856E",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B19",
+        "FLTRP-EN-7A-2022CUR:P166:B21"
+      ],
+      "pdf_pages": [
+        155,
+        166
+      ],
+      "textbook_pages": [
+        150,
+        161
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "each other",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:B6DBBF2A4D9F",
+      "content_hash": "a3ab0ea5cb4438948324c10dd4bf5907e7a07eee5c163954f977f6684ac31208",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "互相彼此",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:E3E7D8925106",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B24",
+        "FLTRP-EN-7A-2022CUR:P166:B33"
+      ],
+      "pdf_pages": [
+        155,
+        166
+      ],
+      "textbook_pages": [
+        150,
+        161
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "of course",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:39B022CFFC7A",
+      "content_hash": "c4696801ac0e6c5b7d9f08f2918f4b5b478ad6e637c2e30bbfa315371e705eb3",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "当然",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:E3BBD6085E8D",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B16",
+        "FLTRP-EN-7A-2022CUR:P169:B36"
+      ],
+      "pdf_pages": [
+        155,
+        169
+      ],
+      "textbook_pages": [
+        150,
+        164
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "a bit",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:41911F435D5B",
+      "content_hash": "3dc252f52e6b862856da6239da962eb6e6faf91ab84e5fd4cbdf36f8e63e997e",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "有点儿稍微",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:1E42679497F0",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B33",
+        "FLTRP-EN-7A-2022CUR:P165:B3"
+      ],
+      "pdf_pages": [
+        155,
+        165
+      ],
+      "textbook_pages": [
+        150,
+        160
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "take part in",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:8D92AE56D540",
+      "content_hash": "ef5009f70fe0d4623e297ff2efafe169ba2b6544846cbab3ed7f4c6ca9a31543",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "参加参与",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:9A6F7AD68EAF",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B38",
+        "FLTRP-EN-7A-2022CUR:P172:B14"
+      ],
+      "pdf_pages": [
+        155,
+        172
+      ],
+      "textbook_pages": [
+        150,
+        167
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "point out",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:9B29B23BA408",
+      "content_hash": "f65a9972add298f4fbffe0b31c60b411c7941887cf62cac23d3304d22d207ef7",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "指出指明",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:DEA9C897E683",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P155:B42",
+        "FLTRP-EN-7A-2022CUR:P170:B9"
+      ],
+      "pdf_pages": [
+        155,
+        170
+      ],
+      "textbook_pages": [
+        150,
+        165
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "in fact",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:BA5281834440",
+      "content_hash": "ddbb1c468e243a427bba339dc93f1e2af3a8ffdd5012be6085556b0438684e75",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "事实上",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:28FFB2954477",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P156:B5",
+        "FLTRP-EN-7A-2022CUR:P168:B11"
+      ],
+      "pdf_pages": [
+        156,
+        168
+      ],
+      "textbook_pages": [
+        151,
+        163
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "primary school",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:751F6ED40C03",
+      "content_hash": "2b5038a20dca94c0132ab5263878fa65e765ace879e577273fef79adadc961e9",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "小学",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:7FECAACC0FCA",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P156:B27",
+        "FLTRP-EN-7A-2022CUR:P170:B22"
+      ],
+      "pdf_pages": [
+        156,
+        170
+      ],
+      "textbook_pages": [
+        151,
+        165
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "rock music",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:8AB872FEB6B5",
+      "content_hash": "4654bfe621e92a131ef9e79a2c510e9871abd29c5c36c708a52208b0b346d88b",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "摇滚乐",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:5504965C9B05",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P156:B40",
+        "FLTRP-EN-7A-2022CUR:P171:B14"
+      ],
+      "pdf_pages": [
+        156,
+        171
+      ],
+      "textbook_pages": [
+        151,
+        166
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "pick up",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:A6D9B1FB964C",
+      "content_hash": "6d14d40314fc40feee5e3eb0faca0fc45c19b611a0ea67de297313360543f8ee",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "搭载接载",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:F64AF71FAEF4",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P158:B33",
+        "FLTRP-EN-7A-2022CUR:P170:B2"
+      ],
+      "pdf_pages": [
+        158,
+        170
+      ],
+      "textbook_pages": [
+        153,
+        165
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "against the law",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:562D79BBEB60",
+      "content_hash": "92a6d348b8cbeccbbec1fa983d7cbc5e7b83984867a6a6e11f65460bc00b4805",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "违法",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:2F6FA09FD920",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P159:B15",
+        "FLTRP-EN-7A-2022CUR:P165:B11"
+      ],
+      "pdf_pages": [
+        159,
+        165
+      ],
+      "textbook_pages": [
+        154,
+        160
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "throw away",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:72058B0C4EA0",
+      "content_hash": "17e2b0664c6743f13aaba5c354395d64716c3727a714e7b63e937a2c459375b8",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "扔掉丢弃",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:0EFAAE466C04",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P159:B29",
+        "FLTRP-EN-7A-2022CUR:P172:B30"
+      ],
+      "pdf_pages": [
+        159,
+        172
+      ],
+      "textbook_pages": [
+        154,
+        167
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "corn silk",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:C0B274881CD7",
+      "content_hash": "6c74e7eea0bc111ce9ecd21513373a3361d4718c05f51996d9797a51157af01c",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "玉米须",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:F6B371E6FEE6",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P160:B38",
+        "FLTRP-EN-7A-2022CUR:P166:B9"
+      ],
+      "pdf_pages": [
+        160,
+        166
+      ],
+      "textbook_pages": [
+        155,
+        161
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "get lost",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:CA1537F1897C",
+      "content_hash": "35e2a36ef979a4044ec72dcfa44497395053d597976197005e66c6491f94f821",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "迷路",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:F6E2F389F3FF",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P161:B35",
+        "FLTRP-EN-7A-2022CUR:P167:B25"
+      ],
+      "pdf_pages": [
+        161,
+        167
+      ],
+      "textbook_pages": [
+        156,
+        162
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "die out",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:B36EF35C7B15",
+      "content_hash": "a4a6fc4e65b1eb7a45ea173d0f653f2405e5b919776b68853ad62348c18b782e",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "消失绝迹灭绝",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:60E903357EBF",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P162:B18",
+        "FLTRP-EN-7A-2022CUR:P166:B18"
+      ],
+      "pdf_pages": [
+        162,
+        166
+      ],
+      "textbook_pages": [
+        157,
+        161
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "as dead as a dodo",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:4EBDE13F5A41",
+      "content_hash": "2969dce3ab3468a4e50184d521aba298cd7d35e2a094726cbb94332bf6139fa6",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "彻底死亡",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:1B39BC8B05BD",
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P162:B2",
+        "FLTRP-EN-7A-2022CUR:P165:B21"
+      ],
+      "pdf_pages": [
+        162,
+        165
+      ],
+      "textbook_pages": [
+        157,
+        160
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "as happy as a clam",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:4B309C9BB84D",
+      "content_hash": "59f2ba1595f77cd6b5ebad1f404e72b2ec8ab028435816314cb5642f879f89f7",
+      "kind": "list",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "meaning_zh": "非常高兴的相当满足的",
+      "textbook_emphasis": "PLAIN",
+      "learning_requirement": "RECOGNITION",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": "FLTRP-EN-7A-2022CUR:V:DDCAEF181431",
+      "ref_count": 4,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P162:B22",
+        "FLTRP-EN-7A-2022CUR:P162:B23",
+        "FLTRP-EN-7A-2022CUR:P165:B22",
+        "FLTRP-EN-7A-2022CUR:P165:B23"
+      ],
+      "pdf_pages": [
+        162,
+        165
+      ],
+      "textbook_pages": [
+        157,
+        160
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": [
+        "PLAIN"
+      ],
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "protect... from...",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:CFA9955FF9F1",
+      "content_hash": "f1f82bc712822ddcd50c5852e63cec345ed95f719c5c8be9f7c6038eaf4aa5bf",
+      "kind": "note",
+      "derivation_type": "FROM_TEXTBOOK_NOTE",
+      "meaning_zh": null,
+      "textbook_emphasis": "UNKNOWN",
+      "learning_requirement": "CORE",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": null,
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P120:B2",
+        "FLTRP-EN-7A-2022CUR:P120:B3"
+      ],
+      "pdf_pages": [
+        120
+      ],
+      "textbook_pages": [
+        115
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": null,
+      "cross_check": "PASS"
+    },
+    {
+      "canonical_text": "along the way",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:51452FED59ED",
+      "content_hash": "1e2f551d1ec4021c0d5513126fb0307bf39321a9091b7b0da7b7758bbdf27f43",
+      "kind": "note",
+      "derivation_type": "FROM_TEXTBOOK_NOTE",
+      "meaning_zh": null,
+      "textbook_emphasis": "UNKNOWN",
+      "learning_requirement": "CORE",
+      "requirement_conflict_status": "OK",
+      "review_status": "NEED_REVIEW",
+      "source_vocab_item_id": null,
+      "ref_count": 2,
+      "block_ids": [
+        "FLTRP-EN-7A-2022CUR:P125:B3",
+        "FLTRP-EN-7A-2022CUR:P125:B4"
+      ],
+      "pdf_pages": [
+        125
+      ],
+      "textbook_pages": [
+        120
+      ],
+      "fonts": [
+        "FrutigerNextLTW1G-Regula"
+      ],
+      "db_emphasis": null,
+      "cross_check": "PASS"
+    }
+  ],
+  "exclusions": {
+    "`knock around (`": "冻结异常，本次不建 Phrase、未改 Vocabulary（item_id/content_hash 均未变）",
+    "`prefer A to B`": "教材证据存在，但资源类型未最终确认，保留人工审核（未落库）",
+    "11 个普通正文多词单位": "talk about、look at、think about、listen to、find out、a lot of、come from、as well as、in front of、get up、look for：全部 EXCLUDE",
+    "Communication bank / Useful expressions / 固定句型": "属 Sentence Pattern，不作为 Phrase",
+    "Grammar rule / 普通例句": "属 Grammar，不作为 Phrase"
+  },
+  "evidence_cross_check": [
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "junior high FLTRP-EN-7A-2022CUR:P155:B6 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "junior high FLTRP-EN-7A-2022CUR:P168:B23 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "red scarf FLTRP-EN-7A-2022CUR:P155:B12 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "red scarf FLTRP-EN-7A-2022CUR:P171:B1 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "school uniform FLTRP-EN-7A-2022CUR:P155:B15 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "school uniform FLTRP-EN-7A-2022CUR:P171:B24 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "teaching building FLTRP-EN-7A-2022CUR:P155:B18 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "teaching building FLTRP-EN-7A-2022CUR:P172:B18 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "dining hall FLTRP-EN-7A-2022CUR:P155:B19 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "dining hall FLTRP-EN-7A-2022CUR:P166:B21 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "each other FLTRP-EN-7A-2022CUR:P155:B24 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "each other FLTRP-EN-7A-2022CUR:P166:B33 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "of course FLTRP-EN-7A-2022CUR:P155:B16 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "of course FLTRP-EN-7A-2022CUR:P169:B36 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "a bit FLTRP-EN-7A-2022CUR:P155:B33 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "a bit FLTRP-EN-7A-2022CUR:P165:B3 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "take part in FLTRP-EN-7A-2022CUR:P155:B38 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "take part in FLTRP-EN-7A-2022CUR:P172:B14 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "point out FLTRP-EN-7A-2022CUR:P155:B42 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "point out FLTRP-EN-7A-2022CUR:P170:B9 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "in fact FLTRP-EN-7A-2022CUR:P156:B5 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "in fact FLTRP-EN-7A-2022CUR:P168:B11 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "primary school FLTRP-EN-7A-2022CUR:P156:B27 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "primary school FLTRP-EN-7A-2022CUR:P170:B22 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "rock music FLTRP-EN-7A-2022CUR:P156:B40 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "rock music FLTRP-EN-7A-2022CUR:P171:B14 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "pick up FLTRP-EN-7A-2022CUR:P158:B33 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "pick up FLTRP-EN-7A-2022CUR:P170:B2 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "against the law FLTRP-EN-7A-2022CUR:P159:B15 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "against the law FLTRP-EN-7A-2022CUR:P165:B11 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "throw away FLTRP-EN-7A-2022CUR:P159:B29 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "throw away FLTRP-EN-7A-2022CUR:P172:B30 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "corn silk FLTRP-EN-7A-2022CUR:P160:B38 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "corn silk FLTRP-EN-7A-2022CUR:P166:B9 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "get lost FLTRP-EN-7A-2022CUR:P161:B35 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "get lost FLTRP-EN-7A-2022CUR:P167:B25 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "die out FLTRP-EN-7A-2022CUR:P162:B18 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "die out FLTRP-EN-7A-2022CUR:P166:B18 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "as dead as a dodo FLTRP-EN-7A-2022CUR:P162:B2 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "as dead as a dodo FLTRP-EN-7A-2022CUR:P165:B21 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "as happy as a clam FLTRP-EN-7A-2022CUR:P162:B22 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "as happy as a clam FLTRP-EN-7A-2022CUR:P162:B23 db=PLAIN pdf=PLAIN font=None"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "as happy as a clam FLTRP-EN-7A-2022CUR:P165:B22 db=PLAIN pdf=PLAIN font=FrutigerNextLTW1G-Regula"
+    },
+    {
+      "name": "emphasis_db_vs_pdf",
+      "status": "PASS",
+      "detail": "as happy as a clam FLTRP-EN-7A-2022CUR:P165:B23 db=PLAIN pdf=PLAIN font=None"
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "integrity_check",
+        "status": "PASS",
+        "detail": "PRAGMA integrity_check"
+      },
+      {
+        "name": "foreign_key_check",
+        "status": "PASS",
+        "detail": "PRAGMA foreign_key_check"
+      },
+      {
+        "name": "phrase_count_23",
+        "status": "PASS",
+        "detail": "phrase=23"
+      },
+      {
+        "name": "vocabulary_count_287",
+        "status": "PASS",
+        "detail": "vocabulary=287"
+      },
+      {
+        "name": "no_other_item_type",
+        "status": "PASS",
+        "detail": "other=0"
+      },
+      {
+        "name": "vocabulary_rows_unchanged",
+        "status": "PASS",
+        "detail": "v3=287 v4=287 行级比较"
+      },
+      {
+        "name": "vocabulary_source_refs_unchanged",
+        "status": "PASS",
+        "detail": "v3=708 v4=708"
+      },
+      {
+        "name": "item_id_unique",
+        "status": "PASS",
+        "detail": "重复 item_id=0"
+      },
+      {
+        "name": "phrase_canonical_unique",
+        "status": "PASS",
+        "detail": "重复 Phrase canonical=0"
+      },
+      {
+        "name": "phrase_source_ref_closure",
+        "status": "PASS",
+        "detail": "无来源 Phrase=0"
+      },
+      {
+        "name": "phrase_source_block_exists",
+        "status": "PASS",
+        "detail": "断链=0"
+      },
+      {
+        "name": "phrase_evidence_complete",
+        "status": "PASS",
+        "detail": "缺 evidence/emphasis=0"
+      },
+      {
+        "name": "phrase_content_hash_reproduced",
+        "status": "PASS",
+        "detail": "不一致=0"
+      },
+      {
+        "name": "phrase_emphasis_consistent",
+        "status": "PASS",
+        "detail": "不一致=0"
+      },
+      {
+        "name": "knock_around_frozen",
+        "status": "PASS",
+        "detail": "Vocabulary knock around ( 未改动"
+      },
+      {
+        "name": "knock_around_not_phrase",
+        "status": "PASS",
+        "detail": "Phrase 中 knock around ( = 0"
+      },
+      {
+        "name": "prefer_not_stored",
+        "status": "PASS",
+        "detail": "prefer A to B 未落库"
+      },
+      {
+        "name": "body_multiword_excluded",
+        "status": "PASS",
+        "detail": "普通正文多词单位落库=0"
+      },
+      {
+        "name": "sentence_pattern_excluded",
+        "status": "PASS",
+        "detail": "固定句型未落库"
+      },
+      {
+        "name": "no_bold_phrase",
+        "status": "PASS",
+        "detail": "BOLD Phrase=0（本册预期 0）"
+      },
+      {
+        "name": "no_table_drift",
+        "status": "PASS",
+        "detail": "变化表=[]"
+      },
+      {
+        "name": "audio_mapping_all_candidate",
+        "status": "PASS",
+        "detail": "非 CANDIDATE 映射=0"
+      },
+      {
+        "name": "no_ai_artifact",
+        "status": "PASS",
+        "detail": "ai_artifact=0"
+      },
+      {
+        "name": "phrase_text_clean",
+        "status": "PASS",
+        "detail": "连字/控制字符=0"
+      },
+      {
+        "name": "mp3_count_54",
+        "status": "PASS",
+        "detail": "MP3=54"
+      },
+      {
+        "name": "single_active_snapshot",
+        "status": "PASS",
+        "detail": "active snapshot=1"
+      }
+    ],
+    "failures": [],
+    "emphasis_distribution": {
+      "PLAIN": 44,
+      "UNKNOWN": 4
+    },
+    "requirement_distribution": {
+      "CORE": 2,
+      "RECOGNITION": 21
+    },
+    "review_distribution": {
+      "NEED_REVIEW": 23
+    }
+  },
+  "boundaries": {
+    "v3 是否修改": "否（只读打开 + 复制工作副本）",
+    "v1 / v2 是否修改": "否",
+    "原始 PDF 是否修改": "否（只读打开）",
+    "MP3 是否修改": "否（54 个，未触碰）",
+    "既有 parser / builder 是否修改": "否（本次新增构建工具 build_phrase_v01.py）",
+    "最高指导原则 / P1-04 / E2 / F1 报告是否修改": "否",
+    "是否调用 AI / 云端模型": "否（0 次）",
+    "是否 OCR / TTS / 下载 / 新增依赖": "否（0）",
+    "是否创建数据库以外的正式数据文件": "否（仅 v4 SQLite 与 audit 报告）",
+    "是否访问 D:\\ZhixueAI": "否"
+  },
+  "open_items": [
+    "`prefer A to B`：证据存在、资源类型未定，保留人工审核队列（本阶段不落库）。",
+    "`knock around (`：词表 headword 边界冻结异常，未处理。",
+    "语言注释型 Phrase（`protect... from...` / `along the way`）：emphasis=UNKNOWN → requirement=CORE 属 F1 设计提案，review_status=NEED_REVIEW 待人工确认。",
+    "21 条词表多词 Phrase 的 review_status 沿用同源 Vocabulary（v3 均为 NEED_REVIEW）；其中包含历史 POS-null 遗留状态，按 F1 §14 未在本阶段改写。",
+    "source_ref.item_type 既有 Vocabulary 行为 'learning_item'，本次 Phrase 行按 F1 §12/§17 使用 'phrase'；既有行未改动（如需统一枚举，应另立受控任务）。"
+  ]
+}

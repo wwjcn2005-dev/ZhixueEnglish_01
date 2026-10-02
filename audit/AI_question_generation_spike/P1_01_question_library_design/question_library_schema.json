@@ -1,0 +1,299 @@
+{
+ "design": "AI Question Library V1",
+ "status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+ "stage": "P1-01",
+ "engine": "sqlite",
+ "target_file": "structured/ai/question_library.db",
+ "target_file_note": "建议位置；本轮未创建任何文件与数据库。",
+ "separation_rules": {
+  "contentpack_v5": "只读；AI 题目一律不写入 contentpack，ai_artifact 必须保持 0 行",
+  "learning_db": "本轮零改动；在 source_kind/source_ref/source_version 打通前，AI 题目不得进入孩子可见流程",
+  "library": "可写、可审核、可版本化、可复用的独立资源库"
+ },
+ "id_conventions": {
+  "run_id": "AIRUN:<yyyyMMddTHHmmss>:<4hex>",
+  "question_id": "AIQ:<12hex>（跨版本稳定）",
+  "event_id": "AIEV:<yyyyMMddTHHmmss>:<4hex>",
+  "learning_object_ref": "<contentpack learning_item.item_id>，例如 FLTRP-EN-7A-2022CUR:V:EAB999ECEC5C",
+  "block_ref": "<contentpack content_block.block_id>，例如 FLTRP-EN-7A-2022CUR:P22:B6"
+ },
+ "tables": [
+  {
+   "name": "generation_run",
+   "purpose": "一次 AI 调用的完整账目（0~N 道题的共同来源）",
+   "primary_key": ["run_id"],
+   "foreign_keys": [],
+   "columns": [
+    {"name": "run_id", "type": "TEXT", "null": false, "key": "PK"},
+    {"name": "provider", "type": "TEXT", "null": false},
+    {"name": "model", "type": "TEXT", "null": false},
+    {"name": "prompt_version", "type": "TEXT", "null": false},
+    {"name": "context_hash", "type": "TEXT", "null": false, "note": "input_context.json 的 SHA256"},
+    {"name": "context_ref", "type": "TEXT", "note": "落盘文件路径"},
+    {"name": "raw_response_ref", "type": "TEXT", "note": "原始响应文件路径；reasoning 只在此，不入库为字段"},
+    {"name": "target_unit_id", "type": "TEXT"},
+    {"name": "target_section_id", "type": "TEXT"},
+    {"name": "target_activity_id", "type": "TEXT"},
+    {"name": "generation_scope_key", "type": "TEXT", "null": false, "note": "批次级复用键"},
+    {"name": "requested_max", "type": "INTEGER"},
+    {"name": "max_tokens", "type": "INTEGER", "note": "P0 实测：4096 截断，8192 成功"},
+    {"name": "finish_reason", "type": "TEXT", "note": "stop / length / ..."},
+    {"name": "usage_json", "type": "TEXT", "json": true},
+    {"name": "elapsed_ms", "type": "INTEGER", "note": "P0 实测 6500 ~ 113300"},
+    {"name": "returned_count", "type": "INTEGER", "null": false, "default": 0},
+    {"name": "run_status", "type": "TEXT", "null": false, "enum": ["OK", "TRUNCATED", "API_ERROR", "INSUFFICIENT_EVIDENCE"]},
+    {"name": "run_note", "type": "TEXT", "note": "模型自述理由（如证据不足说明）"},
+    {"name": "started_at", "type": "TEXT", "null": false}
+   ],
+   "indexes": [
+    {"name": "idx_run_scope", "columns": ["generation_scope_key"]},
+    {"name": "idx_run_target", "columns": ["target_section_id", "target_activity_id"]},
+    {"name": "idx_run_started", "columns": ["started_at"]}
+   ],
+   "unique_constraints": [],
+   "note": "不加唯一约束：同一范围允许多次尝试（如第一次截断返回 0 题）"
+  },
+  {
+   "name": "ai_question",
+   "purpose": "题目实体：内容 + 教材定位 + 生命周期 + 复用指纹",
+   "primary_key": ["question_id", "version"],
+   "foreign_keys": [
+    {"column": "run_id", "references": "generation_run(run_id)"}
+   ],
+   "columns": [
+    {"name": "question_id", "type": "TEXT", "null": false, "key": "PK"},
+    {"name": "version", "type": "INTEGER", "null": false, "key": "PK", "note": "只增不改"},
+    {"name": "question_type", "type": "TEXT", "null": false, "enum": ["fill", "vocab_choice", "reading_choice", "reading_judge"]},
+    {"name": "question_text", "type": "TEXT", "null": false},
+    {"name": "options_json", "type": "TEXT", "json": true, "note": "非选择题为 NULL"},
+    {"name": "correct_option", "type": "TEXT", "note": "非选择题为 NULL"},
+    {"name": "correct_answer", "type": "TEXT", "null": false},
+    {"name": "explanation", "type": "TEXT"},
+    {"name": "difficulty", "type": "TEXT", "enum": ["easy", "medium"]},
+    {"name": "run_id", "type": "TEXT", "null": false, "key": "FK"},
+    {"name": "textbook_id", "type": "TEXT", "null": false, "external": "contentpack.textbook_edition.textbook_id"},
+    {"name": "curriculum_version", "type": "TEXT", "external": "contentpack.textbook_edition.curriculum"},
+    {"name": "content_snapshot_id", "type": "TEXT", "external": "contentpack.parse_snapshot.snapshot_id"},
+    {"name": "unit_id", "type": "TEXT", "null": false, "external": "contentpack.unit.unit_id"},
+    {"name": "section_id", "type": "TEXT", "null": false, "external": "contentpack.section.section_id"},
+    {"name": "activity_id", "type": "TEXT", "external": "contentpack.activity.activity_id"},
+    {"name": "page", "type": "INTEGER", "null": false, "note": "教材页码"},
+    {"name": "lifecycle_status", "type": "TEXT", "null": false, "enum": ["GENERATED", "VALIDATED", "PENDING_REVIEW", "APPROVED", "ACTIVE", "REJECTED", "DISABLED"], "note": "查询用物化字段；权威来源是 question_event"},
+    {"name": "stale", "type": "INTEGER", "null": false, "default": 0, "note": "与 lifecycle_status 正交"},
+    {"name": "stale_reason", "type": "TEXT", "enum": ["EVIDENCE_CHANGED", "PROMPT_CHANGED", "MODEL_CHANGED", "VALIDATOR_CHANGED", null]},
+    {"name": "stale_since", "type": "TEXT"},
+    {"name": "question_fingerprint", "type": "TEXT", "null": false, "note": "题级去重与 REJECTED 抑制"},
+    {"name": "created_at", "type": "TEXT", "null": false},
+    {"name": "updated_at", "type": "TEXT", "null": false}
+   ],
+   "indexes": [
+    {"name": "idx_q_scope_lifecycle", "columns": ["section_id", "activity_id", "lifecycle_status", "stale"], "note": "复用查询主路径"},
+    {"name": "idx_q_scope_type", "columns": ["section_id", "activity_id", "question_type", "lifecycle_status"]},
+    {"name": "idx_q_run", "columns": ["run_id"]},
+    {"name": "idx_q_fingerprint", "columns": ["question_fingerprint"]},
+    {"name": "idx_q_stale", "columns": ["stale", "stale_reason"]}
+   ],
+   "unique_constraints": [
+    {"name": "pk_ai_question", "columns": ["question_id", "version"], "note": "保证旧版本永不被覆盖"}
+   ],
+   "partial_unique_indexes": [
+    {"name": "uq_question_active", "columns": ["question_fingerprint"], "where": "lifecycle_status = 'ACTIVE' AND stale = 0", "note": "同一指纹只允许一条线上可用题；历史版本不受限"}
+   ]
+  },
+  {
+   "name": "question_evidence",
+   "purpose": "题目 ↔ 教材证据块（1:N；回答‘一道题可能依赖多个 block’）",
+   "primary_key": ["question_id", "version", "ordinal"],
+   "foreign_keys": [
+    {"columns": ["question_id", "version"], "references": "ai_question(question_id, version)"}
+   ],
+   "columns": [
+    {"name": "question_id", "type": "TEXT", "null": false, "key": "PK"},
+    {"name": "version", "type": "INTEGER", "null": false, "key": "PK"},
+    {"name": "ordinal", "type": "INTEGER", "null": false, "key": "PK", "note": "1 = 主证据"},
+    {"name": "block_id", "type": "TEXT", "null": false, "external": "contentpack.content_block.block_id"},
+    {"name": "evidence_quote", "type": "TEXT", "null": false, "note": "必须是对应 block 文本归一化后的逐字子串"},
+    {"name": "is_primary", "type": "INTEGER", "null": false, "default": 0}
+   ],
+   "indexes": [
+    {"name": "idx_qe_block", "columns": ["block_id"], "note": "支持“这个 block 被哪些题引用”反查"}
+   ],
+   "unique_constraints": [
+    {"name": "pk_question_evidence", "columns": ["question_id", "version", "ordinal"]}
+   ]
+  },
+  {
+   "name": "question_learning_object",
+   "purpose": "题目 ↔ LearningObject（接入 learning.db 掌握度聚合的唯一接缝）",
+   "primary_key": ["question_id", "version", "item_id"],
+   "foreign_keys": [
+    {"columns": ["question_id", "version"], "references": "ai_question(question_id, version)"}
+   ],
+   "columns": [
+    {"name": "question_id", "type": "TEXT", "null": false, "key": "PK"},
+    {"name": "version", "type": "INTEGER", "null": false, "key": "PK"},
+    {"name": "item_id", "type": "TEXT", "null": false, "key": "PK", "external": "contentpack.learning_item.item_id"},
+    {"name": "is_primary", "type": "INTEGER", "null": false, "default": 0}
+   ],
+   "indexes": [
+    {"name": "idx_qlo_item", "columns": ["item_id"], "note": "支持“测这个学习对象的有哪些题”以及掌握度联动"}
+   ],
+   "unique_constraints": [
+    {"name": "pk_question_learning_object", "columns": ["question_id", "version", "item_id"]}
+   ],
+   "note": "learning_record.item_id 与 mastery_state.item_id 继续指向 LearningObject，语义不变"
+  },
+  {
+   "name": "question_validation",
+   "purpose": "validator 结果（可随 validator 升级重跑，历史并存）",
+   "primary_key": ["question_id", "version", "validator_version"],
+   "foreign_keys": [
+    {"columns": ["question_id", "version"], "references": "ai_question(question_id, version)"}
+   ],
+   "columns": [
+    {"name": "question_id", "type": "TEXT", "null": false, "key": "PK"},
+    {"name": "version", "type": "INTEGER", "null": false, "key": "PK"},
+    {"name": "validator_version", "type": "TEXT", "null": false, "key": "PK", "note": "P0 已确认的为 v2"},
+    {"name": "validated_at", "type": "TEXT", "null": false},
+    {"name": "overall_status", "type": "TEXT", "null": false, "enum": ["PASS", "FAIL"]},
+    {"name": "checks_json", "type": "TEXT", "null": false, "json": true, "note": "8 项逐项布尔值"},
+    {"name": "answer_support_type", "type": "TEXT", "null": false, "enum": ["EXACT", "VERIFIABLE_REFERENCE", "VERIFIABLE_REPHRASE", "UNSUPPORTED"]},
+    {"name": "needs_human_review", "type": "INTEGER", "null": false, "default": 0, "note": "EXACT 陷阱升级标记"},
+    {"name": "out_of_scope_tokens_json", "type": "TEXT", "json": true},
+    {"name": "validation_note", "type": "TEXT"}
+   ],
+   "indexes": [
+    {"name": "idx_qv_overall", "columns": ["overall_status"]},
+    {"name": "idx_qv_needs_human", "columns": ["needs_human_review", "overall_status"]},
+    {"name": "idx_qv_support_type", "columns": ["answer_support_type"]}
+   ],
+   "unique_constraints": [
+    {"name": "pk_question_validation", "columns": ["question_id", "version", "validator_version"]}
+   ]
+  },
+  {
+   "name": "question_event",
+   "purpose": "生命周期与人工审核事件（append-only，权威来源）",
+   "primary_key": ["event_id"],
+   "foreign_keys": [
+    {"columns": ["question_id", "version"], "references": "ai_question(question_id, version)"}
+   ],
+   "columns": [
+    {"name": "event_id", "type": "TEXT", "null": false, "key": "PK"},
+    {"name": "question_id", "type": "TEXT", "null": false},
+    {"name": "version", "type": "INTEGER", "null": false},
+    {"name": "event_type", "type": "TEXT", "null": false, "enum": ["VALIDATED", "REVIEW_APPROVED", "REVIEW_REJECTED", "ACTIVATED", "DISABLED", "MARKED_STALE"]},
+    {"name": "from_status", "type": "TEXT"},
+    {"name": "to_status", "type": "TEXT"},
+    {"name": "actor_kind", "type": "TEXT", "null": false, "enum": ["machine", "human"]},
+    {"name": "actor", "type": "TEXT", "null": false},
+    {"name": "reason_code", "type": "TEXT", "enum": ["TEXTBOOK_MISMATCH", "AMBIGUOUS_ANSWER", "BAD_DISTRACTOR", "OUT_OF_SCOPE", "LOW_VALUE", "OTHER", null]},
+    {"name": "reason_note", "type": "TEXT"},
+    {"name": "created_at", "type": "TEXT", "null": false}
+   ],
+   "indexes": [
+    {"name": "idx_event_question", "columns": ["question_id", "version", "created_at"]},
+    {"name": "idx_event_type", "columns": ["event_type", "created_at"]}
+   ],
+   "unique_constraints": [
+    {"name": "pk_question_event", "columns": ["event_id"]}
+   ],
+   "note": "人工审核并入事件表，避免‘为什么被批准’出现两个事实源"
+  }
+ ],
+ "lifecycle": {
+  "persisted_enum": ["GENERATED", "VALIDATED", "PENDING_REVIEW", "APPROVED", "ACTIVE", "REJECTED", "DISABLED"],
+  "derived_states": {
+   "GENERATED": "存在 ai_question，但无 overall_status=PASS 的 validation",
+   "VALIDATED": "存在 PASS validation，且无 review 事件",
+   "PENDING_REVIEW": "存在 PASS validation，且无 review 事件（等待人工）"
+  },
+  "orthogonal_field": {
+   "stale": "0/1",
+   "stale_reason": ["EVIDENCE_CHANGED", "PROMPT_CHANGED", "MODEL_CHANGED", "VALIDATOR_CHANGED"],
+   "note": "STALE 不是生命周期状态；一道 ACTIVE 题可以同时 stale=1"
+  },
+  "source_of_truth": "question_event（append-only）",
+  "materialized_column": "ai_question.lifecycle_status",
+  "hard_rules": [
+   "validator PASS 只能到 VALIDATED / PENDING_REVIEW，绝不等于 APPROVED",
+   "只有 ACTIVE 允许进入正式学习系统",
+   "APPROVED 必须经显式启用才成为 ACTIVE",
+   "旧版本永不删除、永不 UPDATE 内容字段"
+  ]
+ },
+ "reuse": {
+  "generation_scope_key": {
+   "formula": "hash(section_id, activity_id, prompt_version, context_hash)",
+   "attached_to": "generation_run",
+   "purpose": "防止同一范围重复调用 AI（0 次调用即可判定）",
+   "note": "刻意不含 question_type —— 一次调用会同时产出多种题型"
+  },
+  "question_fingerprint": {
+   "formula": "hash(section_id, activity_id, question_type, normalized(question_text), normalized(evidence_quote))",
+   "attached_to": "ai_question",
+   "purpose": "题级去重、REJECTED 抑制、STALE 后重生识别",
+   "note": "刻意不含 prompt_version / model —— 被驳回的题不得换个提示词换马甲重进"
+  },
+  "hit_rules": [
+   {"hit": "ACTIVE 且 stale=0", "action": "直接复用，0 次 AI 调用"},
+   {"hit": "PENDING_REVIEW 或 APPROVED", "action": "复用待审条目，不重复生成"},
+   {"hit": "REJECTED（指纹相同）", "action": "直接丢弃，不再生成（默认永久，需显式覆盖）"},
+   {"hit": "stale=1", "action": "不作为可用题；需重新校验或重新生成"}
+  ],
+  "forbidden": "禁止页面打开即调用 AI"
+ },
+ "provenance_fields": {
+  "must_keep": ["model", "prompt_version", "context_hash", "generation_run_id", "generated_at", "validator_version", "content_snapshot_id"],
+  "note": "reasoning_content 不入库为字段，只保留 raw_response_ref 指向原始文件"
+ },
+ "evidence_relation": {
+  "cardinality": "question 1:N evidence",
+  "join_table": "question_evidence",
+  "required_fields": ["block_id", "evidence_quote"],
+  "why_not_json": "引文回溯是最高频、最重要的查询，塞进 JSON 会使该查询失效"
+ },
+ "review_relation": {
+  "join_table": "question_event",
+  "event_types": ["REVIEW_APPROVED", "REVIEW_REJECTED", "ACTIVATED", "DISABLED"],
+  "required_fields": ["actor_kind", "actor", "reason_code", "created_at"]
+ },
+ "learning_db_integration": {
+  "current_state": "learning.db 本轮零改动；learning_record.item_id 继续指向 LearningObject",
+  "gap": "现有 learning_record 无法回答‘做的是哪一道题的哪个版本’",
+  "proposed_minimal_migration": [
+   "ALTER TABLE learning_record ADD COLUMN source_kind TEXT  -- contentpack | ai_library",
+   "ALTER TABLE learning_record ADD COLUMN source_ref TEXT   -- AIQ:9F3C1A2B7D04",
+   "ALTER TABLE learning_record ADD COLUMN source_version INTEGER",
+   "CREATE INDEX idx_record_source ON learning_record(source_kind, source_ref)"
+  ],
+  "migration_executed_in_this_stage": false,
+  "blocking_rule": "在该迁移完成前，AI 题目不得进入孩子可见的学习流程"
+ },
+ "exact_trap_rule": {
+  "trigger": "answer_support_type == 'EXACT' 且 answer 文本同样出现在 question_text 或 options 自身中",
+  "effect": "needs_human_review = 1，禁止走自动快通道",
+  "implemented_in_validator": false,
+  "implemented_in_library": "设计：由题库侧判定，不需要改 validator v2"
+ },
+ "json_fields_total": ["options_json", "checks_json", "out_of_scope_tokens_json", "usage_json"],
+ "not_implemented": [
+  "未创建任何数据库表",
+  "未创建任何数据库文件",
+  "未修改 learning.db",
+  "未修改 contentpack v5",
+  "未修改 structured/ 正式数据",
+  "未修改 validator v2",
+  "未调用任何 AI",
+  "未重新解析 PDF"
+ ],
+ "explicitly_out_of_scope": [
+  "不修改 contentpack，不把 AI 题目混入教材原始数据",
+  "不直接覆盖旧题",
+  "不允许 validator PASS 自动 ACTIVE",
+  "不允许页面直接触发生成",
+  "不把一次生成结果当作临时响应后丢弃",
+  "不把 AI 原始 reasoning 当作正式题目字段",
+  "不提前建立十几张表的复杂系统"
+ ]
+}

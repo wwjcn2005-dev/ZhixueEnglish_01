@@ -1,0 +1,1079 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU21",
+  "audio_num": "AU21",
+  "filename": "21_Unit 3_Understanding ideas_2 Read the film review. What is the father's love like according to the writer.mp3",
+  "duration_ms": 105352,
+  "segment_count": 16,
+  "word_count": 196,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3400,
+      "text": "Unit 3. Family Ties"
+    },
+    {
+      "start_ms": 4720,
+      "end_ms": 6960,
+      "text": "Understanding Ideas"
+    },
+    {
+      "start_ms": 8000,
+      "end_ms": 9440,
+      "text": "Activity too"
+    },
+    {
+      "start_ms": 11000,
+      "end_ms": 17660,
+      "text": "Read the film review. What is the father's love like according to the writer?"
+    },
+    {
+      "start_ms": 19560,
+      "end_ms": 21020,
+      "text": "Silent Love"
+    },
+    {
+      "start_ms": 23000,
+      "end_ms": 27420,
+      "text": "Along a mountain road, a handsome young man walks fast."
+    },
+    {
+      "start_ms": 27420,
+      "end_ms": 35920,
+      "text": "An older man with a strict face follows him. This is from my favourite film, Postman in"
+    },
+    {
+      "start_ms": 35920,
+      "end_ms": 43740,
+      "text": "the Mountains. It's a touching story about the love between father and son. For years,"
+    },
+    {
+      "start_ms": 44240,
+      "end_ms": 49620,
+      "text": "the father served as the postman for this area. He was often absent from home,"
+    },
+    {
+      "start_ms": 50060,
+      "end_ms": 56000,
+      "text": "and the son seldom saw him. But now the son is taking over his father's position."
+    },
+    {
+      "start_ms": 56780,
+      "end_ms": 64380,
+      "text": "The father goes with him on his first day of work. Along the way, they start to see into each"
+    },
+    {
+      "start_ms": 64380,
+      "end_ms": 73560,
+      "text": "other's hearts. For the first time, the son carries his father across a cold river. It brings back"
+    },
+    {
+      "start_ms": 73560,
+      "end_ms": 80620,
+      "text": "the father's memory of carrying the son on his back. Tears quietly run down his face."
+    },
+    {
+      "start_ms": 81720,
+      "end_ms": 88720,
+      "text": "This film shows a traditional Chinese father. He is happy about his son's growth,"
+    },
+    {
+      "start_ms": 89280,
+      "end_ms": 95860,
+      "text": "but he just hides his care in his heart. He doesn't give hugs or kisses to his son."
+    },
+    {
+      "start_ms": 97060,
+      "end_ms": 102160,
+      "text": "His love may be silent, but like a mountain, it is always there."
+    }
+  ],
+  "words": [
+    {
+      "word": "Unit",
+      "start_ms": 0,
+      "end_ms": 720
+    },
+    {
+      "word": "3.",
+      "start_ms": 720,
+      "end_ms": 1300
+    },
+    {
+      "word": "Family",
+      "start_ms": 1500,
+      "end_ms": 2620
+    },
+    {
+      "word": "Ties",
+      "start_ms": 2620,
+      "end_ms": 3400
+    },
+    {
+      "word": "Understanding",
+      "start_ms": 4720,
+      "end_ms": 5840
+    },
+    {
+      "word": "Ideas",
+      "start_ms": 5840,
+      "end_ms": 6960
+    },
+    {
+      "word": "Activity",
+      "start_ms": 8000,
+      "end_ms": 8960
+    },
+    {
+      "word": "too",
+      "start_ms": 8960,
+      "end_ms": 9440
+    },
+    {
+      "word": "Read",
+      "start_ms": 10840,
+      "end_ms": 11400
+    },
+    {
+      "word": "the",
+      "start_ms": 11400,
+      "end_ms": 11780
+    },
+    {
+      "word": "film",
+      "start_ms": 11780,
+      "end_ms": 12160
+    },
+    {
+      "word": "review.",
+      "start_ms": 12160,
+      "end_ms": 12720
+    },
+    {
+      "word": "What",
+      "start_ms": 13000,
+      "end_ms": 14020
+    },
+    {
+      "word": "is",
+      "start_ms": 14020,
+      "end_ms": 14300
+    },
+    {
+      "word": "the",
+      "start_ms": 14300,
+      "end_ms": 14520
+    },
+    {
+      "word": "father's",
+      "start_ms": 14520,
+      "end_ms": 15160
+    },
+    {
+      "word": "love",
+      "start_ms": 15160,
+      "end_ms": 15480
+    },
+    {
+      "word": "like",
+      "start_ms": 15480,
+      "end_ms": 16040
+    },
+    {
+      "word": "according",
+      "start_ms": 16040,
+      "end_ms": 16740
+    },
+    {
+      "word": "to",
+      "start_ms": 16740,
+      "end_ms": 17120
+    },
+    {
+      "word": "the",
+      "start_ms": 17120,
+      "end_ms": 17280
+    },
+    {
+      "word": "writer?",
+      "start_ms": 17280,
+      "end_ms": 17660
+    },
+    {
+      "word": "Silent",
+      "start_ms": 19560,
+      "end_ms": 20440
+    },
+    {
+      "word": "Love",
+      "start_ms": 20440,
+      "end_ms": 21020
+    },
+    {
+      "word": "Along",
+      "start_ms": 22600,
+      "end_ms": 23160
+    },
+    {
+      "word": "a",
+      "start_ms": 23160,
+      "end_ms": 23640
+    },
+    {
+      "word": "mountain",
+      "start_ms": 23640,
+      "end_ms": 23920
+    },
+    {
+      "word": "road,",
+      "start_ms": 23920,
+      "end_ms": 24480
+    },
+    {
+      "word": "a",
+      "start_ms": 24940,
+      "end_ms": 25120
+    },
+    {
+      "word": "handsome",
+      "start_ms": 25120,
+      "end_ms": 25460
+    },
+    {
+      "word": "young",
+      "start_ms": 25460,
+      "end_ms": 25900
+    },
+    {
+      "word": "man",
+      "start_ms": 25900,
+      "end_ms": 26340
+    },
+    {
+      "word": "walks",
+      "start_ms": 26340,
+      "end_ms": 26780
+    },
+    {
+      "word": "fast.",
+      "start_ms": 26780,
+      "end_ms": 27420
+    },
+    {
+      "word": "An",
+      "start_ms": 27420,
+      "end_ms": 28580
+    },
+    {
+      "word": "older",
+      "start_ms": 28580,
+      "end_ms": 28900
+    },
+    {
+      "word": "man",
+      "start_ms": 28900,
+      "end_ms": 29220
+    },
+    {
+      "word": "with",
+      "start_ms": 29220,
+      "end_ms": 29440
+    },
+    {
+      "word": "a",
+      "start_ms": 29440,
+      "end_ms": 29560
+    },
+    {
+      "word": "strict",
+      "start_ms": 29560,
+      "end_ms": 29920
+    },
+    {
+      "word": "face",
+      "start_ms": 29920,
+      "end_ms": 30520
+    },
+    {
+      "word": "follows",
+      "start_ms": 30520,
+      "end_ms": 30980
+    },
+    {
+      "word": "him.",
+      "start_ms": 30980,
+      "end_ms": 31300
+    },
+    {
+      "word": "This",
+      "start_ms": 32460,
+      "end_ms": 32760
+    },
+    {
+      "word": "is",
+      "start_ms": 32760,
+      "end_ms": 32980
+    },
+    {
+      "word": "from",
+      "start_ms": 32980,
+      "end_ms": 33200
+    },
+    {
+      "word": "my",
+      "start_ms": 33200,
+      "end_ms": 33460
+    },
+    {
+      "word": "favourite",
+      "start_ms": 33460,
+      "end_ms": 33840
+    },
+    {
+      "word": "film,",
+      "start_ms": 33840,
+      "end_ms": 34300
+    },
+    {
+      "word": "Postman",
+      "start_ms": 35080,
+      "end_ms": 35620
+    },
+    {
+      "word": "in",
+      "start_ms": 35620,
+      "end_ms": 35920
+    },
+    {
+      "word": "the",
+      "start_ms": 35920,
+      "end_ms": 36040
+    },
+    {
+      "word": "Mountains.",
+      "start_ms": 36040,
+      "end_ms": 36340
+    },
+    {
+      "word": "It's",
+      "start_ms": 37420,
+      "end_ms": 37880
+    },
+    {
+      "word": "a",
+      "start_ms": 37880,
+      "end_ms": 38000
+    },
+    {
+      "word": "touching",
+      "start_ms": 38000,
+      "end_ms": 38340
+    },
+    {
+      "word": "story",
+      "start_ms": 38340,
+      "end_ms": 38900
+    },
+    {
+      "word": "about",
+      "start_ms": 38900,
+      "end_ms": 39520
+    },
+    {
+      "word": "the",
+      "start_ms": 39520,
+      "end_ms": 39720
+    },
+    {
+      "word": "love",
+      "start_ms": 39720,
+      "end_ms": 40060
+    },
+    {
+      "word": "between",
+      "start_ms": 40060,
+      "end_ms": 40440
+    },
+    {
+      "word": "father",
+      "start_ms": 40440,
+      "end_ms": 40900
+    },
+    {
+      "word": "and",
+      "start_ms": 40900,
+      "end_ms": 41300
+    },
+    {
+      "word": "son.",
+      "start_ms": 41300,
+      "end_ms": 41600
+    },
+    {
+      "word": "For",
+      "start_ms": 42800,
+      "end_ms": 43340
+    },
+    {
+      "word": "years,",
+      "start_ms": 43340,
+      "end_ms": 43740
+    },
+    {
+      "word": "the",
+      "start_ms": 44240,
+      "end_ms": 44340
+    },
+    {
+      "word": "father",
+      "start_ms": 44340,
+      "end_ms": 44700
+    },
+    {
+      "word": "served",
+      "start_ms": 44700,
+      "end_ms": 45240
+    },
+    {
+      "word": "as",
+      "start_ms": 45240,
+      "end_ms": 45600
+    },
+    {
+      "word": "the",
+      "start_ms": 45600,
+      "end_ms": 45760
+    },
+    {
+      "word": "postman",
+      "start_ms": 45760,
+      "end_ms": 46380
+    },
+    {
+      "word": "for",
+      "start_ms": 46380,
+      "end_ms": 46680
+    },
+    {
+      "word": "this",
+      "start_ms": 46680,
+      "end_ms": 46840
+    },
+    {
+      "word": "area.",
+      "start_ms": 46840,
+      "end_ms": 47240
+    },
+    {
+      "word": "He",
+      "start_ms": 47780,
+      "end_ms": 48020
+    },
+    {
+      "word": "was",
+      "start_ms": 48020,
+      "end_ms": 48160
+    },
+    {
+      "word": "often",
+      "start_ms": 48160,
+      "end_ms": 48440
+    },
+    {
+      "word": "absent",
+      "start_ms": 48440,
+      "end_ms": 48880
+    },
+    {
+      "word": "from",
+      "start_ms": 48880,
+      "end_ms": 49220
+    },
+    {
+      "word": "home,",
+      "start_ms": 49220,
+      "end_ms": 49620
+    },
+    {
+      "word": "and",
+      "start_ms": 50060,
+      "end_ms": 50340
+    },
+    {
+      "word": "the",
+      "start_ms": 50340,
+      "end_ms": 50460
+    },
+    {
+      "word": "son",
+      "start_ms": 50460,
+      "end_ms": 50820
+    },
+    {
+      "word": "seldom",
+      "start_ms": 50820,
+      "end_ms": 51300
+    },
+    {
+      "word": "saw",
+      "start_ms": 51300,
+      "end_ms": 51720
+    },
+    {
+      "word": "him.",
+      "start_ms": 51720,
+      "end_ms": 51980
+    },
+    {
+      "word": "But",
+      "start_ms": 52720,
+      "end_ms": 53120
+    },
+    {
+      "word": "now",
+      "start_ms": 53120,
+      "end_ms": 53460
+    },
+    {
+      "word": "the",
+      "start_ms": 53460,
+      "end_ms": 53700
+    },
+    {
+      "word": "son",
+      "start_ms": 53700,
+      "end_ms": 53960
+    },
+    {
+      "word": "is",
+      "start_ms": 53960,
+      "end_ms": 54100
+    },
+    {
+      "word": "taking",
+      "start_ms": 54100,
+      "end_ms": 54360
+    },
+    {
+      "word": "over",
+      "start_ms": 54360,
+      "end_ms": 54860
+    },
+    {
+      "word": "his",
+      "start_ms": 54860,
+      "end_ms": 55100
+    },
+    {
+      "word": "father's",
+      "start_ms": 55100,
+      "end_ms": 55620
+    },
+    {
+      "word": "position.",
+      "start_ms": 55620,
+      "end_ms": 56000
+    },
+    {
+      "word": "The",
+      "start_ms": 56780,
+      "end_ms": 57500
+    },
+    {
+      "word": "father",
+      "start_ms": 57500,
+      "end_ms": 57820
+    },
+    {
+      "word": "goes",
+      "start_ms": 57820,
+      "end_ms": 58060
+    },
+    {
+      "word": "with",
+      "start_ms": 58060,
+      "end_ms": 58420
+    },
+    {
+      "word": "him",
+      "start_ms": 58420,
+      "end_ms": 58600
+    },
+    {
+      "word": "on",
+      "start_ms": 58600,
+      "end_ms": 58840
+    },
+    {
+      "word": "his",
+      "start_ms": 58840,
+      "end_ms": 59000
+    },
+    {
+      "word": "first",
+      "start_ms": 59000,
+      "end_ms": 59320
+    },
+    {
+      "word": "day",
+      "start_ms": 59320,
+      "end_ms": 59680
+    },
+    {
+      "word": "of",
+      "start_ms": 59680,
+      "end_ms": 59800
+    },
+    {
+      "word": "work.",
+      "start_ms": 59800,
+      "end_ms": 60200
+    },
+    {
+      "word": "Along",
+      "start_ms": 61080,
+      "end_ms": 61580
+    },
+    {
+      "word": "the",
+      "start_ms": 61580,
+      "end_ms": 61840
+    },
+    {
+      "word": "way,",
+      "start_ms": 61840,
+      "end_ms": 62120
+    },
+    {
+      "word": "they",
+      "start_ms": 62580,
+      "end_ms": 62740
+    },
+    {
+      "word": "start",
+      "start_ms": 62740,
+      "end_ms": 63100
+    },
+    {
+      "word": "to",
+      "start_ms": 63100,
+      "end_ms": 63340
+    },
+    {
+      "word": "see",
+      "start_ms": 63340,
+      "end_ms": 63700
+    },
+    {
+      "word": "into",
+      "start_ms": 63700,
+      "end_ms": 64060
+    },
+    {
+      "word": "each",
+      "start_ms": 64060,
+      "end_ms": 64380
+    },
+    {
+      "word": "other's",
+      "start_ms": 64380,
+      "end_ms": 64760
+    },
+    {
+      "word": "hearts.",
+      "start_ms": 64760,
+      "end_ms": 65120
+    },
+    {
+      "word": "For",
+      "start_ms": 66220,
+      "end_ms": 66780
+    },
+    {
+      "word": "the",
+      "start_ms": 66780,
+      "end_ms": 66880
+    },
+    {
+      "word": "first",
+      "start_ms": 66880,
+      "end_ms": 67220
+    },
+    {
+      "word": "time,",
+      "start_ms": 67220,
+      "end_ms": 67660
+    },
+    {
+      "word": "the",
+      "start_ms": 68260,
+      "end_ms": 68320
+    },
+    {
+      "word": "son",
+      "start_ms": 68320,
+      "end_ms": 68660
+    },
+    {
+      "word": "carries",
+      "start_ms": 68660,
+      "end_ms": 69140
+    },
+    {
+      "word": "his",
+      "start_ms": 69140,
+      "end_ms": 69360
+    },
+    {
+      "word": "father",
+      "start_ms": 69360,
+      "end_ms": 69780
+    },
+    {
+      "word": "across",
+      "start_ms": 69780,
+      "end_ms": 70400
+    },
+    {
+      "word": "a",
+      "start_ms": 70400,
+      "end_ms": 70760
+    },
+    {
+      "word": "cold",
+      "start_ms": 70760,
+      "end_ms": 71060
+    },
+    {
+      "word": "river.",
+      "start_ms": 71060,
+      "end_ms": 71480
+    },
+    {
+      "word": "It",
+      "start_ms": 72620,
+      "end_ms": 72980
+    },
+    {
+      "word": "brings",
+      "start_ms": 72980,
+      "end_ms": 73260
+    },
+    {
+      "word": "back",
+      "start_ms": 73260,
+      "end_ms": 73560
+    },
+    {
+      "word": "the",
+      "start_ms": 73560,
+      "end_ms": 73720
+    },
+    {
+      "word": "father's",
+      "start_ms": 73720,
+      "end_ms": 74220
+    },
+    {
+      "word": "memory",
+      "start_ms": 74220,
+      "end_ms": 74600
+    },
+    {
+      "word": "of",
+      "start_ms": 74600,
+      "end_ms": 75080
+    },
+    {
+      "word": "carrying",
+      "start_ms": 75080,
+      "end_ms": 75500
+    },
+    {
+      "word": "the",
+      "start_ms": 75500,
+      "end_ms": 75740
+    },
+    {
+      "word": "son",
+      "start_ms": 75740,
+      "end_ms": 76180
+    },
+    {
+      "word": "on",
+      "start_ms": 76180,
+      "end_ms": 76480
+    },
+    {
+      "word": "his",
+      "start_ms": 76480,
+      "end_ms": 76660
+    },
+    {
+      "word": "back.",
+      "start_ms": 76660,
+      "end_ms": 76980
+    },
+    {
+      "word": "Tears",
+      "start_ms": 78160,
+      "end_ms": 78680
+    },
+    {
+      "word": "quietly",
+      "start_ms": 78680,
+      "end_ms": 79360
+    },
+    {
+      "word": "run",
+      "start_ms": 79360,
+      "end_ms": 79700
+    },
+    {
+      "word": "down",
+      "start_ms": 79700,
+      "end_ms": 80000
+    },
+    {
+      "word": "his",
+      "start_ms": 80000,
+      "end_ms": 80260
+    },
+    {
+      "word": "face.",
+      "start_ms": 80260,
+      "end_ms": 80620
+    },
+    {
+      "word": "This",
+      "start_ms": 81720,
+      "end_ms": 82480
+    },
+    {
+      "word": "film",
+      "start_ms": 82480,
+      "end_ms": 82980
+    },
+    {
+      "word": "shows",
+      "start_ms": 82980,
+      "end_ms": 83540
+    },
+    {
+      "word": "a",
+      "start_ms": 83540,
+      "end_ms": 83900
+    },
+    {
+      "word": "traditional",
+      "start_ms": 83900,
+      "end_ms": 84380
+    },
+    {
+      "word": "Chinese",
+      "start_ms": 84380,
+      "end_ms": 85020
+    },
+    {
+      "word": "father.",
+      "start_ms": 85020,
+      "end_ms": 85540
+    },
+    {
+      "word": "He",
+      "start_ms": 86580,
+      "end_ms": 86740
+    },
+    {
+      "word": "is",
+      "start_ms": 86740,
+      "end_ms": 86880
+    },
+    {
+      "word": "happy",
+      "start_ms": 86880,
+      "end_ms": 87240
+    },
+    {
+      "word": "about",
+      "start_ms": 87240,
+      "end_ms": 87640
+    },
+    {
+      "word": "his",
+      "start_ms": 87640,
+      "end_ms": 87920
+    },
+    {
+      "word": "son's",
+      "start_ms": 87920,
+      "end_ms": 88400
+    },
+    {
+      "word": "growth,",
+      "start_ms": 88400,
+      "end_ms": 88720
+    },
+    {
+      "word": "but",
+      "start_ms": 89280,
+      "end_ms": 89660
+    },
+    {
+      "word": "he",
+      "start_ms": 89660,
+      "end_ms": 89820
+    },
+    {
+      "word": "just",
+      "start_ms": 89820,
+      "end_ms": 90100
+    },
+    {
+      "word": "hides",
+      "start_ms": 90100,
+      "end_ms": 90520
+    },
+    {
+      "word": "his",
+      "start_ms": 90520,
+      "end_ms": 90820
+    },
+    {
+      "word": "care",
+      "start_ms": 90820,
+      "end_ms": 91260
+    },
+    {
+      "word": "in",
+      "start_ms": 91260,
+      "end_ms": 91660
+    },
+    {
+      "word": "his",
+      "start_ms": 91660,
+      "end_ms": 91840
+    },
+    {
+      "word": "heart.",
+      "start_ms": 91840,
+      "end_ms": 92220
+    },
+    {
+      "word": "He",
+      "start_ms": 93200,
+      "end_ms": 93420
+    },
+    {
+      "word": "doesn't",
+      "start_ms": 93420,
+      "end_ms": 93740
+    },
+    {
+      "word": "give",
+      "start_ms": 93740,
+      "end_ms": 93920
+    },
+    {
+      "word": "hugs",
+      "start_ms": 93920,
+      "end_ms": 94420
+    },
+    {
+      "word": "or",
+      "start_ms": 94420,
+      "end_ms": 94740
+    },
+    {
+      "word": "kisses",
+      "start_ms": 94740,
+      "end_ms": 95060
+    },
+    {
+      "word": "to",
+      "start_ms": 95060,
+      "end_ms": 95380
+    },
+    {
+      "word": "his",
+      "start_ms": 95380,
+      "end_ms": 95560
+    },
+    {
+      "word": "son.",
+      "start_ms": 95560,
+      "end_ms": 95860
+    },
+    {
+      "word": "His",
+      "start_ms": 97060,
+      "end_ms": 97220
+    },
+    {
+      "word": "love",
+      "start_ms": 97220,
+      "end_ms": 97620
+    },
+    {
+      "word": "may",
+      "start_ms": 97620,
+      "end_ms": 98060
+    },
+    {
+      "word": "be",
+      "start_ms": 98060,
+      "end_ms": 98180
+    },
+    {
+      "word": "silent,",
+      "start_ms": 98180,
+      "end_ms": 98620
+    },
+    {
+      "word": "but",
+      "start_ms": 99160,
+      "end_ms": 99540
+    },
+    {
+      "word": "like",
+      "start_ms": 99540,
+      "end_ms": 99780
+    },
+    {
+      "word": "a",
+      "start_ms": 99780,
+      "end_ms": 99940
+    },
+    {
+      "word": "mountain,",
+      "start_ms": 99940,
+      "end_ms": 100260
+    },
+    {
+      "word": "it",
+      "start_ms": 101060,
+      "end_ms": 101140
+    },
+    {
+      "word": "is",
+      "start_ms": 101140,
+      "end_ms": 101260
+    },
+    {
+      "word": "always",
+      "start_ms": 101260,
+      "end_ms": 101720
+    },
+    {
+      "word": "there.",
+      "start_ms": 101720,
+      "end_ms": 102160
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 11.6
+  }
+}

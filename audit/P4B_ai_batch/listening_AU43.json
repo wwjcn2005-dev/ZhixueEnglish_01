@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 6\nSECTION: DEVELOPING_IDEAS\nACTIVITY_AUDIO: 43_Unit 6_Developing ideas _1 Listen to the radio programme. What is it about.mp3\nOFFICIAL AUDIO TRANSCRIPT SEGMENTS (id, time range, text):\n[ASR:AU43:001 0-1820ms] Developing ideas\n[ASR:AU43:002 3000-4280ms] Activity 1\n[ASR:AU43:003 5500-10480ms] Listen to the radio programme. What is it about?\n[ASR:AU43:004 13000-15120ms] Welcome to Animal Stars.\n[ASR:AU43:005 16000-20740ms] Today's Animal Star is a special dog, Bingjie.\n[ASR:AU43:006 22000-25740ms] He was a rescue dog and worked with firemen.\n[ASR:AU43:007 25740-35720ms] Bingjie had a good sense of smell. He worked after many earthquakes and helped find missing\n[ASR:AU43:008 35720-45340ms] people. Over the years he saved many lives. His most famous rescue took place after the\n[ASR:AU43:009 45340-51680ms] 2008 when Chuan earthquake. He helped to find 13 people.\n[ASR:AU43:010 52900-62440ms] Binhjia died on 2 October 2021 at the age of 14. He was a hero.\n\nWrite 2-3 multiple-choice listening questions about what is said in this audio.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What is the name of the radio programme?\",\n      \"options\": [\"Animal Stars\", \"Rescue Dogs\", \"Firemen's Stories\"],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU43:004\",\n      \"evidence_quote\": \"Welcome to Animal Stars.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What was Bingjie?\",\n      \"options\": [\"A rescue dog\", \"A fireman\", \"A police dog\"],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU43:006\",\n      \"evidence_quote\": \"He was a rescue dog and worked with firemen.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"How many people did Bingjie help find in his most famous rescue?\",\n      \"options\": [\"13\", \"14\", \"2008\"],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU43:009\",\n      \"evidence_quote\": \"He helped to find 13 people.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 686,
+  "completion_tokens": 1092,
+  "total_tokens": 1778,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 834
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 430
+ }
+}

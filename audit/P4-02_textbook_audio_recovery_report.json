@@ -1,0 +1,122 @@
+{
+ "step": "P4-02 官方音频补全教材资源",
+ "run_id": "TRR:P4-02:V1",
+ "rule_set": "P4-02-textbook-audio-recovery-v1",
+ "generated_at": "2026-09-19T21:30:00",
+ "method": "deterministic-audio-evidence-recovery（复用 P3-06/P3-07/P3-08 既有对齐与 ASR 证据，不重跑 ASR、不重解析 PDF）",
+ "ai_calls": 0,
+ "ai": {"model": "none", "input_tokens": 0, "output_tokens": 0, "total_tokens": 0},
+ "carrier_model": {
+  "decision": "复用现有正式教材活动资源目录，不新建第二套体系",
+  "file": "structured/exercises/exercise_catalog_v4.json（v3 同一 schema 的下一版本）",
+  "how": [
+   "既有字段逐字保留：questions[].text = 教材原始印刷文本（含挖空原样不动）",
+   "用既有来源状态字段 answer_status 表达身份：TEXTBOOK_AUDIO_RECOVERED / NEED_REVIEW / NO_RELIABLE_SOURCE",
+   "新增最小字段 recovered：恢复文本 + 位置 + 音频/句段/文本块证据 + 置信度 + 方法 + generation_run_id + content_hash"
+  ],
+  "forbidden_paths_avoided": [
+   "未改 contentpack（L3 transcript / ai_artifact 保持 0 行）",
+   "未改 audio_resource_v1.json",
+   "未改 questionbank.db",
+   "未创建任何新数据库"
+  ]
+ },
+ "results": {
+  "targets": 14,
+  "textbook_audio_recovered_records": 3,
+  "need_review_records": 11,
+  "recovered_content_items": 16,
+  "recovered_by_audio": {"AU02": 4, "AU30": 6, "AU32": 6}
+ },
+ "formal_records": [
+  {"audio_id": "FLTRP-EN-7A-2022CUR:AU02", "unit": "Starter", "section": "GET_READY",
+   "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+   "instruction": "Listen and complete the conversation with a / an or a number.",
+   "recovered": [{"kind": "BLANK_FILL", "text": "two", "start_ms": 18840, "end_ms": 19300,
+                  "segment_id": "AR:AU02:S005", "segment_anchor": "overlap", "confidence": 0.9},
+                 {"kind": "BLANK_FILL", "text": "four", "start_ms": 21140, "end_ms": 21680,
+                  "segment_id": "AR:AU02:S005", "segment_anchor": "nearest_before", "confidence": 0.8},
+                 {"kind": "BLANK_FILL", "text": "an", "start_ms": 24960, "end_ms": 25120,
+                  "segment_id": "AR:AU02:S004", "segment_anchor": "nearest_after", "confidence": 0.8},
+                 {"kind": "BLANK_FILL", "text": "a", "start_ms": 26840, "end_ms": 27120,
+                  "segment_id": "AR:AU02:S004", "segment_anchor": "nearest_after", "confidence": 0.8}],
+   "declared_blanks": 4, "confirmed": 4,
+   "evidence": "官方 MP3 AU02 + ASR 词级时间（audit/P3-07_preview/asr/AU02.json）+ VERIFIED 段 AR:AU02:S004/S005"},
+  {"audio_id": "FLTRP-EN-7A-2022CUR:AU30", "unit": "Unit 4", "section": "DEVELOPING_IDEAS",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A1",
+   "instruction": "Listen to the news. What problems does Christmas bring?",
+   "recovered": [{"kind": "SELECT", "text": "365,000", "start_ms": 27720, "end_ms": 31200, "segment_id": "AR:AU30:S003", "confidence": 0.95},
+                 {"kind": "SELECT", "text": "millions", "start_ms": 37280, "end_ms": 37800, "segment_id": "AR:AU30:S004", "confidence": 0.95},
+                 {"kind": "SELECT", "text": "120", "start_ms": 43000, "end_ms": 44200, "segment_id": "AR:AU30:S004", "confidence": 0.8},
+                 {"kind": "SELECT", "text": "buying", "start_ms": 56200, "end_ms": 56560, "segment_id": "AR:AU30:S007", "confidence": 0.95},
+                 {"kind": "SELECT", "text": "think", "start_ms": 63180, "end_ms": 63480, "segment_id": "AR:AU30:S008", "confidence": 0.95},
+                 {"kind": "SELECT", "text": "green", "start_ms": 67820, "end_ms": 68160, "segment_id": "AR:AU30:S009", "confidence": 0.95}],
+   "declared_blanks": 6, "confirmed": 6,
+   "evidence": "官方 MP3 AU30 + ASR 词级时间 + VERIFIED 段 AR:AU30:S003/S004/S007/S008/S009",
+   "note": "印刷体每个空都写成 (a / b) 选择对；音频实际说出的那个即恢复值，且限制在该空对应位置附近判定"},
+  {"audio_id": "FLTRP-EN-7A-2022CUR:AU32", "unit": "Unit 4", "section": "DEVELOPING_IDEAS",
+   "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A2",
+   "instruction": "Listen again and complete the poster. Then write F (fact) or O (opinion) in the boxes.",
+   "recovered": [{"kind": "SELECT", "text": "365,000", "start_ms": 30300, "end_ms": 33780, "segment_id": "AR:AU32:S003", "confidence": 0.95},
+                 {"kind": "SELECT", "text": "millions", "start_ms": 39860, "end_ms": 40400, "segment_id": "AR:AU32:S004", "confidence": 0.95},
+                 {"kind": "SELECT", "text": "120", "start_ms": 45580, "end_ms": 46780, "segment_id": "AR:AU32:S004", "confidence": 0.8},
+                 {"kind": "SELECT", "text": "buying", "start_ms": 58780, "end_ms": 59140, "segment_id": "AR:AU32:S007", "confidence": 0.95},
+                 {"kind": "SELECT", "text": "think", "start_ms": 65780, "end_ms": 66080, "segment_id": "AR:AU32:S008", "confidence": 0.95},
+                 {"kind": "SELECT", "text": "green", "start_ms": 70440, "end_ms": 70760, "segment_id": "AR:AU32:S009", "confidence": 0.95}],
+   "declared_blanks": 6, "confirmed": 6,
+   "evidence": "官方 MP3 AU32 + ASR 词级时间 + VERIFIED 段 AR:AU32:S003/S004/S007/S008/S009"}
+ ],
+ "need_review": [
+  {"audio_id": "…:AU09", "reason": "教材声明 6 空 / 音频证据确认 10 处 → 数量不一致，无法确定哪些是挖空"},
+  {"audio_id": "…:AU12", "reason": "听力材料（对话）未印刷，印刷体只有表格骨架；恢复需整段音频文本，缺 VERIFIED 段覆盖"},
+  {"audio_id": "…:AU16", "reason": "听力材料未印刷（整段未印刷内容），缺教材挖空结构"},
+  {"audio_id": "…:AU18", "reason": "排序类：教材印制条目为截断片段（如 “He holds the bird up to”），无法在音频中逐条可靠定位"},
+  {"audio_id": "…:AU23", "reason": "教材声明 5 空 / 音频确认 10 处 → 不一致"},
+  {"audio_id": "…:AU33", "reason": "听力材料未印刷，印刷体只有 ideas 骨架"},
+  {"audio_id": "…:AU37", "reason": "教材声明 5 空 / 音频确认 3 处，另有 2 处无 VERIFIED 段锚点"},
+  {"audio_id": "…:AU39", "reason": "教材声明 5 空 / 音频确认 3 处，另有 2 处无 VERIFIED 段锚点"},
+  {"audio_id": "…:AU40", "reason": "听力材料未印刷（整段未印刷内容）"},
+  {"audio_id": "…:AU43", "reason": "教材声明 6 空 / 音频确认 10 处 → 不一致"},
+  {"audio_id": "…:AU45", "reason": "教材声明 6 空 / 音频确认 9 处 → 不一致"}
+ ],
+ "quality_gates": {
+  "original_text_unchanged": "157/157 活动的 questions 与 v3 逐字一致",
+  "audio_id_valid": "全部命中 contentpack audio_asset",
+  "segment_id_valid": "全部命中 audio_resource_v1 segment_id",
+  "text_block_valid": "全部命中 contentpack content_block",
+  "time_range_valid": "0 ≤ start < end ≤ 音频时长，全部通过",
+  "content_hash_unique": "3 条记录 hash 唯一（本次质检 0 问题）",
+  "origin_identity": "TEXTBOOK_AUDIO_RECOVERED 与 TEXTBOOK_NATIVE / AI_GENERATED 分离；本轮 AI_GENERATED = 0",
+  "generation_run": "TRR:P4-02:V1 记录在 exercise_catalog_v4.json 的 recovery_run"
+ },
+ "next_stage_statistics": {
+  "listen_fill（听音补全，可确定性判定）": {"items": 16, "by_activity": 3, "source": "3 条正式恢复记录"},
+  "listen_choice（二选一听辨，可确定性判定）": {"items": 6, "source": "AU30 / AU32 各 6 处印刷选择对"},
+  "pending_after_review": {"structural_spans": 46, "audio_text_spans": 89, "records": 11,
+                           "note": "待人工复核后才可作为 听音理解 / 听音阅读 / 排序 资源；本轮不入正式资源"}
+ },
+ "invariants": {
+  "exercise_catalog_v3_sha256_prefix16": "eb2d8e7bd0bd7140",
+  "audio_resource_v1_sha256_prefix16": "7c57ff5f1dc6bcab",
+  "contentpack_v5_sha256_prefix16": "65829ca73e41b75a",
+  "questionbank_db_sha256_prefix16": "fb5d53955eaa775d",
+  "questionbank_questions": 1463,
+  "questionbank_by_origin": {"PROGRAM_GENERATED": 946, "TEXTBOOK_NATIVE": 517},
+  "audio_layer_status": {"VERIFIED": 47, "PARTIAL": 1, "NEED_MANUAL_CONFIRMATION": 6},
+  "audio_layer_segments": 800,
+  "original_mp3": 54,
+  "original_pdf": 1,
+  "contentpack_transcript_rows": 0,
+  "contentpack_ai_artifact_rows": 0
+ },
+ "tests": {
+  "learning_suite": "140 PASS / 0 FAIL / 0 SKIP",
+  "web_test_p2_3_exercises": "PASS",
+  "web_test_p2_1_c1_audio": "1 项既有失败（test_05 断言旧 Web 页面出现 /unit/unit1/exercises 链接）；已通过临时移走 v4 复跑证明与本任务无关"
+ },
+ "files_written": [
+  "structured/exercises/exercise_catalog_v4.json（新增，497,491 B）",
+  "builder/build_textbook_audio_recovery_v01.py（新增）",
+  "audit/P4-02_textbook_audio_recovery_report.json（新增，本文件）"
+ ]
+}

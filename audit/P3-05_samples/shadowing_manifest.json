@@ -1,0 +1,208 @@
+{
+ "task": "P3-05 短句跟读最小闭环（实验样本，不进入正式 contentpack）",
+ "generated_from": "contentpack content_block（只读）",
+ "audio_scope_note": "FULL_ACTIVITY_AUDIO = 该句所属教材活动的官方完整音频，不是句子级切片",
+ "rules": [
+  "教材原句，不改写/不拼接/不补全",
+  "不猜时间轴、不切音频、不做语音评分",
+  "跟读行为不作正式证据"
+ ],
+ "count": 10,
+ "sentences": [
+  {
+   "sentence_id": "P3-05-S001",
+   "text": "Hello everyone!",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA515DD3ECF0",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "note": "第 10 页 A4（Read and check your answers）自我介绍朗读",
+   "status": "CANDIDATE",
+   "speaker": null
+  },
+  {
+   "sentence_id": "P3-05-S002",
+   "text": "My name is Zhu Xiaomeng.",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA515DD3ECF0",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "note": "第 10 页 A4（Read and check your answers）自我介绍朗读",
+   "status": "CANDIDATE",
+   "speaker": null
+  },
+  {
+   "sentence_id": "P3-05-S003",
+   "text": "I’m thirteen years old.",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA515DD3ECF0",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "note": "第 10 页 A4（Read and check your answers）自我介绍朗读",
+   "status": "CANDIDATE",
+   "speaker": null
+  },
+  {
+   "sentence_id": "P3-05-S004",
+   "text": "My birthday is in May.",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA515DD3ECF0",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "note": "第 10 页 A4（Read and check your answers）自我介绍朗读",
+   "status": "CANDIDATE",
+   "speaker": null
+  },
+  {
+   "sentence_id": "P3-05-S005",
+   "text": "I love sports very much.",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA515DD3ECF0",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "note": "第 10 页 A4（Read and check your answers）自我介绍朗读",
+   "status": "CANDIDATE",
+   "speaker": null
+  },
+  {
+   "sentence_id": "P3-05-S006",
+   "text": "I like running, playing football and swimming.",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA515DD3ECF0",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "note": "第 10 页 A4（Read and check your answers）自我介绍朗读",
+   "status": "CANDIDATE",
+   "speaker": null
+  },
+  {
+   "sentence_id": "P3-05-S007",
+   "text": "I’m a bit nervous now, but I’m also happy to meet you.",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA515DD3ECF0",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "note": "第 10 页 A4（Read and check your answers）自我介绍朗读",
+   "status": "CANDIDATE",
+   "speaker": null
+  },
+  {
+   "sentence_id": "P3-05-S008",
+   "text": "I want to make friends with you all!",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": "A4",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA515DD3ECF0",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P15",
+   "note": "第 10 页 A4（Read and check your answers）自我介绍朗读",
+   "status": "CANDIDATE",
+   "speaker": null
+  },
+  {
+   "sentence_id": "P3-05-S009",
+   "text": "Yes, and it’s also a letter from Mum and me.",
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "activity_no": "A2",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:EF894C270C5B",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P29:B8",
+    "FLTRP-EN-7A-2022CUR:P29:B13",
+    "FLTRP-EN-7A-2022CUR:P29:B11",
+    "FLTRP-EN-7A-2022CUR:P29:B10",
+    "FLTRP-EN-7A-2022CUR:P29:B7",
+    "FLTRP-EN-7A-2022CUR:P29:B9",
+    "FLTRP-EN-7A-2022CUR:P29:B14",
+    "FLTRP-EN-7A-2022CUR:P29:B12"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P29",
+   "note": "第 24 页 A2（Read the passage and find out the meaning of the title）对话",
+   "status": "CANDIDATE",
+   "speaker": "Dad"
+  },
+  {
+   "sentence_id": "P3-05-S010",
+   "text": "We want to share some thoughts with you.",
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "activity_no": "A2",
+   "exercise_id": "FLTRP-EN-7A-2022CUR:X:EF894C270C5B",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+   "audio_scope": "FULL_ACTIVITY_AUDIO",
+   "source_type": "textbook",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P29:B8",
+    "FLTRP-EN-7A-2022CUR:P29:B13",
+    "FLTRP-EN-7A-2022CUR:P29:B11",
+    "FLTRP-EN-7A-2022CUR:P29:B10",
+    "FLTRP-EN-7A-2022CUR:P29:B7",
+    "FLTRP-EN-7A-2022CUR:P29:B9",
+    "FLTRP-EN-7A-2022CUR:P29:B14",
+    "FLTRP-EN-7A-2022CUR:P29:B12"
+   ],
+   "textbook_page": "FLTRP-EN-7A-2022CUR:P29",
+   "note": "第 24 页 A2（Read the passage and find out the meaning of the title）对话",
+   "status": "CANDIDATE",
+   "speaker": null
+  }
+ ],
+ "speaker_note": "对话行首的说话人标记被确定性拆分为 speaker 字段（教材原句内容不变）"
+}

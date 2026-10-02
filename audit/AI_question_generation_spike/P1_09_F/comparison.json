@@ -1,0 +1,98 @@
+{
+  "stage": "P1-09-F",
+  "summary": {
+    "fixtures": 2,
+    "second_answer_detected": 2,
+    "assessment_match": 2,
+    "false_negative": 0,
+    "false_positive_current_answer_excluded": 0,
+    "extra_flags_total": 3,
+    "ai_rollup_disagreements": 0,
+    "anchoring_pattern_hits": 0,
+    "coverage_all_complete": true,
+    "need_more_context_total": 0,
+    "cost": {
+      "ai_calls": 1,
+      "input_tokens": 1216,
+      "output_tokens": 9088,
+      "reasoning_tokens": 8533,
+      "total_tokens": 10304,
+      "latency_ms": 147647,
+      "tokens_per_question": 5152.0,
+      "p1_09_d_tokens_per_question": 1024.7,
+      "ratio_vs_p1_09_d": 5.03
+    }
+  },
+  "rows": [
+    {
+      "question_id": "FIX-C1",
+      "gold_answer_unique_expected": [
+        "FAIL"
+      ],
+      "gold_decision_rule": "not_accept",
+      "designed_second_answer": "students",
+      "program_assessment": "UNIQUE_RISK",
+      "expected_assessment": "UNIQUE_RISK",
+      "assessment_match": true,
+      "second_answer_detected": true,
+      "current_answer_valid": true,
+      "current_answer_wrongly_excluded": false,
+      "flagged_candidates": [
+        "students",
+        "parents",
+        "teachers"
+      ],
+      "extra_flagged_beyond_designed": [
+        "parents",
+        "teachers"
+      ],
+      "excluded_candidates": [],
+      "coverage": "COMPLETE",
+      "need_more_context": [],
+      "ai_vs_program_rollup_all_agree": true,
+      "anchoring_patterns_found": [],
+      "reasons": {
+        "friends": "课文原句为“with his friends”，语法和语义均正确。",
+        "students": "“和他的学生一起拉二胡”语法正确，语义通顺，未被课文排除。",
+        "parents": "“和他的父母一起拉二胡”语法正确，语义可理解，未被课文排除。",
+        "teachers": "“和他的老师一起拉二胡”语法正确，语义通顺，未被课文排除。"
+      }
+    },
+    {
+      "question_id": "FIX-C2",
+      "gold_answer_unique_expected": [
+        "FAIL"
+      ],
+      "gold_decision_rule": "not_accept",
+      "designed_second_answer": "word",
+      "program_assessment": "UNIQUE_RISK",
+      "expected_assessment": "UNIQUE_RISK",
+      "assessment_match": true,
+      "second_answer_detected": true,
+      "current_answer_valid": true,
+      "current_answer_wrongly_excluded": false,
+      "flagged_candidates": [
+        "word",
+        "name"
+      ],
+      "extra_flagged_beyond_designed": [
+        "name"
+      ],
+      "excluded_candidates": [
+        "picture"
+      ],
+      "coverage": "COMPLETE",
+      "need_more_context": [],
+      "ai_vs_program_rollup_all_agree": true,
+      "anchoring_patterns_found": [],
+      "reasons": {
+        "sentence": "课文原句为“writes the sentence”，语法和语义均正确。",
+        "word": "“写一个单词”语法正确，语义通顺，未被课文排除。",
+        "picture": "“write a picture”动宾搭配不当，应为 draw a picture。",
+        "name": "“写一个名字”语法正确，语义通顺，未被课文排除。"
+      }
+    }
+  ],
+  "anchoring_hits": [],
+  "note": "gold 仅在 AI 调用完成后读取；AI 输入快照已通过泄漏断言。"
+}

@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 5\nSECTION: READING_FOR_WRITING\nACTIVITY_INSTRUCTION: 41_Unit 5_Developing ideas _Reading for writing_2 Read the passage. Find out the importance of tea to the Chinese and the Brits.mp3\nPASSAGE BLOCKS (id + verbatim textbook text):\n[FLTRP-EN-7A-2022CUR:P93:B0] Look at the pictures and answer the questions. Use the words to help you.\n[FLTRP-EN-7A-2022CUR:P93:B8] 1\tWhat can you see in the pictures?2\tWhat do these pictures have in common?\n[FLTRP-EN-7A-2022CUR:P93:B9] drinkteacultureteahousehome\n[FLTRP-EN-7A-2022CUR:P93:B1] Read the passage. Find out the importance of tea to the Chinese and the Brits.\n[FLTRP-EN-7A-2022CUR:P93:B4] What is the most popular drink in the world after water? The answer is tea. It is not only good for our health, but also a key part of many cultures. What does tea mean to you?\n[FLTRP-EN-7A-2022CUR:P94:B0] In Chengdu, we have as many teahouses as leaves in a cup of tea! Grandpa used to take me to the teahouse. He and his friends drank tea and shared their news. Now I study abroad. Most of my classmates prefer coffee, but I will always choose green tea. It’s more than a drink for me.  A cup of warm tea always makes me feel like I’m back home.\n[FLTRP-EN-7A-2022CUR:P94:B1] It’s no secret that Brits love afternoon tea. But actually, we drink tea all day. My husband can drink eight cups a day! When my kids were young,  I always made tea for them after school. Now they’re adults, but they come back every weekend. We chat and relax in the yard with black tea and biscuits. It’s our way of connecting.\n\nWrite 2-3 multiple-choice reading questions about this passage.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"According to the passage, which drink is the most popular in the world after water?\",\n      \"options\": [\"Tea\", \"Coffee\", \"Milk\", \"Orange juice\"],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P93:B4\",\n      \"evidence_quote\": \"What is the most popular drink in the world after water? The answer is tea.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"For the writer from Chengdu, what does a cup of warm tea make them feel?\",\n      \"options\": [\n        \"Like they are back home\",\n        \"Very sleepy\",\n        \"Like they are abroad\",\n        \"Like drinking coffee\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P94:B0\",\n      \"evidence_quote\": \"A cup of warm tea always makes me feel like I’m back home.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"According to the British writer, what is tea for their family?\",\n      \"options\": [\n        \"A way of connecting\",\n        \"Only a morning drink\",\n        \"A drink for children only\",\n        \"Something they rarely have\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P94:B1\",\n      \"evidence_quote\": \"We chat and relax in the yard with black tea and biscuits. It’s our way of connecting.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 786,
+  "completion_tokens": 1686,
+  "total_tokens": 2472,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1315
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 530
+ }
+}

@@ -1,0 +1,119 @@
+{
+  "task": "P2-5 学习系统与完整学习闭环设计",
+  "version": "v1",
+  "generated_at": "2026-09-13",
+  "documents": {
+    "design_md": "audit/P2-5_learning_system_design.md",
+    "architecture_impact": "audit/P2-5_architecture_impact.md",
+    "models": [
+      "structured/learning/learning_model_v1.json",
+      "structured/learning/learning_evidence_model_v1.json",
+      "structured/learning/learning_flow_v1.json",
+      "structured/learning/intervention_model_v1.json",
+      "structured/learning/stage_assessment_model_v1.json",
+      "structured/learning/ai_role_model_v1.json"
+    ]
+  },
+  "core_decisions": [
+    {"id": "D1", "decision": "核心学习单位 = LearningObject（教材学习对象）", "not": "Activity / Exercise / Question"},
+    {"id": "D2", "decision": "‘学过’= 接触证据（study），只陈述事实", "not": "理解或掌握"},
+    {"id": "D3", "decision": "‘掌握较稳定’= ≥3 条证据 + ≥2 种任务类型 + 跨 ≥2 自然日 + 最近 3 次 ≥2 次正确 + 无未处理当前错误"},
+    {"id": "D4", "decision": "证据分强/中强/中/弱四档，弱证据不得单独升级状态"},
+    {"id": "D5", "decision": "AI 介入点 = 开放作答的教材范围内批改与归因 + 条件触发的教材范围内变式"},
+    {"id": "D6", "decision": "巩固 = 问题类型 → 干预映射；教材优先；粗心错误不干预"},
+    {"id": "D7", "decision": "专项学习存在，但为辅助入口（方案 B），以教材范围为组织单位"},
+    {"id": "D8", "decision": "阶段验证必要且可选，无分数，只做保持/迁移/综合检测"},
+    {"id": "D9", "decision": "闭环必须包含‘证据聚合（阈值）’与‘孩子决定’两个显式环节"},
+    {"id": "D10", "decision": "孩子决定学习内容/时间/节奏/是否巩固/是否验证；系统记录与聚合；AI 批改与建议"}
+  ],
+  "rejects": [
+    {"id": "REJECT-1", "concept": "看过 = 学过 = 会了"},
+    {"id": "REJECT-2", "concept": "做对一次 = 掌握"},
+    {"id": "REJECT-3", "concept": "错一次 = 薄弱点"},
+    {"id": "REJECT-4", "concept": "用 evidence_count 自动升级 mastery_level"},
+    {"id": "REJECT-5", "concept": "专项作为一级并列主线（方案 A）"},
+    {"id": "REJECT-6", "concept": "阶段测试给分数/排名/等级"},
+    {"id": "REJECT-7", "concept": "AI 自动决定学习路径"},
+    {"id": "REJECT-8", "concept": "巩固 = 错题无限再练"},
+    {"id": "REJECT-9", "concept": "AI 生成教材之外的内容"}
+  ],
+  "special_learning_options": {
+    "A_comparative": {"教育效果": "中", "自主性": "高但选择困难", "认知负担": "高", "产品复杂度": "高", "结论": "不推荐"},
+    "B_comparative": {"教育效果": "好", "自主性": "高", "认知负担": "低", "产品复杂度": "中", "结论": "推荐"},
+    "C_comparative": {"教育效果": "好但路径隐蔽", "自主性": "中", "认知负担": "低", "产品复杂度": "低", "结论": "不推荐"},
+    "recommended": "B"
+  },
+  "closed_loop": ["教材", "孩子选择", "学习(看/听/读+主动确认)", "教材练习(真实题型)", "AI批改(教材证据包)",
+                  "证据", "证据聚合(阈值)", "诊断(疑似)", "孩子决定", "干预/巩固(教材优先)",
+                  "再次验证(换任务/延迟)", "稳定掌握判定", "继续教材", "阶段验证(可选)", "综合诊断"],
+  "loop_deltas_vs_naive": [
+    {"delta": "新增‘证据聚合(阈值)’", "why": "防止单条证据直接诊断"},
+    {"delta": "新增显式‘孩子决定’", "why": "防止 AI 建议变成指令"},
+    {"delta": "阶段验证改为可选", "why": "它不是学习门槛"},
+    {"delta": "再次验证要求换任务或延迟", "why": "避免短期记忆伪装掌握"}
+  ],
+  "ai_role": {
+    "may": ["批改教材练习并给出依据", "解释教材内语言现象", "归纳错误类型并建议巩固",
+            "条件触发的教材范围内变式练习", "按教材要求反馈写作/口语"],
+    "must_not": ["决定学习内容与节奏", "自动推进", "生成教材外内容", "替换教材练习",
+                 "给分数排名等级", "证据不足时给确定结论"],
+    "outputs": ["correctness", "error_type", "reason", "in_textbook_scope",
+                "likely_slip", "need_intervention", "suggested_interventions"],
+    "cost_shape": {"closed_grading": "按需可缓存", "open_grading": "按需不可缓存",
+                   "explain": "低频可缓存", "variant": "低频条件触发可缓存",
+                   "diagnosis": "低频"}
+  },
+  "architecture": {
+    "KEEP": ["learning_record 事实层", "resource_pool 只读现状语义", "孩子主动确认交互（我看完了/记得·模糊·忘了）",
+             "P2-3/P2-4 教材数据层", "skipped/NULL/done 不计为正确证据的判分边界"],
+    "EXTEND": ["mastery_state 判定输入（任务类型/自然日/证据强度/是否无提示）",
+               "resource_pool 增加未处理/已处理与错误次数（区分当前错误与疑似薄弱）",
+               "Session/Task 区分教材主线/巩固/阶段验证会话",
+               "Web 练习结果页为 AI 批改结论预留位置（本阶段仍离线）"],
+    "REBUILD": ["掌握判定算法（现状只累加计数，mastery_level 从不推进）",
+                "诊断 → 巩固链路（当前缺失）",
+                "AI 批改链路（当前只有本地规则预检，无教材证据包与输出契约）"],
+    "DEFER": ["专项独立题库与进度统计", "阶段验证产品化页面", "家长/教师视图", "任何 gamification"]
+  },
+  "answers": {
+    "q1_unit_flow": "Starting out → Understanding ideas（听课文音频+读课文+教材题）→ Developing ideas（教材听力+语法/语音）→ Reading for writing（范例+写作）→ Presenting ideas/Reflection",
+    "q2_core_unit": "LearningObject",
+    "q3_learned": "≥1 条主动学习行为记录（study），只陈述事实",
+    "q4_stable": "≥3 条判断证据 + ≥2 种任务类型 + 跨 ≥2 自然日 + 最近 3 次 ≥2 次正确 + 无未处理当前错误",
+    "q5_evidence": "回忆/填空/阅读/听力/口语/写作 + 多次跨日表现；弱证据不可单独升级",
+    "q6_ai_best": "开放作答的教材范围内批改与归因；条件触发的教材范围内变式",
+    "q7_ai_never": "决定路径、自动推进、教材外内容、替换教材练习、分数排名、证据不足下结论",
+    "q8_intervention": "按 P1–P8 映射，教材优先，AI 兜底，粗心不干预",
+    "q9_special": "存在，方案 B（辅助入口，教材范围为单位）",
+    "q10_stage": "需要；解决保持/迁移/综合；可选、无分数、结果只进证据层",
+    "q11_boundary": "孩子决定内容/时间/节奏/是否巩固/是否验证；系统记录聚合；AI 批改建议；可建议不强制",
+    "q12_loop": "见 closed_loop",
+    "q13_arch": "KEEP/EXTEND/REBUILD/DEFER 见 architecture",
+    "q14_next": "①证据模型落地 ②教材证据包接线+离线 AI 批改契约原型 ③最小诊断-巩固闭环 ④阶段验证数据结构 ⑤之后才谈 UI"
+  },
+  "certainties": [
+    "学习对象与证据分层",
+    "单次事件不构成掌握/薄弱",
+    "教材优先的干预顺序",
+    "阶段验证定位（可选、无分数）",
+    "专项学习层级（辅助入口）",
+    "现有 mastery 未推进、诊断-巩固缺失、AI 批改未接入"
+  ],
+  "needs_real_kid_validation": [
+    "阶段验证题量与间隔",
+    "stable 阈值的松紧",
+    "孩子是否主动做巩固/验证与提示频率",
+    "错误类型分类粒度是否可理解",
+    "首页“需要再学”与专项入口是否真的降低翻找成本"
+  ],
+  "boundaries": {
+    "modified_learning_db": false,
+    "modified_contentpack": false,
+    "modified_p2_4_products": false,
+    "modified_android": false,
+    "modified_web_ui": false,
+    "real_ai_calls": 0,
+    "produced_real_learning_record": false,
+    "new_files_only": true
+  }
+}

@@ -1,0 +1,100 @@
+{
+ "items": [
+  {
+   "audio": "AU05",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "block": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "stem": "What is Mr Pan's job?",
+   "options": [
+    "English teacher",
+    "Music teacher",
+    "Student",
+    "Headmaster"
+   ],
+   "answer_index": 0,
+   "quote": "I’m Mr Pan, your English teacher.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU05",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "block": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "stem": "Which activity does Mr Pan mention as a hobby?",
+   "options": [
+    "Playing the piano",
+    "Drawing",
+    "Swimming",
+    "Cooking"
+   ],
+   "answer_index": 0,
+   "quote": "I like playing the piano, reading books and travelling.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU05",
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "block": "FLTRP-EN-7A-2022CUR:P14:B4",
+   "stem": "Which of the following is listed as a way to greet each other?",
+   "options": [
+    "Good morning",
+    "Good luck",
+    "Goodbye",
+    "Good job"
+   ],
+   "answer_index": 0,
+   "quote": "Good morning.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU11",
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P28:B19",
+   "stem": "What problem do students have according to the passage?",
+   "options": [
+    "They have more subjects and more homework",
+    "They have fewer activities",
+    "They have no friends",
+    "They have too much free time"
+   ],
+   "answer_index": 0,
+   "quote": "They have more subjects and more homework. It’s",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU11",
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P28:B25",
+   "stem": "What advice is given about doing tasks?",
+   "options": [
+    "Do the most important things",
+    "Do only easy things",
+    "Do nothing",
+    "Do tasks in any order"
+   ],
+   "answer_index": 0,
+   "quote": "Do the most important things",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU11",
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P28:B22",
+   "stem": "What does the passage say about a project?",
+   "options": [
+    "It may take weeks",
+    "It is always easy",
+    "It cannot be finished",
+    "It takes one day"
+   ],
+   "answer_index": 0,
+   "quote": "A project may take weeks.",
+   "skill": "detail"
+  }
+ ]
+}

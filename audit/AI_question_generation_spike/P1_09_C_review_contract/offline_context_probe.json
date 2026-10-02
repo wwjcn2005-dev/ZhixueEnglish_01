@@ -1,0 +1,1214 @@
+{
+  "stage": "P1-09-C",
+  "ai_calls": 0,
+  "chars_per_token": 3.074,
+  "note": "Section 上下文由 P1-08-B 修正后的 evidence_assembly 模块从 contentpack 只读重建；未修改任何正式数据。",
+  "questions": [
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "question_type": "vocab_choice",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "textbook_page": 32,
+      "answer": "band",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P37:B10"
+        ],
+        "evidence_quotes": [
+          "As a rock music lover, I play the electric guitar in the school band."
+        ],
+        "learning_object_rows": 2,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:V:758EAAF3C83B",
+          "FLTRP-EN-7A-2022CUR:X:90DF89A9545C"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          37,
+          41
+        ],
+        "section_pages_pdf": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "section_block_count": 78,
+        "section_activity_count": 8,
+        "section_activity_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_block_pages_without_activity": []
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B4",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "play"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B9",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "Rock music"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "1\t Rock music is coming out of my computer.  As a rock music lover, I play the electric guitar in the school band. Sometimes I write songs and share them online. There is so much fun  in music."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B11",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "2\t Right at this moment, the sound of Grandpa’s erhu cuts in. Yes, music is also my grandpa’s"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        }
+      ],
+      "term_hits_in_section": {
+        "art festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "hobby": [
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B5",
+          "FLTRP-EN-7A-2022CUR:P39:B9",
+          "FLTRP-EN-7A-2022CUR:P41:B6",
+          "FLTRP-EN-7A-2022CUR:P41:B11",
+          "FLTRP-EN-7A-2022CUR:P41:B10",
+          "FLTRP-EN-7A-2022CUR:P41:B0"
+        ],
+        "erhu": [
+          "FLTRP-EN-7A-2022CUR:P37:B5",
+          "FLTRP-EN-7A-2022CUR:P37:B11",
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B6",
+          "FLTRP-EN-7A-2022CUR:P39:B14",
+          "FLTRP-EN-7A-2022CUR:P40:B24"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 245,
+        "evidence_block_level": 834,
+        "extended_full_section": 9946
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 80,
+        "evidence_block_level": 271,
+        "extended_full_section": 3236
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+          "textbook_page": 32,
+          "chars": 193,
+          "text": "1\t Rock music is coming out of my computer.  As a rock music lover, I play the electric guitar in the school band. Sometimes I write songs and share them online. There is so much fun  in music."
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "question_type": "fill",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+      "textbook_page": 33,
+      "answer": "enjoy",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P38:B5"
+        ],
+        "evidence_quotes": [
+          "It feels great to enjoy our hobby together."
+        ],
+        "learning_object_rows": 2,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:V:2035233BCB26",
+          "FLTRP-EN-7A-2022CUR:X:76733936D5BA"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          37,
+          41
+        ],
+        "section_pages_pdf": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "section_block_count": 78,
+        "section_activity_count": 8,
+        "section_activity_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_block_pages_without_activity": []
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B3",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "5\t There is an art festival every autumn in my school. I decide to take part in it with Grandpa this year. After a week’s practice, we are on the stage.  I nod to Grandpa and we fire up our instruments."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B4",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "Everybody moves with our music."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B5",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "6\t Grandpa gives me a big smile, and I smile back.  It feels great to enjoy our hobby together."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P39:B1",
+          "pdf_page": 39,
+          "textbook_page": 34,
+          "text": "3"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P39:B3",
+          "pdf_page": 39,
+          "textbook_page": 34,
+          "text": "Choose the best main idea of the passage. a\tGrandpa and I have different hobbies.b\tI write a new song for the school art festival.c\t Grandpa and I put our music together and have great fun."
+        }
+      ],
+      "term_hits_in_section": {
+        "art festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "hobby": [
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B5",
+          "FLTRP-EN-7A-2022CUR:P39:B9",
+          "FLTRP-EN-7A-2022CUR:P41:B6",
+          "FLTRP-EN-7A-2022CUR:P41:B11",
+          "FLTRP-EN-7A-2022CUR:P41:B10",
+          "FLTRP-EN-7A-2022CUR:P41:B0"
+        ],
+        "erhu": [
+          "FLTRP-EN-7A-2022CUR:P37:B5",
+          "FLTRP-EN-7A-2022CUR:P37:B11",
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B6",
+          "FLTRP-EN-7A-2022CUR:P39:B14",
+          "FLTRP-EN-7A-2022CUR:P40:B24"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 158,
+        "evidence_block_level": 597,
+        "extended_full_section": 9885
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 51,
+        "evidence_block_level": 194,
+        "extended_full_section": 3216
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B5",
+          "textbook_page": 33,
+          "chars": 95,
+          "text": "6\t Grandpa gives me a big smile, and I smile back.  It feels great to enjoy our hobby together."
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "question_type": "reading_choice",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+      "textbook_page": 33,
+      "answer": "fire up instruments",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P38:B3"
+        ],
+        "evidence_quotes": [
+          "I nod to Grandpa and we fire up our instruments."
+        ],
+        "learning_object_rows": 1,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:X:76733936D5BA"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          37,
+          41
+        ],
+        "section_pages_pdf": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "section_block_count": 78,
+        "section_activity_count": 8,
+        "section_activity_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_block_pages_without_activity": []
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B1",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "3\t An idea suddenly hits me: “Why don’t we put our music together? I can write a song for us.”"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B2",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "4\t “Grandpa!” I rush into his room..."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B3",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "5\t There is an art festival every autumn in my school. I decide to take part in it with Grandpa this year. After a week’s practice, we are on the stage.  I nod to Grandpa and we fire up our instruments."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B4",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "Everybody moves with our music."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B5",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "6\t Grandpa gives me a big smile, and I smile back.  It feels great to enjoy our hobby together."
+        }
+      ],
+      "term_hits_in_section": {
+        "art festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "hobby": [
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B5",
+          "FLTRP-EN-7A-2022CUR:P39:B9",
+          "FLTRP-EN-7A-2022CUR:P41:B6",
+          "FLTRP-EN-7A-2022CUR:P41:B11",
+          "FLTRP-EN-7A-2022CUR:P41:B10",
+          "FLTRP-EN-7A-2022CUR:P41:B0"
+        ],
+        "erhu": [
+          "FLTRP-EN-7A-2022CUR:P37:B5",
+          "FLTRP-EN-7A-2022CUR:P37:B11",
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B6",
+          "FLTRP-EN-7A-2022CUR:P39:B14",
+          "FLTRP-EN-7A-2022CUR:P40:B24"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 269,
+        "evidence_block_level": 847,
+        "extended_full_section": 9991
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 88,
+        "evidence_block_level": 276,
+        "extended_full_section": 3250
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B3",
+          "textbook_page": 33,
+          "chars": 202,
+          "text": "5\t There is an art festival every autumn in my school. I decide to take part in it with Grandpa this year. After a week’s practice, we are on the stage.  I nod to Grandpa and we fire up our instruments."
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "question_type": "reading_choice",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "textbook_page": 32,
+      "answer": "in the park",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P37:B12"
+        ],
+        "evidence_quotes": [
+          "He likes playing the erhu in the park with his friends."
+        ],
+        "learning_object_rows": 1,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:X:90DF89A9545C"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          37,
+          41
+        ],
+        "section_pages_pdf": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "section_block_count": 78,
+        "section_activity_count": 8,
+        "section_activity_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_block_pages_without_activity": []
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "1\t Rock music is coming out of my computer.  As a rock music lover, I play the electric guitar in the school band. Sometimes I write songs and share them online. There is so much fun  in music."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B11",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "2\t Right at this moment, the sound of Grandpa’s erhu cuts in. Yes, music is also my grandpa’s"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B0",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "2 Look at the title and the pictures. What is the passage about?Now read the passage and check your answer."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B6",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "meets the erhu"
+        }
+      ],
+      "term_hits_in_section": {
+        "art festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "hobby": [
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B5",
+          "FLTRP-EN-7A-2022CUR:P39:B9",
+          "FLTRP-EN-7A-2022CUR:P41:B6",
+          "FLTRP-EN-7A-2022CUR:P41:B11",
+          "FLTRP-EN-7A-2022CUR:P41:B10",
+          "FLTRP-EN-7A-2022CUR:P41:B0"
+        ],
+        "erhu": [
+          "FLTRP-EN-7A-2022CUR:P37:B5",
+          "FLTRP-EN-7A-2022CUR:P37:B11",
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B6",
+          "FLTRP-EN-7A-2022CUR:P39:B14",
+          "FLTRP-EN-7A-2022CUR:P40:B24"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 234,
+        "evidence_block_level": 902,
+        "extended_full_section": 9949
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 76,
+        "evidence_block_level": 293,
+        "extended_full_section": 3236
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "textbook_page": 32,
+          "chars": 162,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "question_type": "reading_judge",
+      "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+      "textbook_page": 83,
+      "answer": "True",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P88:B12"
+        ],
+        "evidence_quotes": [
+          "Welcome to the Great Bear Rainforest in Canada!"
+        ],
+        "learning_object_rows": 1,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          85,
+          89
+        ],
+        "section_pages_pdf": [
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "section_block_count": 82,
+        "section_activity_count": 7,
+        "section_activity_numbers": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_block_pages_without_activity": [
+          86
+        ]
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B10",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "walk"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B13",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "1  through the forest today. It’s sunny now, but please take a raincoat. I’m sure it"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B12",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "Welcome to the Great Bear Rainforest in Canada! We"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B14",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "2  later. The trees in a rainforest can make their own rain."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B15",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "How? Well, look up – way, way, up – and you"
+        }
+      ],
+      "term_hits_in_section": {
+        "rain": [
+          "FLTRP-EN-7A-2022CUR:P88:B9",
+          "FLTRP-EN-7A-2022CUR:P88:B13",
+          "FLTRP-EN-7A-2022CUR:P88:B12",
+          "FLTRP-EN-7A-2022CUR:P88:B14",
+          "FLTRP-EN-7A-2022CUR:P88:B16"
+        ],
+        "Canada": [
+          "FLTRP-EN-7A-2022CUR:P88:B12"
+        ],
+        "colour": [
+          "FLTRP-EN-7A-2022CUR:P88:B3"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 159,
+        "evidence_block_level": 634,
+        "extended_full_section": 9835
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 52,
+        "evidence_block_level": 206,
+        "extended_full_section": 3199
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B12",
+          "textbook_page": 83,
+          "chars": 50,
+          "text": "Welcome to the Great Bear Rainforest in Canada! We"
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "question_type": "fill",
+      "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+      "textbook_page": 3,
+      "answer": "ready",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P8:B16"
+        ],
+        "evidence_quotes": [
+          "I am ready, too"
+        ],
+        "learning_object_rows": 2,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:V:EAB999ECEC5C",
+          "FLTRP-EN-7A-2022CUR:X:02809AEEFBB6"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          8,
+          10
+        ],
+        "section_pages_pdf": [
+          8,
+          9,
+          10
+        ],
+        "section_block_count": 77,
+        "section_activity_count": 8,
+        "section_activity_numbers": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ],
+        "evidence_block_pages_without_activity": []
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P8:B23",
+          "pdf_page": 8,
+          "textbook_page": 3,
+          "text": "oneseventwoeightthreefourfivesix"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P8:B24",
+          "pdf_page": 8,
+          "textbook_page": 3,
+          "text": "nineteneleventwelve"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+          "pdf_page": 8,
+          "textbook_page": 3,
+          "text": "Mum:\t How about you, Li Meng?Li Meng:\t \u0007I am ready, too. Look. I have"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P8:B18",
+          "pdf_page": 8,
+          "textbook_page": 3,
+          "text": "2  pens. I also have"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P8:B17",
+          "pdf_page": 8,
+          "textbook_page": 3,
+          "text": "1  pencils and"
+        }
+      ],
+      "term_hits_in_section": {
+        "colour": [
+          "FLTRP-EN-7A-2022CUR:P10:B19"
+        ],
+        "colour is it": [
+          "FLTRP-EN-7A-2022CUR:P10:B19"
+        ],
+        "ready": [
+          "FLTRP-EN-7A-2022CUR:P8:B0",
+          "FLTRP-EN-7A-2022CUR:P8:B10",
+          "FLTRP-EN-7A-2022CUR:P8:B16"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 103,
+        "evidence_block_level": 510,
+        "extended_full_section": 8355
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 34,
+        "evidence_block_level": 166,
+        "extended_full_section": 2718
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+          "textbook_page": 3,
+          "chars": 69,
+          "text": "Mum:\t How about you, Li Meng?Li Meng:\t \u0007I am ready, too. Look. I have"
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "question_type": "fill",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+      "textbook_page": 19,
+      "answer": "In fact",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P24:B2"
+        ],
+        "evidence_quotes": [
+          "In fact, this is my first lesson for all of you."
+        ],
+        "learning_object_rows": 2,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:V:28FFB2954477",
+          "FLTRP-EN-7A-2022CUR:X:3363F6C7E84E"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          21,
+          25
+        ],
+        "section_pages_pdf": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "section_block_count": 63,
+        "section_activity_count": 6,
+        "section_activity_numbers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "evidence_block_pages_without_activity": [
+          22
+        ]
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P24:B0",
+          "pdf_page": 24,
+          "textbook_page": 19,
+          "text": "Read the sentences from the reading passage and summarise the grammar rules."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P24:B1",
+          "pdf_page": 24,
+          "textbook_page": 19,
+          "text": "(a)\t I look up at Ms Chen. My eyes meet hers."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P24:B2",
+          "pdf_page": 24,
+          "textbook_page": 19,
+          "text": "(b)\t In fact, this is my first lesson for all of you.Now find more sentences with this grammar in the reading passage."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P24:B5",
+          "pdf_page": 24,
+          "textbook_page": 19,
+          "text": "6"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P24:B4",
+          "pdf_page": 24,
+          "textbook_page": 19,
+          "text": "Circle the correct words. 1\tMs Wang is my / I Chinese teacher.2\tWhen is we / our next English class?3\tFang Wei is a new friend of mine / my in junior high.4\tJack’s teacher asks their / them to get to school early."
+        }
+      ],
+      "term_hits_in_section": {},
+      "context_size_chars": {
+        "minimal_single_quote": 172,
+        "evidence_block_level": 615,
+        "extended_full_section": 8540
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 56,
+        "evidence_block_level": 200,
+        "extended_full_section": 2778
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P24:B2",
+          "textbook_page": 19,
+          "chars": 118,
+          "text": "(b)\t In fact, this is my first lesson for all of you.Now find more sentences with this grammar in the reading passage."
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "question_type": "fill",
+      "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+      "textbook_page": 5,
+      "answer": "grey",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P10:B20"
+        ],
+        "evidence_quotes": [
+          "It’s grey."
+        ],
+        "learning_object_rows": 2,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:V:751A8391C690",
+          "FLTRP-EN-7A-2022CUR:X:B3D847CC7B0D"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          8,
+          10
+        ],
+        "section_pages_pdf": [
+          8,
+          9,
+          10
+        ],
+        "section_block_count": 77,
+        "section_activity_count": 8,
+        "section_activity_numbers": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ],
+        "evidence_block_pages_without_activity": []
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P10:B0",
+          "pdf_page": 10,
+          "textbook_page": 5,
+          "text": "Point and say."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P10:B19",
+          "pdf_page": 10,
+          "textbook_page": 5,
+          "text": "What colour is it?"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P10:B20",
+          "pdf_page": 10,
+          "textbook_page": 5,
+          "text": "It’s grey."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P10:B3",
+          "pdf_page": 10,
+          "textbook_page": 5,
+          "text": "9"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P10:B1",
+          "pdf_page": 10,
+          "textbook_page": 5,
+          "text": "Match the words and expressions with the pictures."
+        }
+      ],
+      "term_hits_in_section": {
+        "colour": [
+          "FLTRP-EN-7A-2022CUR:P10:B19"
+        ],
+        "colour is it": [
+          "FLTRP-EN-7A-2022CUR:P10:B19"
+        ],
+        "ready": [
+          "FLTRP-EN-7A-2022CUR:P8:B0",
+          "FLTRP-EN-7A-2022CUR:P8:B10",
+          "FLTRP-EN-7A-2022CUR:P8:B16"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 111,
+        "evidence_block_level": 392,
+        "extended_full_section": 8368
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 36,
+        "evidence_block_level": 128,
+        "extended_full_section": 2722
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P10:B20",
+          "textbook_page": 5,
+          "chars": 10,
+          "text": "It’s grey."
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "question_type": "vocab_choice",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "textbook_page": 32,
+      "answer": "different",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P37:B12"
+        ],
+        "evidence_quotes": [
+          "But it’s a different kind of music."
+        ],
+        "learning_object_rows": 2,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:V:8CCC14F572CB",
+          "FLTRP-EN-7A-2022CUR:X:90DF89A9545C"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          37,
+          41
+        ],
+        "section_pages_pdf": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "section_block_count": 78,
+        "section_activity_count": 8,
+        "section_activity_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_block_pages_without_activity": []
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "1\t Rock music is coming out of my computer.  As a rock music lover, I play the electric guitar in the school band. Sometimes I write songs and share them online. There is so much fun  in music."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B11",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "2\t Right at this moment, the sound of Grandpa’s erhu cuts in. Yes, music is also my grandpa’s"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "pdf_page": 37,
+          "textbook_page": 32,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B0",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "2 Look at the title and the pictures. What is the passage about?Now read the passage and check your answer."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B6",
+          "pdf_page": 38,
+          "textbook_page": 33,
+          "text": "meets the erhu"
+        }
+      ],
+      "term_hits_in_section": {
+        "art festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "festival": [
+          "FLTRP-EN-7A-2022CUR:P38:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B3",
+          "FLTRP-EN-7A-2022CUR:P39:B8",
+          "FLTRP-EN-7A-2022CUR:P40:B13"
+        ],
+        "hobby": [
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B5",
+          "FLTRP-EN-7A-2022CUR:P39:B9",
+          "FLTRP-EN-7A-2022CUR:P41:B6",
+          "FLTRP-EN-7A-2022CUR:P41:B11",
+          "FLTRP-EN-7A-2022CUR:P41:B10",
+          "FLTRP-EN-7A-2022CUR:P41:B0"
+        ],
+        "erhu": [
+          "FLTRP-EN-7A-2022CUR:P37:B5",
+          "FLTRP-EN-7A-2022CUR:P37:B11",
+          "FLTRP-EN-7A-2022CUR:P37:B12",
+          "FLTRP-EN-7A-2022CUR:P38:B6",
+          "FLTRP-EN-7A-2022CUR:P39:B14",
+          "FLTRP-EN-7A-2022CUR:P40:B24"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 186,
+        "evidence_block_level": 874,
+        "extended_full_section": 9921
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 61,
+        "evidence_block_level": 284,
+        "extended_full_section": 3227
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "textbook_page": 32,
+          "chars": 162,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        }
+      ]
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "question_type": "reading_choice",
+      "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+      "textbook_page": 83,
+      "answer": "their own rain",
+      "question_library_side": {
+        "question_rows": 1,
+        "evidence_rows": 1,
+        "evidence_block_ids": [
+          "FLTRP-EN-7A-2022CUR:P88:B14"
+        ],
+        "evidence_quotes": [
+          "The trees in a rainforest can make their own rain."
+        ],
+        "learning_object_rows": 1,
+        "learning_object_ids": [
+          "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE"
+        ]
+      },
+      "contentpack_side": {
+        "section_page_range_pdf": [
+          85,
+          89
+        ],
+        "section_pages_pdf": [
+          85,
+          86,
+          87,
+          88,
+          89
+        ],
+        "section_block_count": 82,
+        "section_activity_count": 7,
+        "section_activity_numbers": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_block_pages_without_activity": [
+          86
+        ]
+      },
+      "evidence_block_neighbourhood": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B13",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "1  through the forest today. It’s sunny now, but please take a raincoat. I’m sure it"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B12",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "Welcome to the Great Bear Rainforest in Canada! We"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B14",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "2  later. The trees in a rainforest can make their own rain."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B15",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "How? Well, look up – way, way, up – and you"
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B16",
+          "pdf_page": 88,
+          "textbook_page": 83,
+          "text": "3  clouds at the top of these trees. Water comes into the air from the leaves, and becomes clouds. It then rains on the forest. This"
+        }
+      ],
+      "term_hits_in_section": {
+        "rain": [
+          "FLTRP-EN-7A-2022CUR:P88:B9",
+          "FLTRP-EN-7A-2022CUR:P88:B13",
+          "FLTRP-EN-7A-2022CUR:P88:B12",
+          "FLTRP-EN-7A-2022CUR:P88:B14",
+          "FLTRP-EN-7A-2022CUR:P88:B16"
+        ],
+        "Canada": [
+          "FLTRP-EN-7A-2022CUR:P88:B12"
+        ],
+        "colour": [
+          "FLTRP-EN-7A-2022CUR:P88:B3"
+        ]
+      },
+      "context_size_chars": {
+        "minimal_single_quote": 228,
+        "evidence_block_level": 659,
+        "extended_full_section": 9901
+      },
+      "context_size_tokens_est": {
+        "minimal_single_quote": 74,
+        "evidence_block_level": 214,
+        "extended_full_section": 3221
+      },
+      "evidence_quote_is_substring_of_block": true,
+      "full_evidence_block_texts": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B14",
+          "textbook_page": 83,
+          "chars": 60,
+          "text": "2  later. The trees in a rainforest can make their own rain."
+        }
+      ]
+    }
+  ]
+}

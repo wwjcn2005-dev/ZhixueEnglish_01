@@ -1,0 +1,53 @@
+{
+  "phase": "P2-6-D-2",
+  "title": "Learning Object → /review 最小接入实施",
+  "status": "PASS",
+  "mode": "implementation",
+  "implemented_at": "2026-09-13",
+  "modified_files": [
+    {"path": "web/flow.py", "sha256_20": "E74D89252F3A9898E15F",
+     "change": "新增 lo_review_section()（只读、try 包裹、字段最小化）+ logging 导入"},
+    {"path": "web/app.py", "sha256_20": "CB2984D2D48B0D0A4A79",
+     "change": "_review() 内 +3 行把 lo_section 传入 review_page(ctx)"},
+    {"path": "web/ui.py", "sha256_20": "F95D8AE59813ECE41AB3",
+     "change": "review_page() 追加「教材学习建议」区块（有内容/空态/降级三态）"}
+  ],
+  "new_files": ["web/test_p2_6d2_review_integration.py"],
+  "d1_call": "learning_object_service.needs_attention(conn, learner_id, contentpack_path)（只调用，不复制规则）",
+  "flow_fields": ["learning_object_id", "object_type", "title", "mastery_display_text",
+                  "mastery_stable", "diagnosis_label", "diagnosis_level",
+                  "suggestions[]", "auto_execute(false)"],
+  "ui_states": {
+    "with_items": "title + mastery_display_text + diagnosis_label + 教材优先建议 + [去看看] <a>",
+    "empty": "暂时没有需要再看的教材学习对象",
+    "degraded": "暂时无法生成教材学习建议（不影响已有内容）"
+  },
+  "boundaries": {
+    "ui_recomputes": false,
+    "ui_imports_learning_services": false,
+    "auto_jump": false, "auto_play": false, "auto_execute": false,
+    "script_or_onclick": false,
+    "command_language": false,
+    "internal_lo_id_exposed": false,
+    "vocabulary_revisit_untouched": true,
+    "exception_degradation": "try/except + logging.warning（项目既有风格）"
+  },
+  "tests": {"new_d2": 11, "learning": 112, "workbench": 50, "web": 235,
+            "total": 397, "fail": 0, "skip": 0, "original_386_all_pass": true},
+  "protection": {
+    "learning_db_sha256_20": "DBAB743BF6D8F0A3832E",
+    "learning_db_mtime": "2026-09-12T23:15:13",
+    "learning_db_tables": 7, "learning_record_rows": 20, "mastery_state_rows": 7,
+    "integrity_check": "ok", "foreign_key_check": 0, "migration": 0, "dml": 0,
+    "contentpack_sha256_20": "ACEBC8C29CF5D11BAB50",
+    "spec_v12_sha256_20": "6D3595CF7D83879ADF3E",
+    "d1_service_sha256_20": "56C4F4140EC6FE431634",
+    "frozen_services_modified": 0, "p2_6b_services_modified": 0,
+    "textbook_modified": 0, "audio_modified": 0, "android_modified": 0,
+    "ai_calls": 0
+  },
+  "open_gaps": ["G1 同一词的池展示与 LO 建议并置（真机验证后再定去重）",
+                "Consolidation Action / Grammar LO / 68 unmapped / LO mastery 持久化 / UI 大改 / AI 均未触碰"],
+  "s24_validation": "未执行真机（不改 Android）；已完成 HTTP 级三态验证",
+  "final": {"verdict": "PASS", "stopped": "D-2 完成即停止，等待下一条任务指令"}
+}

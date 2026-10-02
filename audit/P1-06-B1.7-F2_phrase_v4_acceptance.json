@@ -1,0 +1,786 @@
+{
+  "task": "P1-06-B1.7-F2 正式验收与归档",
+  "generated_at": "2026-09-12T14:38:00+08:00",
+  "verdict": "F2_ACCEPTANCE_PASS",
+  "accepted_baseline": {
+    "v3": {
+      "path": "D:\\ZhixueEnglish\\structured\\contentpack\\v3\\FLTRP-EN-7A-2022CUR.sqlite",
+      "sha256": "13E1B961383794259907F388EDBD856C3C5E5B0303FF19ACBB0E76F569A9BE0C"
+    },
+    "v4": {
+      "path": "D:\\ZhixueEnglish\\structured\\contentpack\\v4\\FLTRP-EN-7A-2022CUR.sqlite",
+      "sha256": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+      "size": 2404352,
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T143441",
+      "rule_set_version": "P1-06-B1.7-F2"
+    },
+    "pdf": {
+      "path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\（根据2022年版课程标准修订）义务教育教科书·英语 七年级上册.pdf",
+      "sha256": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F"
+    },
+    "mp3": {
+      "count": 54,
+      "digest_sha256_of_hashes": "C2E2E60E7DE50691D5315C4A55E7C3BA4A1AFFD6AB206DC0CF6708BCEFB59109"
+    }
+  },
+  "sha256": {
+    "v1": {
+      "hash": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+      "expected": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+      "status": "MATCH"
+    },
+    "v2": {
+      "hash": "C97B0F4EB09811F2477723A40A01B695DA984DDF1BD5FA5668B59ADC61ED0430",
+      "expected": "C97B0F4EB09811F2477723A40A01B695DA984DDF1BD5FA5668B59ADC61ED0430",
+      "status": "MATCH"
+    },
+    "v3": {
+      "hash": "13E1B961383794259907F388EDBD856C3C5E5B0303FF19ACBB0E76F569A9BE0C",
+      "expected": "13E1B961383794259907F388EDBD856C3C5E5B0303FF19ACBB0E76F569A9BE0C",
+      "status": "MATCH"
+    },
+    "v4": {
+      "hash": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+      "expected": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+      "status": "MATCH"
+    },
+    "pdf": {
+      "hash": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+      "expected": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+      "status": "MATCH"
+    }
+  },
+  "counts": {
+    "vocabulary": 287,
+    "phrase": 23,
+    "learning_item": 310,
+    "source_ref": 762,
+    "phrase_source_ref": 48,
+    "unit": 8,
+    "section": 46,
+    "activity": 96,
+    "content_block": 3854,
+    "page": 178,
+    "audio_asset": 54,
+    "audio_mapping": 54
+  },
+  "distributions": {
+    "textbook_emphasis": {
+      "PLAIN": 44,
+      "UNKNOWN": 4
+    },
+    "learning_requirement": {
+      "RECOGNITION": 21,
+      "CORE": 2
+    },
+    "derivation_type": {
+      "FROM_TEXTBOOK_LIST": 21,
+      "FROM_TEXTBOOK_NOTE": 2
+    },
+    "requirement_conflict_status": {
+      "OK": 23
+    },
+    "review_status": {
+      "NEED_REVIEW": 23
+    },
+    "part_of_speech_null": 23,
+    "phonetic_null": 23
+  },
+  "phrases": [
+    {
+      "canonical_text": "a bit",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:41911F435D5B",
+      "content_hash": "3dc252f52e6b862856da6239da962eb6e6faf91ab84e5fd4cbdf36f8e63e997e",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B33",
+        "FLTRP-EN-7A-2022CUR:P165:B3"
+      ],
+      "pdf_pages": [
+        155,
+        165
+      ]
+    },
+    {
+      "canonical_text": "against the law",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:562D79BBEB60",
+      "content_hash": "92a6d348b8cbeccbbec1fa983d7cbc5e7b83984867a6a6e11f65460bc00b4805",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P159:B15",
+        "FLTRP-EN-7A-2022CUR:P165:B11"
+      ],
+      "pdf_pages": [
+        159,
+        165
+      ]
+    },
+    {
+      "canonical_text": "along the way",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:51452FED59ED",
+      "content_hash": "1e2f551d1ec4021c0d5513126fb0307bf39321a9091b7b0da7b7758bbdf27f43",
+      "derivation_type": "FROM_TEXTBOOK_NOTE",
+      "learning_requirement": "CORE",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "UNKNOWN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P125:B3",
+        "FLTRP-EN-7A-2022CUR:P125:B4"
+      ],
+      "pdf_pages": [
+        125
+      ]
+    },
+    {
+      "canonical_text": "as dead as a dodo",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:4EBDE13F5A41",
+      "content_hash": "2969dce3ab3468a4e50184d521aba298cd7d35e2a094726cbb94332bf6139fa6",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P162:B2",
+        "FLTRP-EN-7A-2022CUR:P165:B21"
+      ],
+      "pdf_pages": [
+        162,
+        165
+      ]
+    },
+    {
+      "canonical_text": "as happy as a clam",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:4B309C9BB84D",
+      "content_hash": "59f2ba1595f77cd6b5ebad1f404e72b2ec8ab028435816314cb5642f879f89f7",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 4,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P162:B22",
+        "FLTRP-EN-7A-2022CUR:P162:B23",
+        "FLTRP-EN-7A-2022CUR:P165:B22",
+        "FLTRP-EN-7A-2022CUR:P165:B23"
+      ],
+      "pdf_pages": [
+        162,
+        165
+      ]
+    },
+    {
+      "canonical_text": "corn silk",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:C0B274881CD7",
+      "content_hash": "6c74e7eea0bc111ce9ecd21513373a3361d4718c05f51996d9797a51157af01c",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P160:B38",
+        "FLTRP-EN-7A-2022CUR:P166:B9"
+      ],
+      "pdf_pages": [
+        160,
+        166
+      ]
+    },
+    {
+      "canonical_text": "die out",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:B36EF35C7B15",
+      "content_hash": "a4a6fc4e65b1eb7a45ea173d0f653f2405e5b919776b68853ad62348c18b782e",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P162:B18",
+        "FLTRP-EN-7A-2022CUR:P166:B18"
+      ],
+      "pdf_pages": [
+        162,
+        166
+      ]
+    },
+    {
+      "canonical_text": "dining hall",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:B53636B283A6",
+      "content_hash": "426f41d768e1bc7aa4240df8ac111c4500cc79537fae50bd57f3d9a22c31b8ae",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B19",
+        "FLTRP-EN-7A-2022CUR:P166:B21"
+      ],
+      "pdf_pages": [
+        155,
+        166
+      ]
+    },
+    {
+      "canonical_text": "each other",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:B6DBBF2A4D9F",
+      "content_hash": "a3ab0ea5cb4438948324c10dd4bf5907e7a07eee5c163954f977f6684ac31208",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B24",
+        "FLTRP-EN-7A-2022CUR:P166:B33"
+      ],
+      "pdf_pages": [
+        155,
+        166
+      ]
+    },
+    {
+      "canonical_text": "get lost",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:CA1537F1897C",
+      "content_hash": "35e2a36ef979a4044ec72dcfa44497395053d597976197005e66c6491f94f821",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P161:B35",
+        "FLTRP-EN-7A-2022CUR:P167:B25"
+      ],
+      "pdf_pages": [
+        161,
+        167
+      ]
+    },
+    {
+      "canonical_text": "in fact",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:BA5281834440",
+      "content_hash": "ddbb1c468e243a427bba339dc93f1e2af3a8ffdd5012be6085556b0438684e75",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P156:B5",
+        "FLTRP-EN-7A-2022CUR:P168:B11"
+      ],
+      "pdf_pages": [
+        156,
+        168
+      ]
+    },
+    {
+      "canonical_text": "junior high",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:960AF56EF67C",
+      "content_hash": "47726392a112080c87491a4a87e2943154e3762e24253744e0c67ecff3d9a6d4",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B6",
+        "FLTRP-EN-7A-2022CUR:P168:B23"
+      ],
+      "pdf_pages": [
+        155,
+        168
+      ]
+    },
+    {
+      "canonical_text": "of course",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:39B022CFFC7A",
+      "content_hash": "c4696801ac0e6c5b7d9f08f2918f4b5b478ad6e637c2e30bbfa315371e705eb3",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B16",
+        "FLTRP-EN-7A-2022CUR:P169:B36"
+      ],
+      "pdf_pages": [
+        155,
+        169
+      ]
+    },
+    {
+      "canonical_text": "pick up",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:A6D9B1FB964C",
+      "content_hash": "6d14d40314fc40feee5e3eb0faca0fc45c19b611a0ea67de297313360543f8ee",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P158:B33",
+        "FLTRP-EN-7A-2022CUR:P170:B2"
+      ],
+      "pdf_pages": [
+        158,
+        170
+      ]
+    },
+    {
+      "canonical_text": "point out",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:9B29B23BA408",
+      "content_hash": "f65a9972add298f4fbffe0b31c60b411c7941887cf62cac23d3304d22d207ef7",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B42",
+        "FLTRP-EN-7A-2022CUR:P170:B9"
+      ],
+      "pdf_pages": [
+        155,
+        170
+      ]
+    },
+    {
+      "canonical_text": "primary school",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:751F6ED40C03",
+      "content_hash": "2b5038a20dca94c0132ab5263878fa65e765ace879e577273fef79adadc961e9",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P156:B27",
+        "FLTRP-EN-7A-2022CUR:P170:B22"
+      ],
+      "pdf_pages": [
+        156,
+        170
+      ]
+    },
+    {
+      "canonical_text": "protect... from...",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:CFA9955FF9F1",
+      "content_hash": "f1f82bc712822ddcd50c5852e63cec345ed95f719c5c8be9f7c6038eaf4aa5bf",
+      "derivation_type": "FROM_TEXTBOOK_NOTE",
+      "learning_requirement": "CORE",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "UNKNOWN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P120:B2",
+        "FLTRP-EN-7A-2022CUR:P120:B3"
+      ],
+      "pdf_pages": [
+        120
+      ]
+    },
+    {
+      "canonical_text": "red scarf",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:F9BDDA6BAE49",
+      "content_hash": "d634ec2c1b674eaf89593db6c0d397e43f8b8df006ae5447916ede8bf052565a",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B12",
+        "FLTRP-EN-7A-2022CUR:P171:B1"
+      ],
+      "pdf_pages": [
+        155,
+        171
+      ]
+    },
+    {
+      "canonical_text": "rock music",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:8AB872FEB6B5",
+      "content_hash": "4654bfe621e92a131ef9e79a2c510e9871abd29c5c36c708a52208b0b346d88b",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P156:B40",
+        "FLTRP-EN-7A-2022CUR:P171:B14"
+      ],
+      "pdf_pages": [
+        156,
+        171
+      ]
+    },
+    {
+      "canonical_text": "school uniform",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:61322C6D7B21",
+      "content_hash": "33e3a3e4a4f0601b615662b450d045b0130f64ef43146601cc6b27384f45f7d9",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B15",
+        "FLTRP-EN-7A-2022CUR:P171:B24"
+      ],
+      "pdf_pages": [
+        155,
+        171
+      ]
+    },
+    {
+      "canonical_text": "take part in",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:8D92AE56D540",
+      "content_hash": "ef5009f70fe0d4623e297ff2efafe169ba2b6544846cbab3ed7f4c6ca9a31543",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B38",
+        "FLTRP-EN-7A-2022CUR:P172:B14"
+      ],
+      "pdf_pages": [
+        155,
+        172
+      ]
+    },
+    {
+      "canonical_text": "teaching building",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:F0769CCC028C",
+      "content_hash": "cc9a22d6f82289ae34bd9b0e3809ab4f7f3d48f89570c4c033f6548a7cd89868",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P155:B18",
+        "FLTRP-EN-7A-2022CUR:P172:B18"
+      ],
+      "pdf_pages": [
+        155,
+        172
+      ]
+    },
+    {
+      "canonical_text": "throw away",
+      "item_id": "FLTRP-EN-7A-2022CUR:P:72058B0C4EA0",
+      "content_hash": "17e2b0664c6743f13aaba5c354395d64716c3727a714e7b63e937a2c459375b8",
+      "derivation_type": "FROM_TEXTBOOK_LIST",
+      "learning_requirement": "RECOGNITION",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK",
+      "textbook_emphasis": [
+        "PLAIN"
+      ],
+      "ref_count": 2,
+      "source_blocks": [
+        "FLTRP-EN-7A-2022CUR:P159:B29",
+        "FLTRP-EN-7A-2022CUR:P172:B30"
+      ],
+      "pdf_pages": [
+        159,
+        172
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "SHA-v1",
+      "name": "SHA256 v1",
+      "status": "PASS",
+      "detail": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3"
+    },
+    {
+      "id": "SHA-v2",
+      "name": "SHA256 v2",
+      "status": "PASS",
+      "detail": "C97B0F4EB09811F2477723A40A01B695DA984DDF1BD5FA5668B59ADC61ED0430"
+    },
+    {
+      "id": "SHA-v3",
+      "name": "SHA256 v3",
+      "status": "PASS",
+      "detail": "13E1B961383794259907F388EDBD856C3C5E5B0303FF19ACBB0E76F569A9BE0C"
+    },
+    {
+      "id": "SHA-v4",
+      "name": "SHA256 v4",
+      "status": "PASS",
+      "detail": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E"
+    },
+    {
+      "id": "SHA-pdf",
+      "name": "SHA256 pdf",
+      "status": "PASS",
+      "detail": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F"
+    },
+    {
+      "id": "V3-INT",
+      "name": "v3 integrity_check / foreign_key_check",
+      "status": "PASS",
+      "detail": "ok / 0"
+    },
+    {
+      "id": "V4-INT",
+      "name": "v4 integrity_check / foreign_key_check",
+      "status": "PASS",
+      "detail": "ok / 0"
+    },
+    {
+      "id": "VOC-COUNT",
+      "name": "Vocabulary 计数",
+      "status": "PASS",
+      "detail": "v3=287 v4=287（预期 287）"
+    },
+    {
+      "id": "VOC-ROWS",
+      "name": "Vocabulary 全字段逐条一致",
+      "status": "PASS",
+      "detail": "字段差异=0（逐条比较全部 19 列）"
+    },
+    {
+      "id": "VOC-SR",
+      "name": "Vocabulary source_ref 逐条一致",
+      "status": "PASS",
+      "detail": "v3=708 v4=708"
+    },
+    {
+      "id": "PH-COUNT",
+      "name": "Phrase 数量",
+      "status": "PASS",
+      "detail": "phrase=23"
+    },
+    {
+      "id": "PH-UNIQ",
+      "name": "Phrase 身份唯一",
+      "status": "PASS",
+      "detail": "item_id=23 content_hash=23 canonical=23（各 23）"
+    },
+    {
+      "id": "PH-SET",
+      "name": "Phrase 集合与 23 条清单完全相等",
+      "status": "PASS",
+      "detail": "多余=[] 缺失=[]"
+    },
+    {
+      "id": "PH-NS",
+      "name": "Phrase namespace 隔离",
+      "status": "PASS",
+      "detail": "23/23 使用 :P: ｜ 含 :V: 的=0"
+    },
+    {
+      "id": "PH-SAME-TEXT",
+      "name": "同文本 Vocabulary/Phrase 身份不同",
+      "status": "PASS",
+      "detail": "同文本比较=21：item_id 全部不同 + content_hash 全部不同"
+    },
+    {
+      "id": "PH-HASH",
+      "name": "Phrase content_hash 可复现",
+      "status": "PASS",
+      "detail": "重算不一致=0（输入：schema_version|phrase|canonical_text|meaning_zh）"
+    },
+    {
+      "id": "PH-HASH-IND",
+      "name": "content_hash 不含 emphasis/requirement/review",
+      "status": "PASS",
+      "detail": "23/23 仅由 4 个文本字段复现；emphasis / requirement / review 变更不影响 hash"
+    },
+    {
+      "id": "PH-SEM",
+      "name": "Phrase 语义分布符合设计",
+      "status": "PASS",
+      "detail": "emphasis={'PLAIN': 44, 'UNKNOWN': 4} requirement={'RECOGNITION': 21, 'CORE': 2} derivation={'FROM_TEXTBOOK_LIST': 21, 'FROM_TEXTBOOK_NOTE': 2} conflict={'OK': 23} review={'NEED_REVIEW': 23}"
+    },
+    {
+      "id": "PH-NULL",
+      "name": "Phrase POS/phonetic 保持 NULL（未补写）",
+      "status": "PASS",
+      "detail": "POS NULL=23 phonetic NULL=23"
+    },
+    {
+      "id": "PH-EV",
+      "name": "Phrase 证据链完整（Phrase → source_ref → content_block → page）",
+      "status": "PASS",
+      "detail": "source_ref=48 JSON 错误=0 缺键=0 断链=0"
+    },
+    {
+      "id": "PH-EV-VOC",
+      "name": "词表型 Phrase 证据与 Vocabulary 完全同源",
+      "status": "PASS",
+      "detail": "比较=44 不一致=0"
+    },
+    {
+      "id": "PH-EV-NOTE",
+      "name": "语言注释型证据标注",
+      "status": "PASS",
+      "detail": "context_type=['language_note', 'textbook_vocabulary_entry'] ｜ 语言注释 font_name={None}"
+    },
+    {
+      "id": "PH-EV-CONT",
+      "name": "续行块明确标注 head_span_found=false",
+      "status": "PASS",
+      "detail": "continuation refs=[('FLTRP-EN-7A-2022CUR:P:4B309C9BB84D', 'FLTRP-EN-7A-2022CUR:P162:B23'), ('FLTRP-EN-7A-2022CUR:P:4B309C9BB84D', 'FLTRP-EN-7A-2022CUR:P165:B23')]"
+    },
+    {
+      "id": "EX-KNOCK",
+      "name": "`knock around (` 冻结未动",
+      "status": "PASS",
+      "detail": "Vocabulary item_id/content_hash/文本未变，且未建 Phrase"
+    },
+    {
+      "id": "EX-OTHERS",
+      "name": "其余排除项未落库",
+      "status": "PASS",
+      "detail": "prefer A to B / 11 个正文多词单位 / 固定句型 均未落库"
+    },
+    {
+      "id": "SNAP",
+      "name": "快照有效版本唯一",
+      "status": "PASS",
+      "detail": "active=FLTRP-EN-7A-2022CUR:S20260912T143441 ｜ v3 快照状态=SUPERSEDED"
+    },
+    {
+      "id": "BATCH",
+      "name": "import_batch 无失败批次",
+      "status": "PASS",
+      "detail": "{'SUCCESS': 4}"
+    },
+    {
+      "id": "TABLES",
+      "name": "未受影响的表逐行完全等同",
+      "status": "PASS",
+      "detail": "比较表=17（page/unit/section/activity/content_block/evidence/audio_asset/audio_mapping/learning_goal 等）全部一致"
+    },
+    {
+      "id": "AUDIO",
+      "name": "音频保持 CANDIDATE 且未改动",
+      "status": "PASS",
+      "detail": "audio_mapping={'CANDIDATE': 54} audio_asset=54 MP3=54"
+    },
+    {
+      "id": "QUALITY",
+      "name": "连字 / 控制字符 / AI / transcript",
+      "status": "PASS",
+      "detail": "U+FB01/U+FB02/0x1f/0x1d=0 ｜ ai_artifact=0 ｜ transcript=0"
+    },
+    {
+      "id": "REPORT",
+      "name": "F2 构建报告与实际数据库一致",
+      "status": "PASS",
+      "detail": "报告 verdict=PASS，v4 SHA 一致，phrase=23/23，构建自检 0 失败"
+    }
+  ],
+  "checks_failed": [],
+  "boundaries": {
+    "v1/v2/v3 是否修改": "否（SHA256 全部吻合）",
+    "v4 是否修改": "否（只读打开；SHA256 与构建报告一致）",
+    "原始 PDF 是否修改": "否",
+    "MP3 是否修改": "否（54 个，仅只读哈希）",
+    "是否重新构建 / 重新生成 Phrase": "否",
+    "是否进入 Sentence Pattern / Grammar": "否",
+    "是否进入 Pronunciation / Audio": "否",
+    "是否调用 AI / 云端 / OCR / TTS": "否（0）",
+    "是否安装依赖": "否",
+    "是否访问 D:\\ZhixueAI": "否",
+    "本次新增文件": [
+      "audit/P1-06-B1.7-F2_phrase_v4_acceptance.md",
+      "audit/P1-06-B1.7-F2_phrase_v4_acceptance.json"
+    ]
+  },
+  "known_open_items": [
+    "`prefer A to B`：证据存在、资源类型未定，保留人工审核队列（未落库）。",
+    "`knock around (`：词表 headword 边界冻结异常，未处理。",
+    "语言注释型 Phrase（protect... from... / along the way）：emphasis=UNKNOWN → requirement=CORE 属设计提案，review_status=NEED_REVIEW 待人工确认。",
+    "21 条词表 Phrase：review_status 沿用同源 Vocabulary（均 NEED_REVIEW）；POS/phonetic 保持 NULL，未补写。"
+  ],
+  "task_text_truncation": "验收任务文本在第十项（Phrase 身份规则验收）之后被截断；第十一项及以后（content_hash 独立性、语义/证据/排除项/快照/边界/报告格式、停止条件）按 F1 设计、F2 构建任务与构建报告补齐验收项，未扩大范围。"
+}

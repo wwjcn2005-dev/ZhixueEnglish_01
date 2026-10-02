@@ -1,0 +1,31 @@
+{
+ "scenario": "evidence_insufficient",
+ "input_context_sha256": "7A609A49EC0CBEE9298117970250CEEF4AB3CE2A7D5DA28DBFBC437AA670A88F",
+ "model": "deepseek-v4-pro",
+ "max_tokens": 8192,
+ "cloud_calls": 1,
+ "local_ai_calls": 0,
+ "elapsed_s": 6.5,
+ "finish_reason": "stop",
+ "requested_max": 3,
+ "returned": 0,
+ "model_declared_reason": "The provided evidence includes only the audio reference and the printed activity instructions/options, but no transcript or content description of the radio programme. Therefore, any question whose answer depends on what the radio programme says cannot be reliably determined from the supplied textbook evidence.",
+ "validator_executed": false,
+ "pass": 0,
+ "fail": 0,
+ "whitelist_size": 206,
+ "rows": [],
+ "section": {
+  "unit": "Unit 1",
+  "section": "DEVELOPING_IDEAS",
+  "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+  "activity_no": 1,
+  "textbook_pages": [
+   21
+  ],
+  "blocks": 14,
+  "vocab": 35,
+  "packages": 5
+ },
+ "zero_question_note": "validator 无题可验证；rows = []。0 题不得被解释为 PASS，只表示没有任何题目可供确定性校验。"
+}

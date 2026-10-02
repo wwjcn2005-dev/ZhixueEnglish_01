@@ -1,0 +1,76 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "question": "Our English teacher Ms Chen writes the ___ on the blackboard and says, “Please write this down.”",
+   "options": [
+    "sentence",
+    "mistake",
+    "polite",
+    "meaning"
+   ],
+   "correct_option": "A",
+   "answer": "sentence",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 17,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P22:B0"
+   ],
+   "evidence_quote": "Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.”",
+   "explanation": "The reading passage says the English teacher writes the sentence on the blackboard.",
+   "difficulty": "easy",
+   "ai_confidence": 0.98
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "question": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+   "options": [
+    "polite",
+    "dry",
+    "important",
+    "mistake"
+   ],
+   "correct_option": "A",
+   "answer": "polite",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 17,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P22:B2"
+   ],
+   "evidence_quote": "But is it OK to point out the mistake? Is that polite, in the first lesson?”",
+   "explanation": "The passage uses “polite” to describe whether it is OK to point out the mistake in the first lesson.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "question": "What does Wang Han say about the sentence?",
+   "options": [
+    "That sentence is from Mencius, not from Confucius.",
+    "That sentence is from Confucius, not from Mencius.",
+    "That sentence is from Confucius, not from Mozi.",
+    "That sentence is not from Confucius."
+   ],
+   "correct_option": "B",
+   "answer": "That sentence is from Confucius, not from Mencius.",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 17,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P22:B6"
+   ],
+   "evidence_quote": "“That sentence is from Confucius, not from Mencius.”",
+   "explanation": "In the passage, Wang Han points out the mistake and says that the sentence is from Confucius, not from Mencius.",
+   "difficulty": "easy",
+   "ai_confidence": 0.98
+  }
+ ]
+}

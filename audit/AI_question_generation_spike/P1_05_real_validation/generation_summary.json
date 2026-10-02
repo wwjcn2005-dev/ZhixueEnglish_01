@@ -1,0 +1,234 @@
+{
+ "stage": "P1-05-B",
+ "model": "deepseek-v4-pro",
+ "prompt_version": "P1-05-v1",
+ "validator_version": "v3",
+ "sample_source": "P1_05_sample_design/p1_05_sample_matrix.json",
+ "planned_sections": 7,
+ "executed_sections": 6,
+ "aborted_sections": 1,
+ "skipped_sections": 0,
+ "sections": [
+  {
+   "index": 1,
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "unit": "Unit 2",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "category": "A_READING",
+   "run_id": "AIRUN:20260917T1930:P105_1",
+   "run_status": "TRUNCATED",
+   "context_hash": "D00F004A341D0927F73BD74B784EEDD377B6E5BD43570BD9F69E0B265B560F25",
+   "generation_scope_key": "ABE3D3C3B48EF9EAA7AE68DABABFA4C8F7A2EDF29649A9ED58479473363920C1",
+   "finish_reason": "length",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "retry_count": 0,
+   "latency_ms": 123364,
+   "usage": {
+    "prompt_tokens": 10619,
+    "completion_tokens": 8192,
+    "total_tokens": 18811,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8192
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 10363
+   },
+   "raw_response_file": "runs/01_Unit2_UNDERSTANDING_IDEAS_raw_response.json",
+   "note": "输出截断：finish_reason=length，reasoning 用满 8192，content=0"
+  },
+  {
+   "index": 2,
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING",
+   "unit": "Unit 6",
+   "section_key": "READING_FOR_WRITING",
+   "category": "A_READING",
+   "run_id": "AIRUN:20260917T1930:P105_2",
+   "run_status": "TRUNCATED",
+   "context_hash": "9114D87E91991DE848B9E1E194FBD211A4F4B816695341D8C8784219A5EC8A48",
+   "generation_scope_key": "25FC2C928D1B901425FEDF4A873AF73C28C5FC36AD9D9376AF8849E957E1E02C",
+   "finish_reason": "length",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "retry_count": 0,
+   "latency_ms": 125120,
+   "usage": {
+    "prompt_tokens": 7732,
+    "completion_tokens": 8192,
+    "total_tokens": 15924,
+    "prompt_tokens_details": {
+     "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8192
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 7348
+   },
+   "raw_response_file": "runs/02_Unit6_READING_FOR_WRITING_raw_response.json",
+   "note": "输出截断：finish_reason=length，reasoning 用满 8192，content=0"
+  },
+  {
+   "index": 3,
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "unit": "Unit 1",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "category": "B_DIALOGUE",
+   "run_id": "AIRUN:20260917T1930:P105_3",
+   "run_status": "TRUNCATED",
+   "context_hash": "512200059B9827BD0855D5B9D6A771E4B3D455C97CCF5C686D62A9651B243448",
+   "generation_scope_key": "7B737E2CC95FFCA10EDFB3B9AE875EF6175CF8E0F36A98B3DEF23C75ED181122",
+   "finish_reason": "length",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "retry_count": 0,
+   "latency_ms": 128242,
+   "usage": {
+    "prompt_tokens": 8680,
+    "completion_tokens": 8192,
+    "total_tokens": 16872,
+    "prompt_tokens_details": {
+     "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8192
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 8040
+   },
+   "raw_response_file": "runs/03_Unit1_UNDERSTANDING_IDEAS_raw_response.json",
+   "note": "输出截断：finish_reason=length，reasoning 用满 8192，content=0"
+  },
+  {
+   "index": 4,
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "unit": "Unit 5",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "category": "C_VOCABULARY",
+   "run_id": "AIRUN:20260917T1930:P105_4",
+   "run_status": "TRUNCATED",
+   "context_hash": "263B74B069B6D58BE87A8F715143229A3513FAEE668FAA618AC0BED4384F027A",
+   "generation_scope_key": "F7FEF985D57A75DFF22310F0E027AFCD254D5F3E18198C232909D5CE58F69D44",
+   "finish_reason": "length",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "retry_count": 0,
+   "latency_ms": 118500,
+   "usage": {
+    "prompt_tokens": 10044,
+    "completion_tokens": 8192,
+    "total_tokens": 18236,
+    "prompt_tokens_details": {
+     "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8192
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 9404
+   },
+   "raw_response_file": "runs/04_Unit5_UNDERSTANDING_IDEAS_raw_response.json",
+   "note": "输出截断：finish_reason=length，reasoning 用满 8192，content=0"
+  },
+  {
+   "index": 5,
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "unit": "Starter",
+   "section_key": "GET_READY",
+   "category": "D_INFO_MATCH",
+   "run_id": "AIRUN:20260917T1930:P105_5",
+   "run_status": "TRUNCATED",
+   "context_hash": "C651EC0DFB3652F1B8FC6783A49FDD3844AD5691B551F1D04F9E06CB7A619803",
+   "generation_scope_key": "90ADCDA57472313E504B0938536755AAB7A03D12CE7ABA8545F72E601B3306A0",
+   "finish_reason": "length",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "retry_count": 0,
+   "latency_ms": 128682,
+   "usage": {
+    "prompt_tokens": 9160,
+    "completion_tokens": 8192,
+    "total_tokens": 17352,
+    "prompt_tokens_details": {
+     "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8192
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 8520
+   },
+   "raw_response_file": "runs/05_Starter_GET_READY_raw_response.json",
+   "note": "输出截断：finish_reason=length，reasoning 用满 8192，content=0"
+  },
+  {
+   "index": 6,
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:STARTING_OUT",
+   "unit": "Unit 3",
+   "section_key": "STARTING_OUT",
+   "category": "E_LOW_EVIDENCE",
+   "run_id": "AIRUN:20260917T1930:P105_6",
+   "run_status": "TRUNCATED",
+   "context_hash": "5EEAD807EF64A0A022C965E29824DE786E45C60FFEF14A072AF9387DE124D9B6",
+   "generation_scope_key": "AB0E39D2D3786D05E56474C23695FCE4AC2DB0FD782691BBC6B29B5C396F96CF",
+   "finish_reason": "length",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "retry_count": 0,
+   "latency_ms": 117758,
+   "usage": {
+    "prompt_tokens": 3663,
+    "completion_tokens": 8192,
+    "total_tokens": 11855,
+    "prompt_tokens_details": {
+     "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 7538
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 3023
+   },
+   "raw_response_file": "runs/06_Unit3_STARTING_OUT_raw_response.json",
+   "note": "输出截断：finish_reason=length，reasoning 用满 8192，content=0"
+  },
+  {
+   "index": 7,
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+   "unit": "Unit 1",
+   "section_key": "DEVELOPING_IDEAS",
+   "category": "F_LISTENING_GAP",
+   "run_id": "AIRUN:20260917T1930:P105_7",
+   "run_status": "API_ERROR",
+   "context_hash": "F51C4034D7F25AA83A1385B4D516DD8EA371552ECCF8912671C024ACBF982BC4",
+   "generation_scope_key": "91C44B55826D96B8C53799C39725E276D0F4420114835539185709CE484BE262",
+   "finish_reason": null,
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "retry_count": 0,
+   "latency_ms": null,
+   "usage": null,
+   "raw_response_file": "runs/07_Unit1_DEVELOPING_IDEAS_raw_response.json",
+   "note": "调用进行中被按纪律终止；该行保留为 in-flight 占位（API_ERROR），未产生任何 content，也未产生题目"
+  }
+ ],
+ "prompt_diff": "P1-05-v1 = P0-v1 去掉题量配额；参数化 page/activity 行；reading 示例去 Unit 1 硬编码。10 条硬规则与 schema 未改。",
+ "note": "本文件由真实产物重建（原运行脚本在第 7 个 Section 被按纪律终止，未自行写出）。"
+}

@@ -1,0 +1,932 @@
+{
+ "stage": "P1-02",
+ "audited_at": "2026-09-17T18:24:44",
+ "engine": "sqlite",
+ "sqlite_version": "3.49.1",
+ "user_version": 1,
+ "integrity_check": "ok",
+ "foreign_key_check": [],
+ "database": {
+  "path": "D:\\ZhixueEnglish\\structured\\ai\\question_library.db",
+  "size_bytes": 126976,
+  "mtime": "2026-09-17T18:23:37.464393",
+  "sha256": "5FECB38F20303723F4231EBB3406C97ED5F5DD2DE35C17253525D16968CEA9D8"
+ },
+ "tables": [
+  {
+   "name": "generation_run",
+   "row_count": 0,
+   "primary_key": [
+    "run_id"
+   ],
+   "columns": [
+    {
+     "name": "run_id",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 1
+    },
+    {
+     "name": "generation_scope_key",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "textbook_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "snapshot_id",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "unit_id",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "section_id",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "activity_id",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "model",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "prompt_version",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "context_hash",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "provider",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "context_ref",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "raw_response_ref",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "requested_max",
+     "type": "INTEGER",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "max_tokens",
+     "type": "INTEGER",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "finish_reason",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "usage_json",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "elapsed_ms",
+     "type": "INTEGER",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "question_count",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": "0",
+     "pk_position": 0
+    },
+    {
+     "name": "status",
+     "type": "TEXT",
+     "not_null": true,
+     "default": "'OK'",
+     "pk_position": 0
+    },
+    {
+     "name": "insufficient_evidence",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": "0",
+     "pk_position": 0
+    },
+    {
+     "name": "error",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "note",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "generated_at",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    }
+   ],
+   "foreign_keys": [],
+   "check_expressions": [
+    "CHECK (status IN ('OK','TRUNCATED','API_ERROR','INSUFFICIENT_EVIDENCE'))",
+    "CHECK (insufficient_evidence = 0 OR status = 'INSUFFICIENT_EVIDENCE')"
+   ],
+   "unique_indexes": [
+    "sqlite_autoindex_generation_run_1"
+   ]
+  },
+  {
+   "name": "ai_question",
+   "row_count": 0,
+   "primary_key": [
+    "question_id",
+    "version"
+   ],
+   "columns": [
+    {
+     "name": "question_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 1
+    },
+    {
+     "name": "version",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": null,
+     "pk_position": 2
+    },
+    {
+     "name": "question_type",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "question_text",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "options_json",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "correct_option",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "correct_answer",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "explanation",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "difficulty",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "textbook_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "snapshot_id",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "unit_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "section_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "activity_id",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "page",
+     "type": "INTEGER",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "generation_run_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "generated_at",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "question_fingerprint",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "lifecycle_status",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "active",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": "0",
+     "pk_position": 0
+    },
+    {
+     "name": "disabled_reason",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "stale",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": "0",
+     "pk_position": 0
+    },
+    {
+     "name": "stale_reason",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "stale_since",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "validator_version",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "needs_human_review",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": "0",
+     "pk_position": 0
+    },
+    {
+     "name": "created_at",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "updated_at",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    }
+   ],
+   "foreign_keys": [
+    {
+     "from": "generation_run_id",
+     "to_table": "generation_run",
+     "to_column": "run_id",
+     "on_update": "CASCADE",
+     "on_delete": "RESTRICT"
+    }
+   ],
+   "check_expressions": [
+    "CHECK (question_type IN ('fill','vocab_choice','reading_choice','reading_judge'))",
+    "CHECK (lifecycle_status IN ('GENERATED','VALIDATED','PENDING_REVIEW'",
+    "CHECK ((lifecycle_status = 'ACTIVE' AND active = 1)",
+    "CHECK (stale = 1 OR stale_reason IS NULL)",
+    "CHECK (stale = 0 OR stale_reason IS NOT NULL)"
+   ],
+   "unique_indexes": [
+    "uq_ai_question_fingerprint",
+    "sqlite_autoindex_ai_question_1"
+   ]
+  },
+  {
+   "name": "question_evidence",
+   "row_count": 0,
+   "primary_key": [
+    "question_id",
+    "version",
+    "ordinal"
+   ],
+   "columns": [
+    {
+     "name": "question_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 1
+    },
+    {
+     "name": "version",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": null,
+     "pk_position": 2
+    },
+    {
+     "name": "ordinal",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": null,
+     "pk_position": 3
+    },
+    {
+     "name": "evidence_block_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "evidence_quote",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "is_primary",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": "0",
+     "pk_position": 0
+    }
+   ],
+   "foreign_keys": [
+    {
+     "from": "question_id",
+     "to_table": "ai_question",
+     "to_column": "question_id",
+     "on_update": "CASCADE",
+     "on_delete": "CASCADE"
+    },
+    {
+     "from": "version",
+     "to_table": "ai_question",
+     "to_column": "version",
+     "on_update": "CASCADE",
+     "on_delete": "CASCADE"
+    }
+   ],
+   "check_expressions": [],
+   "unique_indexes": [
+    "sqlite_autoindex_question_evidence_1"
+   ]
+  },
+  {
+   "name": "question_learning_object",
+   "row_count": 0,
+   "primary_key": [
+    "question_id",
+    "version",
+    "item_id"
+   ],
+   "columns": [
+    {
+     "name": "question_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 1
+    },
+    {
+     "name": "version",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": null,
+     "pk_position": 2
+    },
+    {
+     "name": "item_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 3
+    },
+    {
+     "name": "is_primary",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": "0",
+     "pk_position": 0
+    }
+   ],
+   "foreign_keys": [
+    {
+     "from": "question_id",
+     "to_table": "ai_question",
+     "to_column": "question_id",
+     "on_update": "CASCADE",
+     "on_delete": "CASCADE"
+    },
+    {
+     "from": "version",
+     "to_table": "ai_question",
+     "to_column": "version",
+     "on_update": "CASCADE",
+     "on_delete": "CASCADE"
+    }
+   ],
+   "check_expressions": [
+    "CHECK (item_id NOT LIKE 'AIQ:%' AND item_id NOT LIKE 'AIRUN:%')"
+   ],
+   "unique_indexes": [
+    "sqlite_autoindex_question_learning_object_1"
+   ]
+  },
+  {
+   "name": "question_validation",
+   "row_count": 0,
+   "primary_key": [
+    "question_id",
+    "version",
+    "validator_version"
+   ],
+   "columns": [
+    {
+     "name": "question_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 1
+    },
+    {
+     "name": "version",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": null,
+     "pk_position": 2
+    },
+    {
+     "name": "validator_version",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 3
+    },
+    {
+     "name": "validation_result",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "validated_at",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "answer_support_type",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "checks_json",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "out_of_scope_tokens_json",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "needs_human_review",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": "0",
+     "pk_position": 0
+    },
+    {
+     "name": "note",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    }
+   ],
+   "foreign_keys": [
+    {
+     "from": "question_id",
+     "to_table": "ai_question",
+     "to_column": "question_id",
+     "on_update": "CASCADE",
+     "on_delete": "CASCADE"
+    },
+    {
+     "from": "version",
+     "to_table": "ai_question",
+     "to_column": "version",
+     "on_update": "CASCADE",
+     "on_delete": "CASCADE"
+    }
+   ],
+   "check_expressions": [
+    "checks_json              TEXT CHECK (checks_json IS NULL OR json_valid(checks_json))",
+    "CHECK (validation_result <> 'PASS'"
+   ],
+   "unique_indexes": [
+    "sqlite_autoindex_question_validation_1"
+   ]
+  },
+  {
+   "name": "question_event",
+   "row_count": 0,
+   "primary_key": [
+    "event_id"
+   ],
+   "columns": [
+    {
+     "name": "event_id",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 1
+    },
+    {
+     "name": "question_id",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "version",
+     "type": "INTEGER",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "event_type",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "from_status",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "to_status",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "event_at",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "actor",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "actor_kind",
+     "type": "TEXT",
+     "not_null": true,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "reason_code",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    },
+    {
+     "name": "note",
+     "type": "TEXT",
+     "not_null": false,
+     "default": null,
+     "pk_position": 0
+    }
+   ],
+   "foreign_keys": [
+    {
+     "from": "question_id",
+     "to_table": "ai_question",
+     "to_column": "question_id",
+     "on_update": "CASCADE",
+     "on_delete": "RESTRICT"
+    },
+    {
+     "from": "version",
+     "to_table": "ai_question",
+     "to_column": "version",
+     "on_update": "CASCADE",
+     "on_delete": "RESTRICT"
+    }
+   ],
+   "check_expressions": [
+    "CHECK (event_type <> 'REVIEW_APPROVED' OR actor_kind = 'human')",
+    "CHECK (event_type <> 'REVIEW_REJECTED' OR actor_kind = 'human')",
+    "CHECK (event_type <> 'REVIEW_REJECTED' OR reason_code IS NOT NULL)"
+   ],
+   "unique_indexes": [
+    "sqlite_autoindex_question_event_1"
+   ]
+  }
+ ],
+ "indexes": [
+  {
+   "name": "idx_ai_question_lifecycle",
+   "table": "ai_question",
+   "sql": "CREATE INDEX idx_ai_question_lifecycle ON ai_question(lifecycle_status)"
+  },
+  {
+   "name": "idx_ai_question_run",
+   "table": "ai_question",
+   "sql": "CREATE INDEX idx_ai_question_run ON ai_question(generation_run_id)"
+  },
+  {
+   "name": "idx_ai_question_scope",
+   "table": "ai_question",
+   "sql": "CREATE INDEX idx_ai_question_scope ON ai_question(section_id, activity_id, lifecycle_status, stale)"
+  },
+  {
+   "name": "idx_ai_question_stale",
+   "table": "ai_question",
+   "sql": "CREATE INDEX idx_ai_question_stale ON ai_question(stale, stale_reason)"
+  },
+  {
+   "name": "idx_generation_run_scope",
+   "table": "generation_run",
+   "sql": "CREATE INDEX idx_generation_run_scope ON generation_run(generation_scope_key)"
+  },
+  {
+   "name": "idx_generation_run_target",
+   "table": "generation_run",
+   "sql": "CREATE INDEX idx_generation_run_target ON generation_run(section_id, activity_id)"
+  },
+  {
+   "name": "idx_generation_run_time",
+   "table": "generation_run",
+   "sql": "CREATE INDEX idx_generation_run_time ON generation_run(generated_at)"
+  },
+  {
+   "name": "idx_qlo_item",
+   "table": "question_learning_object",
+   "sql": "CREATE INDEX idx_qlo_item ON question_learning_object(item_id)"
+  },
+  {
+   "name": "idx_question_event_q",
+   "table": "question_event",
+   "sql": "CREATE INDEX idx_question_event_q ON question_event(question_id, version, event_at)"
+  },
+  {
+   "name": "idx_question_event_type",
+   "table": "question_event",
+   "sql": "CREATE INDEX idx_question_event_type ON question_event(event_type, event_at)"
+  },
+  {
+   "name": "idx_question_evidence_block",
+   "table": "question_evidence",
+   "sql": "CREATE INDEX idx_question_evidence_block ON question_evidence(evidence_block_id)"
+  },
+  {
+   "name": "idx_validation_result",
+   "table": "question_validation",
+   "sql": "CREATE INDEX idx_validation_result ON question_validation(validation_result)"
+  },
+  {
+   "name": "idx_validation_support",
+   "table": "question_validation",
+   "sql": "CREATE INDEX idx_validation_support ON question_validation(answer_support_type)"
+  },
+  {
+   "name": "uq_ai_question_fingerprint",
+   "table": "ai_question",
+   "sql": "CREATE UNIQUE INDEX uq_ai_question_fingerprint ON ai_question(question_fingerprint)"
+  }
+ ],
+ "triggers": [
+  {
+   "name": "trg_ai_question_active_requires_human_approval",
+   "table": "ai_question",
+   "timing": null,
+   "event": null,
+   "sql": "CREATE TRIGGER trg_ai_question_active_requires_human_approval\n    BEFORE UPDATE OF lifecycle_status ON ai_question\n    WHEN NEW.lifecycle_status = 'ACTIVE'\n     AND NOT EXISTS (\n       SELECT 1 FROM question_event e\n        WHERE e.question_id = NEW.question_id\n          AND e.version = NEW.version\n          AND e.event_type = 'REVIEW_APPROVED'\n          AND e.actor_kind = 'human'\n     )\n    BEGIN\n      SELECT RAISE(ABORT, 'ACTIVE requires a human REVIEW_APPROVED event');\n    END"
+  },
+  {
+   "name": "trg_ai_question_insert_active_forbidden",
+   "table": "ai_question",
+   "timing": null,
+   "event": null,
+   "sql": "CREATE TRIGGER trg_ai_question_insert_active_forbidden\n    BEFORE INSERT ON ai_question\n    WHEN NEW.lifecycle_status = 'ACTIVE'\n    BEGIN\n      SELECT RAISE(ABORT, 'validator PASS is not enough: a question cannot be inserted as ACTIVE');\n    END"
+  },
+  {
+   "name": "trg_ai_question_no_delete",
+   "table": "ai_question",
+   "timing": null,
+   "event": null,
+   "sql": "CREATE TRIGGER trg_ai_question_no_delete\n    BEFORE DELETE ON ai_question\n    BEGIN\n      SELECT RAISE(ABORT, 'ai_question rows may not be deleted; use DISABLED instead');\n    END"
+  },
+  {
+   "name": "trg_question_event_no_delete",
+   "table": "question_event",
+   "timing": null,
+   "event": null,
+   "sql": "CREATE TRIGGER trg_question_event_no_delete\n    BEFORE DELETE ON question_event\n    BEGIN\n      SELECT RAISE(ABORT, 'question_event is append-only: DELETE is forbidden');\n    END"
+  },
+  {
+   "name": "trg_question_event_no_update",
+   "table": "question_event",
+   "timing": null,
+   "event": null,
+   "sql": "CREATE TRIGGER trg_question_event_no_update\n    BEFORE UPDATE ON question_event\n    BEGIN\n      SELECT RAISE(ABORT, 'question_event is append-only: UPDATE is forbidden');\n    END"
+  },
+  {
+   "name": "trg_validation_exact_trap",
+   "table": "question_validation",
+   "timing": null,
+   "event": null,
+   "sql": "CREATE TRIGGER trg_validation_exact_trap\n    AFTER INSERT ON question_validation\n    WHEN NEW.answer_support_type = 'EXACT'\n     AND EXISTS (\n       SELECT 1 FROM ai_question q\n        WHERE q.question_id = NEW.question_id\n          AND q.version = NEW.version\n          AND ( instr(lower(q.question_text), lower(q.correct_answer)) > 0\n                OR ( q.options_json IS NOT NULL\n                     AND instr(lower(q.options_json), lower(q.correct_answer)) > 0 ) )\n     )\n    BEGIN\n      UPDATE question_validation\n         SET needs_human_review = 1\n       WHERE question_id = NEW.question_id\n         AND version = NEW.version\n         AND validator_version = NEW.validator_version;\n      UPDATE ai_question\n         SET needs_human_review = 1,\n             updated_at = NEW.validated_at\n       WHERE question_id = NEW.question_id\n         AND version = NEW.version;\n    END"
+  }
+ ],
+ "hard_gates": {
+  "validator_pass_is_not_active": [
+   "trigger trg_ai_question_insert_active_forbidden",
+   "trigger trg_ai_question_active_requires_human_approval"
+  ],
+  "question_event_append_only": [
+   "trigger trg_question_event_no_update",
+   "trigger trg_question_event_no_delete"
+  ],
+  "question_rows_never_deleted": [
+   "trigger trg_ai_question_no_delete"
+  ],
+  "exact_trap_forces_human_review": [
+   "trigger trg_validation_exact_trap"
+  ]
+ },
+ "protection": {
+  "learning_db": {
+   "path": "D:\\ZhixueEnglish\\structured\\learning\\learning.db",
+   "size_bytes": 118784,
+   "mtime": "2026-09-13T15:50:09.087940",
+   "sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91"
+  },
+  "validator_v2": {
+   "path": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\20260917_1520_validator_fix\\validator_v2.py",
+   "size_bytes": 5910,
+   "mtime": "2026-09-17T14:31:02.369509",
+   "sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683"
+  },
+  "contentpack": {
+   "path": "D:\\ZhixueEnglish\\structured\\contentpack\\v5\\FLTRP-EN-7A-2022CUR.sqlite",
+   "size_bytes": 2715648,
+   "mtime": "2026-09-14T14:37:54.767610",
+   "sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39"
+  }
+ },
+ "no_real_ai_data": true,
+ "ai_api_calls_during_implementation": 0,
+ "pdf_reparsed": false,
+ "learning_db_modified": false
+}

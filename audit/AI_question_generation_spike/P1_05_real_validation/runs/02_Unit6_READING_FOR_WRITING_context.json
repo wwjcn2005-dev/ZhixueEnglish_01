@@ -1,0 +1,851 @@
+{
+ "textbook_position": {
+  "unit": "Unit 6",
+  "unit_title": "Fantastic friends",
+  "section": "READING_FOR_WRITING",
+  "section_title": "Reading for writing",
+  "textbook_pages": [
+   104,
+   105,
+   106,
+   107
+  ],
+  "section_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING",
+  "is_listening_gap_control": false
+ },
+ "activity_instructions": [
+  {
+   "activity_no": 1,
+   "page": 104,
+   "instruction": "a",
+   "audio_required": false
+  },
+  {
+   "activity_no": 4,
+   "page": 106,
+   "instruction": "Answer the questions.1 Why is the dodo “just a character” to some readers?2 What do “as happy as a clam” and “as dead as a dodo” mean?3 Why does the writer use the two expressions at the end of the passage?",
+   "audio_required": false
+  },
+  {
+   "activity_no": 5,
+   "page": 107,
+   "instruction": "Write a short paragraph about dodos.",
+   "audio_required": false
+  }
+ ],
+ "textbook_blocks": [
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B2",
+   "kind": "heading",
+   "role": "section_title",
+   "text": "1Reading for writing"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B1",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Look at the pictures on the right and answer the questions. Use the words and expressions to help you."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B11",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "b"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B10",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "a"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B3",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1\tWhere can you see these animals now?2\tWhat happened to them?3\tWhat do you think are the reasons?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B4",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "museum"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B6",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "animal"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B8",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "human"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B5",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "cut down"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B7",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "hunt"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B9",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "die out"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B0",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Read the passage. What happened to dodos?2"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B14",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1\t Are you looking at me? Do you know me? I’m a dodo! You may think I’m just a character in Alice’s Adventures in Wonderland. Actually, there used to be thousands of us – for real. But now you can only see us in museums."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B15",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "2\t We lived on an island in the Indian Ocean. In the happy old days, there was plenty of food to eat. All the other animals were"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B16",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "friendly. What a peaceful and safe life!"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B12",
+   "kind": "heading",
+   "role": "heading",
+   "text": "As dead"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P109:B13",
+   "kind": "heading",
+   "role": "heading",
+   "text": "As dead"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B0",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Complete the display board with the words from the passage.3"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B6",
+   "kind": "heading",
+   "role": "heading",
+   "text": "The sad story of dodos"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B2",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1  in the Indian Ocean. There was plenty of"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B1",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Dodos lived on an"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B3",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "2  to eat and all the other"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B4",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "3  were friendly."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B9",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "4  arrived in 1598. They cut down the"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B10",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "5  and hunted dodos. Their pigs, cats and dogs ate the dodos’"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B11",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "6 ."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B7",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Dodos soon died out. Today, people can only see them in"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B8",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "7 ."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B13",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "Think and share"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B12",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1\tWhat is the purpose of the passage?2\tHow do people’s actions influence animals? Give an example."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B5",
+   "kind": "dialogue",
+   "role": "body",
+   "text": "4 Answer the questions.1\tWhy is the dodo “just a character” to some readers?2\tWhat do “as happy as a clam” and “as dead as a dodo” mean?3\tWhy does the writer use the two expressions at the end of the passage?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B14",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "Learning to think for question 1 You may find the writing purpose from the"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B15",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "title, beginning or ending of the passage."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B16",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Usually, the writer wants the readers to"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P111:B17",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "learn a lesson or take some action."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B3",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "5"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B0",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Write a short paragraph about dodos."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B2",
+   "kind": "heading",
+   "role": "heading",
+   "text": "1"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B4",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Step"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B1",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What do you know about dodos? Use the chart to help you."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B8",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "General information"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B10",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Where did dodos live?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B12",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What were their lives like?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B14",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What did humans do?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B13",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What happened to dodos at last?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B9",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Message"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B11",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What can you learn from dodos’ story?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B5",
+   "kind": "heading",
+   "role": "heading",
+   "text": "Step 2"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B6",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Organise the information and write a paragraph."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B7",
+   "kind": "heading",
+   "role": "heading",
+   "text": "Step 3"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B17",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Check. Did you: ☐\t introduce the experience of dodos?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B18",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "☐\t use the words and expressions from the reading passage?☐\t give your opinion about protecting animals?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B15",
+   "kind": "heading",
+   "role": "heading",
+   "text": "Step 4"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P112:B16",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Share your paragraph with the class."
+  }
+ ],
+ "unit_vocabulary": [
+  {
+   "word": "pigeon",
+   "pos": "n",
+   "meaning_zh": "鸽子",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 96
+  },
+  {
+   "word": "surprise",
+   "pos": "n",
+   "meaning_zh": "意想不到的事",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 96
+  },
+  {
+   "word": "knock around (",
+   "pos": null,
+   "meaning_zh": "在某处悠闲地度过",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 96
+  },
+  {
+   "word": "droppings",
+   "pos": "n",
+   "meaning_zh": "兽或鸟的粪",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 96
+  },
+  {
+   "word": "boring",
+   "pos": "adj",
+   "meaning_zh": "无趣的无聊的乏味的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 96
+  },
+  {
+   "word": "feed",
+   "pos": "v",
+   "meaning_zh": "喂养饲养给食物",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 96
+  },
+  {
+   "word": "madly",
+   "pos": "adv",
+   "meaning_zh": "发狂地无法控制地",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 96
+  },
+  {
+   "word": "scary",
+   "pos": "adj",
+   "meaning_zh": "可怕的骇人的恐怖的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 96
+  },
+  {
+   "word": "research",
+   "pos": "n",
+   "meaning_zh": "研究调查",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "recognise",
+   "pos": "v",
+   "meaning_zh": "认出认识辨认出",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "themselves",
+   "pos": "pron",
+   "meaning_zh": "它们自己他们自己她们自己",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "mirror",
+   "pos": "n",
+   "meaning_zh": "镜子",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "itself",
+   "pos": "pron",
+   "meaning_zh": "自己自身",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "maybe",
+   "pos": "adv",
+   "meaning_zh": "也许大概可能",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "several",
+   "pos": null,
+   "meaning_zh": "几个数个一些",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "kilometre",
+   "pos": "n",
+   "meaning_zh": "千米公里",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "get lost",
+   "pos": null,
+   "meaning_zh": "迷路",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 97
+  },
+  {
+   "word": "speed",
+   "pos": "n",
+   "meaning_zh": "速度速率",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "amazing",
+   "pos": "adj",
+   "meaning_zh": "惊人的了不起的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "enough",
+   "pos": "pron",
+   "meaning_zh": "足够",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 97
+  },
+  {
+   "word": "beaver",
+   "pos": "n",
+   "meaning_zh": "河狸海狸",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 99
+  },
+  {
+   "word": "wolf",
+   "pos": "n",
+   "meaning_zh": "狼",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 99
+  },
+  {
+   "word": "engineer",
+   "pos": "n",
+   "meaning_zh": "工程师设计师",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 99
+  },
+  {
+   "word": "hero",
+   "pos": "n",
+   "meaning_zh": "英雄",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 101
+  },
+  {
+   "word": "rescue",
+   "pos": "n",
+   "meaning_zh": "营救救援",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 102
+  },
+  {
+   "word": "earthquake",
+   "pos": "n",
+   "meaning_zh": "地震",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 102
+  },
+  {
+   "word": "missing",
+   "pos": "adj",
+   "meaning_zh": "找不到的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 102
+  },
+  {
+   "word": "save",
+   "pos": "v",
+   "meaning_zh": "救拯救挽救",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 102
+  },
+  {
+   "word": "dead",
+   "pos": "adj",
+   "meaning_zh": "死的去世的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 104
+  },
+  {
+   "word": "dodo",
+   "pos": "n",
+   "meaning_zh": "渡渡鸟",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 105
+  },
+  {
+   "word": "as dead as a dodo",
+   "pos": null,
+   "meaning_zh": "彻底死亡",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 104
+  },
+  {
+   "word": "character",
+   "pos": "n",
+   "meaning_zh": "书剧本电影中的人物角色",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 104
+  },
+  {
+   "word": "museum",
+   "pos": "n",
+   "meaning_zh": "博物馆博物院",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 104
+  },
+  {
+   "word": "island",
+   "pos": "n",
+   "meaning_zh": "岛岛屿",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 104
+  },
+  {
+   "word": "ocean",
+   "pos": "n",
+   "meaning_zh": "海洋大海",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 104
+  },
+  {
+   "word": "plenty",
+   "pos": "pron",
+   "meaning_zh": "丰富充足众多大量",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 104
+  },
+  {
+   "word": "friendly",
+   "pos": "adj",
+   "meaning_zh": "友好的友善的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 104
+  },
+  {
+   "word": "peaceful",
+   "pos": "adj",
+   "meaning_zh": "和平的非暴力的",
+   "emphasis": "BOLD",
+   "is_core": false,
+   "textbook_page": 104
+  },
+  {
+   "word": "arrive",
+   "pos": "v",
+   "meaning_zh": "到达抵达",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 105
+  },
+  {
+   "word": "forest",
+   "pos": "n",
+   "meaning_zh": "森林林区",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 105
+  },
+  {
+   "word": "hunt",
+   "pos": "v",
+   "meaning_zh": "打猎猎杀",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 105
+  },
+  {
+   "word": "die out",
+   "pos": null,
+   "meaning_zh": "消失绝迹灭绝",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 105
+  },
+  {
+   "word": "full",
+   "pos": "adj",
+   "meaning_zh": "满的满是的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 105
+  },
+  {
+   "word": "fantastic",
+   "pos": "adj",
+   "meaning_zh": "极好的吸引人的有趣的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 105
+  },
+  {
+   "word": "as happy as a clam",
+   "pos": null,
+   "meaning_zh": "非常高兴的相当满足的",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 105
+  }
+ ],
+ "evidence_packages": [
+  {
+   "question_id": "Q:FDDC208F44BF",
+   "activity_no": 1,
+   "question_no": 1,
+   "page": 104,
+   "instruction": "Look at the pictures on the right and answer the questions. Use the words and expressions to help you. 1 Where can you see these animals now?",
+   "original_question_text": "a and answer the questions. Use the words and expressions to help you.",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:FDDC208F44BF",
+   "activity_no": 1,
+   "question_no": 1,
+   "page": 104,
+   "instruction": "Look at the pictures on the right and answer the questions. Use the words and expressions to help you. 1 Where can you see these animals now?",
+   "original_question_text": "Where can you see these animals now?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:C2FBB38147F7",
+   "activity_no": 1,
+   "question_no": 2,
+   "page": 104,
+   "instruction": "Look at the pictures on the right and answer the questions. Use the words and expressions to help you. 1 Where can you see these animals now?",
+   "original_question_text": "What happened to them?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:7DE3EFFF6FC6",
+   "activity_no": 1,
+   "question_no": 3,
+   "page": 104,
+   "instruction": "Look at the pictures on the right and answer the questions. Use the words and expressions to help you. 1 Where can you see these animals now?",
+   "original_question_text": "What do you think are the reasons? museum animal human cut down hunt die out d c e 3 However, in 1598, humans arrived. They cut down the trees and our lovely forest was gone. They hunted us because we were slow and couldn’t fly. What’s more, their pigs, cats and dogs ate our eggs. As a result, we so",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:3B1C336BF9F0",
+   "activity_no": 1,
+   "question_no": 4,
+   "page": 104,
+   "instruction": "Look at the pictures on the right and answer the questions. Use the words and expressions to help you. 1 Where can you see these animals now?",
+   "original_question_text": "So today we are standing in museums around the world. When you see us, please remember our sad story. The world is full of fantastic animals. Please try your best to help them. Make them as happy as a clam, not as dead as a dodo. as a dodo as a dodo Fantastic friends 105 3",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:BA4B53BCEAAE",
+   "activity_no": 2,
+   "question_no": 1,
+   "page": 104,
+   "instruction": "Read the passage. What happened to dodos?",
+   "original_question_text": "Are you looking at me? Do you know me? I’m a dodo! You may think I’m just a character in Alice’s Adventures in Wonderland. Actually, there used to be thousands of us – for real. But now you can only see us in museums.",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:D0DBB7A62290",
+   "activity_no": 2,
+   "question_no": 2,
+   "page": 104,
+   "instruction": "Read the passage. What happened to dodos?",
+   "original_question_text": "We lived on an island in the Indian Ocean. In the happy old days, there was plenty of food to eat. All the other animals were friendly. What a peaceful and safe life! As dead As dead 104 UNIT 6 d c e 3 However, in 1598, humans arrived. They cut down the trees and our lovely forest was gone. They hun",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:CC0D4A10A120",
+   "activity_no": 2,
+   "question_no": 4,
+   "page": 104,
+   "instruction": "Read the passage. What happened to dodos?",
+   "original_question_text": "So today we are standing in museums around the world. When you see us, please remember our sad story. The world is full of fantastic animals. Please try your best to help them. Make them as happy as a clam, not as dead as a dodo. as a dodo as a dodo Fantastic friends 105 3",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:09977505B1BD",
+   "activity_no": 3,
+   "question_no": 1,
+   "page": 106,
+   "instruction": "Complete the display board with the words from the passage.",
+   "original_question_text": "The sad story of dodos 1 Dodos lived on an in the Indian 2 Ocean. There was plenty of to eat 3 and all the other were friendly. 4 arrived in 1598. They cut down the 5 and hunted dodos. Their pigs, cats 6 and dogs ate the dodos’ . Dodos soon died out. Today, people can only see 7 them in . Think and ",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:2965E75E11A1",
+   "activity_no": 4,
+   "question_no": 1,
+   "page": 106,
+   "instruction": "Answer the questions. 1 Why is the dodo “just a character” to",
+   "original_question_text": "Why is the dodo “just a character” to animals? Give an example. some readers? Learning to think for question 1 2 What do “as happy as a clam” and “as You may find the writing purpose from the dead as a dodo” mean? title, beginning or ending of the passage.",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:00AF1C38D8B7",
+   "activity_no": 4,
+   "question_no": 3,
+   "page": 106,
+   "instruction": "Answer the questions. 1 Why is the dodo “just a character” to",
+   "original_question_text": "Why does the writer use the two Usually, the writer wants the readers to learn a lesson or take some action. expressions at the end of the passage? 106 UNIT 6 5",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:9B2EAAF5A1A7",
+   "activity_no": 5,
+   "question_no": 1,
+   "page": 107,
+   "instruction": "Write a short paragraph about dodos.",
+   "original_question_text": "Step What do you know about dodos? Use the chart to help you. General information Where did dodos live? What were their lives like? What did humans do? What happened to dodos at last? Message What can you learn from dodos’ story? Step 2 Organise the information and write a paragraph. Step 3 Check. D",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  }
+ ],
+ "rules": {
+  "BOLD": "core textbook word (教材黑体重点词)",
+  "PLAIN": "ordinary textbook word (非核心重点词)",
+  "audio_required": "该活动的内容在音频中，提供的证据里没有音频转写文本"
+ }
+}

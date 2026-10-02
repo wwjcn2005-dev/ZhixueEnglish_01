@@ -1,0 +1,222 @@
+{
+ "stage": "P1-07",
+ "status": "COMMITTED",
+ "ai_calls": 0,
+ "library_before": {
+  "sha256": "3970408E3C0FE341C38EFAA9E5208AB61FC363465BE71AD10192ABF49F01CAAA",
+  "counts": {
+   "generation_run": 8,
+   "ai_question": 2,
+   "question_evidence": 2,
+   "question_learning_object": 4,
+   "question_validation": 2,
+   "question_event": 3
+  },
+  "questions": [
+   {
+    "question_id": "AIQ:7EBCDBC29563",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD",
+    "correct_answer": "sentence"
+   },
+   {
+    "question_id": "AIQ:3179968E3E74",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "3179968E3E7400B28A2312579728FF0B6DDA54DB3B50C16761445908D12A63F1",
+    "correct_answer": "polite"
+   }
+  ]
+ },
+ "library_after": {
+  "counts": {
+   "generation_run": 12,
+   "ai_question": 21,
+   "question_evidence": 22,
+   "question_learning_object": 37,
+   "question_validation": 21,
+   "question_event": 41
+  },
+  "questions": [
+   {
+    "question_id": "AIQ:7EBCDBC29563",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD",
+    "correct_answer": "sentence"
+   },
+   {
+    "question_id": "AIQ:3179968E3E74",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "3179968E3E7400B28A2312579728FF0B6DDA54DB3B50C16761445908D12A63F1",
+    "correct_answer": "polite"
+   },
+   {
+    "question_id": "AIQ:E5F4C046FA61",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "E5F4C046FA61C1316730AFE4E3A64E1908C2BDD0EEE84757109A4DF36A584120",
+    "correct_answer": "sound"
+   },
+   {
+    "question_id": "AIQ:04CC9B1CF690",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "04CC9B1CF690F62D3DD91EE8ABEA626A2E703D83F114BB8BBA355EAE4208F159",
+    "correct_answer": "enjoy"
+   },
+   {
+    "question_id": "AIQ:BD59C5958D45",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "BD59C5958D455E98B9AC542A03F7172F68D33152AC82F4C0DDE21AB2E5832196",
+    "correct_answer": "band"
+   },
+   {
+    "question_id": "AIQ:75AAEBFE06DF",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "75AAEBFE06DFC6E750DBBE748A476ABD568F716C13FEEB296517F7297798020B",
+    "correct_answer": "different"
+   },
+   {
+    "question_id": "AIQ:879007FA4FC7",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "879007FA4FC7DD75D79B593F81CD04F22BEBF976276DE8F9DAEB6A7F18243561",
+    "correct_answer": "in the park"
+   },
+   {
+    "question_id": "AIQ:6ECD02B9D381",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "6ECD02B9D381600D03E2E2C6A2CA77568CA945BF8917F295D632D9DBB79A9362",
+    "correct_answer": "fire up instruments"
+   },
+   {
+    "question_id": "AIQ:C3E6FD29F680",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "C3E6FD29F680AB1C167266EF572566F8637D8F64FF3E4743EE21456C56A06B44",
+    "correct_answer": "hers"
+   },
+   {
+    "question_id": "AIQ:5B4C80443D5F",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "5B4C80443D5FE94E0C4CE374D47CB800BE0CA226E01269DDEE850E8A929397F6",
+    "correct_answer": "mistake"
+   },
+   {
+    "question_id": "AIQ:D976787A0A43",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "D976787A0A43F6C7E9F41550C3037D7EBC6837393326A60BC684D2D8E1412F5C",
+    "correct_answer": "mind"
+   },
+   {
+    "question_id": "AIQ:1BA260727793",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "1BA2607277936E2B6AE2A521F66C0CDC356C90B5269988801D9C1A28E9F8280E",
+    "correct_answer": "In fact"
+   },
+   {
+    "question_id": "AIQ:A9D1F3EC6020",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "A9D1F3EC6020F5DA7C4BD46C13C1D1E690B9A8EE9E47ABF5D8CB31546F01C048",
+    "correct_answer": "sentence"
+   },
+   {
+    "question_id": "AIQ:6721EC6C5D1F",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "6721EC6C5D1F543B6D45B7C9AFE0E6167E13DC6947490D86A582B4339AEB8F39",
+    "correct_answer": "root"
+   },
+   {
+    "question_id": "AIQ:B6463523F9E5",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "B6463523F9E5EF6F9B7B1EE0A2F0A48448326F4888AB1EC1464ED3143A97D78E",
+    "correct_answer": "their own rain"
+   },
+   {
+    "question_id": "AIQ:7EAC0ED29A0A",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "7EAC0ED29A0AF3893040D0E8D60A552F4234E7393B9933E6EFC8E8F87CF6D480",
+    "correct_answer": "True"
+   },
+   {
+    "question_id": "AIQ:80F1D28C3101",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "80F1D28C3101BC108B5AED3B7D16A854462785F00E6EA272C53EE7F7FA75D742",
+    "correct_answer": "False"
+   },
+   {
+    "question_id": "AIQ:1B3AF72923C4",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "1B3AF72923C4AEE1848E4E92554DE8E14A2DD1B9DFF503E9A87DCCB561A57B78",
+    "correct_answer": "ready"
+   },
+   {
+    "question_id": "AIQ:3C02F6486DFF",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "3C02F6486DFF754AB9CD4B66F1A1A3AA077A73136D504EB2C2104C920D1EE293",
+    "correct_answer": "eraser"
+   },
+   {
+    "question_id": "AIQ:120FFEECA78F",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "120FFEECA78F0974566EF18C485C09FFEF71F66EBE1663AF126A180704EF74A0",
+    "correct_answer": "grey"
+   },
+   {
+    "question_id": "AIQ:CD8B21681B4C",
+    "version": 1,
+    "lifecycle_status": "PENDING_REVIEW",
+    "question_fingerprint": "CD8B21681B4C6783278E52FA2CE76A49F5BB3571CACF0091A75E591DAB3EA301",
+    "correct_answer": "school uniform"
+   }
+  ]
+ },
+ "generation_runs_created": {
+  "S1": "AIRUN:20260917T201605:P106_S1",
+  "S2": "AIRUN:20260917T201756:P106_S2",
+  "S3": "AIRUN:20260917T202038:P106_S3",
+  "S4": "AIRUN:20260917T202251:P106_S4"
+ },
+ "inserted_questions": [
+  "AIQ:E5F4C046FA61",
+  "AIQ:04CC9B1CF690",
+  "AIQ:BD59C5958D45",
+  "AIQ:75AAEBFE06DF",
+  "AIQ:879007FA4FC7",
+  "AIQ:6ECD02B9D381",
+  "AIQ:C3E6FD29F680",
+  "AIQ:5B4C80443D5F",
+  "AIQ:D976787A0A43",
+  "AIQ:1BA260727793",
+  "AIQ:A9D1F3EC6020",
+  "AIQ:6721EC6C5D1F",
+  "AIQ:B6463523F9E5",
+  "AIQ:7EAC0ED29A0A",
+  "AIQ:80F1D28C3101",
+  "AIQ:1B3AF72923C4",
+  "AIQ:3C02F6486DFF",
+  "AIQ:120FFEECA78F",
+  "AIQ:CD8B21681B4C"
+ ],
+ "inserted_count": 19,
+ "existing_questions_unchanged": true,
+ "active_count": 0,
+ "lib_sha256_after": "F74CA83F7C8A98F2A4A2E672E7BA61ECC34CBFC2338AC10064BF18C0FFD1FD6A"
+}

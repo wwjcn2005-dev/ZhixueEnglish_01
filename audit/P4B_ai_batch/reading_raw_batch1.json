@@ -1,0 +1,436 @@
+{
+ "items": [
+  {
+   "audio": "AU07",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P22:B2",
+   "stem": "Why does Wang Han stop writing after writing the first word?",
+   "options": [
+    "He doesn't know the first word.",
+    "He thinks the sentence has a mistake.",
+    "He wants to ask Ms Chen a question.",
+    "He is too nervous to write."
+   ],
+   "answer_index": 1,
+   "quote": "“That’s not right. But is it OK to point out the mistake? Is that polite, in the first lesson?” Questions jump into my mind.",
+   "skill": "simple inference"
+  },
+  {
+   "audio": "AU07",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P22:B6",
+   "stem": "According to Wang Han, who is the sentence from?",
+   "options": [
+    "Mencius",
+    "Confucius",
+    "Ms Chen",
+    "Wang Han"
+   ],
+   "answer_index": 1,
+   "quote": "“Ms Chen, there’s a mistake,” I say. “That sentence is from Confucius, not from Mencius.”",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU07",
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P22:B8",
+   "stem": "What is Ms Chen’s main lesson for the students?",
+   "options": [
+    "Always write quickly.",
+    "Never make mistakes.",
+    "Think more in learning.",
+    "Remember famous people."
+   ],
+   "answer_index": 2,
+   "quote": "to think more in your learning. Please always remember this.",
+   "skill": "gist"
+  },
+  {
+   "audio": "AU13",
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P30:B2",
+   "stem": "In the letter, junior high is compared to what?",
+   "options": [
+    "A river",
+    "A small pool",
+    "A paper boat",
+    "The sea"
+   ],
+   "answer_index": 0,
+   "quote": "But junior high is like a river.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU13",
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P30:B2",
+   "stem": "What do Mia's parents tell her to do when she has to sail her boat by herself?",
+   "options": [
+    "Try her best and work hard",
+    "Protect the boat from winds",
+    "Stay in the small pool",
+    "Write a letter to them"
+   ],
+   "answer_index": 0,
+   "quote": "Just try your best and work hard.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU13",
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P29:B14",
+   "stem": "Who wrote the letter to Mia?",
+   "options": [
+    "Dad and Mum",
+    "Mia's friends",
+    "Her teacher",
+    "Mia herself"
+   ],
+   "answer_index": 0,
+   "quote": "Yes, and it’s also a letter from Mum and me.",
+   "skill": "inference"
+  },
+  {
+   "audio": "AU21",
+   "unit": "Unit 3",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P54:B1",
+   "stem": "What is the father's love like according to the writer?",
+   "options": [
+    "Loud and obvious",
+    "Silent but strong",
+    "Cold and distant",
+    "Weak and changeable"
+   ],
+   "answer_index": 1,
+   "quote": "His love may be silent. But like a mountain, it is always there.",
+   "skill": "gist"
+  },
+  {
+   "audio": "AU21",
+   "unit": "Unit 3",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P54:B1",
+   "stem": "What does the father do when he is happy about his son's growth?",
+   "options": [
+    "He gives hugs and kisses",
+    "He hides his care in his heart",
+    "He shouts with joy",
+    "He buys gifts"
+   ],
+   "answer_index": 1,
+   "quote": "But he just hides his care in his heart.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU21",
+   "unit": "Unit 3",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P54:B0",
+   "stem": "When the son carries his father across the river, what happens to the father?",
+   "options": [
+    "He laughs loudly",
+    "He gets angry",
+    "He cries quietly",
+    "He sings"
+   ],
+   "answer_index": 2,
+   "quote": "Tears quietly run down his face.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU27",
+   "unit": "Unit 3",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P61:B5",
+   "stem": "What is Robert's problem in the story?",
+   "options": [
+    "He cannot see.",
+    "He cannot move at all.",
+    "He cannot hear.",
+    "He cannot speak."
+   ],
+   "answer_index": 1,
+   "quote": "But Robert has a serious disease and cannot move at all.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU27",
+   "unit": "Unit 3",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P61:B7",
+   "stem": "How does John help Robert for the first time?",
+   "options": [
+    "He puts him in a trailer and pulls it with his bike.",
+    "He buys him a new bike.",
+    "He carries him on his back.",
+    "He asks other kids to play with him."
+   ],
+   "answer_index": 0,
+   "quote": "He puts Robert in a trailer and pulls it along with his bike.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU27",
+   "unit": "Unit 3",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P62:B2",
+   "stem": "What is the main message of the passage?",
+   "options": [
+    "Winning is everything.",
+    "Love is powerful and always wins.",
+    "Bikes need love.",
+    "Races are dangerous."
+   ],
+   "answer_index": 1,
+   "quote": "And love always wins.",
+   "skill": "simple gist"
+  },
+  {
+   "audio": "AU34",
+   "unit": "Unit 4",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P78:B1",
+   "stem": "What does Leng never regret?",
+   "options": [
+    "Being an ER doctor",
+    "Having little time with her family",
+    "Working during festivals",
+    "Missing fireworks"
+   ],
+   "answer_index": 0,
+   "quote": "But she never regrets her decision to be an ER doctor.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU34",
+   "unit": "Unit 4",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P78:B2",
+   "stem": "Why do medical workers in China give up their family time?",
+   "options": [
+    "To earn more money",
+    "To answer the call of duty",
+    "To watch fireworks",
+    "To be with patients' families"
+   ],
+   "answer_index": 1,
+   "quote": "They give up their family time to answer the call of duty.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU34",
+   "unit": "Unit 4",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P78:B2",
+   "stem": "In the passage, what shines brighter than fireworks?",
+   "options": [
+    "The patients' hearts",
+    "The medical workers' hard work",
+    "The family time",
+    "The emergency room"
+   ],
+   "answer_index": 1,
+   "quote": "In the heart of every patient, their hard work shines brighter than fireworks.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU35",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P86:B1",
+   "stem": "Where does Worker No. 55 work?",
+   "options": [
+    "Workshop 1001 in the Leaf",
+    "Workshop 1001 in the Root",
+    "the Stem",
+    "outside the plant"
+   ],
+   "answer_index": 0,
+   "quote": "He works in Workshop 1001 in the Leaf.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU35",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P86:B1",
+   "stem": "What do workers in the Leaf collect during the day?",
+   "options": [
+    "Sunlight and CO2",
+    "Water and sugar",
+    "Oxygen and CO2",
+    "Sunlight and oxygen"
+   ],
+   "answer_index": 0,
+   "quote": "They collect sunlight and CO2 during the day.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU35",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P86:B2",
+   "stem": "According to the passage, why is oxygen important to animals and humans?",
+   "options": [
+    "They need it to breathe.",
+    "They need it to grow.",
+    "They use it to make sugar.",
+    "They don't need it."
+   ],
+   "answer_index": 0,
+   "quote": "It means a lot to animals and humans, though – they need it to breathe!",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU41",
+   "unit": "Unit 5",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P93:B4",
+   "stem": "According to the passage, which drink is the most popular in the world after water?",
+   "options": [
+    "Tea",
+    "Coffee",
+    "Milk",
+    "Orange juice"
+   ],
+   "answer_index": 0,
+   "quote": "What is the most popular drink in the world after water? The answer is tea.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU41",
+   "unit": "Unit 5",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P94:B0",
+   "stem": "For the writer from Chengdu, what does a cup of warm tea make them feel?",
+   "options": [
+    "Like they are back home",
+    "Very sleepy",
+    "Like they are abroad",
+    "Like drinking coffee"
+   ],
+   "answer_index": 0,
+   "quote": "A cup of warm tea always makes me feel like I’m back home.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU41",
+   "unit": "Unit 5",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P94:B1",
+   "stem": "According to the British writer, what is tea for their family?",
+   "options": [
+    "A way of connecting",
+    "Only a morning drink",
+    "A drink for children only",
+    "Something they rarely have"
+   ],
+   "answer_index": 0,
+   "quote": "We chat and relax in the yard with black tea and biscuits. It’s our way of connecting.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU42",
+   "unit": "Unit 6",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P101:B1",
+   "stem": "What did Henry think of pigeons when he first watched them in the park?",
+   "options": [
+    "Clever and fast",
+    "Boring and dirty",
+    "Amazing and beautiful",
+    "Scary and noisy"
+   ],
+   "answer_index": 1,
+   "quote": "Pigeons are BORING and DIRTY!",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU42",
+   "unit": "Unit 6",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P102:B0",
+   "stem": "What surprising fact did Henry learn from his online research?",
+   "options": [
+    "Pigeons can recognise themselves in mirrors",
+    "Pigeons can fly at speeds of over 100 km per hour",
+    "There are over 200 kinds of pigeons",
+    "Pigeons can fly several thousand kilometres without getting lost"
+   ],
+   "answer_index": 0,
+   "quote": "Pigeons can recognise themselves in mirrors.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU42",
+   "unit": "Unit 6",
+   "section": "UNDERSTANDING_IDEAS",
+   "block": "FLTRP-EN-7A-2022CUR:P102:B3",
+   "stem": "How did Henry describe pigeons at the end of the passage?",
+   "options": [
+    "Boring",
+    "Scary",
+    "Amazing",
+    "Dirty"
+   ],
+   "answer_index": 2,
+   "quote": "Well, pigeons aren’t boring or scary. They are AMAZING – I just didn’t know enough about them!",
+   "skill": "gist"
+  },
+  {
+   "audio": "AU47",
+   "unit": "Unit 6",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P109:B14",
+   "stem": "Where can you see dodos now?",
+   "options": [
+    "In the Indian Ocean",
+    "Only in museums",
+    "In forests",
+    "In Alice's Adventures in Wonderland"
+   ],
+   "answer_index": 1,
+   "quote": "But now you can only see us in museums.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU47",
+   "unit": "Unit 6",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P110:B5",
+   "stem": "Why did dodos die out?",
+   "options": [
+    "Because humans hunted them and their animals ate their eggs",
+    "Because they had no food to eat",
+    "Because there were too many dodos",
+    "Because they flew too much"
+   ],
+   "answer_index": 0,
+   "quote": "They cut down the trees and our lovely forest was gone. They hunted us because we were slow and couldn’t fly. What’s more, their pigs, cats and dogs ate our eggs.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU47",
+   "unit": "Unit 6",
+   "section": "READING_FOR_WRITING",
+   "block": "FLTRP-EN-7A-2022CUR:P110:B7",
+   "stem": "What does the author ask people to do?",
+   "options": [
+    "Visit museums more often",
+    "Help animals",
+    "Read Alice's Adventures in Wonderland",
+    "Keep dodos as pets"
+   ],
+   "answer_index": 1,
+   "quote": "help them. Make them as happy as a clam, not as dead as a dodo.",
+   "skill": "simple gist"
+  }
+ ]
+}

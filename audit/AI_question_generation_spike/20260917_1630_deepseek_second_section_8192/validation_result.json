@@ -1,0 +1,78 @@
+{
+ "input_context_sha256": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+ "model": "deepseek-v4-pro",
+ "max_tokens": 8192,
+ "cloud_calls": 1,
+ "local_ai_calls": 0,
+ "elapsed_s": 113.3,
+ "finish_reason": "stop",
+ "requested_max": 3,
+ "returned": 3,
+ "pass": 3,
+ "fail": 0,
+ "whitelist_size": 320,
+ "rows": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT",
+   "out_of_scope_tokens": [],
+   "pass": true,
+   "database_candidate_program": "YES"
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT",
+   "out_of_scope_tokens": [],
+   "pass": true,
+   "database_candidate_program": "YES"
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT",
+   "out_of_scope_tokens": [],
+   "pass": true,
+   "database_candidate_program": "YES"
+  }
+ ],
+ "section": {
+  "unit": "Unit 1",
+  "section": "UNDERSTANDING_IDEAS",
+  "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+  "blocks": 63,
+  "vocab": 35,
+  "packages": 19
+ }
+}

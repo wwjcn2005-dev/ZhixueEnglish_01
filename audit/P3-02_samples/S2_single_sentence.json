@@ -1,0 +1,25 @@
+{
+ "sample": "S2_single_sentence",
+ "category": "A/C 完整短句（连续句首句）",
+ "audio": "AU06",
+ "textbook_original": "Hello everyone! My name is Zhu Xiaomeng. I’m thirteen years old. My birthday is in May. I love sports very much. I like running, playing football and swimming. I’m a bit nervous now, but I’m also happy to meet you. I want to make friends with you all!",
+ "textbook_with_blanks": null,
+ "recovered_sentence": "Hello everyone!",
+ "recovery_method": "textbook_complete_text（P15:B3 无空位）",
+ "confidence": "medium",
+ "start_ms": 560,
+ "end_ms": 2090,
+ "matching_method": "order_position（第 1 个语音段 = 教材第 1 句）",
+ "status": "CANDIDATE",
+ "slice_file": "sample_02_sentence_01.wav",
+ "slice_check": {
+  "slice_runs": 2,
+  "peak_db": null,
+  "head_starts_at_ms": 0,
+  "tail_ends_at_ms": 1530,
+  "head_ok": true,
+  "tail_ok": true,
+  "slice_total_ms": 1530
+ },
+ "note": "句级对应依靠顺序位置，未经转写/人工确认 → 不得升级 CONFIRMED"
+}

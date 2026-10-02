@@ -1,0 +1,171 @@
+{
+  "phase": "P2-6-D-1",
+  "title": "Learning Object + LO Evidence + LO Mastery + LO Diagnosis + Textbook-first Suggestion 最小业务层实施",
+  "status": "PASS",
+  "implemented_at": "2026-09-13",
+  "scope": "只读派生业务层：教材事实 → LO → LO Evidence → LO Mastery → LO Diagnosis → 教材优先建议",
+  "new_files": [
+    "learning/learning_object_service.py",
+    "learning/test_p2_6d_learning_object.py"
+  ],
+  "modified_files": [],
+  "deferred": [
+    "Consolidation Action（不建表、不做 attribution）",
+    "Grammar LO",
+    "68 个 unmapped 练习的强行归属",
+    "G-Audio-1/2",
+    "web/ui.py 接入",
+    "Android",
+    "AI 功能"
+  ],
+  "learning_objects": {
+    "lexical_total": 363,
+    "lexical_by_type": {
+      "PHRASE": 23,
+      "PATTERN": 52,
+      "VOCAB": 288
+    },
+    "exercise_derived_distinct": 106,
+    "distinct_total": 416,
+    "grammar_lo": "DEFERRED（不产出伪 LO）"
+  },
+  "mapping": {
+    "exercises_total": 157,
+    "mapped_count": 89,
+    "unmapped_count": 68,
+    "coverage_ratio": 0.5669,
+    "by_rule": {
+      "R4_single_core_vocab": 12,
+      "R1_listening_task": 21,
+      "R5_multi_core_vocab": 12,
+      "unmapped": 68,
+      "R2_writing_task": 7,
+      "R3_reading_text": 37
+    },
+    "unmapped_policy": "显式保留 unmapped，不产生伪 LO；覆盖率仅用于诚实报告"
+  },
+  "rules": {
+    "deterministic_id": "LO:<textbook>:<TYPE>:<sha256(canonical_key)[:12]>",
+    "no_random_no_time_no_ai": true,
+    "r1_r6_implemented": true,
+    "listening_lo_scope": "task-level（一个教材听力任务 = 一个 Listening LO）",
+    "vocabulary_lo_scope": "一个教材词条 = 一个全局 VOCAB/PHRASE/PATTERN LO（不按 Unit 重复）"
+  },
+  "evidence": {
+    "reused_service": "evidence_service（未修改）",
+    "valid_results": [
+      "correct",
+      "incorrect",
+      "partial"
+    ],
+    "layer1_dedupe": "item + natural_day + task_type（既有实现）",
+    "layer2_dedupe": "learner + LO + natural_day + task_type（本轮新增实现）",
+    "provenance": [
+      "learner_id",
+      "item_id",
+      "source_record_id",
+      "task_type",
+      "evidence_date",
+      "result",
+      "sources[]"
+    ],
+    "multi_lo_no_copy": true
+  },
+  "mastery": {
+    "reused_service": "mastery_service（未修改）",
+    "rules_file": "structured/learning/mastery_rules_v1.json（未修改）",
+    "object_type": "learning_object",
+    "read_time_derived": true,
+    "frozen_item_level_cache_untouched": true
+  },
+  "diagnosis": {
+    "reused_service": "diagnosis_service（未修改）",
+    "levels": [
+      "current_error",
+      "suspected_weak",
+      "needs_textbook_review"
+    ],
+    "pool_state": "LO 级允许为 None（D-0 N-1；不伪造 item 池信息）",
+    "evidence_provenance_kept": true
+  },
+  "suggestion": {
+    "reused_service": "intervention_service（未修改）",
+    "order": [
+      "reread_text",
+      "replay_audio",
+      "grammar_pointer",
+      "model_text_review",
+      "redo_exercise",
+      "cross_section_practice"
+    ],
+    "auto_execute": false,
+    "child_click_required": true,
+    "ai_practice": "not implemented"
+  },
+  "official_data_result": {
+    "LAF5BE0424D96409FA76C1177FA120E55": {
+      "lo_with_evidence": 1,
+      "evidence": {
+        "LO:FLTRP-EN-7A-2022CUR:VOCAB:9CA0EA2C7E70": {
+          "evidence_count": 1,
+          "task_types": [
+            "recall"
+          ],
+          "natural_days": [
+            "2026-09-12"
+          ],
+          "suppressed_count": 0,
+          "source_record_count": 1
+        }
+      },
+      "mastery": {
+        "LO:FLTRP-EN-7A-2022CUR:VOCAB:9CA0EA2C7E70": {
+          "state": "learning",
+          "stable": false,
+          "display_text": "学习证据 1 次（不代表掌握）",
+          "unmet_conditions": [
+            "minimum_valid_evidence",
+            "minimum_task_types",
+            "minimum_natural_days",
+            "recent_correct_minimum"
+          ]
+        }
+      },
+      "attention": 0,
+      "suggestions": {}
+    }
+  },
+  "tests": {
+    "new_file": "learning/test_p2_6d_learning_object.py",
+    "new_tests": 23,
+    "learning_total": 112,
+    "workbench_total": 50,
+    "web_total": 224,
+    "grand_total": 386,
+    "fail": 0,
+    "skip": 0,
+    "original_363_all_pass": true
+  },
+  "protection": {
+    "learning_db_sha256_16": "DBAB743BF6D8F0A3",
+    "learning_db_mtime": "2026-09-12T23:15:13",
+    "contentpack_sha256_16": "ACEBC8C29CF5D11B",
+    "spec_v12_sha256_16": "6D3595CF7D83879A",
+    "mastery_rules_sha256_16": "E7EC99DB55DDCF04",
+    "frozen_services_unchanged": true,
+    "p2_6b_services_unchanged": true,
+    "web_ui_untouched": true,
+    "android_untouched": true,
+    "db_migration": 0,
+    "dml": 0,
+    "ai_calls": 0,
+    "audio_modified": 0,
+    "textbook_modified": 0,
+    "p2_4_modified": 0,
+    "p2_5_modified": 0
+  },
+  "final": {
+    "verdict": "PASS",
+    "note": "只读派生链已跑通；未污染冻结层；D-1 完成即停止，不进入 UI/AI/Action"
+  }
+}

@@ -1,0 +1,205 @@
+{
+ "stage": "P1-07",
+ "mode": "ingest_loop_drill",
+ "ai_calls": 0,
+ "fixture": {
+  "S1": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S1_parsed.json",
+  "S2": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S2_parsed.json",
+  "S3": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S3_parsed.json",
+  "S4": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S4_parsed.json"
+ },
+ "A_22_candidates": {
+  "total": 22,
+  "decision_counts": {
+   "PASS": 19,
+   "EVIDENCE_INCOMPLETE": 3
+  },
+  "flag_counts": {
+   "MECHANICAL_REWRITE(允许)": 10,
+   "ORIGINAL_TEXTBOOK": 2,
+   "rule4_waived_for_judge": 2
+  },
+  "insertable_candidates": 19,
+  "evidence_incomplete": 3,
+  "needs_review": 0,
+  "duplicate_candidate": 0,
+  "mechanical_reproduction_excluded": 0,
+  "blocked_items": [
+   {
+    "source_row": "S3-Q2",
+    "decision": "EVIDENCE_INCOMPLETE",
+    "reasons": [
+     "题干残缺（省略号=False / 证据块无句末标点=True）",
+     "答案不被引用支持（UNSUPPORTED ）",
+     "与教材练习空位逐字重合：[{'package': 'Q:8FF16FAF7049', 'activity_no': 4, 'skipped_blank_marker': '1'}]"
+    ],
+    "derived_question_id": "AIQ:021D3AAEEACF",
+    "in_library": false
+   },
+   {
+    "source_row": "S3-Q3",
+    "decision": "EVIDENCE_INCOMPLETE",
+    "reasons": [
+     "答案不被引用支持（UNSUPPORTED ）",
+     "与教材练习空位逐字重合：[{'package': 'Q:8FF16FAF7049', 'activity_no': 4, 'skipped_blank_marker': '2'}]"
+    ],
+    "derived_question_id": "AIQ:433EF984F1BF",
+    "in_library": false
+   },
+   {
+    "source_row": "S4-Q4",
+    "decision": "EVIDENCE_INCOMPLETE",
+    "reasons": [
+     "题干残缺（省略号=True / 证据块无句末标点=True）"
+    ],
+    "derived_question_id": "AIQ:C71824B0D09D",
+    "in_library": false
+   }
+  ]
+ },
+ "B_library_before_after": {
+  "before": {
+   "counts": {
+    "generation_run": 8,
+    "ai_question": 2,
+    "question_evidence": 2,
+    "question_learning_object": 4,
+    "question_validation": 2,
+    "question_event": 3
+   },
+   "sha256": "3970408E3C0FE341C38EFAA9E5208AB61FC363465BE71AD10192ABF49F01CAAA",
+   "pending_review": 2
+  },
+  "after": {
+   "counts": {
+    "generation_run": 12,
+    "ai_question": 21,
+    "question_evidence": 22,
+    "question_learning_object": 37,
+    "question_validation": 21,
+    "question_event": 41
+   },
+   "sha256": "F74CA83F7C8A98F2A4A2E672E7BA61ECC34CBFC2338AC10064BF18C0FFD1FD6A",
+   "pending_review": 21,
+   "approved": 0,
+   "active": 0
+  },
+  "delta": {
+   "generation_run": 4,
+   "ai_question": 19,
+   "question_evidence": 20,
+   "question_learning_object": 33,
+   "question_validation": 19,
+   "question_event": 38
+  },
+  "generation_runs_created": {
+   "S1": "AIRUN:20260917T201605:P106_S1",
+   "S2": "AIRUN:20260917T201756:P106_S2",
+   "S3": "AIRUN:20260917T202038:P106_S3",
+   "S4": "AIRUN:20260917T202251:P106_S4"
+  },
+  "inserted_questions": [
+   "AIQ:E5F4C046FA61",
+   "AIQ:04CC9B1CF690",
+   "AIQ:BD59C5958D45",
+   "AIQ:75AAEBFE06DF",
+   "AIQ:879007FA4FC7",
+   "AIQ:6ECD02B9D381",
+   "AIQ:C3E6FD29F680",
+   "AIQ:5B4C80443D5F",
+   "AIQ:D976787A0A43",
+   "AIQ:1BA260727793",
+   "AIQ:A9D1F3EC6020",
+   "AIQ:6721EC6C5D1F",
+   "AIQ:B6463523F9E5",
+   "AIQ:7EAC0ED29A0A",
+   "AIQ:80F1D28C3101",
+   "AIQ:1B3AF72923C4",
+   "AIQ:3C02F6486DFF",
+   "AIQ:120FFEECA78F",
+   "AIQ:CD8B21681B4C"
+  ]
+ },
+ "C_data_integrity": {
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "problems": [],
+  "dangling_refs": 0,
+  "illegal_lifecycle": 0,
+  "illegal_events": 0,
+  "deleted_questions": 0,
+  "existing_two_unchanged": true,
+  "event_counts": {
+   "GENERATED": 0,
+   "VALIDATED": 21,
+   "PENDING_REVIEW": 19,
+   "REVIEW_APPROVED": 0,
+   "REVIEW_REJECTED": 0,
+   "ACTIVATED": 0,
+   "DISABLED": 0,
+   "MARKED_STALE": 1
+  },
+  "lifecycle_counts": {
+   "GENERATED": 0,
+   "VALIDATED": 0,
+   "PENDING_REVIEW": 21,
+   "APPROVED": 0,
+   "ACTIVE": 0,
+   "REJECTED": 0,
+   "DISABLED": 0
+  },
+  "protection_ok": true,
+  "protection": {
+   "learning.db": {
+    "sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+    "matches_baseline": true
+   },
+   "contentpack": {
+    "sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39",
+    "matches_baseline": true
+   },
+   "validator_v2": {
+    "sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+    "matches_baseline": true
+   },
+   "validator_v3": {
+    "sha256": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+    "matches_baseline": true
+   },
+   "P1-06_S1": {
+    "sha256": "D4520E288D7651B59B59C0F75F09FBE87E6B9AB0ACB9D2F900647E1210856BA3",
+    "matches_baseline": true
+   },
+   "P1-06_S2": {
+    "sha256": "4F705951CAF743BD62AD07C175C0EE06F491B4C4EE7B2F0D760E2372ADFAAA1E",
+    "matches_baseline": true
+   },
+   "P1-06_S3": {
+    "sha256": "4F9679CAFF393E6CD33D6FDC6C957563A852ECE1C569180C383F0EB55C7D08AC",
+    "matches_baseline": true
+   },
+   "P1-06_S4": {
+    "sha256": "5D1C21032B1C5F4CC23AACD2120EA297F6FF5776BBB36C18529A4FFF946E8B87",
+    "matches_baseline": true
+   }
+  }
+ },
+ "D_dedupe": {
+  "key_formula": "dedupe_key=sha256(section×activity×type×norm_answer×block set)；并检查 question_fingerprint",
+  "batch_internal_duplicates": 0,
+  "duplicates_vs_library": 0,
+  "blocked_examples": [],
+  "counterfactual_verified_in_recon": [
+   {
+    "fixture": "S1-Q1",
+    "historical": "P1-05-G-Q2"
+   },
+   {
+    "fixture": "S1-Q5",
+    "historical": "P1-05-F-Q2"
+   }
+  ],
+  "note": "本批 22 题在 dedupe key 下与现库及批次内**均无重复**；该键的有效性由侦察阶段的反事实比对证明（S1-Q1≡G-Q2、S1-Q5≡F-Q2），并已验证不会因 activity 不同而误杀（S1-Q4 vs G-Q3）"
+ },
+ "E_conclusion": "PASS"
+}

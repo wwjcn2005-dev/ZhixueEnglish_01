@@ -1,0 +1,73 @@
+{
+  "model": "mastery_rules",
+  "version": "v1",
+  "stage": "P2-6-B",
+  "note": "本文件是工程初始参数，可验证、可调整，不是教育真理。参数不写死在 Python 代码中，服务统一从本文件读取。",
+  "source_of_truth": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx 第二十二章（4、5 条）",
+  "stable": {
+    "minimum_valid_evidence": 3,
+    "minimum_task_types": 2,
+    "minimum_natural_days": 2,
+    "recent_attempt_window": 3,
+    "recent_correct_minimum": 2,
+    "require_no_unresolved_current_error": true
+  },
+  "evidence": {
+    "counted_results": ["correct", "incorrect", "partial"],
+    "excluded_results": ["done", "skipped", null],
+    "contact_only_activity_types": ["study"],
+    "dedupe_key": ["learner_id", "item_id", "evidence_date", "task_type"],
+    "dedupe_keep": "latest",
+    "self_assessment_alone_cannot_raise": true,
+    "unevaluable_marking": "not_evaluable",
+    "task_type_sources": [
+      {
+        "when": "item_id 命中 exercise_catalog_v3",
+        "task_type": "exercise.question_type",
+        "examples": ["choice", "fill", "match", "order", "judge", "short_answer", "speaking", "writing", "reflection"]
+      },
+      {
+        "when": "词汇/短语/句型 且 activity_type=study",
+        "task_type": "textbook_study"
+      },
+      {
+        "when": "词汇/短语/句型 且 activity_type=practice",
+        "task_type": "recall"
+      },
+      {
+        "when": "其他 activity_type（listen/read/understand/produce/repeat/recognize/spell/substitute/review）",
+        "task_type": "activity_type 原值"
+      }
+    ]
+  },
+  "diagnosis": {
+    "current_error": "最近一条有效判断证据为 incorrect",
+    "suspected_weak": {
+      "minimum_errors": 2,
+      "or_error_task_types": 2,
+      "note": "单次错误只输出 current_error；达到重复性（错误 >=2 次，或错误出现在 >=2 种任务类型）才允许 suspected_weak"
+    },
+    "textbook_review": {
+      "minimum_partial_evidence": 2,
+      "minimum_task_types": 2,
+      "note": "反复 partial 且跨任务类型时，建议回到教材（仍属工程初始参数）"
+    }
+  },
+  "intervention": {
+    "textbook_first_order": [
+      "reread_text",
+      "replay_audio",
+      "grammar_pointer",
+      "model_text_review",
+      "redo_exercise",
+      "cross_section_practice"
+    ],
+    "ai_assist": "not_implemented",
+    "requires_resource_mapping": "教材定位无法确认时必须返回该标记，不得伪造页码/音频 id"
+  },
+  "adjustable": [
+    "stable.*",
+    "diagnosis.suspected_weak.*",
+    "diagnosis.textbook_review.*"
+  ]
+}

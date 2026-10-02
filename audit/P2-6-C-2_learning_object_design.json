@@ -1,0 +1,210 @@
+{
+  "phase": "P2-6-C-2",
+  "title": "Learning Object 语义、映射与证据聚集粒度设计",
+  "mode": "design_only",
+  "conclusion": "PASS_WITH_GAPS",
+  "designed_at": "2026-09-13",
+  "input_baseline": {
+    "p2_6_c1": "PASS_WITH_GAPS",
+    "tests": "363 PASS / 0 FAIL / 0 SKIP",
+    "ai_calls": 0,
+    "spec": "V1.2（第二十二章）",
+    "new_readonly_evidence": {
+      "exercises_with_activity_id": "93/157",
+      "single_core_core_vocab_candidate": 12,
+      "multi_core_vocab_candidate": 12,
+      "no_vocab_candidate": 133,
+      "mapped_distribution": {"LO-LISTENING": 21, "LO-READING": 37, "LO-WRITING": 7,
+                              "LO-VOCAB(single)": 12, "LO-VOCAB(multi)": 12, "unmapped": 68},
+      "mapping_coverage": "89/157 (56.7%)",
+      "history_mapping": {"LO-VOCAB": 14, "LO-LISTENING": 6, "unmapped": 0, "total": 20}
+    }
+  },
+  "learning_object": {
+    "definition": "教材中具有明确教学语义、可被一个或多个合法教材任务共同提供学习证据、并能独立讨论其掌握状态的最小学习内容单元",
+    "not_learning_object": ["Activity", "Exercise", "Question", "Evidence", "Resource",
+                            "Textbook Location", "Session", "Unit/Section 容器"],
+    "recommended_types": ["VOCAB", "PHRASE", "PATTERN", "LISTENING", "READING", "WRITING"],
+    "deferred_types": ["GRAMMAR（设计上存在，工程暂缓）", "SPEAKING", "REFLECTION",
+                       "Integrated/Cross-section"],
+    "granularity_rule": "小到可以独立讨论会不会，大到能让不同合法任务产生有意义的证据汇聚",
+    "allows_multiple_activities": true,
+    "allows_multiple_exercises": true,
+    "allows_multiple_evidence": true,
+    "has_independent_mastery": true,
+    "child_can_study_directly": true,
+    "candidate_schemes": [
+      {"id": "A", "name": "最小教材对象（各类型独立 LO）", "verdict": "叶 LO 采用"},
+      {"id": "B", "name": "Unit/Section 聚合为 LO", "verdict": "拒绝（万能 LO）"},
+      {"id": "C", "name": "混合层级（叶 LO + 容器仅作归属）", "verdict": "推荐"}
+    ],
+    "recommended_scheme": "C",
+    "stable_id_strategy": "LO:<textbook_id>:<LO_TYPE>:<canonical_key，sha256(canonical_string)[:12] 大写>",
+    "canonical_key_strategy": {
+      "lex": "lex|<textbook_id>|<kind>|<normalized_lexeme>|<pos>|<sense>",
+      "listening": "listen|<textbook_id>|<unit>|<section>|<activity_no>",
+      "reading": "read|<textbook_id>|<unit>|<section>|<textbook_page>",
+      "writing": "write|<textbook_id>|<unit>|<section>|<activity_no>",
+      "normalization": ["NFC", "英文小写", "中文原样", "折叠空白", "去词尾标点",
+                        "保留词内连字符与撇号"],
+      "must_not_participate": ["learning_record", "mastery_state", "evidence 数量", "learner_id",
+                               "时间戳", "AI 输出", "数据库自增 id"],
+      "homonym_policy": "sense 位预留；当前 288 词面唯一，无同词不同义案例，不启用拆分"
+    }
+  },
+  "mapping": {
+    "rules": [
+      {"id": "R1", "condition": "listening_icon 或 audio_required", "target": "LO-LISTENING"},
+      {"id": "R2", "condition": "question_type == writing", "target": "LO-WRITING"},
+      {"id": "R3", "condition": "题型 ∈ {short_answer, choice, judge, order, match, fill} 且 section ∈ {UNDERSTANDING_IDEAS, READING_FOR_WRITING} 且 related_text 存在", "target": "LO-READING"},
+      {"id": "R4", "condition": "本单元 CORE 词候选 == 1", "target": "LO-VOCAB（该词）"},
+      {"id": "R5", "condition": "本单元 CORE 词候选 >= 2", "target": "LO-VOCAB × N（共享证据）"},
+      {"id": "R6", "condition": "以上都不成立", "target": "unmapped（不强行归属）"}
+    ],
+    "vocabulary": {
+      "granularity": "每个教材词条 = 1 个 LO（全局，不按 Unit 重复）",
+      "business_key": "word_lexeme",
+      "source_key": "learning_item.item_id（V:*）",
+      "canonical_key": "lex|<textbook_id>|<kind>|<normalized_lexeme>|<pos>|<sense>",
+      "display_key": "canonical_text (+ phonetic / part_of_speech)",
+      "same_word_different_units": "不拆分（primary_unit 仅作属性）",
+      "same_word_different_meaning": "拆分为两个 LO（sense 位），当前无案例"
+    },
+    "exercise": {
+      "id_relation": "exercise_id ≡ learning_item(exercise).item_id（157/157）",
+      "target_derivation": "R1–R6",
+      "related_vocabulary_sufficiency": "不足：单 CORE 候选仅 12/157；12 个多候选；133 个无候选；64 个练习无 activity_id",
+      "coverage": "89/157（56.7%），unmapped 68"
+    },
+    "question": {
+      "role": "证据最小来源",
+      "multiple_lo_policy": "方案 A：一条 Evidence + 多个 LO 引用（不为每个 LO 复制证据）",
+      "multi_lo_real_cases": 12
+    },
+    "grammar": {
+      "status": "设计上存在，工程暂缓",
+      "current_assets": "仅 13 条教材语法/语音指针（7 语法 + 6 语音）",
+      "prerequisites": ["教材语法条目（topic + 教材页 + 例句）",
+                        "关联的教材练习（可核对证据）", "证据来源与题型定义"]
+    },
+    "text": {"lo_type": "READING", "canonical_key": "read|<textbook_id>|<unit>|<section>|<textbook_page>",
+             "unit_of_lo": "一篇教材文章/一段对话，不跨 section 合并"},
+    "listening": {"lo_type": "LISTENING",
+                  "canonical_key": "listen|<textbook_id>|<unit>|<section>|<activity_no>",
+                  "note": "活动是教材听力任务的载体（官方音频 + 题目集），不是 Exercise"},
+    "writing": {"lo_type": "WRITING",
+                "canonical_key": "write|<textbook_id>|<unit>|<section>|<activity_no>",
+                "note": "与 Model Text（教材范文）关联"}
+  },
+  "evidence": {
+    "recommended_granularity": "LO 级聚合，item 级溯源",
+    "item_provenance": "evidence.sources[] = {record_id, item_id, activity_id}（item_id 不删除）",
+    "deduplication": {
+      "layers": [
+        "同一 item 同日同 task_type → 1 条",
+        "同一 LO 同日同 task_type（不同 item）→ 1 条（换题不增值）",
+        "同一 LO 同日不同 task_type → 各自独立",
+        "同一 LO 跨自然日 → 独立"
+      ],
+      "lo_level_key": ["learner_id", "learning_object_id", "evidence_date", "task_type"],
+      "keep": "latest，其余入 sources"
+    },
+    "cross_task_aggregation": "按 §9 规则把 item 证据映射到 1..N 个 LO；unmapped 不参与判定",
+    "scheme_comparison": {
+      "A_add_field_to_evidence": {"pollution_risk": "高", "frozen_impact": "需改写入路径",
+                                  "migration": "需要", "verdict": "拒绝"},
+      "B_readonly_derived_layer": {"pollution_risk": "低", "frozen_impact": "无",
+                                   "migration": "不需要", "verdict": "推荐"},
+      "C_separate_mapping_table": {"pollution_risk": "中", "frozen_impact": "无",
+                                   "migration": "需要新表", "verdict": "暂缓（当前无需求）"}
+    }
+  },
+  "mastery": {
+    "recommended_granularity": "learner_id + learning_object_id（LO 级）",
+    "item_level_mastery": "不再作为独立状态；仅作为证据来源（item_provenance）",
+    "rule_compatibility": "mastery_rules_v1 五项条件可直接沿用于 LO 级证据集合；阈值不变；JSON 未修改",
+    "structure_support_today": false,
+    "aggregation_algorithm": ["record → item 级有效证据（现有 evidence_service）",
+                              "item 证据 → 1..N LO（§9 规则，共享引用）",
+                              "按 (learner, LO, 自然日, task_type) 去重",
+                              "对 LO 证据集合套用五项条件 → LO 状态"],
+    "historical_compatibility": "20/20 历史记录可派生（14 LO-VOCAB / 6 LO-LISTENING）；不修改不删除；不可映射记 unmapped"
+  },
+  "database": {
+    "migration_required": "no（映射与聚合均可只读派生）",
+    "mapping_layer_possible": true,
+    "future_changes": [
+      "若需持久化 LO 级 mastery → 需评估新表（后续阶段，本轮不做）",
+      "Consolidation Action（巩固动作/处理状态）→ 需独立最小结构（属 P2-6-C-3/D）"
+    ]
+  },
+  "frozen_services": {
+    "impact": "无（方案 B：只读派生层，不改写入路径）",
+    "modifications_required": [],
+    "fallback_if_persisting_mastery": "新增写路径放在新服务内，仍不改 frozen 既有函数（届时再评估）"
+  },
+  "ai": {"required": false, "calls": 0,
+         "future_allowed": ["开放题批改", "复杂答案分析", "教材证据范围内解释",
+                            "条件允许的教材变式生成"]},
+  "v1_2_sync": {"required": false,
+                "reason": "设计与 V1.2 第二十二章一致；阈值仍留在 mastery_rules_v1.json 作为工程参数"},
+  "edge_cases": [
+    {"case": "同词不同义", "handling": "sense 位参与 canonical → 两个 LO（当前无案例）"},
+    {"case": "同词不同 Unit", "handling": "不拆；primary_unit 仅属性"},
+    {"case": "一个 Exercise 引用多个 Vocabulary", "handling": "R5 共享证据给多个 VOCAB LO（12 例）"},
+    {"case": "一个 Question 同时考词汇与语法", "handling": "词汇侧按 R4/R5；语法侧 unmapped(grammar)"},
+    {"case": "同一题重复做三次", "handling": "第 1 层去重 → 1 条，来源全保留"},
+    {"case": "同一天做多个不同题", "handling": "第 2 层去重 → 同 LO 同类型计 1 条"},
+    {"case": "不同自然日做同一任务", "handling": "第 4 层 → 独立计数"},
+    {"case": "Recall 与 Exercise 都正确", "handling": "不同 task_type → 各自独立，共同满足 ≥2 类型"},
+    {"case": "Recall 正确但 Exercise 错误", "handling": "最近 3 次 + 当前错误规则生效 → 不下稳定结论"},
+    {"case": "一个 LO 尚无第二种 task type", "handling": "条件 2 不满足 → 保持非 stable（不得为凑条件合并）"}
+  ],
+  "implementation_prerequisites": [
+    "68/157 unmapped 练习的处置决策（保持 unmapped 或新增 LO 类型）",
+    "R5 多 LO 共享证据方案确认（推荐：一条证据多引用）",
+    "Grammar LO 的教材数据前置条件（语法条目 + 关联练习 + 证据来源）",
+    "Speaking / Reflection 归属口径（V1.2 未列，需产品确认）",
+    "LO 聚合层是否需要持久化（当前建议只读派生）",
+    "Consolidation Action 结构（属 P2-6-C-3/D）"
+  ],
+  "acceptance_criteria": [
+    "LO-01 同一教材对象每次生成相同 LO ID",
+    "LO-02 不同教材对象不会错误合并",
+    "LO-03 Vocabulary → LO 映射确定性（288/288）",
+    "LO-04 Exercise → LO 映射确定性（含 unmapped 明确标记）",
+    "LO-05 同一 LO 可关联多个合法任务来源",
+    "LO-06 Evidence 保留 item-level provenance",
+    "LO-07 重复操作不会无限增加独立证据",
+    "LO-08 mastery 以 LO 为判断对象",
+    "LO-09 历史 learning_record 不被修改",
+    "LO-10 无法映射的历史记录不被删除（标记 unmapped + 原因）",
+    "LO-11 AI 调用 0 次",
+    "LO-12 现有 363 测试全部保持通过",
+    "LO-13 映射覆盖率与 unmapped 比例被如实报告（不得强行归属）",
+    "LO-14 任一步骤不得写入 learning_record / mastery_state（只读派生）"
+  ],
+  "open_issues": [
+    "unmapped 68/157 的处置",
+    "Grammar LO 前置数据",
+    "Speaking / Reflection 是否成为 LO（产品决策）",
+    "LO 级 mastery 是否持久化",
+    "Consolidation Action 结构（P2-6-C-3/D）",
+    "64 个无 activity_id 的练习是否补齐题目关系（影响 R3–R5 可用性）"
+  ],
+  "modified_files": [],
+  "created_files": ["audit/P2-6-C-2_learning_object_design.md",
+                    "audit/P2-6-C-2_learning_object_design.json"],
+  "deleted_files": [],
+  "safety": {
+    "code_modified": false,
+    "database_modified": false,
+    "contentpack_modified": false,
+    "spec_v12_modified": false,
+    "tests_modified": false,
+    "mastery_rules_modified": false,
+    "frozen_services_modified": false,
+    "ai_calls": 0
+  },
+  "stopped": "设计完成即停止；不进入 P2-6-C-3 / P2-6-D，不迁库、不写代码"
+}

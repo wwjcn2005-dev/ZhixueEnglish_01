@@ -1,0 +1,27 @@
+{
+  "activity_audio_scanned": 47,
+  "textbook_candidates_extracted": 962,
+  "asr_success": 47,
+  "match_counts": {
+    "HIGH": 422,
+    "MEDIUM": 47,
+    "LOW": 67,
+    "MATCH_UNCERTAIN": 424
+  },
+  "matched_total": 960,
+  "selected_total": 20,
+  "selected_by_unit": {
+    "Starter": 6,
+    "Unit 1": 3,
+    "Unit 2": 4,
+    "Unit 3": 1,
+    "Unit 4": 2,
+    "Unit 5": 1,
+    "Unit 6": 3
+  },
+  "boundary_counts": {
+    "HIGH": 4,
+    "MEDIUM": 0,
+    "BOUNDARY_UNCERTAIN": 16
+  }
+}

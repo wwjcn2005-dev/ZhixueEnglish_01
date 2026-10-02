@@ -1,0 +1,62 @@
+{
+  "task": "P1-07-C1 最小学习会话服务（归档）",
+  "archived_at": "2026-09-12T16:45:47+08:00",
+  "verdict": "PASS",
+  "new_files": [
+    "structured/learning/migrate_learning_db_v2.py",
+    "learning/session_service.py",
+    "learning/test_session_service.py",
+    "structured/learning/learning.db.bak-v1"
+  ],
+  "modified_existing_files": [],
+  "schema_change": {
+    "yes": true,
+    "added_table": "learning_session",
+    "added_index": "idx_learning_session_learner",
+    "user_version": "1 → 2",
+    "existing_tables_untouched": true
+  },
+  "interfaces": [
+    "create_learning_session",
+    "get_learning_session",
+    "list_learning_sessions",
+    "end_learning_session",
+    "get_session_task",
+    "list_session_items",
+    "record_session_event"
+  ],
+  "entry_points": [
+    "unit",
+    "section",
+    "activity",
+    "vocabulary",
+    "listening",
+    "reading"
+  ],
+  "tests": {
+    "file": "learning/test_session_service.py",
+    "ran": 9,
+    "result": "OK",
+    "covers": "任务书 §十二 25 项"
+  },
+  "safety": {
+    "ai": 0,
+    "network": 0,
+    "contentpack_written": false,
+    "official_learning_db_polluted": false
+  },
+  "baseline_before": {
+    "learning_db": "16E3952D64E749879D8FF78814F0434D544D4CBAD7D52AAC7E0B145DE43414E9",
+    "tables": 6,
+    "user_version": 1
+  },
+  "baseline_after": {
+    "learning_db": "DB97E460CDEC59CDC27AD2CAF0CC8FDF671E4832BAC0A09E6CE9BB986A0C311C",
+    "tables": 7,
+    "user_version": 2
+  },
+  "known_open_items": [
+    "会话结束后是否禁止继续记录：未定义",
+    "同秒 tie-break 未修复"
+  ]
+}

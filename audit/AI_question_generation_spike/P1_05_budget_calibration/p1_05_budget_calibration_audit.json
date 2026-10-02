@@ -1,0 +1,94 @@
+{
+ "stage": "P1-05-C",
+ "final_status": "CALIBRATION_BLOCKED",
+ "calibration_outcome": "BUDGET_STILL_INSUFFICIENT",
+ "answers": {
+  "q1_truncation_caused_by_reasoning_budget": {
+   "answer": "YES — ROOT_CAUSE_SUPPORTED",
+   "evidence": "6/6 次 completion_tokens 恰为 8,192；reasoning 7,538–8,192；content 为 0。同 Section 对照：P0-v1（有题量上限）reasoning 5,648 → stop；P1-05-v1（无上限，prompt 更小）reasoning 8,192 → length。"
+  },
+  "q2_path_supports_reasoning_effort": {
+   "answer": "可传递且被接受；但未观察到生效",
+   "evidence": "请求为直连 HTTPS JSON（非 Codex provider 层），payload 顶层携带 thinking={'type':'enabled'} 与 reasoning_effort='low'；服务端返回 HTTP 200、无 400/422 → 参数未被拒绝。但 reasoning_tokens 仍为 8,192，与未传该参数的 P1-05-B #1 完全相同 → 没有可观测的降推理效果。",
+   "official_docs": "api-docs.deepseek.com/guides/reasoning_model 同时给出 thinking 与 reasoning_effort 的顶层用法（文档抓取于本轮，非 AI 调用）",
+   "client_side_token_limit": "无（客户端仅设置 max_tokens=8192，无其他限制）",
+   "codex_global_config_modified": false
+  },
+  "q3_low_effort_plus_8192_gives_full_content": {
+   "answer": "NO",
+   "content_chars": 0
+  },
+  "q4_complete_json_produced": {
+   "answer": "NO"
+  },
+  "q5_tokens_consumed": {
+   "prompt_tokens": 10540,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 8192,
+   "total_tokens": 18732,
+   "latency_ms": 190682
+  },
+  "q6_truncated": {
+   "answer": "YES",
+   "finish_reason": "length"
+  },
+  "q7_second_api_call": {
+   "answer": "NO",
+   "api_calls": 1,
+   "retry_count": 0
+  },
+  "q8_question_library_untouched": {
+   "answer": "YES",
+   "state": {
+    "questions": 2,
+    "generation_runs": 8,
+    "active": 0,
+    "events": 3,
+    "integrity_check": "ok",
+    "sha256": "3970408E3C0FE341C38EFAA9E5208AB61FC363465BE71AD10192ABF49F01CAAA"
+   },
+   "note": "本轮脚本从未打开题库进行写入"
+  },
+  "q9_p1_05_a_b_untouched": {
+   "answer": "YES",
+   "files": {
+    "P1-05-A matrix": "1AAE82635F0F4CFBD4D5D18A0497EB49D4EC696EA0729D83F63B0336B2785FCC",
+    "P1-05-B report": "33BDEB8D3286F4429A3BFE7D414CE321E79D70691556C8113D0C7209789AF405",
+    "P1-05-B run script": "D29D91CE26A95C8C8B15D9E002885DE2E49F7B34D20945130FA3340394A5BB6D",
+    "P1-05-B audit json": "A63D16AD62F50F1C11E6A23AEC963EDA9E0842861B0FB3FA4050D6CD7472F0B2"
+   },
+   "note": "本轮所有脚本只读这些文件；mtime 与内容哈希均保持 P1-05-B 结束时状态"
+  }
+ },
+ "guard_implemented": {
+  "module": "generation_guard.py",
+  "rule": "finish_reason=='length' → TRUNCATED，且 length+content=='' 为硬停止；不进入 validator、不写题库、不 retry、不继续下一个 Section",
+  "verified_by_synthetic_cases": [
+   "truncated_empty",
+   "truncated_partial",
+   "ok",
+   "api_error"
+  ],
+  "applied_to_calibration_call": true
+ },
+ "observations": [
+  "校准调用的 prompt_tokens 为 10,540，而 P1-05-B #1 为 10,619 —— messages 经 SHA256 断言逐字节一致，说明 prompt_tokens 并非完全由 messages 决定；一个未经验证的假设是显式 thinking 参数改变了服务端提示模板。",
+  "校准调用延迟 190.7 s，超过 P1-05-A 的 180 s 正常目标（未超过 300 s 硬停止线）。"
+ ],
+ "protection": {
+  "learning_db_sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+  "contentpack_sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39",
+  "validator_v2_sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+  "validator_v3_sha256": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+  "question_library_sha256": "3970408E3C0FE341C38EFAA9E5208AB61FC363465BE71AD10192ABF49F01CAAA",
+  "all_unchanged": true
+ },
+ "next_round_direction": {
+  "recorded_only": true,
+  "items": [
+   "下一轮需要提高 max_tokens（reasoning_effort=low 未能解决问题）",
+   "P1-05-B 需要新版本（例如 P1-05-v2），显式写入 reasoning 参数与“截断即停”规则；不得修改 P1-05-v1，也不得把失败结果与新参数混在一起重新统计",
+   "正式实验应重新开始，并保留本轮作为预算校准依据"
+  ]
+ }
+}

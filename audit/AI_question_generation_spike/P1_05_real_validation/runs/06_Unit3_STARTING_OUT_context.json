@@ -1,0 +1,458 @@
+{
+ "textbook_position": {
+  "unit": "Unit 3",
+  "unit_title": "Family ties",
+  "section": "STARTING_OUT",
+  "section_title": "Starting out",
+  "textbook_pages": [
+   47
+  ],
+  "section_id": "FLTRP-EN-7A-2022CUR:U3:STARTING_OUT",
+  "is_listening_gap_control": false
+ },
+ "activity_instructions": [
+  {
+   "activity_no": 1,
+   "page": 47,
+   "instruction": "Look at the pictures and answer the questions.",
+   "audio_required": false
+  }
+ ],
+ "textbook_blocks": [
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B1",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What is your family like?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B0",
+   "kind": "heading",
+   "role": "section_title",
+   "text": "Starting out"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B7",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "d"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B4",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B3",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Look at the pictures and answer the questions."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B9",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "b"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B8",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "a"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B10",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "c"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B6",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1\tWhat is each family doing in the pictures?2\tWhat activities do you usually do with your family members?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B2",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Look at the picture and answer the questions.2"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P52:B5",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "1\tWhat does each person in your family do?2\tWhat do you think the word “family” stands for?"
+  }
+ ],
+ "unit_vocabulary": [
+  {
+   "word": "silent",
+   "pos": "adj",
+   "meaning_zh": "不作声的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "along",
+   "pos": "prep",
+   "meaning_zh": "顺着沿着",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "mountain",
+   "pos": "n",
+   "meaning_zh": "高山山岳",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "road",
+   "pos": "n",
+   "meaning_zh": "路道路公路",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "handsome",
+   "pos": "adj",
+   "meaning_zh": "男子英俊的漂亮的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "strict",
+   "pos": "adj",
+   "meaning_zh": "严格的严厉的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "follow",
+   "pos": "v",
+   "meaning_zh": "跟着跟随",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "postman",
+   "pos": "n",
+   "meaning_zh": "邮递员邮差",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "touching",
+   "pos": "adj",
+   "meaning_zh": "感人的动人的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "son",
+   "pos": "n",
+   "meaning_zh": "儿子",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "serve",
+   "pos": "v",
+   "meaning_zh": "为工作供职",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "area",
+   "pos": "n",
+   "meaning_zh": "国家市镇等的地区区域",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "absent",
+   "pos": "adj",
+   "meaning_zh": "不在的缺席的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "seldom",
+   "pos": "adv",
+   "meaning_zh": "很少罕见不常",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "position",
+   "pos": "n",
+   "meaning_zh": "职位职务",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "carry",
+   "pos": "v",
+   "meaning_zh": "把某物或某人带至新的地点或位置",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "across",
+   "pos": "prep",
+   "meaning_zh": "从一边到另一边穿过",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "memory",
+   "pos": "n",
+   "meaning_zh": "记忆回忆",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 49
+  },
+  {
+   "word": "tear",
+   "pos": "n",
+   "meaning_zh": "眼泪泪水",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 49
+  },
+  {
+   "word": "growth",
+   "pos": "n",
+   "meaning_zh": "性格智力或情感的发展成长",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "hide",
+   "pos": "v",
+   "meaning_zh": "把藏起来隐藏",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "care",
+   "pos": "n",
+   "meaning_zh": "关心",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "hug",
+   "pos": "n",
+   "meaning_zh": "拥抱",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "kiss",
+   "pos": "n",
+   "meaning_zh": "吻",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "marry",
+   "pos": "v",
+   "meaning_zh": "结婚娶嫁",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 51
+  },
+  {
+   "word": "queen",
+   "pos": "n",
+   "meaning_zh": "女王",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 53
+  },
+  {
+   "word": "pick up",
+   "pos": null,
+   "meaning_zh": "搭载接载",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 53
+  },
+  {
+   "word": "actress",
+   "pos": "n",
+   "meaning_zh": "女演员",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 54
+  },
+  {
+   "word": "change",
+   "pos": "v",
+   "meaning_zh": "换衣服",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 55
+  },
+  {
+   "word": "race",
+   "pos": "v",
+   "meaning_zh": "比赛",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "serious",
+   "pos": "adj",
+   "meaning_zh": "严重的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "disease",
+   "pos": "n",
+   "meaning_zh": "疾病病",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "stay",
+   "pos": "v",
+   "meaning_zh": "停留逗留留下",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "trailer",
+   "pos": "n",
+   "meaning_zh": "拖车挂车",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 56
+  },
+  {
+   "word": "pull",
+   "pos": "v",
+   "meaning_zh": "拉扯拖",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "bright",
+   "pos": "adj",
+   "meaning_zh": "欢快的充满生气的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "refuse",
+   "pos": "v",
+   "meaning_zh": "拒绝回绝",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 57
+  },
+  {
+   "word": "result",
+   "pos": "n",
+   "meaning_zh": "结果后果",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 57
+  },
+  {
+   "word": "matter",
+   "pos": "v",
+   "meaning_zh": "尤指对某人自己或对发生之事重要要紧有关系",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 57
+  },
+  {
+   "word": "power",
+   "pos": "v",
+   "meaning_zh": "给车辆或机器提供动力",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 57
+  }
+ ],
+ "evidence_packages": [
+  {
+   "question_id": "Q:373201592F3F",
+   "activity_no": 1,
+   "question_no": 1,
+   "page": 47,
+   "instruction": "Look at the pictures and answer the questions.",
+   "original_question_text": "the questions. b a c 1 What is each family doing in the pictures?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:23A8E5E3BC23",
+   "activity_no": 1,
+   "question_no": 2,
+   "page": 47,
+   "instruction": "Look at the pictures and answer the questions.",
+   "original_question_text": "What activities do you usually do with your family members? Understanding ideas 1",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:D4F288FE2FE4",
+   "activity_no": 2,
+   "question_no": 1,
+   "page": 47,
+   "instruction": "Look at the picture and answer the questions.",
+   "original_question_text": "What does each person in your family do?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:BD2D1E6DCC8B",
+   "activity_no": 2,
+   "question_no": 2,
+   "page": 47,
+   "instruction": "Look at the picture and answer the questions.",
+   "original_question_text": "What do you think the word “family” stands for? Family ties 47 Understanding ideas 1",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  }
+ ],
+ "rules": {
+  "BOLD": "core textbook word (教材黑体重点词)",
+  "PLAIN": "ordinary textbook word (非核心重点词)",
+  "audio_required": "该活动的内容在音频中，提供的证据里没有音频转写文本"
+ }
+}

@@ -1,0 +1,121 @@
+{
+  "grade_context": "外研版初中英语 七年级上册（初一第一学期）",
+  "review_version": "P1-09-B-v1",
+  "items": [
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "question_type": "vocab_choice",
+      "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+      "options": [
+        "band",
+        "club",
+        "stage",
+        "instrument"
+      ],
+      "answer": "band",
+      "textbook_position": "教材第 32 页 · Activity A1",
+      "textbook_evidence": "As a rock music lover, I play the electric guitar in the school band."
+    },
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "question_type": "fill",
+      "question_text": "It feels great to ___ our hobby together.",
+      "options": null,
+      "answer": "enjoy",
+      "textbook_position": "教材第 33 页 · Activity A2",
+      "textbook_evidence": "It feels great to enjoy our hobby together."
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "question_type": "reading_choice",
+      "question_text": "At the school art festival, the writer and Grandpa ___.",
+      "options": [
+        "write songs",
+        "share songs online",
+        "fire up instruments",
+        "sing Beijing opera"
+      ],
+      "answer": "fire up instruments",
+      "textbook_position": "教材第 33 页 · Activity A2",
+      "textbook_evidence": "I nod to Grandpa and we fire up our instruments."
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "question_type": "reading_choice",
+      "question_text": "Grandpa likes playing the erhu ___.",
+      "options": [
+        "in the park",
+        "in the school band",
+        "on the stage",
+        "in his room"
+      ],
+      "answer": "in the park",
+      "textbook_position": "教材第 32 页 · Activity A1",
+      "textbook_evidence": "He likes playing the erhu in the park with his friends."
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "question_type": "reading_judge",
+      "question_text": "The Great Bear Rainforest is in Canada.",
+      "options": null,
+      "answer": "True",
+      "textbook_position": "教材第 83 页 · Activity A7",
+      "textbook_evidence": "Welcome to the Great Bear Rainforest in Canada!"
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "question_type": "fill",
+      "question_text": "I am ___, too.",
+      "options": null,
+      "answer": "ready",
+      "textbook_position": "教材第 3 页 · Activity A3",
+      "textbook_evidence": "I am ready, too"
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "question_type": "fill",
+      "question_text": "___ ___, this is my first lesson for all of you.",
+      "options": null,
+      "answer": "In fact",
+      "textbook_position": "教材第 19 页 · Activity A5",
+      "textbook_evidence": "In fact, this is my first lesson for all of you."
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "question_type": "fill",
+      "question_text": "What colour is it? It’s ___.",
+      "options": null,
+      "answer": "grey",
+      "textbook_position": "教材第 5 页 · Activity A8",
+      "textbook_evidence": "It’s grey."
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "question_type": "vocab_choice",
+      "question_text": "But it’s a ___ kind of music.",
+      "options": [
+        "different",
+        "traditional",
+        "electric",
+        "weak"
+      ],
+      "answer": "different",
+      "textbook_position": "教材第 32 页 · Activity A1",
+      "textbook_evidence": "But it’s a different kind of music."
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "question_type": "reading_choice",
+      "question_text": "In the Great Bear Rainforest, what can the trees make?",
+      "options": [
+        "their own rain",
+        "sugar",
+        "oxygen",
+        "food"
+      ],
+      "answer": "their own rain",
+      "textbook_position": "教材第 83 页 · Activity A7",
+      "textbook_evidence": "The trees in a rainforest can make their own rain."
+    }
+  ]
+}

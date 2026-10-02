@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 3\nSECTION: UNDERSTANDING_IDEAS\nACTIVITY_INSTRUCTION: 21_Unit 3_Understanding ideas_2 Read the film review. What is the father's love like according to the writer.mp3\nPASSAGE BLOCKS (id + verbatim textbook text):\n[FLTRP-EN-7A-2022CUR:P53:B1] Look at the three pictures on the right and answer the questions. Use the words to help you.\n[FLTRP-EN-7A-2022CUR:P53:B4] 1\tWhich picture reminds you of your father? 2\tHow can you describe your father and his love for you?\n[FLTRP-EN-7A-2022CUR:P53:B8] quietlysilentlovehomecareheart\n[FLTRP-EN-7A-2022CUR:P53:B3] 2 Read the film review. What is the father’s love like according to the writer?\n[FLTRP-EN-7A-2022CUR:P53:B5] 1\t Along a mountain road, a handsome young man walks fast. An older man with a strict face follows him. This is from my favourite film, Postmen in the Mountains. It’s a touching story about the love between father and son.\n[FLTRP-EN-7A-2022CUR:P53:B6] 2\t For years, the father served as the postman for this area. He was often absent from home and the son seldom saw him. But now the son is taking over his father’s position. The father goes with him on his first day of work. Along the way, they start to see into each\n[FLTRP-EN-7A-2022CUR:P53:B7] other’s hearts.\n[FLTRP-EN-7A-2022CUR:P54:B0] 3\t For the first time, the son carries his father across a cold river. It brings back the father’s memory of carrying the son on his back. Tears quietly run down his face.\n[FLTRP-EN-7A-2022CUR:P54:B1] 4\t This film shows a traditional Chinese father. He is happy about his son’s growth. But he just hides his care in his heart. He doesn’t give hugs or kisses to his son. His love may be silent. But like a mountain, it is always there.\n\nWrite 2-3 multiple-choice reading questions about this passage.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What is the father's love like according to the writer?\",\n      \"options\": [\n        \"Loud and obvious\",\n        \"Silent but strong\",\n        \"Cold and distant\",\n        \"Weak and changeable\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P54:B1\",\n      \"evidence_quote\": \"His love may be silent. But like a mountain, it is always there.\",\n      \"skill\": \"gist\"\n    },\n    {\n      \"stem\": \"What does the father do when he is happy about his son's growth?\",\n      \"options\": [\n        \"He gives hugs and kisses\",\n        \"He hides his care in his heart\",\n        \"He shouts with joy\",\n        \"He buys gifts\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P54:B1\",\n      \"evidence_quote\": \"But he just hides his care in his heart.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"When the son carries his father across the river, what happens to the father?\",\n      \"options\": [\n        \"He laughs loudly\",\n        \"He gets angry\",\n        \"He cries quietly\",\n        \"He sings\"\n      ],\n      \"answer_index\": 2,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P54:B0\",\n      \"evidence_quote\": \"Tears quietly run down his face.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 843,
+  "completion_tokens": 1454,
+  "total_tokens": 2297,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1093
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 587
+ }
+}

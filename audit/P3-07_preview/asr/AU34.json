@@ -1,0 +1,984 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU34",
+  "audio_num": "AU34",
+  "filename": "34_Unit 4_Developing ideas _Reading for writing_2 Read the story and check your answers.mp3",
+  "duration_ms": 107624,
+  "segment_count": 14,
+  "word_count": 179,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3500,
+      "text": "Reading for writing, activity too."
+    },
+    {
+      "start_ms": 4480,
+      "end_ms": 8140,
+      "text": "Read the story and check your answers."
+    },
+    {
+      "start_ms": 10300,
+      "end_ms": 12080,
+      "text": "When duty shines"
+    },
+    {
+      "start_ms": 14000,
+      "end_ms": 21860,
+      "text": "For Chinese people, festivals usually mean a break from work and happy family reunions."
+    },
+    {
+      "start_ms": 22280,
+      "end_ms": 27760,
+      "text": "But for Leng Wenying, festivals only mean more work."
+    },
+    {
+      "start_ms": 27760,
+      "end_ms": 36980,
+      "text": "As a doctor in the emergency room, Lung misses many family meals with her loved ones. She"
+    },
+    {
+      "start_ms": 36980,
+      "end_ms": 45600,
+      "text": "is often much busier during festivals. Sometimes she has to work without any breaks for 20"
+    },
+    {
+      "start_ms": 45600,
+      "end_ms": 55320,
+      "text": "hours. This makes her tired and thirsty. Festivals are a challenge because our patients are"
+    },
+    {
+      "start_ms": 55320,
+      "end_ms": 62200,
+      "text": "often in a bad situation. We need to stand by every minute,\" says Lung."
+    },
+    {
+      "start_ms": 63480,
+      "end_ms": 70940,
+      "text": "Lung's duty means she has little time to be with her family at festivals, but she never"
+    },
+    {
+      "start_ms": 70940,
+      "end_ms": 74400,
+      "text": "regrets her decision to be an ER doctor."
+    },
+    {
+      "start_ms": 75320,
+      "end_ms": 84340,
+      "text": "I make the most of every minute with my family. I'm very thankful for their support,\" she says."
+    },
+    {
+      "start_ms": 85840,
+      "end_ms": 95300,
+      "text": "Lung is only one of millions of medical workers in China. They give up their family time to answer"
+    },
+    {
+      "start_ms": 95300,
+      "end_ms": 104120,
+      "text": "the call of duty. In the heart of every patient, their hard work shines brighter than fireworks."
+    }
+  ],
+  "words": [
+    {
+      "word": "Reading",
+      "start_ms": 0,
+      "end_ms": 700
+    },
+    {
+      "word": "for",
+      "start_ms": 700,
+      "end_ms": 1120
+    },
+    {
+      "word": "writing,",
+      "start_ms": 1120,
+      "end_ms": 1580
+    },
+    {
+      "word": "activity",
+      "start_ms": 2260,
+      "end_ms": 2900
+    },
+    {
+      "word": "too.",
+      "start_ms": 2900,
+      "end_ms": 3500
+    },
+    {
+      "word": "Read",
+      "start_ms": 4480,
+      "end_ms": 5240
+    },
+    {
+      "word": "the",
+      "start_ms": 5240,
+      "end_ms": 5480
+    },
+    {
+      "word": "story",
+      "start_ms": 5480,
+      "end_ms": 5980
+    },
+    {
+      "word": "and",
+      "start_ms": 5980,
+      "end_ms": 6920
+    },
+    {
+      "word": "check",
+      "start_ms": 6920,
+      "end_ms": 7380
+    },
+    {
+      "word": "your",
+      "start_ms": 7380,
+      "end_ms": 7620
+    },
+    {
+      "word": "answers.",
+      "start_ms": 7620,
+      "end_ms": 8140
+    },
+    {
+      "word": "When",
+      "start_ms": 10300,
+      "end_ms": 10680
+    },
+    {
+      "word": "duty",
+      "start_ms": 10680,
+      "end_ms": 11220
+    },
+    {
+      "word": "shines",
+      "start_ms": 11220,
+      "end_ms": 12080
+    },
+    {
+      "word": "For",
+      "start_ms": 13820,
+      "end_ms": 14360
+    },
+    {
+      "word": "Chinese",
+      "start_ms": 14360,
+      "end_ms": 14900
+    },
+    {
+      "word": "people,",
+      "start_ms": 14900,
+      "end_ms": 15540
+    },
+    {
+      "word": "festivals",
+      "start_ms": 16200,
+      "end_ms": 16500
+    },
+    {
+      "word": "usually",
+      "start_ms": 16500,
+      "end_ms": 17480
+    },
+    {
+      "word": "mean",
+      "start_ms": 17480,
+      "end_ms": 17980
+    },
+    {
+      "word": "a",
+      "start_ms": 17980,
+      "end_ms": 18280
+    },
+    {
+      "word": "break",
+      "start_ms": 18280,
+      "end_ms": 18580
+    },
+    {
+      "word": "from",
+      "start_ms": 18580,
+      "end_ms": 18980
+    },
+    {
+      "word": "work",
+      "start_ms": 18980,
+      "end_ms": 19460
+    },
+    {
+      "word": "and",
+      "start_ms": 19460,
+      "end_ms": 19820
+    },
+    {
+      "word": "happy",
+      "start_ms": 19820,
+      "end_ms": 20340
+    },
+    {
+      "word": "family",
+      "start_ms": 20340,
+      "end_ms": 20880
+    },
+    {
+      "word": "reunions.",
+      "start_ms": 20880,
+      "end_ms": 21860
+    },
+    {
+      "word": "But",
+      "start_ms": 22280,
+      "end_ms": 23040
+    },
+    {
+      "word": "for",
+      "start_ms": 23040,
+      "end_ms": 23240
+    },
+    {
+      "word": "Leng",
+      "start_ms": 23240,
+      "end_ms": 23560
+    },
+    {
+      "word": "Wenying,",
+      "start_ms": 23560,
+      "end_ms": 24280
+    },
+    {
+      "word": "festivals",
+      "start_ms": 24840,
+      "end_ms": 25280
+    },
+    {
+      "word": "only",
+      "start_ms": 25280,
+      "end_ms": 26180
+    },
+    {
+      "word": "mean",
+      "start_ms": 26180,
+      "end_ms": 26740
+    },
+    {
+      "word": "more",
+      "start_ms": 26740,
+      "end_ms": 27180
+    },
+    {
+      "word": "work.",
+      "start_ms": 27180,
+      "end_ms": 27760
+    },
+    {
+      "word": "As",
+      "start_ms": 27760,
+      "end_ms": 29500
+    },
+    {
+      "word": "a",
+      "start_ms": 29500,
+      "end_ms": 29860
+    },
+    {
+      "word": "doctor",
+      "start_ms": 29860,
+      "end_ms": 30200
+    },
+    {
+      "word": "in",
+      "start_ms": 30200,
+      "end_ms": 30620
+    },
+    {
+      "word": "the",
+      "start_ms": 30620,
+      "end_ms": 30780
+    },
+    {
+      "word": "emergency",
+      "start_ms": 30780,
+      "end_ms": 31220
+    },
+    {
+      "word": "room,",
+      "start_ms": 31220,
+      "end_ms": 31820
+    },
+    {
+      "word": "Lung",
+      "start_ms": 32380,
+      "end_ms": 32600
+    },
+    {
+      "word": "misses",
+      "start_ms": 32600,
+      "end_ms": 33120
+    },
+    {
+      "word": "many",
+      "start_ms": 33120,
+      "end_ms": 33740
+    },
+    {
+      "word": "family",
+      "start_ms": 33740,
+      "end_ms": 34240
+    },
+    {
+      "word": "meals",
+      "start_ms": 34240,
+      "end_ms": 34780
+    },
+    {
+      "word": "with",
+      "start_ms": 34780,
+      "end_ms": 35040
+    },
+    {
+      "word": "her",
+      "start_ms": 35040,
+      "end_ms": 35280
+    },
+    {
+      "word": "loved",
+      "start_ms": 35280,
+      "end_ms": 35540
+    },
+    {
+      "word": "ones.",
+      "start_ms": 35540,
+      "end_ms": 35920
+    },
+    {
+      "word": "She",
+      "start_ms": 36640,
+      "end_ms": 36980
+    },
+    {
+      "word": "is",
+      "start_ms": 36980,
+      "end_ms": 37220
+    },
+    {
+      "word": "often",
+      "start_ms": 37220,
+      "end_ms": 37700
+    },
+    {
+      "word": "much",
+      "start_ms": 37700,
+      "end_ms": 38220
+    },
+    {
+      "word": "busier",
+      "start_ms": 38220,
+      "end_ms": 38820
+    },
+    {
+      "word": "during",
+      "start_ms": 38820,
+      "end_ms": 39260
+    },
+    {
+      "word": "festivals.",
+      "start_ms": 39260,
+      "end_ms": 39800
+    },
+    {
+      "word": "Sometimes",
+      "start_ms": 40800,
+      "end_ms": 41460
+    },
+    {
+      "word": "she",
+      "start_ms": 41460,
+      "end_ms": 42140
+    },
+    {
+      "word": "has",
+      "start_ms": 42140,
+      "end_ms": 42420
+    },
+    {
+      "word": "to",
+      "start_ms": 42420,
+      "end_ms": 42620
+    },
+    {
+      "word": "work",
+      "start_ms": 42620,
+      "end_ms": 42980
+    },
+    {
+      "word": "without",
+      "start_ms": 42980,
+      "end_ms": 43480
+    },
+    {
+      "word": "any",
+      "start_ms": 43480,
+      "end_ms": 44060
+    },
+    {
+      "word": "breaks",
+      "start_ms": 44060,
+      "end_ms": 44620
+    },
+    {
+      "word": "for",
+      "start_ms": 44620,
+      "end_ms": 45040
+    },
+    {
+      "word": "20",
+      "start_ms": 45040,
+      "end_ms": 45600
+    },
+    {
+      "word": "hours.",
+      "start_ms": 45600,
+      "end_ms": 46040
+    },
+    {
+      "word": "This",
+      "start_ms": 46980,
+      "end_ms": 47260
+    },
+    {
+      "word": "makes",
+      "start_ms": 47260,
+      "end_ms": 47580
+    },
+    {
+      "word": "her",
+      "start_ms": 47580,
+      "end_ms": 47880
+    },
+    {
+      "word": "tired",
+      "start_ms": 47880,
+      "end_ms": 48540
+    },
+    {
+      "word": "and",
+      "start_ms": 48540,
+      "end_ms": 48940
+    },
+    {
+      "word": "thirsty.",
+      "start_ms": 48940,
+      "end_ms": 49500
+    },
+    {
+      "word": "Festivals",
+      "start_ms": 50920,
+      "end_ms": 51700
+    },
+    {
+      "word": "are",
+      "start_ms": 51700,
+      "end_ms": 52220
+    },
+    {
+      "word": "a",
+      "start_ms": 52220,
+      "end_ms": 52440
+    },
+    {
+      "word": "challenge",
+      "start_ms": 52440,
+      "end_ms": 53080
+    },
+    {
+      "word": "because",
+      "start_ms": 53080,
+      "end_ms": 53840
+    },
+    {
+      "word": "our",
+      "start_ms": 53840,
+      "end_ms": 54200
+    },
+    {
+      "word": "patients",
+      "start_ms": 54200,
+      "end_ms": 54800
+    },
+    {
+      "word": "are",
+      "start_ms": 54800,
+      "end_ms": 55320
+    },
+    {
+      "word": "often",
+      "start_ms": 55320,
+      "end_ms": 55780
+    },
+    {
+      "word": "in",
+      "start_ms": 55780,
+      "end_ms": 56120
+    },
+    {
+      "word": "a",
+      "start_ms": 56120,
+      "end_ms": 56280
+    },
+    {
+      "word": "bad",
+      "start_ms": 56280,
+      "end_ms": 56480
+    },
+    {
+      "word": "situation.",
+      "start_ms": 56480,
+      "end_ms": 57260
+    },
+    {
+      "word": "We",
+      "start_ms": 58020,
+      "end_ms": 58400
+    },
+    {
+      "word": "need",
+      "start_ms": 58400,
+      "end_ms": 58780
+    },
+    {
+      "word": "to",
+      "start_ms": 58780,
+      "end_ms": 59040
+    },
+    {
+      "word": "stand",
+      "start_ms": 59040,
+      "end_ms": 59420
+    },
+    {
+      "word": "by",
+      "start_ms": 59420,
+      "end_ms": 59960
+    },
+    {
+      "word": "every",
+      "start_ms": 59960,
+      "end_ms": 60560
+    },
+    {
+      "word": "minute,\"",
+      "start_ms": 60560,
+      "end_ms": 61520
+    },
+    {
+      "word": "says",
+      "start_ms": 61520,
+      "end_ms": 61900
+    },
+    {
+      "word": "Lung.",
+      "start_ms": 61900,
+      "end_ms": 62200
+    },
+    {
+      "word": "Lung's",
+      "start_ms": 63480,
+      "end_ms": 64240
+    },
+    {
+      "word": "duty",
+      "start_ms": 64240,
+      "end_ms": 64600
+    },
+    {
+      "word": "means",
+      "start_ms": 64600,
+      "end_ms": 65200
+    },
+    {
+      "word": "she",
+      "start_ms": 65200,
+      "end_ms": 65520
+    },
+    {
+      "word": "has",
+      "start_ms": 65520,
+      "end_ms": 65780
+    },
+    {
+      "word": "little",
+      "start_ms": 65780,
+      "end_ms": 66220
+    },
+    {
+      "word": "time",
+      "start_ms": 66220,
+      "end_ms": 66700
+    },
+    {
+      "word": "to",
+      "start_ms": 66700,
+      "end_ms": 66980
+    },
+    {
+      "word": "be",
+      "start_ms": 66980,
+      "end_ms": 67220
+    },
+    {
+      "word": "with",
+      "start_ms": 67220,
+      "end_ms": 67480
+    },
+    {
+      "word": "her",
+      "start_ms": 67480,
+      "end_ms": 67660
+    },
+    {
+      "word": "family",
+      "start_ms": 67660,
+      "end_ms": 68120
+    },
+    {
+      "word": "at",
+      "start_ms": 68120,
+      "end_ms": 68440
+    },
+    {
+      "word": "festivals,",
+      "start_ms": 68440,
+      "end_ms": 68940
+    },
+    {
+      "word": "but",
+      "start_ms": 69680,
+      "end_ms": 70140
+    },
+    {
+      "word": "she",
+      "start_ms": 70140,
+      "end_ms": 70480
+    },
+    {
+      "word": "never",
+      "start_ms": 70480,
+      "end_ms": 70940
+    },
+    {
+      "word": "regrets",
+      "start_ms": 70940,
+      "end_ms": 71580
+    },
+    {
+      "word": "her",
+      "start_ms": 71580,
+      "end_ms": 71900
+    },
+    {
+      "word": "decision",
+      "start_ms": 71900,
+      "end_ms": 72340
+    },
+    {
+      "word": "to",
+      "start_ms": 72340,
+      "end_ms": 72660
+    },
+    {
+      "word": "be",
+      "start_ms": 72660,
+      "end_ms": 72980
+    },
+    {
+      "word": "an",
+      "start_ms": 72980,
+      "end_ms": 73260
+    },
+    {
+      "word": "ER",
+      "start_ms": 73260,
+      "end_ms": 73820
+    },
+    {
+      "word": "doctor.",
+      "start_ms": 73820,
+      "end_ms": 74400
+    },
+    {
+      "word": "I",
+      "start_ms": 75320,
+      "end_ms": 76200
+    },
+    {
+      "word": "make",
+      "start_ms": 76200,
+      "end_ms": 76540
+    },
+    {
+      "word": "the",
+      "start_ms": 76540,
+      "end_ms": 76840
+    },
+    {
+      "word": "most",
+      "start_ms": 76840,
+      "end_ms": 77280
+    },
+    {
+      "word": "of",
+      "start_ms": 77280,
+      "end_ms": 77600
+    },
+    {
+      "word": "every",
+      "start_ms": 77600,
+      "end_ms": 78140
+    },
+    {
+      "word": "minute",
+      "start_ms": 78140,
+      "end_ms": 78560
+    },
+    {
+      "word": "with",
+      "start_ms": 78560,
+      "end_ms": 78920
+    },
+    {
+      "word": "my",
+      "start_ms": 78920,
+      "end_ms": 79180
+    },
+    {
+      "word": "family.",
+      "start_ms": 79180,
+      "end_ms": 79620
+    },
+    {
+      "word": "I'm",
+      "start_ms": 80380,
+      "end_ms": 80900
+    },
+    {
+      "word": "very",
+      "start_ms": 80900,
+      "end_ms": 81320
+    },
+    {
+      "word": "thankful",
+      "start_ms": 81320,
+      "end_ms": 81840
+    },
+    {
+      "word": "for",
+      "start_ms": 81840,
+      "end_ms": 82280
+    },
+    {
+      "word": "their",
+      "start_ms": 82280,
+      "end_ms": 82540
+    },
+    {
+      "word": "support,\"",
+      "start_ms": 82540,
+      "end_ms": 83720
+    },
+    {
+      "word": "she",
+      "start_ms": 83720,
+      "end_ms": 84000
+    },
+    {
+      "word": "says.",
+      "start_ms": 84000,
+      "end_ms": 84340
+    },
+    {
+      "word": "Lung",
+      "start_ms": 85840,
+      "end_ms": 86300
+    },
+    {
+      "word": "is",
+      "start_ms": 86300,
+      "end_ms": 86700
+    },
+    {
+      "word": "only",
+      "start_ms": 86700,
+      "end_ms": 87160
+    },
+    {
+      "word": "one",
+      "start_ms": 87160,
+      "end_ms": 87660
+    },
+    {
+      "word": "of",
+      "start_ms": 87660,
+      "end_ms": 88080
+    },
+    {
+      "word": "millions",
+      "start_ms": 88080,
+      "end_ms": 88700
+    },
+    {
+      "word": "of",
+      "start_ms": 88700,
+      "end_ms": 89260
+    },
+    {
+      "word": "medical",
+      "start_ms": 89260,
+      "end_ms": 89740
+    },
+    {
+      "word": "workers",
+      "start_ms": 89740,
+      "end_ms": 90220
+    },
+    {
+      "word": "in",
+      "start_ms": 90220,
+      "end_ms": 90740
+    },
+    {
+      "word": "China.",
+      "start_ms": 90740,
+      "end_ms": 91200
+    },
+    {
+      "word": "They",
+      "start_ms": 92040,
+      "end_ms": 92380
+    },
+    {
+      "word": "give",
+      "start_ms": 92380,
+      "end_ms": 92740
+    },
+    {
+      "word": "up",
+      "start_ms": 92740,
+      "end_ms": 92980
+    },
+    {
+      "word": "their",
+      "start_ms": 92980,
+      "end_ms": 93260
+    },
+    {
+      "word": "family",
+      "start_ms": 93260,
+      "end_ms": 93680
+    },
+    {
+      "word": "time",
+      "start_ms": 93680,
+      "end_ms": 94280
+    },
+    {
+      "word": "to",
+      "start_ms": 94280,
+      "end_ms": 94720
+    },
+    {
+      "word": "answer",
+      "start_ms": 94720,
+      "end_ms": 95300
+    },
+    {
+      "word": "the",
+      "start_ms": 95300,
+      "end_ms": 95580
+    },
+    {
+      "word": "call",
+      "start_ms": 95580,
+      "end_ms": 96020
+    },
+    {
+      "word": "of",
+      "start_ms": 96020,
+      "end_ms": 96260
+    },
+    {
+      "word": "duty.",
+      "start_ms": 96260,
+      "end_ms": 96660
+    },
+    {
+      "word": "In",
+      "start_ms": 97680,
+      "end_ms": 97960
+    },
+    {
+      "word": "the",
+      "start_ms": 97960,
+      "end_ms": 98140
+    },
+    {
+      "word": "heart",
+      "start_ms": 98140,
+      "end_ms": 98540
+    },
+    {
+      "word": "of",
+      "start_ms": 98540,
+      "end_ms": 98820
+    },
+    {
+      "word": "every",
+      "start_ms": 98820,
+      "end_ms": 99300
+    },
+    {
+      "word": "patient,",
+      "start_ms": 99300,
+      "end_ms": 99900
+    },
+    {
+      "word": "their",
+      "start_ms": 100580,
+      "end_ms": 100800
+    },
+    {
+      "word": "hard",
+      "start_ms": 100800,
+      "end_ms": 101300
+    },
+    {
+      "word": "work",
+      "start_ms": 101300,
+      "end_ms": 101680
+    },
+    {
+      "word": "shines",
+      "start_ms": 101680,
+      "end_ms": 102300
+    },
+    {
+      "word": "brighter",
+      "start_ms": 102300,
+      "end_ms": 103140
+    },
+    {
+      "word": "than",
+      "start_ms": 103140,
+      "end_ms": 103540
+    },
+    {
+      "word": "fireworks.",
+      "start_ms": 103540,
+      "end_ms": 104120
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 13.1
+  }
+}

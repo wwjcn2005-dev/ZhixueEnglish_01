@@ -1,0 +1,552 @@
+{
+ "run": "sentence distractors full generation",
+ "model": "deepseek-v4-pro",
+ "prompt_version": "sentence-distractor-v1",
+ "rules_version": "rules-v2",
+ "batch_size": 5,
+ "targets": 13,
+ "batches": 3,
+ "ai_calls": 3,
+ "failed_batches": [],
+ "samples": [
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Dad and Mum can protect it from winds.",
+   "sentence_uid": "PREVIEW:AU13:S0282",
+   "textbook_page": 30,
+   "raw_count": 3,
+   "kept_count": 1,
+   "kept": [
+    "Dad and Mum can protect it from wind."
+   ],
+   "kept_detail": [
+    {
+     "text": "Dad and Mum can protect it from wind.",
+     "confidence": 0.6,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU13:S0282",
+      "FLTRP-EN-7A-2022CUR:V:F2D86AB26674"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Dad and Mum can protect it from storms.",
+     "reason": "out_of_stage:storms"
+    },
+    {
+     "text": "Dad and Mum can sail it through winds.",
+     "reason": "meta_or_abnormal_text"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Just try your best and work hard.",
+   "sentence_uid": "P3-07:AU13-LTR-12",
+   "textbook_page": 30,
+   "raw_count": 2,
+   "kept_count": 2,
+   "kept": [
+    "Just try your best and plan hard.",
+    "Just remember your homework and work hard."
+   ],
+   "kept_detail": [
+    {
+     "text": "Just try your best and plan hard.",
+     "confidence": 0.62,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-LTR-12",
+      "FLTRP-EN-7A-2022CUR:V:D5F30C2F0466"
+     ]
+    },
+    {
+     "text": "Just remember your homework and work hard.",
+     "confidence": 0.68,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-LTR-12",
+      "FLTRP-EN-7A-2022CUR:V:B88C03E8B643",
+      "FLTRP-EN-7A-2022CUR:V:AA9F4E68C3C9"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 2",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "“Why don’t we put our music together?",
+   "sentence_uid": "PREVIEW:AU14:S0294",
+   "textbook_page": 38,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "Why don’t we put our sound together?",
+    "Why don’t we put our band together?",
+    "Why don’t we put our guitar together?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Why don’t we put our sound together?",
+     "confidence": 0.85,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU14:S0294",
+      "FLTRP-EN-7A-2022CUR:V:98A27993BFCE"
+     ]
+    },
+    {
+     "text": "Why don’t we put our band together?",
+     "confidence": 0.8,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU14:S0294",
+      "FLTRP-EN-7A-2022CUR:V:C62FC49D6BF8"
+     ]
+    },
+    {
+     "text": "Why don’t we put our guitar together?",
+     "confidence": 0.72,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU14:S0294",
+      "FLTRP-EN-7A-2022CUR:V:8B358F58EA25"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 2",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "Why do you know so much about birds?",
+   "sentence_uid": "PREVIEW:AU19:S0367",
+   "textbook_page": 44,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "Why do you know so much about nature?",
+    "Why do you know so much about bird-watching?",
+    "What do you know so much about birds?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Why do you know so much about nature?",
+     "confidence": 0.85,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU19:S0367",
+      "FLTRP-EN-7A-2022CUR:V:15919D688F8D"
+     ]
+    },
+    {
+     "text": "Why do you know so much about bird-watching?",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU19:S0367",
+      "PREVIEW:AU19:S0369"
+     ]
+    },
+    {
+     "text": "What do you know so much about birds?",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU19:S0367",
+      "PREVIEW:AU19:S0369"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 2",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "What do you like about bird-watching?",
+   "sentence_uid": "PREVIEW:AU19:S0369",
+   "textbook_page": 44,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "What do you like about birds?",
+    "What do you know about bird-watching?"
+   ],
+   "kept_detail": [
+    {
+     "text": "What do you like about birds?",
+     "confidence": 0.85,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU19:S0369",
+      "PREVIEW:AU19:S0367"
+     ]
+    },
+    {
+     "text": "What do you know about bird-watching?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU19:S0369",
+      "PREVIEW:AU19:S0367"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Why do you like about bird-watching?",
+     "reason": "low_confidence"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 2",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Let’s meet here on Wednesday after lunch.",
+   "sentence_uid": "PREVIEW:AU20:S0425",
+   "textbook_page": 46,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "Let’s meet here on Wednesday at midnight.",
+    "Let’s meet at the club on Wednesday after lunch.",
+    "Let’s meet here on Wednesday after practice."
+   ],
+   "kept_detail": [
+    {
+     "text": "Let’s meet here on Wednesday at midnight.",
+     "confidence": 0.72,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU20:S0425",
+      "FLTRP-EN-7A-2022CUR:V:FADBF09D4729"
+     ]
+    },
+    {
+     "text": "Let’s meet at the club on Wednesday after lunch.",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU20:S0425",
+      "FLTRP-EN-7A-2022CUR:V:9D4BBD1A5AE2"
+     ]
+    },
+    {
+     "text": "Let’s meet here on Wednesday after practice.",
+     "confidence": 0.68,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU20:S0425",
+      "FLTRP-EN-7A-2022CUR:V:28D70C04EDC5"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 3",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "Can you change your clothes before you come?",
+   "sentence_uid": "PREVIEW:AU26:S0508",
+   "textbook_page": 60,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "Can you carry your clothes before you come?",
+    "Can you hide your clothes before you come?",
+    "Can you change your clothes before you race?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Can you carry your clothes before you come?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU26:S0508",
+      "FLTRP-EN-7A-2022CUR:V:61E79FF7C2F9"
+     ]
+    },
+    {
+     "text": "Can you hide your clothes before you come?",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU26:S0508",
+      "FLTRP-EN-7A-2022CUR:V:BB020F2AEF21"
+     ]
+    },
+    {
+     "text": "Can you change your clothes before you race?",
+     "confidence": 0.68,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU26:S0508",
+      "FLTRP-EN-7A-2022CUR:V:E0BF34589BFC"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 4",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "How I wish to have four hands now!",
+   "sentence_uid": "PREVIEW:AU28:S0583",
+   "textbook_page": 69,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "How I wish to have four balloons now!",
+    "How I wish to have four lanterns now!"
+   ],
+   "kept_detail": [
+    {
+     "text": "How I wish to have four balloons now!",
+     "confidence": 0.72,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU28:S0583",
+      "FLTRP-EN-7A-2022CUR:V:E9BDADC79B62"
+     ]
+    },
+    {
+     "text": "How I wish to have four lanterns now!",
+     "confidence": 0.66,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU28:S0583",
+      "FLTRP-EN-7A-2022CUR:V:4183787DAEC6"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "How I wish to hold four hands now!",
+     "reason": "out_of_stage:hold"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 4",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "“Are you joking?",
+   "sentence_uid": "PREVIEW:AU28:S0590",
+   "textbook_page": 70,
+   "raw_count": 3,
+   "kept_count": 1,
+   "kept": [
+    "Are you shocked?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Are you shocked?",
+     "confidence": 0.62,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU28:S0590",
+      "FLTRP-EN-7A-2022CUR:V:DC1007846EE7"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Are you laughing?",
+     "reason": "out_of_stage:laughing"
+    },
+    {
+     "text": "Are you missing?",
+     "reason": "out_of_stage:missing"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 5",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "What does tea mean to you?",
+   "sentence_uid": "PREVIEW:AU41:S0821",
+   "textbook_page": 93,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "What does coffee mean to you?",
+    "What does culture mean to you?"
+   ],
+   "kept_detail": [
+    {
+     "text": "What does coffee mean to you?",
+     "confidence": 0.78,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU41:S0821",
+      "FLTRP-EN-7A-2022CUR:V:47FA8CFAFE1A"
+     ]
+    },
+    {
+     "text": "What does culture mean to you?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU41:S0821",
+      "FLTRP-EN-7A-2022CUR:V:939C4E80768E"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "What does tea mean to adults?",
+     "reason": "out_of_stage:adults"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 6",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "Do you remember your first meeting?",
+   "sentence_uid": "PREVIEW:AU46:S0901",
+   "textbook_page": 108,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "Do you know me?",
+    "Are you looking at me?",
+    "Do you remember your first surprise?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Do you know me?",
+     "confidence": 0.8,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU47:S0946"
+     ]
+    },
+    {
+     "text": "Are you looking at me?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU47:S0945"
+     ]
+    },
+    {
+     "text": "Do you remember your first surprise?",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU46:S0901",
+      "FLTRP-EN-7A-2022CUR:V:7AEAF8B1531D"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 6",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Are you looking at me?",
+   "sentence_uid": "PREVIEW:AU47:S0945",
+   "textbook_page": 109,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "Are you looking at the pigeon?",
+    "Do you know me?",
+    "Do you remember your first meeting?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Are you looking at the pigeon?",
+     "confidence": 0.85,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU47:S0945",
+      "FLTRP-EN-7A-2022CUR:V:267C8FF2848E"
+     ]
+    },
+    {
+     "text": "Do you know me?",
+     "confidence": 0.8,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU47:S0946"
+     ]
+    },
+    {
+     "text": "Do you remember your first meeting?",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU46:S0901"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 6",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Do you know me?",
+   "sentence_uid": "PREVIEW:AU47:S0946",
+   "textbook_page": 109,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "Do you know the pigeon?",
+    "Are you looking at me?",
+    "Do you remember your first meeting?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Do you know the pigeon?",
+     "confidence": 0.85,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU47:S0946",
+      "FLTRP-EN-7A-2022CUR:V:267C8FF2848E"
+     ]
+    },
+    {
+     "text": "Are you looking at me?",
+     "confidence": 0.8,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU47:S0945"
+     ]
+    },
+    {
+     "text": "Do you remember your first meeting?",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU46:S0901"
+     ]
+    }
+   ],
+   "filtered": []
+  }
+ ],
+ "started_at": "20260919T115705",
+ "elapsed_sec": 303.4,
+ "raw_candidates": 38,
+ "kept_candidates": 31,
+ "kept_distribution": {
+  "0": 0,
+  "1": 2,
+  "2": 4,
+  "3": 7
+ },
+ "filtered_reasons": {
+  "out_of_stage": 5,
+  "meta_or_abnormal_text": 1,
+  "low_confidence": 1
+ },
+ "fallback_count": 0,
+ "cache_entries": 38,
+ "cache_file": "D:\\ZhixueEnglish\\demo\\ai_cache\\sentence_distractors.json",
+ "finished_at": "20260919T120208"
+}

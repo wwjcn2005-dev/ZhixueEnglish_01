@@ -1,0 +1,244 @@
+{
+  "audit_id": "P2-6-F-0",
+  "title": "教材内容、音频与练习结构修复可实施性审计",
+  "stage": "read-only",
+  "audit_time": "2026-09-13",
+  "project_root": "D:\\ZhixueEnglish",
+  "authority": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+  "ai_calls": 0,
+  "code_changes": 0,
+  "files_added": [
+    "audit/P2-6-F-0_textbook_exercise_repair_readiness.md",
+    "audit/P2-6-F-0_textbook_exercise_repair_readiness.json"
+  ],
+  "summary": {
+    "textbook_fact_sources": "存在且可用（PDF 文本层 + contentpack v5 + 54 官方 MP3 + P2-4 派生 JSON）",
+    "textbook_body_restore": "可恢复：content_block 与 PDF 文本层逐块一致、阅读顺序稳定",
+    "audio_segmentation": "不需要：没有任何一条音频跨活动，SPLIT_REQUIRED = 0",
+    "question_structure": "部分可恢复：5 条选项在题干内可确定性恢复；3 条选项是页眉页脚噪声；1 条选项归属待人工核验",
+    "answer_source": "不可自动恢复：157 练习 / 360 题全部 NO_RELIABLE_SOURCE，教材无答案页，项目无教师用书",
+    "p1_01_root_cause": "缺答案来源（不是缺 Question 实体、不是缺批改器、不是缺 Evidence 接口）",
+    "verdict": {
+      "audit_execution": "PASS",
+      "repair_readiness": "CONDITIONAL PASS"
+    }
+  },
+  "test_run": {
+    "learning": "112 PASS",
+    "workbench": "50 PASS",
+    "web": "235 PASS",
+    "total": "397 PASS / 0 FAIL / 0 SKIP",
+    "isolation": "全部测试使用 %TEMP% 临时 learning.db 副本；正式库前后 SHA256 与 mtime 一致"
+  },
+  "fact_sources": [
+    {"name": "出版社原 PDF", "path": "2025年度初一外研版英语教材\\（根据2022年版课程标准修订）义务教育教科书·英语 七年级上册.pdf", "content_type": "教材原始版面 + 文本层", "official": true, "usable_as_fact_source": true, "note": "178 页；175 页可直接取文；仅 P1/P3/P178 为 0 字符；中位 711 字符/页"},
+    {"name": "contentpack v5", "path": "structured/contentpack/v5/FLTRP-EN-7A-2022CUR.sqlite", "content_type": "结构化教材（23 表）", "official": true, "usable_as_fact_source": true, "note": "SHA256 ACEBC8C29CF5…；content_block 3854 / activity 96 / sub_question 13 / audio_asset 54 / transcript 0"},
+    {"name": "官方音频", "path": "2025年度初一外研版英语教材\\*.mp3", "content_type": "教材官方听力音频（54 个）", "official": true, "usable_as_fact_source": true, "note": "本次 54/54 SHA256 与 audio_asset 一致"},
+    {"name": "P2-4 教材结构", "path": "structured/textbook/textbook_structure_v2.json", "content_type": "8 Unit / 40 板块 / 157 活动 / 360 题 / 850 空线", "official": false, "usable_as_fact_source": true, "note": "结构事实（页码、板块、活动号）可用"},
+    {"name": "P2-4 内容关系", "path": "structured/textbook/textbook_content_relations_v2.json", "content_type": "875 文本引用 / 13 语法指针 / 485 词汇引用", "official": false, "usable_as_fact_source": false, "note": "只能作线索：实测存在活动归属错误（A9/A10）"},
+    {"name": "P2-4 练习目录", "path": "structured/exercises/exercise_catalog_v3.json", "content_type": "157 练习 / 360 题", "official": false, "usable_as_fact_source": false, "note": "SHA256 EB2D8E7BD0BD…；options 35 条非空但含页眉页脚噪声；answer_status 全部 NO_RELIABLE_SOURCE"},
+    {"name": "P2-4 题目关系", "path": "structured/exercises/exercise_question_relations_v3.json", "content_type": "360 题关系", "official": false, "usable_as_fact_source": false, "note": "related_text 315 / related_vocabulary 303 / related_audio 121 / options 90；需重建锚定"},
+    {"name": "音频映射", "path": "structured/audio/exercise_audio_map_v3.json", "content_type": "54/54 CONFIRMED 音频↔活动/板块", "official": false, "usable_as_fact_source": true, "note": "文件名含单元+板块+活动号+指令，相似度 0.99–1.00"},
+    {"name": "音频题目关系", "path": "structured/audio/audio_question_relations_v3.json", "content_type": "121 条 activity 级关系", "official": false, "usable_as_fact_source": true, "note": "7 条音频存在重复 question_id 行（数据小瑕疵）"},
+    {"name": "AI 证据包", "path": "structured/ai/textbook_evidence_map_v1.json", "content_type": "360 份批改输入材料", "official": false, "usable_as_fact_source": false, "note": "是批改输入，不是答案来源"},
+    {"name": "派生词音频", "path": "structured/audio/derived/words/**", "content_type": "288 个派生 wav + manifest", "official": false, "usable_as_fact_source": false, "note": "由官方整单元词表音频离线切分；manifest 已声明不是官方独立单词音频"},
+    {"name": "规范 V1.2", "path": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx", "content_type": "最高指导原则与开发规范", "official": true, "usable_as_fact_source": true, "note": "SHA256 6D3595CF…；本阶段只读"},
+    {"name": "答案来源", "path": null, "content_type": "答案键 / 教师用书 / 评分标准", "official": false, "usable_as_fact_source": false, "note": "不存在：教材学生用书无答案页，项目内无教师用书或答案文件"}
+  ],
+  "textbook_body_restore": [
+    {"content": "Text 说明/叙述正文", "data_exists": true, "structure": "content_block.text_raw + reading_order", "unit_section_clear": true, "activity_clear": "partial", "stable_order": true, "missing_fields": [], "classification": "DIRECT_RESTORE"},
+    {"content": "Dialogue 对话", "data_exists": true, "structure": "132 块 block_kind=dialogue", "unit_section_clear": true, "activity_clear": "partial", "stable_order": true, "missing_fields": [], "classification": "DIRECT_RESTORE"},
+    {"content": "Reading 阅读语篇", "data_exists": true, "structure": "U1–U6 每单元 2 篇（Understanding ideas + Reading for writing）", "unit_section_clear": true, "activity_clear": true, "stable_order": true, "missing_fields": [], "classification": "DIRECT_RESTORE"},
+    {"content": "Listening material 音频", "data_exists": true, "structure": "audio_asset + audio_mapping（54/54 CONFIRMED）", "unit_section_clear": true, "activity_clear": true, "stable_order": true, "missing_fields": [], "classification": "DIRECT_RESTORE"},
+    {"content": "Listening 原文/脚本", "data_exists": false, "structure": "transcript 表 0 行", "unit_section_clear": null, "activity_clear": null, "stable_order": null, "missing_fields": ["transcript_text"], "classification": "NOT_AVAILABLE"},
+    {"content": "Listening 印刷配套结构（poster/table/chart 空位）", "data_exists": true, "structure": "content_block 内的编号空位", "unit_section_clear": true, "activity_clear": true, "stable_order": true, "missing_fields": [], "classification": "DIRECT_RESTORE"},
+    {"content": "Grammar 指针", "data_exists": true, "structure": "grammar_in 13 条（Know more about … ⇢ pNN / Grammar rules ⇢ pNN）", "unit_section_clear": true, "activity_clear": true, "stable_order": true, "missing_fields": [], "classification": "DETERMINISTIC_MAPPING"},
+    {"content": "Grammar 条目内容", "data_exists": "partial", "structure": "附录 Guide to the language use（PDF 135–154）有文本", "unit_section_clear": true, "activity_clear": false, "stable_order": true, "missing_fields": ["grammar_entry_splitting"], "classification": "NEEDS_REVIEW"},
+    {"content": "Vocabulary / Phrase / Sentence pattern", "data_exists": true, "structure": "learning_item 288 词汇 + 23 短语 + 52 句型 + 附录页码", "unit_section_clear": true, "activity_clear": true, "stable_order": true, "missing_fields": [], "classification": "ALREADY_IN_PRODUCT"},
+    {"content": "板块→文本块稳定关系", "data_exists": "partial", "structure": "text_references 875 条（exercise_item 843 / dialogue 31 / heading 1）", "unit_section_clear": "partial", "activity_clear": "partial", "stable_order": true, "missing_fields": ["verified_section_block_relation"], "classification": "DETERMINISTIC_MAPPING (须重建)"}
+  ],
+  "audio_audit": {
+    "assets_total": 54,
+    "activity_scope": 41,
+    "section_scope": 13,
+    "kinds": {"exercise": 41, "word_list": 7, "phonetics": 6},
+    "mapping_status": "54/54 CONFIRMED",
+    "sha256_verified": "54/54 与教材目录 MP3 一致",
+    "audios_spanning_multiple_activities": 0,
+    "questions_per_audio_distribution": {"1": 6, "2": 15, "3": 7, "4": 5, "5": 4, "6": 4},
+    "question_relations": 121,
+    "split_required": 0,
+    "deterministic_segment": 0,
+    "needs_review": 41,
+    "needs_review_reason": "不是切割点不明，而是音频内容与题目答案的语义对应必须人工听审",
+    "policy": "保留官方完整音频 + 完整教材文字；禁止用 AI / 时长 / 字数 / 语义猜测切割点"
+  },
+  "anchoring_findings": [
+    {"id": "A", "finding": "活动边界归属错误", "detail": "Starter PDF P10 上 A10 的 8 空对话块（P10:B5/B7–B12）被 text_references 记到 A9；A10 只剩活动号块 P10:B17", "impact": "两份派生数据互相矛盾，锚定层不可直接采信"},
+    {"id": "B", "finding": "同页跨活动串题", "detail": "web/exercises.py::sub_questions() 只按 pdf_page 取 sub_question，不按活动过滤；X:FA515DD3ECF0 拿到同页 A3 的题", "impact": "简答题干可能属于别的活动"},
+    {"id": "C", "finding": "把指令当题目", "detail": "22 条 short_answer 走指令回退，其中 7 条呈现的题目不含问号", "impact": "孩子看到的是指令而非问题"},
+    {"id": "D", "finding": "选项被页眉/页脚污染", "detail": "X:3DCE713706DE options=[great teacher, new start 19]；X:BEF04AA1DF4C options=[new start 23]；X:F21C9E2036F7 options=[new start 15]", "impact": "孩子看到错误选项（比无选项更危险）"},
+    {"id": "E", "finding": "侧栏知识混入选项", "detail": "X:8AA3C10E358E（U5 A3）第 5 条选项来自 Learning to think 侧栏", "impact": "选项集不干净"}
+  ],
+  "question_structure": {
+    "runtime_catalog": "structured/exercises/exercise_catalog_v2.json",
+    "runtime_catalog_note": "web/exercises.py 第 26–28 行决定；v3（P2-4）只被 learning/ 侧服务使用",
+    "runtime_kinds": {"spelling": 26, "fill": 27, "short_answer": 35, "choice": 6, "match": 4, "self_check": 59, "total": 157},
+    "spelling_composition": {"fill": 18, "match": 6, "choice": 2, "total": 26},
+    "by_question_type": [
+      {"question_type": "choice", "exercises": 12, "questions": 30, "classification": "DIRECT_RESTORE 4 / DETERMINISTIC_MAPPING 6 / NEEDS_REVIEW 2", "note": "3 条选项是噪声；2 条被降级 spelling；5 条无选项降级 self_check"},
+      {"question_type": "judge", "exercises": 1, "questions": 3, "classification": "结构 DETERMINISTIC / 答案 NEEDS_REVIEW", "note": "U4 D-I A2：F/O 由指令定义，答案须听 AU32"},
+      {"question_type": "fill", "exercises": 45, "questions": 124, "classification": "结构 DETERMINISTIC / 答案 NEEDS_REVIEW", "note": "6 条 blanks=0 → 只出 1 个输入框；3 条 blanks=9 → 被截成 8"},
+      {"question_type": "match", "exercises": 9, "questions": 14, "classification": "部分 DIRECT / 部分 NEEDS_REVIEW（涉图）", "note": "6 条被降级 spelling；check_items 仅 4/9 条非空"},
+      {"question_type": "order", "exercises": 1, "questions": 2, "classification": "NEEDS_REVIEW（图片不在数据内）", "note": "U2 A2 order the pictures"},
+      {"question_type": "short_answer", "exercises": 34, "questions": 111, "classification": "结构需重建 / 答案走 AI + 教材依据", "note": "13 条来自 sub_question（按页取，存在串题）；22 条指令回退，7 条无问号"},
+      {"question_type": "writing", "exercises": 7, "questions": 16, "classification": "结构 DIRECT（题干在 instruction）/ 评分标准 NEEDS_REVIEW", "note": "7 条全部无输入框"},
+      {"question_type": "reflection", "exercises": 18, "questions": 18, "classification": "DETERMINISTIC_RESTORE（自评，不计证据）", "note": "教材为 1/2/3 三档自评 + 勾选清单"},
+      {"question_type": "speaking", "exercises": 16, "questions": 22, "classification": "结构 DIRECT / 作答载体需设计", "note": "教材要求明确，无书面载体"},
+      {"question_type": "other", "exercises": 14, "questions": 20, "classification": "逐条分类后处理", "note": "含 7 条语法小结、Starter 项目页、U6 测验"}
+    ]
+  },
+  "p1_tracking": [
+    {"id": "P1-01", "title": "教材练习无法产生有效证据", "missing": "可核对答案（157/157 与 360/360 全部 NO_RELIABLE_SOURCE）", "not_missing": ["Question 实体（360 条存在）", "规则批改器（spelling 已真实判分）", "Evidence 接口（evidence_service 只认 correct/incorrect/partial）", "UI 呈现（真机已验证）"], "root_cause": "答案来源缺失（决定性）+ 题目结构缺失/错误（次要）", "fixable_without_human": false, "note": "任何绕过答案的自动补全都会退化为伪造答案，违反 V1.2"},
+    {"id": "P1-02", "title": "5 条 choice/judge 无选项", "items": [
+      {"exercise_id": "X:1C4143922B1C", "location": "Starter GET_READY A10 p5", "instruction": "Listen and choose.", "option_fact": "页面上有 9 项 ☐ 词表但 P2-4 归给 A9", "restorable": "结构可写、归属不可自动定", "human_review": true},
+      {"exercise_id": "X:8D3E1E4E1B31", "location": "Unit 1 Understanding ideas A6 p19", "instruction": "Circle the correct words.", "option_fact": "内联 A / B（my / I 等）", "restorable": true, "human_review": false},
+      {"exercise_id": "X:74BDDE140FAE", "location": "Unit 3 Understanding ideas A3 p50", "instruction": "Read and tick. What does the film review include?", "option_fact": "题干内 ☐ 清单", "restorable": true, "human_review": false},
+      {"exercise_id": "X:C2D62A46BE36", "location": "Unit 4 Developing ideas A2 p70", "instruction": "…write F (fact) or O (opinion) in the boxes.", "option_fact": "F / O（指令已定义）", "restorable": "结构可", "human_review": true},
+      {"exercise_id": "X:36ECBA5AD565", "location": "Unit 6 Understanding ideas A1 p96", "instruction": "Tick the words to describe pigeons.", "option_fact": "题干内 ☐ 清单", "restorable": true, "human_review": false}
+    ], "new_findings": ["X:7ABB5256D7ED / X:3DCE713706DE / X:BEF04AA1DF4C 的选项是页眉页脚或同页其它活动的句子", "X:8AA3C10E358E 的选项混入 1 条侧栏文本"]},
+    {"id": "P1-03", "title": "fill 被转换成词表 spelling", "corrected_count": 26, "breakdown": {"fill": 18, "match": 6, "choice": 2}, "root_cause": "web/exercises.py::build_questions() 第 1 条分支以 type=vocabulary 短路", "structure_restorable": true, "answer_restorable": false, "note": "18 条 fill 全部确认为真正的教材填空任务，非词表练习"},
+    {"id": "P1-04", "title": "教材正文/阅读/对话未进入产品", "data_location": "contentpack v5 content_block（3854 块）", "stable_ids": true, "new_structure_needed": "1 个只读派生关系（板块/活动 ↔ 文本块）", "human_mapping": "抽检 12 篇阅读正文与同页跨板块", "product_route": "现无正文路由"},
+    {"id": "P1-05", "title": "7 条 writing 无输入框", "textbook_requires_writing": true, "current_data": "instruction 7/7 + check_items 5/7；无评分标准", "has_rubric": false, "ai_grading_inputs": ["写作要求", "教材依据（范文/Useful expressions）", "孩子原文", "人工定义的评分维度"]},
+    {"id": "P1-06", "title": "8 条音频练习只有音频 + 自评", "items": [
+      {"exercise_id": "X:1C4143922B1C", "audio_id": "AU03", "nature": "真实听力选择题（选项归属待核验）"},
+      {"exercise_id": "X:AE2533FCC40F", "audio_id": "AU08", "nature": "口语任务"},
+      {"exercise_id": "X:98EDEBD8BB3C", "audio_id": "AU15", "nature": "口语/写作任务（类型需人工确认）"},
+      {"exercise_id": "X:6A15670681BC", "audio_id": "AU22", "nature": "写作任务"},
+      {"exercise_id": "X:9DCBC9B25099", "audio_id": "AU29", "nature": "口语任务"},
+      {"exercise_id": "X:C2D62A46BE36", "audio_id": "AU32", "nature": "真实听力判断题（答案须听音频）"},
+      {"exercise_id": "X:04DE72A05D12", "audio_id": "AU36", "nature": "口语任务"},
+      {"exercise_id": "X:9A6A563440C5", "audio_id": "AU42", "nature": "阅读找词（任务类型标注需修正）"}
+    ], "note": "性质不同，应分类处理，不应统一补控件"}
+  ],
+  "answer_source_audit": {
+    "candidate_sources": [
+      {"source": "教材学生用书答案页", "exists": false, "evidence": "附录仅 6 类（Communication bank / Guide to the language use / Words and expressions / Proper nouns / Vocabulary / Pronunciation guide）"},
+      {"source": "教师用书或答案文件", "exists": false, "evidence": "全仓库检索无答案数据"},
+      {"source": "contentpack 答案字段", "exists": false, "evidence": "activity / sub_question / transcript 均无答案字段"},
+      {"source": "exercise_catalog_v3.answer_status", "exists": false, "evidence": "NO_RELIABLE_SOURCE × 157"},
+      {"source": "textbook_evidence_map_v1.answer_source", "exists": false, "evidence": "NO_RELIABLE_SOURCE × 360"}
+    ],
+    "by_question_type": [
+      {"question_type": "choice", "questions": 30, "has_reliable_answer": 0, "no_answer": 30, "needs_human_review": 30, "grading": "规则 + 标准答案"},
+      {"question_type": "judge", "questions": 3, "has_reliable_answer": 0, "no_answer": 3, "needs_human_review": 3, "grading": "规则 + 标准答案（须听音频）"},
+      {"question_type": "fill", "questions": 124, "has_reliable_answer": 0, "no_answer": 124, "needs_human_review": 124, "grading": "规则 + 标准答案"},
+      {"question_type": "match", "questions": 14, "has_reliable_answer": 0, "no_answer": 14, "needs_human_review": 14, "grading": "规则 + 标准答案"},
+      {"question_type": "order", "questions": 2, "has_reliable_answer": 0, "no_answer": 2, "needs_human_review": 2, "grading": "规则 + 标准答案"},
+      {"question_type": "short_answer", "questions": 111, "has_reliable_answer": 0, "no_answer": 111, "needs_human_review": 111, "grading": "AI 批改 + 教材依据（评分要点需人工定义）"},
+      {"question_type": "writing", "questions": 16, "has_reliable_answer": 0, "no_answer": 16, "needs_human_review": 16, "grading": "AI 批改 + 教材依据（评分标准需人工定义）"},
+      {"question_type": "other", "questions": 20, "has_reliable_answer": 0, "no_answer": 20, "needs_human_review": 20, "grading": "先分类"},
+      {"question_type": "speaking", "questions": 22, "has_reliable_answer": 0, "no_answer": 22, "needs_human_review": 0, "grading": "只记录完成，不判分"},
+      {"question_type": "reflection", "questions": 18, "has_reliable_answer": 0, "no_answer": 18, "needs_human_review": 0, "grading": "自评，不计证据"}
+    ],
+    "total_questions": 360,
+    "total_with_reliable_answer": 0,
+    "total_needs_human_review": 320,
+    "exercise_level": {"exercises": 157, "with_reliable_answer": 0},
+    "forbidden": ["AI 猜答案", "按语义创造答案", "模型推理补答案后直接入正式数据", "用文本相似度自动填充标准答案"]
+  },
+  "ai_grading_boundary": {
+    "objective_types": ["choice", "judge", "fill", "spelling", "match", "order"],
+    "objective_method": "规则 + 标准答案（AI 不猜答案）",
+    "subjective_types": ["short_answer", "writing"],
+    "subjective_method": "AI 批改 + 教材依据（必须引用教材事实；评分要点人工定义）",
+    "outputs": ["correct", "partial", "incorrect"],
+    "preserve_raw_answer": true,
+    "evidence_path": "learning_record.result ∈ {correct, partial, incorrect} → 既有 evidence_service（不改冻结服务）",
+    "call_profile": {
+      "objective_grading": "不调用 AI（高频）",
+      "short_answer_grading": "按需 + 可缓存",
+      "writing_grading": "按需（低频）",
+      "error_attribution": "按需 + 可缓存（本地规则优先）",
+      "textbook_extraction": "不调用 AI（PDF 文本层 + 确定性规则 + 人工核验）"
+    },
+    "this_stage_ai_calls": 0
+  },
+  "repair_route": [
+    {"step": "F-1", "name": "教材正文接入", "inputs": ["content_block(page_id/reading_order/block_kind/layout_role)", "section.pdf_page_start", "textbook_structure_v2"], "outputs": ["只读派生关系：板块→有序文本块", "Unit 页读教材正文入口"], "files": ["web/content.py", "web/ui.py", "web/app.py", "可选新增 builder"], "human_review": "抽检 12 篇阅读正文板块归属", "changes_formal_data": false, "changes_db": false, "risk": "低", "device_visible_change": "Unit 里能读《The first lesson》等教材原文"},
+    {"step": "F-2", "name": "Question 结构恢复", "inputs": ["PDF 文本层（确定性读取）", "exercise_catalog_v3", "活动号/页码", "sub_question"], "outputs": ["题干/选项/空位数/上下文锚点结构数据", "运行期目录切换"], "files": ["新增 builder", "web/exercises.py", "web/ui.py"], "human_review": "必须（5 条无选项 + 3 条错误选项 + 1 条题型误判 + 侧栏噪声）", "changes_formal_data": false, "changes_db": false, "risk": "中（影响 26 条 spelling 与 6 条 choice）", "device_visible_change": "选择题显示真实选项；不再出现 new start 15/19/23；空位数与教材一致"},
+    {"step": "F-3", "name": "答案来源补齐", "inputs": ["教材 PDF 页面", "官方音频", "人工核验"], "outputs": ["exercise_answer_key_v1（VERIFIED_BY_HUMAN）"], "files": ["新增答案数据文件"], "human_review": "必须，不可绕过", "changes_formal_data": true, "changes_db": false, "risk": "高（答案错误直接伤害孩子）", "device_visible_change": "客观题出现真实判分"},
+    {"step": "F-4", "name": "音频/文字/上下文锚定", "inputs": ["audio_asset", "audio_mapping", "exercise_audio_map_v3", "activity_id"], "outputs": ["context_anchor=activity_id", "练习页同时呈现教材文字与官方音频"], "files": ["web/app.py", "web/ui.py", "可选派生锚定表"], "human_review": "抽样听审", "changes_formal_data": false, "changes_db": false, "risk": "低", "device_visible_change": "听力练习页同时出现教材结构与 🎧 音频"},
+    {"step": "F-5", "name": "UI 作答控件", "inputs": ["F-2 结构", "F-4 锚点"], "outputs": ["选择/判断/填空/匹配/写作/口语控件"], "files": ["web/ui.py", "web/exercises.py"], "human_review": "真机验收（S24+）", "changes_formal_data": false, "changes_db": false, "risk": "中（布局与可点区域）", "device_visible_change": "可作答练习出现真实控件"},
+    {"step": "F-6", "name": "AI 批改（主观题）", "inputs": ["教材证据包", "孩子原文", "人工定义的评分要点"], "outputs": ["correct/partial/incorrect + 教材依据引用"], "files": ["web/ai_grading.py", "提交路径"], "human_review": "必须先定义评分要点；输出抽样复核", "changes_formal_data": false, "changes_db": false, "risk": "中高（成本与幻觉）", "device_visible_change": "简答/写作得到依据教材的分析"},
+    {"step": "F-7", "name": "Evidence 接入", "inputs": ["批改结果"], "outputs": ["learning_record → evidence_service → Mastery/Diagnosis/Review"], "files": ["web/app.py"], "human_review": "否（回归测试覆盖）", "changes_formal_data": false, "changes_db": false, "risk": "低（复用冻结接口）", "device_visible_change": "/review 的教材建议开始有真实内容"}
+  ],
+  "needs_review": [
+    {"id": "N-01", "category": "选择题选项归属", "count": 1, "objects": ["X:1C4143922B1C"], "resolution": "人工看教材 p5 页面图"},
+    {"id": "N-02", "category": "选项错误需删除", "count": 3, "objects": ["X:7ABB5256D7ED", "X:3DCE713706DE", "X:BEF04AA1DF4C"], "resolution": "人工确认"},
+    {"id": "N-03", "category": "选项含侧栏噪声", "count": 1, "objects": ["X:8AA3C10E358E"], "resolution": "人工确认"},
+    {"id": "N-04", "category": "题型误判", "count": 1, "objects": ["X:BEF04AA1DF4C"], "resolution": "人工确认题型"},
+    {"id": "N-05", "category": "客观题标准答案", "count": 173, "objects": ["choice 30", "judge 3", "fill 124", "match 14", "order 2"], "resolution": "人工依据教材 + 音频核验"},
+    {"id": "N-06", "category": "主观题评分要点", "count": 127, "objects": ["short_answer 111", "writing 16"], "resolution": "人工定义评分要点"},
+    {"id": "N-07", "category": "其它题型先分类", "count": 20, "objects": ["other"], "resolution": "人工逐条分类"},
+    {"id": "N-08", "category": "音频与题目语义对应", "count": 41, "objects": ["41 条活动级音频"], "resolution": "人工听审"},
+    {"id": "N-09", "category": "板块/活动→文本块归属", "count": "若干", "objects": ["同页跨活动（A9/A10）", "text_references 未覆盖的 13 个 contentpack 活动"], "resolution": "人工抽检 + 重建规则"},
+    {"id": "N-10", "category": "阅读正文板块边界", "count": 12, "objects": ["U1–U6 ×（Understanding ideas + Reading for writing）"], "resolution": "人工抽检"},
+    {"id": "N-11", "category": "依赖图片的题目", "count": ">=2", "objects": ["X:FB47DD21DABE 等"], "resolution": "图片资源进入数据后确定"},
+    {"id": "N-12", "category": "听力原文", "count": 41, "objects": ["transcript 表 0 行"], "resolution": "官方脚本（不存在）或 ASR（本阶段禁止）"}
+  ],
+  "product_view": {
+    "first_batch": ["F-1 教材正文接入", "F-2 零风险子集（删 4 条噪声选项、恢复 4 条结构、修正 6+3 条空位数）", "F-4 音频锚定", "停止用词表拼写替换教材任务（26 条）"],
+    "second_batch": ["F-2 全量结构恢复", "F-5 UI 作答控件", "F-3 答案补齐（先 35 题：choice 30 + judge 3 + order 2，再由人工判断 match 可确定的部分）", "F-7 Evidence 接入"],
+    "must_be_human_verified": ["173 道客观题标准答案", "127 道主观题评分要点", "Exercise 10 选项归属", "3 条错误选项与 1 条题型误判", "41 条音频与题目语义对应"],
+    "later": ["F-6 AI 批改", "口语任务最小载体", "Reflection 1/2/3 三档自评还原", "Grammar 条目（13 条指针 → 语法内容页）"],
+    "not_doing": ["AI 猜答案或生成教材内容", "音频切割", "为提高覆盖率强行归属（68 条 unmapped 保持 unmapped）", "把自评 done 当证据", "修改 contentpack schema / 教材 / 音频 / 冻结服务 / Android"]
+  },
+  "baseline_before": {
+    "learning_db_sha256": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "learning_db_mtime": "2026-09-12 23:15:13",
+    "learning_db_tables": 7,
+    "learning_record_rows": 20,
+    "mastery_state_rows": 7,
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+    "exercise_catalog_v3_sha256": "EB2D8E7BD0BD71404FBE2B3C010289158CCB8A12F4DF031ED7444B4BE9570A39",
+    "v12_docx_sha256": "6D3595CF7D83879ADF3E6452C5E5A74C5300E89265DE1B4F2FA8A1EBDBB861A9",
+    "tests": "397 PASS / 0 FAIL / 0 SKIP"
+  },
+  "baseline_after": {
+    "learning_db_sha256": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "learning_db_mtime": "2026-09-12 23:15:13",
+    "learning_db_tables": 7,
+    "learning_record_rows": 20,
+    "mastery_state_rows": 7,
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+    "exercise_catalog_v3_sha256": "EB2D8E7BD0BD71404FBE2B3C010289158CCB8A12F4DF031ED7444B4BE9570A39",
+    "v12_docx_sha256": "6D3595CF7D83879ADF3E6452C5E5A74C5300E89265DE1B4F2FA8A1EBDBB861A9",
+    "android": {
+      "application_id": "com.zhixueenglish.app.dev",
+      "web_base_url": "http://192.168.2.3:8770/",
+      "apk": "android/app/build/outputs/apk/debug/app-debug.apk",
+      "apk_mtime": "2026-09-12 18:23:32"
+    },
+    "tests": "397 PASS / 0 FAIL / 0 SKIP",
+    "ai_calls": 0,
+    "code_changes": 0,
+    "files_added_only": [
+      "audit/P2-6-F-0_textbook_exercise_repair_readiness.md",
+      "audit/P2-6-F-0_textbook_exercise_repair_readiness.json"
+    ]
+  },
+  "conclusion": {
+    "audit_execution": "PASS",
+    "repair_readiness": "CONDITIONAL PASS",
+    "immediately_actionable": ["F-1", "F-4", "F-2（噪声清理与 4 条结构恢复）"],
+    "requires_human_verification": ["F-3（173 道客观题答案）"],
+    "not_in_scope": ["F-6 AI 批改", "音频切割", "schema 变更", "教材数据修改"],
+    "one_line": "教材正文和音频是已经躺在仓库里没人用的资产，马上就能修；教材练习的答案根本不存在，必须先由人核验。",
+    "stop": "本次审计完成，立即停止，不进入 F-1。"
+  }
+}

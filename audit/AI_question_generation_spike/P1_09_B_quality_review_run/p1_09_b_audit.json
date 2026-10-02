@@ -1,0 +1,721 @@
+{
+  "stage": "P1-09-B",
+  "phase_name": "AI 英语质量复核真实小样本验证",
+  "ai_calls": 1,
+  "retry_count": 0,
+  "model": "deepseek-v4-pro",
+  "temperature": 0.2,
+  "max_tokens": 16384,
+  "reasoning_effort": "low",
+  "prompt_version": "P1-09-B-v1",
+  "finish_reason": "stop",
+  "status": "PARSED",
+  "latency_ms": 51050,
+  "usage": {
+    "prompt_tokens": 2104,
+    "completion_tokens": 7042,
+    "reasoning_tokens": 5523,
+    "total_tokens": 9146
+  },
+  "sample_selection": {
+    "sample_count": 10,
+    "coverage": {
+      "A_known_normal": 5,
+      "B_low_value_mechanical": 2,
+      "C_answer_uniqueness_risk": 1,
+      "D_distractor_risk": 2,
+      "question_types": [
+        "fill",
+        "reading_choice",
+        "reading_judge",
+        "vocab_choice"
+      ]
+    },
+    "label_class_counts": {
+      "KNOWN_NORMAL": 5,
+      "RECORDED_RISK": 4,
+      "CONFIRMED_PROBLEM": 1
+    },
+    "source_sha256_before": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7"
+  },
+  "review_output": {
+    "review_version_field": "P1-09-B-v1",
+    "top_level_keys": [
+      "review_version",
+      "reviews"
+    ],
+    "review_count": 10,
+    "reviews": [
+      {
+        "question_id": "AIQ:BD59C5958D45",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "short_reason": "教材原句挖空，选项区分度高，可接受。",
+        "confidence": "HIGH",
+        "evidence_concern": false
+      },
+      {
+        "question_id": "AIQ:04CC9B1CF690",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "short_reason": "教材原句挖空，答案唯一，内容简单。",
+        "confidence": "HIGH",
+        "evidence_concern": false
+      },
+      {
+        "question_id": "AIQ:6ECD02B9D381",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_REVIEW",
+        "short_reason": "题干提到学校艺术节，但所给教材证据句子未提及，需人工核对上下文。",
+        "confidence": "LOW",
+        "evidence_concern": true
+      },
+      {
+        "question_id": "AIQ:879007FA4FC7",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "short_reason": "教材原句填空，答案明确，无问题。",
+        "confidence": "HIGH",
+        "evidence_concern": false
+      },
+      {
+        "question_id": "AIQ:7EAC0ED29A0A",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "short_reason": "教材明确说明，判断正确，无问题。",
+        "confidence": "HIGH",
+        "evidence_concern": false
+      },
+      {
+        "question_id": "AIQ:1B3AF72923C4",
+        "english_correct": "PASS",
+        "answer_unique": "FAIL",
+        "naturalness": "PASS",
+        "learning_value": "CONCERN",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_REJECT",
+        "short_reason": "该题无上下文，'ready' 并非唯一可填词，学生可填 happy 等。",
+        "confidence": "HIGH",
+        "evidence_concern": false
+      },
+      {
+        "question_id": "AIQ:1BA260727793",
+        "english_correct": "PASS",
+        "answer_unique": "CONCERN",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_REVIEW",
+        "short_reason": "该题无上下文，除 'In fact' 外 'By the way' 等也可填入，需人工判断。",
+        "confidence": "MEDIUM",
+        "evidence_concern": false
+      },
+      {
+        "question_id": "AIQ:120FFEECA78F",
+        "english_correct": "PASS",
+        "answer_unique": "FAIL",
+        "naturalness": "PASS",
+        "learning_value": "CONCERN",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_REJECT",
+        "short_reason": "该题无上下文，颜色词可随意填，答案不唯一。",
+        "confidence": "HIGH",
+        "evidence_concern": false
+      },
+      {
+        "question_id": "AIQ:75AAEBFE06DF",
+        "english_correct": "PASS",
+        "answer_unique": "FAIL",
+        "naturalness": "PASS",
+        "learning_value": "CONCERN",
+        "distractor_quality": "FAIL",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_REJECT",
+        "short_reason": "无上下文，'traditional' 等选项也可填入，题目存在歧义。",
+        "confidence": "HIGH",
+        "evidence_concern": false
+      },
+      {
+        "question_id": "AIQ:B6463523F9E5",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "short_reason": "阅读理解题，答案直接从教材中得出，无问题。",
+        "confidence": "HIGH",
+        "evidence_concern": false
+      }
+    ]
+  },
+  "blind_comparison_summary": {
+    "total_samples": 10,
+    "known_normal": 5,
+    "recorded_risk": 4,
+    "confirmed_problem": 1,
+    "false_negative": 1,
+    "false_positive": 0,
+    "soft_deviation_review_on_known_normal": 1,
+    "answer_uniqueness_problems_expected": 2,
+    "answer_uniqueness_detected": 2,
+    "low_learning_value_expected": 2,
+    "low_learning_value_detected": 1,
+    "distractor_problems_expected": 2,
+    "distractor_detected": 1,
+    "mechanical_flag_pairs": 10,
+    "mechanical_flag_agreements": 9,
+    "decision_distribution": {
+      "SUGGEST_ACCEPT": 5,
+      "SUGGEST_REVIEW": 2,
+      "SUGGEST_REJECT": 3
+    },
+    "by_question_type": {
+      "fill": {
+        "n": 4,
+        "accept": 1,
+        "review": 1,
+        "reject": 2
+      },
+      "reading_choice": {
+        "n": 3,
+        "accept": 2,
+        "review": 1,
+        "reject": 0
+      },
+      "reading_judge": {
+        "n": 1,
+        "accept": 1,
+        "review": 0,
+        "reject": 0
+      },
+      "vocab_choice": {
+        "n": 2,
+        "accept": 1,
+        "review": 0,
+        "reject": 1
+      }
+    }
+  },
+  "blind_comparison_matrix": [
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "question_type": "vocab_choice",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "known_issue": "P1-09-A 已知正常题",
+      "expected": {
+        "answer_unique_problem": false,
+        "low_learning_value": false,
+        "distractor_problem": false,
+        "program_mechanical_rewrite": true
+      },
+      "ai_finding": {
+        "answer_unique": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "confidence": "HIGH",
+        "evidence_concern": false,
+        "short_reason": "教材原句挖空，选项区分度高，可接受。"
+      },
+      "answer_uniqueness_detected": null,
+      "learning_value_detected": null,
+      "distractor_detected": null,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": false
+    },
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "question_type": "fill",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "known_issue": "P1-09-A 已知正常题",
+      "expected": {
+        "answer_unique_problem": false,
+        "low_learning_value": false,
+        "distractor_problem": false,
+        "program_mechanical_rewrite": true
+      },
+      "ai_finding": {
+        "answer_unique": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "NOT_APPLICABLE",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "confidence": "HIGH",
+        "evidence_concern": false,
+        "short_reason": "教材原句挖空，答案唯一，内容简单。"
+      },
+      "answer_uniqueness_detected": null,
+      "learning_value_detected": null,
+      "distractor_detected": null,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": false
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "question_type": "reading_choice",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "known_issue": "P1-09-A 已知正常题",
+      "expected": {
+        "answer_unique_problem": false,
+        "low_learning_value": false,
+        "distractor_problem": false,
+        "program_mechanical_rewrite": false
+      },
+      "ai_finding": {
+        "answer_unique": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_REVIEW",
+        "confidence": "LOW",
+        "evidence_concern": true,
+        "short_reason": "题干提到学校艺术节，但所给教材证据句子未提及，需人工核对上下文。"
+      },
+      "answer_uniqueness_detected": null,
+      "learning_value_detected": null,
+      "distractor_detected": null,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": true
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "question_type": "reading_choice",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "known_issue": "P1-09-A 已知正常题",
+      "expected": {
+        "answer_unique_problem": false,
+        "low_learning_value": false,
+        "distractor_problem": false,
+        "program_mechanical_rewrite": false
+      },
+      "ai_finding": {
+        "answer_unique": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "confidence": "HIGH",
+        "evidence_concern": false,
+        "short_reason": "教材原句填空，答案明确，无问题。"
+      },
+      "answer_uniqueness_detected": null,
+      "learning_value_detected": null,
+      "distractor_detected": null,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": false
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "question_type": "reading_judge",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "known_issue": "P1-09-A 已知正常题",
+      "expected": {
+        "answer_unique_problem": false,
+        "low_learning_value": false,
+        "distractor_problem": false,
+        "program_mechanical_rewrite": false
+      },
+      "ai_finding": {
+        "answer_unique": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "NOT_APPLICABLE",
+        "mechanical_level": "NOT_APPLICABLE",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "confidence": "HIGH",
+        "evidence_concern": false,
+        "short_reason": "教材明确说明，判断正确，无问题。"
+      },
+      "answer_uniqueness_detected": null,
+      "learning_value_detected": null,
+      "distractor_detected": null,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": false
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "question_type": "fill",
+      "ground_truth_label": "CONFIRMED_PROBLEM",
+      "known_issue": "P1-08-C REVIEW_REJECTED(LOW_VALUE) + 审核记录记录题干不唯一",
+      "expected": {
+        "answer_unique_problem": true,
+        "low_learning_value": true,
+        "distractor_problem": false,
+        "program_mechanical_rewrite": true
+      },
+      "ai_finding": {
+        "answer_unique": "FAIL",
+        "learning_value": "CONCERN",
+        "distractor_quality": "NOT_APPLICABLE",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_REJECT",
+        "confidence": "HIGH",
+        "evidence_concern": false,
+        "short_reason": "该题无上下文，'ready' 并非唯一可填词，学生可填 happy 等。"
+      },
+      "answer_uniqueness_detected": true,
+      "learning_value_detected": true,
+      "distractor_detected": null,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": false
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "question_type": "fill",
+      "ground_truth_label": "RECORDED_RISK",
+      "known_issue": "P1-09-A C2/C4 低学习价值 + 机械挖空（双空）",
+      "expected": {
+        "answer_unique_problem": false,
+        "low_learning_value": true,
+        "distractor_problem": false,
+        "program_mechanical_rewrite": true
+      },
+      "ai_finding": {
+        "answer_unique": "CONCERN",
+        "learning_value": "PASS",
+        "distractor_quality": "NOT_APPLICABLE",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_REVIEW",
+        "confidence": "MEDIUM",
+        "evidence_concern": false,
+        "short_reason": "该题无上下文，除 'In fact' 外 'By the way' 等也可填入，需人工判断。"
+      },
+      "answer_uniqueness_detected": null,
+      "learning_value_detected": false,
+      "distractor_detected": null,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": false
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "question_type": "fill",
+      "ground_truth_label": "RECORDED_RISK",
+      "known_issue": "P1-09-A C3 答案不唯一风险",
+      "expected": {
+        "answer_unique_problem": true,
+        "low_learning_value": false,
+        "distractor_problem": false,
+        "program_mechanical_rewrite": false
+      },
+      "ai_finding": {
+        "answer_unique": "FAIL",
+        "learning_value": "CONCERN",
+        "distractor_quality": "NOT_APPLICABLE",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_REJECT",
+        "confidence": "HIGH",
+        "evidence_concern": false,
+        "short_reason": "该题无上下文，颜色词可随意填，答案不唯一。"
+      },
+      "answer_uniqueness_detected": true,
+      "learning_value_detected": null,
+      "distractor_detected": null,
+      "mechanical_agrees_with_program_flag": false,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": false
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "question_type": "vocab_choice",
+      "ground_truth_label": "RECORDED_RISK",
+      "known_issue": "P1-09-A C5 干扰项 traditional/electric/weak 均为 BOLD 核心形容词",
+      "expected": {
+        "answer_unique_problem": false,
+        "low_learning_value": false,
+        "distractor_problem": true,
+        "program_mechanical_rewrite": true
+      },
+      "ai_finding": {
+        "answer_unique": "FAIL",
+        "learning_value": "CONCERN",
+        "distractor_quality": "FAIL",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_REJECT",
+        "confidence": "HIGH",
+        "evidence_concern": false,
+        "short_reason": "无上下文，'traditional' 等选项也可填入，题目存在歧义。"
+      },
+      "answer_uniqueness_detected": null,
+      "learning_value_detected": null,
+      "distractor_detected": true,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": false,
+      "soft_deviation_review_on_known_normal": false
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "question_type": "reading_choice",
+      "ground_truth_label": "RECORDED_RISK",
+      "known_issue": "P1-09-A C5 干扰项 sugar/oxygen/food 在他处同样成立",
+      "expected": {
+        "answer_unique_problem": false,
+        "low_learning_value": false,
+        "distractor_problem": true,
+        "program_mechanical_rewrite": false
+      },
+      "ai_finding": {
+        "answer_unique": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "english_correct": "PASS",
+        "naturalness": "PASS",
+        "grade_fit": "PASS",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "confidence": "HIGH",
+        "evidence_concern": false,
+        "short_reason": "阅读理解题，答案直接从教材中得出，无问题。"
+      },
+      "answer_uniqueness_detected": null,
+      "learning_value_detected": null,
+      "distractor_detected": false,
+      "mechanical_agrees_with_program_flag": true,
+      "false_positive": false,
+      "false_negative": true,
+      "soft_deviation_review_on_known_normal": false
+    }
+  ],
+  "cost": {
+    "stage": "P1-09-B",
+    "this_run_real": {
+      "api_calls": 1,
+      "retry_count": 0,
+      "model": "deepseek-v4-pro",
+      "temperature": 0.2,
+      "max_tokens": 16384,
+      "reasoning_effort": "low",
+      "prompt_version": "P1-09-B-v1",
+      "finish_reason": "stop",
+      "latency_ms": 51050,
+      "questions_reviewed": 10,
+      "prompt_tokens": 2104,
+      "completion_tokens": 7042,
+      "reasoning_tokens": 5523,
+      "total_tokens": 9146,
+      "tokens_per_question": 914.6
+    },
+    "variants": {
+      "batch_per_section_like": {
+        "api_calls": 1,
+        "prompt_tokens": 2104,
+        "completion_tokens": 7042,
+        "reasoning_tokens": 5523,
+        "total_tokens": 9146,
+        "latency_ms": 51050,
+        "tokens_per_question": 914.6,
+        "output_tokens_per_question": 704.2
+      },
+      "per_question_estimate_only": {
+        "api_calls": 10,
+        "input_tokens": 15463,
+        "output_tokens": 7042,
+        "note": "理论估算，未实际执行；instruction 每条题目重复一次",
+        "total_tokens": 22505,
+        "tokens_per_question": 2250.5
+      },
+      "only_program_PASS": {
+        "api_calls": 1,
+        "note": "当前生产流程默认只把程序验证 PASS 的题送审；本批 22 题 program PASS=22/22，因此这一档在本数据集上与批量审核完全相同，过滤不出任何题"
+      }
+    },
+    "comparison_with_generation": {
+      "generation_tokens_per_question_p1_06": 3756.4,
+      "batch_review_tokens_per_question": 914.6,
+      "batch_review_pct_of_generation": 24.3,
+      "per_question_review_pct_of_generation": 59.9,
+      "note": "生成基准 = P1-06 4 次真实调用的 82,641 tokens / 22 题。"
+    },
+    "estimate_vs_actual": {
+      "p1_09_a_estimate_input_tokens": 4985,
+      "p1_09_a_estimate_output_tokens": 1920,
+      "p1_09_a_estimate_total_tokens": 6905,
+      "actual_total_tokens": 9146,
+      "actual_vs_estimate_ratio": 1.32,
+      "note": "P1-09-A 的估算把输出按每题 220 tokens 计，没有给 reasoning 留预算；本次实测 reasoning 占 completion 的 78%，因此输出被低估约 3.2 倍。"
+    },
+    "corrected_unit_cost": {
+      "review_tokens_per_question_actual": 914.6,
+      "review_vs_generation_pct_actual": 24.3
+    }
+  },
+  "no_change_verification": {
+    "db_sha256_before": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+    "db_sha256_after": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+    "db_sha256_unchanged": true,
+    "all_sample_questions_unchanged": true,
+    "questions_changed": [],
+    "row_counts": {
+      "generation_run": 12,
+      "ai_question": 21,
+      "question_evidence": 22,
+      "question_learning_object": 37,
+      "question_validation": 21,
+      "question_event": 44
+    },
+    "lifecycle": {
+      "ACTIVE": 1,
+      "PENDING_REVIEW": 19,
+      "REJECTED": 1
+    },
+    "events": {
+      "ACTIVATED": 1,
+      "MARKED_STALE": 1,
+      "PENDING_REVIEW": 19,
+      "REVIEW_APPROVED": 1,
+      "REVIEW_REJECTED": 1,
+      "VALIDATED": 21
+    },
+    "integrity_check": [
+      "ok"
+    ],
+    "foreign_key_check": [],
+    "lifecycle_matches_expected": true,
+    "row_counts_match_expected": true
+  },
+  "cross_check_prior_manifests": {
+    "stage": "P1-09-B",
+    "anchors": [
+      {
+        "anchor": "P1-09-A protect_after.json (recorded before the P1-09-B AI call)",
+        "manifest_sha256": "FE66A3291BC97805D7646F54C5748C775BD89D56D910339D87B97B9EEB449653",
+        "files_checked": 1095,
+        "mismatched": 0,
+        "missing": 0,
+        "all_match": true,
+        "problems": []
+      },
+      {
+        "anchor": "P1-08-C protect_after.json",
+        "manifest_sha256": "653A0DF87568B9F698EEA9D42BBC279F6A0258DC5352A537FF88198A9C5A25FA",
+        "files_checked": 1095,
+        "mismatched": 0,
+        "missing": 0,
+        "all_match": true,
+        "problems": []
+      }
+    ]
+  },
+  "protected_assets_check": {
+    "stage": "P1-09-B",
+    "manifest_before": "0292CD6BB701F04CEB07428BA02B7FF336E21903DB6E761A7FC3A38ED1F48CB6",
+    "manifest_after": "0292CD6BB701F04CEB07428BA02B7FF336E21903DB6E761A7FC3A38ED1F48CB6",
+    "file_count_before": 1120,
+    "file_count_after": 1120,
+    "added": [],
+    "removed": [],
+    "modified": [],
+    "changed": [],
+    "formal_assets_changed": false,
+    "pycache_changes": []
+  },
+  "blind_input_contract": {
+    "included": [
+      "question_id",
+      "question_type",
+      "question_text",
+      "options",
+      "answer",
+      "textbook_position",
+      "textbook_evidence"
+    ],
+    "excluded": [
+      "generation explanation",
+      "validator PASS/FAIL",
+      "known-issue labels",
+      "generation prompt",
+      "generation-time model reasoning",
+      "evidence_block_id",
+      "question_fingerprint",
+      "lifecycle_status"
+    ]
+  },
+  "lifecycle_untouched": {
+    "auto_approved": 0,
+    "auto_active": 0,
+    "question_event_written": 0,
+    "note": "AI 复核结果只写入本审计目录，未产生任何 question_event 或状态变化。"
+  }
+}

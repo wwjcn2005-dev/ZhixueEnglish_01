@@ -1,0 +1,549 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU23",
+  "audio_num": "AU23",
+  "filename": "23_Unit 3_Developing ideas _1 Listen to the family hotline. What problem does Tina have with her mother.mp3",
+  "duration_ms": 55667,
+  "segment_count": 14,
+  "word_count": 92,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1920,
+      "text": "Developing ideas"
+    },
+    {
+      "start_ms": 2800,
+      "end_ms": 4240,
+      "text": "Activity 1"
+    },
+    {
+      "start_ms": 5340,
+      "end_ms": 7680,
+      "text": "Listen to the family hotline"
+    },
+    {
+      "start_ms": 8540,
+      "end_ms": 11780,
+      "text": "What problem does Tina have with her mother?"
+    },
+    {
+      "start_ms": 13280,
+      "end_ms": 16060,
+      "text": "We all know problem children"
+    },
+    {
+      "start_ms": 16620,
+      "end_ms": 19360,
+      "text": "but do you know problem parents?"
+    },
+    {
+      "start_ms": 20260,
+      "end_ms": 25140,
+      "text": "Children sometimes call me to talk about their problem parents"
+    },
+    {
+      "start_ms": 25140,
+      "end_ms": 30460,
+      "text": "For example, Tina's mother is an actress at a park."
+    },
+    {
+      "start_ms": 31340,
+      "end_ms": 34200,
+      "text": "Every day she dresses up as a queen."
+    },
+    {
+      "start_ms": 35100,
+      "end_ms": 35900,
+      "text": "Cool, right?"
+    },
+    {
+      "start_ms": 36700,
+      "end_ms": 39220,
+      "text": "But Tina doesn't think so."
+    },
+    {
+      "start_ms": 40200,
+      "end_ms": 43820,
+      "text": "Her mother often goes to pick her up in this dress."
+    },
+    {
+      "start_ms": 44560,
+      "end_ms": 47460,
+      "text": "Tina is not happy about this."
+    },
+    {
+      "start_ms": 48560,
+      "end_ms": 52960,
+      "text": "My advice for her is have a good talk with her mother."
+    }
+  ],
+  "words": [
+    {
+      "word": "Developing",
+      "start_ms": 0,
+      "end_ms": 1140
+    },
+    {
+      "word": "ideas",
+      "start_ms": 1140,
+      "end_ms": 1920
+    },
+    {
+      "word": "Activity",
+      "start_ms": 2800,
+      "end_ms": 3780
+    },
+    {
+      "word": "1",
+      "start_ms": 3780,
+      "end_ms": 4240
+    },
+    {
+      "word": "Listen",
+      "start_ms": 5340,
+      "end_ms": 5960
+    },
+    {
+      "word": "to",
+      "start_ms": 5960,
+      "end_ms": 6320
+    },
+    {
+      "word": "the",
+      "start_ms": 6320,
+      "end_ms": 6440
+    },
+    {
+      "word": "family",
+      "start_ms": 6440,
+      "end_ms": 6860
+    },
+    {
+      "word": "hotline",
+      "start_ms": 6860,
+      "end_ms": 7680
+    },
+    {
+      "word": "What",
+      "start_ms": 8520,
+      "end_ms": 9020
+    },
+    {
+      "word": "problem",
+      "start_ms": 9020,
+      "end_ms": 9580
+    },
+    {
+      "word": "does",
+      "start_ms": 9580,
+      "end_ms": 10020
+    },
+    {
+      "word": "Tina",
+      "start_ms": 10020,
+      "end_ms": 10360
+    },
+    {
+      "word": "have",
+      "start_ms": 10360,
+      "end_ms": 10880
+    },
+    {
+      "word": "with",
+      "start_ms": 10880,
+      "end_ms": 11200
+    },
+    {
+      "word": "her",
+      "start_ms": 11200,
+      "end_ms": 11460
+    },
+    {
+      "word": "mother?",
+      "start_ms": 11460,
+      "end_ms": 11780
+    },
+    {
+      "word": "We",
+      "start_ms": 13280,
+      "end_ms": 14080
+    },
+    {
+      "word": "all",
+      "start_ms": 14080,
+      "end_ms": 14400
+    },
+    {
+      "word": "know",
+      "start_ms": 14400,
+      "end_ms": 14780
+    },
+    {
+      "word": "problem",
+      "start_ms": 14780,
+      "end_ms": 15500
+    },
+    {
+      "word": "children",
+      "start_ms": 15500,
+      "end_ms": 16060
+    },
+    {
+      "word": "but",
+      "start_ms": 16520,
+      "end_ms": 17020
+    },
+    {
+      "word": "do",
+      "start_ms": 17020,
+      "end_ms": 17480
+    },
+    {
+      "word": "you",
+      "start_ms": 17480,
+      "end_ms": 17700
+    },
+    {
+      "word": "know",
+      "start_ms": 17700,
+      "end_ms": 17980
+    },
+    {
+      "word": "problem",
+      "start_ms": 17980,
+      "end_ms": 18540
+    },
+    {
+      "word": "parents?",
+      "start_ms": 18540,
+      "end_ms": 19360
+    },
+    {
+      "word": "Children",
+      "start_ms": 20260,
+      "end_ms": 20760
+    },
+    {
+      "word": "sometimes",
+      "start_ms": 20760,
+      "end_ms": 21440
+    },
+    {
+      "word": "call",
+      "start_ms": 21440,
+      "end_ms": 21920
+    },
+    {
+      "word": "me",
+      "start_ms": 21920,
+      "end_ms": 22160
+    },
+    {
+      "word": "to",
+      "start_ms": 22160,
+      "end_ms": 22540
+    },
+    {
+      "word": "talk",
+      "start_ms": 22540,
+      "end_ms": 22840
+    },
+    {
+      "word": "about",
+      "start_ms": 22840,
+      "end_ms": 23300
+    },
+    {
+      "word": "their",
+      "start_ms": 23300,
+      "end_ms": 23800
+    },
+    {
+      "word": "problem",
+      "start_ms": 23800,
+      "end_ms": 24400
+    },
+    {
+      "word": "parents",
+      "start_ms": 24400,
+      "end_ms": 25140
+    },
+    {
+      "word": "For",
+      "start_ms": 25140,
+      "end_ms": 26320
+    },
+    {
+      "word": "example,",
+      "start_ms": 26320,
+      "end_ms": 26860
+    },
+    {
+      "word": "Tina's",
+      "start_ms": 27640,
+      "end_ms": 28120
+    },
+    {
+      "word": "mother",
+      "start_ms": 28120,
+      "end_ms": 28380
+    },
+    {
+      "word": "is",
+      "start_ms": 28380,
+      "end_ms": 28820
+    },
+    {
+      "word": "an",
+      "start_ms": 28820,
+      "end_ms": 28960
+    },
+    {
+      "word": "actress",
+      "start_ms": 28960,
+      "end_ms": 29420
+    },
+    {
+      "word": "at",
+      "start_ms": 29420,
+      "end_ms": 29980
+    },
+    {
+      "word": "a",
+      "start_ms": 29980,
+      "end_ms": 30100
+    },
+    {
+      "word": "park.",
+      "start_ms": 30100,
+      "end_ms": 30460
+    },
+    {
+      "word": "Every",
+      "start_ms": 31340,
+      "end_ms": 31780
+    },
+    {
+      "word": "day",
+      "start_ms": 31780,
+      "end_ms": 32100
+    },
+    {
+      "word": "she",
+      "start_ms": 32100,
+      "end_ms": 32660
+    },
+    {
+      "word": "dresses",
+      "start_ms": 32660,
+      "end_ms": 33180
+    },
+    {
+      "word": "up",
+      "start_ms": 33180,
+      "end_ms": 33520
+    },
+    {
+      "word": "as",
+      "start_ms": 33520,
+      "end_ms": 33800
+    },
+    {
+      "word": "a",
+      "start_ms": 33800,
+      "end_ms": 33920
+    },
+    {
+      "word": "queen.",
+      "start_ms": 33920,
+      "end_ms": 34200
+    },
+    {
+      "word": "Cool,",
+      "start_ms": 35100,
+      "end_ms": 35520
+    },
+    {
+      "word": "right?",
+      "start_ms": 35700,
+      "end_ms": 35900
+    },
+    {
+      "word": "But",
+      "start_ms": 36700,
+      "end_ms": 37140
+    },
+    {
+      "word": "Tina",
+      "start_ms": 37140,
+      "end_ms": 37760
+    },
+    {
+      "word": "doesn't",
+      "start_ms": 37760,
+      "end_ms": 38620
+    },
+    {
+      "word": "think",
+      "start_ms": 38620,
+      "end_ms": 38880
+    },
+    {
+      "word": "so.",
+      "start_ms": 38880,
+      "end_ms": 39220
+    },
+    {
+      "word": "Her",
+      "start_ms": 40200,
+      "end_ms": 40380
+    },
+    {
+      "word": "mother",
+      "start_ms": 40380,
+      "end_ms": 40680
+    },
+    {
+      "word": "often",
+      "start_ms": 40680,
+      "end_ms": 41340
+    },
+    {
+      "word": "goes",
+      "start_ms": 41340,
+      "end_ms": 41680
+    },
+    {
+      "word": "to",
+      "start_ms": 41680,
+      "end_ms": 42020
+    },
+    {
+      "word": "pick",
+      "start_ms": 42020,
+      "end_ms": 42320
+    },
+    {
+      "word": "her",
+      "start_ms": 42320,
+      "end_ms": 42580
+    },
+    {
+      "word": "up",
+      "start_ms": 42580,
+      "end_ms": 42960
+    },
+    {
+      "word": "in",
+      "start_ms": 42960,
+      "end_ms": 43240
+    },
+    {
+      "word": "this",
+      "start_ms": 43240,
+      "end_ms": 43480
+    },
+    {
+      "word": "dress.",
+      "start_ms": 43480,
+      "end_ms": 43820
+    },
+    {
+      "word": "Tina",
+      "start_ms": 44560,
+      "end_ms": 45100
+    },
+    {
+      "word": "is",
+      "start_ms": 45100,
+      "end_ms": 45820
+    },
+    {
+      "word": "not",
+      "start_ms": 45820,
+      "end_ms": 46220
+    },
+    {
+      "word": "happy",
+      "start_ms": 46220,
+      "end_ms": 46760
+    },
+    {
+      "word": "about",
+      "start_ms": 46760,
+      "end_ms": 47020
+    },
+    {
+      "word": "this.",
+      "start_ms": 47020,
+      "end_ms": 47460
+    },
+    {
+      "word": "My",
+      "start_ms": 48560,
+      "end_ms": 49060
+    },
+    {
+      "word": "advice",
+      "start_ms": 49060,
+      "end_ms": 49380
+    },
+    {
+      "word": "for",
+      "start_ms": 49380,
+      "end_ms": 49820
+    },
+    {
+      "word": "her",
+      "start_ms": 49820,
+      "end_ms": 50060
+    },
+    {
+      "word": "is",
+      "start_ms": 50060,
+      "end_ms": 50360
+    },
+    {
+      "word": "have",
+      "start_ms": 50360,
+      "end_ms": 51040
+    },
+    {
+      "word": "a",
+      "start_ms": 51040,
+      "end_ms": 51200
+    },
+    {
+      "word": "good",
+      "start_ms": 51200,
+      "end_ms": 51580
+    },
+    {
+      "word": "talk",
+      "start_ms": 51580,
+      "end_ms": 52080
+    },
+    {
+      "word": "with",
+      "start_ms": 52080,
+      "end_ms": 52480
+    },
+    {
+      "word": "her",
+      "start_ms": 52480,
+      "end_ms": 52680
+    },
+    {
+      "word": "mother.",
+      "start_ms": 52680,
+      "end_ms": 52960
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 7.5
+  }
+}

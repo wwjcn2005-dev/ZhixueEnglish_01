@@ -1,0 +1,358 @@
+{
+  "task": "P1-06-B1.15 LearningRecord + MasteryState 业务语义与事务设计审计",
+  "generated_at": "2026-09-12T15:44:59+08:00",
+  "verdict": "PASS",
+  "task_text_truncated_at": "§二十六 mastery_level 四级语义（familiar 定义中途）",
+  "baseline": {
+    "learning_db": {
+      "sha256": "16E3952D64E749879D8FF78814F0434D544D4CBAD7D52AAC7E0B145DE43414E9",
+      "size": 73728,
+      "user_version": 1,
+      "tables": 6,
+      "business_rows": 0,
+      "fk": 5,
+      "indexes": 6,
+      "integrity": "ok",
+      "fk_check": 0
+    },
+    "v5": {
+      "sha256": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+      "size": 2457600,
+      "tables": 21
+    }
+  },
+  "record_definition": "一次真实发生的学习行为历史事实（非 Task/TaskItem/Activity/Mastery/Review/AI 诊断/进度）",
+  "record_creation": {
+    "page_open": false,
+    "browse": false,
+    "view_activity": "不引入",
+    "allowed": [
+      "recognize",
+      "read",
+      "understand",
+      "listen",
+      "repeat",
+      "spell",
+      "substitute",
+      "produce",
+      "review",
+      "skipped(主动跳过)"
+    ]
+  },
+  "activity_types": {
+    "recognize": "主动辨认学习资源（看词形认词/听音辨词/从候选中指出目标）",
+    "read": "朗读或阅读该资源",
+    "understand": "完成理解词义/用法的动作（含自测与主动确认）",
+    "listen": "听完该资源音频",
+    "repeat": "跟读/复述",
+    "spell": "拼写该资源",
+    "substitute": "对 Phrase / Sentence Pattern 做槽位替换",
+    "produce": "造句/自由表达产出",
+    "review": "整体回顾型复习动作（仅当无法归入前 8 类时使用）"
+  },
+  "activity_item_matrix": {
+    "Vocabulary": [
+      "recognize",
+      "read",
+      "listen",
+      "repeat",
+      "spell",
+      "produce",
+      "review"
+    ],
+    "Phrase": [
+      "recognize",
+      "read",
+      "understand",
+      "listen",
+      "repeat",
+      "substitute",
+      "produce",
+      "review"
+    ],
+    "Sentence Pattern": [
+      "recognize",
+      "read",
+      "understand",
+      "listen",
+      "repeat",
+      "substitute",
+      "produce",
+      "review"
+    ],
+    "matrix_table": false,
+    "enforced_by": "应用层；完整矩阵属未来 Activity 层"
+  },
+  "result_semantics": {
+    "correct": "完成且完全正确",
+    "incorrect": "完成且错误",
+    "partial": "完成但部分正确（≠ correct）",
+    "done": "完成且行为本身无对错",
+    "skipped": "用户主动跳过（≠ incorrect，≠ 未学习）",
+    "NULL": "行为已记录但当前阶段无适用结果值；仅允许 ①整体回顾型 review ②未来新增活动未定义语义时",
+    "null_forbidden_for": [
+      "未完成",
+      "未判断",
+      "正在进行",
+      "错误"
+    ]
+  },
+  "result_matrix": {
+    "recognize": [
+      "correct",
+      "incorrect",
+      "partial",
+      "skipped",
+      null
+    ],
+    "read": [
+      "done",
+      "skipped",
+      null
+    ],
+    "understand": [
+      "correct",
+      "incorrect",
+      "partial",
+      "done",
+      "skipped",
+      null
+    ],
+    "listen": [
+      "done",
+      "skipped",
+      null
+    ],
+    "repeat": [
+      "done",
+      "skipped",
+      null
+    ],
+    "spell": [
+      "correct",
+      "incorrect",
+      "partial",
+      "skipped",
+      null
+    ],
+    "substitute": [
+      "correct",
+      "incorrect",
+      "partial",
+      "done",
+      "skipped",
+      null
+    ],
+    "produce": [
+      "correct",
+      "incorrect",
+      "partial",
+      "done",
+      "skipped",
+      null
+    ],
+    "review": [
+      "done",
+      "skipped",
+      null,
+      "correct",
+      "incorrect",
+      "partial"
+    ]
+  },
+  "response_raw": {
+    "definition": "用户在一次学习行为中产生的原始响应文本",
+    "not": [
+      "标准答案",
+      "AI 诊断",
+      "结构化评分",
+      "教材文本",
+      "Mastery",
+      "AI prompt",
+      "AI response"
+    ],
+    "text_only": true,
+    "forbidden_media": [
+      "音频",
+      "图片",
+      "手写图像",
+      "视频",
+      "OCR 结果",
+      "embedding",
+      "AI 分析正文"
+    ],
+    "needed_for": [
+      "spell",
+      "substitute",
+      "produce"
+    ],
+    "optional_for": [
+      "understand",
+      "recognize"
+    ],
+    "null_for": [
+      "read",
+      "listen",
+      "repeat",
+      "review"
+    ]
+  },
+  "attempt_no": {
+    "definition": "同一 (learner_id, task_id, item_id, activity_type) 上下文内的连续尝试序号",
+    "start": 1,
+    "reset_rule": "新 Task / 新 item / 换 activity_type → 重新从 1",
+    "cross_session_in_same_task": "继续递增",
+    "global_counter": false
+  },
+  "hints_used": {
+    "definition": "本次行为中孩子实际使用的提示次数",
+    "count_only": true,
+    "stores_hint_text": false
+  },
+  "created_at": {
+    "definition": "该学习行为实际发生并被系统记录的时间",
+    "not": [
+      "Task 创建时间",
+      "页面打开时间",
+      "AI 分析时间",
+      "Mastery 更新时间"
+    ]
+  },
+  "task_record_relation": {
+    "record_task_id": "FK（真实存在的 Task，RESTRICT）",
+    "record_item_id": "逻辑引用（无 FK）",
+    "create_time_check": "item 必须是该 Task 当时的 TaskItem",
+    "after_taskitem_delete": "历史 Record 保留",
+    "db_fk_to_task_item": false
+  },
+  "textbook_snapshot": {
+    "textbook_id": "该事实所属教材（NOT NULL）",
+    "snapshot_id": "事实发生时的教材快照（可空）",
+    "snapshot_missing": "历史 Record 保留",
+    "item_removed_in_new_version": "历史 Record 不删除"
+  },
+  "append_only": {
+    "insert": true,
+    "update": false,
+    "delete": false,
+    "correction_path": "新增真实行为 Record；不得伪造纠错历史",
+    "db_trigger": false
+  },
+  "duplicate_records": {
+    "allowed": true,
+    "dedup": false,
+    "idempotency_key": false
+  },
+  "skipped": {
+    "creates_record": true,
+    "equals_incorrect": false,
+    "equals_not_learned": false
+  },
+  "done": {
+    "applies_to": [
+      "read",
+      "listen",
+      "repeat",
+      "understand(我已理解标记)"
+    ],
+    "catch_all": false
+  },
+  "mastery_state": {
+    "definition": "某 Learner 对某教材资源的当前掌握状态缓存/状态事实",
+    "pk": [
+      "learner_id",
+      "item_id"
+    ],
+    "not": [
+      "历史记录",
+      "Task",
+      "TaskItem",
+      "题目",
+      "分数",
+      "AI 诊断",
+      "Review 计划",
+      "教材内容"
+    ]
+  },
+  "mastery_level": {
+    "unknown": "尚无足够证据或尚未形成有效掌握状态",
+    "learning": "正在学习中，仍需辅助或提示",
+    "familiar": "已能较稳定识别/完成，但尚不稳定",
+    "stable": "当前证据表明掌握较稳定",
+    "thresholds": null,
+    "algorithm": null
+  },
+  "mastery_fields": {
+    "evidence_count": "参与掌握判断的 Record 数（correct/incorrect/partial/done 各计 1；skipped/NULL 不计）",
+    "correct_count": "result='correct' 的 Record 数（partial 不计）",
+    "last_result": "最近一次参与掌握判断的 Record.result（skipped/NULL 不更新）",
+    "last_practiced_at": "最近一次参与掌握判断的 Record.created_at",
+    "review_needed": "0/1 当前状态；可写来源=系统规则+孩子显式操作；AI 仅建议",
+    "updated_at": "最近更新时间"
+  },
+  "transaction": "BEGIN → INSERT learning_record → UPSERT mastery_state → COMMIT；失败整体回滚；浏览不产生记录与状态更新",
+  "mastery_update_rules": {
+    "correct_incorrect_partial_done": "更新 evidence_count 等派生缓存",
+    "skipped_or_null": "仅写 Record，不改变 mastery 派生字段",
+    "row_missing": "按 PK 新建（mastery_level=unknown）后更新计数",
+    "rebuild": "MasteryState 可由 Record 完整重建（重建工具属后续阶段）"
+  },
+  "ai_boundary": {
+    "can": [
+      "分析",
+      "提示",
+      "建议",
+      "解释"
+    ],
+    "cannot": [
+      "写 Record",
+      "写 MasteryState",
+      "决定 mastery_level",
+      "直接设置 review_needed",
+      "创建 Task"
+    ]
+  },
+  "not_designed": [
+    "Mastery 算法",
+    "Review 算法",
+    "间隔重复",
+    "next_review_at",
+    "自动排程",
+    "自动选题",
+    "LearningActivity",
+    "Question",
+    "Exercise",
+    "ReviewItem",
+    "Schema 扩张"
+  ],
+  "schema_change_required": false,
+  "risks": {
+    "P0": 0,
+    "P1": 0,
+    "P2": [
+      "mastery_level 升降规则未定义（有意，属后续算法阶段）",
+      "MasteryState 重建工具未实现"
+    ],
+    "P3": [
+      "NULL result 适用范围窄，实现需严格校验",
+      "review 作为 activity_type 的归类规则需 Activity 阶段复核",
+      "activity × item_type 完整矩阵由未来 Activity 层约束"
+    ]
+  },
+  "boundaries": {
+    "learning_db_modified": false,
+    "v5_modified": false,
+    "writes": 0,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "network": 0,
+    "new_deps": 0,
+    "android_modified": false,
+    "zhixue_ai": false,
+    "new_files": [
+      "audit/P1-06-B1.15_learning_record_mastery_business_design.md",
+      "audit/P1-06-B1.15_learning_record_mastery_business_design.json"
+    ]
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU02",
+  "audio_num": "AU02",
+  "filename": "02_Starter_Get ready_3 Listen and complete the conversation with aan or a number.mp3",
+  "duration_ms": 33541,
+  "segment_count": 5,
+  "word_count": 45,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1560,
+      "text": "Activity 3"
+    },
+    {
+      "start_ms": 1560,
+      "end_ms": 9800,
+      "text": "Listen and complete the conversation with a or an or a number."
+    },
+    {
+      "start_ms": 10640,
+      "end_ms": 13420,
+      "text": "How about you, Limong?"
+    },
+    {
+      "start_ms": 14120,
+      "end_ms": 22360,
+      "text": "I am ready too. Look, I have two pencils and four pens."
+    },
+    {
+      "start_ms": 22360,
+      "end_ms": 31480,
+      "text": "I also have an eraser and a ruler. They are all in my pencil case."
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1060
+    },
+    {
+      "word": "3",
+      "start_ms": 1060,
+      "end_ms": 1560
+    },
+    {
+      "word": "Listen",
+      "start_ms": 1560,
+      "end_ms": 2980
+    },
+    {
+      "word": "and",
+      "start_ms": 2980,
+      "end_ms": 3740
+    },
+    {
+      "word": "complete",
+      "start_ms": 3740,
+      "end_ms": 4240
+    },
+    {
+      "word": "the",
+      "start_ms": 4240,
+      "end_ms": 4560
+    },
+    {
+      "word": "conversation",
+      "start_ms": 4560,
+      "end_ms": 5240
+    },
+    {
+      "word": "with",
+      "start_ms": 5240,
+      "end_ms": 5900
+    },
+    {
+      "word": "a",
+      "start_ms": 5900,
+      "end_ms": 6560
+    },
+    {
+      "word": "or",
+      "start_ms": 6560,
+      "end_ms": 7500
+    },
+    {
+      "word": "an",
+      "start_ms": 7500,
+      "end_ms": 8320
+    },
+    {
+      "word": "or",
+      "start_ms": 8320,
+      "end_ms": 9180
+    },
+    {
+      "word": "a",
+      "start_ms": 9180,
+      "end_ms": 9400
+    },
+    {
+      "word": "number.",
+      "start_ms": 9400,
+      "end_ms": 9800
+    },
+    {
+      "word": "How",
+      "start_ms": 10640,
+      "end_ms": 11940
+    },
+    {
+      "word": "about",
+      "start_ms": 11940,
+      "end_ms": 12260
+    },
+    {
+      "word": "you,",
+      "start_ms": 12260,
+      "end_ms": 12760
+    },
+    {
+      "word": "Limong?",
+      "start_ms": 12980,
+      "end_ms": 13420
+    },
+    {
+      "word": "I",
+      "start_ms": 14120,
+      "end_ms": 14860
+    },
+    {
+      "word": "am",
+      "start_ms": 14860,
+      "end_ms": 15140
+    },
+    {
+      "word": "ready",
+      "start_ms": 15140,
+      "end_ms": 15540
+    },
+    {
+      "word": "too.",
+      "start_ms": 15540,
+      "end_ms": 16140
+    },
+    {
+      "word": "Look,",
+      "start_ms": 16920,
+      "end_ms": 17380
+    },
+    {
+      "word": "I",
+      "start_ms": 18140,
+      "end_ms": 18460
+    },
+    {
+      "word": "have",
+      "start_ms": 18460,
+      "end_ms": 18840
+    },
+    {
+      "word": "two",
+      "start_ms": 18840,
+      "end_ms": 19300
+    },
+    {
+      "word": "pencils",
+      "start_ms": 19300,
+      "end_ms": 20040
+    },
+    {
+      "word": "and",
+      "start_ms": 20040,
+      "end_ms": 21140
+    },
+    {
+      "word": "four",
+      "start_ms": 21140,
+      "end_ms": 21680
+    },
+    {
+      "word": "pens.",
+      "start_ms": 21680,
+      "end_ms": 22360
+    },
+    {
+      "word": "I",
+      "start_ms": 22360,
+      "end_ms": 23880
+    },
+    {
+      "word": "also",
+      "start_ms": 23880,
+      "end_ms": 24440
+    },
+    {
+      "word": "have",
+      "start_ms": 24440,
+      "end_ms": 24960
+    },
+    {
+      "word": "an",
+      "start_ms": 24960,
+      "end_ms": 25120
+    },
+    {
+      "word": "eraser",
+      "start_ms": 25120,
+      "end_ms": 25500
+    },
+    {
+      "word": "and",
+      "start_ms": 25500,
+      "end_ms": 26840
+    },
+    {
+      "word": "a",
+      "start_ms": 26840,
+      "end_ms": 27120
+    },
+    {
+      "word": "ruler.",
+      "start_ms": 27120,
+      "end_ms": 27620
+    },
+    {
+      "word": "They",
+      "start_ms": 28560,
+      "end_ms": 29140
+    },
+    {
+      "word": "are",
+      "start_ms": 29140,
+      "end_ms": 29420
+    },
+    {
+      "word": "all",
+      "start_ms": 29420,
+      "end_ms": 29860
+    },
+    {
+      "word": "in",
+      "start_ms": 29860,
+      "end_ms": 30220
+    },
+    {
+      "word": "my",
+      "start_ms": 30220,
+      "end_ms": 30400
+    },
+    {
+      "word": "pencil",
+      "start_ms": 30400,
+      "end_ms": 30920
+    },
+    {
+      "word": "case.",
+      "start_ms": 30920,
+      "end_ms": 31480
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 4.8
+  }
+}

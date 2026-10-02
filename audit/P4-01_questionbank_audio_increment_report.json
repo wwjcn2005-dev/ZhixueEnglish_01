@@ -1,0 +1,1256 @@
+{
+ "step": "builder/build_questionbank_audio_increment_v01.py",
+ "generated_at": "2026-09-19T20:46:52",
+ "ai_calls": 0,
+ "run_id": "RUN-AUDIO-INCREMENT-V1",
+ "rules_version": "questionbank-rules-v2",
+ "baseline_questions": 1363,
+ "new_questions": 100,
+ "total_questions": 1463,
+ "existing_rows_signature_before": "6e0a8e5babcb845aa2a0e5aa0ccf4fce58ab07d5353297c97c4ec82a96ce60c5",
+ "existing_rows_signature_after": "6e0a8e5babcb845aa2a0e5aa0ccf4fce58ab07d5353297c97c4ec82a96ce60c5",
+ "existing_rows_unchanged": true,
+ "by_type": {
+  "sentence_listen_write": {
+   "candidates": 105,
+   "accepted": 100,
+   "rejected": 106
+  }
+ },
+ "other_types": {
+  "listening_fill": {
+   "candidates": 17,
+   "accepted": 0,
+   "rejected": 17,
+   "reason": "教材未提供可核对答案来源（exercise_catalog_v3.answer_status=NO_RELIABLE_SOURCE）；答案只能来自 ASR 或常识推断 → 禁止生成"
+  },
+  "listening_choice": {
+   "candidates": 1,
+   "accepted": 0,
+   "rejected": 1,
+   "reason": "教材未提供可核对答案来源（exercise_catalog_v3.answer_status=NO_RELIABLE_SOURCE）；答案只能来自 ASR 或常识推断 → 禁止生成"
+  },
+  "listening_judge": {
+   "candidates": 1,
+   "accepted": 0,
+   "rejected": 1,
+   "reason": "教材未提供可核对答案来源（exercise_catalog_v3.answer_status=NO_RELIABLE_SOURCE）；答案只能来自 ASR 或常识推断 → 禁止生成"
+  },
+  "listening_order": {
+   "candidates": 1,
+   "accepted": 0,
+   "rejected": 1,
+   "reason": "教材未提供可核对答案来源（exercise_catalog_v3.answer_status=NO_RELIABLE_SOURCE）；答案只能来自 ASR 或常识推断 → 禁止生成"
+  },
+  "listening_match": {
+   "candidates": 1,
+   "accepted": 0,
+   "rejected": 1,
+   "reason": "教材未提供可核对答案来源（exercise_catalog_v3.answer_status=NO_RELIABLE_SOURCE）；答案只能来自 ASR 或常识推断 → 禁止生成"
+  },
+  "listening_information": {
+   "candidates": 37,
+   "accepted": 0,
+   "rejected": 37,
+   "reason": "教材只提出问题、未提供答案文本；答案需语义生成 → 属于 AI 补足池（supplement_task: listening_understanding）"
+  },
+  "listening_main_idea": {
+   "candidates": 3,
+   "accepted": 0,
+   "rejected": 0,
+   "reason": "教材无标准答案；不得自行制造主旨题并假装教材已有依据"
+  }
+ },
+ "by_unit": {
+  "Starter": 10,
+  "Unit 1": 14,
+  "Unit 2": 2,
+  "Unit 3": 31,
+  "Unit 4": 5,
+  "Unit 5": 18,
+  "Unit 6": 20,
+  "（合计）": 100
+ },
+ "by_origin": {
+  "PROGRAM_GENERATED": 100,
+  "AI_GENERATED": 0
+ },
+ "p308_segment_coverage": {
+  "total": 206,
+  "covered_before": 0,
+  "covered_by_this_run": 100,
+  "still_uncovered": 106
+ },
+ "rejection_counts": {
+  "textbook_ellipsis_frame": 14,
+  "non_content_block:instruction": 43,
+  "abnormal_length": 13,
+  "activity_instruction_sentence": 7,
+  "unbalanced_quote": 7,
+  "incomplete_writing_frame": 1,
+  "textbook_glyph_artifact": 1,
+  "non_content_block:sidebar_tip": 3,
+  "non_content_block:heading": 1,
+  "printed_alternatives_or_blank_frame": 10,
+  "merged_table_cells": 1,
+  "duplicate_sentence_in_unit": 5
+ },
+ "rejection_examples": {
+  "textbook_ellipsis_frame": [
+   {
+    "audio_code": "AU02",
+    "text": "I have."
+   },
+   {
+    "audio_code": "AU08",
+    "text": "We need to."
+   },
+   {
+    "audio_code": "AU12",
+    "text": "Here’s the first piece of advice: ."
+   }
+  ],
+  "non_content_block:instruction": [
+   {
+    "audio_code": "AU05",
+    "text": "Read and complete."
+   },
+   {
+    "audio_code": "AU08",
+    "text": "Work in pairs."
+   },
+   {
+    "audio_code": "AU08",
+    "text": "Talk about a teacher you like."
+   }
+  ],
+  "abnormal_length": [
+   {
+    "audio_code": "AU05",
+    "text": "Good morning, everyone!"
+   },
+   {
+    "audio_code": "AU05",
+    "text": "Good morning, Teacher!"
+   },
+   {
+    "audio_code": "AU07",
+    "text": "Read the passage."
+   }
+  ],
+  "activity_instruction_sentence": [
+   {
+    "audio_code": "AU07",
+    "text": "What does the writer do in his first lesson?"
+   },
+   {
+    "audio_code": "AU21",
+    "text": "Read the film review."
+   },
+   {
+    "audio_code": "AU21",
+    "text": "What is the father’s love like according to the writer?"
+   }
+  ],
+  "unbalanced_quote": [
+   {
+    "audio_code": "AU07",
+    "text": "Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write "
+   },
+   {
+    "audio_code": "AU07",
+    "text": "“That’s not right."
+   },
+   {
+    "audio_code": "AU07",
+    "text": "” Questions jump into my mind."
+   }
+  ],
+  "incomplete_writing_frame": [
+   {
+    "audio_code": "AU07",
+    "text": "Please always remember this."
+   }
+  ],
+  "textbook_glyph_artifact": [
+   {
+    "audio_code": "AU16",
+    "text": "☐ The bird flies away."
+   }
+  ],
+  "non_content_block:sidebar_tip": [
+   {
+    "audio_code": "AU27",
+    "text": "“We are family,” John says."
+   },
+   {
+    "audio_code": "AU40",
+    "text": "Corn silkIt’s the “hair” of corn."
+   },
+   {
+    "audio_code": "AU40",
+    "text": "That’s true."
+   }
+  ],
+  "non_content_block:heading": [
+   {
+    "audio_code": "AU29",
+    "text": "How do you feel?"
+   }
+  ],
+  "printed_alternatives_or_blank_frame": [
+   {
+    "audio_code": "AU30",
+    "text": "(365,000 / 456,000) kilometres of paper for gifts."
+   },
+   {
+    "audio_code": "AU30",
+    "text": "(thousands / millions) of turkeys."
+   },
+   {
+    "audio_code": "AU30",
+    "text": "(making / buying) plastic Christmas trees, but they can cause pollution, too."
+   }
+  ],
+  "merged_table_cells": [
+   {
+    "audio_code": "AU40",
+    "text": "Corn seedsTacos are a traditional Mexican food."
+   }
+  ],
+  "duplicate_sentence_in_unit": [
+   {
+    "audio_code": "AU16",
+    "text": "It can’t fly."
+   },
+   {
+    "audio_code": "AU37",
+    "text": "People even use it to make toys."
+   },
+   {
+    "audio_code": "AU37",
+    "text": "It’s also part of Mexican culture."
+   }
+  ]
+ },
+ "quality_gates": {
+  "1_primary_evidence": true,
+  "3_segment_id_valid": true,
+  "4_text_id_valid": true,
+  "5_unit_range": true,
+  "6_answer_executable": true,
+  "7_question_type_legal": true,
+  "12_no_partial_segment": true,
+  "13_no_manual_confirmation_audio": true,
+  "14_no_future_unit": true,
+  "15_no_outside_fact": true,
+  "16_origin_complete": true,
+  "2_audio_id_valid": true,
+  "8_option_count": true,
+  "9_single_correct_option": true,
+  "10_no_duplicate_hash": true,
+  "11_no_existing_duplicate": true
+ },
+ "segments": [
+  {
+   "question_id": "Q:13E9F0A3892B",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU02",
+   "segment_id": "AR:AU02:S003",
+   "start_ms": 14040,
+   "end_ms": 16470,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+   "answer_text": "I am ready, too."
+  },
+  {
+   "question_id": "Q:AD5873B2AE05",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "segment_id": "AR:AU05:S004",
+   "start_ms": 14100,
+   "end_ms": 16600,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "answer_text": "Welcome to junior high."
+  },
+  {
+   "question_id": "Q:26754ADEF4AB",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "segment_id": "AR:AU05:S005",
+   "start_ms": 17060,
+   "end_ms": 20580,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "answer_text": "I’m Mr Pan, your English teacher."
+  },
+  {
+   "question_id": "Q:ECF35C2554AD",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "segment_id": "AR:AU05:S006",
+   "start_ms": 20940,
+   "end_ms": 23880,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "answer_text": "I’m so happy to meet you all."
+  },
+  {
+   "question_id": "Q:583787680334",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "segment_id": "AR:AU05:S007",
+   "start_ms": 23800,
+   "end_ms": 29960,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "answer_text": "I like playing the piano, reading books and travelling."
+  },
+  {
+   "question_id": "Q:F00A50B9278F",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU02",
+   "segment_id": "AR:AU02:S004",
+   "start_ms": 28480,
+   "end_ms": 31760,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P8:B20",
+   "answer_text": "They are all in my pencil case."
+  },
+  {
+   "question_id": "Q:C3245034B45E",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "segment_id": "AR:AU05:S009",
+   "start_ms": 35040,
+   "end_ms": 39340,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "answer_text": "This year, we’ll explore the world of English together."
+  },
+  {
+   "question_id": "Q:8D90F3375570",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "segment_id": "AR:AU05:S010",
+   "start_ms": 39840,
+   "end_ms": 41940,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "answer_text": "It’ll be a lot of fun!"
+  },
+  {
+   "question_id": "Q:2A7E8708D691",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "segment_id": "AR:AU05:S011",
+   "start_ms": 42820,
+   "end_ms": 46520,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "answer_text": "Now, it’s your turn to introduce yourselves."
+  },
+  {
+   "question_id": "Q:B3802F0C1B06",
+   "unit_code": "Starter",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU05",
+   "segment_id": "AR:AU05:S012",
+   "start_ms": 47100,
+   "end_ms": 50420,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P14:B7",
+   "answer_text": "Please tell us your name and your hobby."
+  },
+  {
+   "question_id": "Q:447C2207BE79",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S004",
+   "start_ms": 31420,
+   "end_ms": 33300,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B1",
+   "answer_text": "We start to write."
+  },
+  {
+   "question_id": "Q:E5E941206CE9",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S005",
+   "start_ms": 34180,
+   "end_ms": 37950,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B1",
+   "answer_text": "I write down the first word and stop."
+  },
+  {
+   "question_id": "Q:09A24CA126C3",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S007",
+   "start_ms": 40300,
+   "end_ms": 43850,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B2",
+   "answer_text": "But is it OK to point out the mistake?"
+  },
+  {
+   "question_id": "Q:7FA72B13718C",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S008",
+   "start_ms": 43930,
+   "end_ms": 47400,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B2",
+   "answer_text": "Is that polite, in the first lesson?"
+  },
+  {
+   "question_id": "Q:3822D048300E",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU12",
+   "segment_id": "AR:AU12:S004",
+   "start_ms": 57320,
+   "end_ms": 59520,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P28:B22",
+   "answer_text": "A project may take weeks."
+  },
+  {
+   "question_id": "Q:2F7466DC3277",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S012",
+   "start_ms": 57900,
+   "end_ms": 60090,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B4",
+   "answer_text": "My eyes meet hers."
+  },
+  {
+   "question_id": "Q:D2D54874AAB0",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S013",
+   "start_ms": 60780,
+   "end_ms": 63000,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B4",
+   "answer_text": "My mouth feels dry."
+  },
+  {
+   "question_id": "Q:DE2FED1E8931",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S014",
+   "start_ms": 63780,
+   "end_ms": 67800,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B5",
+   "answer_text": "But then I think about the meaning of the sentence."
+  },
+  {
+   "question_id": "Q:E48A48CE273C",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S015",
+   "start_ms": 68580,
+   "end_ms": 70060,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B5",
+   "answer_text": "I put up my hand."
+  },
+  {
+   "question_id": "Q:0FD4FC889AE1",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S016",
+   "start_ms": 70960,
+   "end_ms": 75120,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B6",
+   "answer_text": "“Ms Chen, there’s a mistake,” I say."
+  },
+  {
+   "question_id": "Q:BAEF2E4EC353",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S019",
+   "start_ms": 85340,
+   "end_ms": 89970,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B7",
+   "answer_text": "In fact, this is my first lesson for all of you."
+  },
+  {
+   "question_id": "Q:53D73DCC7604",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S020",
+   "start_ms": 90500,
+   "end_ms": 93680,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B7",
+   "answer_text": "You are now in junior high school."
+  },
+  {
+   "question_id": "Q:B39EB99F6731",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S021",
+   "start_ms": 93840,
+   "end_ms": 96110,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B7",
+   "answer_text": "Learning will be more difficult."
+  },
+  {
+   "question_id": "Q:797F1B317A50",
+   "unit_code": "Unit 1",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU07",
+   "segment_id": "AR:AU07:S023",
+   "start_ms": 103200,
+   "end_ms": 106100,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P22:B9",
+   "answer_text": "That’s really an important lesson!"
+  },
+  {
+   "question_id": "Q:11643789D9FA",
+   "unit_code": "Unit 2",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU18",
+   "segment_id": "AR:AU18:S002",
+   "start_ms": 18160,
+   "end_ms": 20280,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P43:B3",
+   "answer_text": "It can’t fly."
+  },
+  {
+   "question_id": "Q:259B4B84B5E0",
+   "unit_code": "Unit 2",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU15",
+   "segment_id": "AR:AU15:S005",
+   "start_ms": 30860,
+   "end_ms": 32740,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P41:B16",
+   "answer_text": "Why do I like it?"
+  },
+  {
+   "question_id": "Q:E1DA42A8F66F",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S004",
+   "start_ms": 19140,
+   "end_ms": 22840,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B5",
+   "answer_text": "John and Robert Taylor are brothers."
+  },
+  {
+   "question_id": "Q:E8E64983FFA2",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S005",
+   "start_ms": 23600,
+   "end_ms": 26180,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B5",
+   "answer_text": "They are always close to each other."
+  },
+  {
+   "question_id": "Q:B818BFF0171C",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU23",
+   "segment_id": "AR:AU23:S003",
+   "start_ms": 30600,
+   "end_ms": 34520,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P59:B12",
+   "answer_text": "Every day, she dresses up as a queen."
+  },
+  {
+   "question_id": "Q:A93EBA60EB43",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S005",
+   "start_ms": 32400,
+   "end_ms": 36460,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P53:B5",
+   "answer_text": "This is from my favourite film, Postmen in the Mountains."
+  },
+  {
+   "question_id": "Q:19ECCBA59147",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S007",
+   "start_ms": 33540,
+   "end_ms": 39200,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B5",
+   "answer_text": "He has to stay at home every day and he often feels lonely."
+  },
+  {
+   "question_id": "Q:58281E44DEE3",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S006",
+   "start_ms": 37340,
+   "end_ms": 41720,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P53:B5",
+   "answer_text": "It’s a touching story about the love between father and son."
+  },
+  {
+   "question_id": "Q:51BAF9A95371",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S008",
+   "start_ms": 40100,
+   "end_ms": 42730,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B5",
+   "answer_text": "He wants to join the other kids."
+  },
+  {
+   "question_id": "Q:6AAC7400B015",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S007",
+   "start_ms": 42720,
+   "end_ms": 47360,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P53:B6",
+   "answer_text": "For years, the father served as the postman for this area."
+  },
+  {
+   "question_id": "Q:57698F5971C2",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S009",
+   "start_ms": 43360,
+   "end_ms": 45880,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B5",
+   "answer_text": "He wants to go out and play."
+  },
+  {
+   "question_id": "Q:858DCB635E9C",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S010",
+   "start_ms": 47520,
+   "end_ms": 51740,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B7",
+   "answer_text": "John sees Robert’s sad face and wants to help."
+  },
+  {
+   "question_id": "Q:735A888C6D33",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S008",
+   "start_ms": 47700,
+   "end_ms": 52100,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P53:B6",
+   "answer_text": "He was often absent from home and the son seldom saw him."
+  },
+  {
+   "question_id": "Q:A432EDE71E96",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S009",
+   "start_ms": 52640,
+   "end_ms": 56120,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P53:B6",
+   "answer_text": "But now the son is taking over his father’s position."
+  },
+  {
+   "question_id": "Q:69CEA9734F9E",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S012",
+   "start_ms": 56300,
+   "end_ms": 61180,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B7",
+   "answer_text": "He puts Robert in a trailer and pulls it along with his bike."
+  },
+  {
+   "question_id": "Q:85A461D1F721",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S010",
+   "start_ms": 56700,
+   "end_ms": 60250,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P53:B6",
+   "answer_text": "The father goes with him on his first day of work."
+  },
+  {
+   "question_id": "Q:DEAE82DA5A8E",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S013",
+   "start_ms": 62060,
+   "end_ms": 66640,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B7",
+   "answer_text": "For the first time, Robert feels like the other kids."
+  },
+  {
+   "question_id": "Q:2AE2C7BE8F1C",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S011",
+   "start_ms": 65230,
+   "end_ms": 71600,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B0",
+   "answer_text": "For the first time, the son carries his father across a cold river."
+  },
+  {
+   "question_id": "Q:8E0FD3300A74",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S014",
+   "start_ms": 67040,
+   "end_ms": 71040,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P61:B7",
+   "answer_text": "A big, bright smile appears on his face."
+  },
+  {
+   "question_id": "Q:64B89820364D",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S015",
+   "start_ms": 72360,
+   "end_ms": 77740,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P62:B0",
+   "answer_text": "Now, the brothers often take part in bike races together."
+  },
+  {
+   "question_id": "Q:5FBEF3AE6A72",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S012",
+   "start_ms": 72540,
+   "end_ms": 77040,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B0",
+   "answer_text": "It brings back the father’s memory of carrying the son on his back."
+  },
+  {
+   "question_id": "Q:4918D13BE1E5",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S013",
+   "start_ms": 77080,
+   "end_ms": 80740,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B0",
+   "answer_text": "Tears quietly run down his face."
+  },
+  {
+   "question_id": "Q:369322378B6F",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S016",
+   "start_ms": 78520,
+   "end_ms": 81960,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P62:B0",
+   "answer_text": "It is hard for John to pull Robert’s trailer."
+  },
+  {
+   "question_id": "Q:4A80BD0D1397",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S014",
+   "start_ms": 81640,
+   "end_ms": 85700,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B1",
+   "answer_text": "This film shows a traditional Chinese father."
+  },
+  {
+   "question_id": "Q:494989B5A90A",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S017",
+   "start_ms": 82400,
+   "end_ms": 86240,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P62:B0",
+   "answer_text": "But John refuses to race without his brother."
+  },
+  {
+   "question_id": "Q:66589FC23A61",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S015",
+   "start_ms": 86520,
+   "end_ms": 88780,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B1",
+   "answer_text": "He is happy about his son’s growth."
+  },
+  {
+   "question_id": "Q:E99E63BCC884",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S018",
+   "start_ms": 87100,
+   "end_ms": 88860,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P62:B0",
+   "answer_text": "They don’t often win."
+  },
+  {
+   "question_id": "Q:02113F5F8BCB",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S016",
+   "start_ms": 88870,
+   "end_ms": 92340,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B1",
+   "answer_text": "But he just hides his care in his heart."
+  },
+  {
+   "question_id": "Q:B437FD4E5E87",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S019",
+   "start_ms": 89080,
+   "end_ms": 94540,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P62:B0",
+   "answer_text": "But for the brothers, some things are more important than winning."
+  },
+  {
+   "question_id": "Q:3EED62C9EBAE",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S017",
+   "start_ms": 93120,
+   "end_ms": 95940,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B1",
+   "answer_text": "He doesn’t give hugs or kisses to his son."
+  },
+  {
+   "question_id": "Q:BF79D54313F8",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S018",
+   "start_ms": 97000,
+   "end_ms": 98740,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B1",
+   "answer_text": "His love may be silent."
+  },
+  {
+   "question_id": "Q:6C410BD02B1A",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU21",
+   "segment_id": "AR:AU21:S019",
+   "start_ms": 99080,
+   "end_ms": 102240,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P54:B1",
+   "answer_text": "But like a mountain, it is always there."
+  },
+  {
+   "question_id": "Q:275217FA37FD",
+   "unit_code": "Unit 3",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU27",
+   "segment_id": "AR:AU27:S021",
+   "start_ms": 102360,
+   "end_ms": 107510,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P62:B2",
+   "answer_text": "For the Taylor brothers, the result doesn’t really matter."
+  },
+  {
+   "question_id": "Q:305E62B3B31A",
+   "unit_code": "Unit 4",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU33",
+   "segment_id": "AR:AU33:S003",
+   "start_ms": 27960,
+   "end_ms": 30420,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P76:B5",
+   "answer_text": "We don’t want to waste food."
+  },
+  {
+   "question_id": "Q:4AEA2DCAAE52",
+   "unit_code": "Unit 4",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU33",
+   "segment_id": "AR:AU33:S004",
+   "start_ms": 39960,
+   "end_ms": 44700,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P76:B8",
+   "answer_text": "And this year, we won’t have a Christmas tree."
+  },
+  {
+   "question_id": "Q:59703B7F9380",
+   "unit_code": "Unit 4",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU34",
+   "segment_id": "AR:AU34:S002",
+   "start_ms": 63400,
+   "end_ms": 69060,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P78:B1",
+   "answer_text": "Leng’s duty means she has little time to be with her family at festivals."
+  },
+  {
+   "question_id": "Q:1AE4AD1B6E8E",
+   "unit_code": "Unit 4",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU34",
+   "segment_id": "AR:AU34:S003",
+   "start_ms": 69600,
+   "end_ms": 74520,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P78:B1",
+   "answer_text": "But she never regrets her decision to be an ER doctor."
+  },
+  {
+   "question_id": "Q:FD5C10E4D194",
+   "unit_code": "Unit 4",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU34",
+   "segment_id": "AR:AU34:S007",
+   "start_ms": 91960,
+   "end_ms": 96660,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P78:B2",
+   "answer_text": "They give up their family time to answer the call of duty."
+  },
+  {
+   "question_id": "Q:4B7ED2E6DFFF",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S004",
+   "start_ms": 24680,
+   "end_ms": 28960,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B0",
+   "answer_text": "He’s going to start work in the plant."
+  },
+  {
+   "question_id": "Q:A68D922E46D9",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S005",
+   "start_ms": 30180,
+   "end_ms": 34700,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B1",
+   "answer_text": "He works in Workshop 1001 in the Leaf."
+  },
+  {
+   "question_id": "Q:1ED17BAE6F9B",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU40",
+   "segment_id": "AR:AU40:S003",
+   "start_ms": 33790,
+   "end_ms": 37340,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P92:B10",
+   "answer_text": "We make chips with corn seeds, too."
+  },
+  {
+   "question_id": "Q:C056913F7DE3",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S007",
+   "start_ms": 40300,
+   "end_ms": 44940,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B1",
+   "answer_text": "They collect sunlight and CO2 during the day."
+  },
+  {
+   "question_id": "Q:4558F7B41148",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S008",
+   "start_ms": 45840,
+   "end_ms": 49220,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B1",
+   "answer_text": "Now workers from the Root send up water."
+  },
+  {
+   "question_id": "Q:F6DFCE30A11C",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S009",
+   "start_ms": 50040,
+   "end_ms": 53820,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B1",
+   "answer_text": "The water will rise up to the Leaf through the Stem."
+  },
+  {
+   "question_id": "Q:71D006524A35",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU39",
+   "segment_id": "AR:AU39:S004",
+   "start_ms": 54680,
+   "end_ms": 57730,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P91:B14",
+   "answer_text": "People even use it to make toys."
+  },
+  {
+   "question_id": "Q:E153E2C93FBE",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S010",
+   "start_ms": 54920,
+   "end_ms": 60350,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B1",
+   "answer_text": "Then workers in the Leaf will mix water, CO2 and sunlight."
+  },
+  {
+   "question_id": "Q:1C006D71123B",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU39",
+   "segment_id": "AR:AU39:S005",
+   "start_ms": 58400,
+   "end_ms": 61830,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P91:B14",
+   "answer_text": "It’s also part of Mexican culture."
+  },
+  {
+   "question_id": "Q:DB22EDBFD588",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S011",
+   "start_ms": 60440,
+   "end_ms": 63170,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B2",
+   "answer_text": "What are they going to produce?"
+  },
+  {
+   "question_id": "Q:4588E5FD5764",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S012",
+   "start_ms": 64100,
+   "end_ms": 68100,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B2",
+   "answer_text": "Most importantly (for them), there will be sugar!"
+  },
+  {
+   "question_id": "Q:94BA7875A07B",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S013",
+   "start_ms": 68980,
+   "end_ms": 71780,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B2",
+   "answer_text": "It’s useful for the growth of the plant."
+  },
+  {
+   "question_id": "Q:F886D90EF8B6",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S014",
+   "start_ms": 72620,
+   "end_ms": 77940,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B2",
+   "answer_text": "Another product will be oxygen, but the plant doesn’t need much of it."
+  },
+  {
+   "question_id": "Q:9900B2A385C0",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S015",
+   "start_ms": 78420,
+   "end_ms": 83620,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B2",
+   "answer_text": "It means a lot to animals and humans, though – they need it to breathe!"
+  },
+  {
+   "question_id": "Q:DE4CAFC8553D",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S017",
+   "start_ms": 87400,
+   "end_ms": 89500,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B3",
+   "answer_text": "Soon it’s going to get dark."
+  },
+  {
+   "question_id": "Q:09EF5DF728FD",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S018",
+   "start_ms": 92500,
+   "end_ms": 95260,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B5",
+   "answer_text": "There are millions of plants on earth."
+  },
+  {
+   "question_id": "Q:ED9F78952693",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S019",
+   "start_ms": 95880,
+   "end_ms": 98210,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B5",
+   "answer_text": "They give more than food and oxygen."
+  },
+  {
+   "question_id": "Q:B73C0DBF5545",
+   "unit_code": "Unit 5",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU35",
+   "segment_id": "AR:AU35:S020",
+   "start_ms": 98900,
+   "end_ms": 103250,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P86:B5",
+   "answer_text": "Without plants, the natural world would be very different!"
+  },
+  {
+   "question_id": "Q:35DFF3D2C364",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU45",
+   "segment_id": "AR:AU45:S002",
+   "start_ms": 33600,
+   "end_ms": 37180,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P107:B4",
+   "answer_text": "Over the years, he saved many lives."
+  },
+  {
+   "question_id": "Q:D73E6FC50358",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S005",
+   "start_ms": 36440,
+   "end_ms": 39630,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P101:B1",
+   "answer_text": "I’m watching pigeons in the park now."
+  },
+  {
+   "question_id": "Q:4D19A1A46280",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S006",
+   "start_ms": 40400,
+   "end_ms": 43730,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P101:B1",
+   "answer_text": "They just knock around –for the whole morning!"
+  },
+  {
+   "question_id": "Q:9A7C502AA1C4",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S007",
+   "start_ms": 44420,
+   "end_ms": 46860,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P101:B1",
+   "answer_text": "They leave droppings here and there."
+  },
+  {
+   "question_id": "Q:BD629D8F6C68",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S008",
+   "start_ms": 47560,
+   "end_ms": 51380,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P101:B1",
+   "answer_text": "Pigeons are BORING and DIRTY!"
+  },
+  {
+   "question_id": "Q:D9D049943DFF",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S009",
+   "start_ms": 52640,
+   "end_ms": 54360,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P101:B2",
+   "answer_text": "A girl is feeding them."
+  },
+  {
+   "question_id": "Q:050453318270",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU45",
+   "segment_id": "AR:AU45:S003",
+   "start_ms": 57240,
+   "end_ms": 59230,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P107:B7",
+   "answer_text": "He was a hero."
+  },
+  {
+   "question_id": "Q:7D38C48130C8",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S012",
+   "start_ms": 63720,
+   "end_ms": 66520,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B0",
+   "answer_text": "I’m doing some online research."
+  },
+  {
+   "question_id": "Q:6A7F954DAE1F",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S013",
+   "start_ms": 67200,
+   "end_ms": 71000,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B0",
+   "answer_text": "Pigeons can recognise themselves in mirrors."
+  },
+  {
+   "question_id": "Q:883E9690C71B",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S015",
+   "start_ms": 73280,
+   "end_ms": 74500,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B0",
+   "answer_text": "Are they so clever?"
+  },
+  {
+   "question_id": "Q:B8A91F5A6BE8",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S017",
+   "start_ms": 80660,
+   "end_ms": 82790,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B1",
+   "answer_text": "I’m back at the park again."
+  },
+  {
+   "question_id": "Q:01CE7FA9D9DD",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S018",
+   "start_ms": 84380,
+   "end_ms": 87420,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B1",
+   "answer_text": "That pigeon is looking at itself in the water!"
+  },
+  {
+   "question_id": "Q:571122E88E99",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S019",
+   "start_ms": 88100,
+   "end_ms": 90610,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B1",
+   "answer_text": "Maybe I was wrong about pigeons."
+  },
+  {
+   "question_id": "Q:ACD5AEB2D382",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S020",
+   "start_ms": 94760,
+   "end_ms": 97400,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B2",
+   "answer_text": "I’m reading in the library now."
+  },
+  {
+   "question_id": "Q:10F085EE2DC7",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S021",
+   "start_ms": 97980,
+   "end_ms": 102360,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B2",
+   "answer_text": "Oh, there are over 200 kinds of pigeons."
+  },
+  {
+   "question_id": "Q:1F40BBD154BA",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S022",
+   "start_ms": 103120,
+   "end_ms": 108240,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B2",
+   "answer_text": "Some can fly several thousand kilometres and don’t get lost."
+  },
+  {
+   "question_id": "Q:F6E7E3A83AA0",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S023",
+   "start_ms": 108880,
+   "end_ms": 114860,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B2",
+   "answer_text": "They can also fly at speeds of over 100 km per hour."
+  },
+  {
+   "question_id": "Q:CE35250D0A4E",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S024",
+   "start_ms": 115360,
+   "end_ms": 118080,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B2",
+   "answer_text": "That’s as fast as my dad’s car!"
+  },
+  {
+   "question_id": "Q:559940E9C950",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S025",
+   "start_ms": 119240,
+   "end_ms": 123180,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B3",
+   "answer_text": "Well, pigeons aren’t boring or scary."
+  },
+  {
+   "question_id": "Q:2B47D59F45C3",
+   "unit_code": "Unit 6",
+   "audio_asset_id": "FLTRP-EN-7A-2022CUR:AU42",
+   "segment_id": "AR:AU42:S026",
+   "start_ms": 123520,
+   "end_ms": 128440,
+   "text_resource_id": "FLTRP-EN-7A-2022CUR:P102:B3",
+   "answer_text": "They are AMAZING – I just didn’t know enough about them!"
+  }
+ ]
+}

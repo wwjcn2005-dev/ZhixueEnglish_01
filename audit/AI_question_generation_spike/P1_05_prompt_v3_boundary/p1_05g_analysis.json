@@ -1,0 +1,497 @@
+{
+ "stage": "P1-05-G",
+ "mode": "read_only_analysis",
+ "ai_calls": 1,
+ "prompt_version": "P1-05-v3",
+ "sample": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+ "source_sha256": {
+  "p1_05g_parsed": "0DA8692A6EE5549DFC0FD2344BDFE2AA8AA5ACC1BAD72BF17D6BF6DC7B78784F",
+  "context": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5"
+ },
+ "p1_05g_questions": [
+  {
+   "index": 1,
+   "type": "fill",
+   "question": "I play the electric ___ in the school band.",
+   "options": [],
+   "answer": "guitar",
+   "blocks": [
+    "B10"
+   ],
+   "vocab_hit": [
+    "guitar"
+   ],
+   "bold_hit": [
+    "guitar"
+   ],
+   "out_of_scope": [],
+   "answer_vocab": "guitar",
+   "answer_bold": true,
+   "unique": true,
+   "verbatim_context": true,
+   "recombined": false,
+   "textbook_copy": false,
+   "value": "MEDIUM",
+   "learning_point": "electric guitar（BOLD 核心词搭配）",
+   "note": "教材原句挖空；答案来自词汇表 BOLD 词"
+  },
+  {
+   "index": 2,
+   "type": "fill",
+   "question": "The ___ of Grandpa’s erhu cuts in.",
+   "options": [],
+   "answer": "sound",
+   "blocks": [
+    "B11"
+   ],
+   "vocab_hit": [
+    "sound"
+   ],
+   "bold_hit": [
+    "sound"
+   ],
+   "out_of_scope": [],
+   "answer_vocab": "sound",
+   "answer_bold": true,
+   "unique": true,
+   "verbatim_context": true,
+   "recombined": false,
+   "textbook_copy": false,
+   "value": "MEDIUM",
+   "learning_point": "sound（BOLD）+ 教材 a5 语法聚焦例句 the sound of … cuts in",
+   "note": "教材原句挖空；对应教材明确聚焦的语言点"
+  },
+  {
+   "index": 3,
+   "type": "fill",
+   "question": "But it’s a ___ kind of music.",
+   "options": [],
+   "answer": "different",
+   "blocks": [
+    "B12"
+   ],
+   "vocab_hit": [
+    "different"
+   ],
+   "bold_hit": [
+    "different"
+   ],
+   "out_of_scope": [],
+   "answer_vocab": "different",
+   "answer_bold": true,
+   "unique": false,
+   "verbatim_context": true,
+   "recombined": false,
+   "textbook_copy": false,
+   "value": "MEDIUM",
+   "learning_point": "different（BOLD）",
+   "note": "唯一性风险：traditional 同为 BOLD 词，'a traditional kind of music' 在语言上也成立"
+  },
+  {
+   "index": 4,
+   "type": "fill",
+   "question": "After a week’s ___, we are on the stage.",
+   "options": [],
+   "answer": "practice",
+   "blocks": [
+    "B3"
+   ],
+   "vocab_hit": [
+    "practice"
+   ],
+   "bold_hit": [
+    "practice"
+   ],
+   "out_of_scope": [],
+   "answer_vocab": "practice",
+   "answer_bold": true,
+   "unique": true,
+   "verbatim_context": true,
+   "recombined": false,
+   "textbook_copy": false,
+   "value": "MEDIUM",
+   "learning_point": "practice（BOLD）",
+   "note": "教材原句挖空；与 P1-05-F Q5 同答案同 block"
+  },
+  {
+   "index": 5,
+   "type": "vocab_choice",
+   "question": "I ___ to take part in the school art festival with Grandpa.",
+   "options": [
+    "decide",
+    "practice",
+    "enjoy"
+   ],
+   "answer": "decide",
+   "blocks": [
+    "B3"
+   ],
+   "vocab_hit": [
+    "decide"
+   ],
+   "bold_hit": [
+    "decide"
+   ],
+   "out_of_scope": [],
+   "answer_vocab": "decide",
+   "answer_bold": true,
+   "unique": true,
+   "verbatim_context": false,
+   "recombined": true,
+   "textbook_copy": false,
+   "value": "MEDIUM",
+   "learning_point": "decide to do（BOLD + 核心结构）",
+   "note": "语境被重组（in it → the school art festival）；干扰项 decide/practice/enjoy 全为 BOLD 词；与 P1-05-D Q7 同答案同 block"
+  },
+  {
+   "index": 6,
+   "type": "reading_choice",
+   "question": "What does Grandpa like doing in the park with his friends?",
+   "options": [
+    "Playing the erhu and singing Beijing opera",
+    "Playing the electric guitar in the school band",
+    "Writing songs and sharing them online"
+   ],
+   "answer": "Playing the erhu and singing Beijing opera",
+   "blocks": [
+    "B12"
+   ],
+   "vocab_hit": [],
+   "bold_hit": [],
+   "out_of_scope": [
+    "doing",
+    "sharing",
+    "writing"
+   ],
+   "answer_vocab": null,
+   "answer_bold": false,
+   "unique": true,
+   "verbatim_context": false,
+   "recombined": true,
+   "textbook_copy": false,
+   "value": "MEDIUM",
+   "learning_point": "课文重要事实（爷爷在公园拉二胡 + 一起唱京剧）",
+   "note": "把 block B12 的两个事实合并成一道理解题；三个选项全部来自课文"
+  },
+  {
+   "index": 7,
+   "type": "reading_choice",
+   "question": "What do the writer and Grandpa do at the school art festival?",
+   "options": [
+    "They fire up their instruments",
+    "They write songs and share them online",
+    "They sing Beijing opera in the park"
+   ],
+   "answer": "They fire up their instruments",
+   "blocks": [
+    "B3"
+   ],
+   "vocab_hit": [
+    "instrument"
+   ],
+   "bold_hit": [
+    "instrument"
+   ],
+   "out_of_scope": [],
+   "answer_vocab": "instrument",
+   "answer_bold": true,
+   "unique": true,
+   "verbatim_context": false,
+   "recombined": true,
+   "textbook_copy": false,
+   "value": "MEDIUM",
+   "learning_point": "fire up our instruments（重点表达，含 BOLD 词 instrument）",
+   "note": "与教材 a4 图表考同一句，但题型与考法不同；三个选项全部来自课文"
+  },
+  {
+   "index": 8,
+   "type": "reading_judge",
+   "question": "Grandpa gives me a big smile, and I smile back.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answer": "True",
+   "blocks": [
+    "B5"
+   ],
+   "vocab_hit": [],
+   "bold_hit": [],
+   "out_of_scope": [],
+   "answer_vocab": null,
+   "answer_bold": false,
+   "unique": true,
+   "verbatim_context": true,
+   "recombined": false,
+   "textbook_copy": false,
+   "value": "LOW",
+   "learning_point": "课文重要事实（相视而笑）",
+   "note": "题干就是教材原句本身，判 True 过于直接，学习增量低；与 P1-05-F Q4 同事实同题型"
+  }
+ ],
+ "summary_p1_05g": {
+  "total": 8,
+  "types": {
+   "fill": 4,
+   "vocab_choice": 1,
+   "reading_choice": 2,
+   "reading_judge": 1
+  },
+  "fill_count": 4,
+  "fill_vocab_answer": 4,
+  "fill_bold_answer": 4,
+  "vocab_answer": 6,
+  "bold_answer": 6,
+  "oos_questions": 1,
+  "oos_tokens": [
+   "doing",
+   "sharing",
+   "writing"
+  ],
+  "block_reuse": {
+   "B12": 2,
+   "B3": 3
+  },
+  "unique_answer": 7,
+  "material_legal": 8,
+  "real_out_of_textbook_tokens": [],
+  "recombined": 3,
+  "verbatim_blank": 4,
+  "textbook_copy": 0,
+  "low_value": 1,
+  "medium_value": 7,
+  "learning_point_hit": 8
+ },
+ "summary_p1_05f": {
+  "total": 7,
+  "types": {
+   "reading_choice": 3,
+   "reading_judge": 1,
+   "vocab_choice": 3
+  },
+  "fill_count": 0,
+  "fill_vocab_answer": 0,
+  "fill_bold_answer": 0,
+  "vocab_answer": 4,
+  "bold_answer": 4,
+  "oos_questions": 6,
+  "oos_tokens": [
+   "alone",
+   "bands",
+   "guitars",
+   "performance",
+   "piano",
+   "sentence",
+   "stages",
+   "violin",
+   "word"
+  ],
+  "block_reuse": {
+   "B3": 3
+  },
+  "unique_answer": 7,
+  "recombined": 6,
+  "verbatim_blank": 3,
+  "textbook_copy": 1,
+  "low_value": 1,
+  "medium_value": 6
+ },
+ "summary_p1_05d": {
+  "total": 10,
+  "types": {
+   "fill": 4,
+   "vocab_choice": 3,
+   "reading_choice": 3
+  },
+  "fill_count": 4,
+  "fill_vocab_answer": 1,
+  "fill_bold_answer": 0,
+  "vocab_answer": 5,
+  "bold_answer": 4,
+  "oos_questions": 2,
+  "oos_tokens": [
+   "claps",
+   "dances",
+   "home",
+   "sings"
+  ],
+  "block_reuse": {
+   "B10": 2,
+   "B12": 2,
+   "B3": 3
+  },
+  "unique_answer": 6,
+  "recombined": 5,
+  "verbatim_blank": 7,
+  "textbook_copy": 1,
+  "low_value": 4,
+  "medium_value": 6
+ },
+ "comparison": {
+  "题量": {
+   "D": 10,
+   "F": 7,
+   "G": 8
+  },
+  "fill 数量": {
+   "D": 4,
+   "F": 0,
+   "G": 4
+  },
+  "fill 词汇表答案": {
+   "D": "1/4",
+   "F": "—（无 fill）",
+   "G": "4/4"
+  },
+  "fill BOLD 答案": {
+   "D": "0/4",
+   "F": "—（无 fill）",
+   "G": "4/4"
+  },
+  "答案唯一": {
+   "D": "6/10",
+   "F": "7/7",
+   "G": "7/8"
+  },
+  "教材外词汇题数": {
+   "D": "2/10",
+   "F": "6/7",
+   "G": "1/8"
+  },
+  "教材外词汇 token": {
+   "D": [
+    "claps",
+    "dances",
+    "home",
+    "sings"
+   ],
+   "F": [
+    "alone",
+    "bands",
+    "guitars",
+    "performance",
+    "piano",
+    "sentence",
+    "stages",
+    "violin",
+    "word"
+   ],
+   "G": [
+    "doing",
+    "sharing",
+    "writing"
+   ]
+  },
+  "真正教材外 token（剔除词形变化假阳性）": {
+   "D": [
+    "claps",
+    "dances",
+    "home",
+    "sings"
+   ],
+   "F": [
+    "alone",
+    "bands",
+    "guitars",
+    "performance",
+    "piano",
+    "sentence",
+    "stages",
+    "violin",
+    "word"
+   ],
+   "G": []
+  },
+  "真正重新组合": {
+   "D": "5/10",
+   "F": "6/7",
+   "G": "3/8"
+  },
+  "原句机械挖空": {
+   "D": "7/10",
+   "F": "3/7",
+   "G": "4/8"
+  },
+  "教材原题复现": {
+   "D": 1,
+   "F": 1,
+   "G": 0
+  },
+  "低价值题": {
+   "D": 4,
+   "F": 1,
+   "G": 1
+  }
+ },
+ "cross_round_duplicates": [
+  {
+   "g": "G-Q2",
+   "ref": "P1-05-F-Q7",
+   "answer": "sound",
+   "block": [
+    "FLTRP-EN-7A-2022CUR:P37:B11"
+   ]
+  },
+  {
+   "g": "G-Q4",
+   "ref": "P1-05-F-Q5",
+   "answer": "practice",
+   "block": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ]
+  },
+  {
+   "g": "G-Q5",
+   "ref": "P1-05-D-Q7",
+   "answer": "decide",
+   "block": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ]
+  },
+  {
+   "g": "G-Q8",
+   "ref": "P1-05-F-Q4",
+   "answer": "True",
+   "block": [
+    "FLTRP-EN-7A-2022CUR:P38:B5"
+   ]
+  }
+ ],
+ "answers": {
+  "A_fill_restored_without_mechanical_problem": {
+   "verdict": "部分恢复：词汇锚定做到了，语境重组没有做到",
+   "evidence": [
+    "fill 从 F 的 0 道恢复到 4 道；4/4 答案来自 Unit 词汇表且 4/4 是 BOLD 重点词（P1-05-D 为 1/4 词表、0/4 BOLD）",
+    "但 4/4 的填空语境都是教材原句直接挖空（verbatim_context=True），即“把教材原句挖掉一个词”这一形态仍然存在；与 D 的差别在于挖的是 BOLD 重点词，而不是从正文随手挑普通词",
+    "Q3「But it's a ___ kind of music.」答案为 different，但 traditional 同为 BOLD 词且语言上说得通 → 唯一性仍有风险（1/8）"
+   ]
+  },
+  "B_material_boundary_reduced_outside_words": {
+   "verdict": "是，明显减少",
+   "evidence": [
+    "教材外词汇：D 2/10（4 个 token）→ F 6/7（9 个 token）→ G 1/8（3 个 token）",
+    "G 的 3 个 token（doing / sharing / writing）都是词表内词（do / share / write）的 -ing 形式，属检查器不做词形还原导致的假阳性；**真正教材外的词汇 = 0**",
+    "F 出现的 violin / piano / alone / performance 在 G 中全部消失",
+    "F 的元语言题干（Choose the best word to complete the sentence:）也未再出现，8 道题的题干都是直接表述"
+   ]
+  },
+  "C_core_rules_ready_as_batch_basis": {
+   "verdict": "可以作为基础规则，但有两处需要收口",
+   "support": [
+    "教材学习点命中 8/8；答案唯一 7/8；真正教材外词汇 0；教材原题复现 0；fill 恢复正常且 4/4 词汇锚定"
+   ],
+   "open_items": [
+    "① fill 的语境仍是原句照搬（4/4），与“用教材重点词做语境练习”的意图只对上了一半",
+    "② fill 的同义替换风险没有结构性解决（Q3 的 different/traditional 都说得通）",
+    "③ 跨轮重复明显：8 道题中 4 道与 P1-05-D/F 答案与 block 完全相同。这属于题库层去重（P1-02 的 question_fingerprint 已具备该能力），本轮按指令未增加新规则"
+   ],
+   "note": "以上都是实现手段的收口，不是方向问题。"
+  }
+ },
+ "not_done": [
+  "未写入 question_library.db",
+  "未运行正式 validator 流程（仅只读复用其词汇边界函数）",
+  "未做人工审核评分",
+  "未启动多 Section 实验"
+ ]
+}

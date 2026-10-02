@@ -1,0 +1,92 @@
+{
+  "stage": "P1-09-E",
+  "ai_calls": 0,
+  "summary": {
+    "vocabulary_items": 288,
+    "vocabulary_with_pos": 263,
+    "book_distinct_words": 2063,
+    "book_words_with_pos": 263,
+    "book_pos_known_share": 0.127,
+    "pos_source_gap": "正式数据里只有教材词表（288 条）带词性；教材正文中其余 87% 的词没有词性。",
+    "fixtures_by_question_type": {
+      "fill": 5,
+      "reading_judge": 1,
+      "vocab_choice": 4,
+      "reading_choice": 5
+    }
+  },
+  "cases": {
+    "FIX-C1": {
+      "answer": "friends",
+      "designed_alternative": "students",
+      "answer_pos_in_vocabulary": null,
+      "P1_vocabulary_BOLD_pos": {
+        "pool_size": 0,
+        "covers_alt": false,
+        "sample": []
+      },
+      "P2_same_slot": {
+        "pool_size": 3,
+        "covers_alt": false,
+        "sample": [
+          "friends",
+          "bike",
+          "family"
+        ]
+      },
+      "P3_section_text": {
+        "pool_size": 236,
+        "covers_alt": true,
+        "pos_known_share": 0.106
+      },
+      "P4_book_text": {
+        "pool_size": 2062,
+        "covers_alt": true,
+        "pos_known_share": 0.128
+      }
+    },
+    "FIX-C2": {
+      "answer": "sentence",
+      "designed_alternative": "word",
+      "answer_pos_in_vocabulary": "n",
+      "P1_vocabulary_BOLD_pos": {
+        "pool_size": 117,
+        "covers_alt": false,
+        "sample": [
+          "actress",
+          "adult",
+          "advice",
+          "area",
+          "balloon",
+          "bamboo",
+          "band",
+          "biology",
+          "biscuit",
+          "break",
+          "care",
+          "challenge",
+          "character",
+          "christmas",
+          "classmate"
+        ]
+      },
+      "P2_same_slot": {
+        "pool_size": 1,
+        "covers_alt": false,
+        "sample": [
+          "sentence"
+        ]
+      },
+      "P3_section_text": {
+        "pool_size": 225,
+        "covers_alt": true,
+        "pos_known_share": 0.089
+      },
+      "P4_book_text": {
+        "pool_size": 2062,
+        "covers_alt": true,
+        "pos_known_share": 0.127
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+[
+ {
+  "tag": "S1",
+  "i": 1,
+  "type": "fill",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "sound"
+ },
+ {
+  "tag": "S1",
+  "i": 2,
+  "type": "fill",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "enjoy"
+ },
+ {
+  "tag": "S1",
+  "i": 3,
+  "type": "vocab_choice",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "band"
+ },
+ {
+  "tag": "S1",
+  "i": 4,
+  "type": "vocab_choice",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "different"
+ },
+ {
+  "tag": "S1",
+  "i": 5,
+  "type": "reading_choice",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "in the park"
+ },
+ {
+  "tag": "S1",
+  "i": 6,
+  "type": "reading_choice",
+  "pass_": true,
+  "failed": [],
+  "support": "VERIFIABLE_REPHRASE",
+  "answer": "fire up instruments"
+ },
+ {
+  "tag": "S2",
+  "i": 1,
+  "type": "fill",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "hers"
+ },
+ {
+  "tag": "S2",
+  "i": 2,
+  "type": "vocab_choice",
+  "pass_": false,
+  "failed": [
+   "5_vocab_scope"
+  ],
+  "support": "EXACT",
+  "answer": "mistake"
+ },
+ {
+  "tag": "S2",
+  "i": 3,
+  "type": "fill",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "mind"
+ },
+ {
+  "tag": "S2",
+  "i": 4,
+  "type": "fill",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "In fact"
+ },
+ {
+  "tag": "S2",
+  "i": 5,
+  "type": "vocab_choice",
+  "pass_": false,
+  "failed": [
+   "5_vocab_scope"
+  ],
+  "support": "EXACT",
+  "answer": "sentence"
+ },
+ {
+  "tag": "S3",
+  "i": 1,
+  "type": "vocab_choice",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "root"
+ },
+ {
+  "tag": "S3",
+  "i": 2,
+  "type": "fill",
+  "pass_": false,
+  "failed": [
+   "4_answer_support"
+  ],
+  "support": "UNSUPPORTED",
+  "answer": "leaf"
+ },
+ {
+  "tag": "S3",
+  "i": 3,
+  "type": "fill",
+  "pass_": false,
+  "failed": [
+   "4_answer_support"
+  ],
+  "support": "UNSUPPORTED",
+  "answer": "rise"
+ },
+ {
+  "tag": "S3",
+  "i": 4,
+  "type": "reading_choice",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "their own rain"
+ },
+ {
+  "tag": "S3",
+  "i": 5,
+  "type": "reading_judge",
+  "pass_": false,
+  "failed": [
+   "4_answer_support"
+  ],
+  "support": "UNSUPPORTED",
+  "answer": "True"
+ },
+ {
+  "tag": "S3",
+  "i": 6,
+  "type": "reading_judge",
+  "pass_": false,
+  "failed": [
+   "4_answer_support"
+  ],
+  "support": "UNSUPPORTED",
+  "answer": "False"
+ },
+ {
+  "tag": "S4",
+  "i": 1,
+  "type": "fill",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "ready"
+ },
+ {
+  "tag": "S4",
+  "i": 2,
+  "type": "fill",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "eraser"
+ },
+ {
+  "tag": "S4",
+  "i": 3,
+  "type": "fill",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "grey"
+ },
+ {
+  "tag": "S4",
+  "i": 4,
+  "type": "vocab_choice",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "forget"
+ },
+ {
+  "tag": "S4",
+  "i": 5,
+  "type": "reading_choice",
+  "pass_": true,
+  "failed": [],
+  "support": "EXACT",
+  "answer": "school uniform"
+ }
+]

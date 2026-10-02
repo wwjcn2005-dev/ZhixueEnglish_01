@@ -1,0 +1,143 @@
+{
+  "phase": "P2-6-D-2",
+  "title": "Learning Object → /review 最小接入只读审计",
+  "status": "PASS_WITH_GAPS",
+  "mode": "audit_only",
+  "audited_at": "2026-09-13",
+  "source_documents": [
+    "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+    "audit/P2-6-C-4_full_chain_design_review.md",
+    "audit/P2-6-C-4-A_audio_text_mapping_audit.md",
+    "audit/P2-6-D-0_implementation_readiness_audit.md",
+    "audit/P2-6-D-1_learning_object_implementation.md",
+    "learning/learning_object_service.py",
+    "learning/test_p2_6d_learning_object.py",
+    "web/ui.py",
+    "web/flow.py",
+    "web/app.py"
+  ],
+  "current_review_architecture": {
+    "route_get": "web/app.py:173 -> self._review()",
+    "route_post_named": "web/app.py:201 -> self._review(form)",
+    "data_entry": "web/app.py:626 def _review()",
+    "data_functions": ["flow.resolve_learner", "flow.need_relearn",
+                       "flow.textbook_review_suggestions", "flow.learner_name"],
+    "ui_entry": "web/ui.py:881 def review_page(ctx)",
+    "existing_blocks": ["需要再学（池分组：上次忘了 / 上次有点模糊 + 学习这个词 表单）",
+                        "教材建议（P2-6-B，item 级，去看看 普通链接）"],
+    "existing_style_components": [".card", ".item", ".hint", ".meta", "<a>"],
+    "auto_behaviors": "none（无自动跳转/播放/执行）",
+    "depends_on_fixed_item_id": true,
+    "need_relearn_callers": 1
+  },
+  "d1_service_interface": {
+    "recommended_entry": "learning_object_service.needs_attention(conn, learner_id, contentpack_path)",
+    "returns": "LO 列表（diagnosis + mastery + suggestion）",
+    "read_only": true,
+    "db_access": "SELECT only",
+    "mutates_state": false,
+    "ai": false,
+    "exception_risk": "内部未包裹 try（lo_suggestion 可能上抛）→ D-2 在 flow 层包裹",
+    "supporting_entry": "mapping_coverage()（仅用于诚实展示覆盖率）"
+  },
+  "minimal_integration_point": "现有 review 数据 + needs_attention() → review_page 追加一个「教材学习建议」区块",
+  "flow_change_required": true,
+  "flow_change_reason": "UI 不得取数/计算；现有 flow 仅提供 item 级函数",
+  "ui_change_required": true,
+  "ui_change_scope": "新增 1 个展示区块（复用现有 class 与 <a>，不新增 CSS/JS）",
+  "app_change_required": true,
+  "app_change_scope": "_review() +2 行传参",
+  "route_change_required": false,
+  "db_change_required": false,
+  "vocabulary_revisit": {
+    "relationship": "互补：词表区=最近一次判断事实（item 级）；LO 区=学习对象级诊断 + 教材建议",
+    "duplicate_display_risk": true,
+    "currently_triggered": false,
+    "keep_existing_untouched": true,
+    "independent_section_ok": true,
+    "conflict": "无逻辑冲突；存在观感重复风险（G1）",
+    "minimal_handling": "先并置 + 层级文案；真机验证后按需最小去重"
+  },
+  "ui_auto_execution_check": {
+    "auto_jump": false, "auto_play": false, "auto_enter_practice": false,
+    "auto_execute_suggestion": false, "auto_next_object": false,
+    "auto_schedule": false, "gamification": false,
+    "command_language_present": false,
+    "forbidden_wording": ["必须", "今日任务", "下一步必须学习", "系统为你安排", "推荐任务"]
+  },
+  "semantic_boundary": {
+    "direction": "learning_object_service → flow → ui",
+    "ui_recomputes_evidence": false,
+    "ui_recomputes_mastery": false,
+    "ui_recomputes_diagnosis": false,
+    "ui_imports_learning_services": false,
+    "display_text_taken_verbatim": true
+  },
+  "review_tests_current": {
+    "count": 6,
+    "files": ["web/test_vocabulary_flow.py", "web/test_web_app.py"],
+    "must_keep_passing": true,
+    "gap": "P2-6-B 的教材建议区块目前无 UI 级测试"
+  },
+  "d2_min_modified_files": ["web/flow.py", "web/ui.py", "web/app.py"],
+  "d2_min_new_tests": 6,
+  "d2_optional_new_tests": 2,
+  "blocking_issues": [],
+  "deferrable_gaps": [
+    {"id": "G1", "issue": "同一词的 item 级池展示与 LO 级建议可能重复",
+     "handling": "先并置 + 文案区分；真机验证后按需最小去重"},
+    {"id": "G2", "issue": "needs_attention() 未包裹异常",
+     "handling": "D-2 在 flow 层 try 包裹（失败返回空）"},
+    {"id": "G3", "issue": "P2-6-B 教材建议区块缺 UI 测试",
+     "handling": "D-2 新增区块时一并覆盖"},
+    {"id": "G4", "issue": "正式库当前 needs_attention()=0，新区域为空",
+     "handling": "D-2 必须实现空态文案，不伪造数据"}
+  ],
+  "protection_baseline": {
+    "learning_db_sha256": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "learning_db_mtime": "2026-09-12T23:15:13",
+    "learning_db_tables": 7,
+    "learning_record_rows": 20,
+    "mastery_state_rows": 7,
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+    "spec_v12_sha256": "6D3595CF7D83879ADF3E6452C5E5A74C5300E89265DE1B4F2FA8A1EBDBB861A9",
+    "learning_object_service_bytes": 21274,
+    "web_ui_sha256_16": "2FCF2FDE71D6DDB3",
+    "web_flow_sha256_16": "0534A2315299B738",
+    "modified_files": [],
+    "created_files": ["audit/P2-6-D-2_review_integration_audit.md",
+                      "audit/P2-6-D-2_review_integration_audit.json"],
+    "ai_calls": 0
+  },
+  "answers_15": {
+    "q1_review_route": "web/app.py:173（GET）与 :201（POST 带 name）",
+    "q2_review_data_entry": "web/app.py:626 _review()（flow.need_relearn / flow.textbook_review_suggestions / flow.learner_name）",
+    "q3_review_ui": "web/ui.py:881 review_page(ctx)",
+    "q4_d1_best_call_site": "flow 层新增函数内调用 learning_object_service.needs_attention()",
+    "q5_flow_change_needed": "YES（+1 只读函数）",
+    "q6_ui_only_enough": "NO（ui 不得取数/计算；app 需 +2 行传参）",
+    "q7_new_route_needed": "NO",
+    "q8_new_db_structure_needed": "NO",
+    "q9_learning_db_change_needed": "NO",
+    "q10_revisit_coexistence": "并置展示 + 层级文案；保持现有 revisit 不动",
+    "q11_duplicate_display_risk": "YES（存在；当前未触发；先并置，按需最小去重）",
+    "q12_auto_execution_risk_now": "NO（纯链接与表单）",
+    "q13_d2_min_files": ["web/flow.py", "web/ui.py", "web/app.py"],
+    "q14_d2_min_new_tests": 6,
+    "q15_d2_blocking": "NO（4 项非阻塞 GAP）"
+  },
+  "final_recommendation": {
+    "verdict": "PASS WITH GAPS",
+    "can_enter_d2": true,
+    "entry_conditions": [
+      "flow 层包裹 needs_attention() 异常并返回空态",
+      "文案使用『教材学习建议』，禁用命令式措辞",
+      "UI 只渲染 D-1 输出（display_text 原样），不重算 evidence/mastery/diagnosis",
+      "不新增路由/数据库结构/CSS 框架/JS 自动行为",
+      "空态文案必须实现（当前正式库为新区域空态）"
+    ],
+    "stopped": "审计完成即停止；未实施 D-2，未修改任何项目文件"
+  }
+}

@@ -1,0 +1,139 @@
+{
+ "environment": {
+  "python": "Python 3.12.10",
+  "modules": {
+   "wave": true,
+   "audioop": true,
+   "numpy": false,
+   "pydub": false,
+   "soundfile": false,
+   "librosa": false,
+   "whisper": false,
+   "faster_whisper": false,
+   "vosk": false,
+   "speech_recognition": false,
+   "torch": false,
+   "ctranslate2": false
+  },
+  "binaries": {
+   "ffmpeg": false,
+   "ffprobe": false,
+   "sox": false,
+   "gentle": false,
+   "mfa": false
+  },
+  "libreoffice": false,
+  "official_audio_dir": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材",
+  "official_audio_count": 54,
+  "mp3_decoder": "builder/mp3_to_wav.ps1 (WinRT, offline)",
+  "mp3_encoder": null
+ },
+ "samples": [
+  {
+   "sample": "S1_word_list_control",
+   "category": "对照样（词表）",
+   "audio": "AU48",
+   "textbook_original": "ready",
+   "textbook_with_blanks": null,
+   "recovered_sentence": "ready",
+   "recovery_method": "existing_resource_mapping(derived manifest)",
+   "confidence": "medium（派生资源，非官方独立单词音频）",
+   "start_ms": 5550,
+   "end_ms": 6240,
+   "matching_method": "existing_resource_mapping",
+   "status": "CANDIDATE",
+   "slice_file": "sample_01_word_01.wav",
+   "slice_check": {
+    "slice_runs": 1,
+    "peak_db": -24.9,
+    "head_starts_at_ms": 0,
+    "tail_ends_at_ms": 19210,
+    "head_ok": true,
+    "tail_ok": true,
+    "slice_total_ms": 690
+   }
+  },
+  {
+   "sample": "S2_single_sentence",
+   "category": "A/C 完整短句（连续句首句）",
+   "audio": "AU06",
+   "textbook_original": "Hello everyone! My name is Zhu Xiaomeng. I’m thirteen years old. My birthday is in May. I love sports very much. I like running, playing football and swimming. I’m a bit nervous now, but I’m also happy to meet you. I want to make friends with you all!",
+   "textbook_with_blanks": null,
+   "recovered_sentence": "Hello everyone!",
+   "recovery_method": "textbook_complete_text（P15:B3 无空位）",
+   "confidence": "medium",
+   "start_ms": 560,
+   "end_ms": 2090,
+   "matching_method": "order_position（第 1 个语音段 = 教材第 1 句）",
+   "status": "CANDIDATE",
+   "slice_file": "sample_02_sentence_01.wav",
+   "slice_check": {
+    "slice_runs": 2,
+    "peak_db": null,
+    "head_starts_at_ms": 0,
+    "tail_ends_at_ms": 1530,
+    "head_ok": true,
+    "tail_ok": true,
+    "slice_total_ms": 1530
+   },
+   "note": "句级对应依靠顺序位置，未经转写/人工确认 → 不得升级 CONFIRMED"
+  },
+  {
+   "sample": "S3_fill_single_blank",
+   "category": "A 单个填空句",
+   "audio": "AU02",
+   "textbook_original": "oneseventwoeightthreefourfivesix nineteneleventwelve Mum:\t How about you, Li Meng?Li Meng:\t \u0007I am ready, too. Look. I have 2  pens. I also have 1  pencils and 4  ruler. They are all in my pencil case. 3  eraser and Know more about numbers and articles ⇢ p131 4",
+   "textbook_with_blanks": true,
+   "recovered_sentence": null,
+   "recovery_method": null,
+   "matching_method": null,
+   "status": "NEEDS_REVIEW",
+   "reason": "教材原题为填空（a/an 或数字），完整句只在音频里；无 ASR 无法恢复",
+   "speech_runs": 16,
+   "duration_ms": 33541
+  },
+  {
+   "sample": "S4_fill_multi_blank",
+   "category": "B 一句多空 / E 长音频（175s）",
+   "audio": "AU12",
+   "textbook_original": "Wang Peng Li Lin They have more subjects and more homework. It’s 2  down your tasks and the time for each task. Every day, 1  to plan their time. There are so many tasks. A project may take weeks. Turn a big task into 5  on them day by day. Describing problems  Sometimes, we need to describe our pro",
+   "textbook_with_blanks": true,
+   "recovered_sentence": null,
+   "recovery_method": null,
+   "matching_method": null,
+   "status": "NEEDS_REVIEW",
+   "reason": "教材原题含作答空位；完整句不在教材事实内，无法唯一恢复",
+   "speech_runs": 60,
+   "duration_ms": 175020
+  },
+  {
+   "sample": "S5_dialogue_artifacts",
+   "category": "D 多人对话",
+   "audio": "AU13",
+   "textbook_original": "Dad Mia, how do you feel about your first day in junior high tomorrow? Mia Don’t worry. We’ve got something for you! Look! Well, I’m a little nervous. Mum MiaA paper boat? MiaA paper boat? Dad Yes, and it’s also a letter from Mum and me. We want to share some thoughts with you. Mia Oh, thank you!",
+   "textbook_with_blanks": null,
+   "recovered_sentence": null,
+   "recovery_method": null,
+   "matching_method": null,
+   "status": "NEEDS_REVIEW",
+   "reason": "对话文本存在提取瑕疵（重复片段、说话人标签粘连），句级对应不可靠",
+   "speech_runs": 42,
+   "duration_ms": 101381
+  }
+ ],
+ "statistics": {
+  "samples_total": 5,
+  "recovered_ok": 2,
+  "recovered_fail": 3,
+  "unique_located": 2,
+  "not_located": 3,
+  "slices_created": 2,
+  "slices_failed": 3,
+  "CONFIRMED": 0,
+  "CANDIDATE": 2,
+  "NEEDS_REVIEW": 3,
+  "recovery_rate": 0.4,
+  "unique_locate_rate": 0.4,
+  "usable_slice_rate": 0.4
+ }
+}

@@ -1,0 +1,331 @@
+{
+ "stage": "P1-08-B",
+ "mode": "evidence_assembly_fix",
+ "ai_calls": 0,
+ "defect": {
+  "location": "AI 生成侧的证据组装实现（实验脚本）",
+  "files_with_defect": [
+   "audit/AI_question_generation_spike/P1_05_real_validation/run_p1_05b.py::build_context（page2sec 仅由 activity 构造）",
+   "audit/AI_question_generation_spike/P1_05_sample_design/build_sample_matrix.py（同一模式，用于指标统计）"
+  ],
+  "files_not_modified": true,
+  "formal_layer_status": "web/content.py::unit_text_sections 早已使用正确规则（section 起始页 + 单元页范围），未受本缺陷影响"
+ },
+ "fix": {
+  "new_module": "audit/AI_question_generation_spike/P1_08_B_evidence_assembly_fix/evidence_assembly.py",
+  "rule": "Section 页码范围（unit 内 pdf_page_start 排序推出）+ activity 页，按 block_id 去重",
+  "changed_existing_files": [],
+  "rationale": "缺陷实现位于已完成轮的冻结实验脚本中，改写历史产物会使既有报告不可复现；因此以新建规范模块的方式固化正确机制，并与正式层规则对齐。本阶段未修改任何既有代码文件。"
+ },
+ "recon": {
+  "sections_total": 46,
+  "sections_with_page_diff": 35,
+  "defect_lost_blocks_old_rule": 2217,
+  "outside_any_section_blocks": 194,
+  "case1": {
+   "page_id": "FLTRP-EN-7A-2022CUR:P22",
+   "pdf_page": 22,
+   "textbook_page": 17,
+   "page_role": "content",
+   "text_chars": 659,
+   "review_status": "EXTRACTED",
+   "activity_count": 0,
+   "activities": [],
+   "content_block_count": 10,
+   "blocks": [
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B0",
+     "kind": "dialogue",
+     "text": "1\t Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.” "
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B1",
+     "kind": "exercise_item",
+     "text": "2\t We start to write. I write down the first word  and stop."
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B2",
+     "kind": "dialogue",
+     "text": "3\t “That’s not right. But is it OK to point out the mistake? Is that polite, in the first lesson?” Questions j"
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B3",
+     "kind": "dialogue",
+     "text": "4\t “Why aren’t you writing, Wang Han?” "
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B4",
+     "kind": "exercise_item",
+     "text": "5\t I look up at Ms Chen. My eyes meet hers. My mouth feels dry. "
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B5",
+     "kind": "exercise_item",
+     "text": "6\t But then I think about the meaning of the sentence. I put up my hand. "
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B6",
+     "kind": "dialogue",
+     "text": "7\t “Ms Chen, there’s a mistake,” I say. “That sentence is from Confucius, not from Mencius.”"
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B7",
+     "kind": "dialogue",
+     "text": "8\t “Well done, Wang Han. In fact, this is my first lesson for all of you. You are now in junior high school. L"
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B8",
+     "kind": "dialogue",
+     "text": "to think more in your learning. Please always remember this.”"
+    },
+    {
+     "block_id": "FLTRP-EN-7A-2022CUR:P22:B9",
+     "kind": "exercise_item",
+     "text": "9\t That’s really an important lesson!"
+    }
+   ],
+   "old_attribution": [],
+   "new_attribution": [
+    "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS"
+   ]
+  }
+ },
+ "before_after": {
+  "lesson_units_totals": {
+   "blocks_old": 1265,
+   "blocks_new": 1638,
+   "blocks_added": 398
+  },
+  "empty_text_blocks_filtered_by_new_rule": 25,
+  "case1": {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "page_range": [
+    21,
+    25
+   ],
+   "pages_before": [
+    21,
+    23,
+    24,
+    25
+   ],
+   "pages_after": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "blocks_before": 55,
+   "blocks_after": 63,
+   "p22_blocks_before": 0,
+   "p22_blocks_after": 10,
+   "p22_block_ids_after": [
+    "FLTRP-EN-7A-2022CUR:P22:B0",
+    "FLTRP-EN-7A-2022CUR:P22:B1",
+    "FLTRP-EN-7A-2022CUR:P22:B2",
+    "FLTRP-EN-7A-2022CUR:P22:B3",
+    "FLTRP-EN-7A-2022CUR:P22:B4",
+    "FLTRP-EN-7A-2022CUR:P22:B5",
+    "FLTRP-EN-7A-2022CUR:P22:B6",
+    "FLTRP-EN-7A-2022CUR:P22:B7",
+    "FLTRP-EN-7A-2022CUR:P22:B8",
+    "FLTRP-EN-7A-2022CUR:P22:B9"
+   ],
+   "p22_activities": [],
+   "duplicate_blocks": 0,
+   "pages_without_activity": [
+    22
+   ]
+  },
+  "p1_06_fixture_impact": {
+   "S1": {
+    "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+    "context_blocks_before": 78,
+    "blocks_after": 78,
+    "blocks_added_by_fix": 0,
+    "added_pages": [],
+    "added_sample": [],
+    "fixture_blocks_all_present": true
+   },
+   "S2": {
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "context_blocks_before": 53,
+    "blocks_after": 63,
+    "blocks_added_by_fix": 10,
+    "added_pages": [
+     "P22"
+    ],
+    "added_sample": [
+     "FLTRP-EN-7A-2022CUR:P22:B0",
+     "FLTRP-EN-7A-2022CUR:P22:B1",
+     "FLTRP-EN-7A-2022CUR:P22:B2",
+     "FLTRP-EN-7A-2022CUR:P22:B3",
+     "FLTRP-EN-7A-2022CUR:P22:B4"
+    ],
+    "fixture_blocks_all_present": true
+   },
+   "S3": {
+    "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+    "context_blocks_before": 75,
+    "blocks_after": 82,
+    "blocks_added_by_fix": 7,
+    "added_pages": [
+     "P86"
+    ],
+    "added_sample": [
+     "FLTRP-EN-7A-2022CUR:P86:B0",
+     "FLTRP-EN-7A-2022CUR:P86:B1",
+     "FLTRP-EN-7A-2022CUR:P86:B2",
+     "FLTRP-EN-7A-2022CUR:P86:B3",
+     "FLTRP-EN-7A-2022CUR:P86:B4"
+    ],
+    "fixture_blocks_all_present": true
+   },
+   "S4": {
+    "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+    "context_blocks_before": 77,
+    "blocks_after": 77,
+    "blocks_added_by_fix": 0,
+    "added_pages": [],
+    "added_sample": [],
+    "fixture_blocks_all_present": true
+   }
+  }
+ },
+ "tests": {
+  "ran": 6,
+  "ok": true,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "cases": [
+   "A_case1_page_has_text_but_no_activity",
+   "B_page_has_activity_and_text_unchanged",
+   "C_same_block_not_duplicated",
+   "D_multi_page_section_order_preserved",
+   "E_activity_evidence_not_duplicated_by_page_text",
+   "case5_p1_06_fixture_regression"
+  ]
+ },
+ "formal_parity": {
+  "attribution_rule": "与 web/content.py::_section_bounds 完全一致（区间推导）",
+  "formal_blocks_subset_of_fixed_module": true,
+  "strict_mode_equals_formal_layer": true,
+  "note": "默认内容过滤比正式展示层更宽（含 sidebar_tip 等），以保证 AI 证据层“不丢正文”；strict_text_rule=True 时与正式层逐 block 一致。"
+ },
+ "remaining_defects_recorded_not_fixed": [
+  {
+   "id": "D1",
+   "detail": "不属于任何 Section 页码范围的页面（单元扉页与部分非正文页）的 block 仍不会被任何 Section 证据包含",
+   "count": 194
+  },
+  {
+   "id": "D2",
+   "detail": "P1-06 fixture（S2/S3）的 context 仍然保留旧逻辑产物；本阶段未回填（按纪律不修改既有实验产物）"
+  },
+  {
+   "id": "D3",
+   "detail": "部分页面 reading_order_status=NEED_REVIEW，阅读顺序本身仍待正式确认"
+  }
+ ],
+ "library_state": {
+  "questions": 21,
+  "pending_review": 21,
+  "active": 0,
+  "sha256": "F74CA83F7C8A98F2A4A2E672E7BA61ECC34CBFC2338AC10064BF18C0FFD1FD6A"
+ },
+ "protection": {
+  "question_library.db": {
+   "path": "structured\\ai\\question_library.db",
+   "sha256": "F74CA83F7C8A98F2A4A2E672E7BA61ECC34CBFC2338AC10064BF18C0FFD1FD6A",
+   "matches_baseline": true
+  },
+  "learning.db": {
+   "path": "structured\\learning\\learning.db",
+   "sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+   "matches_baseline": true
+  },
+  "contentpack": {
+   "path": "structured\\contentpack\\v5\\FLTRP-EN-7A-2022CUR.sqlite",
+   "sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39",
+   "matches_baseline": true
+  },
+  "validator_v2": {
+   "path": "audit\\AI_question_generation_spike\\20260917_1520_validator_fix\\validator_v2.py",
+   "sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+   "matches_baseline": true
+  },
+  "validator_v3": {
+   "path": "audit\\AI_question_generation_spike\\P1_04_rule_fixes\\validator_v3.py",
+   "sha256": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+   "matches_baseline": true
+  },
+  "P1-06_S1": {
+   "path": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S1_parsed.json",
+   "sha256": "D4520E288D7651B59B59C0F75F09FBE87E6B9AB0ACB9D2F900647E1210856BA3",
+   "matches_baseline": true
+  },
+  "P1-06_S2": {
+   "path": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S2_parsed.json",
+   "sha256": "4F705951CAF743BD62AD07C175C0EE06F491B4C4EE7B2F0D760E2372ADFAAA1E",
+   "matches_baseline": true
+  },
+  "P1-06_S3": {
+   "path": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S3_parsed.json",
+   "sha256": "4F9679CAFF393E6CD33D6FDC6C957563A852ECE1C569180C383F0EB55C7D08AC",
+   "matches_baseline": true
+  },
+  "P1-06_S4": {
+   "path": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S4_parsed.json",
+   "sha256": "5D1C21032B1C5F4CC23AACD2120EA297F6FF5776BBB36C18529A4FFF946E8B87",
+   "matches_baseline": true
+  },
+  "P1-07_candidate_decision": {
+   "path": "audit\\AI_question_generation_spike\\P1_07_library_ingest\\candidate_decision.json",
+   "sha256": "711D541E0E0E4FFE65CC7F7617A43AAE8AC27875EB968BB16FF3C732A47FD612",
+   "matches_baseline": true
+  },
+  "P1-07_ingest_result": {
+   "path": "audit\\AI_question_generation_spike\\P1_07_library_ingest\\ingest_result.json",
+   "sha256": "8DB59F33C901FC59F509042C93796DE9CA97AB27D6A2DDDF0369BB9A058C9C84",
+   "matches_baseline": true
+  },
+  "P1-05-B_script_run_p1_05b.py": {
+   "path": "audit\\AI_question_generation_spike\\P1_05_real_validation\\run_p1_05b.py",
+   "sha256": "D29D91CE26A95C8C8B15D9E002885DE2E49F7B34D20945130FA3340394A5BB6D",
+   "matches_baseline": true
+  },
+  "P1-05-A_script_build_sample_matrix.py": {
+   "path": "audit\\AI_question_generation_spike\\P1_05_sample_design\\build_sample_matrix.py",
+   "sha256": "0008C74AFF9EBA7E3869FA083500D2BAB58CB9B76CA62E9BA1D4B699ADA72890",
+   "matches_baseline": true
+  },
+  "web_content.py": {
+   "path": "web\\content.py",
+   "sha256": "BEE8E33B89BFBF3B669C4298C2D9BA8A085F3DF0B14A0D3FA51212E6C0566ACA",
+   "matches_baseline": true
+  },
+  "P1-08-A_spec": {
+   "path": "docs\\AI教材习题生成与题库入库流程规范_V1.0.md",
+   "sha256": "1A070BD6408A99A21B3D39099BCB0D493F15274A5F83903722772E1573676B98",
+   "matches_baseline": true
+  },
+  "V1.3": {
+   "path": "docs\\初中英语AI辅助学习系统最高指导原则与开发规范_V1.3.md",
+   "sha256": "3BF8C27F0A8ABA6B22D41618EB58A49F79DBEAFE9A779AC9F9DCBD9288843AE7",
+   "matches_baseline": true
+  },
+  "V2.0": {
+   "path": "docs\\初中英语AI辅助学习系统产品与UI架构总纲_V2.0.md",
+   "sha256": "BA3761EF270C26ADD4E982D98DFD4DA4A5BA5D62E9FBBB51B706F9A9759EA0C1",
+   "matches_baseline": true
+  },
+  "textbook PDF": {
+   "sha256": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+   "matches_baseline": true
+  }
+ },
+ "formal_assets_changed": false,
+ "conclusion": "P1-08-B_PASS"
+}

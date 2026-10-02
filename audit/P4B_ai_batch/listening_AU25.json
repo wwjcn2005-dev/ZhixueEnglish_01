@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 3\nSECTION: DEVELOPING_IDEAS\nACTIVITY_AUDIO: 25_Unit 3_Developing ideas _2 Listen again and complete the chart.mp3\nOFFICIAL AUDIO TRANSCRIPT SEGMENTS (id, time range, text):\n[ASR:AU25:001 0-1460ms] Activity 2\n[ASR:AU25:002 2000-5580ms] Listen again and complete the chart.\n[ASR:AU25:003 6620-12720ms] We all know problem children, but do you know problem parents?\n[ASR:AU25:004 13840-18640ms] Children sometimes call me to talk about their problem parents.\n[ASR:AU25:005 19620-23980ms] For example, Tina's mother is an actress at a park.\n[ASR:AU25:006 24800-27740ms] Every day she dresses up as a queen.\n[ASR:AU25:007 27740-37320ms] Cool, right? But Tina doesn't think so. Her mother often goes to pick her up in this dress.\n[ASR:AU25:008 38140-46460ms] Tina is not happy about this. My advice for her is have a good talk with her mother.\n\nWrite 2-3 multiple-choice listening questions about what is said in this audio.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What is the talk mainly about?\",\n      \"options\": [\n        \"Problem children\",\n        \"Problem parents\",\n        \"Actresses at parks\",\n        \"Tina's mother\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_segment_id\": \"ASR:AU25:003\",\n      \"evidence_quote\": \"We all know problem children, but do you know problem parents?\",\n      \"skill\": \"gist\"\n    },\n    {\n      \"stem\": \"What does Tina's mother do?\",\n      \"options\": [\n        \"She is a queen.\",\n        \"She is an actress at a park.\",\n        \"She is a teacher.\",\n        \"She is a police officer.\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_segment_id\": \"ASR:AU25:005\",\n      \"evidence_quote\": \"For example, Tina's mother is an actress at a park.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What is the speaker's advice for Tina?\",\n      \"options\": [\n        \"To have a good talk with her mother.\",\n        \"To call the speaker again.\",\n        \"To dress up as a queen.\",\n        \"To stop going to the park.\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU25:008\",\n      \"evidence_quote\": \"My advice for her is have a good talk with her mother.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 627,
+  "completion_tokens": 2344,
+  "total_tokens": 2971,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2012
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 371
+ }
+}

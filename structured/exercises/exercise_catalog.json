@@ -1,0 +1,2812 @@
+{
+  "task": "P2-2 教材练习目录",
+  "rule_set": "P2-2-exercise-audio-scan-v1",
+  "derivation": "contentpack activity + 教材 PDF 图标扫描 + 官方音频文件名匹配",
+  "notice": "本目录由教材自身的 activity / 页码 / 图标与官方音频文件名推导，不含任何推测性内容。",
+  "counts_by_unit": {
+    "Starter": 11,
+    "Unit 1": 12,
+    "Unit 2": 16,
+    "Unit 3": 14,
+    "Unit 4": 14,
+    "Unit 5": 15,
+    "Unit 6": 11
+  },
+  "exercises": [
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:082981460EC2",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A1",
+      "unit": "Starter",
+      "section": "GET_READY",
+      "exercise_no": 1,
+      "textbook_page": 3,
+      "pdf_page": 8,
+      "instruction": "Match the words and expression with the things in the picture.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A1",
+        "pdf_page": 8,
+        "textbook_page": 3,
+        "bbox": [
+          59.54,
+          106.62,
+          67.46,
+          121.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:02809AEEFBB6",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+      "unit": "Starter",
+      "section": "GET_READY",
+      "exercise_no": 3,
+      "textbook_page": 3,
+      "pdf_page": 8,
+      "instruction": "Listen and complete the conversation with a / an or a number.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU02",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+        "pdf_page": 8,
+        "textbook_page": 3,
+        "bbox": [
+          59.54,
+          448.62,
+          67.46,
+          463.11
+        ],
+        "listening_icon": true,
+        "audio_filename": "02_Starter_Get ready_3 Listen and complete the conversation with aan or a number.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:737C6C9C364F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+      "unit": "Starter",
+      "section": "GET_READY",
+      "exercise_no": 4,
+      "textbook_page": 3,
+      "pdf_page": 8,
+      "instruction": "Talk about your school things.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+        "pdf_page": 8,
+        "textbook_page": 3,
+        "bbox": [
+          59.54,
+          628.62,
+          67.46,
+          643.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:719A88064E46",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A5",
+      "unit": "Starter",
+      "section": "GET_READY",
+      "exercise_no": 5,
+      "textbook_page": 4,
+      "pdf_page": 9,
+      "instruction": "Match the subjects with the textbooks.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A5",
+        "pdf_page": 9,
+        "textbook_page": 4,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:78D40FA47180",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A7",
+      "unit": "Starter",
+      "section": "GET_READY",
+      "exercise_no": 7,
+      "textbook_page": 4,
+      "pdf_page": 9,
+      "instruction": "Work in pairs. Talk about your subjects.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A7",
+        "pdf_page": 9,
+        "textbook_page": 4,
+        "bbox": [
+          33.95,
+          574.62,
+          41.87,
+          589.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:B3D847CC7B0D",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+      "unit": "Starter",
+      "section": "GET_READY",
+      "exercise_no": 8,
+      "textbook_page": 5,
+      "pdf_page": 10,
+      "instruction": "Point and say.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+        "pdf_page": 10,
+        "textbook_page": 5,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:ED3C7BD7A9AA",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A9",
+      "unit": "Starter",
+      "section": "GET_READY",
+      "exercise_no": 9,
+      "textbook_page": 5,
+      "pdf_page": 10,
+      "instruction": "Match the words and expressions with the pictures.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A9",
+        "pdf_page": 10,
+        "textbook_page": 5,
+        "bbox": [
+          59.54,
+          232.62,
+          67.46,
+          247.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:1C4143922B1C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+      "unit": "Starter",
+      "section": "GET_READY",
+      "exercise_no": 10,
+      "textbook_page": 5,
+      "pdf_page": 10,
+      "instruction": "Listen and choose.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+      "match_method": "filename_activity_number",
+      "confidence": 0.6,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+        "pdf_page": 10,
+        "textbook_page": 5,
+        "bbox": [
+          57.26,
+          430.64,
+          69.74,
+          444.41
+        ],
+        "listening_icon": true,
+        "audio_filename": "03_Starter_Get ready_10 Listen and choose.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:85A117C7BBB7",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:KNOW_YOUR_SCHOOL:A3",
+      "unit": "Starter",
+      "section": "KNOW_YOUR_SCHOOL",
+      "exercise_no": 3,
+      "textbook_page": 8,
+      "pdf_page": 13,
+      "instruction": "Match the sentences with the same structure.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:KNOW_YOUR_SCHOOL:A3",
+        "pdf_page": 13,
+        "textbook_page": 8,
+        "bbox": [
+          33.95,
+          52.62,
+          307.65,
+          67.62
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:DE58438C53AC",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_TO_KNOW_EACH_OTHER:A6",
+      "unit": "Starter",
+      "section": "GET_TO_KNOW_EACH_OTHER",
+      "exercise_no": 6,
+      "textbook_page": 12,
+      "pdf_page": 17,
+      "instruction": "Write about yourself.",
+      "type": "writing",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_TO_KNOW_EACH_OTHER:A6",
+        "pdf_page": 17,
+        "textbook_page": 12,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:5CA4109CC1FE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_TO_KNOW_EACH_OTHER:A7",
+      "unit": "Starter",
+      "section": "GET_TO_KNOW_EACH_OTHER",
+      "exercise_no": 7,
+      "textbook_page": 12,
+      "pdf_page": 17,
+      "instruction": "Introduce yourself to the class.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_TO_KNOW_EACH_OTHER:A7",
+        "pdf_page": 17,
+        "textbook_page": 12,
+        "bbox": [
+          33.95,
+          394.62,
+          41.87,
+          409.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:0197FD366A9F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:STARTING_OUT:A1",
+      "unit": "Unit 1",
+      "section": "STARTING_OUT",
+      "exercise_no": 1,
+      "textbook_page": 15,
+      "pdf_page": 20,
+      "instruction": "Guess and match the sentences with the countries.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:STARTING_OUT:A1",
+        "pdf_page": 20,
+        "textbook_page": 15,
+        "bbox": [
+          59.54,
+          250.62,
+          67.46,
+          265.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:0F6BF1CC2913",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+      "unit": "Unit 1",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 16,
+      "pdf_page": 21,
+      "instruction": "Read the passage. What does the writer do in his first lesson?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU07",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+        "pdf_page": 21,
+        "textbook_page": 16,
+        "bbox": [
+          33.95,
+          324.62,
+          397.41,
+          339.62
+        ],
+        "listening_icon": false,
+        "audio_filename": "07_Unit 1_Understanding ideas_2 Read the passage. What does the writer do in his first lesson.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:0E367840E9FC",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A3",
+      "unit": "Unit 1",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 3,
+      "textbook_page": 18,
+      "pdf_page": 23,
+      "instruction": "Choose the main idea of the passage.a We should learn from great thinkers. b Teachers sometimes make mistakes.c Students need to think for themselves.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A3",
+        "pdf_page": 23,
+        "textbook_page": 18,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:C17DC2B4A7A2",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+      "unit": "Unit 1",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 18,
+      "pdf_page": 23,
+      "instruction": "Complete the summary with the words and expression from the passage.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+        "pdf_page": 23,
+        "textbook_page": 18,
+        "bbox": [
+          33.95,
+          142.62,
+          41.87,
+          157.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:3363F6C7E84E",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+      "unit": "Unit 1",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 5,
+      "textbook_page": 19,
+      "pdf_page": 24,
+      "instruction": "Read the sentences from the reading passage and summarise the grammar rules.",
+      "type": "grammar",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+        "pdf_page": 24,
+        "textbook_page": 19,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:8D3E1E4E1B31",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A6",
+      "unit": "Unit 1",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 6,
+      "textbook_page": 19,
+      "pdf_page": 24,
+      "instruction": "Circle the correct words. 1 Ms Wang is my / I Chinese teacher.2 When is we / our next English class?3 Fang Wei is a new friend of mine / my in junior high.4 Jack’s teacher asks their / them to get to school early.",
+      "type": "grammar",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A6",
+        "pdf_page": 24,
+        "textbook_page": 19,
+        "bbox": [
+          59.54,
+          160.62,
+          67.46,
+          175.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:AE2533FCC40F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+      "unit": "Unit 1",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 8,
+      "textbook_page": 20,
+      "pdf_page": 25,
+      "instruction": "Work in pairs. Talk about a teacher you like. Use the thinking map to organise your ideas. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+        "pdf_page": 25,
+        "textbook_page": 20,
+        "bbox": [
+          33.95,
+          52.61,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": "08_Unit 1_Understanding ideas_8 Work in pairs. Talk about a teacher you like.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:852737996F71",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+      "unit": "Unit 1",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 21,
+      "pdf_page": 26,
+      "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends.b It’s hard to plan their time.c It’s hard to do well in exams.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+        "pdf_page": 26,
+        "textbook_page": 21,
+        "bbox": [
+          60.28,
+          521.14,
+          67.72,
+          535.61
+        ],
+        "listening_icon": true,
+        "audio_filename": "09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:D5F2794974F8",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+      "unit": "Unit 1",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 22,
+      "pdf_page": 27,
+      "instruction": "Listen again and complete the poster.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+        "pdf_page": 27,
+        "textbook_page": 22,
+        "bbox": [
+          33.95,
+          52.62,
+          280.32,
+          67.62
+        ],
+        "listening_icon": true,
+        "audio_filename": "11_Unit 1_Developing ideas _2 Listen again and complete the poster.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:BEF04AA1DF4C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A4",
+      "unit": "Unit 1",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 23,
+      "pdf_page": 28,
+      "instruction": "Work in pairs. Choose a problem in planning your studies and give advice.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A4",
+        "pdf_page": 28,
+        "textbook_page": 23,
+        "bbox": [
+          59.54,
+          412.62,
+          485.9,
+          427.62
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:AB4999EBE59C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:READING_FOR_WRITING:A4",
+      "unit": "Unit 1",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 4,
+      "textbook_page": 26,
+      "pdf_page": 31,
+      "instruction": "Answer the questions. 1 What do “a small pool”, “a river” and “the sea” stand for? 2 What do you think Mia’s parents do to protect her boat from winds?3 What do you think the “storms” are?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:READING_FOR_WRITING:A4",
+        "pdf_page": 31,
+        "textbook_page": 26,
+        "bbox": [
+          33.95,
+          430.62,
+          411.4,
+          499.63
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:2CA1B9F43CB3",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:READING_FOR_WRITING:A5",
+      "unit": "Unit 1",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 5,
+      "textbook_page": 27,
+      "pdf_page": 32,
+      "instruction": "Complete Mia’s reply to her parents.",
+      "type": "writing",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U1:READING_FOR_WRITING:A5",
+        "pdf_page": 32,
+        "textbook_page": 27,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "unit": "Unit 2",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 32,
+      "pdf_page": 37,
+      "instruction": "Look at the two pictures on the right. What does each picture show? Use the words and expression to help you.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+        "pdf_page": 37,
+        "textbook_page": 32,
+        "bbox": [
+          33.45,
+          70.62,
+          41.37,
+          85.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:76733936D5BA",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+      "unit": "Unit 2",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 33,
+      "pdf_page": 38,
+      "instruction": "Look at the title and the pictures. What is the passage about?Now read the passage and check your answer.",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU14",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+        "pdf_page": 38,
+        "textbook_page": 33,
+        "bbox": [
+          59.54,
+          52.62,
+          423.95,
+          85.62
+        ],
+        "listening_icon": false,
+        "audio_filename": "14_Unit 2_Understanding ideas_2 Look at the title and the pictures. What is the passage about Now read the passage and check your answer.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:C29E418B7E32",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A3",
+      "unit": "Unit 2",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 3,
+      "textbook_page": 34,
+      "pdf_page": 39,
+      "instruction": "Choose the best main idea of the passage. a Grandpa and I have different hobbies.b I write a new song for the school art festival.c Grandpa and I put our music together and have great fun.",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A3",
+        "pdf_page": 39,
+        "textbook_page": 34,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:5BE07E704E97",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A4",
+      "unit": "Unit 2",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 34,
+      "pdf_page": 39,
+      "instruction": "Complete the chart with the words and expression from the passage.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A4",
+        "pdf_page": 39,
+        "textbook_page": 34,
+        "bbox": [
+          33.95,
+          142.62,
+          41.87,
+          157.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:F22284DD396E",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A5",
+      "unit": "Unit 2",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 5,
+      "textbook_page": 35,
+      "pdf_page": 40,
+      "instruction": "Read the sentences from the reading passage and summarise the grammar rules.",
+      "type": "grammar",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A5",
+        "pdf_page": 40,
+        "textbook_page": 35,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:24C80DAE6FAE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A6",
+      "unit": "Unit 2",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 6,
+      "textbook_page": 35,
+      "pdf_page": 40,
+      "instruction": "Read and complete the sentences with the correct form of the words in the box.",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A6",
+        "pdf_page": 40,
+        "textbook_page": 35,
+        "bbox": [
+          59.54,
+          178.62,
+          67.46,
+          193.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:41B8D362116C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A7",
+      "unit": "Unit 2",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 7,
+      "textbook_page": 35,
+      "pdf_page": 40,
+      "instruction": "Read and complete the passage with the correct form of the words in brackets.",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A7",
+        "pdf_page": 40,
+        "textbook_page": 35,
+        "bbox": [
+          59.54,
+          340.62,
+          67.46,
+          355.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:98EDEBD8BB3C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A8",
+      "unit": "Unit 2",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 8,
+      "textbook_page": 36,
+      "pdf_page": 41,
+      "instruction": "Work in pairs. Write about your hobby. Use the words and expressions from the reading passage and the Useful expressions to help you. Then talk with your partner and take notes of his / her hobby.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU15",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A8",
+        "pdf_page": 41,
+        "textbook_page": 36,
+        "bbox": [
+          33.95,
+          52.61,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": "15_Unit 2_Understanding ideas_8 Work in pairs. Write about your hobby.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:A474D60633A7",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A1",
+      "unit": "Unit 2",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 37,
+      "pdf_page": 42,
+      "instruction": "Listen to the conversation. What does Wang Chen do?a He joins the Bird-Watching Club.b He helps a bird at school.c He finds a new kind of bird.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU16",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A1",
+        "pdf_page": 42,
+        "textbook_page": 37,
+        "bbox": [
+          60.28,
+          503.14,
+          67.72,
+          517.61
+        ],
+        "listening_icon": true,
+        "audio_filename": "16_Unit 2_Developing ideas _1 Listen to the conversation. What does Wang Chen do.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:FB47DD21DABE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A2",
+      "unit": "Unit 2",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 38,
+      "pdf_page": 43,
+      "instruction": "Listen again and order the pictures.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU18",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A2",
+        "pdf_page": 43,
+        "textbook_page": 38,
+        "bbox": [
+          33.95,
+          52.62,
+          268.9,
+          67.62
+        ],
+        "listening_icon": true,
+        "audio_filename": "18_Unit 2_Developing ideas _2 Listen again and order the pictures.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:D23DCD81D8FD",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A4",
+      "unit": "Unit 2",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 39,
+      "pdf_page": 44,
+      "instruction": "Work in pairs and discuss getting knowledge from different hobbies.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A4",
+        "pdf_page": 44,
+        "textbook_page": 39,
+        "bbox": [
+          59.29,
+          502.62,
+          467.47,
+          517.62
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:0F33C11BC0CB",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A1",
+      "unit": "Unit 2",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 1,
+      "textbook_page": 40,
+      "pdf_page": 45,
+      "instruction": "Look at the pictures and answer the questions. Use the words to help you.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A1",
+        "pdf_page": 45,
+        "textbook_page": 40,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:697640403BA4",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A2",
+      "unit": "Unit 2",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 2,
+      "textbook_page": 40,
+      "pdf_page": 45,
+      "instruction": "Read the story. What is Emma’s adventure?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A2",
+        "pdf_page": 45,
+        "textbook_page": 40,
+        "bbox": [
+          33.95,
+          148.62,
+          41.87,
+          163.11
+        ],
+        "listening_icon": false,
+        "audio_filename": "20_Unit 2_Developing ideas _Reading for writing_2 Read the story. What is Emma's adventure.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:4AC0E6FBFDB7",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A3",
+      "unit": "Unit 2",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 3,
+      "textbook_page": 42,
+      "pdf_page": 47,
+      "instruction": "What other action words can you find in the reading passage? What feelings do they show?",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A3",
+        "pdf_page": 47,
+        "textbook_page": 42,
+        "bbox": [
+          50.41,
+          503.15,
+          454.82,
+          535.63
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:1CDC425B9B30",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A4",
+      "unit": "Unit 2",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 4,
+      "textbook_page": 42,
+      "pdf_page": 47,
+      "instruction": "Answer the questions.1 “Emma shakes her head and stops writing.” How does Emma feel?2 “Her eyes open wide.” How does Emma feel?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A4",
+        "pdf_page": 47,
+        "textbook_page": 42,
+        "bbox": [
+          33.95,
+          448.62,
+          400.31,
+          499.63
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:3A85CA427AEC",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A5",
+      "unit": "Unit 2",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 5,
+      "textbook_page": 43,
+      "pdf_page": 48,
+      "instruction": "Write a summary of the story.",
+      "type": "writing",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A5",
+        "pdf_page": 48,
+        "textbook_page": 43,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:4BA23A3B4B6C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:STARTING_OUT:A1",
+      "unit": "Unit 3",
+      "section": "STARTING_OUT",
+      "exercise_no": 1,
+      "textbook_page": 47,
+      "pdf_page": 52,
+      "instruction": "Look at the pictures and answer the questions.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:STARTING_OUT:A1",
+        "pdf_page": 52,
+        "textbook_page": 47,
+        "bbox": [
+          59.54,
+          268.62,
+          67.46,
+          283.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:5CF97CF0BA27",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A1",
+      "unit": "Unit 3",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 48,
+      "pdf_page": 53,
+      "instruction": "Look at the three pictures on the right and answer the questions. Use the words to help you.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A1",
+        "pdf_page": 53,
+        "textbook_page": 48,
+        "bbox": [
+          33.45,
+          70.62,
+          41.37,
+          85.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:AC22F1CF2478",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A2",
+      "unit": "Unit 3",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 48,
+      "pdf_page": 53,
+      "instruction": "Read the film review. What is the father’s love like according to the writer?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU21",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A2",
+        "pdf_page": 53,
+        "textbook_page": 48,
+        "bbox": [
+          33.95,
+          214.62,
+          472.44,
+          229.62
+        ],
+        "listening_icon": false,
+        "audio_filename": "21_Unit 3_Understanding ideas_2 Read the film review. What is the father's love like according to the writer.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:74BDDE140FAE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A3",
+      "unit": "Unit 3",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 3,
+      "textbook_page": 50,
+      "pdf_page": 55,
+      "instruction": "Read and tick. What does the film review include?☐ The name of the film☐ The characters in the film☐ The persons who act in the film☐ A famous line☐ A touching moment☐ The ending of the story",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A3",
+        "pdf_page": 55,
+        "textbook_page": 50,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:0C0652B7CFE5",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A4",
+      "unit": "Unit 3",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 50,
+      "pdf_page": 55,
+      "instruction": "Complete the notes with the words from the passage.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A4",
+        "pdf_page": 55,
+        "textbook_page": 50,
+        "bbox": [
+          33.95,
+          232.62,
+          41.87,
+          247.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:56C764B65FA9",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A5",
+      "unit": "Unit 3",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 5,
+      "textbook_page": 51,
+      "pdf_page": 56,
+      "instruction": "Read the sentences from the reading passage and summarise the grammar rules.",
+      "type": "grammar",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A5",
+        "pdf_page": 56,
+        "textbook_page": 51,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:6A15670681BC",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A8",
+      "unit": "Unit 3",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 8,
+      "textbook_page": 52,
+      "pdf_page": 57,
+      "instruction": "Draw and write about a loving family moment. Then share it with the class. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+      "type": "writing",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU22",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A8",
+        "pdf_page": 57,
+        "textbook_page": 52,
+        "bbox": [
+          33.95,
+          52.61,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": "22_Unit 3_Understanding ideas_8 Draw and write about a loving family moment. Then share it with the class.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:4E9DBA148C1C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A1",
+      "unit": "Unit 3",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 53,
+      "pdf_page": 58,
+      "instruction": "Listen to the family hotline. What problem does Tina have with her mother?a Her mother doesn’t help with her homework.b Her mother wears a queen’s dress to pick her up. c Her mother doesn’t want to buy her new clothes.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU23",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A1",
+        "pdf_page": 58,
+        "textbook_page": 53,
+        "bbox": [
+          60.28,
+          521.14,
+          67.72,
+          535.61
+        ],
+        "listening_icon": true,
+        "audio_filename": "23_Unit 3_Developing ideas _1 Listen to the family hotline. What problem does Tina have with her mother.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:38008318DE8F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A2",
+      "unit": "Unit 3",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 54,
+      "pdf_page": 59,
+      "instruction": "Listen again and complete the chart.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU25",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A2",
+        "pdf_page": 59,
+        "textbook_page": 54,
+        "bbox": [
+          33.95,
+          52.62,
+          274.75,
+          67.62
+        ],
+        "listening_icon": true,
+        "audio_filename": "25_Unit 3_Developing ideas _2 Listen again and complete the chart.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:96E997CDA6A1",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A4",
+      "unit": "Unit 3",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 55,
+      "pdf_page": 60,
+      "instruction": "Work in pairs. Role-play Mike and his father’s conversation.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A4",
+        "pdf_page": 60,
+        "textbook_page": 55,
+        "bbox": [
+          59.29,
+          502.62,
+          414.22,
+          517.62
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:AD99900C3DCA",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A1",
+      "unit": "Unit 3",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 1,
+      "textbook_page": 56,
+      "pdf_page": 61,
+      "instruction": "Look at the three pictures on the right and describe them. Use the words and expression to help you.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A1",
+        "pdf_page": 61,
+        "textbook_page": 56,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:D435F810857C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A2",
+      "unit": "Unit 3",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 2,
+      "textbook_page": 56,
+      "pdf_page": 61,
+      "instruction": "Look at the title and the pictures. What is the story about?Now read the story and check your answer.",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU27",
+      "match_method": "filename_activity_number",
+      "confidence": 0.6,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A2",
+        "pdf_page": 61,
+        "textbook_page": 56,
+        "bbox": [
+          33.95,
+          142.62,
+          41.87,
+          157.11
+        ],
+        "listening_icon": false,
+        "audio_filename": "27_Unit 3_Developing ideas _Reading for writing_2 Look at the and the pictures. What is the story about Now read the story and check your answer.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:DBEEC2136CFE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A4",
+      "unit": "Unit 3",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 4,
+      "textbook_page": 58,
+      "pdf_page": 63,
+      "instruction": "Answer the questions.1 What does “it” refer to in “He puts Robert in a trailer and pulls it along with his bike”?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A4",
+        "pdf_page": 63,
+        "textbook_page": 58,
+        "bbox": [
+          33.95,
+          448.62,
+          452.82,
+          499.63
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:B0D2AA8A53B4",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A5",
+      "unit": "Unit 3",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 5,
+      "textbook_page": 59,
+      "pdf_page": 64,
+      "instruction": "Write a short paragraph about your family members’ support.",
+      "type": "writing",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A5",
+        "pdf_page": 64,
+        "textbook_page": 59,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:2E97E2F1C9A0",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:STARTING_OUT:A1",
+      "unit": "Unit 4",
+      "section": "STARTING_OUT",
+      "exercise_no": 1,
+      "textbook_page": 63,
+      "pdf_page": 68,
+      "instruction": "Look at the pictures and match them with the expressions.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:STARTING_OUT:A1",
+        "pdf_page": 68,
+        "textbook_page": 63,
+        "bbox": [
+          59.54,
+          268.62,
+          67.46,
+          283.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:C94DF53B8D20",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:STARTING_OUT:A2",
+      "unit": "Unit 4",
+      "section": "STARTING_OUT",
+      "exercise_no": 2,
+      "textbook_page": 63,
+      "pdf_page": 68,
+      "instruction": "Look at the picture and answer the questions.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:STARTING_OUT:A2",
+        "pdf_page": 68,
+        "textbook_page": 63,
+        "bbox": [
+          59.54,
+          502.62,
+          338.96,
+          517.62
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:FA9BAFAD0497",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A1",
+      "unit": "Unit 4",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 64,
+      "pdf_page": 69,
+      "instruction": "Look at the picture on the right and answer the questions. Use the words and expressions to help you. 1 What are the people doing? 2 What is on the table?",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A1",
+        "pdf_page": 69,
+        "textbook_page": 64,
+        "bbox": [
+          33.95,
+          70.62,
+          41.87,
+          85.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:87C0CB84CF64",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+      "unit": "Unit 4",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 64,
+      "pdf_page": 69,
+      "instruction": "Read the passage. What does the writer do during the Spring Festival?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+        "pdf_page": 69,
+        "textbook_page": 64,
+        "bbox": [
+          43.95,
+          214.62,
+          51.87,
+          229.11
+        ],
+        "listening_icon": false,
+        "audio_filename": "28_Unit 4_Understanding ideas_2 Read the passage. What does the writer do during the Spring Festival.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:62B3B2420DF9",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A3",
+      "unit": "Unit 4",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 3,
+      "textbook_page": 66,
+      "pdf_page": 71,
+      "instruction": "Choose the best ending of the passage.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A3",
+        "pdf_page": 71,
+        "textbook_page": 66,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:5B92EBE0CFB8",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A4",
+      "unit": "Unit 4",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 66,
+      "pdf_page": 71,
+      "instruction": "Complete the chart with the words and expressions from the passage.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A4",
+        "pdf_page": 71,
+        "textbook_page": 66,
+        "bbox": [
+          33.95,
+          142.62,
+          41.87,
+          157.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:50A8012FCD1A",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A5",
+      "unit": "Unit 4",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 5,
+      "textbook_page": 67,
+      "pdf_page": 72,
+      "instruction": "Read the sentences from the reading passage and summarise the grammar rules.",
+      "type": "grammar",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A5",
+        "pdf_page": 72,
+        "textbook_page": 67,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:B58F26592334",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A6",
+      "unit": "Unit 4",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 6,
+      "textbook_page": 67,
+      "pdf_page": 72,
+      "instruction": "Complete the diagram with the words in the box. Then make a sentence with each word.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A6",
+        "pdf_page": 72,
+        "textbook_page": 67,
+        "bbox": [
+          59.54,
+          178.62,
+          67.46,
+          193.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:9DCBC9B25099",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A8",
+      "unit": "Unit 4",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 8,
+      "textbook_page": 68,
+      "pdf_page": 73,
+      "instruction": "Work in pairs. Talk about your ways to celebrate a traditional festival. Use the thinking map to organise your ideas. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU29",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A8",
+        "pdf_page": 73,
+        "textbook_page": 68,
+        "bbox": [
+          33.95,
+          52.61,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": "29_Unit 4_Understanding ideas_8 Work in pairs. Talk about your ways to celebrate a traditional festival.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:9048772ED32A",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A1",
+      "unit": "Unit 4",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 69,
+      "pdf_page": 74,
+      "instruction": "Listen to the news. What problems does Christmas bring?",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU30",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A1",
+        "pdf_page": 74,
+        "textbook_page": 69,
+        "bbox": [
+          59.78,
+          520.64,
+          67.22,
+          535.11
+        ],
+        "listening_icon": true,
+        "audio_filename": "30_Unit 4_Developing ideas _1 Listen to the news. What problems does Christmas bring.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:C2D62A46BE36",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A2",
+      "unit": "Unit 4",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 70,
+      "pdf_page": 75,
+      "instruction": "Listen again and complete the poster. Then write F (fact) or O (opinion) in the boxes.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU32",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A2",
+        "pdf_page": 75,
+        "textbook_page": 70,
+        "bbox": [
+          33.95,
+          52.62,
+          471.7,
+          85.62
+        ],
+        "listening_icon": true,
+        "audio_filename": "32_Unit 4_Developing ideas _2 Listen again and complete the poster. Then write F(fact) or O(opinion) in the boxes.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:D6FFB3C0BB4E",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A3",
+      "unit": "Unit 4",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 3,
+      "textbook_page": 71,
+      "pdf_page": 76,
+      "instruction": "Listen to the conversation and complete the ideas. Then match the ideas to the people.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU33",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A3",
+        "pdf_page": 76,
+        "textbook_page": 71,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": true,
+        "audio_filename": "33_Unit 4_Developing ideas _3 Listen to the conversation and complete the ideas. Then match the ideas to the people.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:72315F19FA9A",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:READING_FOR_WRITING:A4",
+      "unit": "Unit 4",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 4,
+      "textbook_page": 74,
+      "pdf_page": 79,
+      "instruction": "Answer the questions.1 What does “her loved ones” mean?2 How does Leng feel after working “without any breaks for 20 hours”?3 Why does the writer say “their hard work shines brighter than fireworks”?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:READING_FOR_WRITING:A4",
+        "pdf_page": 79,
+        "textbook_page": 74,
+        "bbox": [
+          33.95,
+          468.62,
+          41.87,
+          483.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:70A2CEC58EAF",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:READING_FOR_WRITING:A5",
+      "unit": "Unit 4",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 5,
+      "textbook_page": 75,
+      "pdf_page": 80,
+      "instruction": "Write a short paragraph about a person on duty during festivals.",
+      "type": "writing",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U4:READING_FOR_WRITING:A5",
+        "pdf_page": 80,
+        "textbook_page": 75,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:86A3B470ACBC",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:STARTING_OUT:A2",
+      "unit": "Unit 5",
+      "section": "STARTING_OUT",
+      "exercise_no": 2,
+      "textbook_page": 79,
+      "pdf_page": 84,
+      "instruction": "Look at the pictures and answer the questions.1 What are the people doing? 2 What can plants do for us?",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:STARTING_OUT:A2",
+        "pdf_page": 84,
+        "textbook_page": 79,
+        "bbox": [
+          59.54,
+          466.62,
+          67.46,
+          481.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:C23F3CAF863F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A1",
+      "unit": "Unit 5",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 80,
+      "pdf_page": 85,
+      "instruction": "Look at the picture of a plant and match the words to it.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A1",
+        "pdf_page": 85,
+        "textbook_page": 80,
+        "bbox": [
+          33.95,
+          106.62,
+          41.87,
+          121.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:8AA3C10E358E",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A3",
+      "unit": "Unit 5",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 3,
+      "textbook_page": 82,
+      "pdf_page": 87,
+      "instruction": "Choose another suitable title and give your reasons.a How to make sugarb How plants workc Why plants are greatd Going to the green workshop",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A3",
+        "pdf_page": 87,
+        "textbook_page": 82,
+        "bbox": [
+          33.95,
+          52.62,
+          240.46,
+          157.63
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:0C54AFF17092",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+      "unit": "Unit 5",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 82,
+      "pdf_page": 87,
+      "instruction": "Complete the texts with the words and expression from the passage.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+        "pdf_page": 87,
+        "textbook_page": 82,
+        "bbox": [
+          33.95,
+          196.62,
+          41.87,
+          211.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:5E0756B25639",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A5",
+      "unit": "Unit 5",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 5,
+      "textbook_page": 83,
+      "pdf_page": 88,
+      "instruction": "Read the sentences from the reading passage and summarise the grammar rules.",
+      "type": "grammar",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A5",
+        "pdf_page": 88,
+        "textbook_page": 83,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:6BB271F5F101",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A6",
+      "unit": "Unit 5",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 6,
+      "textbook_page": 83,
+      "pdf_page": 88,
+      "instruction": "Complete the sentences with the simple future tense. 1 The seeds grow into tall plants.2 We learn different parts of plants tomorrow.3 The leaves change into different colours in autumn.",
+      "type": "grammar",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A6",
+        "pdf_page": 88,
+        "textbook_page": 83,
+        "bbox": [
+          59.54,
+          160.62,
+          67.46,
+          175.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+      "unit": "Unit 5",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 7,
+      "textbook_page": 83,
+      "pdf_page": 88,
+      "instruction": "Complete the guide’s words using the correct form of the words in the boxes.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+        "pdf_page": 88,
+        "textbook_page": 83,
+        "bbox": [
+          59.54,
+          250.67,
+          67.46,
+          265.16
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:04DE72A05D12",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A8",
+      "unit": "Unit 5",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 8,
+      "textbook_page": 84,
+      "pdf_page": 89,
+      "instruction": "Work in pairs. Discuss your plan for Planting Day. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU36",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A8",
+        "pdf_page": 89,
+        "textbook_page": 84,
+        "bbox": [
+          33.95,
+          52.62,
+          432.65,
+          103.62
+        ],
+        "listening_icon": false,
+        "audio_filename": "36_Unit 5_Understanding ideas_8 Work in pairs. Discuss your plan for Planting Day.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:2A2AC5F22B9F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A1",
+      "unit": "Unit 5",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 85,
+      "pdf_page": 90,
+      "instruction": "Listen to the opening of the vlog. What is Jason talking about?a The importance of corn in Mexico.b Corn in different cultures.c A famous Mexican corn dish.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU37",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A1",
+        "pdf_page": 90,
+        "textbook_page": 85,
+        "bbox": [
+          59.78,
+          556.64,
+          67.22,
+          571.11
+        ],
+        "listening_icon": true,
+        "audio_filename": "37_Unit 5_Developing ideas _1 Listen to the opening of the vlog. What is Jason talking about.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:61581C85B075",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A2",
+      "unit": "Unit 5",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 86,
+      "pdf_page": 91,
+      "instruction": "Listen again and complete Jason’s notes for the vlog.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU39",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A2",
+        "pdf_page": 91,
+        "textbook_page": 86,
+        "bbox": [
+          33.95,
+          52.62,
+          366.5,
+          67.62
+        ],
+        "listening_icon": true,
+        "audio_filename": "39_Unit 5_Developing ideas _2 Listen again and complete Jason's notes for the vlog.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:DA7936166CF2",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A1",
+      "unit": "Unit 5",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 1,
+      "textbook_page": 88,
+      "pdf_page": 93,
+      "instruction": "Look at the pictures and answer the questions. Use the words to help you.",
+      "type": "other",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A1",
+        "pdf_page": 93,
+        "textbook_page": 88,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:1C985CD078DE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A2",
+      "unit": "Unit 5",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 2,
+      "textbook_page": 88,
+      "pdf_page": 93,
+      "instruction": "Read the passage. Find out the importance of tea to the Chinese and the Brits.",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU41",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A2",
+        "pdf_page": 93,
+        "textbook_page": 88,
+        "bbox": [
+          33.95,
+          160.62,
+          41.87,
+          175.11
+        ],
+        "listening_icon": false,
+        "audio_filename": "41_Unit 5_Developing ideas _Reading for writing_2 Read the passage. Find out the importance of tea to the Chinese and the Brits.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:0AD8920218D8",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A3",
+      "unit": "Unit 5",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 3,
+      "textbook_page": 90,
+      "pdf_page": 95,
+      "instruction": "What does the expression “it’s no secret” mean?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A3",
+        "pdf_page": 95,
+        "textbook_page": 90,
+        "bbox": [
+          50.41,
+          503.15,
+          308.89,
+          517.63
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:63A46DF433C9",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A4",
+      "unit": "Unit 5",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 4,
+      "textbook_page": 90,
+      "pdf_page": 95,
+      "instruction": "Answer the questions.1 What does “a key part” mean?2 What does “as many teahouses as leaves in a cup of tea” say about teahouses?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A4",
+        "pdf_page": 95,
+        "textbook_page": 90,
+        "bbox": [
+          33.95,
+          448.62,
+          462.78,
+          499.63
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:2B3DD5AB5C2C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A5",
+      "unit": "Unit 5",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 5,
+      "textbook_page": 91,
+      "pdf_page": 96,
+      "instruction": "Write a short paragraph about tea and your family.",
+      "type": "writing",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A5",
+        "pdf_page": 96,
+        "textbook_page": 91,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:9A6A563440C5",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A2",
+      "unit": "Unit 6",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 96,
+      "pdf_page": 101,
+      "instruction": "Read the blogs and find out the words Henry used.",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU42",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A2",
+        "pdf_page": 101,
+        "textbook_page": 96,
+        "bbox": [
+          43.95,
+          162.62,
+          347.98,
+          177.62
+        ],
+        "listening_icon": false,
+        "audio_filename": "42_Unit 6_Understanding ideas_2 Read the blogs and find out the words Henry used.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:8B987AF028E9",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A3",
+      "unit": "Unit 6",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 3,
+      "textbook_page": 98,
+      "pdf_page": 103,
+      "instruction": "Choose another suitable title and give your reasons.a Clever pigeonsb Pigeons in the parkc Amazing pigeonsd People and pigeons",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A3",
+        "pdf_page": 103,
+        "textbook_page": 98,
+        "bbox": [
+          33.95,
+          52.62,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:DF6AABE5BBD4",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A4",
+      "unit": "Unit 6",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 98,
+      "pdf_page": 103,
+      "instruction": "Complete the flow chart with the words and expressions from the passage.",
+      "type": "vocabulary",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A4",
+        "pdf_page": 103,
+        "textbook_page": 98,
+        "bbox": [
+          33.95,
+          178.62,
+          41.87,
+          193.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:79EB9FE117EA",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A5",
+      "unit": "Unit 6",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 5,
+      "textbook_page": 99,
+      "pdf_page": 104,
+      "instruction": "Read the sentences from the reading passage and summarise the grammar rules.",
+      "type": "grammar",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A5",
+        "pdf_page": 104,
+        "textbook_page": 99,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:5BCC4D6DC928",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A6",
+      "unit": "Unit 6",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 6,
+      "textbook_page": 99,
+      "pdf_page": 104,
+      "instruction": "Read and complete the sentences with the correct form of the words in the box.",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A6",
+        "pdf_page": 104,
+        "textbook_page": 99,
+        "bbox": [
+          59.54,
+          178.62,
+          67.46,
+          193.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:1AD37D3D8EAD",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A8",
+      "unit": "Unit 6",
+      "section": "UNDERSTANDING_IDEAS",
+      "exercise_no": 8,
+      "textbook_page": 100,
+      "pdf_page": 105,
+      "instruction": "Find a video and do your own voice-over for it. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A8",
+        "pdf_page": 105,
+        "textbook_page": 100,
+        "bbox": [
+          33.95,
+          52.61,
+          41.87,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:42D077193165",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A1",
+      "unit": "Unit 6",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 1,
+      "textbook_page": 101,
+      "pdf_page": 106,
+      "instruction": "Listen to the radio programme. What is it about?a The world’s best dog.b Goodbye to a hero dog. c How to train your dog.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU43",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A1",
+        "pdf_page": 106,
+        "textbook_page": 101,
+        "bbox": [
+          59.78,
+          538.64,
+          67.22,
+          553.11
+        ],
+        "listening_icon": true,
+        "audio_filename": "43_Unit 6_Developing ideas _1 Listen to the radio programme. What is it about.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:6EB3410DBDE7",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A2",
+      "unit": "Unit 6",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 2,
+      "textbook_page": 102,
+      "pdf_page": 107,
+      "instruction": "Listen again and complete the webpage for Bingjie.",
+      "type": "listening",
+      "listening_icon": true,
+      "audio_required": true,
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU45",
+      "match_method": "filename_activity_exact",
+      "confidence": 0.95,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A2",
+        "pdf_page": 107,
+        "textbook_page": 102,
+        "bbox": [
+          33.95,
+          52.62,
+          358.86,
+          67.62
+        ],
+        "listening_icon": true,
+        "audio_filename": "45_Unit 6_Developing ideas _2 Listen again and complete the webpage for Bingjie.mp3"
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:4756F338EF8C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A4",
+      "unit": "Unit 6",
+      "section": "DEVELOPING_IDEAS",
+      "exercise_no": 4,
+      "textbook_page": 103,
+      "pdf_page": 108,
+      "instruction": "Work in pairs. Talk about another animal helper. Use the questions below to organise your ideas.",
+      "type": "speaking",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A4",
+        "pdf_page": 108,
+        "textbook_page": 103,
+        "bbox": [
+          59.29,
+          429.62,
+          486.54,
+          463.61
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:DD9FEC28EA1B",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A4",
+      "unit": "Unit 6",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 4,
+      "textbook_page": 106,
+      "pdf_page": 111,
+      "instruction": "Answer the questions.1 Why is the dodo “just a character” to some readers?2 What do “as happy as a clam” and “as dead as a dodo” mean?3 Why does the writer use the two expressions at the end of the passage?",
+      "type": "reading",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A4",
+        "pdf_page": 111,
+        "textbook_page": 106,
+        "bbox": [
+          33.95,
+          538.62,
+          259.8,
+          661.63
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    },
+    {
+      "exercise_id": "FLTRP-EN-7A-2022CUR:X:761B49F32560",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A5",
+      "unit": "Unit 6",
+      "section": "READING_FOR_WRITING",
+      "exercise_no": 5,
+      "textbook_page": 107,
+      "pdf_page": 112,
+      "instruction": "Write a short paragraph about dodos.",
+      "type": "writing",
+      "listening_icon": false,
+      "audio_required": false,
+      "audio_id": null,
+      "match_method": null,
+      "confidence": null,
+      "needs_review": false,
+      "source_evidence": {
+        "activity_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A5",
+        "pdf_page": 112,
+        "textbook_page": 107,
+        "bbox": [
+          59.54,
+          52.62,
+          67.46,
+          67.11
+        ],
+        "listening_icon": false,
+        "audio_filename": null
+      }
+    }
+  ],
+  "needs_review_count": 0,
+  "audio_linked": 28,
+  "generated_at": "2026-09-12T21:26:22+08:00",
+  "contentpack_sha256_before": "FEEF8DD5ABD910BF45062A8092576C39BAAA80F7B631EAC9850DD7AF6BAE216C",
+  "contentpack_sha256_after": "C87D83A55C771B285C4E038B0E5DE8BB71DC0B2251F52B7571969B7FCDDD69D7"
+}

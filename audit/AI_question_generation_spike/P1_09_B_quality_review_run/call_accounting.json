@@ -1,0 +1,26 @@
+{
+  "stage": "P1-09-B",
+  "attempt": 1,
+  "api_calls": 1,
+  "retry_count": 0,
+  "model": "deepseek-v4-pro",
+  "temperature": 0.2,
+  "max_tokens": 16384,
+  "reasoning_effort": "low",
+  "thinking": {
+    "type": "enabled"
+  },
+  "prompt_version": "P1-09-B-v1",
+  "latency_ms": 51050,
+  "finish_reason": "stop",
+  "api_error": null,
+  "prompt_tokens": 2104,
+  "completion_tokens": 7042,
+  "reasoning_tokens": 5523,
+  "total_tokens": 9146,
+  "content_chars": 4584,
+  "reasoning_chars": 23650,
+  "sample_count": 10,
+  "status": "PARSED",
+  "notes": []
+}

@@ -1,0 +1,801 @@
+[
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+    "audio_num": "AU01",
+    "filename": "01_Starter_Get ready_2 Read and complete. Then listen and check.mp3",
+    "relative_path": "2025年度初一外研版英语教材/01_Starter_Get ready_2 Read and complete. Then listen and check.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\01_Starter_Get ready_2 Read and complete. Then listen and check.mp3",
+    "duration_ms": 60709,
+    "sha256": "50F86F003BE987ADDB71D9BD7E7CF4B8E6364A81CC15EBA5D335287F1818F889",
+    "unit": "Starter",
+    "section": "GET_READY",
+    "activity_no": 2,
+    "instruction": "Read and complete. Then listen and check.",
+    "pdf_pages": [
+      8,
+      9
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU02",
+    "audio_num": "AU02",
+    "filename": "02_Starter_Get ready_3 Listen and complete the conversation with aan or a number.mp3",
+    "relative_path": "2025年度初一外研版英语教材/02_Starter_Get ready_3 Listen and complete the conversation with aan or a number.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\02_Starter_Get ready_3 Listen and complete the conversation with aan or a number.mp3",
+    "duration_ms": 33541,
+    "sha256": "4F12CF0B25619F13297B48F3CBB0F281CB37A53A2A010703D47C8C51EC65A771",
+    "unit": "Starter",
+    "section": "GET_READY",
+    "activity_no": 3,
+    "instruction": "Listen and complete the conversation with a / an or a number.",
+    "pdf_pages": [
+      8,
+      9
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+    "audio_num": "AU03",
+    "filename": "03_Starter_Get ready_10 Listen and choose.mp3",
+    "relative_path": "2025年度初一外研版英语教材/03_Starter_Get ready_10 Listen and choose.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\03_Starter_Get ready_10 Listen and choose.mp3",
+    "duration_ms": 58149,
+    "sha256": "571918B2611F45A02BC7143E3BC15407FA9CA6FD690EBAEDC4E6A2C98726C49F",
+    "unit": "Starter",
+    "section": "GET_READY",
+    "activity_no": 10,
+    "instruction": "Listen and choose.",
+    "pdf_pages": [
+      10,
+      11
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU04",
+    "audio_num": "AU04",
+    "filename": "04_Starter_Know your school_1 Read and complete.mp3",
+    "relative_path": "2025年度初一外研版英语教材/04_Starter_Know your school_1 Read and complete.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\04_Starter_Know your school_1 Read and complete.mp3",
+    "duration_ms": 85891,
+    "sha256": "766E9B4B71F62FF76888AC7115E778E08A8787BC15B713B9E4DB3F25254A6884",
+    "unit": "Starter",
+    "section": "KNOW_YOUR_SCHOOL",
+    "activity_no": 1,
+    "instruction": "Read and complete.",
+    "pdf_pages": [
+      11,
+      12
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+    "audio_num": "AU05",
+    "filename": "05_Starter_Get to know each other_1 Read and complete.mp3",
+    "relative_path": "2025年度初一外研版英语教材/05_Starter_Get to know each other_1 Read and complete.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\05_Starter_Get to know each other_1 Read and complete.mp3",
+    "duration_ms": 56320,
+    "sha256": "569F99236C300A911C8C20481BB7EC359E404C7ACD5E4D21231A65C432B417EC",
+    "unit": "Starter",
+    "section": "GET_TO_KNOW_EACH_OTHER",
+    "activity_no": 1,
+    "instruction": "Read and complete.",
+    "pdf_pages": [
+      14,
+      15
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+    "audio_num": "AU06",
+    "filename": "06_Starter_Get to know each other_4 Read and check your answers.mp3",
+    "relative_path": "2025年度初一外研版英语教材/06_Starter_Get to know each other_4 Read and check your answers.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\06_Starter_Get to know each other_4 Read and check your answers.mp3",
+    "duration_ms": 43337,
+    "sha256": "4310AD801B5E2613B8FA63946159E2B5E55ED2CACDA67F2F88FF447D9C557DB2",
+    "unit": "Starter",
+    "section": "GET_TO_KNOW_EACH_OTHER",
+    "activity_no": 4,
+    "instruction": "Read and check your answers.",
+    "pdf_pages": [
+      15,
+      16
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU07",
+    "audio_num": "AU07",
+    "filename": "07_Unit 1_Understanding ideas_2 Read the passage. What does the writer do in his first lesson.mp3",
+    "relative_path": "2025年度初一外研版英语教材/07_Unit 1_Understanding ideas_2 Read the passage. What does the writer do in his first lesson.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\07_Unit 1_Understanding ideas_2 Read the passage. What does the writer do in his first lesson.mp3",
+    "duration_ms": 109427,
+    "sha256": "B7A282E84CE935B741EC008336BFA97EF9A195E6BF1EBE9E9991502AF27ADD77",
+    "unit": "Unit 1",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Read the passage. What does the writer do in his first lesson?",
+    "pdf_pages": [
+      21,
+      22
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+    "audio_num": "AU08",
+    "filename": "08_Unit 1_Understanding ideas_8 Work in pairs. Talk about a teacher you like.mp3",
+    "relative_path": "2025年度初一外研版英语教材/08_Unit 1_Understanding ideas_8 Work in pairs. Talk about a teacher you like.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\08_Unit 1_Understanding ideas_8 Work in pairs. Talk about a teacher you like.mp3",
+    "duration_ms": 72464,
+    "sha256": "C3814F101A70EEF4445E579641E447BEBEA9B4F0210CB37FBEB6D00B4C4D6A72",
+    "unit": "Unit 1",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 8,
+    "instruction": "Work in pairs. Talk about a teacher you like. Use the thinking map to organise your ideas. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+    "pdf_pages": [
+      25,
+      26
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+    "audio_num": "AU09",
+    "filename": "09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3",
+    "relative_path": "2025年度初一外研版英语教材/09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3",
+    "duration_ms": 51096,
+    "sha256": "EC384CA6C96A86E6831371987A947AC27679C523F07C4B530AD109275901D7FD",
+    "unit": "Unit 1",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 1,
+    "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends. b It’s hard to plan their time.",
+    "pdf_pages": [
+      26,
+      27
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU10",
+    "audio_num": "AU10",
+    "filename": "10_Unit 1_Developing ideas _Phonetics in use.mp3",
+    "relative_path": "2025年度初一外研版英语教材/10_Unit 1_Developing ideas _Phonetics in use.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\10_Unit 1_Developing ideas _Phonetics in use.mp3",
+    "duration_ms": 68284,
+    "sha256": "2395EF82ECDB6DFB0E29E44B1E0038287B7C1B6A0472886559D15B3A043C083C",
+    "unit": "",
+    "section": "",
+    "activity_no": null,
+    "instruction": "",
+    "pdf_pages": [
+      26,
+      27
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+    "audio_num": "AU11",
+    "filename": "11_Unit 1_Developing ideas _2 Listen again and complete the poster.mp3",
+    "relative_path": "2025年度初一外研版英语教材/11_Unit 1_Developing ideas _2 Listen again and complete the poster.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\11_Unit 1_Developing ideas _2 Listen again and complete the poster.mp3",
+    "duration_ms": 44147,
+    "sha256": "732C99AE3C0C62E4E693663B098D81BA56B16D58D30517F859F4874884F37585",
+    "unit": "Unit 1",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Listen again and complete the poster.",
+    "pdf_pages": [
+      27,
+      28
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU12",
+    "audio_num": "AU12",
+    "filename": "12_Unit 1_Developing ideas _3 Listen to the conversation and complete the table.mp3",
+    "relative_path": "2025年度初一外研版英语教材/12_Unit 1_Developing ideas _3 Listen to the conversation and complete the table.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\12_Unit 1_Developing ideas _3 Listen to the conversation and complete the table.mp3",
+    "duration_ms": 175020,
+    "sha256": "4256A5A3D578271702843A55F7E09C94C0289AA5C6D20AE8323E419AF130F97B",
+    "unit": "Unit 1",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 3,
+    "instruction": "Listen to the conversation and complete the table.",
+    "pdf_pages": [
+      28,
+      29
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+    "audio_num": "AU13",
+    "filename": "13_Unit 1_Developing ideas _Reading for writing_2 Read the passage and find out the meaning of the title.mp3",
+    "relative_path": "2025年度初一外研版英语教材/13_Unit 1_Developing ideas _Reading for writing_2 Read the passage and find out the meaning of the title.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\13_Unit 1_Developing ideas _Reading for writing_2 Read the passage and find out the meaning of the title.mp3",
+    "duration_ms": 101381,
+    "sha256": "DE4BCEC92B8E9293FA755F875924B04722663B8313778E8D2AFECAF105300CEF",
+    "unit": "Unit 1",
+    "section": "READING_FOR_WRITING",
+    "activity_no": 2,
+    "instruction": "Read the passage and find out the meaning of the title.",
+    "pdf_pages": [
+      29,
+      30
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU14",
+    "audio_num": "AU14",
+    "filename": "14_Unit 2_Understanding ideas_2 Look at the title and the pictures. What is the passage about Now read the passage and check your answer.mp3",
+    "relative_path": "2025年度初一外研版英语教材/14_Unit 2_Understanding ideas_2 Look at the title and the pictures. What is the passage about Now read the passage and check your answer.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\14_Unit 2_Understanding ideas_2 Look at the title and the pictures. What is the passage about Now read the passage and check your answer.mp3",
+    "duration_ms": 116193,
+    "sha256": "283815C78181A075FBF5DEAFA0CED93D95981D1D23DCE7AD3490BAE8C0521E91",
+    "unit": "Unit 2",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Look at the title and the pictures. What is the passage about? Now read the passage and check your answer.",
+    "pdf_pages": [
+      38,
+      39
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU15",
+    "audio_num": "AU15",
+    "filename": "15_Unit 2_Understanding ideas_8 Work in pairs. Write about your hobby.mp3",
+    "relative_path": "2025年度初一外研版英语教材/15_Unit 2_Understanding ideas_8 Work in pairs. Write about your hobby.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\15_Unit 2_Understanding ideas_8 Work in pairs. Write about your hobby.mp3",
+    "duration_ms": 50965,
+    "sha256": "0C91090641508738556F123A1FD9203E33C5D5BE81477E6BD92DD769F06C8E19",
+    "unit": "Unit 2",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 8,
+    "instruction": "Work in pairs. Write about your hobby. Use the words and expressions from the reading passage and the Useful expressions to help you. Then talk with your partner and take notes of his / her hobby.",
+    "pdf_pages": [
+      41,
+      42
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU16",
+    "audio_num": "AU16",
+    "filename": "16_Unit 2_Developing ideas _1 Listen to the conversation. What does Wang Chen do.mp3",
+    "relative_path": "2025年度初一外研版英语教材/16_Unit 2_Developing ideas _1 Listen to the conversation. What does Wang Chen do.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\16_Unit 2_Developing ideas _1 Listen to the conversation. What does Wang Chen do.mp3",
+    "duration_ms": 77976,
+    "sha256": "6637C45BDDC2B8FCE3718CB6E64A4E3C72CF67337A03361B3447410EBFCEA548",
+    "unit": "Unit 2",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 1,
+    "instruction": "Listen to the conversation. What does Wang Chen do? a He joins the Bird-Watching Club. b He helps a bird at school.",
+    "pdf_pages": [
+      42,
+      43
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU17",
+    "audio_num": "AU17",
+    "filename": "17_Unit 2_Developing ideas _Phonetics in use.mp3",
+    "relative_path": "2025年度初一外研版英语教材/17_Unit 2_Developing ideas _Phonetics in use.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\17_Unit 2_Developing ideas _Phonetics in use.mp3",
+    "duration_ms": 57496,
+    "sha256": "E11587DA501CB1ADF955B6F9FE4932AD3753CC5F2CF5179C052A06168DDA4CBD",
+    "unit": "",
+    "section": "",
+    "activity_no": null,
+    "instruction": "",
+    "pdf_pages": [
+      26,
+      27
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU18",
+    "audio_num": "AU18",
+    "filename": "18_Unit 2_Developing ideas _2 Listen again and order the pictures.mp3",
+    "relative_path": "2025年度初一外研版英语教材/18_Unit 2_Developing ideas _2 Listen again and order the pictures.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\18_Unit 2_Developing ideas _2 Listen again and order the pictures.mp3",
+    "duration_ms": 71053,
+    "sha256": "0A543AE7B9311B46851C19165BD0367EA1FE7394DDBF81FD9C870A7D218BD9E3",
+    "unit": "Unit 2",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Listen again and order the pictures.",
+    "pdf_pages": [
+      43,
+      44
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU19",
+    "audio_num": "AU19",
+    "filename": "19_Unit 2_Developing ideas _3 Listen to the interview and complete the interviewer's notes.mp3",
+    "relative_path": "2025年度初一外研版英语教材/19_Unit 2_Developing ideas _3 Listen to the interview and complete the interviewer's notes.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\19_Unit 2_Developing ideas _3 Listen to the interview and complete the interviewer's notes.mp3",
+    "duration_ms": 140069,
+    "sha256": "69D0E8D75D383AB697443752892D6C919AE2DB75867FD508F7FBDA2B7D163B1C",
+    "unit": "Unit 2",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 3,
+    "instruction": "Listen to the interview and complete the interviewer’s notes.",
+    "pdf_pages": [
+      44,
+      45
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+    "audio_num": "AU20",
+    "filename": "20_Unit 2_Developing ideas _Reading for writing_2 Read the story. What is Emma's adventure.mp3",
+    "relative_path": "2025年度初一外研版英语教材/20_Unit 2_Developing ideas _Reading for writing_2 Read the story. What is Emma's adventure.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\20_Unit 2_Developing ideas _Reading for writing_2 Read the story. What is Emma's adventure.mp3",
+    "duration_ms": 115435,
+    "sha256": "7F4E4D00B14D859E3BB30A8F024AB463D25A5A552C8E8A1A8F5BE5B7C45F663D",
+    "unit": "Unit 2",
+    "section": "READING_FOR_WRITING",
+    "activity_no": 2,
+    "instruction": "Read the story. What is Emma’s adventure?",
+    "pdf_pages": [
+      45,
+      46
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU21",
+    "audio_num": "AU21",
+    "filename": "21_Unit 3_Understanding ideas_2 Read the film review. What is the father's love like according to the writer.mp3",
+    "relative_path": "2025年度初一外研版英语教材/21_Unit 3_Understanding ideas_2 Read the film review. What is the father's love like according to the writer.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\21_Unit 3_Understanding ideas_2 Read the film review. What is the father's love like according to the writer.mp3",
+    "duration_ms": 105352,
+    "sha256": "7370D6A0CCAF08A997689C5B678FABB318AAEF1FA775A3DB6BC4F0A17DB582F7",
+    "unit": "Unit 3",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Read the film review. What is the father’s love like according to the writer?",
+    "pdf_pages": [
+      53,
+      54
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU22",
+    "audio_num": "AU22",
+    "filename": "22_Unit 3_Understanding ideas_8 Draw and write about a loving family moment. Then share it with the class.mp3",
+    "relative_path": "2025年度初一外研版英语教材/22_Unit 3_Understanding ideas_8 Draw and write about a loving family moment. Then share it with the class.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\22_Unit 3_Understanding ideas_8 Draw and write about a loving family moment. Then share it with the class.mp3",
+    "duration_ms": 67500,
+    "sha256": "28026A200BD6BF313A9C1DFF07968D475DD8925A2614D8B4095299DE97EDAE86",
+    "unit": "Unit 3",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 8,
+    "instruction": "Draw and write about a loving family moment. Then share it with the class. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+    "pdf_pages": [
+      57,
+      58
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU23",
+    "audio_num": "AU23",
+    "filename": "23_Unit 3_Developing ideas _1 Listen to the family hotline. What problem does Tina have with her mother.mp3",
+    "relative_path": "2025年度初一外研版英语教材/23_Unit 3_Developing ideas _1 Listen to the family hotline. What problem does Tina have with her mother.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\23_Unit 3_Developing ideas _1 Listen to the family hotline. What problem does Tina have with her mother.mp3",
+    "duration_ms": 55667,
+    "sha256": "155EE25F0E49D2B82937DBC861CF9488F6F827FDE4E1A0195E65BA0B5EBF57B3",
+    "unit": "Unit 3",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 1,
+    "instruction": "Listen to the family hotline. What problem does Tina have with her mother? a Her mother doesn’t help with her homework. b Her mother wears a queen’s dress to pick her up.",
+    "pdf_pages": [
+      58,
+      59
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU24",
+    "audio_num": "AU24",
+    "filename": "24_Unit 3_Developing ideas _Phonetics in use.mp3",
+    "relative_path": "2025年度初一外研版英语教材/24_Unit 3_Developing ideas _Phonetics in use.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\24_Unit 3_Developing ideas _Phonetics in use.mp3",
+    "duration_ms": 62433,
+    "sha256": "4967FF8F9BC70E0E293E1A8CB61FBD02EF3C3F878FD1931690FBE2E3DC7347B9",
+    "unit": "",
+    "section": "",
+    "activity_no": null,
+    "instruction": "",
+    "pdf_pages": [
+      26,
+      27
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU25",
+    "audio_num": "AU25",
+    "filename": "25_Unit 3_Developing ideas _2 Listen again and complete the chart.mp3",
+    "relative_path": "2025年度初一外研版英语教材/25_Unit 3_Developing ideas _2 Listen again and complete the chart.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\25_Unit 3_Developing ideas _2 Listen again and complete the chart.mp3",
+    "duration_ms": 50155,
+    "sha256": "DBB2D18A288498051356C6734853479A4349C131F5E095A51190432A46A33004",
+    "unit": "Unit 3",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Listen again and complete the chart.",
+    "pdf_pages": [
+      59,
+      60
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU26",
+    "audio_num": "AU26",
+    "filename": "26_Unit 3_Developing ideas _3 Listen and complete the conversation.mp3",
+    "relative_path": "2025年度初一外研版英语教材/26_Unit 3_Developing ideas _3 Listen and complete the conversation.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\26_Unit 3_Developing ideas _3 Listen and complete the conversation.mp3",
+    "duration_ms": 153469,
+    "sha256": "0E56CCBD855DD0C177452804088E9DB7F6170701CA5C10DE92F98D90129FF58C",
+    "unit": "Unit 3",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 3,
+    "instruction": "Listen and complete the conversation.",
+    "pdf_pages": [
+      60,
+      61
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU27",
+    "audio_num": "AU27",
+    "filename": "27_Unit 3_Developing ideas _Reading for writing_2 Look at the and the pictures. What is the story about Now read the story and check your answer.mp3",
+    "relative_path": "2025年度初一外研版英语教材/27_Unit 3_Developing ideas _Reading for writing_2 Look at the and the pictures. What is the story about Now read the story and check your answer.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\27_Unit 3_Developing ideas _Reading for writing_2 Look at the and the pictures. What is the story about Now read the story and check your answer.mp3",
+    "duration_ms": 117525,
+    "sha256": "E3D0F07ED6B185DD2B5070FF0486E3576D6F67C4C683F537EEFA2D11AB87D7E4",
+    "unit": "Unit 3",
+    "section": "READING_FOR_WRITING",
+    "activity_no": 2,
+    "instruction": "Look at the title and the pictures. What is the story about? Now read the story and check your answer.",
+    "pdf_pages": [
+      61,
+      62
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+    "audio_num": "AU28",
+    "filename": "28_Unit 4_Understanding ideas_2 Read the passage. What does the writer do during the Spring Festival.mp3",
+    "relative_path": "2025年度初一外研版英语教材/28_Unit 4_Understanding ideas_2 Read the passage. What does the writer do during the Spring Festival.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\28_Unit 4_Understanding ideas_2 Read the passage. What does the writer do during the Spring Festival.mp3",
+    "duration_ms": 128496,
+    "sha256": "2F9ACACDA4CFF5161B2AF67F2516B44A04FC6B35E8E8B0D8637349ABBD041BD5",
+    "unit": "Unit 4",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Read the passage. What does the writer do during the Spring Festival?",
+    "pdf_pages": [
+      69,
+      70
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU29",
+    "audio_num": "AU29",
+    "filename": "29_Unit 4_Understanding ideas_8 Work in pairs. Talk about your ways to celebrate a traditional festival.mp3",
+    "relative_path": "2025年度初一外研版英语教材/29_Unit 4_Understanding ideas_8 Work in pairs. Talk about your ways to celebrate a traditional festival.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\29_Unit 4_Understanding ideas_8 Work in pairs. Talk about your ways to celebrate a traditional festival.mp3",
+    "duration_ms": 62093,
+    "sha256": "F33063CF7FE661B03E68752980FD8EDC2DF41EBEF77A08BB8671E8E0BD8B39FD",
+    "unit": "Unit 4",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 8,
+    "instruction": "Work in pairs. Talk about your ways to celebrate a traditional festival. Use the thinking map to organise your ideas. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+    "pdf_pages": [
+      73,
+      74
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU30",
+    "audio_num": "AU30",
+    "filename": "30_Unit 4_Developing ideas _1 Listen to the news. What problems does Christmas bring.mp3",
+    "relative_path": "2025年度初一外研版英语教材/30_Unit 4_Developing ideas _1 Listen to the news. What problems does Christmas bring.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\30_Unit 4_Developing ideas _1 Listen to the news. What problems does Christmas bring.mp3",
+    "duration_ms": 72751,
+    "sha256": "97CE541334C52BD7A37FF3249BA2C38F69496528AA4145F3D001E8FD91C64BB0",
+    "unit": "Unit 4",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 1,
+    "instruction": "Listen to the news. What problems does Christmas bring?",
+    "pdf_pages": [
+      74,
+      75
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU31",
+    "audio_num": "AU31",
+    "filename": "31_Unit 4_Developing ideas _Phonetics in use.mp3",
+    "relative_path": "2025年度初一外研版英语教材/31_Unit 4_Developing ideas _Phonetics in use.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\31_Unit 4_Developing ideas _Phonetics in use.mp3",
+    "duration_ms": 49371,
+    "sha256": "8908E042112EFFD374A84405C605F2D24C59BD0B1E30177D1226D786540A5666",
+    "unit": "",
+    "section": "",
+    "activity_no": null,
+    "instruction": "",
+    "pdf_pages": [
+      26,
+      27
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU32",
+    "audio_num": "AU32",
+    "filename": "32_Unit 4_Developing ideas _2 Listen again and complete the poster. Then write F(fact) or O(opinion) in the boxes.mp3",
+    "relative_path": "2025年度初一外研版英语教材/32_Unit 4_Developing ideas _2 Listen again and complete the poster. Then write F(fact) or O(opinion) in the boxes.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\32_Unit 4_Developing ideas _2 Listen again and complete the poster. Then write F(fact) or O(opinion) in the boxes.mp3",
+    "duration_ms": 77349,
+    "sha256": "645F41C3B9F26E0C63C9AECEDF7B0138DF2E092365B5F5E141AEF15156E6E9F3",
+    "unit": "Unit 4",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Listen again and complete the poster. Then write F (fact) or O (opinion) in the boxes.",
+    "pdf_pages": [
+      75,
+      76
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU33",
+    "audio_num": "AU33",
+    "filename": "33_Unit 4_Developing ideas _3 Listen to the conversation and complete the ideas. Then match the ideas to the people.mp3",
+    "relative_path": "2025年度初一外研版英语教材/33_Unit 4_Developing ideas _3 Listen to the conversation and complete the ideas. Then match the ideas to the people.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\33_Unit 4_Developing ideas _3 Listen to the conversation and complete the ideas. Then match the ideas to the people.mp3",
+    "duration_ms": 187977,
+    "sha256": "9CE4701DA3E36951162CB61956441FDB98C16FD2B20D6B695E2B2BCDC33377AA",
+    "unit": "Unit 4",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 3,
+    "instruction": "Listen to the conversation and complete the ideas. Then match the ideas to the people.",
+    "pdf_pages": [
+      76,
+      77
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU34",
+    "audio_num": "AU34",
+    "filename": "34_Unit 4_Developing ideas _Reading for writing_2 Read the story and check your answers.mp3",
+    "relative_path": "2025年度初一外研版英语教材/34_Unit 4_Developing ideas _Reading for writing_2 Read the story and check your answers.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\34_Unit 4_Developing ideas _Reading for writing_2 Read the story and check your answers.mp3",
+    "duration_ms": 107624,
+    "sha256": "3A891D2AAA556589F02B93B9BFC322E5D8D951611CAFF50C69F26426FBEB3206",
+    "unit": "Unit 4",
+    "section": "READING_FOR_WRITING",
+    "activity_no": 2,
+    "instruction": "Read the story and check your answers.",
+    "pdf_pages": [
+      78,
+      79
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU35",
+    "audio_num": "AU35",
+    "filename": "35_Unit 5_Understanding ideas_2 Read the passage and check your answers.mp3",
+    "relative_path": "2025年度初一外研版英语教材/35_Unit 5_Understanding ideas_2 Read the passage and check your answers.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\35_Unit 5_Understanding ideas_2 Read the passage and check your answers.mp3",
+    "duration_ms": 106240,
+    "sha256": "7A20F688EE489FE86E24F499397F3BDD4E1A1CD798694EF2C7658560BC01D0FD",
+    "unit": "Unit 5",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Read the passage and check your answers.",
+    "pdf_pages": [
+      86,
+      87
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU36",
+    "audio_num": "AU36",
+    "filename": "36_Unit 5_Understanding ideas_8 Work in pairs. Discuss your plan for Planting Day.mp3",
+    "relative_path": "2025年度初一外研版英语教材/36_Unit 5_Understanding ideas_8 Work in pairs. Discuss your plan for Planting Day.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\36_Unit 5_Understanding ideas_8 Work in pairs. Discuss your plan for Planting Day.mp3",
+    "duration_ms": 52637,
+    "sha256": "DD27FB58A5E6D0C4B10C765F664FF15DB55EC84BDBB4B3B6AEE4BB5708A3E3CD",
+    "unit": "Unit 5",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 8,
+    "instruction": "Work in pairs. Discuss your plan for Planting Day. Use the words and expressions from the reading passage and the Useful expressions to help you.",
+    "pdf_pages": [
+      89,
+      90
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU37",
+    "audio_num": "AU37",
+    "filename": "37_Unit 5_Developing ideas _1 Listen to the opening of the vlog. What is Jason talking about.mp3",
+    "relative_path": "2025年度初一外研版英语教材/37_Unit 5_Developing ideas _1 Listen to the opening of the vlog. What is Jason talking about.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\37_Unit 5_Developing ideas _1 Listen to the opening of the vlog. What is Jason talking about.mp3",
+    "duration_ms": 70374,
+    "sha256": "8C797337F07E80762256CFBD3A4E2B13E744C4CFB22D73A1C70768AC736D452B",
+    "unit": "Unit 5",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 1,
+    "instruction": "Listen to the opening of the vlog. What is Jason talking about? a The importance of corn in Mexico. b Corn in different cultures.",
+    "pdf_pages": [
+      90,
+      91
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU38",
+    "audio_num": "AU38",
+    "filename": "38_Unit 5_Developing ideas _Phonetics in use.mp3",
+    "relative_path": "2025年度初一外研版英语教材/38_Unit 5_Developing ideas _Phonetics in use.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\38_Unit 5_Developing ideas _Phonetics in use.mp3",
+    "duration_ms": 64209,
+    "sha256": "8FD014C598FDEEE39C1AE51D35962B587A6D391395E7A01DA43A792A0D10BF27",
+    "unit": "",
+    "section": "",
+    "activity_no": null,
+    "instruction": "",
+    "pdf_pages": [
+      26,
+      27
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU39",
+    "audio_num": "AU39",
+    "filename": "39_Unit 5_Developing ideas _2 Listen again and complete Jason's notes for the vlog.mp3",
+    "relative_path": "2025年度初一外研版英语教材/39_Unit 5_Developing ideas _2 Listen again and complete Jason's notes for the vlog.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\39_Unit 5_Developing ideas _2 Listen again and complete Jason's notes for the vlog.mp3",
+    "duration_ms": 69355,
+    "sha256": "1E41BF55BD6FCBC9ACB4FA30A61BB8CED032343C5A9EF52529CCC1319EF0DE3E",
+    "unit": "Unit 5",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Listen again and complete Jason’s notes for the vlog.",
+    "pdf_pages": [
+      91,
+      92
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU40",
+    "audio_num": "AU40",
+    "filename": "40_Unit 5_Developing ideas _3 Listen to the conversation and complete the sentences.mp3",
+    "relative_path": "2025年度初一外研版英语教材/40_Unit 5_Developing ideas _3 Listen to the conversation and complete the sentences.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\40_Unit 5_Developing ideas _3 Listen to the conversation and complete the sentences.mp3",
+    "duration_ms": 191713,
+    "sha256": "1ADB7E978F6FF642E22922FBC32379246ECA128329168410008CD1DBA1A98A68",
+    "unit": "Unit 5",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 3,
+    "instruction": "Listen to the conversation and complete the sentences.",
+    "pdf_pages": [
+      92,
+      93
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU41",
+    "audio_num": "AU41",
+    "filename": "41_Unit 5_Developing ideas _Reading for writing_2 Read the passage. Find out the importance of tea to the Chinese and the Brits.mp3",
+    "relative_path": "2025年度初一外研版英语教材/41_Unit 5_Developing ideas _Reading for writing_2 Read the passage. Find out the importance of tea to the Chinese and the Brits.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\41_Unit 5_Developing ideas _Reading for writing_2 Read the passage. Find out the importance of tea to the Chinese and the Brits.mp3",
+    "duration_ms": 113058,
+    "sha256": "7194F5DC50317D6628782B24CD3A64B605F13E771CF104C184CDC3CF8D10B8D7",
+    "unit": "Unit 5",
+    "section": "READING_FOR_WRITING",
+    "activity_no": 2,
+    "instruction": "Read the passage. Find out the importance of tea to the Chinese and the Brits.",
+    "pdf_pages": [
+      93,
+      94
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU42",
+    "audio_num": "AU42",
+    "filename": "42_Unit 6_Understanding ideas_2 Read the blogs and find out the words Henry used.mp3",
+    "relative_path": "2025年度初一外研版英语教材/42_Unit 6_Understanding ideas_2 Read the blogs and find out the words Henry used.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\42_Unit 6_Understanding ideas_2 Read the blogs and find out the words Henry used.mp3",
+    "duration_ms": 131605,
+    "sha256": "14F5CD9BDE8F28B37E3559C0D2F7EC7A97C73B527114B21A19E6A00C8CA9D080",
+    "unit": "Unit 6",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Read the blogs and find out the words Henry used.",
+    "pdf_pages": [
+      101,
+      102
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU43",
+    "audio_num": "AU43",
+    "filename": "43_Unit 6_Developing ideas _1 Listen to the radio programme. What is it about.mp3",
+    "relative_path": "2025年度初一外研版英语教材/43_Unit 6_Developing ideas _1 Listen to the radio programme. What is it about.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\43_Unit 6_Developing ideas _1 Listen to the radio programme. What is it about.mp3",
+    "duration_ms": 65933,
+    "sha256": "5D5AB8CF90B6E6A8A9EB1DE966DE768F1BB50D412F512297370F813F17D4997E",
+    "unit": "Unit 6",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 1,
+    "instruction": "Listen to the radio programme. What is it about? a The world’s best dog. b Goodbye to a hero dog.",
+    "pdf_pages": [
+      106,
+      107
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU44",
+    "audio_num": "AU44",
+    "filename": "44_Unit 6_Developing ideas _Phonetics in use.mp3",
+    "relative_path": "2025年度初一外研版英语教材/44_Unit 6_Developing ideas _Phonetics in use.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\44_Unit 6_Developing ideas _Phonetics in use.mp3",
+    "duration_ms": 52349,
+    "sha256": "CDEF31232BCB51BABCB53E1D1EB4BE5155617665112E5E7508411FFEEEEE2E5D",
+    "unit": "",
+    "section": "",
+    "activity_no": null,
+    "instruction": "",
+    "pdf_pages": [
+      26,
+      27
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU45",
+    "audio_num": "AU45",
+    "filename": "45_Unit 6_Developing ideas _2 Listen again and complete the webpage for Bingjie.mp3",
+    "relative_path": "2025年度初一外研版英语教材/45_Unit 6_Developing ideas _2 Listen again and complete the webpage for Bingjie.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\45_Unit 6_Developing ideas _2 Listen again and complete the webpage for Bingjie.mp3",
+    "duration_ms": 62354,
+    "sha256": "87FBA91C6922B579144D3EA8A4873454D70EB17FCFAC311B6BDE8A21DC4FC072",
+    "unit": "Unit 6",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 2,
+    "instruction": "Listen again and complete the webpage for Bingjie.",
+    "pdf_pages": [
+      107,
+      108
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU46",
+    "audio_num": "AU46",
+    "filename": "46_Unit 6_Developing ideas _3 Listen to the interview and complete the notes.mp3",
+    "relative_path": "2025年度初一外研版英语教材/46_Unit 6_Developing ideas _3 Listen to the interview and complete the notes.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\46_Unit 6_Developing ideas _3 Listen to the interview and complete the notes.mp3",
+    "duration_ms": 182282,
+    "sha256": "6CAFFD21B51151561BEDF3BA7ECFC2EAD71E02448EAA85EEED1061A75BEE36B7",
+    "unit": "Unit 6",
+    "section": "DEVELOPING_IDEAS",
+    "activity_no": 3,
+    "instruction": "Listen to the interview and complete the notes.",
+    "pdf_pages": [
+      108,
+      109
+    ]
+  },
+  {
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU47",
+    "audio_num": "AU47",
+    "filename": "47_Unit 6_Developing ideas _Reading for writing_2 Read the passage. What happened to dodos.mp3",
+    "relative_path": "2025年度初一外研版英语教材/47_Unit 6_Developing ideas _Reading for writing_2 Read the passage. What happened to dodos.mp3",
+    "absolute_path": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\47_Unit 6_Developing ideas _Reading for writing_2 Read the passage. What happened to dodos.mp3",
+    "duration_ms": 116924,
+    "sha256": "54675D03A8C3CD78FF478C1E0A82D3CAE4C00A9CE2090B201ED44C7756FDEC79",
+    "unit": "Unit 6",
+    "section": "READING_FOR_WRITING",
+    "activity_no": 2,
+    "instruction": "Read the passage. What happened to dodos?",
+    "pdf_pages": [
+      109,
+      110
+    ]
+  }
+]

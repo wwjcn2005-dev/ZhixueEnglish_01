@@ -1,0 +1,1309 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU26",
+  "audio_num": "AU26",
+  "filename": "26_Unit 3_Developing ideas _3 Listen and complete the conversation.mp3",
+  "duration_ms": 153469,
+  "segment_count": 21,
+  "word_count": 237,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 5340,
+      "text": "Activity 3. Listen and complete the conversation."
+    },
+    {
+      "start_ms": 7000,
+      "end_ms": 11500,
+      "text": "Tina, I'll pick you up at the school gate at five."
+    },
+    {
+      "start_ms": 12420,
+      "end_ms": 18100,
+      "text": "Okay mum, but can you change your clothes before you come?"
+    },
+    {
+      "start_ms": 18920,
+      "end_ms": 25880,
+      "text": "Why? I don't have time to change after work. I don't want to be late."
+    },
+    {
+      "start_ms": 25880,
+      "end_ms": 33180,
+      "text": "It's a bit difficult to talk about, but that is too eye-catching."
+    },
+    {
+      "start_ms": 34100,
+      "end_ms": 38840,
+      "text": "Oh, Tina, don't you love my queen's dress?"
+    },
+    {
+      "start_ms": 39840,
+      "end_ms": 46560,
+      "text": "Not now. I'm not a little girl anymore. Everyone looks at you and laughs."
+    },
+    {
+      "start_ms": 47380,
+      "end_ms": 57780,
+      "text": "I'm sorry. I didn't know that. Now I see. I will change my clothes before I pick you up."
+    },
+    {
+      "start_ms": 58460,
+      "end_ms": 61920,
+      "text": "Thank you, Mum. I hope you're not hurt."
+    },
+    {
+      "start_ms": 62680,
+      "end_ms": 65780,
+      "text": "I am glad you told me this, my girl."
+    },
+    {
+      "start_ms": 74300,
+      "end_ms": 81320,
+      "text": "Listen again. Then talk about how Tina and her mother soften their language."
+    },
+    {
+      "start_ms": 83560,
+      "end_ms": 87960,
+      "text": "Tina, I'll pick you up at the school gate at five."
+    },
+    {
+      "start_ms": 87960,
+      "end_ms": 94560,
+      "text": "Okay mum, but can you change your clothes before you come?"
+    },
+    {
+      "start_ms": 95380,
+      "end_ms": 102340,
+      "text": "Why? I don't have time to change after work. I don't want to be late."
+    },
+    {
+      "start_ms": 103200,
+      "end_ms": 109540,
+      "text": "It's a bit difficult to talk about, but that is too eye catching."
+    },
+    {
+      "start_ms": 110500,
+      "end_ms": 115320,
+      "text": "Oh, Tina, don't you love my queen's dress?"
+    },
+    {
+      "start_ms": 115320,
+      "end_ms": 122820,
+      "text": "Not now. I'm not a little girl anymore. Everyone looks at you and laughs."
+    },
+    {
+      "start_ms": 123920,
+      "end_ms": 134200,
+      "text": "I'm sorry. I didn't know that. Now I see. I will change my clothes before I pick you up."
+    },
+    {
+      "start_ms": 134920,
+      "end_ms": 138340,
+      "text": "Thank you, Mum. I hope you're not hurt."
+    },
+    {
+      "start_ms": 139040,
+      "end_ms": 142240,
+      "text": "I am glad you told me this, my girl."
+    },
+    {
+      "start_ms": 152020,
+      "end_ms": 153420,
+      "text": "you"
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1040
+    },
+    {
+      "word": "3.",
+      "start_ms": 1040,
+      "end_ms": 1560
+    },
+    {
+      "word": "Listen",
+      "start_ms": 2180,
+      "end_ms": 2960
+    },
+    {
+      "word": "and",
+      "start_ms": 2960,
+      "end_ms": 3640
+    },
+    {
+      "word": "complete",
+      "start_ms": 3640,
+      "end_ms": 4180
+    },
+    {
+      "word": "the",
+      "start_ms": 4180,
+      "end_ms": 4540
+    },
+    {
+      "word": "conversation.",
+      "start_ms": 4540,
+      "end_ms": 5340
+    },
+    {
+      "word": "Tina,",
+      "start_ms": 7000,
+      "end_ms": 7880
+    },
+    {
+      "word": "I'll",
+      "start_ms": 8580,
+      "end_ms": 8940
+    },
+    {
+      "word": "pick",
+      "start_ms": 8940,
+      "end_ms": 9200
+    },
+    {
+      "word": "you",
+      "start_ms": 9200,
+      "end_ms": 9500
+    },
+    {
+      "word": "up",
+      "start_ms": 9500,
+      "end_ms": 9720
+    },
+    {
+      "word": "at",
+      "start_ms": 9720,
+      "end_ms": 9880
+    },
+    {
+      "word": "the",
+      "start_ms": 9880,
+      "end_ms": 10020
+    },
+    {
+      "word": "school",
+      "start_ms": 10020,
+      "end_ms": 10360
+    },
+    {
+      "word": "gate",
+      "start_ms": 10360,
+      "end_ms": 10800
+    },
+    {
+      "word": "at",
+      "start_ms": 10800,
+      "end_ms": 11060
+    },
+    {
+      "word": "five.",
+      "start_ms": 11060,
+      "end_ms": 11500
+    },
+    {
+      "word": "Okay",
+      "start_ms": 12420,
+      "end_ms": 13120
+    },
+    {
+      "word": "mum,",
+      "start_ms": 13120,
+      "end_ms": 13540
+    },
+    {
+      "word": "but",
+      "start_ms": 14160,
+      "end_ms": 14540
+    },
+    {
+      "word": "can",
+      "start_ms": 14540,
+      "end_ms": 15440
+    },
+    {
+      "word": "you",
+      "start_ms": 15440,
+      "end_ms": 15680
+    },
+    {
+      "word": "change",
+      "start_ms": 15680,
+      "end_ms": 16060
+    },
+    {
+      "word": "your",
+      "start_ms": 16060,
+      "end_ms": 16340
+    },
+    {
+      "word": "clothes",
+      "start_ms": 16340,
+      "end_ms": 17000
+    },
+    {
+      "word": "before",
+      "start_ms": 17000,
+      "end_ms": 17500
+    },
+    {
+      "word": "you",
+      "start_ms": 17500,
+      "end_ms": 17780
+    },
+    {
+      "word": "come?",
+      "start_ms": 17780,
+      "end_ms": 18100
+    },
+    {
+      "word": "Why?",
+      "start_ms": 18920,
+      "end_ms": 19540
+    },
+    {
+      "word": "I",
+      "start_ms": 20520,
+      "end_ms": 20900
+    },
+    {
+      "word": "don't",
+      "start_ms": 20900,
+      "end_ms": 21280
+    },
+    {
+      "word": "have",
+      "start_ms": 21280,
+      "end_ms": 21580
+    },
+    {
+      "word": "time",
+      "start_ms": 21580,
+      "end_ms": 22060
+    },
+    {
+      "word": "to",
+      "start_ms": 22060,
+      "end_ms": 22320
+    },
+    {
+      "word": "change",
+      "start_ms": 22320,
+      "end_ms": 22700
+    },
+    {
+      "word": "after",
+      "start_ms": 22700,
+      "end_ms": 23160
+    },
+    {
+      "word": "work.",
+      "start_ms": 23160,
+      "end_ms": 23640
+    },
+    {
+      "word": "I",
+      "start_ms": 24200,
+      "end_ms": 24660
+    },
+    {
+      "word": "don't",
+      "start_ms": 24660,
+      "end_ms": 24960
+    },
+    {
+      "word": "want",
+      "start_ms": 24960,
+      "end_ms": 25140
+    },
+    {
+      "word": "to",
+      "start_ms": 25140,
+      "end_ms": 25380
+    },
+    {
+      "word": "be",
+      "start_ms": 25380,
+      "end_ms": 25480
+    },
+    {
+      "word": "late.",
+      "start_ms": 25480,
+      "end_ms": 25880
+    },
+    {
+      "word": "It's",
+      "start_ms": 25880,
+      "end_ms": 27440
+    },
+    {
+      "word": "a",
+      "start_ms": 27440,
+      "end_ms": 27580
+    },
+    {
+      "word": "bit",
+      "start_ms": 27580,
+      "end_ms": 27940
+    },
+    {
+      "word": "difficult",
+      "start_ms": 27940,
+      "end_ms": 28560
+    },
+    {
+      "word": "to",
+      "start_ms": 28560,
+      "end_ms": 28920
+    },
+    {
+      "word": "talk",
+      "start_ms": 28920,
+      "end_ms": 29300
+    },
+    {
+      "word": "about,",
+      "start_ms": 29300,
+      "end_ms": 29760
+    },
+    {
+      "word": "but",
+      "start_ms": 30320,
+      "end_ms": 30760
+    },
+    {
+      "word": "that",
+      "start_ms": 30760,
+      "end_ms": 31580
+    },
+    {
+      "word": "is",
+      "start_ms": 31580,
+      "end_ms": 31860
+    },
+    {
+      "word": "too",
+      "start_ms": 31860,
+      "end_ms": 32280
+    },
+    {
+      "word": "eye",
+      "start_ms": 32280,
+      "end_ms": 32620
+    },
+    {
+      "word": "-catching.",
+      "start_ms": 32620,
+      "end_ms": 33180
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 34100,
+      "end_ms": 34640
+    },
+    {
+      "word": "Tina,",
+      "start_ms": 35060,
+      "end_ms": 35500
+    },
+    {
+      "word": "don't",
+      "start_ms": 36600,
+      "end_ms": 36980
+    },
+    {
+      "word": "you",
+      "start_ms": 36980,
+      "end_ms": 37200
+    },
+    {
+      "word": "love",
+      "start_ms": 37200,
+      "end_ms": 37540
+    },
+    {
+      "word": "my",
+      "start_ms": 37540,
+      "end_ms": 37900
+    },
+    {
+      "word": "queen's",
+      "start_ms": 37900,
+      "end_ms": 38600
+    },
+    {
+      "word": "dress?",
+      "start_ms": 38600,
+      "end_ms": 38840
+    },
+    {
+      "word": "Not",
+      "start_ms": 39840,
+      "end_ms": 40240
+    },
+    {
+      "word": "now.",
+      "start_ms": 40240,
+      "end_ms": 40680
+    },
+    {
+      "word": "I'm",
+      "start_ms": 41500,
+      "end_ms": 41900
+    },
+    {
+      "word": "not",
+      "start_ms": 41900,
+      "end_ms": 42100
+    },
+    {
+      "word": "a",
+      "start_ms": 42100,
+      "end_ms": 42300
+    },
+    {
+      "word": "little",
+      "start_ms": 42300,
+      "end_ms": 42480
+    },
+    {
+      "word": "girl",
+      "start_ms": 42480,
+      "end_ms": 42940
+    },
+    {
+      "word": "anymore.",
+      "start_ms": 42940,
+      "end_ms": 43440
+    },
+    {
+      "word": "Everyone",
+      "start_ms": 44160,
+      "end_ms": 44640
+    },
+    {
+      "word": "looks",
+      "start_ms": 44640,
+      "end_ms": 45080
+    },
+    {
+      "word": "at",
+      "start_ms": 45080,
+      "end_ms": 45500
+    },
+    {
+      "word": "you",
+      "start_ms": 45500,
+      "end_ms": 45760
+    },
+    {
+      "word": "and",
+      "start_ms": 45760,
+      "end_ms": 45920
+    },
+    {
+      "word": "laughs.",
+      "start_ms": 45920,
+      "end_ms": 46560
+    },
+    {
+      "word": "I'm",
+      "start_ms": 47380,
+      "end_ms": 48180
+    },
+    {
+      "word": "sorry.",
+      "start_ms": 48180,
+      "end_ms": 48840
+    },
+    {
+      "word": "I",
+      "start_ms": 49620,
+      "end_ms": 50020
+    },
+    {
+      "word": "didn't",
+      "start_ms": 50020,
+      "end_ms": 50400
+    },
+    {
+      "word": "know",
+      "start_ms": 50400,
+      "end_ms": 50780
+    },
+    {
+      "word": "that.",
+      "start_ms": 50780,
+      "end_ms": 51220
+    },
+    {
+      "word": "Now",
+      "start_ms": 52120,
+      "end_ms": 52520
+    },
+    {
+      "word": "I",
+      "start_ms": 52520,
+      "end_ms": 52920
+    },
+    {
+      "word": "see.",
+      "start_ms": 52920,
+      "end_ms": 53380
+    },
+    {
+      "word": "I",
+      "start_ms": 54280,
+      "end_ms": 54640
+    },
+    {
+      "word": "will",
+      "start_ms": 54640,
+      "end_ms": 54820
+    },
+    {
+      "word": "change",
+      "start_ms": 54820,
+      "end_ms": 55200
+    },
+    {
+      "word": "my",
+      "start_ms": 55200,
+      "end_ms": 55540
+    },
+    {
+      "word": "clothes",
+      "start_ms": 55540,
+      "end_ms": 56080
+    },
+    {
+      "word": "before",
+      "start_ms": 56080,
+      "end_ms": 56580
+    },
+    {
+      "word": "I",
+      "start_ms": 56580,
+      "end_ms": 57000
+    },
+    {
+      "word": "pick",
+      "start_ms": 57000,
+      "end_ms": 57220
+    },
+    {
+      "word": "you",
+      "start_ms": 57220,
+      "end_ms": 57520
+    },
+    {
+      "word": "up.",
+      "start_ms": 57520,
+      "end_ms": 57780
+    },
+    {
+      "word": "Thank",
+      "start_ms": 58460,
+      "end_ms": 58760
+    },
+    {
+      "word": "you,",
+      "start_ms": 58760,
+      "end_ms": 59080
+    },
+    {
+      "word": "Mum.",
+      "start_ms": 59300,
+      "end_ms": 59320
+    },
+    {
+      "word": "I",
+      "start_ms": 60160,
+      "end_ms": 60560
+    },
+    {
+      "word": "hope",
+      "start_ms": 60560,
+      "end_ms": 60880
+    },
+    {
+      "word": "you're",
+      "start_ms": 60880,
+      "end_ms": 61300
+    },
+    {
+      "word": "not",
+      "start_ms": 61300,
+      "end_ms": 61440
+    },
+    {
+      "word": "hurt.",
+      "start_ms": 61440,
+      "end_ms": 61920
+    },
+    {
+      "word": "I",
+      "start_ms": 62680,
+      "end_ms": 63180
+    },
+    {
+      "word": "am",
+      "start_ms": 63180,
+      "end_ms": 63320
+    },
+    {
+      "word": "glad",
+      "start_ms": 63320,
+      "end_ms": 63720
+    },
+    {
+      "word": "you",
+      "start_ms": 63720,
+      "end_ms": 64080
+    },
+    {
+      "word": "told",
+      "start_ms": 64080,
+      "end_ms": 64400
+    },
+    {
+      "word": "me",
+      "start_ms": 64400,
+      "end_ms": 64660
+    },
+    {
+      "word": "this,",
+      "start_ms": 64660,
+      "end_ms": 65060
+    },
+    {
+      "word": "my",
+      "start_ms": 65160,
+      "end_ms": 65340
+    },
+    {
+      "word": "girl.",
+      "start_ms": 65340,
+      "end_ms": 65780
+    },
+    {
+      "word": "Listen",
+      "start_ms": 74300,
+      "end_ms": 75160
+    },
+    {
+      "word": "again.",
+      "start_ms": 75160,
+      "end_ms": 75660
+    },
+    {
+      "word": "Then",
+      "start_ms": 76200,
+      "end_ms": 76960
+    },
+    {
+      "word": "talk",
+      "start_ms": 76960,
+      "end_ms": 77320
+    },
+    {
+      "word": "about",
+      "start_ms": 77320,
+      "end_ms": 77780
+    },
+    {
+      "word": "how",
+      "start_ms": 77780,
+      "end_ms": 78080
+    },
+    {
+      "word": "Tina",
+      "start_ms": 78080,
+      "end_ms": 78480
+    },
+    {
+      "word": "and",
+      "start_ms": 78480,
+      "end_ms": 78900
+    },
+    {
+      "word": "her",
+      "start_ms": 78900,
+      "end_ms": 79080
+    },
+    {
+      "word": "mother",
+      "start_ms": 79080,
+      "end_ms": 79420
+    },
+    {
+      "word": "soften",
+      "start_ms": 79420,
+      "end_ms": 80240
+    },
+    {
+      "word": "their",
+      "start_ms": 80240,
+      "end_ms": 80780
+    },
+    {
+      "word": "language.",
+      "start_ms": 80780,
+      "end_ms": 81320
+    },
+    {
+      "word": "Tina,",
+      "start_ms": 83560,
+      "end_ms": 84420
+    },
+    {
+      "word": "I'll",
+      "start_ms": 85020,
+      "end_ms": 85400
+    },
+    {
+      "word": "pick",
+      "start_ms": 85400,
+      "end_ms": 85660
+    },
+    {
+      "word": "you",
+      "start_ms": 85660,
+      "end_ms": 85960
+    },
+    {
+      "word": "up",
+      "start_ms": 85960,
+      "end_ms": 86180
+    },
+    {
+      "word": "at",
+      "start_ms": 86180,
+      "end_ms": 86340
+    },
+    {
+      "word": "the",
+      "start_ms": 86340,
+      "end_ms": 86480
+    },
+    {
+      "word": "school",
+      "start_ms": 86480,
+      "end_ms": 86820
+    },
+    {
+      "word": "gate",
+      "start_ms": 86820,
+      "end_ms": 87300
+    },
+    {
+      "word": "at",
+      "start_ms": 87300,
+      "end_ms": 87520
+    },
+    {
+      "word": "five.",
+      "start_ms": 87520,
+      "end_ms": 87960
+    },
+    {
+      "word": "Okay",
+      "start_ms": 87960,
+      "end_ms": 89580
+    },
+    {
+      "word": "mum,",
+      "start_ms": 89580,
+      "end_ms": 90000
+    },
+    {
+      "word": "but",
+      "start_ms": 90700,
+      "end_ms": 91000
+    },
+    {
+      "word": "can",
+      "start_ms": 91000,
+      "end_ms": 91900
+    },
+    {
+      "word": "you",
+      "start_ms": 91900,
+      "end_ms": 92140
+    },
+    {
+      "word": "change",
+      "start_ms": 92140,
+      "end_ms": 92540
+    },
+    {
+      "word": "your",
+      "start_ms": 92540,
+      "end_ms": 92800
+    },
+    {
+      "word": "clothes",
+      "start_ms": 92800,
+      "end_ms": 93460
+    },
+    {
+      "word": "before",
+      "start_ms": 93460,
+      "end_ms": 93960
+    },
+    {
+      "word": "you",
+      "start_ms": 93960,
+      "end_ms": 94240
+    },
+    {
+      "word": "come?",
+      "start_ms": 94240,
+      "end_ms": 94560
+    },
+    {
+      "word": "Why?",
+      "start_ms": 95380,
+      "end_ms": 96000
+    },
+    {
+      "word": "I",
+      "start_ms": 96940,
+      "end_ms": 97380
+    },
+    {
+      "word": "don't",
+      "start_ms": 97380,
+      "end_ms": 97760
+    },
+    {
+      "word": "have",
+      "start_ms": 97760,
+      "end_ms": 98040
+    },
+    {
+      "word": "time",
+      "start_ms": 98040,
+      "end_ms": 98540
+    },
+    {
+      "word": "to",
+      "start_ms": 98540,
+      "end_ms": 98780
+    },
+    {
+      "word": "change",
+      "start_ms": 98780,
+      "end_ms": 99180
+    },
+    {
+      "word": "after",
+      "start_ms": 99180,
+      "end_ms": 99620
+    },
+    {
+      "word": "work.",
+      "start_ms": 99620,
+      "end_ms": 100080
+    },
+    {
+      "word": "I",
+      "start_ms": 100700,
+      "end_ms": 101120
+    },
+    {
+      "word": "don't",
+      "start_ms": 101120,
+      "end_ms": 101420
+    },
+    {
+      "word": "want",
+      "start_ms": 101420,
+      "end_ms": 101600
+    },
+    {
+      "word": "to",
+      "start_ms": 101600,
+      "end_ms": 101840
+    },
+    {
+      "word": "be",
+      "start_ms": 101840,
+      "end_ms": 101940
+    },
+    {
+      "word": "late.",
+      "start_ms": 101940,
+      "end_ms": 102340
+    },
+    {
+      "word": "It's",
+      "start_ms": 103200,
+      "end_ms": 103920
+    },
+    {
+      "word": "a",
+      "start_ms": 103920,
+      "end_ms": 104040
+    },
+    {
+      "word": "bit",
+      "start_ms": 104040,
+      "end_ms": 104400
+    },
+    {
+      "word": "difficult",
+      "start_ms": 104400,
+      "end_ms": 105020
+    },
+    {
+      "word": "to",
+      "start_ms": 105020,
+      "end_ms": 105380
+    },
+    {
+      "word": "talk",
+      "start_ms": 105380,
+      "end_ms": 105740
+    },
+    {
+      "word": "about,",
+      "start_ms": 105740,
+      "end_ms": 106240
+    },
+    {
+      "word": "but",
+      "start_ms": 106720,
+      "end_ms": 107220
+    },
+    {
+      "word": "that",
+      "start_ms": 107220,
+      "end_ms": 108020
+    },
+    {
+      "word": "is",
+      "start_ms": 108020,
+      "end_ms": 108340
+    },
+    {
+      "word": "too",
+      "start_ms": 108340,
+      "end_ms": 108760
+    },
+    {
+      "word": "eye",
+      "start_ms": 108760,
+      "end_ms": 109060
+    },
+    {
+      "word": "catching.",
+      "start_ms": 109060,
+      "end_ms": 109540
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 110500,
+      "end_ms": 111180
+    },
+    {
+      "word": "Tina,",
+      "start_ms": 111560,
+      "end_ms": 111960
+    },
+    {
+      "word": "don't",
+      "start_ms": 113100,
+      "end_ms": 113460
+    },
+    {
+      "word": "you",
+      "start_ms": 113460,
+      "end_ms": 113660
+    },
+    {
+      "word": "love",
+      "start_ms": 113660,
+      "end_ms": 114000
+    },
+    {
+      "word": "my",
+      "start_ms": 114000,
+      "end_ms": 114360
+    },
+    {
+      "word": "queen's",
+      "start_ms": 114360,
+      "end_ms": 115040
+    },
+    {
+      "word": "dress?",
+      "start_ms": 115040,
+      "end_ms": 115320
+    },
+    {
+      "word": "Not",
+      "start_ms": 115320,
+      "end_ms": 116660
+    },
+    {
+      "word": "now.",
+      "start_ms": 116660,
+      "end_ms": 117200
+    },
+    {
+      "word": "I'm",
+      "start_ms": 117980,
+      "end_ms": 118340
+    },
+    {
+      "word": "not",
+      "start_ms": 118340,
+      "end_ms": 118560
+    },
+    {
+      "word": "a",
+      "start_ms": 118560,
+      "end_ms": 118760
+    },
+    {
+      "word": "little",
+      "start_ms": 118760,
+      "end_ms": 118940
+    },
+    {
+      "word": "girl",
+      "start_ms": 118940,
+      "end_ms": 119340
+    },
+    {
+      "word": "anymore.",
+      "start_ms": 119340,
+      "end_ms": 119900
+    },
+    {
+      "word": "Everyone",
+      "start_ms": 120640,
+      "end_ms": 121100
+    },
+    {
+      "word": "looks",
+      "start_ms": 121100,
+      "end_ms": 121540
+    },
+    {
+      "word": "at",
+      "start_ms": 121540,
+      "end_ms": 121960
+    },
+    {
+      "word": "you",
+      "start_ms": 121960,
+      "end_ms": 122220
+    },
+    {
+      "word": "and",
+      "start_ms": 122220,
+      "end_ms": 122360
+    },
+    {
+      "word": "laughs.",
+      "start_ms": 122360,
+      "end_ms": 122820
+    },
+    {
+      "word": "I'm",
+      "start_ms": 123920,
+      "end_ms": 124640
+    },
+    {
+      "word": "sorry.",
+      "start_ms": 124640,
+      "end_ms": 125280
+    },
+    {
+      "word": "I",
+      "start_ms": 126160,
+      "end_ms": 126480
+    },
+    {
+      "word": "didn't",
+      "start_ms": 126480,
+      "end_ms": 126860
+    },
+    {
+      "word": "know",
+      "start_ms": 126860,
+      "end_ms": 127240
+    },
+    {
+      "word": "that.",
+      "start_ms": 127240,
+      "end_ms": 127640
+    },
+    {
+      "word": "Now",
+      "start_ms": 128560,
+      "end_ms": 129000
+    },
+    {
+      "word": "I",
+      "start_ms": 129000,
+      "end_ms": 129380
+    },
+    {
+      "word": "see.",
+      "start_ms": 129380,
+      "end_ms": 129800
+    },
+    {
+      "word": "I",
+      "start_ms": 130780,
+      "end_ms": 131100
+    },
+    {
+      "word": "will",
+      "start_ms": 131100,
+      "end_ms": 131280
+    },
+    {
+      "word": "change",
+      "start_ms": 131280,
+      "end_ms": 131680
+    },
+    {
+      "word": "my",
+      "start_ms": 131680,
+      "end_ms": 132000
+    },
+    {
+      "word": "clothes",
+      "start_ms": 132000,
+      "end_ms": 132560
+    },
+    {
+      "word": "before",
+      "start_ms": 132560,
+      "end_ms": 133040
+    },
+    {
+      "word": "I",
+      "start_ms": 133040,
+      "end_ms": 133460
+    },
+    {
+      "word": "pick",
+      "start_ms": 133460,
+      "end_ms": 133680
+    },
+    {
+      "word": "you",
+      "start_ms": 133680,
+      "end_ms": 133980
+    },
+    {
+      "word": "up.",
+      "start_ms": 133980,
+      "end_ms": 134200
+    },
+    {
+      "word": "Thank",
+      "start_ms": 134920,
+      "end_ms": 135240
+    },
+    {
+      "word": "you,",
+      "start_ms": 135240,
+      "end_ms": 135560
+    },
+    {
+      "word": "Mum.",
+      "start_ms": 135580,
+      "end_ms": 135780
+    },
+    {
+      "word": "I",
+      "start_ms": 136380,
+      "end_ms": 137000
+    },
+    {
+      "word": "hope",
+      "start_ms": 137000,
+      "end_ms": 137340
+    },
+    {
+      "word": "you're",
+      "start_ms": 137340,
+      "end_ms": 137740
+    },
+    {
+      "word": "not",
+      "start_ms": 137740,
+      "end_ms": 137900
+    },
+    {
+      "word": "hurt.",
+      "start_ms": 137900,
+      "end_ms": 138340
+    },
+    {
+      "word": "I",
+      "start_ms": 139040,
+      "end_ms": 139620
+    },
+    {
+      "word": "am",
+      "start_ms": 139620,
+      "end_ms": 139800
+    },
+    {
+      "word": "glad",
+      "start_ms": 139800,
+      "end_ms": 140180
+    },
+    {
+      "word": "you",
+      "start_ms": 140180,
+      "end_ms": 140540
+    },
+    {
+      "word": "told",
+      "start_ms": 140540,
+      "end_ms": 140860
+    },
+    {
+      "word": "me",
+      "start_ms": 140860,
+      "end_ms": 141120
+    },
+    {
+      "word": "this,",
+      "start_ms": 141120,
+      "end_ms": 141500
+    },
+    {
+      "word": "my",
+      "start_ms": 141640,
+      "end_ms": 141800
+    },
+    {
+      "word": "girl.",
+      "start_ms": 141800,
+      "end_ms": 142240
+    },
+    {
+      "word": "you",
+      "start_ms": 152020,
+      "end_ms": 153420
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 18.3
+  }
+}

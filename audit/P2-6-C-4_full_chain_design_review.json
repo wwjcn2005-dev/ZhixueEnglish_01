@@ -1,0 +1,354 @@
+{
+  "phase": "P2-6-C-4",
+  "title": "Learning Object / Evidence / Mastery / Diagnosis / Intervention / Consolidation 全链路综合设计评审",
+  "status": "PASS_WITH_GAPS",
+  "mode": "read_only_review",
+  "reviewed_at": "2026-09-13",
+  "review_scope": "P2-6-B（实现）+ C-1（审计）+ C-2（LO 设计）+ C-3（Action 设计）拼合后的全链路一致性、闭环完整性、最小性与可实现性",
+  "source_documents": [
+    "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+    "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.md",
+    "audit/P2-6-C-1_learning_object_evidence_loop_audit.md",
+    "audit/P2-6-C-1_learning_object_evidence_loop_audit.json",
+    "audit/P2-6-C-2_learning_object_design.md",
+    "audit/P2-6-C-2_learning_object_design.json",
+    "audit/P2-6-C-3_consolidation_action_design.md",
+    "audit/P2-6-C-3_consolidation_action_design.json",
+    "audit/P2-6-B_mastery_and_intervention_implementation.md",
+    "audit/P2-6-B_mastery_and_intervention_implementation.json",
+    "learning/evidence_service.py",
+    "learning/mastery_service.py",
+    "learning/diagnosis_service.py",
+    "learning/intervention_service.py",
+    "structured/learning/mastery_rules_v1.json"
+  ],
+  "new_readonly_verification": {
+    "same_lo_cross_item_chain_provable": true,
+    "lo_with_two_or_more_exercises": 4,
+    "examples": [{"lo": "VOCAB:eraser", "exercises": 2,
+                  "learner_has_vocabulary_record": true},
+                 {"lo": "VOCAB:need", "exercises": 2},
+                 {"lo": "VOCAB:club", "exercises": 2},
+                 {"lo": "VOCAB:amazing", "exercises": 2}],
+    "mapping_evidence": "exercise → activity_id → related_vocabulary（词面）→ vocabulary item_id（288 词面唯一）→ LO id（1,512 引用 100% 唯一解析）"
+  },
+  "architecture_chain": [
+    {"layer": "教材事实", "persistent": true, "derived": false},
+    {"layer": "Learning Object", "persistent": false, "derived": true},
+    {"layer": "Activity", "persistent": "快照", "derived": "部分"},
+    {"layer": "Exercise / Question", "persistent": true, "derived": false},
+    {"layer": "Evidence", "persistent": false, "derived": true},
+    {"layer": "Mastery", "persistent": false, "derived": true},
+    {"layer": "Diagnosis", "persistent": false, "derived": true},
+    {"layer": "Intervention / Suggestion", "persistent": false, "derived": true},
+    {"layer": "Child Choice", "persistent": false, "derived": false},
+    {"layer": "Consolidation Action", "persistent": "可选", "derived": false},
+    {"layer": "新 Evidence", "persistent": false, "derived": true},
+    {"layer": "Re-diagnosis", "persistent": false, "derived": true}
+  ],
+  "layer_matrix": {
+    "overlaps_found": 2,
+    "overlap_details": [
+      {"id": "OV-1",
+       "detail": "mastery_state（item 级持久化缓存）与 LO 级派生 mastery 并存",
+       "resolution": "D 阶段明确：item 级=事实缓存（frozen 写入，用于展示/池）；LO 级=唯一判定对象；UI 标注来源"},
+      {"id": "OV-2",
+       "detail": "frozen pool 的 current_error 与 diagnosis 的 current_error 语义分层",
+       "resolution": "pool=最近一次判断事实（含自评）；diagnosis=LO 级有效证据结论；D 不合并、不修改 pool"}
+    ],
+    "fatal_overlap": false
+  },
+  "lo_review": {
+    "small_enough": true,
+    "stable": true,
+    "from_textbook_facts": true,
+    "deterministic_id": true,
+    "same_facts_same_lo": true,
+    "wrong_merge_risk": "low（需 D 阶段以规范化后词面唯一性断言守住）",
+    "one_textbook_object_multiple_lo": "允许（同词不同义 sense 位；文本的阅读与写作可各为 LO）",
+    "exercise_multiple_lo": true,
+    "evidence_multiple_lo": true,
+    "vocab_global_lo_plus_unit_attribute": "合理（词表每词一条；primary_unit 为属性）",
+    "verdict": "LO 模型成立"
+  },
+  "unmapped_exercises": {
+    "mapped": 89,
+    "unmapped": 68,
+    "ratio": "56.7% / 43.3%",
+    "blocking": false,
+    "allowed_to_remain": true,
+    "impact": "这些练习的证据停留在 item 级，不参与 LO 判定；闭环整体仍成立",
+    "feasible_now": ["LO 映射服务", "LO 证据聚合", "LO mastery", "LO 诊断", "教材建议", "再诊断"],
+    "must_wait": ["全教材覆盖率声明", "跨 LO 综合诊断完整版", "阶段验证题源完整性"],
+    "new_lo_types_needed": "待产品决策（speaking / reflection；会超出 V1.2 现有 LO 类型清单）",
+    "product_decision_required": true,
+    "forced_mapping_risk": "存在；由 D 阶段以 unmapped + 复核清单守住"
+  },
+  "grammar_review": {
+    "v12_requires_grammar_lo": true,
+    "pointer_sufficient": false,
+    "grammar_lo_exists": false,
+    "grammar_exercise_exists": false,
+    "grammar_evidence_exists": false,
+    "can_form_mastery_diagnosis_consolidation": false,
+    "decision": "方案 A（暂缓，不阻塞）",
+    "d_safe_avoidance": "语法证据记 unmapped(grammar)；grammar_pointer 仅指教材提示页，不设 LO、不参与 mastery"
+  },
+  "evidence_review": {
+    "done_counted": false,
+    "self_assessment_counted": false,
+    "contact_only_excluded": true,
+    "judged_results": ["correct", "incorrect", "partial"],
+    "task_type_deterministic": true,
+    "item_id_preserved": true,
+    "evidence_date": "created_at[:10]（ISO8601，+08:00）",
+    "dedupe_two_layers": ["item/日/类型", "LO/日/类型"],
+    "layer_conflict": false,
+    "multi_lo_evidence": "一条证据 + 多引用（不复制）",
+    "verdict": "Evidence 层设计自洽，LO 级聚合待 D 实现"
+  },
+  "mastery_review": {
+    "five_conditions_available_at_lo": true,
+    "item_level_disguised_as_lo": false,
+    "task_types_cross_reachable": true,
+    "natural_day_consistent": true,
+    "latest_3_is_lo_level_today": false,
+    "current_error_is_lo_level_today": false,
+    "action_completion_affects_mastery": false,
+    "correct_over_interpreted": false,
+    "stable_zero_is_normal": true,
+    "stable_zero_reasons": ["全部记录仅 1 个自然日", "每对象有效证据 ≤1 条",
+                            "尚未实现 LO 聚合（跨任务类型未汇合）"],
+    "defer_to_d": ["latest 3 与 current_error 的 LO 级迁移"]
+  },
+  "diagnosis_review": {
+    "lo_centered_today": false,
+    "defer_to_d": "迁移到 LO 级（规则不变）",
+    "current_error_source": "LO 最新有效证据",
+    "suspected_weak_rule": "≥2 次错误 或 跨 ≥2 任务类型",
+    "partial_path": "needs_textbook_review（≥2 partial 且跨 ≥2 类型）",
+    "single_error_misjudged_as_weak": false,
+    "new_evidence_can_change": true,
+    "different_item_same_lo": true,
+    "historical_error_kept": true,
+    "current_error_derived_only": true
+  },
+  "intervention_review": {
+    "six_types_have_resources": "部分（grammar_pointer 仅有提示页）",
+    "action_type_vs_target_separated": true,
+    "fabricates_when_missing": false,
+    "ai_fallback": false,
+    "auto_execute": false,
+    "auto_jump": false,
+    "auto_play": false,
+    "auto_advance": false
+  },
+  "consolidation_action_review": {
+    "model_minimal": true,
+    "independent_persistence_required": "YES_WITH_GAP",
+    "independent_persistence_reason": "证据闭环不依赖 Action；但区分“未处理/已尝试未解决”与呈现已尝试必须 Action",
+    "fields": {
+      "required": ["action_id", "learner_id", "action_type", "target_resource", "status",
+                   "started_at", "ended_at", "related_evidence_ids", "created_at"],
+      "deferrable": ["target_lo_ids", "source_ref"],
+      "rejected": ["suggestion_id", "diagnosis_id"]
+    },
+    "suggestion_id_needed": false,
+    "diagnosis_id_needed": false,
+    "action_multiple_lo": true,
+    "action_multiple_evidence": true,
+    "d_prerequisite": "related_evidence_ids 归因规则（时间窗 + 会话/目标范围）"
+  },
+  "current_error_review": {
+    "three_statuses_must_be_separate": ["Action status", "Current Error status", "Mastery status"],
+    "sequence": [
+      {"stage": "未处理（首次错误）", "current_error": "进入", "mastery": "非 stable"},
+      {"stage": "建议展示", "current_error": "保持", "mastery": "不变"},
+      {"stage": "未开始（点击退出）", "current_error": "保持", "mastery": "不变"},
+      {"stage": "开始（started）", "current_error": "保持", "mastery": "不变"},
+      {"stage": "完成但无新证据", "current_error": "保持", "mastery": "不变"},
+      {"stage": "新证据 incorrect", "current_error": "保持（计数+1）", "mastery": "不变/降级"},
+      {"stage": "新证据 partial", "current_error": "退出", "mastery": "可能降级"},
+      {"stage": "新证据 correct", "current_error": "退出", "mastery": "重算（未必 stable）"},
+      {"stage": "后续再次错误", "current_error": "重新进入", "mastery": "可能降级"}
+    ]
+  },
+  "historical_error_review": {
+    "kept_after_correct": true,
+    "viewable_after_pool_exit": true,
+    "re_entry_possible": true,
+    "pool_vs_diagnosis_conflict": false,
+    "two_error_definitions_exist": true,
+    "two_error_definitions_conflict": false
+  },
+  "rediagnosis_review": {
+    "trigger": "无独立触发器（读时派生）",
+    "inputs": ["LO 最新有效证据（current_error）", "最近 3 次（窗口）", "全量计数（条数/类型/自然日）"],
+    "uses_mastery_rules": true,
+    "separate_diagnosis_rules_needed": false,
+    "closed_loop": true
+  },
+  "activity_exercise_evidence_review": {
+    "activity_as_mastery_evidence": false,
+    "exercise_as_lo": false,
+    "question_as_lo": false,
+    "action_activity_overlap": false,
+    "risk": "activity_type 字段语义混用（资源类型 vs 学习行为）→ D 阶段只使用其行为语义"
+  },
+  "resource_pool_review": {
+    "duplicate": false,
+    "fact_pool_owner": "frozen resource_pool_service",
+    "current_judgement_owner": "diagnosis_service",
+    "suggestion_owner": "intervention_service",
+    "should_unify_long_term": "待产品决策（建议保持两层语义）",
+    "d_touches_pool_service": false
+  },
+  "ai_boundary": {
+    "ai_required_in_loop": false,
+    "calls_this_phase": 0,
+    "future_allowed": ["开放题批改", "错误解释", "证据诊断", "教材范围内变式"],
+    "forbidden": ["自动选科", "自动安排学习", "自动决定必须巩固", "自动执行 Action",
+                  "自动决定 mastery", "脱离教材生成独立路径"]
+  },
+  "persistence_boundary": {
+    "must_persist": ["learning_record（既有事实）"],
+    "keep_as_is": ["mastery_state（item 级事实缓存，frozen 写入）"],
+    "must_be_derived": ["Learning Object", "Evidence", "Diagnosis", "Suggestion", "Re-diagnosis"],
+    "optional_persist": ["Consolidation Action（1 张最小表，可延期）"],
+    "need_persist_lo_evidence_diagnosis": false
+  },
+  "end_to_end_cases": [
+    {"id": "Case A", "type": "Vocabulary",
+     "flow": ["E1 recall incorrect → LO:VOCAB:without", "D1 current_error",
+              "S1 reread_text", "A1 started→completed", "E2（不同 item）correct → 同一 LO", "D2"],
+     "results": {"e2_maps_same_lo": true, "current_error_exits": true,
+                 "mastery_immediately_stable": false}},
+    {"id": "Case B", "type": "Exercise",
+     "flow": ["E1 incorrect", "D1 current_error", "S1 redo_exercise", "A1 completed",
+              "E2 incorrect", "D2"],
+     "results": {"current_error_kept": true, "may_escalate_to_weak": true,
+                 "historical_errors_kept": true}},
+    {"id": "Case C", "type": "跨 item 同一 LO（真实数据可证）",
+     "flow": ["E1 item=V:C128262B65A0 → LO:VOCAB:eraser", "Action reread_text",
+              "E2 item=X:082981460EC2（match）→ 同一 LO"],
+     "results": {"same_lo_chain_possible": true,
+                 "depends_on": "exercise → activity_id → related_vocabulary → item_id → LO id",
+                 "real_data_support": {"lo_with_two_exercises": 4,
+                                       "learner_word_with_mapped_exercise": "eraser"}}}
+  ],
+  "acceptance_criteria": [
+    "AC-01 LO 映射确定性（同输入同输出）",
+    "AC-02 不同教材对象不错误合并",
+    "AC-03 Vocabulary → LO 确定性（288/288）",
+    "AC-04 Exercise → LO 确定性（含 unmapped 标记）",
+    "AC-05 同一 LO 可关联多个合法任务来源（真实数据 4 例）",
+    "AC-06 Evidence 保留 item 级 provenance",
+    "AC-07 两层去重生效",
+    "AC-08 Mastery 以 LO 为判定对象",
+    "AC-09 Diagnosis 以 LO 证据为核心；单次错误不判薄弱",
+    "AC-10 Suggestion 与 Action 分离；点击不落状态",
+    "AC-11 Action 完成不影响 mastery；无证据不清除 current_error",
+    "AC-12 Historical Error 不被删除",
+    "AC-13 Current Error 可重新出现",
+    "AC-14 Re-diagnosis 为读时派生",
+    "AC-15 unmapped 不参与判定且覆盖率如实报告",
+    "AC-16 AI 调用 0",
+    "AC-17 不修改冻结服务 / contentpack / V1.2 / 测试",
+    "AC-18 现有 363 测试保持通过"
+  ],
+  "blocking_issues": [],
+  "deferrable_gaps": [
+    {"id": "G1", "gap": "68/157 unmapped（43%）", "impact": "证据停留 item 级",
+     "handling": "D 显式标记 + 如实报告覆盖率；产品决策 speaking/reflection"},
+    {"id": "G2", "gap": "Grammar LO 缺教材对象", "impact": "语法证据无法归属",
+     "handling": "记 unmapped(grammar)"},
+    {"id": "G3", "gap": "Consolidation Action 表未建", "impact": "无法区分未处理/已尝试",
+     "handling": "D 可先做证据闭环；Action 表紧随其后"},
+    {"id": "G4", "gap": "Action → Evidence 归因规则未细化", "impact": "可能误挂无关证据",
+     "handling": "D 前置：时间窗 + 会话/目标范围"},
+    {"id": "G5", "gap": "mastery_state（item 级）与 LO 级 mastery 并存", "impact": "UI 口径混淆",
+     "handling": "D 明确语义分层与来源标注"},
+    {"id": "G6", "gap": "64 个练习无 activity_id", "impact": "影响 R3–R5 可用性",
+     "handling": "可延期（补齐题目关系）"}
+  ],
+  "p2_6_d_scope": {
+    "must_do": [
+      "Learning Object 确定性映射服务（只读，零 DB）",
+      "LO 级 Evidence 聚合（两层去重 + provenance）",
+      "LO 级 Mastery（复用 mastery_rules_v1，阈值不变）",
+      "LO 级 Diagnosis（current_error / suspected_weak / needs_textbook_review）",
+      "教材优先 Suggestion（LO 定位；只读；需孩子点击）",
+      "unmapped 显式处理与覆盖率如实报告",
+      "Re-diagnosis（读时派生）",
+      "专项验收测试（AC-01…AC-18）"
+    ],
+    "can_defer": [
+      "Consolidation Action 最小表",
+      "Action → Evidence 归因规则细化（若同时做表则为前置）",
+      "Grammar LO（等教材语法对象）",
+      "speaking / reflection 的 LO 归属决策与实现",
+      "64 个无 activity_id 练习的题目关系补齐",
+      "跨 Unit 阶段验证入口"
+    ],
+    "not_yet": [
+      "UI 大改（仅允许最小接线）",
+      "AI 批改 / AI 生成（保持 0）",
+      "Android 修改",
+      "积分 / 排名 / 等级 / 游戏化",
+      "专项题库",
+      "数据库大规模迁移或表重构"
+    ]
+  },
+  "spec_sync": {
+    "required": false,
+    "reason": "全链路设计落在 V1.2 第二十二章既有条文内；Consolidation Action 为实现层概念；阈值仍在 mastery_rules_v1.json",
+    "possible_future_trigger": "若产品决定将 speaking / reflection 新增为 LO 类型，需补充 V1.2 的 LO 类型清单（须单独走规范同步流程）"
+  },
+  "protection_baseline": {
+    "business_code_modified": false,
+    "tests_modified": false,
+    "learning_db_sha256_16": "DBAB743BF6D8F0A3",
+    "learning_db_mtime": "2026-09-12T23:15:13",
+    "contentpack_sha256_16": "ACEBC8C29CF5D11B",
+    "spec_v12_sha256_16": "6D3595CF7D83879A",
+    "mastery_rules_sha256_16": "E7EC99DB55DDCF04",
+    "p2_4_modified": false,
+    "p2_5_modified": false,
+    "android_modified": false,
+    "modified_files": [],
+    "created_files": ["audit/P2-6-C-4_full_chain_design_review.md",
+                      "audit/P2-6-C-4_full_chain_design_review.json"]
+  },
+  "tests": {"learning": 89, "workbench": 50, "web": 224, "total": 363, "fail": 0, "skip": 0,
+            "matches_baseline": true, "read_only": true},
+  "ai_calls": 0,
+  "final_recommendation": {
+    "verdict": "PASS_WITH_GAPS",
+    "can_enter_p2_6_d": true,
+    "entry_conditions": [
+      "按 §25 的 must_do 范围实施，不越界到 can_defer / not_yet",
+      "D 前置收口：Action 与 Evidence 的归因规则（若同期做 Action 表）",
+      "D 前置明确：mastery_state（item 级事实缓存）与 LO 级 mastery 的语义分层与展示口径",
+      "D 全程：零 DB 迁移（除可选 1 张 Action 表）、不动冻结服务、不改 V1.2、AI=0",
+      "不得为提高映射率而强行归属；unmapped 必须如实暴露"
+    ]
+  },
+  "answers_15": {
+    "q1_lo_model_valid": {"answer": "YES", "reason": "六类叶 LO 键全部来自教材事实且确定性可复现；Unit/Section 仅作容器"},
+    "q2_unmapped_blocks_d": {"answer": "NO", "reason": "unmapped 是显式设计状态；闭环对已映射部分成立"},
+    "q3_grammar_blocks_d": {"answer": "NO", "reason": "方案 A 暂缓；语法证据记 unmapped(grammar)"},
+    "q4_evidence_lo_aggregation_ready": {"answer": "YES WITH GAP", "reason": "有效证据/去重/溯源已实现；LO 聚合层待 D"},
+    "q5_mastery_to_lo": {"answer": "YES WITH GAP", "reason": "规则可直接套用；需先实现 LO 聚合"},
+    "q6_diagnosis_to_lo": {"answer": "YES WITH GAP", "reason": "规则不变，输入换成 LO 证据集合"},
+    "q7_suggestion_vs_action_clear": {"answer": "YES", "reason": "六概念分离；展示/点击/开始/完成各不相同"},
+    "q8_action_persist_needed": {"answer": "YES WITH GAP", "reason": "证据闭环不依赖；区分未处理/已尝试需要，可延期"},
+    "q9_current_error_reliable": {"answer": "YES", "reason": "由 LO 最新有效证据派生，读时重算"},
+    "q10_historical_error_safe": {"answer": "YES", "reason": "append-only；本轮实测 learning_record 未被修改"},
+    "q11_rediagnosis_closed": {"answer": "YES", "reason": "读时派生；真实数据已验证跨 item 同 LO（4 例）"},
+    "q12_pool_diagnosis_coexist": {"answer": "YES", "reason": "事实层 vs 结论层语义互补；D 不改 pool"},
+    "q13_ai_not_required": {"answer": "YES", "reason": "全链路确定性规则；AI 调用 0"},
+    "q14_modify_v12": {"answer": "NO", "reason": "设计落在 V1.2 既有条文内；仅 speaking/reflection 类型决策可能触发未来同步"},
+    "q15_enter_p2_6_d": {"answer": "YES WITH GAP", "reason": "无阻塞项；按 must_do 边界实施并先收口 G3/G4/G5"}
+  },
+  "stopped": "评审完成即停止；不进入 P2-6-D，不写实现代码"
+}

@@ -1,0 +1,627 @@
+{
+ "step": "builder/build_questionbank_value_v01.py",
+ "run_id": "RUN-P7-VALUE-V1",
+ "generated_at": "2026-09-19T23:07:20",
+ "ai_calls": 0,
+ "base_questions": 1636,
+ "base_sha256_prefix16": "0e366222d86d718b",
+ "new_questions": 195,
+ "by_type": {
+  "vocab_word_form": 79,
+  "vocab_context_choice": 104,
+  "phrase_meaning_choice": 12
+ },
+ "by_unit": {
+  "Starter": 8,
+  "Unit 1": 21,
+  "Unit 2": 32,
+  "Unit 3": 34,
+  "Unit 4": 31,
+  "Unit 5": 34,
+  "Unit 6": 35
+ },
+ "form_baseline_total": 26,
+ "form_baseline_covered": 26,
+ "form_baseline_missing": [],
+ "form_baseline": [
+  {
+   "unit": "Starter",
+   "base": "lab",
+   "form": "labs",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 1",
+   "base": "thought",
+   "form": "thoughts",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 1",
+   "base": "wind",
+   "form": "winds",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 1",
+   "base": "storm",
+   "form": "storms",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 2",
+   "base": "instrument",
+   "form": "instruments",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 2",
+   "base": "classmate",
+   "form": "classmates",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 2",
+   "base": "page",
+   "form": "pages",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 3",
+   "base": "mountain",
+   "form": "mountains",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 3",
+   "base": "serve",
+   "form": "served",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 3",
+   "base": "carry",
+   "form": "carrying",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 3",
+   "base": "hug",
+   "form": "hugs",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 4",
+   "base": "realise",
+   "form": "realised",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 4",
+   "base": "dumpling",
+   "form": "dumplings",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 4",
+   "base": "balloon",
+   "form": "balloons",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 4",
+   "base": "lantern",
+   "form": "lanterns",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 4",
+   "base": "firework",
+   "form": "fireworks",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 5",
+   "base": "human",
+   "form": "humans",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 5",
+   "base": "adult",
+   "form": "adults",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 5",
+   "base": "biscuit",
+   "form": "biscuits",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 5",
+   "base": "connect",
+   "form": "connecting",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 6",
+   "base": "mirror",
+   "form": "mirrors",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 6",
+   "base": "kilometre",
+   "form": "kilometres",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 6",
+   "base": "speed",
+   "form": "speeds",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 6",
+   "base": "museum",
+   "form": "museums",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 6",
+   "base": "arrive",
+   "form": "arrived",
+   "status": "COVERED"
+  },
+  {
+   "unit": "Unit 6",
+   "base": "hunt",
+   "form": "hunted",
+   "status": "COVERED"
+  }
+ ],
+ "appendix_rule_blocks": [
+  "FLTRP-EN-7A-2022CUR:P135:B10",
+  "FLTRP-EN-7A-2022CUR:P135:B11",
+  "FLTRP-EN-7A-2022CUR:P135:B12",
+  "FLTRP-EN-7A-2022CUR:P135:B13",
+  "FLTRP-EN-7A-2022CUR:P135:B15",
+  "FLTRP-EN-7A-2022CUR:P135:B17",
+  "FLTRP-EN-7A-2022CUR:P135:B19",
+  "FLTRP-EN-7A-2022CUR:P137:B3",
+  "FLTRP-EN-7A-2022CUR:P137:B4",
+  "FLTRP-EN-7A-2022CUR:P137:B5",
+  "FLTRP-EN-7A-2022CUR:P137:B7",
+  "FLTRP-EN-7A-2022CUR:P135:B14",
+  "FLTRP-EN-7A-2022CUR:P135:B16"
+ ],
+ "appendix_form_evidence": {
+  "bags": "FLTRP-EN-7A-2022CUR:P135:B10",
+  "boxes": "FLTRP-EN-7A-2022CUR:P135:B11",
+  "brushes": "FLTRP-EN-7A-2022CUR:P135:B11",
+  "buzzes": "FLTRP-EN-7A-2022CUR:P137:B4",
+  "catches": "FLTRP-EN-7A-2022CUR:P137:B4",
+  "chinese": "FLTRP-EN-7A-2022CUR:P135:B19",
+  "cities": "FLTRP-EN-7A-2022CUR:P135:B12",
+  "deer": "FLTRP-EN-7A-2022CUR:P135:B19",
+  "desks": "FLTRP-EN-7A-2022CUR:P135:B10",
+  "does": "FLTRP-EN-7A-2022CUR:P137:B7",
+  "esbabies": "FLTRP-EN-7A-2022CUR:P135:B12",
+  "esbuses": "FLTRP-EN-7A-2022CUR:P135:B11",
+  "esguesses": "FLTRP-EN-7A-2022CUR:P137:B4",
+  "finishes": "FLTRP-EN-7A-2022CUR:P137:B4",
+  "fish": "FLTRP-EN-7A-2022CUR:P135:B19",
+  "fixes": "FLTRP-EN-7A-2022CUR:P137:B4",
+  "goes": "FLTRP-EN-7A-2022CUR:P137:B7",
+  "has": "FLTRP-EN-7A-2022CUR:P137:B7",
+  "have": "FLTRP-EN-7A-2022CUR:P137:B7",
+  "heroes": "FLTRP-EN-7A-2022CUR:P135:B13",
+  "japanese": "FLTRP-EN-7A-2022CUR:P135:B19",
+  "knife": "FLTRP-EN-7A-2022CUR:P135:B15",
+  "knives": "FLTRP-EN-7A-2022CUR:P135:B15",
+  "leaf": "FLTRP-EN-7A-2022CUR:P135:B16",
+  "leaves": "FLTRP-EN-7A-2022CUR:P135:B16",
+  "lives": "FLTRP-EN-7A-2022CUR:P135:B15",
+  "looks": "FLTRP-EN-7A-2022CUR:P137:B3",
+  "man": "FLTRP-EN-7A-2022CUR:P135:B17",
+  "men": "FLTRP-EN-7A-2022CUR:P135:B17",
+  "photos": "FLTRP-EN-7A-2022CUR:P135:B13",
+  "pianos": "FLTRP-EN-7A-2022CUR:P135:B14",
+  "radios": "FLTRP-EN-7A-2022CUR:P135:B13",
+  "sheep": "FLTRP-EN-7A-2022CUR:P135:B19",
+  "speaks": "FLTRP-EN-7A-2022CUR:P137:B3",
+  "sshops": "FLTRP-EN-7A-2022CUR:P135:B10",
+  "sstands": "FLTRP-EN-7A-2022CUR:P137:B3",
+  "stomatoes": "FLTRP-EN-7A-2022CUR:P135:B13",
+  "stories": "FLTRP-EN-7A-2022CUR:P135:B12",
+  "veslife": "FLTRP-EN-7A-2022CUR:P135:B15",
+  "watches": "FLTRP-EN-7A-2022CUR:P135:B11",
+  "woman": "FLTRP-EN-7A-2022CUR:P135:B17",
+  "women": "FLTRP-EN-7A-2022CUR:P135:B17",
+  "zoos": "FLTRP-EN-7A-2022CUR:P135:B14"
+ },
+ "structural_collocation_candidates": [
+  "need to",
+  "plan for",
+  "rush into",
+  "absent from",
+  "important in",
+  "nod to"
+ ],
+ "structural_collocation_frequency": {
+  "need to": 7,
+  "plan for": 7,
+  "rush into": 3,
+  "absent from": 2,
+  "important in": 2,
+  "nod to": 2
+ },
+ "phrase_candidate_examples": [
+  {
+   "expression": "need to",
+   "count": 7,
+   "unit": "Unit 2",
+   "block_id": "FLTRP-EN-7A-2022CUR:P36:B3",
+   "sentence": "You may need to search online."
+  },
+  {
+   "expression": "rush into",
+   "count": 3,
+   "unit": "Appendix",
+   "block_id": "FLTRP-EN-7A-2022CUR:P123:B10",
+   "sentence": "The children rush into the classroom when the bell rings."
+  },
+  {
+   "expression": "absent from",
+   "count": 2,
+   "unit": "Unit 3",
+   "block_id": "FLTRP-EN-7A-2022CUR:P53:B6",
+   "sentence": "He was often absent from home and the son seldom saw him."
+  },
+  {
+   "expression": "important in",
+   "count": 2,
+   "unit": "Unit 5",
+   "block_id": "FLTRP-EN-7A-2022CUR:P98:B13",
+   "sentence": "Plants are important in the natural world."
+  },
+  {
+   "expression": "nod to",
+   "count": 2,
+   "unit": "Unit 2",
+   "block_id": "FLTRP-EN-7A-2022CUR:P38:B3",
+   "sentence": "I nod to Grandpa and we fire up our instruments."
+  }
+ ],
+ "language_notes_phrases": [
+  {
+   "expression": "by oneself",
+   "meaning": "独自地",
+   "textbook_page": 115,
+   "block_id": "FLTRP-EN-7A-2022CUR:P120:B4",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "cut in",
+   "meaning": "插嘴,打断别人说话",
+   "textbook_page": 117,
+   "block_id": "FLTRP-EN-7A-2022CUR:P122:B8",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "rush into",
+   "meaning": "冲进,迅速进入",
+   "textbook_page": 118,
+   "block_id": "FLTRP-EN-7A-2022CUR:P123:B9",
+   "unit": "Unit 2",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "stop doing",
+   "meaning": "停止做",
+   "textbook_page": 118,
+   "block_id": "FLTRP-EN-7A-2022CUR:P123:B26",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "like doing",
+   "meaning": "喜欢做",
+   "textbook_page": 119,
+   "block_id": "FLTRP-EN-7A-2022CUR:P124:B4",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "bring back",
+   "meaning": "使想起,使回忆起",
+   "textbook_page": 120,
+   "block_id": "FLTRP-EN-7A-2022CUR:P125:B11",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "be close to sb",
+   "meaning": "和某人亲近",
+   "textbook_page": 120,
+   "block_id": "FLTRP-EN-7A-2022CUR:P125:B20",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "it is hard to do sth",
+   "meaning": "做......很辛苦",
+   "textbook_page": 121,
+   "block_id": "FLTRP-EN-7A-2022CUR:P126:B6",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "refuse to do sth",
+   "meaning": "拒绝做某事",
+   "textbook_page": 121,
+   "block_id": "FLTRP-EN-7A-2022CUR:P126:B10",
+   "unit": "Unit 3",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "be more important than",
+   "meaning": "比......更重要",
+   "textbook_page": 121,
+   "block_id": "FLTRP-EN-7A-2022CUR:P126:B17",
+   "unit": "Unit 1",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "treat sb to sth",
+   "meaning": "请客,款待,招待",
+   "textbook_page": 121,
+   "block_id": "FLTRP-EN-7A-2022CUR:P126:B25",
+   "unit": "Unit 4",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "stand for",
+   "meaning": "代表,表示",
+   "textbook_page": 122,
+   "block_id": "FLTRP-EN-7A-2022CUR:P127:B20",
+   "unit": "Unit 1",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "stand by",
+   "meaning": "准备行动",
+   "textbook_page": 123,
+   "block_id": "FLTRP-EN-7A-2022CUR:P128:B5",
+   "unit": "Unit 4",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "make the most of sth",
+   "meaning": "充分利用某事物",
+   "textbook_page": 123,
+   "block_id": "FLTRP-EN-7A-2022CUR:P128:B19",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "take a rest",
+   "meaning": "休息",
+   "textbook_page": 125,
+   "block_id": "FLTRP-EN-7A-2022CUR:P130:B6",
+   "unit": "Unit 5",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "more than",
+   "meaning": "不仅仅,超过",
+   "textbook_page": 125,
+   "block_id": "FLTRP-EN-7A-2022CUR:P130:B10",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "as many as",
+   "meaning": "和......一样多",
+   "textbook_page": 126,
+   "block_id": "FLTRP-EN-7A-2022CUR:P131:B5",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "knock around",
+   "meaning": "悠闲地度过",
+   "textbook_page": 127,
+   "block_id": "FLTRP-EN-7A-2022CUR:P132:B3",
+   "unit": "Unit 6",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "here and there",
+   "meaning": "到处,各处",
+   "textbook_page": 127,
+   "block_id": "FLTRP-EN-7A-2022CUR:P132:B11",
+   "unit": "Unit 6",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "had better",
+   "meaning": "最好",
+   "textbook_page": 127,
+   "block_id": "FLTRP-EN-7A-2022CUR:P132:B17",
+   "unit": null,
+   "in_phrase_table": false
+  },
+  {
+   "expression": "for real",
+   "meaning": "真正地,确实地,认真地",
+   "textbook_page": 128,
+   "block_id": "FLTRP-EN-7A-2022CUR:P133:B13",
+   "unit": "Unit 6",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "what’s more",
+   "meaning": "而且,此外",
+   "textbook_page": 129,
+   "block_id": "FLTRP-EN-7A-2022CUR:P134:B2",
+   "unit": "Unit 6",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "as a result",
+   "meaning": "因此",
+   "textbook_page": 129,
+   "block_id": "FLTRP-EN-7A-2022CUR:P134:B11",
+   "unit": "Unit 3",
+   "in_phrase_table": false
+  },
+  {
+   "expression": "die out",
+   "meaning": "灭绝,消失",
+   "textbook_page": 129,
+   "block_id": "FLTRP-EN-7A-2022CUR:P134:B16",
+   "unit": "Unit 6",
+   "in_phrase_table": true
+  }
+ ],
+ "language_notes_phrase_questions": [
+  "rush into",
+  "refuse to do sth",
+  "be more important than",
+  "treat sb to sth",
+  "stand for",
+  "stand by",
+  "take a rest",
+  "knock around",
+  "here and there",
+  "for real",
+  "what’s more",
+  "as a result"
+ ],
+ "stats": {
+  "vocab_word_form_ruleC_ok": 25,
+  "vocab_context_choice_ok": 104,
+  "vocab_word_form_ok": 53,
+  "vocab_word_form_rule_ok": 1,
+  "phrase_meaning_choice_ok": 12,
+  "phrase_candidates": 6,
+  "phrase_candidate_examples": 5
+ },
+ "total_questions": 1831,
+ "all_question_types_after": {
+  "textbook_native": 517,
+  "vocab_listen_write": 288,
+  "vocab_meaning_choice": 288,
+  "vocab_phonetic_write": 265,
+  "sentence_listen_write": 105,
+  "vocab_context_choice": 104,
+  "vocab_word_form": 79,
+  "sentence_listen_choice": 38,
+  "listening_choice": 33,
+  "phrase_meaning_choice": 33,
+  "reading_choice": 33,
+  "phonetics_sound_choice": 16,
+  "phonetics_symbol_write": 16,
+  "listen_choice": 12,
+  "listen_fill": 4
+ },
+ "all_origins_after": {
+  "PROGRAM_GENERATED": 1211,
+  "TEXTBOOK_NATIVE": 517,
+  "AI_GENERATED": 103
+ },
+ "sentence_quality_rules": {
+  "max_questions_per_textbook_sentence": 2,
+  "min_sentence_length": 15,
+  "max_sentence_length": 160,
+  "min_word_count": 5,
+  "rejected": [
+   "教材指令句",
+   "教材挖空残留",
+   "题号残留",
+   "练习选项残留",
+   "栏目标签粘连",
+   "引号不成对",
+   "截断句"
+  ]
+ },
+ "sample_questions": [
+  {
+   "question_id": "Q:660040C9C078",
+   "type": "vocab_word_form",
+   "unit": "Starter",
+   "prompt": {
+    "instruction": "按教材附录的词形变化规则写出正确形式。",
+    "text": "textbook → ______",
+    "base": "textbook",
+    "part_of_speech": "n",
+    "rule_source": "教材附录 “Guide to the language use”"
+   },
+   "answer": {
+    "text": "textbooks"
+   }
+  },
+  {
+   "question_id": "Q:04529A93350A",
+   "type": "vocab_word_form",
+   "unit": "Starter",
+   "prompt": {
+    "instruction": "按教材附录的词形变化规则写出正确形式。",
+    "text": "lab → ______",
+    "base": "lab",
+    "part_of_speech": "n",
+    "rule_source": "教材附录 “Guide to the language use”"
+   },
+   "answer": {
+    "text": "labs"
+   }
+  },
+  {
+   "question_id": "Q:F8C616FEA50D",
+   "type": "vocab_word_form",
+   "unit": "Starter",
+   "prompt": {
+    "instruction": "按教材附录的词形变化规则写出正确形式。",
+    "text": "start → ______",
+    "base": "start",
+    "part_of_speech": "v",
+    "rule_source": "教材附录 “Guide to the language use”"
+   },
+   "answer": {
+    "text": "starts"
+   }
+  },
+  {
+   "question_id": "Q:035F75B295F4",
+   "type": "vocab_word_form",
+   "unit": "Starter",
+   "prompt": {
+    "instruction": "按教材附录的词形变化规则写出正确形式。",
+    "text": "hobby → ______",
+    "base": "hobby",
+    "part_of_speech": "n",
+    "rule_source": "教材附录 “Guide to the language use”"
+   },
+   "answer": {
+    "text": "hobbies"
+   }
+  },
+  {
+   "question_id": "Q:D36FD5896169",
+   "type": "vocab_context_choice",
+   "unit": "Starter",
+   "prompt": {
+    "instruction": "选词填空：用教材这句话里的词补全。",
+    "text": "I have a schoolbag, a pencil case, three pencils, an ______ and a ruler."
+   },
+   "answer": {
+    "key": "a",
+    "text": "eraser"
+   }
+  }
+ ]
+}

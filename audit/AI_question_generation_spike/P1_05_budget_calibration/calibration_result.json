@@ -1,0 +1,76 @@
+{
+ "mode": "CALIBRATION_ONLY",
+ "final_status": "CALIBRATION_BLOCKED",
+ "sample": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+ "api_calls": 1,
+ "retry_count": 0,
+ "second_call_made": false,
+ "latency_ms": 190682,
+ "request_delta_vs_p1_05b": {
+  "added": [
+   "thinking={'type':'enabled'}",
+   "reasoning_effort='low'"
+  ],
+  "unchanged": [
+   "model",
+   "temperature",
+   "max_tokens=8192",
+   "messages(system/user)",
+   "context",
+   "prompt_version"
+  ]
+ },
+ "guard": {
+  "decision": "STOP:TRUNCATED",
+  "verdict": {
+   "status": "TRUNCATED",
+   "detail": "finish_reason=length：输出预算被耗尽（reasoning 8192 tokens，content 0 字符）",
+   "finish_reason": "length",
+   "content_chars": 0,
+   "reasoning_chars": 33769,
+   "usage": {
+    "prompt_tokens": 10540,
+    "completion_tokens": 8192,
+    "total_tokens": 18732,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8192
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 10540
+   }
+  }
+ },
+ "json_parseable": false,
+ "questions_field_present": false,
+ "questions_count": 0,
+ "structure_ok": null,
+ "structure_notes": [
+  "截断：未解析、未校验、未入库"
+ ],
+ "truncated": true,
+ "wrote_to_question_library": false,
+ "validator_formal_run": false,
+ "calibration_outcome": "BUDGET_STILL_INSUFFICIENT",
+ "outcome_rule": "P1-05-C §九：reasoning_effort=low + max_tokens=8192 仍 finish_reason=length → BUDGET_STILL_INSUFFICIENT，不进行第二次调用",
+ "usage": {
+  "prompt_tokens": 10540,
+  "completion_tokens": 8192,
+  "total_tokens": 18732,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 8192
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 10540
+ },
+ "raw_evidence_untouched": [
+  "calibration_request.json",
+  "calibration_response.json"
+ ],
+ "derived_label_added_by": "build_calibration_audit.py"
+}

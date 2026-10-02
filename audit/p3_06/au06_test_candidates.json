@@ -1,0 +1,82 @@
+{
+ "task": "P3-06 Step 6A 测试页候选（实验数据，未 VERIFIED）",
+ "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+ "audio_file": "06_Starter_Get to know each other_4 Read and check your answers.mp3",
+ "audio_url": "/audio/official/AU06.mp3",
+ "duration_ms": 43337,
+ "unit": "Starter",
+ "section": "GET_TO_KNOW_EACH_OTHER",
+ "activity_no": 4,
+ "source": [
+  "audit/P3-06_step4_au06_alignment_result.json (word-level timestamps)",
+  "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+  "audit/P3-05_samples/shadowing_manifest.json (教材原句)"
+ ],
+ "status": "CANDIDATE",
+ "sentences": [
+  {
+   "no": 1,
+   "text": "Hello everyone.",
+   "start_ms": 7000,
+   "end_ms": 8540,
+   "duration_ms": 1540,
+   "status": "CANDIDATE"
+  },
+  {
+   "no": 2,
+   "text": "My name is Zhu Xiaomeng.",
+   "start_ms": 9220,
+   "end_ms": 12880,
+   "duration_ms": 3660,
+   "status": "CANDIDATE"
+  },
+  {
+   "no": 3,
+   "text": "I'm 13 years old.",
+   "start_ms": 13360,
+   "end_ms": 16200,
+   "duration_ms": 2840,
+   "status": "CANDIDATE"
+  },
+  {
+   "no": 4,
+   "text": "My birthday is in May.",
+   "start_ms": 17260,
+   "end_ms": 19620,
+   "duration_ms": 2360,
+   "status": "CANDIDATE"
+  },
+  {
+   "no": 5,
+   "text": "I love sports very much.",
+   "start_ms": 19620,
+   "end_ms": 23580,
+   "duration_ms": 3960,
+   "status": "CANDIDATE"
+  },
+  {
+   "no": 6,
+   "text": "I like running, playing football and swimming.",
+   "start_ms": 24380,
+   "end_ms": 29500,
+   "duration_ms": 5120,
+   "status": "CANDIDATE"
+  },
+  {
+   "no": 7,
+   "text": "I'm a bit nervous now, but I'm also happy to meet you.",
+   "start_ms": 30580,
+   "end_ms": 36140,
+   "duration_ms": 5560,
+   "status": "CANDIDATE"
+  },
+  {
+   "no": 8,
+   "text": "I want to make friends with you all.",
+   "start_ms": 37000,
+   "end_ms": 40040,
+   "duration_ms": 3040,
+   "status": "CANDIDATE"
+  }
+ ]
+}

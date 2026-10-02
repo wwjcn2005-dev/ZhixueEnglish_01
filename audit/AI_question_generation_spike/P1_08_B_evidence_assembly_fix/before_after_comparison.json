@@ -1,0 +1,836 @@
+{
+ "stage": "P1-08-B",
+ "mode": "before_after_comparison",
+ "ai_calls": 0,
+ "old_rule": "page -> section 仅来自 activity",
+ "new_rule": "Section 页码范围（unit 内 pdf_page_start 排序推出）+ activity 页，按 block_id 去重",
+ "lesson_units_totals": {
+  "blocks_old": 1265,
+  "blocks_new": 1638,
+  "blocks_added": 398
+ },
+ "empty_text_blocks_filtered_by_new_rule": 25,
+ "per_section": [
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:APPENDIX:COMMUNICATION_BANK",
+   "is_lesson_unit": false,
+   "page_range": [
+    117,
+    134
+   ],
+   "pages_without_activity": [
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134
+   ],
+   "blocks_old": 0,
+   "blocks_new": 413,
+   "blocks_added": 413,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:APPENDIX:GUIDE_TO_THE_LANGUAGE_USE",
+   "is_lesson_unit": false,
+   "page_range": [
+    135,
+    154
+   ],
+   "pages_without_activity": [
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154
+   ],
+   "blocks_old": 0,
+   "blocks_new": 485,
+   "blocks_added": 485,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:APPENDIX:PRONUNCIATION_GUIDE",
+   "is_lesson_unit": false,
+   "page_range": [
+    174,
+    177
+   ],
+   "pages_without_activity": [
+    174,
+    175,
+    176,
+    177
+   ],
+   "blocks_old": 0,
+   "blocks_new": 128,
+   "blocks_added": 128,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:APPENDIX:PROPER_NOUNS",
+   "is_lesson_unit": false,
+   "page_range": [
+    163,
+    164
+   ],
+   "pages_without_activity": [
+    163,
+    164
+   ],
+   "blocks_old": 0,
+   "blocks_new": 37,
+   "blocks_added": 37,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:APPENDIX:VOCABULARY",
+   "is_lesson_unit": false,
+   "page_range": [
+    165,
+    173
+   ],
+   "pages_without_activity": [
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173
+   ],
+   "blocks_old": 0,
+   "blocks_new": 386,
+   "blocks_added": 386,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:APPENDIX:WORDS_AND_EXPRESSIONS",
+   "is_lesson_unit": false,
+   "page_range": [
+    155,
+    162
+   ],
+   "pages_without_activity": [
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162
+   ],
+   "blocks_old": 0,
+   "blocks_new": 368,
+   "blocks_added": 368,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "is_lesson_unit": true,
+   "page_range": [
+    8,
+    10
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 77,
+   "blocks_new": 77,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_TO_KNOW_EACH_OTHER",
+   "is_lesson_unit": true,
+   "page_range": [
+    14,
+    17
+   ],
+   "pages_without_activity": [
+    14,
+    15,
+    16
+   ],
+   "blocks_old": 13,
+   "blocks_new": 38,
+   "blocks_added": 25,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:KNOW_YOUR_SCHOOL",
+   "is_lesson_unit": true,
+   "page_range": [
+    11,
+    13
+   ],
+   "pages_without_activity": [
+    11,
+    12
+   ],
+   "blocks_old": 13,
+   "blocks_new": 29,
+   "blocks_added": 16,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:MAKE_A_WISHING_TREE",
+   "is_lesson_unit": true,
+   "page_range": [
+    18,
+    18
+   ],
+   "pages_without_activity": [
+    18
+   ],
+   "blocks_old": 0,
+   "blocks_new": 31,
+   "blocks_added": 31,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    26,
+    28
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 62,
+   "blocks_new": 62,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:PRESENTING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    33,
+    33
+   ],
+   "pages_without_activity": [
+    33
+   ],
+   "blocks_old": 0,
+   "blocks_new": 14,
+   "blocks_added": 14,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:READING_FOR_WRITING",
+   "is_lesson_unit": true,
+   "page_range": [
+    29,
+    32
+   ],
+   "pages_without_activity": [
+    30
+   ],
+   "blocks_old": 60,
+   "blocks_new": 63,
+   "blocks_added": 5,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:REFLECTION",
+   "is_lesson_unit": true,
+   "page_range": [
+    34,
+    34
+   ],
+   "pages_without_activity": [
+    34
+   ],
+   "blocks_old": 0,
+   "blocks_new": 17,
+   "blocks_added": 17,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:STARTING_OUT",
+   "is_lesson_unit": true,
+   "page_range": [
+    20,
+    20
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 21,
+   "blocks_new": 21,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    21,
+    25
+   ],
+   "pages_without_activity": [
+    22
+   ],
+   "blocks_old": 55,
+   "blocks_new": 63,
+   "blocks_added": 10,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    42,
+    44
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 49,
+   "blocks_new": 49,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:PRESENTING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    49,
+    49
+   ],
+   "pages_without_activity": [
+    49
+   ],
+   "blocks_old": 0,
+   "blocks_new": 18,
+   "blocks_added": 18,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING",
+   "is_lesson_unit": true,
+   "page_range": [
+    45,
+    48
+   ],
+   "pages_without_activity": [
+    46
+   ],
+   "blocks_old": 47,
+   "blocks_new": 59,
+   "blocks_added": 12,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:REFLECTION",
+   "is_lesson_unit": true,
+   "page_range": [
+    50,
+    50
+   ],
+   "pages_without_activity": [
+    50
+   ],
+   "blocks_old": 0,
+   "blocks_new": 14,
+   "blocks_added": 14,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:STARTING_OUT",
+   "is_lesson_unit": true,
+   "page_range": [
+    36,
+    36
+   ],
+   "pages_without_activity": [
+    36
+   ],
+   "blocks_old": 0,
+   "blocks_new": 12,
+   "blocks_added": 12,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    37,
+    41
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 83,
+   "blocks_new": 78,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    58,
+    60
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 65,
+   "blocks_new": 65,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:PRESENTING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    65,
+    65
+   ],
+   "pages_without_activity": [
+    65
+   ],
+   "blocks_old": 0,
+   "blocks_new": 10,
+   "blocks_added": 10,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING",
+   "is_lesson_unit": true,
+   "page_range": [
+    61,
+    64
+   ],
+   "pages_without_activity": [
+    62
+   ],
+   "blocks_old": 45,
+   "blocks_new": 49,
+   "blocks_added": 4,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:REFLECTION",
+   "is_lesson_unit": true,
+   "page_range": [
+    66,
+    66
+   ],
+   "pages_without_activity": [
+    66
+   ],
+   "blocks_old": 0,
+   "blocks_new": 15,
+   "blocks_added": 15,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:STARTING_OUT",
+   "is_lesson_unit": true,
+   "page_range": [
+    52,
+    52
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 11,
+   "blocks_new": 11,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    53,
+    57
+   ],
+   "pages_without_activity": [
+    54
+   ],
+   "blocks_old": 68,
+   "blocks_new": 70,
+   "blocks_added": 2,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    74,
+    76
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 79,
+   "blocks_new": 78,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U4:PRESENTING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    81,
+    81
+   ],
+   "pages_without_activity": [
+    81
+   ],
+   "blocks_old": 0,
+   "blocks_new": 15,
+   "blocks_added": 15,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U4:READING_FOR_WRITING",
+   "is_lesson_unit": true,
+   "page_range": [
+    77,
+    80
+   ],
+   "pages_without_activity": [
+    78
+   ],
+   "blocks_old": 50,
+   "blocks_new": 54,
+   "blocks_added": 4,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U4:REFLECTION",
+   "is_lesson_unit": true,
+   "page_range": [
+    82,
+    82
+   ],
+   "pages_without_activity": [
+    82
+   ],
+   "blocks_old": 0,
+   "blocks_new": 17,
+   "blocks_added": 17,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U4:STARTING_OUT",
+   "is_lesson_unit": true,
+   "page_range": [
+    68,
+    68
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 11,
+   "blocks_new": 11,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    69,
+    73
+   ],
+   "pages_without_activity": [
+    70
+   ],
+   "blocks_old": 77,
+   "blocks_new": 82,
+   "blocks_added": 5,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    90,
+    92
+   ],
+   "pages_without_activity": [
+    92
+   ],
+   "blocks_old": 31,
+   "blocks_new": 59,
+   "blocks_added": 28,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:PRESENTING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    97,
+    97
+   ],
+   "pages_without_activity": [
+    97
+   ],
+   "blocks_old": 0,
+   "blocks_new": 17,
+   "blocks_added": 17,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING",
+   "is_lesson_unit": true,
+   "page_range": [
+    93,
+    96
+   ],
+   "pages_without_activity": [
+    94
+   ],
+   "blocks_old": 70,
+   "blocks_new": 73,
+   "blocks_added": 8,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:REFLECTION",
+   "is_lesson_unit": true,
+   "page_range": [
+    98,
+    98
+   ],
+   "pages_without_activity": [
+    98
+   ],
+   "blocks_old": 0,
+   "blocks_new": 18,
+   "blocks_added": 18,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:STARTING_OUT",
+   "is_lesson_unit": true,
+   "page_range": [
+    84,
+    84
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 10,
+   "blocks_new": 10,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    85,
+    89
+   ],
+   "pages_without_activity": [
+    86
+   ],
+   "blocks_old": 77,
+   "blocks_new": 82,
+   "blocks_added": 7,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    106,
+    108
+   ],
+   "pages_without_activity": [],
+   "blocks_old": 64,
+   "blocks_new": 60,
+   "blocks_added": 0,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:PRESENTING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    113,
+    113
+   ],
+   "pages_without_activity": [
+    113
+   ],
+   "blocks_old": 0,
+   "blocks_new": 27,
+   "blocks_added": 27,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING",
+   "is_lesson_unit": true,
+   "page_range": [
+    109,
+    112
+   ],
+   "pages_without_activity": [
+    110
+   ],
+   "blocks_old": 54,
+   "blocks_new": 62,
+   "blocks_added": 8,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:REFLECTION",
+   "is_lesson_unit": true,
+   "page_range": [
+    114,
+    114
+   ],
+   "pages_without_activity": [
+    114
+   ],
+   "blocks_old": 0,
+   "blocks_new": 19,
+   "blocks_added": 19,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:STARTING_OUT",
+   "is_lesson_unit": true,
+   "page_range": [
+    100,
+    100
+   ],
+   "pages_without_activity": [
+    100
+   ],
+   "blocks_old": 0,
+   "blocks_new": 11,
+   "blocks_added": 11,
+   "removed_nonempty": []
+  },
+  {
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS",
+   "is_lesson_unit": true,
+   "page_range": [
+    101,
+    105
+   ],
+   "pages_without_activity": [
+    102
+   ],
+   "blocks_old": 73,
+   "blocks_new": 78,
+   "blocks_added": 9,
+   "removed_nonempty": []
+  }
+ ],
+ "case1_unit1_p17_pdf22": {
+  "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+  "page_range": [
+   21,
+   25
+  ],
+  "pages_before": [
+   21,
+   23,
+   24,
+   25
+  ],
+  "pages_after": [
+   21,
+   22,
+   23,
+   24,
+   25
+  ],
+  "blocks_before": 55,
+  "blocks_after": 63,
+  "p22_blocks_before": 0,
+  "p22_blocks_after": 10,
+  "p22_block_ids_after": [
+   "FLTRP-EN-7A-2022CUR:P22:B0",
+   "FLTRP-EN-7A-2022CUR:P22:B1",
+   "FLTRP-EN-7A-2022CUR:P22:B2",
+   "FLTRP-EN-7A-2022CUR:P22:B3",
+   "FLTRP-EN-7A-2022CUR:P22:B4",
+   "FLTRP-EN-7A-2022CUR:P22:B5",
+   "FLTRP-EN-7A-2022CUR:P22:B6",
+   "FLTRP-EN-7A-2022CUR:P22:B7",
+   "FLTRP-EN-7A-2022CUR:P22:B8",
+   "FLTRP-EN-7A-2022CUR:P22:B9"
+  ],
+  "p22_activities": [],
+  "duplicate_blocks": 0,
+  "pages_without_activity": [
+   22
+  ]
+ },
+ "p1_06_fixture_impact": {
+  "S1": {
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "context_blocks_before": 78,
+   "blocks_after": 78,
+   "blocks_added_by_fix": 0,
+   "added_pages": [],
+   "added_sample": [],
+   "fixture_blocks_all_present": true
+  },
+  "S2": {
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "context_blocks_before": 53,
+   "blocks_after": 63,
+   "blocks_added_by_fix": 10,
+   "added_pages": [
+    "P22"
+   ],
+   "added_sample": [
+    "FLTRP-EN-7A-2022CUR:P22:B0",
+    "FLTRP-EN-7A-2022CUR:P22:B1",
+    "FLTRP-EN-7A-2022CUR:P22:B2",
+    "FLTRP-EN-7A-2022CUR:P22:B3",
+    "FLTRP-EN-7A-2022CUR:P22:B4"
+   ],
+   "fixture_blocks_all_present": true
+  },
+  "S3": {
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "context_blocks_before": 75,
+   "blocks_after": 82,
+   "blocks_added_by_fix": 7,
+   "added_pages": [
+    "P86"
+   ],
+   "added_sample": [
+    "FLTRP-EN-7A-2022CUR:P86:B0",
+    "FLTRP-EN-7A-2022CUR:P86:B1",
+    "FLTRP-EN-7A-2022CUR:P86:B2",
+    "FLTRP-EN-7A-2022CUR:P86:B3",
+    "FLTRP-EN-7A-2022CUR:P86:B4"
+   ],
+   "fixture_blocks_all_present": true
+  },
+  "S4": {
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "context_blocks_before": 77,
+   "blocks_after": 77,
+   "blocks_added_by_fix": 0,
+   "added_pages": [],
+   "added_sample": [],
+   "fixture_blocks_all_present": true
+  }
+ }
+}

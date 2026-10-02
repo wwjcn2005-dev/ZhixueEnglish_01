@@ -1,0 +1,494 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+  "audio_num": "AU05",
+  "filename": "05_Starter_Get to know each other_1 Read and complete.mp3",
+  "duration_ms": 56320,
+  "segment_count": 12,
+  "word_count": 83,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 2300,
+      "text": "Get to know each other"
+    },
+    {
+      "start_ms": 3000,
+      "end_ms": 4680,
+      "text": "Activity 1"
+    },
+    {
+      "start_ms": 4680,
+      "end_ms": 7340,
+      "text": "Read and complete"
+    },
+    {
+      "start_ms": 8660,
+      "end_ms": 11060,
+      "text": "Good morning everyone!"
+    },
+    {
+      "start_ms": 11880,
+      "end_ms": 13420,
+      "text": "Good morning teacher!"
+    },
+    {
+      "start_ms": 14180,
+      "end_ms": 16480,
+      "text": "Welcome to junior high!"
+    },
+    {
+      "start_ms": 17140,
+      "end_ms": 20460,
+      "text": "I'm Mr Pan, your English teacher."
+    },
+    {
+      "start_ms": 21020,
+      "end_ms": 23880,
+      "text": "I'm so happy to meet you all."
+    },
+    {
+      "start_ms": 23880,
+      "end_ms": 33900,
+      "text": "I like playing the piano, reading books and travelling and I love working with students."
+    },
+    {
+      "start_ms": 35120,
+      "end_ms": 41820,
+      "text": "This year we'll explore the world of English together. It'll be a lot of fun!"
+    },
+    {
+      "start_ms": 42900,
+      "end_ms": 50420,
+      "text": "Now it's your turn to introduce yourselves. Please tell us your name and your hobby."
+    },
+    {
+      "start_ms": 50420,
+      "end_ms": 52940,
+      "text": "Who wants to go first?"
+    }
+  ],
+  "words": [
+    {
+      "word": "Get",
+      "start_ms": 0,
+      "end_ms": 640
+    },
+    {
+      "word": "to",
+      "start_ms": 640,
+      "end_ms": 1100
+    },
+    {
+      "word": "know",
+      "start_ms": 1100,
+      "end_ms": 1460
+    },
+    {
+      "word": "each",
+      "start_ms": 1460,
+      "end_ms": 1780
+    },
+    {
+      "word": "other",
+      "start_ms": 1780,
+      "end_ms": 2300
+    },
+    {
+      "word": "Activity",
+      "start_ms": 3000,
+      "end_ms": 4220
+    },
+    {
+      "word": "1",
+      "start_ms": 4220,
+      "end_ms": 4680
+    },
+    {
+      "word": "Read",
+      "start_ms": 4680,
+      "end_ms": 6140
+    },
+    {
+      "word": "and",
+      "start_ms": 6140,
+      "end_ms": 6820
+    },
+    {
+      "word": "complete",
+      "start_ms": 6820,
+      "end_ms": 7340
+    },
+    {
+      "word": "Good",
+      "start_ms": 8660,
+      "end_ms": 9780
+    },
+    {
+      "word": "morning",
+      "start_ms": 9780,
+      "end_ms": 10360
+    },
+    {
+      "word": "everyone!",
+      "start_ms": 10360,
+      "end_ms": 11060
+    },
+    {
+      "word": "Good",
+      "start_ms": 11880,
+      "end_ms": 12240
+    },
+    {
+      "word": "morning",
+      "start_ms": 12240,
+      "end_ms": 12840
+    },
+    {
+      "word": "teacher!",
+      "start_ms": 12840,
+      "end_ms": 13420
+    },
+    {
+      "word": "Welcome",
+      "start_ms": 14180,
+      "end_ms": 14920
+    },
+    {
+      "word": "to",
+      "start_ms": 14920,
+      "end_ms": 15400
+    },
+    {
+      "word": "junior",
+      "start_ms": 15400,
+      "end_ms": 15880
+    },
+    {
+      "word": "high!",
+      "start_ms": 15880,
+      "end_ms": 16480
+    },
+    {
+      "word": "I'm",
+      "start_ms": 17140,
+      "end_ms": 17780
+    },
+    {
+      "word": "Mr",
+      "start_ms": 17780,
+      "end_ms": 18340
+    },
+    {
+      "word": "Pan,",
+      "start_ms": 18340,
+      "end_ms": 18740
+    },
+    {
+      "word": "your",
+      "start_ms": 19200,
+      "end_ms": 19440
+    },
+    {
+      "word": "English",
+      "start_ms": 19440,
+      "end_ms": 19880
+    },
+    {
+      "word": "teacher.",
+      "start_ms": 19880,
+      "end_ms": 20460
+    },
+    {
+      "word": "I'm",
+      "start_ms": 21020,
+      "end_ms": 21600
+    },
+    {
+      "word": "so",
+      "start_ms": 21600,
+      "end_ms": 22040
+    },
+    {
+      "word": "happy",
+      "start_ms": 22040,
+      "end_ms": 22640
+    },
+    {
+      "word": "to",
+      "start_ms": 22640,
+      "end_ms": 22980
+    },
+    {
+      "word": "meet",
+      "start_ms": 22980,
+      "end_ms": 23260
+    },
+    {
+      "word": "you",
+      "start_ms": 23260,
+      "end_ms": 23540
+    },
+    {
+      "word": "all.",
+      "start_ms": 23540,
+      "end_ms": 23880
+    },
+    {
+      "word": "I",
+      "start_ms": 23880,
+      "end_ms": 25380
+    },
+    {
+      "word": "like",
+      "start_ms": 25380,
+      "end_ms": 25820
+    },
+    {
+      "word": "playing",
+      "start_ms": 25820,
+      "end_ms": 26260
+    },
+    {
+      "word": "the",
+      "start_ms": 26260,
+      "end_ms": 26580
+    },
+    {
+      "word": "piano,",
+      "start_ms": 26580,
+      "end_ms": 26980
+    },
+    {
+      "word": "reading",
+      "start_ms": 27600,
+      "end_ms": 28140
+    },
+    {
+      "word": "books",
+      "start_ms": 28140,
+      "end_ms": 28660
+    },
+    {
+      "word": "and",
+      "start_ms": 28660,
+      "end_ms": 29420
+    },
+    {
+      "word": "travelling",
+      "start_ms": 29420,
+      "end_ms": 29960
+    },
+    {
+      "word": "and",
+      "start_ms": 29960,
+      "end_ms": 31180
+    },
+    {
+      "word": "I",
+      "start_ms": 31180,
+      "end_ms": 31560
+    },
+    {
+      "word": "love",
+      "start_ms": 31560,
+      "end_ms": 32080
+    },
+    {
+      "word": "working",
+      "start_ms": 32080,
+      "end_ms": 32900
+    },
+    {
+      "word": "with",
+      "start_ms": 32900,
+      "end_ms": 33320
+    },
+    {
+      "word": "students.",
+      "start_ms": 33320,
+      "end_ms": 33900
+    },
+    {
+      "word": "This",
+      "start_ms": 35120,
+      "end_ms": 35680
+    },
+    {
+      "word": "year",
+      "start_ms": 35680,
+      "end_ms": 36080
+    },
+    {
+      "word": "we'll",
+      "start_ms": 36080,
+      "end_ms": 36660
+    },
+    {
+      "word": "explore",
+      "start_ms": 36660,
+      "end_ms": 37140
+    },
+    {
+      "word": "the",
+      "start_ms": 37140,
+      "end_ms": 37500
+    },
+    {
+      "word": "world",
+      "start_ms": 37500,
+      "end_ms": 37880
+    },
+    {
+      "word": "of",
+      "start_ms": 37880,
+      "end_ms": 38160
+    },
+    {
+      "word": "English",
+      "start_ms": 38160,
+      "end_ms": 38580
+    },
+    {
+      "word": "together.",
+      "start_ms": 38580,
+      "end_ms": 39220
+    },
+    {
+      "word": "It'll",
+      "start_ms": 39920,
+      "end_ms": 40380
+    },
+    {
+      "word": "be",
+      "start_ms": 40380,
+      "end_ms": 40620
+    },
+    {
+      "word": "a",
+      "start_ms": 40620,
+      "end_ms": 40880
+    },
+    {
+      "word": "lot",
+      "start_ms": 40880,
+      "end_ms": 41240
+    },
+    {
+      "word": "of",
+      "start_ms": 41240,
+      "end_ms": 41520
+    },
+    {
+      "word": "fun!",
+      "start_ms": 41520,
+      "end_ms": 41820
+    },
+    {
+      "word": "Now",
+      "start_ms": 42900,
+      "end_ms": 43540
+    },
+    {
+      "word": "it's",
+      "start_ms": 43540,
+      "end_ms": 44160
+    },
+    {
+      "word": "your",
+      "start_ms": 44160,
+      "end_ms": 44380
+    },
+    {
+      "word": "turn",
+      "start_ms": 44380,
+      "end_ms": 44840
+    },
+    {
+      "word": "to",
+      "start_ms": 44840,
+      "end_ms": 45120
+    },
+    {
+      "word": "introduce",
+      "start_ms": 45120,
+      "end_ms": 45560
+    },
+    {
+      "word": "yourselves.",
+      "start_ms": 45560,
+      "end_ms": 46400
+    },
+    {
+      "word": "Please",
+      "start_ms": 47180,
+      "end_ms": 47700
+    },
+    {
+      "word": "tell",
+      "start_ms": 47700,
+      "end_ms": 48020
+    },
+    {
+      "word": "us",
+      "start_ms": 48020,
+      "end_ms": 48320
+    },
+    {
+      "word": "your",
+      "start_ms": 48320,
+      "end_ms": 48580
+    },
+    {
+      "word": "name",
+      "start_ms": 48580,
+      "end_ms": 49100
+    },
+    {
+      "word": "and",
+      "start_ms": 49100,
+      "end_ms": 49780
+    },
+    {
+      "word": "your",
+      "start_ms": 49780,
+      "end_ms": 50040
+    },
+    {
+      "word": "hobby.",
+      "start_ms": 50040,
+      "end_ms": 50420
+    },
+    {
+      "word": "Who",
+      "start_ms": 50420,
+      "end_ms": 51760
+    },
+    {
+      "word": "wants",
+      "start_ms": 51760,
+      "end_ms": 52060
+    },
+    {
+      "word": "to",
+      "start_ms": 52060,
+      "end_ms": 52280
+    },
+    {
+      "word": "go",
+      "start_ms": 52280,
+      "end_ms": 52480
+    },
+    {
+      "word": "first?",
+      "start_ms": 52480,
+      "end_ms": 52940
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 7.7
+  }
+}

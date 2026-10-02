@@ -1,0 +1,210 @@
+{
+  "phase": "P2-6-D-0",
+  "title": "Learning Object + LO Evidence + LO Mastery + LO Diagnosis + Textbook-first Suggestion 实施前只读检查",
+  "status": "PASS_WITH_GAPS",
+  "mode": "audit_only",
+  "checked_at": "2026-09-13",
+  "spec": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+  "source_documents": [
+    "audit/P2-6-C-1_learning_object_evidence_loop_audit.md",
+    "audit/P2-6-C-2_learning_object_design.md",
+    "audit/P2-6-C-3_consolidation_action_design.md",
+    "audit/P2-6-C-4_full_chain_design_review.md",
+    "audit/P2-6-C-4-A_audio_text_mapping_audit.md",
+    "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.md"
+  ],
+  "baseline": {
+    "learning_db_sha256": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "learning_db_mtime": "2026-09-12T23:15:13",
+    "learning_db_tables": 7,
+    "learning_db_rows": {"learner": 1, "learning_record": 20, "learning_session": 31,
+                         "learning_task": 31, "task_item": 31, "mastery_state": 7,
+                         "schema_migration": 2},
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+    "spec_v12_sha256": "6D3595CF7D83879ADF3E6452C5E5A74C5300E89265DE1B4F2FA8A1EBDBB861A9",
+    "frozen_services_sha256_20": {
+      "learning_service.py": "01341A05231EFCA6E0C8",
+      "session_service.py": "0CF7A20615780831F544",
+      "activity_service.py": "AAFF907C869797EE697D",
+      "behavior_service.py": "0C6EF4822F60D9251B68",
+      "vocabulary_service.py": "D06DCC76A5A4CCAF5C0B",
+      "resource_pool_service.py": "D4488E1FFBA6B553EB69"
+    },
+    "tests": {"learning": 89, "workbench": 50, "web": 224, "total": 363,
+              "fail": 0, "skip": 0, "matches_baseline": true, "read_only": true}
+  },
+  "d1_lo_mapping": {
+    "deterministic": true,
+    "keys": {
+      "lex": "lex|<textbook_id>|<kind>|<normalized_lexeme>|<pos>|<sense>",
+      "listening": "listen|<textbook_id>|<unit>|<section>|<activity_no>",
+      "reading": "read|<textbook_id>|<unit>|<section>|<textbook_page>",
+      "writing": "write|<textbook_id>|<unit>|<section>|<activity_no>"
+    },
+    "vocabulary_entries": 288,
+    "vocabulary_surface_unique": "288/288",
+    "related_vocabulary_references": 1512,
+    "related_vocabulary_unique_resolution": "100% (0 miss / 0 ambiguous)",
+    "exercise_mapping_coverage": "89/157 (56.7%)",
+    "unmapped_kept_explicit": true,
+    "ai_required": false,
+    "new_data_file_required": false
+  },
+  "d2_lo_evidence": {
+    "valid_results": ["correct", "incorrect", "partial"],
+    "excluded": ["done", "skipped", "null", "contact-only study", "self-assessment-only"],
+    "provenance_kept": true,
+    "one_evidence_many_lo": true,
+    "evidence_copying": false,
+    "read_only_derivable": true,
+    "requires_record_schema_change": false
+  },
+  "d3_dedup": {
+    "layer1": "item + natural_day + task_type",
+    "layer2": "LO + natural_day + task_type",
+    "layer2_implemented_today": false,
+    "layer2_to_implement_in_d": true,
+    "raw_item_id_in_provenance": true
+  },
+  "d4_lo_mastery": {
+    "rules_file": "structured/learning/mastery_rules_v1.json",
+    "thresholds_changed": false,
+    "five_conditions": ["≥3 valid evidences", "≥2 task types", "≥2 natural days",
+                        "latest 3 valid judgments ≥2 correct", "no unresolved current error"],
+    "reuse_plan": "mastery_service.evaluate(conn, learner_id, lo_id, rules, evidence=lo_evidence)",
+    "requires_service_modification": false,
+    "mastery_state_semantics": "frozen item-level factual cache（不改造成 LO 级持久状态）",
+    "lo_mastery": "read-time derived"
+  },
+  "d5_lo_diagnosis": {
+    "reuse_plan": "diagnosis_service.diagnose(conn, learner_id, lo_id, rules, evidence=lo_evidence)",
+    "rules_changed": false,
+    "current_error": "最新有效 incorrect",
+    "suspected_weak": "errors >= 2 OR errors across >= 2 task types",
+    "needs_textbook_review": "partial >= 2 且跨 >= 2 task types",
+    "evidence_provenance_kept": true,
+    "requires_service_modification": false,
+    "new_finding_N1": "diagnose() 内部查 item 级 pool → 传 LO id 时 pool_state 为 None（允许，非错误）"
+  },
+  "d6_suggestion": {
+    "order": ["reread_text", "replay_audio", "grammar_pointer", "model_text_review",
+              "redo_exercise", "cross_section_practice"],
+    "textbook_anchor_supported": true,
+    "fabricates_when_missing": false,
+    "auto_execute": false,
+    "auto_jump": false,
+    "auto_play": false,
+    "ai_fallback": false,
+    "reuse_plan": "intervention_service.suggest(conn, learner_id, representative_item_id, rules)",
+    "requires_service_modification": false
+  },
+  "d7_rediagnosis": {
+    "new_evidence_enters_lo_aggregation": true,
+    "read_time_recompute": true,
+    "persist_diagnosis": false,
+    "persist_suggestion": false,
+    "closed_loop_without_action_table": true
+  },
+  "consolidation_action": {
+    "required_in_d": false,
+    "status": "DEFERRED",
+    "reason": "证据闭环不依赖 Action；仅“区分未处理/已尝试”与展示需要它",
+    "attribution_blocking": false
+  },
+  "audio_boundary": {
+    "frozen_input": "P2-6-C-4-A（54/54 locatable；confirmed mismatch 0；possible mismatch 0；SPLIT_REQUIRED 0）",
+    "resource_vs_lo_separated": true,
+    "resource_copy_when_multi_lo": false,
+    "playback_creates_evidence": false,
+    "listening_lo_scope": "task-level（一个教材听力任务 = 一个 LO）",
+    "derived_segment_possible_misread_as_required": false,
+    "text_coverage_gap_audios": 12,
+    "audio_modified": false
+  },
+  "new_findings": [
+    {"id": "N-1", "finding": "LO 级 diagnose 复用会使 pool_state 为空",
+     "impact": "非错误；D 需明确允许",
+     "blocking": false},
+    {"id": "N-2", "finding": "复用 evaluate(item_id=…) 时参数语义将变为 LO id",
+     "impact": "需在返回结构显式标注 object_type，避免语义漂移",
+     "blocking": false},
+    {"id": "N-3", "finding": "learning_record 无 session_id",
+     "impact": "两层去重不依赖会话；未来 Action 归因需经 task_id→session 关联",
+     "blocking": false}
+  ],
+  "answers_21": {
+    "q1_can_start_d": "YES WITH GAP",
+    "q2_db_migration": "NO",
+    "q3_modify_frozen_services": "NO",
+    "q4_modify_contentpack": "NO",
+    "q5_modify_v12": "NO",
+    "q6_modify_p2_4_p2_5": "NO",
+    "q7_modify_android": "NO",
+    "q8_lo_mapping_deterministic": "YES",
+    "q9_unmapped_blocks": "NO",
+    "q10_audio_mapping_blocks": "NO",
+    "q11_grammar_lo_blocks": "NO",
+    "q12_lo_evidence_derivable": "YES",
+    "q13_lo_mastery_derivable": "YES",
+    "q14_lo_diagnosis_derivable": "YES",
+    "q15_suggestion_derivable": "YES",
+    "q16_rediagnosis_viable": "YES",
+    "q17_action_required_in_d": "NO (DEFERRED)",
+    "q18_min_new_files": ["learning/learning_object_service.py",
+                          "learning/test_p2_6d_learning_object.py"],
+    "q19_min_modified_files": ["web/flow.py（+1 函数）", "web/ui.py（可选展示）"],
+    "q20_new_tests": 16,
+    "q21_new_blocking_items": "NO"
+  },
+  "file_plan": {
+    "new_files": ["learning/learning_object_service.py",
+                  "learning/test_p2_6d_learning_object.py"],
+    "modified_files": ["web/flow.py", "web/ui.py（可选）"],
+    "no_change_required": [
+      "learning/learning_service.py", "learning/session_service.py",
+      "learning/activity_service.py", "learning/behavior_service.py",
+      "learning/vocabulary_service.py", "learning/resource_pool_service.py",
+      "learning/evidence_service.py", "learning/mastery_service.py",
+      "learning/diagnosis_service.py", "learning/intervention_service.py",
+      "structured/learning/mastery_rules_v1.json", "structured/learning/learning.db",
+      "structured/contentpack/v5/FLTRP-EN-7A-2022CUR.sqlite",
+      "structured/textbook/*", "structured/exercises/*", "structured/audio/*",
+      "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx", "android/"
+    ],
+    "test_files": ["learning/test_p2_6d_learning_object.py"],
+    "db_impact": "0",
+    "ai_impact": "0",
+    "textbook_impact": "0",
+    "android_impact": "0"
+  },
+  "deferrable_gaps": [
+    "68/157 unmapped 练习（D 必须如实报告覆盖率，不得强行归属）",
+    "Grammar LO（待教材语法对象数据）",
+    "Consolidation Action persistence（DEFERRED）",
+    "G-Audio-1：12 条音频缺文字侧关联",
+    "G-Audio-2：无转写（transcript 0 行），无法声学确认"
+  ],
+  "protection_baseline": {
+    "code_modified": 0, "database_modified": 0, "contentpack_modified": 0,
+    "textbook_modified": 0, "audio_modified": 0, "spec_v12_modified": 0,
+    "p2_4_modified": 0, "p2_5_modified": 0, "android_modified": 0,
+    "ai_calls": 0, "new_business_code": 0, "new_db_structures": 0,
+    "created_files": ["audit/P2-6-D-0_implementation_readiness_audit.md",
+                      "audit/P2-6-D-0_implementation_readiness_audit.json"],
+    "modified_files": []
+  },
+  "final_verdict": {
+    "status": "PASS_WITH_GAPS",
+    "blocking_issues": [],
+    "entry_conditions": [
+      "确认 N-1：LO 诊断 pool_state 允许为空",
+      "确认 N-2：LO id 与 item_id 语义显式区分（返回 object_type）",
+      "确认 N-3：不依赖会话级去重；Action 归因延后",
+      "D 全程：零 DB 迁移、零冻结服务修改、零 contentpack/V1.2/P2-4/P2-5/Android 修改、AI=0",
+      "D 不得为提高映射率强行归属；unmapped 如实暴露"
+    ],
+    "stopped": "完成检查即停止；不进入 D 实施，不修改任何文件，不建表，不切音频"
+  }
+}

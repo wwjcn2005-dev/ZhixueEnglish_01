@@ -1,0 +1,1014 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU47",
+  "audio_num": "AU47",
+  "filename": "47_Unit 6_Developing ideas _Reading for writing_2 Read the passage. What happened to dodos.mp3",
+  "duration_ms": 116924,
+  "segment_count": 15,
+  "word_count": 184,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3480,
+      "text": "Reading for writing. Activity to."
+    },
+    {
+      "start_ms": 4560,
+      "end_ms": 6020,
+      "text": "Read the passage."
+    },
+    {
+      "start_ms": 7640,
+      "end_ms": 9860,
+      "text": "What happened to Dodo's?"
+    },
+    {
+      "start_ms": 11800,
+      "end_ms": 13680,
+      "text": "As dead as a dodo."
+    },
+    {
+      "start_ms": 15480,
+      "end_ms": 19140,
+      "text": "Are you looking at me? Do you know me?"
+    },
+    {
+      "start_ms": 20120,
+      "end_ms": 27900,
+      "text": "I'm a dodo. You may think I'm just a character in Alice's Adventures in Wonderland."
+    },
+    {
+      "start_ms": 27900,
+      "end_ms": 37520,
+      "text": "And actually there used to be thousands of us, for real, but now you can only see us in"
+    },
+    {
+      "start_ms": 37520,
+      "end_ms": 47520,
+      "text": "museums. We lived on an island in the Indian Ocean. In the happy old days there was plenty"
+    },
+    {
+      "start_ms": 47520,
+      "end_ms": 55860,
+      "text": "of food to eat. All the other animals were friendly. What a peaceful and safe life."
+    },
+    {
+      "start_ms": 55860,
+      "end_ms": 68740,
+      "text": "However, in 1598 humans arrived. They cut down the trees and our lovely forest was gone."
+    },
+    {
+      "start_ms": 70420,
+      "end_ms": 81120,
+      "text": "They hunted us because we were slow and couldn't fly. What's more, their pigs, cats and dogs"
+    },
+    {
+      "start_ms": 81120,
+      "end_ms": 93020,
+      "text": "eggs ate our eggs! As a result, we soon died out. So today we are standing in museums around"
+    },
+    {
+      "start_ms": 93020,
+      "end_ms": 102840,
+      "text": "the world. When you see us, please remember our sad story. The world is full of fantastic"
+    },
+    {
+      "start_ms": 102840,
+      "end_ms": 112940,
+      "text": "animals, please try your best to help them. Make them as happy as a clam, not as dead as"
+    },
+    {
+      "start_ms": 112940,
+      "end_ms": 113540,
+      "text": "a dodo."
+    }
+  ],
+  "words": [
+    {
+      "word": "Reading",
+      "start_ms": 0,
+      "end_ms": 680
+    },
+    {
+      "word": "for",
+      "start_ms": 680,
+      "end_ms": 1060
+    },
+    {
+      "word": "writing.",
+      "start_ms": 1060,
+      "end_ms": 1540
+    },
+    {
+      "word": "Activity",
+      "start_ms": 2280,
+      "end_ms": 3080
+    },
+    {
+      "word": "to.",
+      "start_ms": 3080,
+      "end_ms": 3480
+    },
+    {
+      "word": "Read",
+      "start_ms": 4560,
+      "end_ms": 5220
+    },
+    {
+      "word": "the",
+      "start_ms": 5220,
+      "end_ms": 5560
+    },
+    {
+      "word": "passage.",
+      "start_ms": 5560,
+      "end_ms": 6020
+    },
+    {
+      "word": "What",
+      "start_ms": 7640,
+      "end_ms": 7780
+    },
+    {
+      "word": "happened",
+      "start_ms": 7780,
+      "end_ms": 8380
+    },
+    {
+      "word": "to",
+      "start_ms": 8380,
+      "end_ms": 8920
+    },
+    {
+      "word": "Dodo's?",
+      "start_ms": 8920,
+      "end_ms": 9860
+    },
+    {
+      "word": "As",
+      "start_ms": 11800,
+      "end_ms": 12120
+    },
+    {
+      "word": "dead",
+      "start_ms": 12120,
+      "end_ms": 12480
+    },
+    {
+      "word": "as",
+      "start_ms": 12480,
+      "end_ms": 13000
+    },
+    {
+      "word": "a",
+      "start_ms": 13000,
+      "end_ms": 13160
+    },
+    {
+      "word": "dodo.",
+      "start_ms": 13160,
+      "end_ms": 13680
+    },
+    {
+      "word": "Are",
+      "start_ms": 15480,
+      "end_ms": 15980
+    },
+    {
+      "word": "you",
+      "start_ms": 15980,
+      "end_ms": 16240
+    },
+    {
+      "word": "looking",
+      "start_ms": 16240,
+      "end_ms": 16560
+    },
+    {
+      "word": "at",
+      "start_ms": 16560,
+      "end_ms": 16800
+    },
+    {
+      "word": "me?",
+      "start_ms": 16800,
+      "end_ms": 16960
+    },
+    {
+      "word": "Do",
+      "start_ms": 18060,
+      "end_ms": 18280
+    },
+    {
+      "word": "you",
+      "start_ms": 18280,
+      "end_ms": 18520
+    },
+    {
+      "word": "know",
+      "start_ms": 18520,
+      "end_ms": 18860
+    },
+    {
+      "word": "me?",
+      "start_ms": 18860,
+      "end_ms": 19140
+    },
+    {
+      "word": "I'm",
+      "start_ms": 20120,
+      "end_ms": 20760
+    },
+    {
+      "word": "a",
+      "start_ms": 20760,
+      "end_ms": 20960
+    },
+    {
+      "word": "dodo.",
+      "start_ms": 20960,
+      "end_ms": 21340
+    },
+    {
+      "word": "You",
+      "start_ms": 22160,
+      "end_ms": 22760
+    },
+    {
+      "word": "may",
+      "start_ms": 22760,
+      "end_ms": 22980
+    },
+    {
+      "word": "think",
+      "start_ms": 22980,
+      "end_ms": 23420
+    },
+    {
+      "word": "I'm",
+      "start_ms": 23420,
+      "end_ms": 23880
+    },
+    {
+      "word": "just",
+      "start_ms": 23880,
+      "end_ms": 24120
+    },
+    {
+      "word": "a",
+      "start_ms": 24120,
+      "end_ms": 24320
+    },
+    {
+      "word": "character",
+      "start_ms": 24320,
+      "end_ms": 24800
+    },
+    {
+      "word": "in",
+      "start_ms": 24800,
+      "end_ms": 25440
+    },
+    {
+      "word": "Alice's",
+      "start_ms": 25440,
+      "end_ms": 26260
+    },
+    {
+      "word": "Adventures",
+      "start_ms": 26260,
+      "end_ms": 26720
+    },
+    {
+      "word": "in",
+      "start_ms": 26720,
+      "end_ms": 27180
+    },
+    {
+      "word": "Wonderland.",
+      "start_ms": 27180,
+      "end_ms": 27900
+    },
+    {
+      "word": "And",
+      "start_ms": 27900,
+      "end_ms": 28000
+    },
+    {
+      "word": "actually",
+      "start_ms": 28000,
+      "end_ms": 29580
+    },
+    {
+      "word": "there",
+      "start_ms": 29580,
+      "end_ms": 30380
+    },
+    {
+      "word": "used",
+      "start_ms": 30380,
+      "end_ms": 30700
+    },
+    {
+      "word": "to",
+      "start_ms": 30700,
+      "end_ms": 30940
+    },
+    {
+      "word": "be",
+      "start_ms": 30940,
+      "end_ms": 31120
+    },
+    {
+      "word": "thousands",
+      "start_ms": 31120,
+      "end_ms": 31720
+    },
+    {
+      "word": "of",
+      "start_ms": 31720,
+      "end_ms": 32120
+    },
+    {
+      "word": "us,",
+      "start_ms": 32120,
+      "end_ms": 32440
+    },
+    {
+      "word": "for",
+      "start_ms": 32700,
+      "end_ms": 33020
+    },
+    {
+      "word": "real,",
+      "start_ms": 33020,
+      "end_ms": 33560
+    },
+    {
+      "word": "but",
+      "start_ms": 34280,
+      "end_ms": 34780
+    },
+    {
+      "word": "now",
+      "start_ms": 34780,
+      "end_ms": 35300
+    },
+    {
+      "word": "you",
+      "start_ms": 35300,
+      "end_ms": 35760
+    },
+    {
+      "word": "can",
+      "start_ms": 35760,
+      "end_ms": 35960
+    },
+    {
+      "word": "only",
+      "start_ms": 35960,
+      "end_ms": 36500
+    },
+    {
+      "word": "see",
+      "start_ms": 36500,
+      "end_ms": 36880
+    },
+    {
+      "word": "us",
+      "start_ms": 36880,
+      "end_ms": 37180
+    },
+    {
+      "word": "in",
+      "start_ms": 37180,
+      "end_ms": 37520
+    },
+    {
+      "word": "museums.",
+      "start_ms": 37520,
+      "end_ms": 38240
+    },
+    {
+      "word": "We",
+      "start_ms": 39180,
+      "end_ms": 39820
+    },
+    {
+      "word": "lived",
+      "start_ms": 39820,
+      "end_ms": 40220
+    },
+    {
+      "word": "on",
+      "start_ms": 40220,
+      "end_ms": 40540
+    },
+    {
+      "word": "an",
+      "start_ms": 40540,
+      "end_ms": 40660
+    },
+    {
+      "word": "island",
+      "start_ms": 40660,
+      "end_ms": 41160
+    },
+    {
+      "word": "in",
+      "start_ms": 41160,
+      "end_ms": 41680
+    },
+    {
+      "word": "the",
+      "start_ms": 41680,
+      "end_ms": 41840
+    },
+    {
+      "word": "Indian",
+      "start_ms": 41840,
+      "end_ms": 42360
+    },
+    {
+      "word": "Ocean.",
+      "start_ms": 42360,
+      "end_ms": 42920
+    },
+    {
+      "word": "In",
+      "start_ms": 44020,
+      "end_ms": 44620
+    },
+    {
+      "word": "the",
+      "start_ms": 44620,
+      "end_ms": 44820
+    },
+    {
+      "word": "happy",
+      "start_ms": 44820,
+      "end_ms": 45160
+    },
+    {
+      "word": "old",
+      "start_ms": 45160,
+      "end_ms": 45440
+    },
+    {
+      "word": "days",
+      "start_ms": 45440,
+      "end_ms": 45960
+    },
+    {
+      "word": "there",
+      "start_ms": 45960,
+      "end_ms": 46740
+    },
+    {
+      "word": "was",
+      "start_ms": 46740,
+      "end_ms": 46960
+    },
+    {
+      "word": "plenty",
+      "start_ms": 46960,
+      "end_ms": 47520
+    },
+    {
+      "word": "of",
+      "start_ms": 47520,
+      "end_ms": 47820
+    },
+    {
+      "word": "food",
+      "start_ms": 47820,
+      "end_ms": 48080
+    },
+    {
+      "word": "to",
+      "start_ms": 48080,
+      "end_ms": 48360
+    },
+    {
+      "word": "eat.",
+      "start_ms": 48360,
+      "end_ms": 48660
+    },
+    {
+      "word": "All",
+      "start_ms": 49500,
+      "end_ms": 50000
+    },
+    {
+      "word": "the",
+      "start_ms": 50000,
+      "end_ms": 50240
+    },
+    {
+      "word": "other",
+      "start_ms": 50240,
+      "end_ms": 50420
+    },
+    {
+      "word": "animals",
+      "start_ms": 50420,
+      "end_ms": 50980
+    },
+    {
+      "word": "were",
+      "start_ms": 50980,
+      "end_ms": 51260
+    },
+    {
+      "word": "friendly.",
+      "start_ms": 51260,
+      "end_ms": 51880
+    },
+    {
+      "word": "What",
+      "start_ms": 52820,
+      "end_ms": 53500
+    },
+    {
+      "word": "a",
+      "start_ms": 53500,
+      "end_ms": 53700
+    },
+    {
+      "word": "peaceful",
+      "start_ms": 53700,
+      "end_ms": 54180
+    },
+    {
+      "word": "and",
+      "start_ms": 54180,
+      "end_ms": 54760
+    },
+    {
+      "word": "safe",
+      "start_ms": 54760,
+      "end_ms": 55300
+    },
+    {
+      "word": "life.",
+      "start_ms": 55300,
+      "end_ms": 55860
+    },
+    {
+      "word": "However,",
+      "start_ms": 55860,
+      "end_ms": 57880
+    },
+    {
+      "word": "in",
+      "start_ms": 58540,
+      "end_ms": 59160
+    },
+    {
+      "word": "1598",
+      "start_ms": 59160,
+      "end_ms": 60480
+    },
+    {
+      "word": "humans",
+      "start_ms": 60480,
+      "end_ms": 61760
+    },
+    {
+      "word": "arrived.",
+      "start_ms": 61760,
+      "end_ms": 62560
+    },
+    {
+      "word": "They",
+      "start_ms": 63800,
+      "end_ms": 64000
+    },
+    {
+      "word": "cut",
+      "start_ms": 64000,
+      "end_ms": 64420
+    },
+    {
+      "word": "down",
+      "start_ms": 64420,
+      "end_ms": 64800
+    },
+    {
+      "word": "the",
+      "start_ms": 64800,
+      "end_ms": 64980
+    },
+    {
+      "word": "trees",
+      "start_ms": 64980,
+      "end_ms": 65440
+    },
+    {
+      "word": "and",
+      "start_ms": 65440,
+      "end_ms": 66400
+    },
+    {
+      "word": "our",
+      "start_ms": 66400,
+      "end_ms": 66600
+    },
+    {
+      "word": "lovely",
+      "start_ms": 66600,
+      "end_ms": 67200
+    },
+    {
+      "word": "forest",
+      "start_ms": 67200,
+      "end_ms": 67900
+    },
+    {
+      "word": "was",
+      "start_ms": 67900,
+      "end_ms": 68160
+    },
+    {
+      "word": "gone.",
+      "start_ms": 68160,
+      "end_ms": 68740
+    },
+    {
+      "word": "They",
+      "start_ms": 69880,
+      "end_ms": 70480
+    },
+    {
+      "word": "hunted",
+      "start_ms": 70480,
+      "end_ms": 70840
+    },
+    {
+      "word": "us",
+      "start_ms": 70840,
+      "end_ms": 71240
+    },
+    {
+      "word": "because",
+      "start_ms": 71240,
+      "end_ms": 72060
+    },
+    {
+      "word": "we",
+      "start_ms": 72060,
+      "end_ms": 72420
+    },
+    {
+      "word": "were",
+      "start_ms": 72420,
+      "end_ms": 72620
+    },
+    {
+      "word": "slow",
+      "start_ms": 72620,
+      "end_ms": 73120
+    },
+    {
+      "word": "and",
+      "start_ms": 73120,
+      "end_ms": 73920
+    },
+    {
+      "word": "couldn't",
+      "start_ms": 73920,
+      "end_ms": 74480
+    },
+    {
+      "word": "fly.",
+      "start_ms": 74480,
+      "end_ms": 74840
+    },
+    {
+      "word": "What's",
+      "start_ms": 75880,
+      "end_ms": 76880
+    },
+    {
+      "word": "more,",
+      "start_ms": 76880,
+      "end_ms": 77320
+    },
+    {
+      "word": "their",
+      "start_ms": 78000,
+      "end_ms": 78140
+    },
+    {
+      "word": "pigs,",
+      "start_ms": 78140,
+      "end_ms": 78760
+    },
+    {
+      "word": "cats",
+      "start_ms": 79220,
+      "end_ms": 79700
+    },
+    {
+      "word": "and",
+      "start_ms": 79700,
+      "end_ms": 80420
+    },
+    {
+      "word": "dogs",
+      "start_ms": 80420,
+      "end_ms": 81120
+    },
+    {
+      "word": "eggs",
+      "start_ms": 81120,
+      "end_ms": 81380
+    },
+    {
+      "word": "ate",
+      "start_ms": 81380,
+      "end_ms": 81760
+    },
+    {
+      "word": "our",
+      "start_ms": 81760,
+      "end_ms": 82280
+    },
+    {
+      "word": "eggs!",
+      "start_ms": 82280,
+      "end_ms": 82920
+    },
+    {
+      "word": "As",
+      "start_ms": 83920,
+      "end_ms": 84360
+    },
+    {
+      "word": "a",
+      "start_ms": 84360,
+      "end_ms": 84460
+    },
+    {
+      "word": "result,",
+      "start_ms": 84460,
+      "end_ms": 84880
+    },
+    {
+      "word": "we",
+      "start_ms": 85640,
+      "end_ms": 85820
+    },
+    {
+      "word": "soon",
+      "start_ms": 85820,
+      "end_ms": 86400
+    },
+    {
+      "word": "died",
+      "start_ms": 86400,
+      "end_ms": 86740
+    },
+    {
+      "word": "out.",
+      "start_ms": 86740,
+      "end_ms": 87180
+    },
+    {
+      "word": "So",
+      "start_ms": 88340,
+      "end_ms": 89100
+    },
+    {
+      "word": "today",
+      "start_ms": 89100,
+      "end_ms": 89640
+    },
+    {
+      "word": "we",
+      "start_ms": 89640,
+      "end_ms": 90420
+    },
+    {
+      "word": "are",
+      "start_ms": 90420,
+      "end_ms": 90600
+    },
+    {
+      "word": "standing",
+      "start_ms": 90600,
+      "end_ms": 91280
+    },
+    {
+      "word": "in",
+      "start_ms": 91280,
+      "end_ms": 91780
+    },
+    {
+      "word": "museums",
+      "start_ms": 91780,
+      "end_ms": 92440
+    },
+    {
+      "word": "around",
+      "start_ms": 92440,
+      "end_ms": 93020
+    },
+    {
+      "word": "the",
+      "start_ms": 93020,
+      "end_ms": 93320
+    },
+    {
+      "word": "world.",
+      "start_ms": 93320,
+      "end_ms": 93760
+    },
+    {
+      "word": "When",
+      "start_ms": 94720,
+      "end_ms": 95160
+    },
+    {
+      "word": "you",
+      "start_ms": 95160,
+      "end_ms": 95400
+    },
+    {
+      "word": "see",
+      "start_ms": 95400,
+      "end_ms": 95640
+    },
+    {
+      "word": "us,",
+      "start_ms": 95640,
+      "end_ms": 96000
+    },
+    {
+      "word": "please",
+      "start_ms": 96600,
+      "end_ms": 97020
+    },
+    {
+      "word": "remember",
+      "start_ms": 97020,
+      "end_ms": 97720
+    },
+    {
+      "word": "our",
+      "start_ms": 97720,
+      "end_ms": 98260
+    },
+    {
+      "word": "sad",
+      "start_ms": 98260,
+      "end_ms": 98900
+    },
+    {
+      "word": "story.",
+      "start_ms": 98900,
+      "end_ms": 99480
+    },
+    {
+      "word": "The",
+      "start_ms": 100560,
+      "end_ms": 101020
+    },
+    {
+      "word": "world",
+      "start_ms": 101020,
+      "end_ms": 101300
+    },
+    {
+      "word": "is",
+      "start_ms": 101300,
+      "end_ms": 101520
+    },
+    {
+      "word": "full",
+      "start_ms": 101520,
+      "end_ms": 101960
+    },
+    {
+      "word": "of",
+      "start_ms": 101960,
+      "end_ms": 102300
+    },
+    {
+      "word": "fantastic",
+      "start_ms": 102300,
+      "end_ms": 102840
+    },
+    {
+      "word": "animals,",
+      "start_ms": 102840,
+      "end_ms": 103660
+    },
+    {
+      "word": "please",
+      "start_ms": 104640,
+      "end_ms": 105320
+    },
+    {
+      "word": "try",
+      "start_ms": 105320,
+      "end_ms": 105700
+    },
+    {
+      "word": "your",
+      "start_ms": 105700,
+      "end_ms": 105960
+    },
+    {
+      "word": "best",
+      "start_ms": 105960,
+      "end_ms": 106380
+    },
+    {
+      "word": "to",
+      "start_ms": 106380,
+      "end_ms": 106600
+    },
+    {
+      "word": "help",
+      "start_ms": 106600,
+      "end_ms": 106840
+    },
+    {
+      "word": "them.",
+      "start_ms": 106840,
+      "end_ms": 107140
+    },
+    {
+      "word": "Make",
+      "start_ms": 108080,
+      "end_ms": 108500
+    },
+    {
+      "word": "them",
+      "start_ms": 108500,
+      "end_ms": 108740
+    },
+    {
+      "word": "as",
+      "start_ms": 108740,
+      "end_ms": 108960
+    },
+    {
+      "word": "happy",
+      "start_ms": 108960,
+      "end_ms": 109280
+    },
+    {
+      "word": "as",
+      "start_ms": 109280,
+      "end_ms": 109540
+    },
+    {
+      "word": "a",
+      "start_ms": 109540,
+      "end_ms": 109680
+    },
+    {
+      "word": "clam,",
+      "start_ms": 109680,
+      "end_ms": 109940
+    },
+    {
+      "word": "not",
+      "start_ms": 110660,
+      "end_ms": 111320
+    },
+    {
+      "word": "as",
+      "start_ms": 111320,
+      "end_ms": 112040
+    },
+    {
+      "word": "dead",
+      "start_ms": 112040,
+      "end_ms": 112420
+    },
+    {
+      "word": "as",
+      "start_ms": 112420,
+      "end_ms": 112940
+    },
+    {
+      "word": "a",
+      "start_ms": 112940,
+      "end_ms": 113060
+    },
+    {
+      "word": "dodo.",
+      "start_ms": 113060,
+      "end_ms": 113540
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 13.3
+  }
+}

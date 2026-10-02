@@ -1,0 +1,228 @@
+{
+  "task": "P1-06-B1.14 Learner + LearningTask + TaskItem 业务层设计审计",
+  "generated_at": "2026-09-12T15:42:12+08:00",
+  "verdict": "PASS",
+  "task_text_truncated_at": "§三十六（报告文件路径处）",
+  "baseline": {
+    "learning_db": {
+      "sha256": "16E3952D64E749879D8FF78814F0434D544D4CBAD7D52AAC7E0B145DE43414E9",
+      "size": 73728,
+      "user_version": 1,
+      "tables": 6,
+      "business_rows": 0
+    },
+    "v5": {
+      "sha256": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+      "size": 2457600,
+      "tables": 21,
+      "vocabulary": 287,
+      "phrase": 23,
+      "sentence_pattern": 52,
+      "learning_item": 362,
+      "source_ref": 815,
+      "learning_goal": 6,
+      "textbook_id_values": [
+        "FLTRP-EN-7A-2022CUR"
+      ]
+    }
+  },
+  "learner": {
+    "definition": "一个实际学习者的用户层根节点",
+    "not": [
+      "家长",
+      "账号系统",
+      "登录账号",
+      "AI Agent",
+      "班级",
+      "学校",
+      "设备",
+      "教材",
+      "学习任务"
+    ],
+    "create": "显式创建（不静默自动创建）",
+    "min_actions": [
+      "创建",
+      "查看",
+      "修改 display_name",
+      "active/inactive"
+    ],
+    "rename_allowed": true,
+    "multiple_allowed": true,
+    "same_name_allowed": true,
+    "inactive_keeps_history": true,
+    "physical_delete": false,
+    "forbidden_fields": [
+      "textbook_id",
+      "当前科目",
+      "当前单元",
+      "当前知识点"
+    ],
+    "ui_multi_learner": "LATER"
+  },
+  "learning_task": {
+    "definition": "一次有明确学习范围和学习意图的计划性学习活动集合",
+    "creator": "孩子主动选择（系统执行写入）",
+    "task_kind": [
+      "learn",
+      "review"
+    ],
+    "status": [
+      "active",
+      "completed",
+      "dropped"
+    ],
+    "forbidden_status": [
+      "paused",
+      "draft",
+      "cancelled"
+    ],
+    "textbook_id": "必填；系统从 contentpack 解析，禁止用户手输",
+    "goal_id": "可 NULL",
+    "title": "可 NULL，可由规则生成",
+    "requires_at_least_one_task_item": true,
+    "creation_transaction": "Task + TaskItem 同一事务",
+    "exit_behavior": "退出/切页/锁屏/次日回来 保持 active",
+    "status_transition": "active → completed / dropped（单向不可逆）",
+    "modify_rules": {
+      "no_record": {
+        "textbook_id": "可改",
+        "task_kind": "可改",
+        "task_item": "增删改",
+        "title": "可改"
+      },
+      "has_record": {
+        "learner_id": "永不可改",
+        "textbook_id": "不可改",
+        "task_kind": "不可改",
+        "task_item": "可新增/可删除（不影响历史）",
+        "title": "可改"
+      },
+      "completed_or_dropped": "Task 与 TaskItem 只读"
+    },
+    "delete_rules": {
+      "no_record": "可物理删除（级联 TaskItem）",
+      "has_record": "只能 dropped"
+    },
+    "unit_section_fields": "不需要（LATER/P3，可由 item_id → source_ref → content_block → page 推导）"
+  },
+  "task_item": {
+    "definition": "Task 与教材资源之间的最小计划桥接",
+    "fields": [
+      "task_id",
+      "item_id",
+      "ordinal",
+      "created_at"
+    ],
+    "forbidden_fields": [
+      "教材文本",
+      "词义",
+      "AI 内容",
+      "掌握度",
+      "答题结果",
+      "是否完成",
+      "是否正确",
+      "item_type",
+      "item_role",
+      "required",
+      "status"
+    ],
+    "ordinal": {
+      "semantic": "展示/学习顺序",
+      "start": 1,
+      "nullable": true,
+      "unique": "应用层保证（DB 无约束）",
+      "reorder": true,
+      "add_later": true
+    },
+    "mixed_resource_types_allowed": true,
+    "delete_semantics": "允许删除；历史 Record 不受影响（Record 自含 task_id + item_id）"
+  },
+  "review_task": {
+    "allowed": "孩子主动创建",
+    "forbidden": "AI 自动创建",
+    "ai_hint": "允许提示，孩子决定",
+    "not_an_algorithm": "不得实现间隔重复 / next_review_at / 自动排程 / 自动选题 / 掌握阈值"
+  },
+  "task_creation_sources": {
+    "child_initiated": "允许（唯一入口）",
+    "ai_suggestion_with_confirmation": "未来允许",
+    "system_auto": "不允许",
+    "parent": "不设计",
+    "school_teacher": "不设计"
+  },
+  "item_id_policy": {
+    "create": "只允许当前可用教材资源",
+    "historical_task": "教材更新后不强制删除",
+    "missing_item": "展示层提示，数据保留",
+    "unknown_item_write": "不允许"
+  },
+  "ai_boundary": {
+    "can": [
+      "分析",
+      "提示",
+      "建议",
+      "解释"
+    ],
+    "cannot": [
+      "create learner",
+      "create task",
+      "create task_item",
+      "修改教材资源",
+      "自动排程"
+    ],
+    "future_flow": "AI 建议 → 孩子确认 → 系统创建 Task"
+  },
+  "not_designed": [
+    "LearningActivity",
+    "Question/Exercise/Answer",
+    "Record 业务",
+    "Mastery 算法",
+    "Review 算法",
+    "家长/学校工作流",
+    "UI"
+  ],
+  "schema_change_required": false,
+  "rejected_future_fields": [
+    "current_unit",
+    "current_item",
+    "progress",
+    "completion_percent",
+    "source",
+    "ai_generated",
+    "recommendation_id",
+    "parent_id",
+    "school_id",
+    "class_id",
+    "device_id",
+    "session_id"
+  ],
+  "risks": {
+    "P0": 0,
+    "P1": 0,
+    "P2": [
+      "ordinal 唯一性仅应用层保证",
+      "有 Record 后删除 TaskItem 属允许行为"
+    ],
+    "P3": [
+      "多 Learner UI（LATER）",
+      "按 unit/section 组织计划（LATER）",
+      "AI 建议入口（未来阶段）"
+    ]
+  },
+  "boundaries": {
+    "learning_db_modified": false,
+    "v5_modified": false,
+    "writes": 0,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "network": 0,
+    "new_deps": 0,
+    "android_modified": false,
+    "zhixue_ai": false,
+    "new_files": [
+      "audit/P1-06-B1.14_learner_task_business_design.md",
+      "audit/P1-06-B1.14_learner_task_business_design.json"
+    ]
+  }
+}

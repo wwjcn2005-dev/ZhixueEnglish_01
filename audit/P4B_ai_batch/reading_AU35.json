@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 5\nSECTION: UNDERSTANDING_IDEAS\nACTIVITY_INSTRUCTION: 35_Unit 5_Understanding ideas_2 Read the passage and check your answers.mp3\nPASSAGE BLOCKS (id + verbatim textbook text):\n[FLTRP-EN-7A-2022CUR:P86:B6] Read the passage and check your answers.2\n[FLTRP-EN-7A-2022CUR:P86:B0] 1\t It’s quarter past seven. Here’s Worker No. 55 in his green uniform. He’s going to start work in the plant.\n[FLTRP-EN-7A-2022CUR:P86:B1] 2\t He works in Workshop 1001 in the Leaf. There are 20 to 100 workers in each workshop. They collect sunlight and CO2 during the day. Now workers from the Root send up water. The water will rise up to the Leaf through the Stem. Then workers in the Leaf will mix water, CO2 and sunlight.\n[FLTRP-EN-7A-2022CUR:P86:B2] 3\t What are they going to produce? Most importantly (for them), there will be sugar! It’s useful for the growth of the plant. Another product will be oxygen, but the plant doesn’t need much of it. It means a lot to animals and humans, though – they need it to breathe!\n[FLTRP-EN-7A-2022CUR:P86:B3] 4\t The workers work hard. Soon it’s going to get dark. They will take\n[FLTRP-EN-7A-2022CUR:P86:B5] 5\t There are millions of plants on earth. They give more than food and oxygen. Without plants, the natural world would be very different!\n\nWrite 2-3 multiple-choice reading questions about this passage.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"Where does Worker No. 55 work?\",\n      \"options\": [\n        \"Workshop 1001 in the Leaf\",\n        \"Workshop 1001 in the Root\",\n        \"the Stem\",\n        \"outside the plant\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P86:B1\",\n      \"evidence_quote\": \"He works in Workshop 1001 in the Leaf.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What do workers in the Leaf collect during the day?\",\n      \"options\": [\n        \"Sunlight and CO2\",\n        \"Water and sugar\",\n        \"Oxygen and CO2\",\n        \"Sunlight and oxygen\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P86:B1\",\n      \"evidence_quote\": \"They collect sunlight and CO2 during the day.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"According to the passage, why is oxygen important to animals and humans?\",\n      \"options\": [\n        \"They need it to breathe.\",\n        \"They need it to grow.\",\n        \"They use it to make sugar.\",\n        \"They don't need it.\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P86:B2\",\n      \"evidence_quote\": \"It means a lot to animals and humans, though – they need it to breathe!\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 712,
+  "completion_tokens": 1801,
+  "total_tokens": 2513,
+  "prompt_tokens_details": {
+   "cached_tokens": 640
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1431
+  },
+  "prompt_cache_hit_tokens": 640,
+  "prompt_cache_miss_tokens": 72
+ }
+}

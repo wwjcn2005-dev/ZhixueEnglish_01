@@ -1,0 +1,619 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU32",
+  "audio_num": "AU32",
+  "filename": "32_Unit 4_Developing ideas _2 Listen again and complete the poster. Then write F(fact) or O(opinion) in the boxes.mp3",
+  "duration_ms": 77349,
+  "segment_count": 10,
+  "word_count": 110,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 12880,
+      "text": "Activity 2. Listen again and complete the poster. Then write F, FACT or O, OPINION in"
+    },
+    {
+      "start_ms": 12880,
+      "end_ms": 13580,
+      "text": "the boxes."
+    },
+    {
+      "start_ms": 15360,
+      "end_ms": 24560,
+      "text": "Welcome to news today. Christmas is coming. It brings joy but also waste and pollution."
+    },
+    {
+      "start_ms": 24560,
+      "end_ms": 36060,
+      "text": "Each year, for example, people in the UK use about 365,000 kilometres of paper for gifts."
+    },
+    {
+      "start_ms": 36980,
+      "end_ms": 41360,
+      "text": "Around the world, people throw away millions of turkeys."
+    },
+    {
+      "start_ms": 42800,
+      "end_ms": 51000,
+      "text": "What's more, people cut down nearly 120 million trees to use as Christmas trees."
+    },
+    {
+      "start_ms": 51000,
+      "end_ms": 56260,
+      "text": "But after Christmas, they often throw the trees away."
+    },
+    {
+      "start_ms": 57360,
+      "end_ms": 63840,
+      "text": "Some families are buying plastic Christmas trees, but they can cause pollution too."
+    },
+    {
+      "start_ms": 65120,
+      "end_ms": 68000,
+      "text": "We should think about new ways of celebrating."
+    },
+    {
+      "start_ms": 69300,
+      "end_ms": 72220,
+      "text": "Let's have a green Christmas this year."
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1000
+    },
+    {
+      "word": "2.",
+      "start_ms": 1000,
+      "end_ms": 1440
+    },
+    {
+      "word": "Listen",
+      "start_ms": 2560,
+      "end_ms": 3080
+    },
+    {
+      "word": "again",
+      "start_ms": 3080,
+      "end_ms": 3560
+    },
+    {
+      "word": "and",
+      "start_ms": 3560,
+      "end_ms": 4320
+    },
+    {
+      "word": "complete",
+      "start_ms": 4320,
+      "end_ms": 4780
+    },
+    {
+      "word": "the",
+      "start_ms": 4780,
+      "end_ms": 5140
+    },
+    {
+      "word": "poster.",
+      "start_ms": 5140,
+      "end_ms": 5600
+    },
+    {
+      "word": "Then",
+      "start_ms": 6440,
+      "end_ms": 6820
+    },
+    {
+      "word": "write",
+      "start_ms": 6820,
+      "end_ms": 7220
+    },
+    {
+      "word": "F,",
+      "start_ms": 7220,
+      "end_ms": 8060
+    },
+    {
+      "word": "FACT",
+      "start_ms": 8600,
+      "end_ms": 9080
+    },
+    {
+      "word": "or",
+      "start_ms": 9080,
+      "end_ms": 10120
+    },
+    {
+      "word": "O,",
+      "start_ms": 10120,
+      "end_ms": 10780
+    },
+    {
+      "word": "OPINION",
+      "start_ms": 11380,
+      "end_ms": 12060
+    },
+    {
+      "word": "in",
+      "start_ms": 12060,
+      "end_ms": 12880
+    },
+    {
+      "word": "the",
+      "start_ms": 12880,
+      "end_ms": 13060
+    },
+    {
+      "word": "boxes.",
+      "start_ms": 13060,
+      "end_ms": 13580
+    },
+    {
+      "word": "Welcome",
+      "start_ms": 15160,
+      "end_ms": 15700
+    },
+    {
+      "word": "to",
+      "start_ms": 15700,
+      "end_ms": 16100
+    },
+    {
+      "word": "news",
+      "start_ms": 16100,
+      "end_ms": 16640
+    },
+    {
+      "word": "today.",
+      "start_ms": 16640,
+      "end_ms": 17140
+    },
+    {
+      "word": "Christmas",
+      "start_ms": 18240,
+      "end_ms": 18740
+    },
+    {
+      "word": "is",
+      "start_ms": 18740,
+      "end_ms": 19160
+    },
+    {
+      "word": "coming.",
+      "start_ms": 19160,
+      "end_ms": 19540
+    },
+    {
+      "word": "It",
+      "start_ms": 20620,
+      "end_ms": 20820
+    },
+    {
+      "word": "brings",
+      "start_ms": 20820,
+      "end_ms": 21180
+    },
+    {
+      "word": "joy",
+      "start_ms": 21180,
+      "end_ms": 21720
+    },
+    {
+      "word": "but",
+      "start_ms": 21720,
+      "end_ms": 22360
+    },
+    {
+      "word": "also",
+      "start_ms": 22360,
+      "end_ms": 23000
+    },
+    {
+      "word": "waste",
+      "start_ms": 23000,
+      "end_ms": 23640
+    },
+    {
+      "word": "and",
+      "start_ms": 23640,
+      "end_ms": 23960
+    },
+    {
+      "word": "pollution.",
+      "start_ms": 23960,
+      "end_ms": 24560
+    },
+    {
+      "word": "Each",
+      "start_ms": 24560,
+      "end_ms": 25920
+    },
+    {
+      "word": "year,",
+      "start_ms": 25920,
+      "end_ms": 26560
+    },
+    {
+      "word": "for",
+      "start_ms": 26680,
+      "end_ms": 26820
+    },
+    {
+      "word": "example,",
+      "start_ms": 26820,
+      "end_ms": 27400
+    },
+    {
+      "word": "people",
+      "start_ms": 28080,
+      "end_ms": 28460
+    },
+    {
+      "word": "in",
+      "start_ms": 28460,
+      "end_ms": 28840
+    },
+    {
+      "word": "the",
+      "start_ms": 28840,
+      "end_ms": 29020
+    },
+    {
+      "word": "UK",
+      "start_ms": 29020,
+      "end_ms": 29480
+    },
+    {
+      "word": "use",
+      "start_ms": 29480,
+      "end_ms": 30300
+    },
+    {
+      "word": "about",
+      "start_ms": 30300,
+      "end_ms": 30720
+    },
+    {
+      "word": "365",
+      "start_ms": 30720,
+      "end_ms": 32440
+    },
+    {
+      "word": ",000",
+      "start_ms": 32440,
+      "end_ms": 33780
+    },
+    {
+      "word": "kilometres",
+      "start_ms": 33780,
+      "end_ms": 34200
+    },
+    {
+      "word": "of",
+      "start_ms": 34200,
+      "end_ms": 34840
+    },
+    {
+      "word": "paper",
+      "start_ms": 34840,
+      "end_ms": 35260
+    },
+    {
+      "word": "for",
+      "start_ms": 35260,
+      "end_ms": 35620
+    },
+    {
+      "word": "gifts.",
+      "start_ms": 35620,
+      "end_ms": 36060
+    },
+    {
+      "word": "Around",
+      "start_ms": 36980,
+      "end_ms": 37260
+    },
+    {
+      "word": "the",
+      "start_ms": 37260,
+      "end_ms": 37640
+    },
+    {
+      "word": "world,",
+      "start_ms": 37640,
+      "end_ms": 38100
+    },
+    {
+      "word": "people",
+      "start_ms": 38660,
+      "end_ms": 39020
+    },
+    {
+      "word": "throw",
+      "start_ms": 39020,
+      "end_ms": 39440
+    },
+    {
+      "word": "away",
+      "start_ms": 39440,
+      "end_ms": 39860
+    },
+    {
+      "word": "millions",
+      "start_ms": 39860,
+      "end_ms": 40400
+    },
+    {
+      "word": "of",
+      "start_ms": 40400,
+      "end_ms": 40800
+    },
+    {
+      "word": "turkeys.",
+      "start_ms": 40800,
+      "end_ms": 41360
+    },
+    {
+      "word": "What's",
+      "start_ms": 42480,
+      "end_ms": 42940
+    },
+    {
+      "word": "more,",
+      "start_ms": 42940,
+      "end_ms": 43300
+    },
+    {
+      "word": "people",
+      "start_ms": 44040,
+      "end_ms": 44380
+    },
+    {
+      "word": "cut",
+      "start_ms": 44380,
+      "end_ms": 44740
+    },
+    {
+      "word": "down",
+      "start_ms": 44740,
+      "end_ms": 45100
+    },
+    {
+      "word": "nearly",
+      "start_ms": 45100,
+      "end_ms": 45580
+    },
+    {
+      "word": "120",
+      "start_ms": 45580,
+      "end_ms": 46780
+    },
+    {
+      "word": "million",
+      "start_ms": 46780,
+      "end_ms": 48080
+    },
+    {
+      "word": "trees",
+      "start_ms": 48080,
+      "end_ms": 48680
+    },
+    {
+      "word": "to",
+      "start_ms": 48680,
+      "end_ms": 49300
+    },
+    {
+      "word": "use",
+      "start_ms": 49300,
+      "end_ms": 49640
+    },
+    {
+      "word": "as",
+      "start_ms": 49640,
+      "end_ms": 49960
+    },
+    {
+      "word": "Christmas",
+      "start_ms": 49960,
+      "end_ms": 50420
+    },
+    {
+      "word": "trees.",
+      "start_ms": 50420,
+      "end_ms": 51000
+    },
+    {
+      "word": "But",
+      "start_ms": 51000,
+      "end_ms": 52300
+    },
+    {
+      "word": "after",
+      "start_ms": 52300,
+      "end_ms": 52860
+    },
+    {
+      "word": "Christmas,",
+      "start_ms": 52860,
+      "end_ms": 53320
+    },
+    {
+      "word": "they",
+      "start_ms": 53320,
+      "end_ms": 54240
+    },
+    {
+      "word": "often",
+      "start_ms": 54240,
+      "end_ms": 54680
+    },
+    {
+      "word": "throw",
+      "start_ms": 54680,
+      "end_ms": 55080
+    },
+    {
+      "word": "the",
+      "start_ms": 55080,
+      "end_ms": 55300
+    },
+    {
+      "word": "trees",
+      "start_ms": 55300,
+      "end_ms": 55680
+    },
+    {
+      "word": "away.",
+      "start_ms": 55680,
+      "end_ms": 56260
+    },
+    {
+      "word": "Some",
+      "start_ms": 57360,
+      "end_ms": 57780
+    },
+    {
+      "word": "families",
+      "start_ms": 57780,
+      "end_ms": 58360
+    },
+    {
+      "word": "are",
+      "start_ms": 58360,
+      "end_ms": 58780
+    },
+    {
+      "word": "buying",
+      "start_ms": 58780,
+      "end_ms": 59140
+    },
+    {
+      "word": "plastic",
+      "start_ms": 59140,
+      "end_ms": 59800
+    },
+    {
+      "word": "Christmas",
+      "start_ms": 59800,
+      "end_ms": 60260
+    },
+    {
+      "word": "trees,",
+      "start_ms": 60260,
+      "end_ms": 60820
+    },
+    {
+      "word": "but",
+      "start_ms": 61360,
+      "end_ms": 61800
+    },
+    {
+      "word": "they",
+      "start_ms": 61800,
+      "end_ms": 62120
+    },
+    {
+      "word": "can",
+      "start_ms": 62120,
+      "end_ms": 62380
+    },
+    {
+      "word": "cause",
+      "start_ms": 62380,
+      "end_ms": 62800
+    },
+    {
+      "word": "pollution",
+      "start_ms": 62800,
+      "end_ms": 63400
+    },
+    {
+      "word": "too.",
+      "start_ms": 63400,
+      "end_ms": 63840
+    },
+    {
+      "word": "We",
+      "start_ms": 65120,
+      "end_ms": 65520
+    },
+    {
+      "word": "should",
+      "start_ms": 65520,
+      "end_ms": 65780
+    },
+    {
+      "word": "think",
+      "start_ms": 65780,
+      "end_ms": 66080
+    },
+    {
+      "word": "about",
+      "start_ms": 66080,
+      "end_ms": 66440
+    },
+    {
+      "word": "new",
+      "start_ms": 66440,
+      "end_ms": 66900
+    },
+    {
+      "word": "ways",
+      "start_ms": 66900,
+      "end_ms": 67260
+    },
+    {
+      "word": "of",
+      "start_ms": 67260,
+      "end_ms": 67520
+    },
+    {
+      "word": "celebrating.",
+      "start_ms": 67520,
+      "end_ms": 68000
+    },
+    {
+      "word": "Let's",
+      "start_ms": 69300,
+      "end_ms": 69900
+    },
+    {
+      "word": "have",
+      "start_ms": 69900,
+      "end_ms": 70120
+    },
+    {
+      "word": "a",
+      "start_ms": 70120,
+      "end_ms": 70440
+    },
+    {
+      "word": "green",
+      "start_ms": 70440,
+      "end_ms": 70760
+    },
+    {
+      "word": "Christmas",
+      "start_ms": 70760,
+      "end_ms": 71400
+    },
+    {
+      "word": "this",
+      "start_ms": 71400,
+      "end_ms": 71820
+    },
+    {
+      "word": "year.",
+      "start_ms": 71820,
+      "end_ms": 72220
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 8.0
+  }
+}

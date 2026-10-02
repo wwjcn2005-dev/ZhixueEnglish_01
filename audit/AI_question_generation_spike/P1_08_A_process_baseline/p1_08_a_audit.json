@@ -1,0 +1,204 @@
+{
+ "stage": "P1-08-A",
+ "mode": "read_only_audit_then_freeze_spec",
+ "ai_calls": 0,
+ "deliverable": {
+  "path": "docs\\AI教材习题生成与题库入库流程规范_V1.0.md",
+  "exists": true,
+  "sha256": "1A070BD6408A99A21B3D39099BCB0D493F15274A5F83903722772E1573676B98",
+  "size": 29933,
+  "chars": 16099
+ },
+ "docx_decision": {
+  "docs_docx_files": [],
+  "docx_available_python": false,
+  "pandoc": false,
+  "decision": "不生成 DOCX：docs/ 现有正式规范全部为 .md，未有 DOCX 体系；且本机无 python-docx / pandoc，按规范不得为新软件安装。"
+ },
+ "stage_artifacts": {
+  "P0_closeout": {
+   "exists": true,
+   "files": 4,
+   "dir_sha256": "F3A2007FD4D8924EA2AE596411D8CC7BF90302457A805850F8F35699CFFEAC0A"
+  },
+  "P1_01_question_library_design": {
+   "exists": true,
+   "files": 4,
+   "dir_sha256": "62C9A3761A010389B1CC33318F01A9F7B50807892C0A942BBF426DD33EA1C434"
+  },
+  "P1_02_question_library_implementation": {
+   "exists": true,
+   "files": 8,
+   "dir_sha256": "1F54AB23A6B76E4FCA4E3621799A3FF56DC91DA533F9524B55C689B7EF9CD264"
+  },
+  "P1_03_minimal_pipeline": {
+   "exists": true,
+   "files": 8,
+   "dir_sha256": "A3E356E784364DD4A42524FA7207BD3D6E4E52CF2529DD5C652A26AFDE7DB428"
+  },
+  "P1_04_rule_fixes": {
+   "exists": true,
+   "files": 12,
+   "dir_sha256": "4CB65657746015B169FB86E160E22C6D75AD0677CDEAF192FE0F0F2EBE36692A"
+  },
+  "P1_05_sample_design": {
+   "exists": true,
+   "files": 6,
+   "dir_sha256": "9EA6B2F54954E2CB86A9AC89676A41AAB45D152F1FD6946E3E3BB77D30078441"
+  },
+  "P1_05_real_validation": {
+   "exists": true,
+   "files": 10,
+   "dir_sha256": "010947C33EE03BD70B5FC69F1C89F6DF8E16C22CAD4B33DB80F46B717F847C37"
+  },
+  "P1_05_budget_calibration": {
+   "exists": true,
+   "files": 10,
+   "dir_sha256": "AADEF620875E66F43F354689CB2124AA1A4AEBDDB59116B315DC3A8EE7760A36"
+  },
+  "P1_05_budget_calibration_v2": {
+   "exists": true,
+   "files": 9,
+   "dir_sha256": "A68BCDEE0A0ACF7F25AEC1D3428633C8DE6432B0813C5A9ACC0FFA8EE6FB3B4A"
+  },
+  "P1_05_manual_review": {
+   "exists": true,
+   "files": 4,
+   "dir_sha256": "F2306867EA225340D1640A2139A96F41C11ABBC071A9A54CC44123414EF6257B"
+  },
+  "P1_05_prompt_v2_textbook_focus": {
+   "exists": true,
+   "files": 9,
+   "dir_sha256": "764479071CC73138783DFE827229AA25417B2F05F36F2BC07C1B7DF780A77CAF"
+  },
+  "P1_05_prompt_v3_boundary": {
+   "exists": true,
+   "files": 10,
+   "dir_sha256": "2FC44DF2E709D6E5BB1F5F1AA735E88933C284A20A6DCCDF6A6CC8C2A37E0786"
+  },
+  "P1_06_batch_stability": {
+   "exists": true,
+   "files": 20,
+   "dir_sha256": "0687061F6557BCC78BA045AF24E19AA474CF01847CA04D6D74900699ECD4B705"
+  },
+  "P1_07_library_ingest": {
+   "exists": true,
+   "files": 13,
+   "dir_sha256": "4FB8DA109298BC6996AC686003840DEC182AE309A910FCCFB1B9E997DCF8144D"
+  }
+ },
+ "v1_3_v2_0_comparison": {
+  "V1_3": {
+   "file": "初中英语AI辅助学习系统最高指导原则与开发规范_V1.3.md",
+   "sha256": "3BF8C27F0A8ABA6B22D41618EB58A49F79DBEAFE9A779AC9F9DCBD9288843AE7",
+   "keyword_hits": {
+    "question_library": 0,
+    "题库": 6,
+    "出题": 0,
+    "生成题": 3,
+    "习题生成": 0,
+    "PENDING": 0,
+    "ACTIVE": 0,
+    "PENDING_REVIEW": 0,
+    "AI 生成题": 1,
+    "无限题库": 1
+   }
+  },
+  "V2_0": {
+   "file": "初中英语AI辅助学习系统产品与UI架构总纲_V2.0.md",
+   "sha256": "BA3761EF270C26ADD4E982D98DFD4DA4A5BA5D62E9FBBB51B706F9A9759EA0C1",
+   "keyword_hits": {
+    "question_library": 0,
+    "题库": 0,
+    "出题": 0,
+    "生成题": 0,
+    "习题生成": 0,
+    "PENDING": 0,
+    "ACTIVE": 0,
+    "PENDING_REVIEW": 0,
+    "AI 生成题": 0,
+    "无限题库": 0
+   }
+  }
+ },
+ "comparison_result": {
+  "v2_0": "全文未涉及 AI 题库与出题流程 → 无需修改",
+  "v1_3": "有涉及（题库×6 / 生成题×3 / AI 生成题×1 / 无限题库×1），其中绝大多数条款与本规范一致（见规范 §5.2）；**存在 1 处需要项目裁决的边界**：V1.3 九『不得生成或改写……题干、选项、答案』与二十二·1『本产品不是：AI 题库』在『绝对禁止』解读下会与任何 AI 出题流程冲突",
+  "handling": "本规范提出 V1.3 同步修订建议文本（不执行修改）；在裁决前按更严格口径执行：AI 题只存在于独立题库、绝不写入教材数据、必须经人工审核方可用于学习流程、孩子端不得呈现题库概念",
+  "changed_v1_3_or_v2_0": false
+ },
+ "v1_3_interpretation_ruling": {
+  "date": "2026-09-17",
+  "decision": "解读 A",
+  "text": "AI 可以生成教材训练题，但 AI 生成的题干、选项、答案不得冒充教材事实，不得写入教材数据；AI 题独立存放，经审核后才能进入学习流程。",
+  "decided_by": "项目决策者（用户）",
+  "effect": "本规范与 V1.3 的一致性成立；V1.3 / V2.0 本轮均不修改；规范 §5.3 保留可选的 V1.3 措辞澄清文本，供下一次 V1.3 修订时纳入",
+  "record_file": "audit/AI_question_generation_spike/P1_08_A_process_baseline/p1_08_a_decision_record.md",
+  "changed_v1_3_or_v2_0": false,
+  "blocking": false
+ },
+ "library_state": {
+  "user_version": 2,
+  "integrity": "ok",
+  "questions": 21,
+  "pending_review": 21,
+  "active": 0,
+  "generation_runs": 12
+ },
+ "protection": {
+  "question_library.db": {
+   "sha256": "F74CA83F7C8A98F2A4A2E672E7BA61ECC34CBFC2338AC10064BF18C0FFD1FD6A",
+   "matches_baseline": true
+  },
+  "learning.db": {
+   "sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+   "matches_baseline": true
+  },
+  "contentpack": {
+   "sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39",
+   "matches_baseline": true
+  },
+  "validator_v2": {
+   "sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+   "matches_baseline": true
+  },
+  "validator_v3": {
+   "sha256": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+   "matches_baseline": true
+  },
+  "P1-06_S1": {
+   "sha256": "D4520E288D7651B59B59C0F75F09FBE87E6B9AB0ACB9D2F900647E1210856BA3",
+   "matches_baseline": true
+  },
+  "P1-06_S2": {
+   "sha256": "4F705951CAF743BD62AD07C175C0EE06F491B4C4EE7B2F0D760E2372ADFAAA1E",
+   "matches_baseline": true
+  },
+  "P1-06_S3": {
+   "sha256": "4F9679CAFF393E6CD33D6FDC6C957563A852ECE1C569180C383F0EB55C7D08AC",
+   "matches_baseline": true
+  },
+  "P1-06_S4": {
+   "sha256": "5D1C21032B1C5F4CC23AACD2120EA297F6FF5776BBB36C18529A4FFF946E8B87",
+   "matches_baseline": true
+  },
+  "P1-07_candidate_decision": {
+   "sha256": "711D541E0E0E4FFE65CC7F7617A43AAE8AC27875EB968BB16FF3C732A47FD612",
+   "matches_baseline": true
+  },
+  "P1-07_ingest_result": {
+   "sha256": "8DB59F33C901FC59F509042C93796DE9CA97AB27D6A2DDDF0369BB9A058C9C84",
+   "matches_baseline": true
+  },
+  "textbook PDF": {
+   "sha256": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+   "matches_baseline": true
+  }
+ },
+ "protection_ok": true,
+ "verified_vs_unverified_source": {
+  "verified": "见 docs 规范 §16.1（逐项标注验证方式）",
+  "unverified": "见 docs 规范 §16.2（14 项，不得写成已解决）"
+ },
+ "conclusion": "P1-08-A_PASS"
+}

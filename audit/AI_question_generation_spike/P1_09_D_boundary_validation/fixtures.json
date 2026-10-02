@@ -1,0 +1,869 @@
+{
+  "stage": "P1-09-D",
+  "fixture_count": 15,
+  "fixture_design": "人工预先设计（experimenter designed），非 AI 生成；所有 fixture 均标记 fixture_only=true，不属于教材事实，也不写入任何正式数据。",
+  "category_labels": {
+    "A_true_english_error": "A 真正错误英语",
+    "B_broken_distractor": "B 明显错误干扰项",
+    "C_true_second_answer": "C 真正第二正确答案",
+    "D_reality_conflict": "D 现实常识冲突",
+    "E_insufficient_context": "E 上下文不足",
+    "F_high_value_normal": "F 高学习价值正常题",
+    "G_mechanical_but_valid": "G 机械但合理的重点词填空"
+  },
+  "category_counts": {
+    "A_true_english_error": 2,
+    "B_broken_distractor": 2,
+    "C_true_second_answer": 2,
+    "D_reality_conflict": 2,
+    "E_insufficient_context": 2,
+    "F_high_value_normal": 3,
+    "G_mechanical_but_valid": 2
+  },
+  "fixtures": [
+    {
+      "fixture_id": "FIX-A1",
+      "category": "A_true_english_error",
+      "subcategory": "主谓一致",
+      "question_type": "fill",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "Grandpa like playing the erhu in the park with his friends. There are many ___ of them.",
+      "options": null,
+      "answer": "fans",
+      "location": "Unit 2 · Understanding ideas · 教材第 32 页（Activity 1 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "textbook_page": 32,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        }
+      ],
+      "introduced_defect": "题干第一句主语与谓语不一致：Grandpa like（应为 Grandpa likes）",
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "FAIL"
+            ],
+            "fn_if": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "题干存在明确主谓一致错误（Grandpa like），属于真实英语错误，不依赖争议性语法解释。"
+      }
+    },
+    {
+      "fixture_id": "FIX-A2",
+      "category": "A_true_english_error",
+      "subcategory": "主谓一致（判断题）",
+      "question_type": "reading_judge",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "Plants is very important to us.",
+      "options": null,
+      "answer": "True",
+      "location": "Unit 5 · Understanding ideas · 教材第 83 页（Activity 7 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B20",
+          "textbook_page": 83,
+          "text": "Now we can see plants are so important. They mean so much to us."
+        }
+      ],
+      "introduced_defect": "判断题题干主语与 be 动词不一致：Plants is（应为 Plants are）",
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "FAIL"
+            ],
+            "fn_if": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "题干存在明确主谓一致错误（Plants is），事实判断为 True 不代表英语正确。"
+      }
+    },
+    {
+      "fixture_id": "FIX-B1",
+      "category": "B_broken_distractor",
+      "subcategory": "干扰项与题干不匹配",
+      "question_type": "vocab_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "As a rock music lover, I play the electric guitar in the school ___.",
+      "options": [
+        "band",
+        "guitar",
+        "stage",
+        "instrument"
+      ],
+      "answer": "band",
+      "location": "Unit 2 · Understanding ideas · 教材第 32 页（Activity 1 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+          "textbook_page": 32,
+          "text": "1\t Rock music is coming out of my computer.  As a rock music lover, I play the electric guitar in the school band. Sometimes I write songs and share them online. There is so much fun  in music. "
+        }
+      ],
+      "introduced_defect": "干扰项 guitar 放在 in the school ___ 中语法不成立（in the school guitar）；stage 需要介词 on；三个干扰项中至少 1 个明显残缺",
+      "gold": {
+        "scored": {
+          "distractor_quality": {
+            "must_be_in": [
+              "FAIL",
+              "CONCERN"
+            ],
+            "fn_if": [
+              "PASS",
+              "NOT_APPLICABLE"
+            ],
+            "fp_if": []
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ],
+            "soft": [
+              "CONCERN"
+            ]
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "答案 band 本身正确且唯一；问题出在干扰项 quality：guitar 无法与题干介词搭配。"
+      }
+    },
+    {
+      "fixture_id": "FIX-B2",
+      "category": "B_broken_distractor",
+      "subcategory": "干扰项词形与题干不匹配",
+      "question_type": "reading_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "What can the trees in the Great Bear Rainforest make?",
+      "options": [
+        "their own rain",
+        "their own leaves",
+        "to make rain",
+        "their own fruit"
+      ],
+      "answer": "their own rain",
+      "location": "Unit 5 · Understanding ideas · 教材第 83 页（Activity 7 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B14",
+          "textbook_page": 83,
+          "text": "2  later. The trees in a rainforest can make their own rain. "
+        }
+      ],
+      "introduced_defect": "干扰项 to make rain 与 can make ___ 的宾语位置不匹配（词形错误）",
+      "gold": {
+        "scored": {
+          "distractor_quality": {
+            "must_be_in": [
+              "FAIL",
+              "CONCERN"
+            ],
+            "fn_if": [
+              "PASS",
+              "NOT_APPLICABLE"
+            ],
+            "fp_if": []
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ],
+            "soft": [
+              "CONCERN"
+            ]
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "答案正确；to make rain 这个干扰项在语法位置上不成立，属于干扰项缺陷。"
+      }
+    },
+    {
+      "fixture_id": "FIX-C1",
+      "category": "C_true_second_answer",
+      "subcategory": "名词宾语两解",
+      "question_type": "vocab_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "Grandpa likes playing the erhu in the park with his ___.",
+      "options": [
+        "friends",
+        "students",
+        "parents",
+        "teachers"
+      ],
+      "answer": "friends",
+      "location": "Unit 2 · Understanding ideas · 教材第 32 页（Activity 1 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "textbook_page": 32,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        }
+      ],
+      "introduced_defect": "干扰项 students 语法与语义都成立，且不被课文排除（课文只说 with his friends，并没有说不和学生一起）",
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "FAIL"
+            ],
+            "fn_if": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "with his students 同样自然、语法成立、不被教材语境排除 → 真正的第二正确答案。"
+      }
+    },
+    {
+      "fixture_id": "FIX-C2",
+      "category": "C_true_second_answer",
+      "subcategory": "名词宾语两解（同词性）",
+      "question_type": "vocab_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "Ms Chen writes a ___ on the blackboard.",
+      "options": [
+        "sentence",
+        "word",
+        "picture",
+        "name"
+      ],
+      "answer": "sentence",
+      "location": "Unit 1 · Understanding ideas · 教材第 17 页（Activity 2 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P22:B0",
+          "textbook_page": 17,
+          "text": "1\t Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.” "
+        }
+      ],
+      "introduced_defect": "干扰项 word 语法语义都成立（writes a word on the blackboard），课文只说 sentence，并未排除 word",
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "FAIL"
+            ],
+            "fn_if": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "writes a word on the blackboard 完全成立 → 语言层面的第二正确答案。"
+      }
+    },
+    {
+      "fixture_id": "FIX-D1",
+      "category": "D_reality_conflict",
+      "subcategory": "现实常识 vs 课文陈述（树）",
+      "question_type": "reading_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "According to the guide, what can the trees in the rainforest make?",
+      "options": [
+        "their own rain",
+        "sugar",
+        "oxygen",
+        "food"
+      ],
+      "answer": "their own rain",
+      "location": "Unit 5 · Understanding ideas · 教材第 83 页（Activity 7 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P88:B14",
+          "textbook_page": 83,
+          "text": "2  later. The trees in a rainforest can make their own rain. "
+        }
+      ],
+      "introduced_defect": null,
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ],
+            "soft": [
+              "CONCERN"
+            ]
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "课文明确陈述 trees can make their own rain；sugar/oxygen/food 只在现实世界成立，属于 Answer Uniqueness Contract V1 的 B 类（现实常识存在其他解释），不得据此判答案不唯一。"
+      }
+    },
+    {
+      "fixture_id": "FIX-D2",
+      "category": "D_reality_conflict",
+      "subcategory": "现实常识 vs 课文陈述（水）",
+      "question_type": "reading_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "Where does the water come from before it goes up the stem?",
+      "options": [
+        "the root",
+        "the soil",
+        "the air",
+        "the sun"
+      ],
+      "answer": "the root",
+      "location": "Unit 5 · Understanding ideas · 教材第 82–83 页（Activity 4 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P87:B7",
+          "textbook_page": 83,
+          "text": "Water from the root will "
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P85:B12",
+          "textbook_page": 82,
+          "text": "root"
+        }
+      ],
+      "introduced_defect": null,
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ],
+            "soft": [
+              "CONCERN"
+            ]
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "课文陈述 Water from the root will ...；现实世界水来自土壤，属于 B 类现实常识，不得据此判答案不唯一。"
+      }
+    },
+    {
+      "fixture_id": "FIX-E1",
+      "category": "E_insufficient_context",
+      "subcategory": "缺少指标物",
+      "question_type": "fill",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "What colour is it? It’s ___.",
+      "options": null,
+      "answer": "grey",
+      "location": "Starter · Get ready · 教材第 5 页（Activity 8）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P10:B5",
+          "textbook_page": 5,
+          "text": "\tNana:\t Hi, Wang Tao. What are you going to wear tomorrow for school? Wang Tao:\t My school uniform, of course. I’m going to wear a "
+        }
+      ],
+      "context_design": "故意只提供教材另一段对话（关于明天穿什么），既没有指标物、也没有任何颜色信息，因此无法判断这个空该填什么颜色。",
+      "gold": {
+        "scored": {
+          "context_status": {
+            "must_be_in": [
+              "CONTEXT_INSUFFICIENT"
+            ],
+            "fn_if": [
+              "SUFFICIENT"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "上下文缺少指标物，属于 Context Insufficient，而不是答案不唯一。"
+      }
+    },
+    {
+      "fixture_id": "FIX-E2",
+      "category": "E_insufficient_context",
+      "subcategory": "指代无法解析",
+      "question_type": "fill",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "After a week’s practice, we are on the ___.",
+      "options": null,
+      "answer": "stage",
+      "location": "Unit 2 · Understanding ideas · 教材第 33 页（Activity 2 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P38:B3",
+          "textbook_page": 33,
+          "text": "I nod to Grandpa and we fire up our instruments."
+        }
+      ],
+      "context_design": "故意只提供课文的一个片段（不含 After a week’s practice, we are on the stage 一句），因此无法确定这个空是 stage 还是别的地点词。",
+      "gold": {
+        "scored": {
+          "context_status": {
+            "must_be_in": [
+              "CONTEXT_INSUFFICIENT"
+            ],
+            "fn_if": [
+              "SUFFICIENT"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "所给上下文与题干不同源，无法判断答案；属于 Context Insufficient。"
+      }
+    },
+    {
+      "fixture_id": "FIX-F1",
+      "category": "F_high_value_normal",
+      "subcategory": "词汇重组（fans of）",
+      "question_type": "vocab_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "Many people love the erhu player’s music. There are many ___ of him in the park.",
+      "options": [
+        "fans",
+        "players",
+        "teachers",
+        "doctors"
+      ],
+      "answer": "fans",
+      "location": "Unit 2 · Understanding ideas · 教材第 32 页（Activity 1 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "textbook_page": 32,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        }
+      ],
+      "introduced_defect": null,
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "naturalness": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [
+              "FAIL"
+            ],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "distractor_quality": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "grade_fit": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "RECOMBINED"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "accept",
+        "gold_reason": "用课文短语 fans of 重新组织成新语境，学习点明确（fan of 的用法），答案唯一、英语正确、年级适配，属于高学习价值正常题。"
+      }
+    },
+    {
+      "fixture_id": "FIX-F2",
+      "category": "F_high_value_normal",
+      "subcategory": "因果理解题",
+      "question_type": "reading_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "Why do questions jump into the writer’s mind in the first lesson?",
+      "options": [
+        "Because the student points out a mistake",
+        "Because Ms Chen is angry",
+        "Because the bell rings",
+        "Because the class is over"
+      ],
+      "answer": "Because the student points out a mistake",
+      "location": "Unit 1 · Understanding ideas · 教材第 17 页（Activity 2 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P22:B2",
+          "textbook_page": 17,
+          "text": "3\t “That’s not right. But is it OK to point out the mistake? Is that polite, in the first lesson?” Questions jump into my mind."
+        }
+      ],
+      "introduced_defect": null,
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "naturalness": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [
+              "FAIL"
+            ],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "distractor_quality": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "grade_fit": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "NOT_APPLICABLE",
+              "RECOMBINED"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "accept",
+        "gold_reason": "因果理解题：需要把学生的提问与 Questions jump into my mind 连起来，比事实定位题有更高的学习价值。"
+      }
+    },
+    {
+      "fixture_id": "FIX-F3",
+      "category": "F_high_value_normal",
+      "subcategory": "两句信息整合题",
+      "question_type": "reading_choice",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "What does Grandpa do with his friends in the park?",
+      "options": [
+        "He plays the erhu and they sing Beijing opera together",
+        "He plays the electric guitar with them",
+        "He writes songs with them",
+        "He watches TV with them"
+      ],
+      "answer": "He plays the erhu and they sing Beijing opera together",
+      "location": "Unit 2 · Understanding ideas · 教材第 32 页（Activity 1 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "textbook_page": 32,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        }
+      ],
+      "introduced_defect": null,
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "naturalness": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [
+              "FAIL"
+            ],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "distractor_quality": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "grade_fit": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "NOT_APPLICABLE",
+              "RECOMBINED"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "accept",
+        "gold_reason": "需要整合课文两句信息（erhu + Beijing opera），而不是抄一句；干扰项均取自同一 Unit 的教材素材。"
+      }
+    },
+    {
+      "fixture_id": "FIX-G1",
+      "category": "G_mechanical_but_valid",
+      "subcategory": "名词性物主代词重点词",
+      "question_type": "fill",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "I look up at Ms Chen. My eyes meet ___.",
+      "options": null,
+      "answer": "hers",
+      "location": "Unit 1 · Understanding ideas · 教材第 19 页（Activity 5 语法重点）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P24:B1",
+          "textbook_page": 19,
+          "text": "(a)\t I look up at Ms Chen. My eyes meet hers."
+        },
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P24:B2",
+          "textbook_page": 19,
+          "text": "(b)\t In fact, this is my first lesson for all of you.Now find more sentences with this grammar in the reading passage. "
+        }
+      ],
+      "introduced_defect": null,
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [
+              "FAIL"
+            ],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "DIRECT_REPRODUCTION",
+              "MECHANICAL_REWRITE"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "形式是教材原句挖空（机械），但考的是 Activity 5 的语法重点（名词性物主代词 hers），答案唯一、英语正确 → 不能因为机械形式判 FAIL。"
+      }
+    },
+    {
+      "fixture_id": "FIX-G2",
+      "category": "G_mechanical_but_valid",
+      "subcategory": "say + 直接引语重点词",
+      "question_type": "fill",
+      "fixture_only": true,
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "question": "Ms Chen writes the sentence on the blackboard and ___ , “Please write this down.”",
+      "options": null,
+      "answer": "says",
+      "location": "Unit 1 · Understanding ideas · 教材第 17 页（Activity 2 课文）",
+      "textbook_context": [
+        {
+          "block_id": "FLTRP-EN-7A-2022CUR:P22:B0",
+          "textbook_page": 17,
+          "text": "1\t Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.” "
+        }
+      ],
+      "introduced_defect": null,
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "DIRECT_REPRODUCTION",
+              "MECHANICAL_REWRITE"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "机械挖空形式，但考的是 say + 直接引语的搭配（教材重点表达），答案由语法与搭配唯一确定 → 不能因为机械形式判 FAIL。"
+      }
+    }
+  ]
+}

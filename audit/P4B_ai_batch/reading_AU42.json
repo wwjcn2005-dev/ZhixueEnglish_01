@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 6\nSECTION: UNDERSTANDING_IDEAS\nACTIVITY_INSTRUCTION: 42_Unit 6_Understanding ideas_2 Read the blogs and find out the words Henry used.mp3\nPASSAGE BLOCKS (id + verbatim textbook text):\n[FLTRP-EN-7A-2022CUR:P101:B8] Tick the words to describe pigeons. 1☐ boring☐ clever\n[FLTRP-EN-7A-2022CUR:P101:B9] ☐ fast☐ dirty\n[FLTRP-EN-7A-2022CUR:P101:B10] ☐ scary☐ amazing\n[FLTRP-EN-7A-2022CUR:P101:B11] 2 Read the blogs and find out the words Henry used.\n[FLTRP-EN-7A-2022CUR:P101:B6] Henry’s View\n[FLTRP-EN-7A-2022CUR:P101:B0] We’re studying birds for Bird Week at school. Some lucky kids got penguins. But I have to write about... pigeons!\n[FLTRP-EN-7A-2022CUR:P101:B1] I’m watching pigeons in the park now. They just knock around –for the whole morning! They leave droppings here and there. Pigeons are BORING and DIRTY!\n[FLTRP-EN-7A-2022CUR:P101:B2] A girl is feeding them. Argh! The birds are flying madly to her. They’re SCARY!\n[FLTRP-EN-7A-2022CUR:P102:B0] I’m doing some online research. Pigeons can recognise themselves in mirrors. How surprising! Are they so clever?  I’d better go and watch them again...\n[FLTRP-EN-7A-2022CUR:P102:B1] I’m back at the park again. Oh! That pigeon is looking at itself in the water! Maybe I was wrong about pigeons.\n[FLTRP-EN-7A-2022CUR:P102:B2] I’m reading in the library now. Oh, there are over 200 kinds of pigeons. Some can fly several thousand kilometres and don’t get lost. They can also fly at speeds of over 100 km per hour. That’s as fast as my dad’s car!\n[FLTRP-EN-7A-2022CUR:P102:B3] Well, pigeons aren’t boring or scary. They are AMAZING – I just didn’t know enough about them!\n\nWrite 2-3 multiple-choice reading questions about this passage.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What did Henry think of pigeons when he first watched them in the park?\",\n      \"options\": [\n        \"Clever and fast\",\n        \"Boring and dirty\",\n        \"Amazing and beautiful\",\n        \"Scary and noisy\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P101:B1\",\n      \"evidence_quote\": \"Pigeons are BORING and DIRTY!\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What surprising fact did Henry learn from his online research?\",\n      \"options\": [\n        \"Pigeons can recognise themselves in mirrors\",\n        \"Pigeons can fly at speeds of over 100 km per hour\",\n        \"There are over 200 kinds of pigeons\",\n        \"Pigeons can fly several thousand kilometres without getting lost\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P102:B0\",\n      \"evidence_quote\": \"Pigeons can recognise themselves in mirrors.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"How did Henry describe pigeons at the end of the passage?\",\n      \"options\": [\n        \"Boring\",\n        \"Scary\",\n        \"Amazing\",\n        \"Dirty\"\n      ],\n      \"answer_index\": 2,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P102:B3\",\n      \"evidence_quote\": \"Well, pigeons aren’t boring or scary. They are AMAZING – I just didn’t know enough about them!\",\n      \"skill\": \"gist\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 884,
+  "completion_tokens": 2483,
+  "total_tokens": 3367,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2093
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 628
+ }
+}

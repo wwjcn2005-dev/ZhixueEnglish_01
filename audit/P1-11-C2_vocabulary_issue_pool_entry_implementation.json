@@ -1,0 +1,106 @@
+{
+  "task": "P1-11-C2 Vocabulary「当前错误 / 当前薄弱」只读入口（归档）",
+  "archived_at": "2026-09-12T17:48:14+08:00",
+  "verdict": "PASS",
+  "prerequisite": "P1-11-C1 只读侦察 = READY（唯一推荐任务）",
+  "new_files": [],
+  "modified_existing_files": [
+    "workbench/vocabulary_learning_v01.py",
+    "workbench/test_vocabulary_learning_v01.py"
+  ],
+  "deleted_files": [],
+  "schema_change": false,
+  "flow": [
+    "首页 / 结果页 → 看看我需要再学的词（输入名字）",
+    "当前需要再学（只读 resource_pool_service）",
+    "当前错误（上次回忆：忘了） / 当前薄弱（上次回忆：模糊）",
+    "孩子自己点一个词（表单只带 name + item_id）",
+    "既有 /start（CORE 门禁 → Session → Task → TaskItem → Activity）",
+    "Study → Recall（记得/模糊/忘了）→ 结果页"
+  ],
+  "pool_service_consumption": {
+    "import": "workbench/vocabulary_learning_v01.py:63",
+    "builder": "workbench/vocabulary_learning_v01.py:380 build_pool_view()",
+    "call_site": "workbench/vocabulary_learning_v01.py:390 pool.list_current_issue_pool()",
+    "no_logic_duplication": true,
+    "no_resort": true,
+    "read_only": true,
+    "creates_learner": false
+  },
+  "entry_points": {
+    "home": "POST /pool（名字）",
+    "result_page": "POST /pool（隐藏 name）",
+    "pool_row_click": "POST /start（name + item_id）→ _start_from_item() (:800) → _begin_study() (:818)"
+  },
+  "gates": {
+    "vocabulary": "require_core_vocabulary()（经 build_view）",
+    "phrase": "build_phrase_view()（短语 CORE 门禁）",
+    "sentence_pattern": "build_sentence_pattern_view()（句型 CORE 门禁）",
+    "pool_does_not_bypass": true,
+    "unresolvable_item": "安全提示，不崩溃、不删池数据、不给按钮"
+  },
+  "state_transitions_verified": {
+    "current_error → correct": "出池",
+    "current_error → partial": "current_weak",
+    "current_weak → incorrect": "current_error",
+    "current_weak → correct": "出池"
+  },
+  "page_display": {
+    "fields": ["canonical_text", "phonetic（有则显示）", "part_of_speech（有则显示）", "meaning_zh（有则显示）", "上次自评措辞"],
+    "no_display_text": true,
+    "internal_fields_hidden": ["item_id（仅隐藏表单回传）", "record_id", "task_id", "snapshot_id", "content_hash", "source_ref_id", "bbox"],
+    "forbidden_copy": ["系统推荐", "最应该学习", "AI 推荐", "今日任务", "下一步学习", "积分", "排行榜", "徽章", "打卡", "奖励", "连胜", "已掌握", "恭喜", "完美", "100%", "全部掌握"]
+  },
+  "tests": {
+    "file": "workbench/test_vocabulary_learning_v01.py",
+    "ran": 50,
+    "result": "OK",
+    "new_classes": {
+      "PoolViewTest": 6,
+      "PoolHttpTest": 8
+    }
+  },
+  "regression": {
+    "rounds": 2,
+    "suites": {
+      "P1-06-C1": 14,
+      "P1-06-C2-A": 10,
+      "P1-07-C1": 9,
+      "P1-07-C2": 9,
+      "P1-08-C1": 8,
+      "P1-09-C1": 8,
+      "workbench(P1-09-C2/C3 + P1-10-C2 + P1-11-C2)": 50
+    },
+    "result": "OK",
+    "historical_tests_modified": false
+  },
+  "safety": {
+    "ai": 0,
+    "network": 0,
+    "ocr": 0,
+    "tts": 0,
+    "new_dependencies": 0,
+    "contentpack_written": false,
+    "official_db_polluted": false,
+    "tests_isolated": "%TEMP% learning.db 副本，已清理"
+  },
+  "frozen_hashes": {
+    "learning_service.py": "01341A05231EFCA6E0C801CF95D8A96F3DF732753F1F679688D44708586DF1D6",
+    "session_service.py": "0CF7A20615780831F544BDF295202028CE2EEFB15D234820CD1184AD4A6B665F",
+    "activity_service.py": "AAFF907C869797EE697D5F756C7E03C62CEB942809B2406933761195DA092028",
+    "resource_pool_service.py": "D4488E1FFBA6B553EB6932BE195932A4C464D9526790B138C0C55DAA612D2F37",
+    "behavior_service.py": "0C6EF4822F60D9251B68382C95A5D3D9987650811F4FC93C70875AF48249FC6D",
+    "vocabulary_service.py": "D06DCC76A5A4CCAF5C0BC3C17BB33CFF5D6056B7C872406A3934223C8870D632",
+    "workbench_vocabulary_learning_v01.py": "9F5F6EFB31EAB0CA7484A49CE602147B77BB70A0C3E5C31D5960BF9E8F798293",
+    "workbench_test_vocabulary_learning_v01.py": "A32EB3E476F2EC4AFF8204C834F8BFAF4543B696ABAC441BC5ADDE6489D6A407",
+    "learning.db": "DB97E460CDEC59CDC27AD2CAF0CC8FDF671E4832BAC0A09E6CE9BB986A0C311C",
+    "contentpack_v5": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A"
+  },
+  "known_open_items": [
+    "C2-A 同秒 tie-break（本轮再次实测其现实影响；测试用 ≥1 秒间隔规避，未修复）",
+    "meaning_zh 去标点拼接 168/243（池行原样显示真实字段，未修）",
+    "Vocabulary 只显示第一条 source_ref（P2-3 未扩大处理）",
+    "attempt_no 跨 Session 恒为 1（不影响池判定）",
+    "池中可能出现非 Vocabulary 条目：按类型标注 + 同一 CORE 门禁处理，未做类型过滤"
+  ]
+}

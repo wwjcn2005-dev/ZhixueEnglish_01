@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 1\nSECTION: DEVELOPING_IDEAS\nACTIVITY_AUDIO: 09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3\nOFFICIAL AUDIO TRANSCRIPT SEGMENTS (id, time range, text):\n[ASR:AU09:001 0-7220ms] Developing ideas. Activity 1. Listen to the radio.\n[ASR:AU09:002 8200-11680ms] What's the biggest problem for new students?\n[ASR:AU09:003 13460-19400ms] Welcome to Students Union Radio. The new school year is beginning.\n[ASR:AU09:004 20280-24780ms] What are the new students' problems? Let's take a look.\n[ASR:AU09:005 24780-32960ms] For many students the biggest problem is they have more subjects and more homework.\n[ASR:AU09:006 33620-40560ms] They also have many activities. So how can they make good use of their time?\n[ASR:AU09:007 41880-48420ms] The Students Union will hold a talk this Thursday to help you. Come and join us.\n\nWrite 2-3 multiple-choice listening questions about what is said in this audio.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What is the biggest problem for new students?\",\n      \"options\": [\n        \"They have more subjects and homework.\",\n        \"They have many activities.\",\n        \"They don't know how to use time.\",\n        \"They will have a talk this Thursday.\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU09:005\",\n      \"evidence_quote\": \"For many students the biggest problem is they have more subjects and more homework.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What will the Students Union do to help new students?\",\n      \"options\": [\n        \"Hold a talk.\",\n        \"Give more homework.\",\n        \"Have more activities.\",\n        \"Offer more subjects.\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU09:007\",\n      \"evidence_quote\": \"The Students Union will hold a talk this Thursday to help you.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 616,
+  "completion_tokens": 2617,
+  "total_tokens": 3233,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2388
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 616
+ }
+}

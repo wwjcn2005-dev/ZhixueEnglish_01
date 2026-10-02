@@ -1,0 +1,60 @@
+{
+  "task": "P1-06-C2-A 当前错误/薄弱资源池只读查询服务（归档）",
+  "archived_at": "2026-09-12T16:45:47+08:00",
+  "verdict": "PASS",
+  "new_files": [
+    "learning/resource_pool_service.py",
+    "learning/test_resource_pool_service.py"
+  ],
+  "modified_existing_files": [],
+  "schema_change": false,
+  "interfaces": [
+    "list_current_issue_pool",
+    "summarize_pool",
+    "get_item_pool_status"
+  ],
+  "rules": {
+    "judged_results": [
+      "correct",
+      "incorrect",
+      "partial"
+    ],
+    "ignored": [
+      "done",
+      "skipped",
+      null
+    ],
+    "incorrect": "current_error",
+    "partial": "current_weak",
+    "correct": "exit_pool",
+    "priority_score": "derived ordering key (2/1); not a stored field"
+  },
+  "tests": {
+    "file": "learning/test_resource_pool_service.py",
+    "ran": 10,
+    "result": "OK"
+  },
+  "safety": {
+    "learning_db_written": false,
+    "contentpack_written": false,
+    "ai": 0,
+    "network": 0,
+    "new_deps": 0
+  },
+  "baseline_at_completion": {
+    "learning_db": "16E3952D64E749879D8FF78814F0434D544D4CBAD7D52AAC7E0B145DE43414E9",
+    "tables": 6,
+    "user_version": 1,
+    "contentpack": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A"
+  },
+  "baseline_now": {
+    "learning_db": "DB97E460CDEC59CDC27AD2CAF0CC8FDF671E4832BAC0A09E6CE9BB986A0C311C",
+    "tables": 7,
+    "user_version": 2
+  },
+  "known_open_items": [
+    "priority_score 口径待确认",
+    "同秒 tie-break 用随机 record_id（未修复）",
+    "附录词表的 unit/section 归属不适用"
+  ]
+}

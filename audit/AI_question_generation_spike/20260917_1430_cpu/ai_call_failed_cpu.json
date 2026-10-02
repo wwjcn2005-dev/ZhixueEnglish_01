@@ -1,0 +1,37 @@
+{
+ "run": "20260917_1430_cpu",
+ "purpose": "同一实验的 CPU 重跑（GPU=0），验证上一次 CUDA 加载失败是否为环境问题",
+ "input_context": {
+  "file": "input_context.json（与 20260917_1410 同名文件字节一致）",
+  "sha256": "D8C57F28100018191C98C1E2D19E6032C38680D1DA007EBE6ED0D0265F2AE8EA",
+  "prompt": "system prompt / user prompt / schema / 题型要求与 20260917_1410 完全一致（同一脚本复制后仅改 num_gpu=0）"
+ },
+ "model": "qwen3:8b",
+ "inference": "CPU (options.num_gpu = 0)",
+ "http_calls": 1,
+ "cloud_api_calls": 0,
+ "http_status": 500,
+ "wall_clock_s": 900,
+ "outcome": "FAILED — 未取得完整模型输出（客户端 15 分钟超时主动断开，服务端随后取消任务）",
+ "server_side_facts": {
+  "cuda_crash": "无（本次未出现上一轮的 CUDA/PTX 错误，模型在 CPU 上成功加载）",
+  "context_window": "n_ctx = 8192（n_ctx_slot = 8192），CPU KV buffer 1152 MiB",
+  "prompt_tokens": 7606,
+  "prompt_processing": "约 33–45 tokens/s（n_tokens 每 1024 记一次进度）",
+  "generation_speed": "2.02 tokens/s（slot print_timing 连续多次一致）",
+  "generated_before_abort": "404 tokens（服务端 stop processing: n_tokens = 8010）",
+  "slot_anomaly": "同一 POST 期间日志出现两次 prompt 处理（task 0: n_tokens=6815 → release at 7609；task 801: n_tokens=7606 → cancel at 8010），未产生任何 HTTP 响应体"
+ },
+ "root_cause": "本次唯一一次 CPU 调用的耗时远超客户端超时（900 s）：仅 prompt 处理就约 3 分钟，正文生成 2.02 tokens/s；10 题 JSON（预计 1500–2500 tokens）需要约 12–20 分钟，加上 prompt 处理总计约 20–30 分钟",
+ "not_caused_by": [
+  "教材上下文（input_context.json 已就绪，7606 prompt tokens 被正常处理）",
+  "GPU/CUDA（本次已成功切换到 CPU）",
+  "校验器（未运行，因为没有输出）"
+ ],
+ "rule_compliance": "按用户规则：CPU 调用失败后不重试、不换模型、不换参数，记录原因并结束本次 Spike；未发生第二次调用",
+ "candidate_next_step": {
+  "action": "同一次生成（同一 context + 同一提示词 + 同一模型 + CPU）再执行 1 次，但把客户端超时提高到 ≥ 45 分钟，并使用 stream=true 以便即使超时也能保留已生成的部分 JSON",
+  "expected_wall_clock": "20–30 分钟",
+  "why_not_now": "用户规则明确：CPU 调用失败后不重试、不换参数继续试"
+ }
+}

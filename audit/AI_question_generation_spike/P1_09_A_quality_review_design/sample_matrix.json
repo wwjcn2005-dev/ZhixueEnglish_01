@@ -1,0 +1,1132 @@
+{
+  "stage": "P1-09-A",
+  "ai_calls": 0,
+  "source": "D:\\ZhixueEnglish\\structured\\ai\\question_library.db",
+  "categories": [
+    {
+      "category": "C1_obviously_acceptable",
+      "label_zh": "明显合格题",
+      "why": "答案在教材原句中逐字命中；答案为教材 BOLD 核心词；题干语境完整。",
+      "questions": [
+        {
+          "question_id": "AIQ:BD59C5958D45",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+          "page": 32,
+          "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+          "options_json": "[\"band\", \"club\", \"stage\", \"instrument\"]",
+          "correct_option": "A",
+          "correct_answer": "band",
+          "difficulty": "easy",
+          "lifecycle_status": "ACTIVE",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+              "evidence_quote": "As a rock music lover, I play the electric guitar in the school band."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=EBDE08BAF2A13D20"
+          }
+        },
+        {
+          "question_id": "AIQ:04CC9B1CF690",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+          "page": 33,
+          "question_text": "It feels great to ___ our hobby together.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "enjoy",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P38:B5",
+              "evidence_quote": "It feels great to enjoy our hobby together."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=ABEB18A604174552"
+          }
+        }
+      ]
+    },
+    {
+      "category": "C2_low_learning_value",
+      "label_zh": "低学习价值题",
+      "why": "AIQ:1B3AF72923C4 已在 P1-08-C 被人工驳回（LOW_VALUE）；AIQ:1BA260727793 为双空挖空的语篇标记词片段。",
+      "questions": [
+        {
+          "question_id": "AIQ:1B3AF72923C4",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+          "page": 3,
+          "question_text": "I am ___, too.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "ready",
+          "difficulty": "easy",
+          "lifecycle_status": "REJECTED",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+              "evidence_quote": "I am ready, too"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=8FC1B600F5CD35C7"
+          }
+        },
+        {
+          "question_id": "AIQ:1BA260727793",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+          "page": 19,
+          "question_text": "___ ___, this is my first lesson for all of you.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "In fact",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P24:B2",
+              "evidence_quote": "In fact, this is my first lesson for all of you."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=FAC67D8814215070"
+          }
+        }
+      ]
+    },
+    {
+      "category": "C3_answer_not_unique_risk",
+      "label_zh": "答案不唯一风险题",
+      "why": "两条题的程序判定都是 EXACT；单看题干时 happy/fine 或任意颜色同样成立，唯一性依赖学生手上就有教材原句。",
+      "questions": [
+        {
+          "question_id": "AIQ:1B3AF72923C4",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+          "page": 3,
+          "question_text": "I am ___, too.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "ready",
+          "difficulty": "easy",
+          "lifecycle_status": "REJECTED",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+              "evidence_quote": "I am ready, too"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=8FC1B600F5CD35C7"
+          }
+        },
+        {
+          "question_id": "AIQ:120FFEECA78F",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+          "page": 5,
+          "question_text": "What colour is it? It’s ___.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "grey",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P10:B20",
+              "evidence_quote": "It’s grey."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=6AC8985DA68EA72A"
+          }
+        }
+      ]
+    },
+    {
+      "category": "C4_mechanical_reproduction",
+      "label_zh": "机械挖空题",
+      "why": "question_validation.note 中 mechanical_rewrite=True 的真实题（7 条）；其中包含已在 P1-08-C 审核通过的 AIQ:BD59C5958D45，说明机械挖空本身不等于不合格。",
+      "questions": [
+        {
+          "question_id": "AIQ:1BA260727793",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+          "page": 19,
+          "question_text": "___ ___, this is my first lesson for all of you.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "In fact",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P24:B2",
+              "evidence_quote": "In fact, this is my first lesson for all of you."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=FAC67D8814215070"
+          }
+        },
+        {
+          "question_id": "AIQ:1B3AF72923C4",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+          "page": 3,
+          "question_text": "I am ___, too.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "ready",
+          "difficulty": "easy",
+          "lifecycle_status": "REJECTED",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+              "evidence_quote": "I am ready, too"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=8FC1B600F5CD35C7"
+          }
+        },
+        {
+          "question_id": "AIQ:3C02F6486DFF",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+          "page": 3,
+          "question_text": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "eraser",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B32",
+              "evidence_quote": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=B0B1455A82D385ED"
+          }
+        },
+        {
+          "question_id": "AIQ:BD59C5958D45",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+          "page": 32,
+          "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+          "options_json": "[\"band\", \"club\", \"stage\", \"instrument\"]",
+          "correct_option": "A",
+          "correct_answer": "band",
+          "difficulty": "easy",
+          "lifecycle_status": "ACTIVE",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+              "evidence_quote": "As a rock music lover, I play the electric guitar in the school band."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=EBDE08BAF2A13D20"
+          }
+        },
+        {
+          "question_id": "AIQ:C3E6FD29F680",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+          "page": 19,
+          "question_text": "I look up at Ms Chen. My eyes meet ___.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "hers",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P24:B1",
+              "evidence_quote": "My eyes meet hers."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=D88B289DA230C5EE"
+          }
+        },
+        {
+          "question_id": "AIQ:04CC9B1CF690",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+          "page": 33,
+          "question_text": "It feels great to ___ our hobby together.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "enjoy",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P38:B5",
+              "evidence_quote": "It feels great to enjoy our hobby together."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=ABEB18A604174552"
+          }
+        },
+        {
+          "question_id": "AIQ:E5F4C046FA61",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+          "page": 32,
+          "question_text": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "sound",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B11",
+              "evidence_quote": "Right at this moment, the sound of Grandpa’s erhu cuts in."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=514D5A302F161BAB"
+          }
+        }
+      ]
+    },
+    {
+      "category": "C5_distractor_risk",
+      "label_zh": "选择题干扰项风险题",
+      "why": "AIQ:75AAEBFE06DF 的干扰项 traditional/electric/weak 全部是教材 BOLD 核心词且语法上同样可填空；AIQ:B6463523F9E5 的干扰项 sugar/oxygen/food 在其他语境下对树木同样成立。",
+      "questions": [
+        {
+          "question_id": "AIQ:75AAEBFE06DF",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+          "page": 32,
+          "question_text": "But it’s a ___ kind of music.",
+          "options_json": "[\"different\", \"traditional\", \"electric\", \"weak\"]",
+          "correct_option": "A",
+          "correct_answer": "different",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+              "evidence_quote": "But it’s a different kind of music."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=97D16FFC8F937CDA"
+          }
+        },
+        {
+          "question_id": "AIQ:3179968E3E74",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+          "page": 17,
+          "question_text": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+          "options_json": "[\"polite\", \"dry\", \"important\", \"mistake\"]",
+          "correct_option": "A",
+          "correct_answer": "polite",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v2",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P22:B2",
+              "evidence_quote": "But is it OK to point out the mistake? Is that polite, in the first lesson?”"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-03 minimal pipeline: validator v2 PASS"
+          }
+        },
+        {
+          "question_id": "AIQ:B6463523F9E5",
+          "question_type": "reading_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+          "page": 83,
+          "question_text": "In the Great Bear Rainforest, what can the trees make?",
+          "options_json": "[\"their own rain\", \"sugar\", \"oxygen\", \"food\"]",
+          "correct_option": "A",
+          "correct_answer": "their own rain",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P88:B14",
+              "evidence_quote": "The trees in a rainforest can make their own rain."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=0B63271F7A51277F"
+          }
+        }
+      ]
+    },
+    {
+      "category": "C6_reading_comprehension",
+      "label_zh": "阅读理解题",
+      "why": "reading_choice 全部 4 条；其中 AIQ:6ECD02B9D381 是 difficulty=medium、answer_support=VERIFIABLE_REPHRASE 的唯一一条。",
+      "questions": [
+        {
+          "question_id": "AIQ:879007FA4FC7",
+          "question_type": "reading_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+          "page": 32,
+          "question_text": "Grandpa likes playing the erhu ___.",
+          "options_json": "[\"in the park\", \"in the school band\", \"on the stage\", \"in his room\"]",
+          "correct_option": "A",
+          "correct_answer": "in the park",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+              "evidence_quote": "He likes playing the erhu in the park with his friends."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=480090F33EB17136"
+          }
+        },
+        {
+          "question_id": "AIQ:6ECD02B9D381",
+          "question_type": "reading_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+          "page": 33,
+          "question_text": "At the school art festival, the writer and Grandpa ___.",
+          "options_json": "[\"write songs\", \"share songs online\", \"fire up instruments\", \"sing Beijing opera\"]",
+          "correct_option": "C",
+          "correct_answer": "fire up instruments",
+          "difficulty": "medium",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P38:B3",
+              "evidence_quote": "I nod to Grandpa and we fire up our instruments."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "VERIFIABLE_REPHRASE",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=7EDDAAB7E7D5E580"
+          }
+        },
+        {
+          "question_id": "AIQ:B6463523F9E5",
+          "question_type": "reading_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+          "page": 83,
+          "question_text": "In the Great Bear Rainforest, what can the trees make?",
+          "options_json": "[\"their own rain\", \"sugar\", \"oxygen\", \"food\"]",
+          "correct_option": "A",
+          "correct_answer": "their own rain",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P88:B14",
+              "evidence_quote": "The trees in a rainforest can make their own rain."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=0B63271F7A51277F"
+          }
+        },
+        {
+          "question_id": "AIQ:CD8B21681B4C",
+          "question_type": "reading_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+          "page": 5,
+          "question_text": "What is Wang Tao going to wear tomorrow for school?",
+          "options_json": "[\"school uniform\", \"sports jacket\", \"T-shirt\", \"red scarf\"]",
+          "correct_option": "A",
+          "correct_answer": "school uniform",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P10:B5",
+              "evidence_quote": "My school uniform, of course."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=8E725BCD5BE30C17"
+          }
+        }
+      ]
+    },
+    {
+      "category": "C7_vocabulary_choice",
+      "label_zh": "vocabulary_choice",
+      "why": "vocab_choice 全部 6 条。",
+      "questions": [
+        {
+          "question_id": "AIQ:BD59C5958D45",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+          "page": 32,
+          "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+          "options_json": "[\"band\", \"club\", \"stage\", \"instrument\"]",
+          "correct_option": "A",
+          "correct_answer": "band",
+          "difficulty": "easy",
+          "lifecycle_status": "ACTIVE",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+              "evidence_quote": "As a rock music lover, I play the electric guitar in the school band."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=EBDE08BAF2A13D20"
+          }
+        },
+        {
+          "question_id": "AIQ:75AAEBFE06DF",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+          "page": 32,
+          "question_text": "But it’s a ___ kind of music.",
+          "options_json": "[\"different\", \"traditional\", \"electric\", \"weak\"]",
+          "correct_option": "A",
+          "correct_answer": "different",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+              "evidence_quote": "But it’s a different kind of music."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=97D16FFC8F937CDA"
+          }
+        },
+        {
+          "question_id": "AIQ:5B4C80443D5F",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+          "page": 18,
+          "question_text": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+          "options_json": "[\"mistake\", \"mind\", \"meaning\", \"fact\"]",
+          "correct_option": "A",
+          "correct_answer": "mistake",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P23:B6",
+              "evidence_quote": "point out the mistake"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=C8E7452D47597F0C"
+          }
+        },
+        {
+          "question_id": "AIQ:A9D1F3EC6020",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+          "page": 18,
+          "question_text": "Ms Chen writes a ___ on the blackboard.",
+          "options_json": "[\"sentence\", \"mistake\", \"mind\", \"meaning\"]",
+          "correct_option": "A",
+          "correct_answer": "sentence",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P23:B4",
+              "evidence_quote": "a sentence on the blackboard"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=7790C234413399B4"
+          }
+        },
+        {
+          "question_id": "AIQ:3179968E3E74",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+          "page": 17,
+          "question_text": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+          "options_json": "[\"polite\", \"dry\", \"important\", \"mistake\"]",
+          "correct_option": "A",
+          "correct_answer": "polite",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v2",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P22:B2",
+              "evidence_quote": "But is it OK to point out the mistake? Is that polite, in the first lesson?”"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-03 minimal pipeline: validator v2 PASS"
+          }
+        },
+        {
+          "question_id": "AIQ:6721EC6C5D1F",
+          "question_type": "vocab_choice",
+          "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+          "page": 82,
+          "question_text": "Water from the ___ will rise to the leaf through the stem.",
+          "options_json": "[\"root\", \"stem\", \"sugar\", \"oxygen\"]",
+          "correct_option": "A",
+          "correct_answer": "root",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P85:B12",
+              "evidence_quote": "root"
+            },
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P87:B7",
+              "evidence_quote": "root"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=200414C32D03C3A8"
+          }
+        }
+      ]
+    },
+    {
+      "category": "C8_fill",
+      "label_zh": "fill",
+      "why": "fill 全部 9 条（其中 AIQ:7EBCDBC29563 是 P1-03 遗留、类型标记为 fill 却带 options，validator v3 type_rules 判不合法，已标 STALE）。",
+      "questions": [
+        {
+          "question_id": "AIQ:1B3AF72923C4",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+          "page": 3,
+          "question_text": "I am ___, too.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "ready",
+          "difficulty": "easy",
+          "lifecycle_status": "REJECTED",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+              "evidence_quote": "I am ready, too"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=8FC1B600F5CD35C7"
+          }
+        },
+        {
+          "question_id": "AIQ:3C02F6486DFF",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+          "page": 3,
+          "question_text": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "eraser",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B32",
+              "evidence_quote": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=B0B1455A82D385ED"
+          }
+        },
+        {
+          "question_id": "AIQ:120FFEECA78F",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+          "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+          "page": 5,
+          "question_text": "What colour is it? It’s ___.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "grey",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P10:B20",
+              "evidence_quote": "It’s grey."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=6AC8985DA68EA72A"
+          }
+        },
+        {
+          "question_id": "AIQ:7EBCDBC29563",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+          "page": 17,
+          "question_text": "Our English teacher Ms Chen writes the ___ on the blackboard and says, “Please write this down.”",
+          "options_json": "[\"sentence\", \"mistake\", \"polite\", \"meaning\"]",
+          "correct_option": "A",
+          "correct_answer": "sentence",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 1,
+          "stale_reason": "VALIDATOR_CHANGED",
+          "validator_version": "v2",
+          "needs_human_review": 1,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P22:B0",
+              "evidence_quote": "Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.”"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-03 minimal pipeline: validator v2 PASS"
+          }
+        },
+        {
+          "question_id": "AIQ:D976787A0A43",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+          "page": 18,
+          "question_text": "In the first lesson, some questions jump into my ___.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "mind",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P23:B5",
+              "evidence_quote": "jump into my mind"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=8F683ED6E9C2C6A3"
+          }
+        },
+        {
+          "question_id": "AIQ:1BA260727793",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+          "page": 19,
+          "question_text": "___ ___, this is my first lesson for all of you.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "In fact",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P24:B2",
+              "evidence_quote": "In fact, this is my first lesson for all of you."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=FAC67D8814215070"
+          }
+        },
+        {
+          "question_id": "AIQ:C3E6FD29F680",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+          "page": 19,
+          "question_text": "I look up at Ms Chen. My eyes meet ___.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "hers",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P24:B1",
+              "evidence_quote": "My eyes meet hers."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=D88B289DA230C5EE"
+          }
+        },
+        {
+          "question_id": "AIQ:E5F4C046FA61",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+          "page": 32,
+          "question_text": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "sound",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B11",
+              "evidence_quote": "Right at this moment, the sound of Grandpa’s erhu cuts in."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=514D5A302F161BAB"
+          }
+        },
+        {
+          "question_id": "AIQ:04CC9B1CF690",
+          "question_type": "fill",
+          "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+          "page": 33,
+          "question_text": "It feels great to ___ our hobby together.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "enjoy",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P38:B5",
+              "evidence_quote": "It feels great to enjoy our hobby together."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "EXACT",
+            "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=ABEB18A604174552"
+          }
+        }
+      ]
+    },
+    {
+      "category": "C9_judge",
+      "label_zh": "reading_judge",
+      "why": "reading_judge 全部 2 条；均为 True/False，程序 answer_support 无法直接判定，P1-07 采用 rule4_waived_for_judge 兼容处理。",
+      "questions": [
+        {
+          "question_id": "AIQ:7EAC0ED29A0A",
+          "question_type": "reading_judge",
+          "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+          "page": 83,
+          "question_text": "The Great Bear Rainforest is in Canada.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "True",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P88:B12",
+              "evidence_quote": "Welcome to the Great Bear Rainforest in Canada!"
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "VERIFIABLE_REPHRASE",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=2496A101D8574849；rule4_waived_for_judge=true（判断题事实一致性判定，coverage=1.0）"
+          }
+        },
+        {
+          "question_id": "AIQ:80F1D28C3101",
+          "question_type": "reading_judge",
+          "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+          "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+          "page": 83,
+          "question_text": "Plants are not important to us.",
+          "options_json": null,
+          "correct_option": null,
+          "correct_answer": "False",
+          "difficulty": "easy",
+          "lifecycle_status": "PENDING_REVIEW",
+          "stale": 0,
+          "stale_reason": null,
+          "validator_version": "v3",
+          "needs_human_review": 0,
+          "evidence": [
+            {
+              "evidence_block_id": "FLTRP-EN-7A-2022CUR:P88:B20",
+              "evidence_quote": "Now we can see plants are so important. They mean so much to us."
+            }
+          ],
+          "validation": {
+            "validation_result": "PASS",
+            "answer_support_type": "VERIFIABLE_REPHRASE",
+            "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=019370AE74C24C79；rule4_waived_for_judge=true（判断题事实一致性判定，coverage=1.0）"
+          }
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "category": "英语本身存在错误的题",
+      "status": "现有真实样本不足",
+      "detail": "21 条真实题中未发现语法/拼写错误的题（全部 difficulty=easy/medium，程序与人工均未发现语言错误）。要测 AI 复核能否发现真实语言错误，只能另建人工撰写的 fixture，不得调用 AI 生成。"
+    },
+    {
+      "category": "干扰项明显垃圾/荒谬的题",
+      "status": "现有真实样本不足",
+      "detail": "现有选择题干扰项全部来自教材词表，没有明显无意义选项，无法覆盖distractor_quality=poor 的真实样本。"
+    },
+    {
+      "category": "难度明显超出初一阶段的题",
+      "status": "现有真实样本不足",
+      "detail": "grade_fit 维度没有真实反例；21 条题全部为 easy（除 1 条 medium）。"
+    },
+    {
+      "category": "程序层结构非法但未被拦下的题",
+      "status": "部分覆盖",
+      "detail": "AIQ:7EBCDBC29563 是唯一一条 validator v3 type_rules 会判不合法的题，但它在入库时使用的是 validator v2，之后被标 STALE。"
+    }
+  ]
+}

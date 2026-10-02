@@ -1,0 +1,24 @@
+{
+ "sample": "S1_word_list_control",
+ "category": "对照样（词表）",
+ "audio": "AU48",
+ "textbook_original": "ready",
+ "textbook_with_blanks": null,
+ "recovered_sentence": "ready",
+ "recovery_method": "existing_resource_mapping(derived manifest)",
+ "confidence": "medium（派生资源，非官方独立单词音频）",
+ "start_ms": 5550,
+ "end_ms": 6240,
+ "matching_method": "existing_resource_mapping",
+ "status": "CANDIDATE",
+ "slice_file": "sample_01_word_01.wav",
+ "slice_check": {
+  "slice_runs": 1,
+  "peak_db": -24.9,
+  "head_starts_at_ms": 0,
+  "tail_ends_at_ms": 19210,
+  "head_ok": true,
+  "tail_ok": true,
+  "slice_total_ms": 690
+ }
+}

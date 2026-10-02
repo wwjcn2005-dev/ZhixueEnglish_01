@@ -1,0 +1,169 @@
+{
+ "phase": "P3-06",
+ "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+ "audio_url": "/audio/official/AU06.mp3",
+ "audio_file": "06_Starter_Get to know each other_4 Read and check your answers.mp3",
+ "audio_relative_path": "2025年度初一外研版英语教材/06_Starter_Get to know each other_4 Read and check your answers.mp3",
+ "activity": "Activity 4 (Read and check your answers.)",
+ "unit": "Starter",
+ "section": "GET_TO_KNOW_EACH_OTHER",
+ "textbook_page": 10,
+ "audio_scope": "FULL_ACTIVITY_AUDIO",
+ "duration_ms": 43337,
+ "status": "VERIFIED",
+ "source": "faster-whisper-word-timestamps",
+ "source_steps": [
+  "audit/P3-06_step4_au06_alignment_result.json",
+  "audit/P3-06_step6_au06_full_8_sentence_candidates.md"
+ ],
+ "text_source": "audit/P3-05_samples/shadowing_manifest.json (authoritative textbook text)",
+ "verification": {
+  "method": "human_listening",
+  "status": "VERIFIED",
+  "verified_note": "人工试听确认。第 5 句开头存在极轻微前一句尾音，但不影响辨识、标准音听感及跟读使用，因此保留原候选边界，不人为裁剪。"
+ },
+ "instruction": {
+  "text": "Activity 4. Read and check your answers.",
+  "start_ms": 0,
+  "end_ms": 5140,
+  "note": "instruction / non_training_sentence（不进入跟读句）"
+ },
+ "sentences": [
+  {
+   "sentence_index": 1,
+   "text": "Hello everyone!",
+   "start_ms": 7000,
+   "end_ms": 8540,
+   "duration_ms": 1540,
+   "speaker": null,
+   "status": "VERIFIED",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "activity": "Starter / GET_TO_KNOW_EACH_OTHER / A4",
+   "source": "faster-whisper-word-timestamps",
+   "candidate_source": "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+   "verification_method": "human_listening",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ]
+  },
+  {
+   "sentence_index": 2,
+   "text": "My name is Zhu Xiaomeng.",
+   "start_ms": 9220,
+   "end_ms": 12880,
+   "duration_ms": 3660,
+   "speaker": null,
+   "status": "VERIFIED",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "activity": "Starter / GET_TO_KNOW_EACH_OTHER / A4",
+   "source": "faster-whisper-word-timestamps",
+   "candidate_source": "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+   "verification_method": "human_listening",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ]
+  },
+  {
+   "sentence_index": 3,
+   "text": "I’m thirteen years old.",
+   "start_ms": 13360,
+   "end_ms": 16200,
+   "duration_ms": 2840,
+   "speaker": null,
+   "status": "VERIFIED",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "activity": "Starter / GET_TO_KNOW_EACH_OTHER / A4",
+   "source": "faster-whisper-word-timestamps",
+   "candidate_source": "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+   "verification_method": "human_listening",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ]
+  },
+  {
+   "sentence_index": 4,
+   "text": "My birthday is in May.",
+   "start_ms": 17260,
+   "end_ms": 19620,
+   "duration_ms": 2360,
+   "speaker": null,
+   "status": "VERIFIED",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "activity": "Starter / GET_TO_KNOW_EACH_OTHER / A4",
+   "source": "faster-whisper-word-timestamps",
+   "candidate_source": "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+   "verification_method": "human_listening",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ]
+  },
+  {
+   "sentence_index": 5,
+   "text": "I love sports very much.",
+   "start_ms": 19620,
+   "end_ms": 23580,
+   "duration_ms": 3960,
+   "speaker": null,
+   "status": "VERIFIED",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "activity": "Starter / GET_TO_KNOW_EACH_OTHER / A4",
+   "source": "faster-whisper-word-timestamps",
+   "candidate_source": "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+   "verification_method": "human_listening",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ]
+  },
+  {
+   "sentence_index": 6,
+   "text": "I like running, playing football and swimming.",
+   "start_ms": 24380,
+   "end_ms": 29500,
+   "duration_ms": 5120,
+   "speaker": null,
+   "status": "VERIFIED",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "activity": "Starter / GET_TO_KNOW_EACH_OTHER / A4",
+   "source": "faster-whisper-word-timestamps",
+   "candidate_source": "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+   "verification_method": "human_listening",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ]
+  },
+  {
+   "sentence_index": 7,
+   "text": "I’m a bit nervous now, but I’m also happy to meet you.",
+   "start_ms": 30580,
+   "end_ms": 36140,
+   "duration_ms": 5560,
+   "speaker": null,
+   "status": "VERIFIED",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "activity": "Starter / GET_TO_KNOW_EACH_OTHER / A4",
+   "source": "faster-whisper-word-timestamps",
+   "candidate_source": "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+   "verification_method": "human_listening",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ]
+  },
+  {
+   "sentence_index": 8,
+   "text": "I want to make friends with you all!",
+   "start_ms": 37000,
+   "end_ms": 40040,
+   "duration_ms": 3040,
+   "speaker": null,
+   "status": "VERIFIED",
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "activity": "Starter / GET_TO_KNOW_EACH_OTHER / A4",
+   "source": "faster-whisper-word-timestamps",
+   "candidate_source": "audit/P3-06_step6_au06_full_8_sentence_candidates.md",
+   "verification_method": "human_listening",
+   "source_blocks": [
+    "FLTRP-EN-7A-2022CUR:P15:B3"
+   ]
+  }
+ ]
+}

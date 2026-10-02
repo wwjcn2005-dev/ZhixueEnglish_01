@@ -1,0 +1,1259 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+  "audio_num": "AU28",
+  "filename": "28_Unit 4_Understanding ideas_2 Read the passage. What does the writer do during the Spring Festival.mp3",
+  "duration_ms": 128496,
+  "segment_count": 31,
+  "word_count": 217,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1300,
+      "text": "Unit 4"
+    },
+    {
+      "start_ms": 2000,
+      "end_ms": 3480,
+      "text": "Time to celebrate"
+    },
+    {
+      "start_ms": 5000,
+      "end_ms": 6780,
+      "text": "Understanding ideas"
+    },
+    {
+      "start_ms": 8000,
+      "end_ms": 9300,
+      "text": "Activity to"
+    },
+    {
+      "start_ms": 10000,
+      "end_ms": 11700,
+      "text": "Read the passage"
+    },
+    {
+      "start_ms": 11700,
+      "end_ms": 16280,
+      "text": "What does the writer do during the spring festival?"
+    },
+    {
+      "start_ms": 17880,
+      "end_ms": 20720,
+      "text": "An unusual spring festival."
+    },
+    {
+      "start_ms": 21680,
+      "end_ms": 25960,
+      "text": "It is my first year of university in the UK."
+    },
+    {
+      "start_ms": 25960,
+      "end_ms": 34540,
+      "text": "My English friend Amelia is a nice girl. Sometimes she cooks British food for me."
+    },
+    {
+      "start_ms": 35440,
+      "end_ms": 42300,
+      "text": "Today is the spring festival, so I want to treat her to a Chinese dinner."
+    },
+    {
+      "start_ms": 43240,
+      "end_ms": 50640,
+      "text": "At home I often watch Grandma cook. I never realised cooking was so difficult."
+    },
+    {
+      "start_ms": 50640,
+      "end_ms": 54800,
+      "text": "How I wish to have four hands now!"
+    },
+    {
+      "start_ms": 56140,
+      "end_ms": 60220,
+      "text": "It is midnight in China. Time for dumplings!"
+    },
+    {
+      "start_ms": 61360,
+      "end_ms": 64560,
+      "text": "My whole family come to help me on the phone."
+    },
+    {
+      "start_ms": 65500,
+      "end_ms": 67840,
+      "text": "Step by step they teach me."
+    },
+    {
+      "start_ms": 68760,
+      "end_ms": 71240,
+      "text": "I even make some cucumber flowers."
+    },
+    {
+      "start_ms": 73160,
+      "end_ms": 76760,
+      "text": "After Amelia hangs balloons and lanterns in the dining room,"
+    },
+    {
+      "start_ms": 76760,
+      "end_ms": 79640,
+      "text": "I put the last dish on the table."
+    },
+    {
+      "start_ms": 80940,
+      "end_ms": 82880,
+      "text": "This is the lion's head."
+    },
+    {
+      "start_ms": 83600,
+      "end_ms": 84840,
+      "text": "Are you joking?"
+    },
+    {
+      "start_ms": 85960,
+      "end_ms": 87680,
+      "text": "Isn't that against the law?"
+    },
+    {
+      "start_ms": 88620,
+      "end_ms": 90140,
+      "text": "Amelia is shocked."
+    },
+    {
+      "start_ms": 91060,
+      "end_ms": 91780,
+      "text": "I laugh."
+    },
+    {
+      "start_ms": 93000,
+      "end_ms": 94760,
+      "text": "It's a pork meatball."
+    },
+    {
+      "start_ms": 95520,
+      "end_ms": 98780,
+      "text": "My family always have it at the Spring Festival."
+    },
+    {
+      "start_ms": 99840,
+      "end_ms": 103400,
+      "text": "Its round shape stands for family reunions."
+    },
+    {
+      "start_ms": 104020,
+      "end_ms": 104820,
+      "text": "Try it."
+    },
+    {
+      "start_ms": 105960,
+      "end_ms": 111360,
+      "text": "Amelia cuts a piece of it with her knife and puts it into her mouth."
+    },
+    {
+      "start_ms": 112220,
+      "end_ms": 115680,
+      "text": "Mmm, I love it! She says,"
+    },
+    {
+      "start_ms": 116080,
+      "end_ms": 121800,
+      "text": "The smell of the dishes and the sound of our laughing fill the room."
+    },
+    {
+      "start_ms": 122640,
+      "end_ms": 125200,
+      "text": "I feel like I am back home."
+    }
+  ],
+  "words": [
+    {
+      "word": "Unit",
+      "start_ms": 0,
+      "end_ms": 620
+    },
+    {
+      "word": "4",
+      "start_ms": 620,
+      "end_ms": 1300
+    },
+    {
+      "word": "Time",
+      "start_ms": 1830,
+      "end_ms": 2460
+    },
+    {
+      "word": "to",
+      "start_ms": 2460,
+      "end_ms": 2820
+    },
+    {
+      "word": "celebrate",
+      "start_ms": 2820,
+      "end_ms": 3480
+    },
+    {
+      "word": "Understanding",
+      "start_ms": 5000,
+      "end_ms": 5680
+    },
+    {
+      "word": "ideas",
+      "start_ms": 5680,
+      "end_ms": 6780
+    },
+    {
+      "word": "Activity",
+      "start_ms": 8000,
+      "end_ms": 8660
+    },
+    {
+      "word": "to",
+      "start_ms": 8660,
+      "end_ms": 9300
+    },
+    {
+      "word": "Read",
+      "start_ms": 10000,
+      "end_ms": 10660
+    },
+    {
+      "word": "the",
+      "start_ms": 10660,
+      "end_ms": 10980
+    },
+    {
+      "word": "passage",
+      "start_ms": 10980,
+      "end_ms": 11700
+    },
+    {
+      "word": "What",
+      "start_ms": 11700,
+      "end_ms": 12840
+    },
+    {
+      "word": "does",
+      "start_ms": 12840,
+      "end_ms": 13200
+    },
+    {
+      "word": "the",
+      "start_ms": 13200,
+      "end_ms": 13380
+    },
+    {
+      "word": "writer",
+      "start_ms": 13380,
+      "end_ms": 13800
+    },
+    {
+      "word": "do",
+      "start_ms": 13800,
+      "end_ms": 14260
+    },
+    {
+      "word": "during",
+      "start_ms": 14260,
+      "end_ms": 14920
+    },
+    {
+      "word": "the",
+      "start_ms": 14920,
+      "end_ms": 15220
+    },
+    {
+      "word": "spring",
+      "start_ms": 15220,
+      "end_ms": 15580
+    },
+    {
+      "word": "festival?",
+      "start_ms": 15580,
+      "end_ms": 16280
+    },
+    {
+      "word": "An",
+      "start_ms": 17880,
+      "end_ms": 18600
+    },
+    {
+      "word": "unusual",
+      "start_ms": 18600,
+      "end_ms": 19160
+    },
+    {
+      "word": "spring",
+      "start_ms": 19160,
+      "end_ms": 19960
+    },
+    {
+      "word": "festival.",
+      "start_ms": 19960,
+      "end_ms": 20720
+    },
+    {
+      "word": "It",
+      "start_ms": 21680,
+      "end_ms": 22940
+    },
+    {
+      "word": "is",
+      "start_ms": 22940,
+      "end_ms": 23120
+    },
+    {
+      "word": "my",
+      "start_ms": 23120,
+      "end_ms": 23340
+    },
+    {
+      "word": "first",
+      "start_ms": 23340,
+      "end_ms": 23740
+    },
+    {
+      "word": "year",
+      "start_ms": 23740,
+      "end_ms": 24100
+    },
+    {
+      "word": "of",
+      "start_ms": 24100,
+      "end_ms": 24260
+    },
+    {
+      "word": "university",
+      "start_ms": 24260,
+      "end_ms": 24900
+    },
+    {
+      "word": "in",
+      "start_ms": 24900,
+      "end_ms": 25460
+    },
+    {
+      "word": "the",
+      "start_ms": 25460,
+      "end_ms": 25620
+    },
+    {
+      "word": "UK.",
+      "start_ms": 25620,
+      "end_ms": 25960
+    },
+    {
+      "word": "My",
+      "start_ms": 25960,
+      "end_ms": 27320
+    },
+    {
+      "word": "English",
+      "start_ms": 27320,
+      "end_ms": 27700
+    },
+    {
+      "word": "friend",
+      "start_ms": 27700,
+      "end_ms": 28220
+    },
+    {
+      "word": "Amelia",
+      "start_ms": 28220,
+      "end_ms": 28640
+    },
+    {
+      "word": "is",
+      "start_ms": 28640,
+      "end_ms": 29480
+    },
+    {
+      "word": "a",
+      "start_ms": 29480,
+      "end_ms": 29640
+    },
+    {
+      "word": "nice",
+      "start_ms": 29640,
+      "end_ms": 29920
+    },
+    {
+      "word": "girl.",
+      "start_ms": 29920,
+      "end_ms": 30320
+    },
+    {
+      "word": "Sometimes",
+      "start_ms": 31340,
+      "end_ms": 31880
+    },
+    {
+      "word": "she",
+      "start_ms": 31880,
+      "end_ms": 32660
+    },
+    {
+      "word": "cooks",
+      "start_ms": 32660,
+      "end_ms": 33020
+    },
+    {
+      "word": "British",
+      "start_ms": 33020,
+      "end_ms": 33540
+    },
+    {
+      "word": "food",
+      "start_ms": 33540,
+      "end_ms": 34020
+    },
+    {
+      "word": "for",
+      "start_ms": 34020,
+      "end_ms": 34320
+    },
+    {
+      "word": "me.",
+      "start_ms": 34320,
+      "end_ms": 34540
+    },
+    {
+      "word": "Today",
+      "start_ms": 35440,
+      "end_ms": 36060
+    },
+    {
+      "word": "is",
+      "start_ms": 36060,
+      "end_ms": 36720
+    },
+    {
+      "word": "the",
+      "start_ms": 36720,
+      "end_ms": 36900
+    },
+    {
+      "word": "spring",
+      "start_ms": 36900,
+      "end_ms": 37300
+    },
+    {
+      "word": "festival,",
+      "start_ms": 37300,
+      "end_ms": 37860
+    },
+    {
+      "word": "so",
+      "start_ms": 38440,
+      "end_ms": 38880
+    },
+    {
+      "word": "I",
+      "start_ms": 38880,
+      "end_ms": 39480
+    },
+    {
+      "word": "want",
+      "start_ms": 39480,
+      "end_ms": 39700
+    },
+    {
+      "word": "to",
+      "start_ms": 39700,
+      "end_ms": 39960
+    },
+    {
+      "word": "treat",
+      "start_ms": 39960,
+      "end_ms": 40260
+    },
+    {
+      "word": "her",
+      "start_ms": 40260,
+      "end_ms": 40620
+    },
+    {
+      "word": "to",
+      "start_ms": 40620,
+      "end_ms": 41060
+    },
+    {
+      "word": "a",
+      "start_ms": 41060,
+      "end_ms": 41320
+    },
+    {
+      "word": "Chinese",
+      "start_ms": 41320,
+      "end_ms": 41760
+    },
+    {
+      "word": "dinner.",
+      "start_ms": 41760,
+      "end_ms": 42300
+    },
+    {
+      "word": "At",
+      "start_ms": 43240,
+      "end_ms": 43760
+    },
+    {
+      "word": "home",
+      "start_ms": 43760,
+      "end_ms": 44180
+    },
+    {
+      "word": "I",
+      "start_ms": 44180,
+      "end_ms": 44960
+    },
+    {
+      "word": "often",
+      "start_ms": 44960,
+      "end_ms": 45340
+    },
+    {
+      "word": "watch",
+      "start_ms": 45340,
+      "end_ms": 45740
+    },
+    {
+      "word": "Grandma",
+      "start_ms": 45740,
+      "end_ms": 46260
+    },
+    {
+      "word": "cook.",
+      "start_ms": 46260,
+      "end_ms": 46760
+    },
+    {
+      "word": "I",
+      "start_ms": 47620,
+      "end_ms": 47920
+    },
+    {
+      "word": "never",
+      "start_ms": 47920,
+      "end_ms": 48240
+    },
+    {
+      "word": "realised",
+      "start_ms": 48240,
+      "end_ms": 48920
+    },
+    {
+      "word": "cooking",
+      "start_ms": 48920,
+      "end_ms": 49460
+    },
+    {
+      "word": "was",
+      "start_ms": 49460,
+      "end_ms": 49840
+    },
+    {
+      "word": "so",
+      "start_ms": 49840,
+      "end_ms": 50140
+    },
+    {
+      "word": "difficult.",
+      "start_ms": 50140,
+      "end_ms": 50640
+    },
+    {
+      "word": "How",
+      "start_ms": 50640,
+      "end_ms": 51820
+    },
+    {
+      "word": "I",
+      "start_ms": 51820,
+      "end_ms": 52240
+    },
+    {
+      "word": "wish",
+      "start_ms": 52240,
+      "end_ms": 52680
+    },
+    {
+      "word": "to",
+      "start_ms": 52680,
+      "end_ms": 53080
+    },
+    {
+      "word": "have",
+      "start_ms": 53080,
+      "end_ms": 53280
+    },
+    {
+      "word": "four",
+      "start_ms": 53280,
+      "end_ms": 53680
+    },
+    {
+      "word": "hands",
+      "start_ms": 53680,
+      "end_ms": 54320
+    },
+    {
+      "word": "now!",
+      "start_ms": 54320,
+      "end_ms": 54800
+    },
+    {
+      "word": "It",
+      "start_ms": 56140,
+      "end_ms": 56660
+    },
+    {
+      "word": "is",
+      "start_ms": 56660,
+      "end_ms": 56860
+    },
+    {
+      "word": "midnight",
+      "start_ms": 56860,
+      "end_ms": 57260
+    },
+    {
+      "word": "in",
+      "start_ms": 57260,
+      "end_ms": 57860
+    },
+    {
+      "word": "China.",
+      "start_ms": 57860,
+      "end_ms": 58160
+    },
+    {
+      "word": "Time",
+      "start_ms": 58960,
+      "end_ms": 59460
+    },
+    {
+      "word": "for",
+      "start_ms": 59460,
+      "end_ms": 59840
+    },
+    {
+      "word": "dumplings!",
+      "start_ms": 59840,
+      "end_ms": 60220
+    },
+    {
+      "word": "My",
+      "start_ms": 61360,
+      "end_ms": 61840
+    },
+    {
+      "word": "whole",
+      "start_ms": 61840,
+      "end_ms": 62200
+    },
+    {
+      "word": "family",
+      "start_ms": 62200,
+      "end_ms": 62740
+    },
+    {
+      "word": "come",
+      "start_ms": 62740,
+      "end_ms": 63140
+    },
+    {
+      "word": "to",
+      "start_ms": 63140,
+      "end_ms": 63360
+    },
+    {
+      "word": "help",
+      "start_ms": 63360,
+      "end_ms": 63600
+    },
+    {
+      "word": "me",
+      "start_ms": 63600,
+      "end_ms": 63860
+    },
+    {
+      "word": "on",
+      "start_ms": 63860,
+      "end_ms": 64120
+    },
+    {
+      "word": "the",
+      "start_ms": 64120,
+      "end_ms": 64240
+    },
+    {
+      "word": "phone.",
+      "start_ms": 64240,
+      "end_ms": 64560
+    },
+    {
+      "word": "Step",
+      "start_ms": 65500,
+      "end_ms": 65980
+    },
+    {
+      "word": "by",
+      "start_ms": 65980,
+      "end_ms": 66260
+    },
+    {
+      "word": "step",
+      "start_ms": 66260,
+      "end_ms": 66680
+    },
+    {
+      "word": "they",
+      "start_ms": 66680,
+      "end_ms": 67240
+    },
+    {
+      "word": "teach",
+      "start_ms": 67240,
+      "end_ms": 67500
+    },
+    {
+      "word": "me.",
+      "start_ms": 67500,
+      "end_ms": 67840
+    },
+    {
+      "word": "I",
+      "start_ms": 68760,
+      "end_ms": 69100
+    },
+    {
+      "word": "even",
+      "start_ms": 69100,
+      "end_ms": 69380
+    },
+    {
+      "word": "make",
+      "start_ms": 69380,
+      "end_ms": 69660
+    },
+    {
+      "word": "some",
+      "start_ms": 69660,
+      "end_ms": 70000
+    },
+    {
+      "word": "cucumber",
+      "start_ms": 70000,
+      "end_ms": 70600
+    },
+    {
+      "word": "flowers.",
+      "start_ms": 70600,
+      "end_ms": 71240
+    },
+    {
+      "word": "After",
+      "start_ms": 72800,
+      "end_ms": 73220
+    },
+    {
+      "word": "Amelia",
+      "start_ms": 73220,
+      "end_ms": 73640
+    },
+    {
+      "word": "hangs",
+      "start_ms": 73640,
+      "end_ms": 74220
+    },
+    {
+      "word": "balloons",
+      "start_ms": 74220,
+      "end_ms": 74660
+    },
+    {
+      "word": "and",
+      "start_ms": 74660,
+      "end_ms": 75080
+    },
+    {
+      "word": "lanterns",
+      "start_ms": 75080,
+      "end_ms": 75800
+    },
+    {
+      "word": "in",
+      "start_ms": 75800,
+      "end_ms": 75900
+    },
+    {
+      "word": "the",
+      "start_ms": 75900,
+      "end_ms": 76020
+    },
+    {
+      "word": "dining",
+      "start_ms": 76020,
+      "end_ms": 76340
+    },
+    {
+      "word": "room,",
+      "start_ms": 76340,
+      "end_ms": 76760
+    },
+    {
+      "word": "I",
+      "start_ms": 76760,
+      "end_ms": 77540
+    },
+    {
+      "word": "put",
+      "start_ms": 77540,
+      "end_ms": 77820
+    },
+    {
+      "word": "the",
+      "start_ms": 77820,
+      "end_ms": 78020
+    },
+    {
+      "word": "last",
+      "start_ms": 78020,
+      "end_ms": 78420
+    },
+    {
+      "word": "dish",
+      "start_ms": 78420,
+      "end_ms": 78880
+    },
+    {
+      "word": "on",
+      "start_ms": 78880,
+      "end_ms": 79120
+    },
+    {
+      "word": "the",
+      "start_ms": 79120,
+      "end_ms": 79260
+    },
+    {
+      "word": "table.",
+      "start_ms": 79260,
+      "end_ms": 79640
+    },
+    {
+      "word": "This",
+      "start_ms": 80940,
+      "end_ms": 81360
+    },
+    {
+      "word": "is",
+      "start_ms": 81360,
+      "end_ms": 81640
+    },
+    {
+      "word": "the",
+      "start_ms": 81640,
+      "end_ms": 81840
+    },
+    {
+      "word": "lion's",
+      "start_ms": 81840,
+      "end_ms": 82660
+    },
+    {
+      "word": "head.",
+      "start_ms": 82660,
+      "end_ms": 82880
+    },
+    {
+      "word": "Are",
+      "start_ms": 83600,
+      "end_ms": 84040
+    },
+    {
+      "word": "you",
+      "start_ms": 84040,
+      "end_ms": 84260
+    },
+    {
+      "word": "joking?",
+      "start_ms": 84260,
+      "end_ms": 84840
+    },
+    {
+      "word": "Isn't",
+      "start_ms": 85960,
+      "end_ms": 86540
+    },
+    {
+      "word": "that",
+      "start_ms": 86540,
+      "end_ms": 86680
+    },
+    {
+      "word": "against",
+      "start_ms": 86680,
+      "end_ms": 87080
+    },
+    {
+      "word": "the",
+      "start_ms": 87080,
+      "end_ms": 87380
+    },
+    {
+      "word": "law?",
+      "start_ms": 87380,
+      "end_ms": 87680
+    },
+    {
+      "word": "Amelia",
+      "start_ms": 88620,
+      "end_ms": 89120
+    },
+    {
+      "word": "is",
+      "start_ms": 89120,
+      "end_ms": 89660
+    },
+    {
+      "word": "shocked.",
+      "start_ms": 89660,
+      "end_ms": 90140
+    },
+    {
+      "word": "I",
+      "start_ms": 91060,
+      "end_ms": 91340
+    },
+    {
+      "word": "laugh.",
+      "start_ms": 91340,
+      "end_ms": 91780
+    },
+    {
+      "word": "It's",
+      "start_ms": 93000,
+      "end_ms": 93380
+    },
+    {
+      "word": "a",
+      "start_ms": 93380,
+      "end_ms": 93480
+    },
+    {
+      "word": "pork",
+      "start_ms": 93480,
+      "end_ms": 93880
+    },
+    {
+      "word": "meatball.",
+      "start_ms": 93880,
+      "end_ms": 94760
+    },
+    {
+      "word": "My",
+      "start_ms": 95520,
+      "end_ms": 95880
+    },
+    {
+      "word": "family",
+      "start_ms": 95880,
+      "end_ms": 96360
+    },
+    {
+      "word": "always",
+      "start_ms": 96360,
+      "end_ms": 96880
+    },
+    {
+      "word": "have",
+      "start_ms": 96880,
+      "end_ms": 97360
+    },
+    {
+      "word": "it",
+      "start_ms": 97360,
+      "end_ms": 97580
+    },
+    {
+      "word": "at",
+      "start_ms": 97580,
+      "end_ms": 97840
+    },
+    {
+      "word": "the",
+      "start_ms": 97840,
+      "end_ms": 98000
+    },
+    {
+      "word": "Spring",
+      "start_ms": 98000,
+      "end_ms": 98320
+    },
+    {
+      "word": "Festival.",
+      "start_ms": 98320,
+      "end_ms": 98780
+    },
+    {
+      "word": "Its",
+      "start_ms": 99840,
+      "end_ms": 100180
+    },
+    {
+      "word": "round",
+      "start_ms": 100180,
+      "end_ms": 100540
+    },
+    {
+      "word": "shape",
+      "start_ms": 100540,
+      "end_ms": 100960
+    },
+    {
+      "word": "stands",
+      "start_ms": 100960,
+      "end_ms": 101420
+    },
+    {
+      "word": "for",
+      "start_ms": 101420,
+      "end_ms": 102060
+    },
+    {
+      "word": "family",
+      "start_ms": 102060,
+      "end_ms": 102520
+    },
+    {
+      "word": "reunions.",
+      "start_ms": 102520,
+      "end_ms": 103400
+    },
+    {
+      "word": "Try",
+      "start_ms": 104020,
+      "end_ms": 104440
+    },
+    {
+      "word": "it.",
+      "start_ms": 104440,
+      "end_ms": 104820
+    },
+    {
+      "word": "Amelia",
+      "start_ms": 105960,
+      "end_ms": 106680
+    },
+    {
+      "word": "cuts",
+      "start_ms": 106680,
+      "end_ms": 107380
+    },
+    {
+      "word": "a",
+      "start_ms": 107380,
+      "end_ms": 107640
+    },
+    {
+      "word": "piece",
+      "start_ms": 107640,
+      "end_ms": 107820
+    },
+    {
+      "word": "of",
+      "start_ms": 107820,
+      "end_ms": 108020
+    },
+    {
+      "word": "it",
+      "start_ms": 108020,
+      "end_ms": 108180
+    },
+    {
+      "word": "with",
+      "start_ms": 108180,
+      "end_ms": 108380
+    },
+    {
+      "word": "her",
+      "start_ms": 108380,
+      "end_ms": 108580
+    },
+    {
+      "word": "knife",
+      "start_ms": 108580,
+      "end_ms": 108940
+    },
+    {
+      "word": "and",
+      "start_ms": 108940,
+      "end_ms": 109780
+    },
+    {
+      "word": "puts",
+      "start_ms": 109780,
+      "end_ms": 110100
+    },
+    {
+      "word": "it",
+      "start_ms": 110100,
+      "end_ms": 110440
+    },
+    {
+      "word": "into",
+      "start_ms": 110440,
+      "end_ms": 110780
+    },
+    {
+      "word": "her",
+      "start_ms": 110780,
+      "end_ms": 111020
+    },
+    {
+      "word": "mouth.",
+      "start_ms": 111020,
+      "end_ms": 111360
+    },
+    {
+      "word": "Mmm,",
+      "start_ms": 112220,
+      "end_ms": 112800
+    },
+    {
+      "word": "I",
+      "start_ms": 113360,
+      "end_ms": 113720
+    },
+    {
+      "word": "love",
+      "start_ms": 113720,
+      "end_ms": 114100
+    },
+    {
+      "word": "it!",
+      "start_ms": 114100,
+      "end_ms": 114580
+    },
+    {
+      "word": "She",
+      "start_ms": 115040,
+      "end_ms": 115340
+    },
+    {
+      "word": "says,",
+      "start_ms": 115340,
+      "end_ms": 115680
+    },
+    {
+      "word": "The",
+      "start_ms": 116080,
+      "end_ms": 116980
+    },
+    {
+      "word": "smell",
+      "start_ms": 116980,
+      "end_ms": 117400
+    },
+    {
+      "word": "of",
+      "start_ms": 117400,
+      "end_ms": 117620
+    },
+    {
+      "word": "the",
+      "start_ms": 117620,
+      "end_ms": 117760
+    },
+    {
+      "word": "dishes",
+      "start_ms": 117760,
+      "end_ms": 118120
+    },
+    {
+      "word": "and",
+      "start_ms": 118120,
+      "end_ms": 118860
+    },
+    {
+      "word": "the",
+      "start_ms": 118860,
+      "end_ms": 119100
+    },
+    {
+      "word": "sound",
+      "start_ms": 119100,
+      "end_ms": 119500
+    },
+    {
+      "word": "of",
+      "start_ms": 119500,
+      "end_ms": 119660
+    },
+    {
+      "word": "our",
+      "start_ms": 119660,
+      "end_ms": 119820
+    },
+    {
+      "word": "laughing",
+      "start_ms": 119820,
+      "end_ms": 120320
+    },
+    {
+      "word": "fill",
+      "start_ms": 120320,
+      "end_ms": 121120
+    },
+    {
+      "word": "the",
+      "start_ms": 121120,
+      "end_ms": 121400
+    },
+    {
+      "word": "room.",
+      "start_ms": 121400,
+      "end_ms": 121800
+    },
+    {
+      "word": "I",
+      "start_ms": 122640,
+      "end_ms": 123060
+    },
+    {
+      "word": "feel",
+      "start_ms": 123060,
+      "end_ms": 123480
+    },
+    {
+      "word": "like",
+      "start_ms": 123480,
+      "end_ms": 123880
+    },
+    {
+      "word": "I",
+      "start_ms": 123880,
+      "end_ms": 124120
+    },
+    {
+      "word": "am",
+      "start_ms": 124120,
+      "end_ms": 124280
+    },
+    {
+      "word": "back",
+      "start_ms": 124280,
+      "end_ms": 124640
+    },
+    {
+      "word": "home.",
+      "start_ms": 124640,
+      "end_ms": 125200
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 14.1
+  }
+}

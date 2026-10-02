@@ -1,0 +1,170 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "reading_choice",
+   "question": "What instrument does the writer play in the school band?",
+   "options": [
+    "The erhu",
+    "The electric guitar",
+    "The violin",
+    "The piano"
+   ],
+   "correct_option": "B",
+   "answer": "The electric guitar",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B10"
+   ],
+   "evidence_quote": "I play the electric guitar in the school band.",
+   "explanation": "The passage says the writer is a rock music lover and plays the electric guitar in the school band.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q2",
+   "type": "reading_choice",
+   "question": "Where does Grandpa play the erhu with his friends?",
+   "options": [
+    "In the park",
+    "In the school band",
+    "On the stage",
+    "Online"
+   ],
+   "correct_option": "A",
+   "answer": "In the park",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "evidence_quote": "He likes playing the erhu in the park with his friends.",
+   "explanation": "The passage says Grandpa likes playing the erhu in the park with his friends.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "question": "What does the writer decide to do for the school art festival?",
+   "options": [
+    "Sing Beijing opera with friends",
+    "Take part in it with Grandpa",
+    "Play the guitar alone",
+    "Write songs online"
+   ],
+   "correct_option": "B",
+   "answer": "Take part in it with Grandpa",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "evidence_quote": "I decide to take part in it with Grandpa this year.",
+   "explanation": "The passage says the writer decides to take part in the school art festival with Grandpa this year.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q4",
+   "type": "reading_judge",
+   "question": "The writer and Grandpa smile at each other after their performance.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "correct_option": "A",
+   "answer": "True",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B5"
+   ],
+   "evidence_quote": "Grandpa gives me a big smile, and I smile back.",
+   "explanation": "The evidence shows Grandpa smiles at the writer and the writer smiles back.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q5",
+   "type": "vocab_choice",
+   "question": "Choose the best word to complete the sentence: \"After a week’s ______, the writer and Grandpa are on the stage.\"",
+   "options": [
+    "festival",
+    "practice",
+    "sound",
+    "smile"
+   ],
+   "correct_option": "B",
+   "answer": "practice",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "evidence_quote": "After a week’s practice, we are on the stage.",
+   "explanation": "The passage uses the word \"practice\" to describe the time spent preparing before being on the stage.",
+   "difficulty": "medium",
+   "ai_confidence": 0.9
+  },
+  {
+   "question_id": "q6",
+   "type": "vocab_choice",
+   "question": "Choose the best word to complete the sentence: \"The writer and Grandpa fire up their ______ before playing.\"",
+   "options": [
+    "instruments",
+    "bands",
+    "stages",
+    "guitars"
+   ],
+   "correct_option": "A",
+   "answer": "instruments",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "evidence_quote": "we fire up our instruments.",
+   "explanation": "The passage uses the word \"instruments\" to refer to the erhu and electric guitar they play.",
+   "difficulty": "medium",
+   "ai_confidence": 0.9
+  },
+  {
+   "question_id": "q7",
+   "type": "vocab_choice",
+   "question": "Choose the best word to complete the sentence: \"The ______ of Grandpa’s erhu cuts in.\"",
+   "options": [
+    "sound",
+    "stage",
+    "smile",
+    "nod"
+   ],
+   "correct_option": "A",
+   "answer": "sound",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B11"
+   ],
+   "evidence_quote": "the sound of Grandpa’s erhu cuts in.",
+   "explanation": "The passage says \"the sound of Grandpa’s erhu cuts in\", so \"sound\" is the correct word.",
+   "difficulty": "easy",
+   "ai_confidence": 0.9
+  }
+ ]
+}

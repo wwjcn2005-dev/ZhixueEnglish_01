@@ -1,0 +1,59 @@
+{
+  "phase": "P2-6-D-2-A",
+  "title": "S24+ 真机体验验收（Learning Object → /review）",
+  "status": "PASS_WITH_GAPS",
+  "mode": "read_only_acceptance",
+  "accepted_at": "2026-09-13",
+  "device": {"model": "SM-S9260 (Galaxy S24+)", "adb": "online",
+             "package": "com.zhixueenglish.app.dev", "versionName": "0.1-dev",
+             "webview_url": "http://192.168.2.3:8770/"},
+  "baseline": {
+    "learning_db_sha256": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "learning_db_mtime": "2026-09-12T23:15:13",
+    "learning_db_tables": 7, "learning_record_rows": 20, "mastery_state_rows": 7,
+    "integrity_check": "ok", "foreign_key_check": 0,
+    "contentpack_sha256_20": "ACEBC8C29CF5D11BAB50",
+    "spec_v12_sha256_20": "6D3595CF7D83879ADF3E",
+    "d1_service_sha256_20": "56C4F4140EC6FE431634",
+    "d2_flow_sha256_20": "E74D89252F3A9898E15F",
+    "d2_app_sha256_20": "CB2984D2D48B0D0A4A79",
+    "d2_ui_sha256_20": "F95D8AE59813ECE41AB3"
+  },
+  "review_checks": {
+    "http_status": 200,
+    "empty_page_without_identity": "显示身份入口（需先写名字），符合既有设计",
+    "with_existing_learner": {
+      "section_title_present": true,
+      "empty_state_present": true,
+      "pool_block_present": true,
+      "decision_text_present": true
+    },
+    "device_dom": {"url": "http://192.168.2.3:8770/review",
+                   "section_title_present": true, "empty_state_present": true,
+                   "pool_block_present": true,
+                   "script_tags": 0, "onclick_attributes": 0},
+    "forbidden_absent": ["<script", "onclick", "autoplay", "setTimeout",
+                         "今日任务", "必须完成", "下一步必须学习", "系统为你安排", "推荐任务"],
+    "crash_buffer_lines": 0,
+    "screenshot": "%TEMP%/p26d2a/p26d2a_review.png"
+  },
+  "g1_observation": {
+    "triggered": false,
+    "reason": "正式库 needs_attention()=0（池内 1 条 item 级记录），无法触发同词并置",
+    "marker": "OBSERVED / NOT FULLY CLOSED",
+    "data_fabrication": "none（未修改正式库以制造数据）"
+  },
+  "degradation": "真机未人为触发；已由 D-2 自动化测试覆盖（available=False + 降级文案 + 其余内容正常）",
+  "logs": {"http_500": 0, "webview_crash": 0, "request_loop": false, "ai_requests": 0},
+  "ai_calls": 0,
+  "tests": {"learning": 112, "workbench": 50, "web": 235, "total": 397,
+            "fail": 0, "skip": 0, "matches_d2_baseline": true},
+  "changes": {"code": 0, "tests": 0, "database_writes": 0, "textbook": 0, "audio": 0,
+              "spec": 0, "android": 0,
+              "created_files": ["audit/P2-6-D-2-A_S24_real_device_acceptance.md",
+                                "audit/P2-6-D-2-A_S24_real_device_acceptance.json"]},
+  "open_gaps": ["G1 并置重复观感未在真机触发（待真实数据）",
+                "Consolidation Action / Grammar LO / 68 unmapped / LO mastery 持久化 / UI 大改 / AI 未触碰"],
+  "final": {"verdict": "PASS WITH GAPS",
+            "stopped": "只读真机验收完成即停止，未做任何修复"}
+}

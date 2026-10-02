@@ -1,0 +1,152 @@
+{
+  "task": "P1-06-B1.5 教材派生学习资源人工审核机制设计与只读审计",
+  "generated_at": "2026-09-12T11:45:00+08:00",
+  "verdict": "PASS",
+  "scope": {
+    "read_only": true,
+    "v1_modified": false,
+    "v2_modified": false,
+    "review_executed": false,
+    "ai_calls": 0,
+    "new_files": [
+      "audit/P1-06-B1.5_review_design.md",
+      "audit/P1-06-B1.5_review_design.json"
+    ]
+  },
+  "evidence_from_v2": {
+    "vocabulary_items": 287,
+    "auto_ok_current": 196,
+    "need_review_current": 91,
+    "need_review_causes": {
+      "cross_block_merged": 68,
+      "missing_part_of_speech": 25,
+      "missing_textbook_page_ref": 1,
+      "note": "三类可能重叠，实际样本可同时命中"
+    },
+    "proper_nouns_content_blocks": 36,
+    "proper_nouns_entries_estimate": 33,
+    "source_ref_total": 714,
+    "source_ref_closure": "100%（无 orphan、无断链）",
+    "examples": {
+      "cross_block_merged": "textbook /ˈtekstbʊk/ n. 教科书,教材, + 课本 3",
+      "missing_part_of_speech": "junior high 初级中学 3",
+      "missing_textbook_page_ref": "smile /smaɪl/ n. 笑容"
+    }
+  },
+  "status_model": {
+    "recommended": ["AUTO_OK", "NEED_REVIEW", "REVIEWED_OK", "REJECTED"],
+    "optional_future": ["RE_REVIEW"],
+    "answers": {
+      "q1_auto_ok_vs_reviewed_ok": "需要区分：前者为规则高置信，后者有人工背书，可信度来源不同",
+      "q2_need_review_to_reviewed_ok": "允许，但必须同时写入 reviewed_by / reviewed_at / review_note，无轨迹的状态变化视为非法",
+      "q3_rejected_kept": "必须保留记录，否则破坏可追溯性并导致重复审核",
+      "q4_rejected_re_review": "允许重新审核，但必须追加新记录，不覆盖旧结论",
+      "q5_review_actor_fields": "必须：reviewed_by / reviewed_at / review_note",
+      "q6_review_version": "需要，初版固定 review_v1",
+      "q7_source_preserved": "永远保留 content_block / source_ref / 原始 PDF"
+    }
+  },
+  "review_fields": {
+    "required": ["review_status", "reviewed_by", "reviewed_at", "review_note", "review_version"],
+    "optional": ["review_evidence_refs", "review_batch"],
+    "not_needed": {
+      "ai_suggestion": "AI 意见属 L3，不得进入 L2 权威资源表",
+      "difficulty_level": "属学习推荐维度，不是资源成立判定依据",
+      "is_recommended": "推荐由学习层决定",
+      "separate_review_table": "当前 127 条规模下不需要；仅当需要保存多轮审核历史时才建议新增 review_log"
+    },
+    "storage_decision": "扩展 contentpack v3 的 learning_item，不新增独立表，不修改 v1/v2"
+  },
+  "vocabulary_rules": {
+    "cross_block_merge": {
+      "count": 68,
+      "check": "续行块与 head 块在 PDF 中确为同一条目（同栏、紧邻、语义连续）",
+      "allowed": ["REVIEWED_OK", "REJECTED"],
+      "forbidden": ["手工拼接教材没有的文字"]
+    },
+    "missing_part_of_speech": {
+      "count": 25,
+      "check": "教材词汇表该条目本身未标注词性",
+      "allowed": ["REVIEWED_OK（词性保持为空）", "REJECTED（条目不成立）"],
+      "forbidden": ["凭英语知识补写词性"]
+    },
+    "missing_textbook_page": {
+      "count": 1,
+      "check": "回到 PDF 确认该条目确实无页号",
+      "allowed": ["保留原样 + REVIEWED_OK", "REJECTED"],
+      "forbidden": ["凭经验补页码"]
+    },
+    "multiword_entry": {
+      "count": 22,
+      "check": "确认它作为教材词汇表中的一个条目存在",
+      "allowed": ["REVIEWED_OK"],
+      "forbidden": ["在本阶段判定它是否为 Phrase（属 P1-06-B-2）"]
+    },
+    "proper_nouns": {
+      "count": 33,
+      "policy": "本阶段不并入 Vocabulary；建议未来新增 item_type=proper_noun 或 vocabulary 子类型，需在 v3 设计中确认"
+    }
+  },
+  "review_evidence_chain": {
+    "chain": "learning_item → source_ref → content_block → page → PDF",
+    "closure": "100%",
+    "rule": "REJECTED 时教材原文与 source_ref 一律保留，删除视为违规"
+  },
+  "version_migration": {
+    "stable_keys": ["item_id (sha1(canonical|pos))", "content_hash (schema_version|item_type|canonical|pos|meaning_zh)"],
+    "rules": [
+      "item_id 与 content_hash 均不变 → 沿用历史审核结论",
+      "item_id 不变但 content_hash 变化 → 重置为 NEED_REVIEW，必须重新审核",
+      "旧 item_id 消失 → 审核结论归档保留，不迁移",
+      "新增 item_id → 按构建规则给 AUTO_OK / NEED_REVIEW"
+    ],
+    "field_separation": "教材派生字段与审核字段分列；构建只写派生字段，审核只写审核字段",
+    "migration_executed_now": false
+  },
+  "ai_boundary": {
+    "allowed_future": ["向审核人解释候选", "提供对比", "提示可能的排版问题", "定位证据链"],
+    "forbidden": ["直接写 REVIEWED_OK / REJECTED", "修改教材资源", "修改 source_ref", "修改审核状态"],
+    "principle": "AI 可以辅助审核，人必须拥有最终决定权",
+    "ai_calls_now": 0
+  },
+  "stage_adaptation_boundary": {
+    "resource_validity_vs_recommendation": "教材资源成立 ≠ 现在就推荐给孩子",
+    "recommendation_depends_on": ["教材进度", "当前年级", "学习状态", "AI 反馈水平与阶段适配原则"],
+    "guardrail": "不能因为一个词对成年人简单就降低审核标准；也不能因为一个词对孩子较难就拒绝真实教材词汇"
+  },
+  "review_checklist_format": {
+    "recommended": "JSONL",
+    "fields": ["item_id", "item_type", "canonical_text", "display_text", "part_of_speech",
+               "meaning_zh", "current_status", "merge_count", "source_blocks",
+               "textbook_page", "pdf_page", "quote_raw", "decision", "review_note",
+               "reviewed_by", "reviewed_at", "review_version"],
+    "alternative": "CSV（数组字段需转义）"
+  },
+  "effort_estimate": {
+    "total_candidates": 127,
+    "batches": [
+      {"batch": 1, "target": "缺词性条目", "count": 25},
+      {"batch": 2, "target": "跨块合并条目", "count": 68},
+      {"batch": 3, "target": "缺页码条目", "count": 1},
+      {"batch": 4, "target": "Proper nouns", "count": 33}
+    ],
+    "estimated_hours": "2–4",
+    "ui_decision": "不需要专门后台系统；先用 JSONL/CSV 清单 + 脚本写回 v3"
+  },
+  "stop_conditions_checked": {
+    "requires_v2_modification": false,
+    "schema_unsafe": false,
+    "requires_ai": false,
+    "traceability_guaranteed": true,
+    "requires_parser_or_builder_change": false
+  },
+  "next_stage": {
+    "name": "P1-06-B-2 Phrase",
+    "prerequisites": [
+      "先按本设计完成 127 条 Vocabulary/Proper nouns 审核（可分批）",
+      "在 contentpack v3 中扩展审核字段与 proper_noun 分类方案",
+      "Phrase 必须先去音标再判多词，且与 Vocabulary 使用同一 item 体系但不同 item_type"
+    ],
+    "not_started": true
+  }
+}

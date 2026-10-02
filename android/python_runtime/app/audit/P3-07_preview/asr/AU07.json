@@ -1,0 +1,974 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU07",
+  "audio_num": "AU07",
+  "filename": "07_Unit 1_Understanding ideas_2 Read the passage. What does the writer do in his first lesson.mp3",
+  "duration_ms": 109427,
+  "segment_count": 20,
+  "word_count": 171,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3240,
+      "text": "Unit 1 A New Start"
+    },
+    {
+      "start_ms": 4560,
+      "end_ms": 6640,
+      "text": "Understanding Ideas"
+    },
+    {
+      "start_ms": 7280,
+      "end_ms": 10940,
+      "text": "Activity 2 Read the passage"
+    },
+    {
+      "start_ms": 11920,
+      "end_ms": 15340,
+      "text": "What does the writer do in his first lesson?"
+    },
+    {
+      "start_ms": 16800,
+      "end_ms": 18920,
+      "text": "The first lesson"
+    },
+    {
+      "start_ms": 20480,
+      "end_ms": 28060,
+      "text": "Our English teacher, Ms Chen, writes the sentence on the blackboard and says"
+    },
+    {
+      "start_ms": 28060,
+      "end_ms": 30680,
+      "text": "Please write this down."
+    },
+    {
+      "start_ms": 31500,
+      "end_ms": 33180,
+      "text": "We start to write."
+    },
+    {
+      "start_ms": 34260,
+      "end_ms": 37880,
+      "text": "I write down the first word and stop."
+    },
+    {
+      "start_ms": 39420,
+      "end_ms": 40220,
+      "text": "That's not right."
+    },
+    {
+      "start_ms": 40900,
+      "end_ms": 43720,
+      "text": "But is it okay to point out the mistake?"
+    },
+    {
+      "start_ms": 44700,
+      "end_ms": 47280,
+      "text": "Is that polite in the first lesson?"
+    },
+    {
+      "start_ms": 48220,
+      "end_ms": 50640,
+      "text": "Questions jump into my mind."
+    },
+    {
+      "start_ms": 51480,
+      "end_ms": 54160,
+      "text": "Why aren't you writing, Wang Han?"
+    },
+    {
+      "start_ms": 54160,
+      "end_ms": 65920,
+      "text": "I look up at Ms Chen. My eyes meet hers. My mouth feels dry. But then I think about the"
+    },
+    {
+      "start_ms": 65920,
+      "end_ms": 78360,
+      "text": "meaning of the sentence. I put up my hand. Ms Chen, there's a mistake, I say. That sentence is from"
+    },
+    {
+      "start_ms": 78360,
+      "end_ms": 88080,
+      "text": "Confucius. Not for amentious. Well done, Wong Han. In fact, this is my first"
+    },
+    {
+      "start_ms": 88080,
+      "end_ms": 95780,
+      "text": "lesson for all of you. You are now in junior high school. Learning will be more difficult."
+    },
+    {
+      "start_ms": 96540,
+      "end_ms": 102380,
+      "text": "You need to think more in your learning. Please always remember this."
+    },
+    {
+      "start_ms": 103260,
+      "end_ms": 105880,
+      "text": "That's really an important lesson."
+    }
+  ],
+  "words": [
+    {
+      "word": "Unit",
+      "start_ms": 0,
+      "end_ms": 620
+    },
+    {
+      "word": "1",
+      "start_ms": 620,
+      "end_ms": 1200
+    },
+    {
+      "word": "A",
+      "start_ms": 1200,
+      "end_ms": 2180
+    },
+    {
+      "word": "New",
+      "start_ms": 2180,
+      "end_ms": 2620
+    },
+    {
+      "word": "Start",
+      "start_ms": 2620,
+      "end_ms": 3240
+    },
+    {
+      "word": "Understanding",
+      "start_ms": 4560,
+      "end_ms": 5320
+    },
+    {
+      "word": "Ideas",
+      "start_ms": 5320,
+      "end_ms": 6640
+    },
+    {
+      "word": "Activity",
+      "start_ms": 7280,
+      "end_ms": 8160
+    },
+    {
+      "word": "2",
+      "start_ms": 8160,
+      "end_ms": 8760
+    },
+    {
+      "word": "Read",
+      "start_ms": 8760,
+      "end_ms": 10120
+    },
+    {
+      "word": "the",
+      "start_ms": 10120,
+      "end_ms": 10420
+    },
+    {
+      "word": "passage",
+      "start_ms": 10420,
+      "end_ms": 10940
+    },
+    {
+      "word": "What",
+      "start_ms": 11820,
+      "end_ms": 12360
+    },
+    {
+      "word": "does",
+      "start_ms": 12360,
+      "end_ms": 12660
+    },
+    {
+      "word": "the",
+      "start_ms": 12660,
+      "end_ms": 12840
+    },
+    {
+      "word": "writer",
+      "start_ms": 12840,
+      "end_ms": 13220
+    },
+    {
+      "word": "do",
+      "start_ms": 13220,
+      "end_ms": 13680
+    },
+    {
+      "word": "in",
+      "start_ms": 13680,
+      "end_ms": 14140
+    },
+    {
+      "word": "his",
+      "start_ms": 14140,
+      "end_ms": 14360
+    },
+    {
+      "word": "first",
+      "start_ms": 14360,
+      "end_ms": 14780
+    },
+    {
+      "word": "lesson?",
+      "start_ms": 14780,
+      "end_ms": 15340
+    },
+    {
+      "word": "The",
+      "start_ms": 16800,
+      "end_ms": 17660
+    },
+    {
+      "word": "first",
+      "start_ms": 17660,
+      "end_ms": 18180
+    },
+    {
+      "word": "lesson",
+      "start_ms": 18180,
+      "end_ms": 18920
+    },
+    {
+      "word": "Our",
+      "start_ms": 20380,
+      "end_ms": 20920
+    },
+    {
+      "word": "English",
+      "start_ms": 20920,
+      "end_ms": 21480
+    },
+    {
+      "word": "teacher,",
+      "start_ms": 21480,
+      "end_ms": 22160
+    },
+    {
+      "word": "Ms",
+      "start_ms": 22660,
+      "end_ms": 23000
+    },
+    {
+      "word": "Chen,",
+      "start_ms": 23000,
+      "end_ms": 23480
+    },
+    {
+      "word": "writes",
+      "start_ms": 24000,
+      "end_ms": 24400
+    },
+    {
+      "word": "the",
+      "start_ms": 24400,
+      "end_ms": 24820
+    },
+    {
+      "word": "sentence",
+      "start_ms": 24820,
+      "end_ms": 25340
+    },
+    {
+      "word": "on",
+      "start_ms": 25340,
+      "end_ms": 26060
+    },
+    {
+      "word": "the",
+      "start_ms": 26060,
+      "end_ms": 26280
+    },
+    {
+      "word": "blackboard",
+      "start_ms": 26280,
+      "end_ms": 27080
+    },
+    {
+      "word": "and",
+      "start_ms": 27080,
+      "end_ms": 27680
+    },
+    {
+      "word": "says",
+      "start_ms": 27680,
+      "end_ms": 28060
+    },
+    {
+      "word": "Please",
+      "start_ms": 28060,
+      "end_ms": 29340
+    },
+    {
+      "word": "write",
+      "start_ms": 29340,
+      "end_ms": 29880
+    },
+    {
+      "word": "this",
+      "start_ms": 29880,
+      "end_ms": 30220
+    },
+    {
+      "word": "down.",
+      "start_ms": 30220,
+      "end_ms": 30680
+    },
+    {
+      "word": "We",
+      "start_ms": 31500,
+      "end_ms": 32040
+    },
+    {
+      "word": "start",
+      "start_ms": 32040,
+      "end_ms": 32460
+    },
+    {
+      "word": "to",
+      "start_ms": 32460,
+      "end_ms": 32860
+    },
+    {
+      "word": "write.",
+      "start_ms": 32860,
+      "end_ms": 33180
+    },
+    {
+      "word": "I",
+      "start_ms": 34260,
+      "end_ms": 34900
+    },
+    {
+      "word": "write",
+      "start_ms": 34900,
+      "end_ms": 35180
+    },
+    {
+      "word": "down",
+      "start_ms": 35180,
+      "end_ms": 35600
+    },
+    {
+      "word": "the",
+      "start_ms": 35600,
+      "end_ms": 35840
+    },
+    {
+      "word": "first",
+      "start_ms": 35840,
+      "end_ms": 36280
+    },
+    {
+      "word": "word",
+      "start_ms": 36280,
+      "end_ms": 36720
+    },
+    {
+      "word": "and",
+      "start_ms": 36720,
+      "end_ms": 37420
+    },
+    {
+      "word": "stop.",
+      "start_ms": 37420,
+      "end_ms": 37880
+    },
+    {
+      "word": "That's",
+      "start_ms": 39100,
+      "end_ms": 39520
+    },
+    {
+      "word": "not",
+      "start_ms": 39520,
+      "end_ms": 39720
+    },
+    {
+      "word": "right.",
+      "start_ms": 39720,
+      "end_ms": 40220
+    },
+    {
+      "word": "But",
+      "start_ms": 40900,
+      "end_ms": 41300
+    },
+    {
+      "word": "is",
+      "start_ms": 41300,
+      "end_ms": 41560
+    },
+    {
+      "word": "it",
+      "start_ms": 41560,
+      "end_ms": 41720
+    },
+    {
+      "word": "okay",
+      "start_ms": 41720,
+      "end_ms": 42160
+    },
+    {
+      "word": "to",
+      "start_ms": 42160,
+      "end_ms": 42460
+    },
+    {
+      "word": "point",
+      "start_ms": 42460,
+      "end_ms": 42780
+    },
+    {
+      "word": "out",
+      "start_ms": 42780,
+      "end_ms": 43080
+    },
+    {
+      "word": "the",
+      "start_ms": 43080,
+      "end_ms": 43300
+    },
+    {
+      "word": "mistake?",
+      "start_ms": 43300,
+      "end_ms": 43720
+    },
+    {
+      "word": "Is",
+      "start_ms": 44700,
+      "end_ms": 45060
+    },
+    {
+      "word": "that",
+      "start_ms": 45060,
+      "end_ms": 45400
+    },
+    {
+      "word": "polite",
+      "start_ms": 45400,
+      "end_ms": 45860
+    },
+    {
+      "word": "in",
+      "start_ms": 45860,
+      "end_ms": 46240
+    },
+    {
+      "word": "the",
+      "start_ms": 46240,
+      "end_ms": 46360
+    },
+    {
+      "word": "first",
+      "start_ms": 46360,
+      "end_ms": 46740
+    },
+    {
+      "word": "lesson?",
+      "start_ms": 46740,
+      "end_ms": 47280
+    },
+    {
+      "word": "Questions",
+      "start_ms": 48220,
+      "end_ms": 48900
+    },
+    {
+      "word": "jump",
+      "start_ms": 48900,
+      "end_ms": 49580
+    },
+    {
+      "word": "into",
+      "start_ms": 49580,
+      "end_ms": 49920
+    },
+    {
+      "word": "my",
+      "start_ms": 49920,
+      "end_ms": 50160
+    },
+    {
+      "word": "mind.",
+      "start_ms": 50160,
+      "end_ms": 50640
+    },
+    {
+      "word": "Why",
+      "start_ms": 51480,
+      "end_ms": 52120
+    },
+    {
+      "word": "aren't",
+      "start_ms": 52120,
+      "end_ms": 52460
+    },
+    {
+      "word": "you",
+      "start_ms": 52460,
+      "end_ms": 52620
+    },
+    {
+      "word": "writing,",
+      "start_ms": 52620,
+      "end_ms": 53180
+    },
+    {
+      "word": "Wang",
+      "start_ms": 53500,
+      "end_ms": 53860
+    },
+    {
+      "word": "Han?",
+      "start_ms": 53860,
+      "end_ms": 54160
+    },
+    {
+      "word": "I",
+      "start_ms": 54160,
+      "end_ms": 55420
+    },
+    {
+      "word": "look",
+      "start_ms": 55420,
+      "end_ms": 55680
+    },
+    {
+      "word": "up",
+      "start_ms": 55680,
+      "end_ms": 56060
+    },
+    {
+      "word": "at",
+      "start_ms": 56060,
+      "end_ms": 56500
+    },
+    {
+      "word": "Ms",
+      "start_ms": 56500,
+      "end_ms": 56760
+    },
+    {
+      "word": "Chen.",
+      "start_ms": 56760,
+      "end_ms": 57200
+    },
+    {
+      "word": "My",
+      "start_ms": 57980,
+      "end_ms": 58460
+    },
+    {
+      "word": "eyes",
+      "start_ms": 58460,
+      "end_ms": 58940
+    },
+    {
+      "word": "meet",
+      "start_ms": 58940,
+      "end_ms": 59360
+    },
+    {
+      "word": "hers.",
+      "start_ms": 59360,
+      "end_ms": 59840
+    },
+    {
+      "word": "My",
+      "start_ms": 60840,
+      "end_ms": 61080
+    },
+    {
+      "word": "mouth",
+      "start_ms": 61080,
+      "end_ms": 61560
+    },
+    {
+      "word": "feels",
+      "start_ms": 61560,
+      "end_ms": 62280
+    },
+    {
+      "word": "dry.",
+      "start_ms": 62280,
+      "end_ms": 62880
+    },
+    {
+      "word": "But",
+      "start_ms": 63860,
+      "end_ms": 64220
+    },
+    {
+      "word": "then",
+      "start_ms": 64220,
+      "end_ms": 64580
+    },
+    {
+      "word": "I",
+      "start_ms": 64580,
+      "end_ms": 64880
+    },
+    {
+      "word": "think",
+      "start_ms": 64880,
+      "end_ms": 65160
+    },
+    {
+      "word": "about",
+      "start_ms": 65160,
+      "end_ms": 65560
+    },
+    {
+      "word": "the",
+      "start_ms": 65560,
+      "end_ms": 65920
+    },
+    {
+      "word": "meaning",
+      "start_ms": 65920,
+      "end_ms": 66380
+    },
+    {
+      "word": "of",
+      "start_ms": 66380,
+      "end_ms": 66800
+    },
+    {
+      "word": "the",
+      "start_ms": 66800,
+      "end_ms": 66960
+    },
+    {
+      "word": "sentence.",
+      "start_ms": 66960,
+      "end_ms": 67440
+    },
+    {
+      "word": "I",
+      "start_ms": 68640,
+      "end_ms": 68820
+    },
+    {
+      "word": "put",
+      "start_ms": 68820,
+      "end_ms": 69020
+    },
+    {
+      "word": "up",
+      "start_ms": 69020,
+      "end_ms": 69260
+    },
+    {
+      "word": "my",
+      "start_ms": 69260,
+      "end_ms": 69480
+    },
+    {
+      "word": "hand.",
+      "start_ms": 69480,
+      "end_ms": 69940
+    },
+    {
+      "word": "Ms",
+      "start_ms": 71040,
+      "end_ms": 71700
+    },
+    {
+      "word": "Chen,",
+      "start_ms": 71700,
+      "end_ms": 72080
+    },
+    {
+      "word": "there's",
+      "start_ms": 72900,
+      "end_ms": 73400
+    },
+    {
+      "word": "a",
+      "start_ms": 73400,
+      "end_ms": 73500
+    },
+    {
+      "word": "mistake,",
+      "start_ms": 73500,
+      "end_ms": 74040
+    },
+    {
+      "word": "I",
+      "start_ms": 74600,
+      "end_ms": 74780
+    },
+    {
+      "word": "say.",
+      "start_ms": 74780,
+      "end_ms": 75120
+    },
+    {
+      "word": "That",
+      "start_ms": 76300,
+      "end_ms": 76680
+    },
+    {
+      "word": "sentence",
+      "start_ms": 76680,
+      "end_ms": 77260
+    },
+    {
+      "word": "is",
+      "start_ms": 77260,
+      "end_ms": 78000
+    },
+    {
+      "word": "from",
+      "start_ms": 78000,
+      "end_ms": 78360
+    },
+    {
+      "word": "Confucius.",
+      "start_ms": 78360,
+      "end_ms": 79480
+    },
+    {
+      "word": "Not",
+      "start_ms": 79960,
+      "end_ms": 80560
+    },
+    {
+      "word": "for",
+      "start_ms": 80560,
+      "end_ms": 80880
+    },
+    {
+      "word": "amentious.",
+      "start_ms": 80880,
+      "end_ms": 81600
+    },
+    {
+      "word": "Well",
+      "start_ms": 82420,
+      "end_ms": 83100
+    },
+    {
+      "word": "done,",
+      "start_ms": 83100,
+      "end_ms": 83700
+    },
+    {
+      "word": "Wong",
+      "start_ms": 84160,
+      "end_ms": 84420
+    },
+    {
+      "word": "Han.",
+      "start_ms": 84420,
+      "end_ms": 84740
+    },
+    {
+      "word": "In",
+      "start_ms": 85400,
+      "end_ms": 85660
+    },
+    {
+      "word": "fact,",
+      "start_ms": 85660,
+      "end_ms": 86100
+    },
+    {
+      "word": "this",
+      "start_ms": 86680,
+      "end_ms": 87100
+    },
+    {
+      "word": "is",
+      "start_ms": 87100,
+      "end_ms": 87360
+    },
+    {
+      "word": "my",
+      "start_ms": 87360,
+      "end_ms": 87620
+    },
+    {
+      "word": "first",
+      "start_ms": 87620,
+      "end_ms": 88080
+    },
+    {
+      "word": "lesson",
+      "start_ms": 88080,
+      "end_ms": 88800
+    },
+    {
+      "word": "for",
+      "start_ms": 88800,
+      "end_ms": 89100
+    },
+    {
+      "word": "all",
+      "start_ms": 89100,
+      "end_ms": 89400
+    },
+    {
+      "word": "of",
+      "start_ms": 89400,
+      "end_ms": 89580
+    },
+    {
+      "word": "you.",
+      "start_ms": 89580,
+      "end_ms": 89860
+    },
+    {
+      "word": "You",
+      "start_ms": 90560,
+      "end_ms": 90800
+    },
+    {
+      "word": "are",
+      "start_ms": 90800,
+      "end_ms": 90940
+    },
+    {
+      "word": "now",
+      "start_ms": 90940,
+      "end_ms": 91300
+    },
+    {
+      "word": "in",
+      "start_ms": 91300,
+      "end_ms": 91860
+    },
+    {
+      "word": "junior",
+      "start_ms": 91860,
+      "end_ms": 92360
+    },
+    {
+      "word": "high",
+      "start_ms": 92360,
+      "end_ms": 92840
+    },
+    {
+      "word": "school.",
+      "start_ms": 92840,
+      "end_ms": 93180
+    },
+    {
+      "word": "Learning",
+      "start_ms": 93900,
+      "end_ms": 94300
+    },
+    {
+      "word": "will",
+      "start_ms": 94300,
+      "end_ms": 94860
+    },
+    {
+      "word": "be",
+      "start_ms": 94860,
+      "end_ms": 95100
+    },
+    {
+      "word": "more",
+      "start_ms": 95100,
+      "end_ms": 95380
+    },
+    {
+      "word": "difficult.",
+      "start_ms": 95380,
+      "end_ms": 95780
+    },
+    {
+      "word": "You",
+      "start_ms": 96540,
+      "end_ms": 96900
+    },
+    {
+      "word": "need",
+      "start_ms": 96900,
+      "end_ms": 97140
+    },
+    {
+      "word": "to",
+      "start_ms": 97140,
+      "end_ms": 97380
+    },
+    {
+      "word": "think",
+      "start_ms": 97380,
+      "end_ms": 97800
+    },
+    {
+      "word": "more",
+      "start_ms": 97800,
+      "end_ms": 98340
+    },
+    {
+      "word": "in",
+      "start_ms": 98340,
+      "end_ms": 98700
+    },
+    {
+      "word": "your",
+      "start_ms": 98700,
+      "end_ms": 98900
+    },
+    {
+      "word": "learning.",
+      "start_ms": 98900,
+      "end_ms": 99300
+    },
+    {
+      "word": "Please",
+      "start_ms": 100000,
+      "end_ms": 100580
+    },
+    {
+      "word": "always",
+      "start_ms": 100580,
+      "end_ms": 101260
+    },
+    {
+      "word": "remember",
+      "start_ms": 101260,
+      "end_ms": 101800
+    },
+    {
+      "word": "this.",
+      "start_ms": 101800,
+      "end_ms": 102380
+    },
+    {
+      "word": "That's",
+      "start_ms": 103260,
+      "end_ms": 103780
+    },
+    {
+      "word": "really",
+      "start_ms": 103780,
+      "end_ms": 104240
+    },
+    {
+      "word": "an",
+      "start_ms": 104240,
+      "end_ms": 104580
+    },
+    {
+      "word": "important",
+      "start_ms": 104580,
+      "end_ms": 105220
+    },
+    {
+      "word": "lesson.",
+      "start_ms": 105220,
+      "end_ms": 105880
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 13.2
+  }
+}

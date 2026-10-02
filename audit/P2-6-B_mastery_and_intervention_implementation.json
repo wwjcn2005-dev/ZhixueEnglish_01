@@ -1,0 +1,160 @@
+{
+  "task": "P2-6-B 掌握判定与“诊断 → 巩固”最小实施",
+  "stage": "P2-6-B",
+  "generated_at": "2026-09-13",
+  "verdict": "PASS",
+  "spec_basis": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx（第二十二章）",
+  "upstream": "P2-6-A 只读审计（PASS WITH GAPS）",
+  "artifacts": {
+    "new": [
+      {"path": "structured/learning/mastery_rules_v1.json", "bytes": 2652,
+       "sha256_16": "E7EC99DB55DDCF04", "role": "机器可读工程参数"},
+      {"path": "learning/evidence_service.py", "bytes": 7562,
+       "sha256_16": "864536DEF937E4B3", "role": "有效证据 + 去重"},
+      {"path": "learning/mastery_service.py", "bytes": 5750,
+       "sha256_16": "8F7372A07E905EF4", "role": "掌握判定（五项条件）"},
+      {"path": "learning/diagnosis_service.py", "bytes": 4608,
+       "sha256_16": "14CD114724982C7D", "role": "分层诊断"},
+      {"path": "learning/intervention_service.py", "bytes": 9802,
+       "sha256_16": "4E12CB1AAF429C81", "role": "教材优先建议"},
+      {"path": "learning/test_p2_6b_mastery_diagnosis.py", "bytes": 17331,
+       "sha256_16": "5AAA906ED6D80D0B", "role": "31 项专项测试"}
+    ],
+    "modified": [
+      {"path": "web/flow.py", "sha256_16": "0534A2315299B738", "reason": "建议编排（只读）"},
+      {"path": "web/app.py", "sha256_16": "65261339A77534DD", "reason": "/review 传入建议"},
+      {"path": "web/ui.py", "sha256_16": "2FCF2FDE71D6DDB3", "reason": "/review 建议卡片 + 措辞"},
+      {"path": "workbench/vocabulary_learning_v01.py", "sha256_16": "2A0C73861BB1B705",
+       "reason": "§十九 措辞：学习证据 N 次（不代表掌握）"},
+      {"path": "workbench/test_vocabulary_learning_v01.py", "sha256_16": "EDDF14B86C39B58F",
+       "reason": "同步该措辞断言"},
+      {"path": "web/test_p2_5c_spec_sync.py", "sha256_16": "37782740174BE406",
+       "reason": "P2-5 六份 JSON 必须仍在（允许授权新增）"}
+    ],
+    "untouched": ["learning/learning_service.py", "learning/session_service.py",
+                  "learning/activity_service.py", "learning/behavior_service.py",
+                  "learning/vocabulary_service.py", "learning/resource_pool_service.py",
+                  "structured/learning/learning.db", "contentpack v5",
+                  "P2-4 成果", "P2-5 成果", "规范 V1.2", "android/"]
+  },
+  "rules": {
+    "file": "structured/learning/mastery_rules_v1.json",
+    "stable": {
+      "minimum_valid_evidence": 3,
+      "minimum_task_types": 2,
+      "minimum_natural_days": 2,
+      "recent_attempt_window": 3,
+      "recent_correct_minimum": 2,
+      "require_no_unresolved_current_error": true
+    },
+    "evidence": {
+      "counted_results": ["correct", "incorrect", "partial"],
+      "excluded_results": ["done", "skipped", null],
+      "contact_only_activity_types": ["study"],
+      "dedupe_key": ["learner_id", "item_id", "evidence_date", "task_type"],
+      "dedupe_keep": "latest",
+      "self_assessment_alone_cannot_raise": true,
+      "unevaluable_marking": "not_evaluable"
+    },
+    "diagnosis": {
+      "suspected_weak": {"minimum_errors": 2, "or_error_task_types": 2},
+      "textbook_review": {"minimum_partial_evidence": 2, "minimum_task_types": 2}
+    },
+    "intervention_order": ["reread_text", "replay_audio", "grammar_pointer",
+                           "model_text_review", "redo_exercise", "cross_section_practice"],
+    "ai_assist": "not_implemented",
+    "externalized": true,
+    "adjustable": true
+  },
+  "services": [
+    {"name": "evidence_service", "output": "有效判断证据 + 去重 + task_type 规范化",
+     "readonly": true},
+    {"name": "mastery_service", "output": "state（not_started/learning/needs_review/stable）+ 五项条件明细",
+     "readonly": true},
+    {"name": "diagnosis_service",
+     "output": "current_error → suspected_weak → needs_textbook_review + evidence_ids",
+     "readonly": true},
+    {"name": "intervention_service", "output": "教材优先建议（含定位或缺定位标记）",
+     "readonly": true, "auto_execute": false}
+  ],
+  "evidence_rules_verified": {
+    "done_skipped_null_excluded": true,
+    "contact_only_excluded": true,
+    "self_assessment_only_excluded": true,
+    "judged_result_counted": true,
+    "unevaluable_marked": true
+  },
+  "dedupe_verified": {
+    "rule": "同一 (learner,item,自然日,task_type) 最多 1 条独立证据",
+    "real_data_case": {"item_id": "FLTRP-EN-7A-2022CUR:V:C128262B65A0",
+                       "raw_records": 8, "independent_evidence": 1, "suppressed": 7}
+  },
+  "results_on_official_data": {
+    "items": 7,
+    "mastery_states": {"not_started": 6, "learning": 1, "stable": 0},
+    "display_sample": "学习证据 1 次（不代表掌握）",
+    "diagnosis_attention": [],
+    "suggestion_sample": {
+      "item_id": "FLTRP-EN-7A-2022CUR:X:1C4143922B1C",
+      "types": ["reread_text", "replay_audio", "redo_exercise", "cross_section_practice"],
+      "missing": []
+    }
+  },
+  "tests": {
+    "learning": {"before": 58, "new": 31, "total": 89, "fail": 0, "skip": 0},
+    "workbench": {"before": 50, "new": 0, "total": 50, "fail": 0, "skip": 0},
+    "web": {"before": 224, "new": 0, "total": 224, "fail": 0, "skip": 0},
+    "total": {"before": 332, "new": 31, "total": 363, "fail": 0, "skip": 0},
+    "baseline_preserved": true,
+    "isolation": "全部使用临时库副本；正式 learning.db mtime/SHA 测试前后一致"
+  },
+  "protection": {
+    "learning_db_sha256_16": "DBAB743BF6D8F0A3",
+    "learning_db_mtime": "2026-09-12T23:15",
+    "learning_db_schema_tables": 7,
+    "schema_migration": false,
+    "contentpack_sha256_16": "ACEBC8C29CF5D11B",
+    "spec_v12_sha256_16": "6D3595CF7D83879A",
+    "spec_v12_modified": false,
+    "android_modified": false,
+    "new_learning_records": 0,
+    "ai_calls": 0,
+    "network_calls": 0
+  },
+  "acceptance": {
+    "A_v12_unchanged": true,
+    "B_schema_no_migration": true,
+    "C_textbook_data_unchanged": true,
+    "D_ai_calls_zero": true,
+    "E_done_skipped_not_evidence": true,
+    "F_same_day_same_task_dedup": true,
+    "G_stable_requires_five_conditions": true,
+    "H_single_error_not_suspected_weak": true,
+    "I_official_data_no_false_stable": true,
+    "J_diagnosis_traceable": true,
+    "K_suggestions_textbook_first": true,
+    "L_no_fabricated_anchor": true,
+    "M_suggestions_child_initiated": true,
+    "N_no_ai_auto_decision": true,
+    "O_original_332_pass": true
+  },
+  "open_issues": [
+    {"id": "OI-1",
+     "issue": "同一学习对象跨任务类型证据难以自然形成（缺 item_id → LearningObject 映射）",
+     "impact": "stable 目前几乎不可达（正式数据 stable=0，符合验收 I）",
+     "next": "P2-6-C 设计学习对象映射；不得擅自修改 V1.2"}
+    , {"id": "OI-2", "issue": "“未处理当前错误”暂无处理动作机制",
+       "next": "需要“孩子点击后产生巩固动作记录”的设计"}
+    , {"id": "OI-3", "issue": "诊断阈值（错误≥2、partial≥2 跨任务）为工程初始参数",
+       "next": "用真实孩子使用数据校准 mastery_rules_v1.json"}
+    , {"id": "OI-4", "issue": "冻结池（当前错误/当前薄弱）与新诊断层并存",
+       "next": "后续评审是否统一为一个只读视图"}
+  ],
+  "next_stage_recommendation": [
+    "学习对象映射（item_id → LearningObject）",
+    "巩固动作记录（仅孩子点击后产生），闭合“未处理当前错误”",
+    "用真实数据校准参数（不改规范）",
+    "评审冻结池与诊断层是否合并"
+  ],
+  "stopped": "P2-6-B 完成后停止，未进入 P2-6-C"
+}

@@ -1,0 +1,1095 @@
+{
+  "rule_set": "P2-4-textbook-reconstruction-v1",
+  "count": 121,
+  "relations": [
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+      "question_id": "Q:ED00E089D7A1",
+      "activity_id": "A:E43CCEC75481",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+      "question_id": "Q:ED00E089D7A1",
+      "activity_id": "A:E43CCEC75481",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+      "question_id": "Q:00A578B5C08B",
+      "activity_id": "A:E43CCEC75481",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+      "question_id": "Q:080751A158DF",
+      "activity_id": "A:E43CCEC75481",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU02",
+      "question_id": "Q:294A659E5A01",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 0.99）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+      "question_id": "Q:70D9A121C3C3",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+      "question_id": "Q:70D9A121C3C3",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+      "question_id": "Q:937C82D5D984",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+      "question_id": "Q:A56DB676C92F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+      "question_id": "Q:8EC64F6DE2F8",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+      "question_id": "Q:60DB6FBE84EC",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU04",
+      "question_id": "Q:55F54A2C2E2E",
+      "activity_id": "A:40EEA0B8FBEF",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU04",
+      "question_id": "Q:55F54A2C2E2E",
+      "activity_id": "A:40EEA0B8FBEF",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU04",
+      "question_id": "Q:1293564FB607",
+      "activity_id": "A:40EEA0B8FBEF",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+      "question_id": "Q:0E9804E9389E",
+      "activity_id": "A:069B23C293AF",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+      "question_id": "Q:0E9804E9389E",
+      "activity_id": "A:069B23C293AF",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+      "question_id": "Q:5B76CCD6B713",
+      "activity_id": "A:069B23C293AF",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+      "question_id": "Q:228D6C6C3C81",
+      "activity_id": "A:069B23C293AF",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+      "question_id": "Q:4F95DB27D514",
+      "activity_id": "A:069B23C293AF",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+      "question_id": "Q:CF913D539581",
+      "activity_id": "A:02FCFB87E6C8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+      "question_id": "Q:0B5BD9532F52",
+      "activity_id": "A:02FCFB87E6C8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU07",
+      "question_id": "Q:2FBEDC009607",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU07",
+      "question_id": "Q:86D8B5EBF9F2",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+      "question_id": "Q:4C139EED8B7D",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.38，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+      "question_id": "Q:984AA10551A1",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.38，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+      "question_id": "Q:4C139EED8B7D",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.38，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+      "question_id": "Q:5F6F4CFF2FBC",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.67，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+      "question_id": "Q:1BD08B8FED4E",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.67，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+      "question_id": "Q:D7843891740D",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.67，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+      "question_id": "Q:092338F93488",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.67，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+      "question_id": "Q:6968E643CD3D",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.67，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+      "question_id": "Q:B5624DDE53A6",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+      "question_id": "Q:09987C696A1F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+      "question_id": "Q:CFAE1B9283E5",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+      "question_id": "Q:545EAD2714B5",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+      "question_id": "Q:6A133757CBBE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU12",
+      "question_id": "Q:19570DF94ACA",
+      "activity_id": "A:26AB1A30FD52",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU12",
+      "question_id": "Q:3A0D49BEA444",
+      "activity_id": "A:26AB1A30FD52",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU12",
+      "question_id": "Q:11A3684AEE57",
+      "activity_id": "A:26AB1A30FD52",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+      "question_id": "Q:CB78B3F25CC8",
+      "activity_id": "A:46D86F27A64D",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+      "question_id": "Q:6BE4FE7DFF83",
+      "activity_id": "A:46D86F27A64D",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+      "question_id": "Q:471FFC6481AF",
+      "activity_id": "A:46D86F27A64D",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+      "question_id": "Q:2ACC8C15EAA1",
+      "activity_id": "A:46D86F27A64D",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU14",
+      "question_id": "Q:4FCEBD9EE618",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU14",
+      "question_id": "Q:F53BFB6C374B",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU15",
+      "question_id": "Q:E804FB1376D9",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.32，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU15",
+      "question_id": "Q:E804FB1376D9",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.32，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU16",
+      "question_id": "Q:BCF9D3BAD78F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.61，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU16",
+      "question_id": "Q:C87BD95BAF10",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.61，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU18",
+      "question_id": "Q:54B457D6ED56",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU18",
+      "question_id": "Q:EEE156F8DA9F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU19",
+      "question_id": "Q:B7FD42A94A7B",
+      "activity_id": "A:2E0FB15EF0E1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+      "question_id": "Q:DD7ADB0B439C",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+      "question_id": "Q:657D52323A6B",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+      "question_id": "Q:80DA8682F6AA",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+      "question_id": "Q:C15DF77896EB",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+      "question_id": "Q:B2187A1FEA94",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+      "question_id": "Q:42F87A8978CB",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU21",
+      "question_id": "Q:0B597E629A60",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU21",
+      "question_id": "Q:6A586765A930",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU21",
+      "question_id": "Q:2326438E7911",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU21",
+      "question_id": "Q:842C44274CE3",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU22",
+      "question_id": "Q:742C1E0F7CB3",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.60，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU22",
+      "question_id": "Q:F79E5F6E8BF4",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.60，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU23",
+      "question_id": "Q:87DF52ABE1EE",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.60，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU23",
+      "question_id": "Q:E00E770CC669",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.60，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU23",
+      "question_id": "Q:F8A90A6AE60B",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.60，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU23",
+      "question_id": "Q:79AE5C38BB3E",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.60，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU25",
+      "question_id": "Q:93F2D3610B76",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU25",
+      "question_id": "Q:12576DE71596",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU25",
+      "question_id": "Q:A46040F60C0A",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU25",
+      "question_id": "Q:1E19462752BC",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU26",
+      "question_id": "Q:C6E93CF656BA",
+      "activity_id": "A:9ED922915588",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU26",
+      "question_id": "Q:8D9AEEC8977A",
+      "activity_id": "A:9ED922915588",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU26",
+      "question_id": "Q:B72C07ED43BA",
+      "activity_id": "A:9ED922915588",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU27",
+      "question_id": "Q:AC5D8BACAFF5",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 0.97）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU27",
+      "question_id": "Q:452C97C56AC5",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U3:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 0.97）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+      "question_id": "Q:96070C78C7C0",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+      "question_id": "Q:8CB09309F033",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+      "question_id": "Q:C2A3304A2881",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+      "question_id": "Q:FE56B98C3646",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+      "question_id": "Q:6B5EF88C389F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU28",
+      "question_id": "Q:0D5143F2961B",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU29",
+      "question_id": "Q:41A6B8C6288B",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.50，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU30",
+      "question_id": "Q:53030EDA1807",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU30",
+      "question_id": "Q:72C67670D08E",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU30",
+      "question_id": "Q:7620D4DDF232",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU32",
+      "question_id": "Q:8C91007E1CED",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU32",
+      "question_id": "Q:70767D5CEE55",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU32",
+      "question_id": "Q:C402CE560E8A",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU33",
+      "question_id": "Q:4E701CE16935",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A3",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU34",
+      "question_id": "Q:0C3A33305F45",
+      "activity_id": "A:594D9E31EF9E",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU34",
+      "question_id": "Q:74765AD85297",
+      "activity_id": "A:594D9E31EF9E",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU35",
+      "question_id": "Q:ECB99841B0EA",
+      "activity_id": "A:1803BD32748C",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU35",
+      "question_id": "Q:A2E86D891B43",
+      "activity_id": "A:1803BD32748C",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU35",
+      "question_id": "Q:4A1B031411BF",
+      "activity_id": "A:1803BD32748C",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU35",
+      "question_id": "Q:09B3113D8728",
+      "activity_id": "A:1803BD32748C",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU35",
+      "question_id": "Q:EB6ADE23EAA5",
+      "activity_id": "A:1803BD32748C",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU35",
+      "question_id": "Q:A2E86D891B43",
+      "activity_id": "A:1803BD32748C",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU36",
+      "question_id": "Q:C1FF5C336111",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A8",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.51，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU37",
+      "question_id": "Q:D3877AA1236B",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.66，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU37",
+      "question_id": "Q:ADA6C096B8D9",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.66，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU39",
+      "question_id": "Q:1BABECCAAA45",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU39",
+      "question_id": "Q:83FE0FD56202",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU40",
+      "question_id": "Q:CB3F57DFF18D",
+      "activity_id": "A:7EB38E889232",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU40",
+      "question_id": "Q:2B50DC0FA515",
+      "activity_id": "A:7EB38E889232",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU41",
+      "question_id": "Q:6CAAB605880F",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU41",
+      "question_id": "Q:77A478960D94",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:READING_FOR_WRITING:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU42",
+      "question_id": "Q:53C005C8BC75",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:UNDERSTANDING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU43",
+      "question_id": "Q:B5211020FC06",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.66，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU43",
+      "question_id": "Q:FBA6C1676E5A",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A1",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令是教材指令前缀（相似度 0.66，教材另有补充句）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU45",
+      "question_id": "Q:C3EF481128B8",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU45",
+      "question_id": "Q:3FF0C72695FD",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A2",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU46",
+      "question_id": "Q:F81A0BA86AF9",
+      "activity_id": "A:FE914DC224A7",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU46",
+      "question_id": "Q:099F1D396F70",
+      "activity_id": "A:FE914DC224A7",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU46",
+      "question_id": "Q:C6E2AFEB5523",
+      "activity_id": "A:FE914DC224A7",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU46",
+      "question_id": "Q:766E5A25712B",
+      "activity_id": "A:FE914DC224A7",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU46",
+      "question_id": "Q:8AF24C0EBECB",
+      "activity_id": "A:FE914DC224A7",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU47",
+      "question_id": "Q:BA4B53BCEAAE",
+      "activity_id": "A:D64761A5545D",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU47",
+      "question_id": "Q:D0DBB7A62290",
+      "activity_id": "A:D64761A5545D",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    },
+    {
+      "audio_id": "FLTRP-EN-7A-2022CUR:AU47",
+      "question_id": "Q:CC0D4A10A120",
+      "activity_id": "A:D64761A5545D",
+      "scope": "activity",
+      "note": "整段活动音频，教材未提供可靠分句切分点；不伪造 question 级切分",
+      "evidence": "文件名指令与教材指令一致（文本相似度 1.00）",
+      "review_status": "OK"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "P1-09-C",
+  "manifest_before": "5C4E152071EDD86970E062122F8624318D91FE749EC80AD7D5AE9AD20F3FDE0E",
+  "manifest_after": "5C4E152071EDD86970E062122F8624318D91FE749EC80AD7D5AE9AD20F3FDE0E",
+  "file_count_before": 1146,
+  "file_count_after": 1146,
+  "added": [],
+  "removed": [],
+  "modified": [],
+  "changed": [],
+  "formal_assets_changed": false,
+  "pycache_changes": []
+}

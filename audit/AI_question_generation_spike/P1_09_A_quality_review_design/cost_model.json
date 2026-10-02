@@ -1,0 +1,170 @@
+{
+  "measurement_basis": {
+    "generation": [
+      {
+        "tag": "S1",
+        "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+        "questions": 6,
+        "prompt_tokens": 11387,
+        "completion_tokens": 12021,
+        "reasoning_tokens": 10823,
+        "total_tokens": 23408,
+        "latency_ms": 176546,
+        "prompt_chars": 35379,
+        "chars_per_prompt_token": 3.107
+      },
+      {
+        "tag": "S2",
+        "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+        "questions": 5,
+        "prompt_tokens": 9448,
+        "completion_tokens": 7852,
+        "reasoning_tokens": 7111,
+        "total_tokens": 17300,
+        "latency_ms": 111300,
+        "prompt_chars": 29874,
+        "chars_per_prompt_token": 3.162
+      },
+      {
+        "tag": "S3",
+        "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+        "questions": 6,
+        "prompt_tokens": 10812,
+        "completion_tokens": 11796,
+        "reasoning_tokens": 10884,
+        "total_tokens": 22608,
+        "latency_ms": 161473,
+        "prompt_chars": 33538,
+        "chars_per_prompt_token": 3.102
+      },
+      {
+        "tag": "S4",
+        "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+        "questions": 5,
+        "prompt_tokens": 9928,
+        "completion_tokens": 9397,
+        "reasoning_tokens": 8706,
+        "total_tokens": 19325,
+        "latency_ms": 133227,
+        "prompt_chars": 29034,
+        "chars_per_prompt_token": 2.924
+      }
+    ],
+    "generation_calibration_p1_05d": {
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "questions": 10,
+      "prompt_tokens": 10540,
+      "completion_tokens": 12434,
+      "reasoning_tokens": 10481,
+      "total_tokens": 22974,
+      "latency_ms": 172875,
+      "max_tokens": 16384
+    },
+    "chars_per_prompt_token_mean": 3.074,
+    "note": "chars/token 由 4 次真实 P1-06 请求实测标定，不是假设值。"
+  },
+  "review_payload_per_section": {
+    "S1": {
+      "questions": 6,
+      "review_payload_chars": 1561,
+      "estimated_prompt_tokens": 508
+    },
+    "S2": {
+      "questions": 5,
+      "review_payload_chars": 1050,
+      "estimated_prompt_tokens": 342
+    },
+    "S3": {
+      "questions": 6,
+      "review_payload_chars": 1297,
+      "estimated_prompt_tokens": 422
+    },
+    "S4": {
+      "questions": 5,
+      "review_payload_chars": 1014,
+      "estimated_prompt_tokens": 330
+    }
+  },
+  "estimates": {
+    "review_instruction_chars": 2600,
+    "output_tokens_per_question": 220,
+    "output_tokens_per_section_batch": 480,
+    "reasoning_cost": "未单独建模；复核任务远短于生成，实际 reasoning 消耗属 P1-09-B 待实测项"
+  },
+  "strategies": [
+    {
+      "strategy": "1_per_question_call",
+      "api_calls": 22,
+      "input_tokens": 20210,
+      "output_tokens": 4840,
+      "note": "每条题目单独一次调用；instruction 重复 22 次；调用次数最多"
+    },
+    {
+      "strategy": "2_per_section_batch_call",
+      "api_calls": 4,
+      "input_tokens": 4985,
+      "output_tokens": 1920,
+      "note": "每 Section 一次批量复核，与以 Section 为生成边界一致"
+    },
+    {
+      "strategy": "3_only_program_PASS",
+      "api_calls": 4,
+      "input_tokens": 4985,
+      "output_tokens": 1920,
+      "note": "本数据集 program PASS=22/22，与方案 2 相同；收益取决于被程序拦下的题数"
+    },
+    {
+      "strategy": "4_only_high_risk_triage",
+      "api_calls": 1,
+      "input_tokens": 1919,
+      "output_tokens": 2420,
+      "note": "只批量复核 triage 命中的 11 题；triage 规则见 triage_result.json"
+    },
+    {
+      "strategy": "4b_only_high_risk_triage_narrow",
+      "api_calls": 1,
+      "input_tokens": 1334,
+      "output_tokens": 1100,
+      "note": "窄口径 triage（T1/T2/T3/T5，不含 T4）命中 5 题；T4 会连合格题一起命中"
+    }
+  ],
+  "per_question_comparison": {
+    "generation_tokens_per_question": 3756.4,
+    "review_tokens_per_question_strategy1": 1138.6,
+    "review_tokens_per_question_strategy2": 313.9,
+    "strategy1_pct_of_generation": 30.3,
+    "strategy2_pct_of_generation": 8.4,
+    "note": "以题目为单位比较；调用次数与延迟差异主要来自调用数量而不是 token 总量。"
+  },
+  "triage": {
+    "flagged_questions_broad": 11,
+    "flagged_ids_broad": [
+      "AIQ:04CC9B1CF690",
+      "AIQ:1B3AF72923C4",
+      "AIQ:1BA260727793",
+      "AIQ:3179968E3E74",
+      "AIQ:5B4C80443D5F",
+      "AIQ:6721EC6C5D1F",
+      "AIQ:75AAEBFE06DF",
+      "AIQ:7EBCDBC29563",
+      "AIQ:A9D1F3EC6020",
+      "AIQ:BD59C5958D45",
+      "AIQ:CD8B21681B4C"
+    ],
+    "flagged_questions_narrow": 5,
+    "flagged_ids_narrow": [
+      "AIQ:04CC9B1CF690",
+      "AIQ:1B3AF72923C4",
+      "AIQ:1BA260727793",
+      "AIQ:75AAEBFE06DF",
+      "AIQ:7EBCDBC29563"
+    ],
+    "total_questions": 22
+  },
+  "totals": {
+    "generation_api_calls_p1_06": 4,
+    "questions_p1_06": 22,
+    "generation_total_tokens_p1_06": 82641,
+    "generation_total_latency_ms_p1_06": 582546
+  }
+}

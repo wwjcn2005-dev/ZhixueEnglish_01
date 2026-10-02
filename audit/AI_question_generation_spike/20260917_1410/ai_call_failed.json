@@ -1,0 +1,28 @@
+{
+ "model": "qwen3:8b",
+ "endpoint": "http://127.0.0.1:11434/api/chat",
+ "http_status": 500,
+ "elapsed_s": 58.8,
+ "attempts": 1,
+ "outcome": "FAILED — no model output produced",
+ "cause": "本机 Ollama 运行时环境问题：模型在加载/预热阶段崩溃，未产生任何推理输出",
+ "evidence_from_ollama_server_log": [
+  "C:\\a\\ollama\\ollama\\build\\llama-server-cuda_v12\\_deps\\llama_cpp-src\\ggml\\src\\ggml-cuda\\ggml-cuda.cu:108: CUDA error",
+  "CUDA error: the provided PTX was compiled with an unsupported toolchain.",
+  "current device: 0, in function ggml_cuda_kernel_can_use_pdl",
+  "llama-server terminated: exit status 0xc0000409 (stack buffer overrun)",
+  "Load failed  model=D:\\Ollama\\Models\\blobs\\sha256-a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+  "[GIN] 13:54:00 | 500 | 58.8s | POST \"/api/chat\""
+ ],
+ "not_caused_by": [
+  "提示词内容（系统提示未被执行，模型未加载成功）",
+  "教材上下文（input_context.json 已成功组装，17,755 字符，未被读取）",
+  "数据权限或路径问题（contentpack / content_block / learning_item / 证据包读取均正常）"
+ ],
+ "impact": "本次允许的唯一一次 AI 调用被环境故障消耗，未获得任何生成结果，因此无法评估生成质量",
+ "candidate_fix_for_next_attempt": {
+  "option": "同一 context + 同一提示词，改用 CPU 推理（options.num_gpu = 0）",
+  "reason": "崩溃发生在 CUDA 内核加载阶段；CPU 路径可绕过 PTX/驱动不兼容",
+  "expected_cost": "仍为 1 次 AI 生成调用（同一次生成，非新增生成需求），CPU 推理耗时预计数分钟"
+ }
+}

@@ -1,0 +1,63 @@
+{
+  "stage": "P1-09-B",
+  "this_run_real": {
+    "api_calls": 1,
+    "retry_count": 0,
+    "model": "deepseek-v4-pro",
+    "temperature": 0.2,
+    "max_tokens": 16384,
+    "reasoning_effort": "low",
+    "prompt_version": "P1-09-B-v1",
+    "finish_reason": "stop",
+    "latency_ms": 51050,
+    "questions_reviewed": 10,
+    "prompt_tokens": 2104,
+    "completion_tokens": 7042,
+    "reasoning_tokens": 5523,
+    "total_tokens": 9146,
+    "tokens_per_question": 914.6
+  },
+  "variants": {
+    "batch_per_section_like": {
+      "api_calls": 1,
+      "prompt_tokens": 2104,
+      "completion_tokens": 7042,
+      "reasoning_tokens": 5523,
+      "total_tokens": 9146,
+      "latency_ms": 51050,
+      "tokens_per_question": 914.6,
+      "output_tokens_per_question": 704.2
+    },
+    "per_question_estimate_only": {
+      "api_calls": 10,
+      "input_tokens": 15463,
+      "output_tokens": 7042,
+      "note": "理论估算，未实际执行；instruction 每条题目重复一次",
+      "total_tokens": 22505,
+      "tokens_per_question": 2250.5
+    },
+    "only_program_PASS": {
+      "api_calls": 1,
+      "note": "当前生产流程默认只把程序验证 PASS 的题送审；本批 22 题 program PASS=22/22，因此这一档在本数据集上与批量审核完全相同，过滤不出任何题"
+    }
+  },
+  "comparison_with_generation": {
+    "generation_tokens_per_question_p1_06": 3756.4,
+    "batch_review_tokens_per_question": 914.6,
+    "batch_review_pct_of_generation": 24.3,
+    "per_question_review_pct_of_generation": 59.9,
+    "note": "生成基准 = P1-06 4 次真实调用的 82,641 tokens / 22 题。"
+  },
+  "estimate_vs_actual": {
+    "p1_09_a_estimate_input_tokens": 4985,
+    "p1_09_a_estimate_output_tokens": 1920,
+    "p1_09_a_estimate_total_tokens": 6905,
+    "actual_total_tokens": 9146,
+    "actual_vs_estimate_ratio": 1.32,
+    "note": "P1-09-A 的估算把输出按每题 220 tokens 计，没有给 reasoning 留预算；本次实测 reasoning 占 completion 的 78%，因此输出被低估约 3.2 倍。"
+  },
+  "corrected_unit_cost": {
+    "review_tokens_per_question_actual": 914.6,
+    "review_vs_generation_pct_actual": 24.3
+  }
+}

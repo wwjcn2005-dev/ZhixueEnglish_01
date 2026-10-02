@@ -1,0 +1,70 @@
+{
+  "review_version": "P1-09-F-v1",
+  "grade_context": "外研版初中英语 七年级上册（初一第一学期）",
+  "items": [
+    {
+      "question_id": "FIX-C1",
+      "question_type": "vocab_choice",
+      "question_text": "Grandpa likes playing the erhu in the park with his ___.",
+      "options": [
+        {
+          "option": "A",
+          "text": "friends"
+        },
+        {
+          "option": "B",
+          "text": "students"
+        },
+        {
+          "option": "C",
+          "text": "parents"
+        },
+        {
+          "option": "D",
+          "text": "teachers"
+        }
+      ],
+      "current_textbook_answer": "friends",
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "textbook_location": "Unit 2 · Understanding ideas · 教材第 32 页（Activity 1 课文）",
+      "textbook_evidence": [
+        {
+          "textbook_page": 32,
+          "text": "hobby. But it’s a different kind of music.  He likes playing the erhu in the park with his friends. They sing Beijing opera together. There are many fans of them."
+        }
+      ]
+    },
+    {
+      "question_id": "FIX-C2",
+      "question_type": "vocab_choice",
+      "question_text": "Ms Chen writes a ___ on the blackboard.",
+      "options": [
+        {
+          "option": "A",
+          "text": "sentence"
+        },
+        {
+          "option": "B",
+          "text": "word"
+        },
+        {
+          "option": "C",
+          "text": "picture"
+        },
+        {
+          "option": "D",
+          "text": "name"
+        }
+      ],
+      "current_textbook_answer": "sentence",
+      "answer_standard": "TEXTBOOK_ANCHORED",
+      "textbook_location": "Unit 1 · Understanding ideas · 教材第 17 页（Activity 2 课文）",
+      "textbook_evidence": [
+        {
+          "textbook_page": 17,
+          "text": "1\t Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.” "
+        }
+      ]
+    }
+  ]
+}

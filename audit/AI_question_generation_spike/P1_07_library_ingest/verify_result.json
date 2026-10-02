@@ -1,0 +1,91 @@
+{
+ "stage": "P1-07",
+ "mode": "verify",
+ "library_sha256": "F74CA83F7C8A98F2A4A2E672E7BA61ECC34CBFC2338AC10064BF18C0FFD1FD6A",
+ "user_version": 2,
+ "integrity_check": "ok",
+ "foreign_key_check": [],
+ "counts": {
+  "generation_run": 12,
+  "ai_question": 21,
+  "question_evidence": 22,
+  "question_learning_object": 37,
+  "question_validation": 21,
+  "question_event": 41
+ },
+ "lifecycle_counts": {
+  "GENERATED": 0,
+  "VALIDATED": 0,
+  "PENDING_REVIEW": 21,
+  "APPROVED": 0,
+  "ACTIVE": 0,
+  "REJECTED": 0,
+  "DISABLED": 0
+ },
+ "event_counts": {
+  "GENERATED": 0,
+  "VALIDATED": 21,
+  "PENDING_REVIEW": 19,
+  "REVIEW_APPROVED": 0,
+  "REVIEW_REJECTED": 0,
+  "ACTIVATED": 0,
+  "DISABLED": 0,
+  "MARKED_STALE": 1
+ },
+ "problems": [],
+ "existing_two_questions": {
+  "AIQ:3179968E3E74": {
+   "question_id": "AIQ:3179968E3E74",
+   "lifecycle_status": "PENDING_REVIEW",
+   "correct_answer": "polite",
+   "question_fingerprint": "3179968E3E7400B28A2312579728FF0B6DDA54DB3B50C16761445908D12A63F1",
+   "stale": 0,
+   "stale_reason": null
+  },
+  "AIQ:7EBCDBC29563": {
+   "question_id": "AIQ:7EBCDBC29563",
+   "lifecycle_status": "PENDING_REVIEW",
+   "correct_answer": "sentence",
+   "question_fingerprint": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD",
+   "stale": 1,
+   "stale_reason": "VALIDATOR_CHANGED"
+  }
+ },
+ "existing_two_unchanged": true,
+ "protection": {
+  "learning.db": {
+   "sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+   "matches_baseline": true
+  },
+  "contentpack": {
+   "sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39",
+   "matches_baseline": true
+  },
+  "validator_v2": {
+   "sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+   "matches_baseline": true
+  },
+  "validator_v3": {
+   "sha256": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+   "matches_baseline": true
+  },
+  "P1-06_S1": {
+   "sha256": "D4520E288D7651B59B59C0F75F09FBE87E6B9AB0ACB9D2F900647E1210856BA3",
+   "matches_baseline": true
+  },
+  "P1-06_S2": {
+   "sha256": "4F705951CAF743BD62AD07C175C0EE06F491B4C4EE7B2F0D760E2372ADFAAA1E",
+   "matches_baseline": true
+  },
+  "P1-06_S3": {
+   "sha256": "4F9679CAFF393E6CD33D6FDC6C957563A852ECE1C569180C383F0EB55C7D08AC",
+   "matches_baseline": true
+  },
+  "P1-06_S4": {
+   "sha256": "5D1C21032B1C5F4CC23AACD2120EA297F6FF5776BBB36C18529A4FFF946E8B87",
+   "matches_baseline": true
+  }
+ },
+ "protection_ok": true,
+ "verdict": "PASS"
+}

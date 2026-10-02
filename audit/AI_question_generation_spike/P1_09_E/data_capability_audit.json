@@ -1,0 +1,440 @@
+{
+  "stage": "P1-09-E",
+  "ai_calls": 0,
+  "resources": {
+    "textbook_structure_v2": {
+      "path": "structured/textbook/textbook_structure_v2.json",
+      "size": 105553,
+      "top_keys": [
+        "book",
+        "counts",
+        "units"
+      ],
+      "counts": {
+        "units": 7,
+        "sections": 40,
+        "activities": 157,
+        "questions": 360,
+        "listening_activities": 21,
+        "blank_lines": 850
+      },
+      "unit_keys": [
+        "grammar_pointers",
+        "kind",
+        "pages",
+        "phonetics_in_use",
+        "sections",
+        "textbook_pages",
+        "title",
+        "unit_code",
+        "unit_id"
+      ],
+      "section_keys": [
+        "activities",
+        "activity_count",
+        "activity_no_list",
+        "pdf_page_start",
+        "section_id",
+        "section_key",
+        "textbook_page_start",
+        "title"
+      ],
+      "activity_keys": [
+        "activity_id",
+        "activity_no",
+        "audio_id",
+        "blank_count",
+        "instruction",
+        "listening_icon",
+        "pdf_page",
+        "question_count",
+        "question_type",
+        "textbook_page"
+      ],
+      "question_keys": [],
+      "usable_for_candidate_pool": "indirect",
+      "note": "提供 Unit/Section/Activity/Question 的层级与定位；不含答案、不含词性。"
+    },
+    "exercise_catalog_v3": {
+      "path": "structured/exercises/exercise_catalog_v3.json",
+      "size": 416453,
+      "top_keys": [
+        "activities",
+        "counts",
+        "exercises",
+        "generated_at",
+        "pdf_sha256",
+        "rule_set",
+        "task"
+      ],
+      "counts": {
+        "units": 7,
+        "sections": 40,
+        "activities": 157,
+        "questions": 360,
+        "listening_activities": 21,
+        "blank_lines": 850
+      },
+      "exercise_keys": [
+        "activity_id",
+        "answer_note",
+        "answer_status",
+        "audio_evidence",
+        "audio_filename",
+        "audio_id",
+        "audio_required",
+        "audio_status",
+        "blanks",
+        "check_items",
+        "exercise_id",
+        "exercise_no",
+        "in_contentpack_activity",
+        "instruction",
+        "listening_icon",
+        "needs_review",
+        "options",
+        "pdf_page",
+        "question_type",
+        "questions",
+        "section",
+        "section_id",
+        "source_evidence",
+        "textbook_page",
+        "type",
+        "unit"
+      ],
+      "question_type_distribution": {
+        "match": 9,
+        "fill": 45,
+        "speaking": 16,
+        "short_answer": 34,
+        "choice": 12,
+        "other": 14,
+        "writing": 7,
+        "reflection": 18,
+        "order": 1,
+        "judge": 1
+      },
+      "answer_status_distribution": {
+        "NO_RELIABLE_SOURCE": 157
+      },
+      "check_items_present": 22,
+      "options_present": 35,
+      "blank_line_total": 323,
+      "usable_for_candidate_pool": "yes_for_exercise_types",
+      "note": "check_items 是教材自带的匹配/清单型答案项（例如文具词），可作为候选来源之一；但 answer_status 全部为 NO_RELIABLE_SOURCE。"
+    },
+    "exercise_question_relations_v3": {
+      "path": "structured/exercises/exercise_question_relations_v3.json",
+      "size": 670457,
+      "count": 360,
+      "top_keys": [
+        "count",
+        "questions",
+        "rule_set"
+      ],
+      "question_keys": [
+        "activity_id",
+        "activity_no",
+        "ai_grading_ready",
+        "answer_source",
+        "blank_count",
+        "options",
+        "pdf_page",
+        "question_id",
+        "question_no",
+        "question_type",
+        "related_audio",
+        "related_image",
+        "related_text",
+        "related_vocabulary",
+        "review_status",
+        "section",
+        "section_id",
+        "text",
+        "textbook_page",
+        "unit"
+      ],
+      "question_type_distribution": {
+        "match": 14,
+        "fill": 124,
+        "speaking": 22,
+        "short_answer": 111,
+        "choice": 30,
+        "other": 20,
+        "writing": 16,
+        "reflection": 18,
+        "order": 2,
+        "judge": 3
+      },
+      "answer_source_distribution": {
+        "NO_RELIABLE_SOURCE": 360
+      },
+      "related_vocabulary_present": 303,
+      "related_vocabulary_avg": 4.2,
+      "related_vocabulary_max": 20,
+      "related_text_present": 315,
+      "usable_for_candidate_pool": "yes_vocabulary_links",
+      "note": "related_vocabulary 是教材问答 → 词汇的正式关联（303/360），是候选池最直接的现成来源；但它只给词，不给词性、不给屈折形式。"
+    },
+    "textbook_evidence_map_v1": {
+      "path": "structured/ai/textbook_evidence_map_v1.json",
+      "size": 1484385,
+      "package_count": 360,
+      "package_keys": [
+        "ai_rules",
+        "answer_note",
+        "answer_source",
+        "original_question",
+        "question_id",
+        "related_grammar",
+        "related_image",
+        "related_listening",
+        "related_text",
+        "related_vocabulary",
+        "scope",
+        "textbook_page_label",
+        "textbook_reference"
+      ],
+      "answer_source_distribution": {
+        "NO_RELIABLE_SOURCE": 360
+      },
+      "ai_rules_sample": [
+        "只依据本包内教材证据判断",
+        "答案与所谓标准答案不同不必然判错，需分析是否符合教材事实",
+        "教材证据不足时明确说明，而不是给出确定结论",
+        "听力题以对应官方音频与教材听力内容为准",
+        "阅读题以当前阅读文本为准，语法题以当前 Unit/Section 语境为准"
+      ],
+      "related_vocabulary_present": 303,
+      "related_text_kinds": {
+        "exercise_item": 2034,
+        "dialogue": 73,
+        "heading": 4
+      },
+      "usable_for_candidate_pool": "yes_vocabulary_and_text_links",
+      "note": "每个题一个证据包，含 related_text（block 级）与 related_vocabulary；answer_source 全部 NO_RELIABLE_SOURCE。"
+    },
+    "contentpack_v5": {
+      "path": "structured/contentpack/v5/FLTRP-EN-7A-2022CUR.sqlite",
+      "size": 2715648,
+      "learning_item_by_type": {
+        "vocabulary": 288,
+        "exercise": 157,
+        "sentence_pattern": 52,
+        "phrase": 23
+      },
+      "missing_field_by_type": {
+        "exercise": {
+          "no_lemma": 157,
+          "no_surface_form": 0,
+          "no_part_of_speech": 157,
+          "no_meaning_zh": 157
+        },
+        "phrase": {
+          "no_lemma": 0,
+          "no_surface_form": 0,
+          "no_part_of_speech": 23,
+          "no_meaning_zh": 2
+        },
+        "sentence_pattern": {
+          "no_lemma": 0,
+          "no_surface_form": 0,
+          "no_part_of_speech": 52,
+          "no_meaning_zh": 51
+        },
+        "vocabulary": {
+          "no_lemma": 0,
+          "no_surface_form": 0,
+          "no_part_of_speech": 25,
+          "no_meaning_zh": 0
+        }
+      },
+      "textbook_emphasis_distribution": {
+        "null": 163,
+        "BOLD": 620,
+        "PLAIN": 136,
+        "UNKNOWN": 57
+      },
+      "learning_requirement_distribution": {
+        "CORE": 404,
+        "NEED_REVIEW": 52,
+        "RECOGNITION": 64
+      },
+      "derivation_type_distribution": {
+        "FROM_COMMUNICATION_BANK": 17,
+        "FROM_TEXTBOOK_ACTIVITY": 157,
+        "FROM_TEXTBOOK_LIST": 309,
+        "FROM_TEXTBOOK_NOTE": 3,
+        "FROM_UNIT_USEFUL_EXPRESSIONS": 34
+      },
+      "vocabulary_total": 288,
+      "vocabulary_with_BOLD": 245,
+      "vocabulary_part_of_speech_distribution": {
+        "n": 136,
+        "v": 60,
+        "adj": 42,
+        "null": 25,
+        "adv": 10,
+        "pron": 9,
+        "prep": 6
+      },
+      "learning_item_columns": [
+        "item_id",
+        "textbook_id",
+        "snapshot_id",
+        "item_type",
+        "surface_form",
+        "lemma",
+        "phonetic",
+        "part_of_speech",
+        "meaning_zh",
+        "derivation_type",
+        "review_status",
+        "canonical_text",
+        "display_text",
+        "schema_version",
+        "content_hash",
+        "created_at",
+        "updated_at",
+        "learning_requirement",
+        "requirement_conflict_status"
+      ],
+      "source_ref_columns": [
+        "source_ref_id",
+        "item_id",
+        "item_type",
+        "source_type",
+        "source_id",
+        "quote_raw",
+        "textbook_id",
+        "snapshot_id",
+        "textbook_emphasis",
+        "emphasis_source_list",
+        "emphasis_evidence"
+      ],
+      "usable_for_candidate_pool": "yes_primary",
+      "note": "learning_item 同时有 lemma / surface_form / part_of_speech / learning_requirement / derivation_type；source_ref 带 textbook_emphasis(BOLD) 与 emphasis_source_list（Words and expressions / Vocabulary A-Z）。这是候选池唯一同时具备词性 + 重点词标记的来源。"
+    },
+    "learning_db": {
+      "path": "structured/learning/learning.db",
+      "size": 118784,
+      "tables": [
+        "learner",
+        "learning_record",
+        "learning_session",
+        "learning_task",
+        "mastery_state",
+        "schema_migration",
+        "task_item"
+      ],
+      "row_counts": {
+        "learner": 1,
+        "learning_record": 21,
+        "learning_session": 33,
+        "learning_task": 33,
+        "mastery_state": 7,
+        "schema_migration": 2,
+        "task_item": 33
+      },
+      "usable_for_candidate_pool": "no",
+      "note": "学习行为数据；与答案唯一性判定无关，只作为边界确认。"
+    },
+    "question_library_db": {
+      "path": "structured/ai/question_library.db",
+      "size": 180224,
+      "user_version": 2,
+      "tables": [
+        "ai_question",
+        "generation_run",
+        "question_event",
+        "question_evidence",
+        "question_learning_object",
+        "question_validation"
+      ],
+      "question_type_distribution": {
+        "fill": 9,
+        "reading_choice": 4,
+        "reading_judge": 2,
+        "vocab_choice": 6
+      },
+      "answer_support_distribution": {
+        "EXACT": 18,
+        "VERIFIABLE_REPHRASE": 3
+      },
+      "storage_available_for_candidates": "none_today",
+      "note": "question_validation 只能存 validator 结论与 4 值 answer_support_type，没有候选答案的位置（详见 §11）。"
+    },
+    "evidence_assembly_p1_08_b": {
+      "path": "audit/AI_question_generation_spike/P1_08_B_evidence_assembly_fix/evidence_assembly.py",
+      "exists": true,
+      "size": 7618,
+      "public_api": [
+        "section_page_ranges",
+        "pages_of_section",
+        "blocks_of_section",
+        "activities_of_section",
+        "build_section_evidence",
+        "blocks_by_activity_only"
+      ],
+      "usable_for_candidate_pool": "yes_context",
+      "note": "可从 contentpack 只读重建 Section / Activity 级连续正文，是候选判定的上下文来源，P1-09-C 已采用。"
+    },
+    "p1_09_c_contracts": {
+      "files": {
+        "README.md": 3450,
+        "answer_uniqueness_contract_v1.md": 7939,
+        "p1_09_c_report.md": 17903,
+        "quality_dimensions_contract_v1.md": 8366,
+        "review_context_contract_v1.md": 9395
+      },
+      "usable_for_candidate_pool": "yes_contract_baseline"
+    },
+    "p1_09_d_boundary_validation": {
+      "fixtures": 15,
+      "dimension_matches": 36,
+      "dimension_checks": 41,
+      "answer_unique_false_negative": 2,
+      "by_category": {
+        "A_true_english_error": 2,
+        "B_broken_distractor": 2,
+        "C_true_second_answer": 0,
+        "D_reality_conflict": 2,
+        "E_insufficient_context": 2,
+        "F_high_value_normal": 2,
+        "G_mechanical_but_valid": 2
+      },
+      "usable_for_candidate_pool": "yes_fixtures"
+    },
+    "validator_and_gates": {
+      "validator_v2": {
+        "path": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\20260917_1520_validator_fix\\validator_v2.py",
+        "helpers": [
+          "tokens",
+          "_lemmas",
+          "_same_lemma",
+          "answer_support",
+          "out_of_scope",
+          "checked_language",
+          "build_whitelist"
+        ],
+        "inflection_support": "normalize_only(_lemmas: ies/es/s/ed/ing 归并)"
+      },
+      "validator_v3": {
+        "path": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\P1_04_rule_fixes\\validator_v3.py",
+        "helpers": [
+          "type_rules",
+          "exact_print_risk",
+          "validate_question",
+          "validate_batch"
+        ]
+      },
+      "candidate_gate_p1_07": {
+        "path": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\P1_07_library_ingest\\build_candidates.py"
+      },
+      "fingerprint": "ai_question.question_fingerprint（64 hex，唯一索引）",
+      "usable_for_candidate_pool": "yes_reusable_helpers",
+      "note": "validator_v2._lemmas 只能把词形归并到词元方向，不能反向生成屈折形式；候选池需要另外的词形生成规则。"
+    }
+  }
+}

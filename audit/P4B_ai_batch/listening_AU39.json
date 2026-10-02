@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 5\nSECTION: DEVELOPING_IDEAS\nACTIVITY_AUDIO: 39_Unit 5_Developing ideas _2 Listen again and complete Jason's notes for the vlog.mp3\nOFFICIAL AUDIO TRANSCRIPT SEGMENTS (id, time range, text):\n[ASR:AU39:001 0-7380ms] Activity 2 Listen again and complete Jason's notes for the\n[ASR:AU39:002 7380-7780ms] vlog.\n[ASR:AU39:003 10320-20980ms] Welcome to Amazing Plants. This is Jason. I'm at the Sweet Corn Festival in Mexico. Look\n[ASR:AU39:004 20980-30480ms] at this ear of corn. Can you believe the size of it? But it's not the biggest. The biggest\n[ASR:AU39:005 30480-39780ms] one is nearly 40 centimetres long. People started growing corn in Mexico about\n[ASR:AU39:006 39780-49660ms] 9,000 years ago. Today it's a big part of their cooking. There are over 600 corn dishes\n[ASR:AU39:007 51400-61580ms] Corn isn't just food. People even use it to make toys. It's also part of Mexican culture.\n[ASR:AU39:008 62520-64060ms] Let's go and see!\n\nWrite 2-3 multiple-choice listening questions about what is said in this audio.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"Where is Jason?\",\n      \"options\": [\n        \"At a sweet corn festival in Mexico\",\n        \"At a corn farm in the USA\",\n        \"At a cooking school in China\",\n        \"At a toy factory in Mexico\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU39:003\",\n      \"evidence_quote\": \"I'm at the Sweet Corn Festival in Mexico.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"How long is the biggest ear of corn?\",\n      \"options\": [\n        \"Nearly 30 centimetres\",\n        \"Nearly 40 centimetres\",\n        \"Nearly 50 centimetres\",\n        \"Nearly 60 centimetres\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_segment_id\": \"ASR:AU39:005\",\n      \"evidence_quote\": \"one is nearly 40 centimetres long.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What do people use corn to make besides food?\",\n      \"options\": [\n        \"Toys\",\n        \"Clothes\",\n        \"Shoes\",\n        \"Books\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU39:007\",\n      \"evidence_quote\": \"People even use it to make toys.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 663,
+  "completion_tokens": 5100,
+  "total_tokens": 5763,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 4785
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 407
+ }
+}

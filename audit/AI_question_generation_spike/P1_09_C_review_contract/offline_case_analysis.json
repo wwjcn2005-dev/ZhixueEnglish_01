@@ -1,0 +1,416 @@
+{
+  "stage": "P1-09-C",
+  "ai_calls": 0,
+  "disclaimer": "本文件所有 verdict 均为**分析人员离线判断**，依据既有正式数据推导，不是 AI 质量复核结果，也不得被当作 AI 输出使用。",
+  "problem_A_context_insufficient": {
+    "question_id": "AIQ:6ECD02B9D381",
+    "p1_09_b_ai_output": {
+      "suggested_decision": "SUGGEST_REVIEW",
+      "confidence": "LOW",
+      "evidence_concern": true,
+      "short_reason": "题干提到学校艺术节，但所给教材证据句子未提及，需人工核对上下文。"
+    },
+    "stored_evidence_quote": "I nod to Grandpa and we fire up our instruments.",
+    "full_evidence_block": {
+      "block_id": "FLTRP-EN-7A-2022CUR:P38:B3",
+      "textbook_page": 33,
+      "chars": 202,
+      "text": "5\t There is an art festival every autumn in my school. I decide to take part in it with Grandpa this year. After a week’s practice, we are on the stage.  I nod to Grandpa and we fire up our instruments."
+    },
+    "root_cause": "question_evidence.evidence_quote 只是证据块的一段**摘录**（52 字符），而证据块全文（202 字符）本身就包含 \"There is an art festival every autumn in my school.\"。P1-09-B 只把摘录给了 AI，因此 AI 看不到 \"art festival\"。",
+    "not_the_root_cause": "并不是 Section 上下文缺失 —— \"art festival\" 就在**同一个证据块**里，问题在于喂给 AI 的是摘录而不是证据块全文。",
+    "minimal_context_would_fix_it": true,
+    "evidence_for_fix": "Minimal Review Context 使用证据块全文；该题 Minimal 约 225 tokens，比 P1-09-B 实际输入（约 88 tokens）只多约 137 tokens。"
+  },
+  "answer_uniqueness_redetermination": {
+    "contract": "Answer Uniqueness Contract V1",
+    "standards": [
+      "TEXTBOOK_ANCHORED",
+      "SELF_CONTAINED"
+    ],
+    "exclusion_rule": "候选被排除 ⟺ 语法不成立 ∨ 语义不成立 ∨ 与教材原文陈述冲突；另：题干缺少必要指标/限定以致所指不明 → 直接判 UNIQUE_RISK（D 类）。",
+    "cases": [
+      {
+        "question_id": "AIQ:BD59C5958D45",
+        "question_type": "vocab_choice",
+        "stored_quote_chars": 69,
+        "evidence_block_full_chars": 193,
+        "missing_from_quote_chars": 124,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 208,
+        "extended_context_tokens_est": 351,
+        "full_section_tokens_est": 3393,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": true,
+          "verdict": "UNIQUE",
+          "standard": "TEXTBOOK_ANCHORED",
+          "reason": "四个选项：club（语法成立，但与课文陈述 \"in the school band\" 冲突 → 排除）、stage（\"in the school stage\" 语法不成立 → 排除）、instrument（语义不成立 → 排除）。教材锚定标准下只剩 band。",
+          "standalone_risk": true,
+          "standalone_reason": "自立标准（学生手里没有课文）下 \"in the school club\" 同样自然 → 存在第二答案。该题是当前唯一 ACTIVE 题，人工审核通过；本契约不推翻该结论，而是把这条风险如实记在 standalone_risk 字段。"
+        }
+      },
+      {
+        "question_id": "AIQ:04CC9B1CF690",
+        "question_type": "fill",
+        "stored_quote_chars": 43,
+        "evidence_block_full_chars": 95,
+        "missing_from_quote_chars": 52,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 153,
+        "extended_context_tokens_est": 271,
+        "full_section_tokens_est": 3338,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": true,
+          "verdict": "UNIQUE",
+          "standard": "TEXTBOOK_ANCHORED",
+          "reason": "题干 \"It feels great to ___ our hobby together.\" 限定语充分（our hobby together），证据块全文为同一句；enjoy 之外的候选（如 share）与课文陈述 \"enjoy our hobby\" 冲突 → 排除。",
+          "standalone_risk": true,
+          "standalone_reason": "自立标准下 \"It feels great to share our hobby together. \" 亦可成立；但题干限定语使其迷惑性较低。"
+        }
+      },
+      {
+        "question_id": "AIQ:6ECD02B9D381",
+        "question_type": "reading_choice",
+        "stored_quote_chars": 48,
+        "evidence_block_full_chars": 202,
+        "missing_from_quote_chars": 154,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 225,
+        "extended_context_tokens_est": 356,
+        "full_section_tokens_est": 3411,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": false,
+          "verdict": "N/A_READING_ITEM",
+          "reason": "阅读选择题，题干明确指向课文（At the school art festival）→ 按课文陈述判定。"
+        }
+      },
+      {
+        "question_id": "AIQ:879007FA4FC7",
+        "question_type": "reading_choice",
+        "stored_quote_chars": 55,
+        "evidence_block_full_chars": 162,
+        "missing_from_quote_chars": 107,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 199,
+        "extended_context_tokens_est": 374,
+        "full_section_tokens_est": 3384,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": false,
+          "verdict": "N/A_READING_ITEM",
+          "reason": "阅读选择题，题干指向课文人物；答案 \"in the park\" 由课文陈述确定。"
+        }
+      },
+      {
+        "question_id": "AIQ:7EAC0ED29A0A",
+        "question_type": "reading_judge",
+        "stored_quote_chars": 47,
+        "evidence_block_full_chars": 50,
+        "missing_from_quote_chars": 3,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 140,
+        "extended_context_tokens_est": 286,
+        "full_section_tokens_est": 3310,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": false,
+          "verdict": "N/A_JUDGE_ITEM",
+          "reason": "判断题，答案 True/False 由课文事实决定，不属于答案唯一性问题。"
+        }
+      },
+      {
+        "question_id": "AIQ:1B3AF72923C4",
+        "question_type": "fill",
+        "stored_quote_chars": 15,
+        "evidence_block_full_chars": 69,
+        "missing_from_quote_chars": 54,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 137,
+        "extended_context_tokens_est": 243,
+        "full_section_tokens_est": 2833,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": true,
+          "verdict": "UNIQUE_RISK",
+          "standard": "TEXTBOOK_ANCHORED",
+          "reason": "题干只有 \"I am ___, too.\"，没有指标物或限定语；happy / fine 等同样自然、且与 Starter 对话语境不冲突 → 不被排除（属于 Contract V1 的 D 类：题目本身缺少足够上下文）。",
+          "standalone_risk": true,
+          "cross_check": "与 P1-08-C 人工审核记录一致（该题已按 LOW_VALUE 驳回）。"
+        }
+      },
+      {
+        "question_id": "AIQ:1BA260727793",
+        "question_type": "fill",
+        "stored_quote_chars": 48,
+        "evidence_block_full_chars": 118,
+        "missing_from_quote_chars": 70,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 163,
+        "extended_context_tokens_est": 277,
+        "full_section_tokens_est": 2908,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": true,
+          "verdict": "UNIQUE_RISK",
+          "standard": "TEXTBOOK_ANCHORED",
+          "reason": "双空挖空 \"___ ___, this is my first lesson for all of you.\"，By the way / Of course 等语篇标记词同样成立且与课文语境不冲突 → 不被排除。",
+          "standalone_risk": true
+        }
+      },
+      {
+        "question_id": "AIQ:120FFEECA78F",
+        "question_type": "fill",
+        "stored_quote_chars": 10,
+        "evidence_block_full_chars": 10,
+        "missing_from_quote_chars": 0,
+        "quote_is_truncated_excerpt": false,
+        "minimal_context_tokens_est": 120,
+        "extended_context_tokens_est": 204,
+        "full_section_tokens_est": 2817,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": true,
+          "verdict": "UNIQUE_RISK",
+          "standard": "TEXTBOOK_ANCHORED",
+          "reason": "题干 \"What colour is it? It's ___.\" 没有任何指标物；证据块本身也只有 10 字符（\"It's grey.\"），无法提供指标 → D 类信息不足，任意颜色都成立。",
+          "standalone_risk": true,
+          "note": "该题属于\"Minimal 上下文无法修复\"的情况：证据块全文不含指标物，Extended 上下文（同 Activity 其它块）也需要实际检查后才能判断能否修复。"
+        }
+      },
+      {
+        "question_id": "AIQ:75AAEBFE06DF",
+        "question_type": "vocab_choice",
+        "stored_quote_chars": 35,
+        "evidence_block_full_chars": 162,
+        "missing_from_quote_chars": 127,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 189,
+        "extended_context_tokens_est": 364,
+        "full_section_tokens_est": 3374,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": true,
+          "verdict": "UNIQUE_RISK",
+          "standard": "TEXTBOOK_ANCHORED",
+          "reason": "干扰项 traditional 是同一 Unit 的 BOLD 核心词，语法、语义都成立，且**不与课文冲突**（课文说 Grandpa 的音乐与我的摇滚 \"different\"，并不排除它是 traditional）→ 不被排除 → 存在第二合理答案。",
+          "standalone_risk": true
+        }
+      },
+      {
+        "question_id": "AIQ:B6463523F9E5",
+        "question_type": "reading_choice",
+        "stored_quote_chars": 50,
+        "evidence_block_full_chars": 60,
+        "missing_from_quote_chars": 10,
+        "quote_is_truncated_excerpt": true,
+        "minimal_context_tokens_est": 165,
+        "extended_context_tokens_est": 295,
+        "full_section_tokens_est": 3335,
+        "analyst_uniqueness_verdict": {
+          "is_uniqueness_case": true,
+          "verdict": "UNIQUE",
+          "old_label": "P1-09-A C5 干扰项风险（现实常识标准）",
+          "reason": "阅读选择题，题干明确指向课文（In the Great Bear Rainforest）。课文陈述\"The trees in a rainforest can make their own rain.\"；其余选项在课文中没有任何陈述支持，按阅读题惯例被排除。Contract V1 第 B 类明确规定：现实世界可能存在其他答案，不应用此判定教材训练题答案不唯一。",
+          "old_label_remapped": "NOT_A_UNIQUENESS_ISSUE",
+          "note": "该题在 P1-09-B 被判 SUGGEST_ACCEPT + answer_unique=PASS —— 在新契约下这个判断是与契约一致的，不是漏检；P1-09-B 记为 FALSE_NEGATIVE 是旧标签口径造成的。"
+        }
+      }
+    ]
+  },
+  "per_question_context_rebuild": [
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "question_type": "vocab_choice",
+      "stored_quote_chars": 69,
+      "evidence_block_full_chars": 193,
+      "missing_from_quote_chars": 124,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 208,
+      "extended_context_tokens_est": 351,
+      "full_section_tokens_est": 3393,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": true,
+        "verdict": "UNIQUE",
+        "standard": "TEXTBOOK_ANCHORED",
+        "reason": "四个选项：club（语法成立，但与课文陈述 \"in the school band\" 冲突 → 排除）、stage（\"in the school stage\" 语法不成立 → 排除）、instrument（语义不成立 → 排除）。教材锚定标准下只剩 band。",
+        "standalone_risk": true,
+        "standalone_reason": "自立标准（学生手里没有课文）下 \"in the school club\" 同样自然 → 存在第二答案。该题是当前唯一 ACTIVE 题，人工审核通过；本契约不推翻该结论，而是把这条风险如实记在 standalone_risk 字段。"
+      }
+    },
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "question_type": "fill",
+      "stored_quote_chars": 43,
+      "evidence_block_full_chars": 95,
+      "missing_from_quote_chars": 52,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 153,
+      "extended_context_tokens_est": 271,
+      "full_section_tokens_est": 3338,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": true,
+        "verdict": "UNIQUE",
+        "standard": "TEXTBOOK_ANCHORED",
+        "reason": "题干 \"It feels great to ___ our hobby together.\" 限定语充分（our hobby together），证据块全文为同一句；enjoy 之外的候选（如 share）与课文陈述 \"enjoy our hobby\" 冲突 → 排除。",
+        "standalone_risk": true,
+        "standalone_reason": "自立标准下 \"It feels great to share our hobby together. \" 亦可成立；但题干限定语使其迷惑性较低。"
+      }
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "question_type": "reading_choice",
+      "stored_quote_chars": 48,
+      "evidence_block_full_chars": 202,
+      "missing_from_quote_chars": 154,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 225,
+      "extended_context_tokens_est": 356,
+      "full_section_tokens_est": 3411,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": false,
+        "verdict": "N/A_READING_ITEM",
+        "reason": "阅读选择题，题干明确指向课文（At the school art festival）→ 按课文陈述判定。"
+      }
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "question_type": "reading_choice",
+      "stored_quote_chars": 55,
+      "evidence_block_full_chars": 162,
+      "missing_from_quote_chars": 107,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 199,
+      "extended_context_tokens_est": 374,
+      "full_section_tokens_est": 3384,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": false,
+        "verdict": "N/A_READING_ITEM",
+        "reason": "阅读选择题，题干指向课文人物；答案 \"in the park\" 由课文陈述确定。"
+      }
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "question_type": "reading_judge",
+      "stored_quote_chars": 47,
+      "evidence_block_full_chars": 50,
+      "missing_from_quote_chars": 3,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 140,
+      "extended_context_tokens_est": 286,
+      "full_section_tokens_est": 3310,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": false,
+        "verdict": "N/A_JUDGE_ITEM",
+        "reason": "判断题，答案 True/False 由课文事实决定，不属于答案唯一性问题。"
+      }
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "question_type": "fill",
+      "stored_quote_chars": 15,
+      "evidence_block_full_chars": 69,
+      "missing_from_quote_chars": 54,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 137,
+      "extended_context_tokens_est": 243,
+      "full_section_tokens_est": 2833,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": true,
+        "verdict": "UNIQUE_RISK",
+        "standard": "TEXTBOOK_ANCHORED",
+        "reason": "题干只有 \"I am ___, too.\"，没有指标物或限定语；happy / fine 等同样自然、且与 Starter 对话语境不冲突 → 不被排除（属于 Contract V1 的 D 类：题目本身缺少足够上下文）。",
+        "standalone_risk": true,
+        "cross_check": "与 P1-08-C 人工审核记录一致（该题已按 LOW_VALUE 驳回）。"
+      }
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "question_type": "fill",
+      "stored_quote_chars": 48,
+      "evidence_block_full_chars": 118,
+      "missing_from_quote_chars": 70,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 163,
+      "extended_context_tokens_est": 277,
+      "full_section_tokens_est": 2908,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": true,
+        "verdict": "UNIQUE_RISK",
+        "standard": "TEXTBOOK_ANCHORED",
+        "reason": "双空挖空 \"___ ___, this is my first lesson for all of you.\"，By the way / Of course 等语篇标记词同样成立且与课文语境不冲突 → 不被排除。",
+        "standalone_risk": true
+      }
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "question_type": "fill",
+      "stored_quote_chars": 10,
+      "evidence_block_full_chars": 10,
+      "missing_from_quote_chars": 0,
+      "quote_is_truncated_excerpt": false,
+      "minimal_context_tokens_est": 120,
+      "extended_context_tokens_est": 204,
+      "full_section_tokens_est": 2817,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": true,
+        "verdict": "UNIQUE_RISK",
+        "standard": "TEXTBOOK_ANCHORED",
+        "reason": "题干 \"What colour is it? It's ___.\" 没有任何指标物；证据块本身也只有 10 字符（\"It's grey.\"），无法提供指标 → D 类信息不足，任意颜色都成立。",
+        "standalone_risk": true,
+        "note": "该题属于\"Minimal 上下文无法修复\"的情况：证据块全文不含指标物，Extended 上下文（同 Activity 其它块）也需要实际检查后才能判断能否修复。"
+      }
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "question_type": "vocab_choice",
+      "stored_quote_chars": 35,
+      "evidence_block_full_chars": 162,
+      "missing_from_quote_chars": 127,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 189,
+      "extended_context_tokens_est": 364,
+      "full_section_tokens_est": 3374,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": true,
+        "verdict": "UNIQUE_RISK",
+        "standard": "TEXTBOOK_ANCHORED",
+        "reason": "干扰项 traditional 是同一 Unit 的 BOLD 核心词，语法、语义都成立，且**不与课文冲突**（课文说 Grandpa 的音乐与我的摇滚 \"different\"，并不排除它是 traditional）→ 不被排除 → 存在第二合理答案。",
+        "standalone_risk": true
+      }
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "question_type": "reading_choice",
+      "stored_quote_chars": 50,
+      "evidence_block_full_chars": 60,
+      "missing_from_quote_chars": 10,
+      "quote_is_truncated_excerpt": true,
+      "minimal_context_tokens_est": 165,
+      "extended_context_tokens_est": 295,
+      "full_section_tokens_est": 3335,
+      "analyst_uniqueness_verdict": {
+        "is_uniqueness_case": true,
+        "verdict": "UNIQUE",
+        "old_label": "P1-09-A C5 干扰项风险（现实常识标准）",
+        "reason": "阅读选择题，题干明确指向课文（In the Great Bear Rainforest）。课文陈述\"The trees in a rainforest can make their own rain.\"；其余选项在课文中没有任何陈述支持，按阅读题惯例被排除。Contract V1 第 B 类明确规定：现实世界可能存在其他答案，不应用此判定教材训练题答案不唯一。",
+        "old_label_remapped": "NOT_A_UNIQUENESS_ISSUE",
+        "note": "该题在 P1-09-B 被判 SUGGEST_ACCEPT + answer_unique=PASS —— 在新契约下这个判断是与契约一致的，不是漏检；P1-09-B 记为 FALSE_NEGATIVE 是旧标签口径造成的。"
+      }
+    }
+  ],
+  "library_scale_of_quote_truncation": {
+    "evidence_rows_checked": 22,
+    "quotes_shorter_than_block": 18,
+    "note": "只要 evidence_quote 短于证据块全文，P1-09-B 式输入就会丢失上下文。本统计基于 contentpack 的 block 全文（只读）。"
+  },
+  "cost_reference": {
+    "questions": 10,
+    "minimal_tokens_total": 1699,
+    "extended_tokens_total": 3021,
+    "full_section_tokens_total": 32103,
+    "minimal_tokens_per_question": 169.9,
+    "extended_tokens_per_question": 302.1,
+    "full_section_tokens_per_question": 3210.3,
+    "stored_quote_chars_total": 420,
+    "evidence_block_chars_total": 1121,
+    "minimal_is_enough_for_problem_A": true,
+    "p1_09_b_actual_prompt_tokens": 2104,
+    "batch_minimal_vs_p1_09_b_ratio": 0.81,
+    "batch_extended_vs_p1_09_b_ratio": 1.44,
+    "batch_full_section_vs_p1_09_b_ratio": 15.26
+  }
+}

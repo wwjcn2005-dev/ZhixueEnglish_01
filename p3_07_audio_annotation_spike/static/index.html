@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P3-07 跟读句精选与原声定位</title>
+  <link rel="stylesheet" href="/static/style.css?v=20260914b1">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">P3-07 · 教材内容生产工具</div>
+      <h1>跟读句精选 + 原声整句定位</h1>
+    </div>
+    <div class="tabs">
+      <button id="tabPosition" class="active">整句原声定位</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="screenView" hidden>
+      <div class="layout">
+        <aside class="panel list-panel">
+          <h2>候选句</h2>
+          <div class="row">
+            <select id="screenFilter">
+              <option value="ALL">全部</option>
+              <option value="CANDIDATE">CANDIDATE</option>
+              <option value="VERIFIED">VERIFIED</option>
+              <option value="REJECTED">REJECTED</option>
+            </select>
+            <span id="screenStats" class="hint"></span>
+          </div>
+          <div id="candidateList" class="candidate-list"></div>
+        </aside>
+
+        <section class="panel">
+          <div id="screenMeta" class="meta"></div>
+          <label>完整句子（fragment 必须人工补全；不能凭空改写教材）
+            <textarea id="screenSentence" rows="3" spellcheck="false"></textarea>
+          </label>
+          <div class="grid2">
+            <label>上下文
+              <textarea id="screenContext" rows="5" spellcheck="false" readonly></textarea>
+            </label>
+            <div>
+              <label>selection_reason
+                <select id="selectionReason">
+                  <option value="">请选择</option>
+                  <option value="typical_pattern">典型句型</option>
+                  <option value="communication">真实交际价值</option>
+                  <option value="pronunciation">语音模仿价值</option>
+                  <option value="grammar">核心语法结构</option>
+                  <option value="textbook_core">教材核心表达</option>
+                  <option value="representative">代表句</option>
+                </select>
+              </label>
+              <label>pattern_key<br><input id="patternKey" placeholder="going_to_plan"></label>
+              <label>function_tag<br><input id="functionTag" placeholder="asking_plan"></label>
+              <label>reject_reason
+                <select id="rejectReason">
+                  <option value="">请选择</option>
+                  <option value="duplicate">重复</option>
+                  <option value="low_value">学习价值低</option>
+                  <option value="fragment_unresolved">无法完整化</option>
+                  <option value="not_followable">不适合独立跟读</option>
+                  <option value="audio_issue">音频质量问题</option>
+                  <option value="other">其他</option>
+                </select>
+              </label>
+              <label>duplicate_of<br><input id="duplicateOf" placeholder="sentence_id"></label>
+            </div>
+          </div>
+          <div class="row">
+            <button id="btnKeep" class="primary">保留 → CANDIDATE</button>
+            <button id="btnReject">舍弃 → REJECTED</button>
+            <button id="btnScreenPrev">↑ 上一句</button>
+            <button id="btnScreenNext">↓ 下一句</button>
+          </div>
+          <div id="screenMessage" class="save-message"></div>
+        </section>
+      </div>
+    </section>
+
+    <section id="positionView">
+      <section class="panel">
+        <div class="notice">上游已完成英语教学筛选。你只需要试听教材原声、查看波形，并确认整句 Start / End。</div>
+        <div class="row">
+          <select id="positionSelect"></select>
+          <span id="positionStats" class="hint"></span>
+        </div>
+        <div class="meta" id="positionMeta"></div>
+        <div class="sentence" id="positionSentence"></div>
+        <div class="wavehead">
+          <strong>原始音频波形</strong>
+          <span id="viewLabel"></span>
+        </div>
+        <canvas id="wave" height="300"></canvas>
+        <div class="row">
+          <button id="btnPlay">▶ 播放</button>
+          <button id="btnPause">暂停</button>
+          <button id="btnPlaySelection" class="primary">▶ 播放选中整句</button>
+          <button id="btnPlayAround">▶ 播放当前位置附近</button>
+          <button id="btnZoomIn">放大 +</button>
+          <button id="btnZoomOut">缩小 −</button>
+          <button id="btnFit">全局</button>
+        </div>
+        <div class="row">
+          <label>start_ms <input id="startMs" inputmode="numeric"></label>
+          <label>end_ms <input id="endMs" inputmode="numeric"></label>
+          <button id="btnSetStart">把播放头设为 Start</button>
+          <button id="btnSetEnd">把播放头设为 End</button>
+        </div>
+        <div class="hint" id="timeHint">00:00.000</div>
+        <div class="hint">波形上拖动 Start / End 手柄；点击波形定位；两个时间点就是整句定位。</div>
+      </section>
+
+      <section class="panel">
+        <h2>静音 / 低能量辅助定位</h2>
+        <div class="row">
+          <button id="btnAnalyze">分析句间低能量区</button>
+          <span class="hint" id="analysisStatus">尚未分析</span>
+        </div>
+        <div class="row">
+          <label>Suggested Start
+            <input id="suggestedStart" readonly>
+          </label>
+          <button id="btnApplySuggestedStart">应用为 Start</button>
+          <label>Suggested End
+            <input id="suggestedEnd" readonly>
+          </label>
+          <button id="btnApplySuggestedEnd">应用为 End</button>
+        </div>
+        <div class="hint">建议仅用于减少人工定位成本；最终以试听确认的 Start / End 为准。允许保留自然的句尾短停顿，但不能包含下一句发音。</div>
+      </section>
+
+      <section class="panel">
+        <div class="row">
+          <button id="btnPositionPrev">↑ 上一句</button>
+          <button id="btnPositionNext">↓ 下一句</button>
+          <button id="btnVerify" class="primary">Enter · 保存 VERIFIED</button>
+        </div>
+        <div class="row">
+          <label>此处舍弃原因
+            <select id="posRejectReason">
+              <option value="low_value">学习价值低</option>
+              <option value="duplicate">重复</option>
+              <option value="not_followable">不适合独立跟读</option>
+              <option value="audio_issue">音频质量问题</option>
+              <option value="other">其他</option>
+            </select>
+          </label>
+          <button id="btnPositionReject">标记 REJECTED</button>
+        </div>
+        <div id="positionMessage" class="save-message"></div>
+        <div class="hint">快捷键：Space 播放/暂停；←/→ 微调 50ms；Enter 保存 VERIFIED；↑/↓ 上/下一句。</div>
+      </section>
+    </section>
+  </main>
+  <script src="/static/app.js?v=20260914b1"></script>
+</body>
+</html>

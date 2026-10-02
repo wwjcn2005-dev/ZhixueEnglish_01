@@ -1,0 +1,957 @@
+{
+  "task": "P1-06-B1.7-G1-A Sentence Pattern 教材结构与边界只读分析",
+  "generated_at": "2026-09-12T14:44:03+08:00",
+  "verdict": "PASS WITH NOTES",
+  "environment": {
+    "python": "3.12.10",
+    "pymupdf": "1.28.2",
+    "mode": "read-only"
+  },
+  "input_sha256": {
+    "v4": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+    "v4_expected": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+    "v4_match": true,
+    "pdf": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+    "mp3_count": 54,
+    "v1": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+    "v2": "C97B0F4EB09811F2477723A40A01B695DA984DDF1BD5FA5668B59ADC61ED0430",
+    "v3": "13E1B961383794259907F388EDBD856C3C5E5B0303FF19ACBB0E76F569A9BE0C"
+  },
+  "baseline": {
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "vocabulary": 287,
+    "phrase": 23,
+    "ai_artifact": 0
+  },
+  "scope": {
+    "communication_bank_entries": 28,
+    "useful_expression_entries": 39,
+    "language_note_anchor_sentences": 54,
+    "language_note_structure_items": 13,
+    "guide_topics": 13,
+    "fixed_sentence_pattern_marked": 1
+  },
+  "counts": {
+    "scopeA": {
+      "FIXED_SENTENCE_PATTERN": 1,
+      "SP_CANDIDATE": 51,
+      "COMMUNICATION_EXPRESSION": 13,
+      "PHRASE_ONLY": 3,
+      "GRAMMAR_ONLY": 2,
+      "NEED_REVIEW": 5
+    },
+    "scopeA_total": 75,
+    "new_grammar_from_notes": 8,
+    "merged": {
+      "FIXED_SENTENCE_PATTERN": 1,
+      "SP_CANDIDATE": 51,
+      "COMMUNICATION_EXPRESSION": 13,
+      "PHRASE_ONLY": 3,
+      "GRAMMAR_ONLY": 10,
+      "NEED_REVIEW": 5,
+      "ORDINARY_SENTENCE": 41
+    },
+    "merged_total": 124,
+    "note_anchor_ordinary": 41
+  },
+  "communication_bank": [
+    {
+      "unit": "Unit 1",
+      "function": "Describing problems（Learning to learn）",
+      "text": "... is a problem for me.",
+      "class": "SP_CANDIDATE",
+      "reason": "S + be + C；槽位=问题（句级骨架 + 槽位）"
+    },
+    {
+      "unit": "Unit 1",
+      "function": "Describing problems（Learning to learn）",
+      "text": "One way is to...",
+      "class": "SP_CANDIDATE",
+      "reason": "S + be + to do；槽位=做法"
+    },
+    {
+      "unit": "Unit 1",
+      "function": "Describing problems（Learning to learn）",
+      "text": "It makes me feel...",
+      "class": "SP_CANDIDATE",
+      "reason": "S + V + O + C；槽位=感受"
+    },
+    {
+      "unit": "Unit 1",
+      "function": "Describing problems（Learning to learn）",
+      "text": "Also, you can...",
+      "class": "SP_CANDIDATE",
+      "reason": "话语标记 + S + modal + VP；槽位=做法"
+    },
+    {
+      "unit": "Unit 1",
+      "function": "Describing problems（Learning to learn）",
+      "text": "What are some solutions for...?",
+      "class": "SP_CANDIDATE",
+      "reason": "Wh + be + S + PP；槽位=问题对象"
+    },
+    {
+      "unit": "Unit 2",
+      "function": "Expressing cause and effect",
+      "text": "So...",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "话语连接标记，无 S+V 骨架"
+    },
+    {
+      "unit": "Unit 2",
+      "function": "Expressing cause and effect",
+      "text": "We can learn... because...",
+      "class": "SP_CANDIDATE",
+      "reason": "S + modal + V + O + 原因从句；双槽位"
+    },
+    {
+      "unit": "Unit 2",
+      "function": "Expressing cause and effect",
+      "text": "As a result, ...",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "连接性状语 + 整句槽位（框架本身无 S+V）"
+    },
+    {
+      "unit": "Unit 3",
+      "function": "Softening language",
+      "text": "I’d rather not.",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "固定整句，无槽位"
+    },
+    {
+      "unit": "Unit 3",
+      "function": "Softening language",
+      "text": "Yes, but now...",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "应答套语 + 整句槽位"
+    },
+    {
+      "unit": "Unit 3",
+      "function": "Softening language",
+      "text": "It’s a bit difficult to talk about. But...",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "固定评价句 + 转折连接，无可替换句法槽位"
+    },
+    {
+      "unit": "Unit 3",
+      "function": "Softening language",
+      "text": "I hope you’re not hurt.",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "固定整句，无槽位"
+    },
+    {
+      "unit": "Unit 3",
+      "function": "Softening language",
+      "text": "I feel... because...",
+      "class": "SP_CANDIDATE",
+      "reason": "S + V + C + 原因从句；双槽位"
+    },
+    {
+      "unit": "Unit 3",
+      "function": "Softening language",
+      "text": "Thank you.",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "固定交际套语"
+    },
+    {
+      "unit": "Unit 4",
+      "function": "Agreeing and disagreeing",
+      "text": "I think... is a new way to celebrate, because...",
+      "class": "SP_CANDIDATE",
+      "reason": "S + V + 宾语从句 + 原因从句"
+    },
+    {
+      "unit": "Unit 4",
+      "function": "Agreeing and disagreeing",
+      "text": "That’s a(n)... idea!",
+      "class": "SP_CANDIDATE",
+      "reason": "S + be + C；槽位=修饰语/名词"
+    },
+    {
+      "unit": "Unit 4",
+      "function": "Agreeing and disagreeing",
+      "text": "I’m not sure about that.",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "固定整句，无槽位"
+    },
+    {
+      "unit": "Unit 4",
+      "function": "Agreeing and disagreeing",
+      "text": "I agree. Another idea is to...",
+      "class": "SP_CANDIDATE",
+      "reason": "S + be + to do；槽位=做法"
+    },
+    {
+      "unit": "Unit 4",
+      "function": "Agreeing and disagreeing",
+      "text": "I see it differently, because...",
+      "class": "SP_CANDIDATE",
+      "reason": "S + V + O + adv + 原因从句"
+    },
+    {
+      "unit": "Unit 5",
+      "function": "Asking for and giving permission",
+      "text": "I am hoping to know..., may I?",
+      "class": "SP_CANDIDATE",
+      "reason": "S + V + to do + 附加问句；礼貌请求框架"
+    },
+    {
+      "unit": "Unit 5",
+      "function": "Asking for and giving permission",
+      "text": "What about...?",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "固定提议套语（无 S+V）"
+    },
+    {
+      "unit": "Unit 5",
+      "function": "Asking for and giving permission",
+      "text": "Could I know...?",
+      "class": "SP_CANDIDATE",
+      "reason": "S + modal + V + O；槽位=询问内容"
+    },
+    {
+      "unit": "Unit 5",
+      "function": "Asking for and giving permission",
+      "text": "Yes, of course.",
+      "class": "COMMUNICATION_EXPRESSION",
+      "reason": "固定应答套语"
+    },
+    {
+      "unit": "Unit 6",
+      "function": "Asking questions to find out information",
+      "text": "How does... do that?",
+      "class": "SP_CANDIDATE",
+      "reason": "Wh + aux + S + V + O"
+    },
+    {
+      "unit": "Unit 6",
+      "function": "Asking questions to find out information",
+      "text": "... is very touching.",
+      "class": "SP_CANDIDATE",
+      "reason": "S + be + C；槽位=主语"
+    },
+    {
+      "unit": "Unit 6",
+      "function": "Asking questions to find out information",
+      "text": "... acts as...",
+      "class": "SP_CANDIDATE",
+      "reason": "S + V + PP；双槽位"
+    },
+    {
+      "unit": "Unit 6",
+      "function": "Asking questions to find out information",
+      "text": "... not only..., but also...",
+      "class": "SP_CANDIDATE",
+      "reason": "并列关联结构；p.130 语言注释原文称“是表达并列关系的句型”（双来源证据）"
+    },
+    {
+      "unit": "Unit 6",
+      "function": "Asking questions to find out information",
+      "text": "... provide... with...",
+      "class": "NEED_REVIEW",
+      "reason": "动词补足结构（provide sb with sth），无 S+V 骨架；Phrase/Grammar 边界待判"
+    }
+  ],
+  "useful_expressions": [
+    {
+      "unit": "Unit 1",
+      "text": "Mr / Ms... is our... teacher.",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 1",
+      "text": "I’m so lucky to have a teacher like...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 1",
+      "text": "Mr / Ms... tells us...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 1",
+      "text": "We need to...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 1",
+      "text": "His / Her... make(s) me feel...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 1",
+      "text": "That’s really a(n)... lesson!",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 2",
+      "text": "What’s your hobby?",
+      "class": "COMMUNICATION_EXPRESSION"
+    },
+    {
+      "unit": "Unit 2",
+      "text": "As a... lover, I...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 2",
+      "text": "I like...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 2",
+      "text": "It feels great to...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 2",
+      "text": "There is so much fun in...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 3",
+      "text": "... with a... face.",
+      "class": "PHRASE_ONLY"
+    },
+    {
+      "unit": "Unit 3",
+      "text": "I think it is our family’s best photo.",
+      "class": "COMMUNICATION_EXPRESSION"
+    },
+    {
+      "unit": "Unit 3",
+      "text": "For years, ...",
+      "class": "COMMUNICATION_EXPRESSION"
+    },
+    {
+      "unit": "Unit 3",
+      "text": "I’m happy about...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 3",
+      "text": "It is about...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 3",
+      "text": "...’s love may be...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 3",
+      "text": "It brings back my memory of...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 4",
+      "text": "I often..., but I never...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 4",
+      "text": "The best part of the festival is...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 4",
+      "text": "... hang(s) balloons and lanterns in...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 4",
+      "text": "... is a must for...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 4",
+      "text": "My family always have... at...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 4",
+      "text": "I feel like...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 5",
+      "text": "Without plants, ... will / won’t...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 5",
+      "text": "... need... to...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 5",
+      "text": "... mean a lot to...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 5",
+      "text": "... can make...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 5",
+      "text": "... is useful for...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 5",
+      "text": "... give more than...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "It is a...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "It can...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "It eats...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "It looks like...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "It has long / big...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "It’s amazing / clever / ...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "Look, it’s...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "People call it...",
+      "class": "SP_CANDIDATE"
+    },
+    {
+      "unit": "Unit 6",
+      "text": "How surprising / amazing! ...",
+      "class": "NEED_REVIEW"
+    }
+  ],
+  "notes_structure": [
+    {
+      "unit": "Unit 1",
+      "page": "pdf120 / tb115",
+      "text": "protect... from...",
+      "textbook_wording": "固定搭配",
+      "class": "PHRASE_ONLY",
+      "reason": "教材原文“protect... from...是固定搭配”；已作为 Phrase 冻结（v4）"
+    },
+    {
+      "unit": "Unit 3",
+      "page": "pdf125 / tb120",
+      "text": "along the way",
+      "textbook_wording": "固定短语",
+      "class": "PHRASE_ONLY",
+      "reason": "教材原文“along the way是固定短语”；已作为 Phrase 冻结（v4）"
+    },
+    {
+      "unit": "Unit 5",
+      "page": "pdf131 / tb126",
+      "text": "prefer A to B",
+      "textbook_wording": "搭配结构",
+      "class": "NEED_REVIEW",
+      "reason": "教材原文“prefer常与to搭配构成prefer A to B的结构”；Phrase/Grammar/SP 三方边界，v4 保留人工确认"
+    },
+    {
+      "unit": "Unit 5",
+      "page": "pdf131 / tb126",
+      "text": "it’s no secret that...",
+      "textbook_wording": "固定句型",
+      "class": "FIXED_SENTENCE_PATTERN",
+      "reason": "教材原文“it’s no secret that...是固定句型”；全册唯一“固定句型”标注"
+    },
+    {
+      "unit": "Unit 6",
+      "page": "pdf133 / tb128",
+      "text": "What + a/an + 形容词 + 可数名词单数 + 主语 + 谓语!",
+      "textbook_wording": "what 引导的感叹句结构",
+      "class": "NEED_REVIEW",
+      "reason": "教材给出显式槽位公式并称“句型”，但位于 Grammar 解释区（Language notes），不得自行升级"
+    },
+    {
+      "unit": "Unit 3",
+      "page": "pdf126 / tb121",
+      "text": "it is hard to do sth",
+      "textbook_wording": "句级结构（形式主语）",
+      "class": "NEED_REVIEW",
+      "reason": "教材给出释义 + 3 个例句；Grammar/SP 边界"
+    }
+  ],
+  "guide": [
+    {
+      "unit": "Starter",
+      "page": "pdf137 / tb132",
+      "title": "there be 句型的用法",
+      "kind": "Grammar 专题（标题含“句型”）",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "unit": "Starter",
+      "page": "pdf139 / tb134",
+      "title": "简单句的基本句型",
+      "kind": "Grammar 专题（标题含“句型”）",
+      "class": "GRAMMAR_ONLY"
+    }
+  ],
+  "guide_topics": [
+    {
+      "title": "可数名词和不可数名词",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "基数词和冠词",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "一般现在时（Starter 概览）",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "一般将来时（Starter 概览）",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "there be 句型的用法",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "形容词的基本形式",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "简单句的基本句型",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "人称代词和物主代词（Unit 1）",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "一般现在时（Unit 2）",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "名词的所有格（Unit 3）",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "频度副词（Unit 4）",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "一般将来时 be going to / will（Unit 5）",
+      "class": "GRAMMAR_ONLY"
+    },
+    {
+      "title": "现在进行时（Unit 6）",
+      "class": "GRAMMAR_ONLY"
+    }
+  ],
+  "sp_candidates": [
+    {
+      "source": "Communication bank",
+      "unit": "Unit 1",
+      "text": "... is a problem for me."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 1",
+      "text": "One way is to..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 1",
+      "text": "It makes me feel..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 1",
+      "text": "Also, you can..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 1",
+      "text": "What are some solutions for...?"
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 2",
+      "text": "We can learn... because..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 3",
+      "text": "I feel... because..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 4",
+      "text": "I think... is a new way to celebrate, because..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 4",
+      "text": "That’s a(n)... idea!"
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 4",
+      "text": "I agree. Another idea is to..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 4",
+      "text": "I see it differently, because..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 5",
+      "text": "I am hoping to know..., may I?"
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 5",
+      "text": "Could I know...?"
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 6",
+      "text": "How does... do that?"
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 6",
+      "text": "... is very touching."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 6",
+      "text": "... acts as..."
+    },
+    {
+      "source": "Communication bank",
+      "unit": "Unit 6",
+      "text": "... not only..., but also..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 1",
+      "text": "Mr / Ms... is our... teacher."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 1",
+      "text": "I’m so lucky to have a teacher like..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 1",
+      "text": "Mr / Ms... tells us..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 1",
+      "text": "We need to..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 1",
+      "text": "His / Her... make(s) me feel..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 1",
+      "text": "That’s really a(n)... lesson!"
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 2",
+      "text": "As a... lover, I..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 2",
+      "text": "I like..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 2",
+      "text": "It feels great to..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 2",
+      "text": "There is so much fun in..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 3",
+      "text": "I’m happy about..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 3",
+      "text": "It is about..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 3",
+      "text": "...’s love may be..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 3",
+      "text": "It brings back my memory of..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 4",
+      "text": "I often..., but I never..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 4",
+      "text": "The best part of the festival is..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 4",
+      "text": "... hang(s) balloons and lanterns in..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 4",
+      "text": "... is a must for..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 4",
+      "text": "My family always have... at..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 4",
+      "text": "I feel like..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 5",
+      "text": "Without plants, ... will / won’t..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 5",
+      "text": "... need... to..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 5",
+      "text": "... mean a lot to..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 5",
+      "text": "... can make..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 5",
+      "text": "... is useful for..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 5",
+      "text": "... give more than..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 6",
+      "text": "It is a..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 6",
+      "text": "It can..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 6",
+      "text": "It eats..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 6",
+      "text": "It looks like..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 6",
+      "text": "It has long / big..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 6",
+      "text": "It’s amazing / clever / ..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 6",
+      "text": "Look, it’s..."
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "unit": "Unit 6",
+      "text": "People call it..."
+    }
+  ],
+  "need_review": [
+    {
+      "source": "Communication bank",
+      "text": "... provide... with...",
+      "reason": "动词补足结构，无 S+V 骨架；Phrase/Grammar/SP 边界待判"
+    },
+    {
+      "source": "单元内 Useful expressions",
+      "text": "How surprising / amazing! ...",
+      "reason": "Grammar 感叹句 vs Sentence Pattern 边界"
+    },
+    {
+      "source": "Language notes p.131 / tb126",
+      "text": "prefer A to B",
+      "reason": "教材称“搭配”“结构”，含槽位但无 S+V；Phrase/Grammar/SP 三方边界（v4 保留人工确认）"
+    },
+    {
+      "source": "Language notes p.133 / tb128",
+      "text": "What + a/an + 形容词 + 可数名词单数 + 主语 + 谓语!",
+      "reason": "教材称“句型”并给出槽位公式，但位于 Grammar 解释区，未进入 bank/Useful expressions"
+    },
+    {
+      "source": "Language notes p.126 / tb121",
+      "text": "it is hard to do sth",
+      "reason": "形式主语结构，教材给出释义与例句；Grammar/SP 边界"
+    }
+  ],
+  "boundary_cases": [
+    {
+      "case": "protect... from...",
+      "page": "pdf120 / tb115",
+      "class": "PHRASE_ONLY",
+      "frozen": "v4 Phrase（item_id FLTRP-EN-7A-2022CUR:P:CFA9955FF9F1）",
+      "reason": "教材用“固定搭配”；词组级，无句法骨架"
+    },
+    {
+      "case": "along the way",
+      "page": "pdf125 / tb120",
+      "class": "PHRASE_ONLY",
+      "frozen": "v4 Phrase（item_id FLTRP-EN-7A-2022CUR:P:51452FED59ED）",
+      "reason": "教材用“固定短语”；介词/名词性短语，非句级"
+    },
+    {
+      "case": "prefer A to B",
+      "page": "pdf131 / tb126",
+      "class": "NEED_REVIEW",
+      "frozen": "未落库（v4 保留人工确认）",
+      "reason": "教材用“搭配”“结构”，含槽位但无 S+V；Phrase/Grammar/SP 三方边界"
+    },
+    {
+      "case": "it’s no secret that...",
+      "page": "pdf131 / tb126",
+      "class": "FIXED_SENTENCE_PATTERN",
+      "frozen": "未落库",
+      "reason": "教材原文“是固定句型”；句级 + 从句槽位 + 多实例例句；不得归 Phrase"
+    }
+  ],
+  "exclusions": {
+    "phrase_only_examples": [
+      "protect... from...",
+      "along the way",
+      "... with a... face."
+    ],
+    "phrase_only_note_language_points": 33,
+    "grammar_only": [
+      "there be 句型的用法",
+      "简单句的基本句型",
+      "stop doing vs stop to do",
+      "like doing",
+      "be more important than",
+      "反问句用法",
+      "regret sth / doing sth",
+      "as many as",
+      "had better",
+      "used to..."
+    ],
+    "ordinary_sentence": 41,
+    "communication_expression_not_upgraded": [
+      "So...",
+      "As a result, ...",
+      "I’d rather not.",
+      "Yes, but now...",
+      "It’s a bit difficult to talk about. But...",
+      "I hope you’re not hurt.",
+      "Thank you.",
+      "I’m not sure about that.",
+      "What about...?",
+      "Yes, of course.",
+      "What’s your hobby?",
+      "I think it is our family’s best photo.",
+      "For years, ..."
+    ]
+  },
+  "rules": [
+    "R1 必须有教材明确教学证据（教材措辞 / Communication bank / Useful expressions / Guide 标题）",
+    "R2 句级骨架（含 S+V 或系表结构）才可能成为 Sentence Pattern",
+    "R3 必须存在显式可替换槽位（“...” / 括号 / 斜杠可替换项）",
+    "R4 教材使用“固定句型”措辞 → FIXED_SENTENCE_PATTERN",
+    "R5 教材以语法规则讲授（时态/句型标题/句式变化）→ GRAMMAR_ONLY，不升级",
+    "R6 词汇/短语级单位 → PHRASE_ONLY；正文普通句 → ORDINARY_SENTENCE",
+    "R7 证据存在但边界无法确定 → NEED_REVIEW，禁止自行升级",
+    "R8 频率只作辅助证据，不得单独作为纳入依据（本阶段 0 条因高频而纳入）"
+  ],
+  "quality": {
+    "v4_sha_unchanged": true,
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "vocabulary": 287,
+    "phrase": 23,
+    "ai_calls": 0,
+    "ocr": 0,
+    "tts": 0,
+    "db_writes": 0,
+    "new_dependencies": 0,
+    "zhixue_ai_accessed": false,
+    "pdf_modified": false,
+    "mp3_modified": false,
+    "mp3_count": 54
+  },
+  "risks": [
+    "v4 section 表把 Appendix 的 Language notes（pdf119-134）并入 COMMUNICATION_BANK 范围，未单独建模 Language notes 节（本次仅记录，未修改）",
+    "v4 对 pdf118（Communication bank 第二页）的阅读顺序把 Unit 5 右栏两条（Could I know...? / Yes, of course.）排在 Unit 6 之后；本次按 PDF bbox 几何 + Scope and sequence 的 “Asking for and giving permission” 功能标注归位为 Unit 5",
+    "Communication bank 的“场景/功能”名称取自 Scope and sequence（pdf5-6）的 Learning to learn 栏目，非 bank 页内逐条标注",
+    "本次未对全册正文逐句枚举；ORDINARY_SENTENCE 计数为 Language notes 54 锚点句的对照口径，不是全册统计",
+    "Communication bank 条目顺序按 PDF bbox 几何重建（同高左右栏按 x 排序），与 v4 content_block.reading_order 不完全一致"
+  ],
+  "next_stage": "G1-B 可进行"
+}

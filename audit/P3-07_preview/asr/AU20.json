@@ -1,0 +1,954 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU20",
+  "audio_num": "AU20",
+  "filename": "20_Unit 2_Developing ideas _Reading for writing_2 Read the story. What is Emma's adventure.mp3",
+  "duration_ms": 115435,
+  "segment_count": 17,
+  "word_count": 170,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3620,
+      "text": "Reading for writing. Activity to."
+    },
+    {
+      "start_ms": 4680,
+      "end_ms": 8920,
+      "text": "Read the story. What is Emma's adventure?"
+    },
+    {
+      "start_ms": 10840,
+      "end_ms": 12000,
+      "text": "Emma's adventure."
+    },
+    {
+      "start_ms": 13620,
+      "end_ms": 16520,
+      "text": "Oliver is awake at midnight."
+    },
+    {
+      "start_ms": 17720,
+      "end_ms": 21260,
+      "text": "Suddenly a door appears in the wall."
+    },
+    {
+      "start_ms": 22280,
+      "end_ms": 25400,
+      "text": "Oliver's heart almost stops."
+    },
+    {
+      "start_ms": 25400,
+      "end_ms": 34020,
+      "text": "He walks over and taps on the door. Emma shakes her head and stops writing."
+    },
+    {
+      "start_ms": 35160,
+      "end_ms": 43980,
+      "text": "She is new at this school. There are no old classmates here. She feels a bit lonely."
+    },
+    {
+      "start_ms": 45180,
+      "end_ms": 53620,
+      "text": "Emma likes writing magic stories. She wants to make friends and share the joy of writing."
+    },
+    {
+      "start_ms": 53620,
+      "end_ms": 59820,
+      "text": "She looks around the library. An idea hits her."
+    },
+    {
+      "start_ms": 60880,
+      "end_ms": 69720,
+      "text": "Hello! This is my notebook. Do you like the story? Please write more."
+    },
+    {
+      "start_ms": 70960,
+      "end_ms": 79860,
+      "text": "Emma puts the notebook on a shelf and leaves. A week later Emma's notebook is still on the"
+    },
+    {
+      "start_ms": 79860,
+      "end_ms": 90520,
+      "text": "shelf in the library. Nervously she opens it. Her eyes open wide. There are pages of new"
+    },
+    {
+      "start_ms": 90520,
+      "end_ms": 97000,
+      "text": "writing by different people. And there is a note on the last page."
+    },
+    {
+      "start_ms": 98660,
+      "end_ms": 107260,
+      "text": "How about starting a writing group? Let's meet here on Wednesday after lunch. It's"
+    },
+    {
+      "start_ms": 107260,
+      "end_ms": 109860,
+      "text": "the best ending to my story."
+    },
+    {
+      "start_ms": 110440,
+      "end_ms": 111360,
+      "text": "Thanks Emma."
+    }
+  ],
+  "words": [
+    {
+      "word": "Reading",
+      "start_ms": 0,
+      "end_ms": 780
+    },
+    {
+      "word": "for",
+      "start_ms": 780,
+      "end_ms": 1200
+    },
+    {
+      "word": "writing.",
+      "start_ms": 1200,
+      "end_ms": 1660
+    },
+    {
+      "word": "Activity",
+      "start_ms": 2180,
+      "end_ms": 3240
+    },
+    {
+      "word": "to.",
+      "start_ms": 3240,
+      "end_ms": 3620
+    },
+    {
+      "word": "Read",
+      "start_ms": 4680,
+      "end_ms": 5180
+    },
+    {
+      "word": "the",
+      "start_ms": 5180,
+      "end_ms": 5500
+    },
+    {
+      "word": "story.",
+      "start_ms": 5500,
+      "end_ms": 6040
+    },
+    {
+      "word": "What",
+      "start_ms": 7340,
+      "end_ms": 7500
+    },
+    {
+      "word": "is",
+      "start_ms": 7500,
+      "end_ms": 7860
+    },
+    {
+      "word": "Emma's",
+      "start_ms": 7860,
+      "end_ms": 8460
+    },
+    {
+      "word": "adventure?",
+      "start_ms": 8460,
+      "end_ms": 8920
+    },
+    {
+      "word": "Emma's",
+      "start_ms": 10840,
+      "end_ms": 11480
+    },
+    {
+      "word": "adventure.",
+      "start_ms": 11480,
+      "end_ms": 12000
+    },
+    {
+      "word": "Oliver",
+      "start_ms": 13620,
+      "end_ms": 14380
+    },
+    {
+      "word": "is",
+      "start_ms": 14380,
+      "end_ms": 15120
+    },
+    {
+      "word": "awake",
+      "start_ms": 15120,
+      "end_ms": 15580
+    },
+    {
+      "word": "at",
+      "start_ms": 15580,
+      "end_ms": 16020
+    },
+    {
+      "word": "midnight.",
+      "start_ms": 16020,
+      "end_ms": 16520
+    },
+    {
+      "word": "Suddenly",
+      "start_ms": 17720,
+      "end_ms": 18460
+    },
+    {
+      "word": "a",
+      "start_ms": 18460,
+      "end_ms": 19160
+    },
+    {
+      "word": "door",
+      "start_ms": 19160,
+      "end_ms": 19540
+    },
+    {
+      "word": "appears",
+      "start_ms": 19540,
+      "end_ms": 20220
+    },
+    {
+      "word": "in",
+      "start_ms": 20220,
+      "end_ms": 20700
+    },
+    {
+      "word": "the",
+      "start_ms": 20700,
+      "end_ms": 20860
+    },
+    {
+      "word": "wall.",
+      "start_ms": 20860,
+      "end_ms": 21260
+    },
+    {
+      "word": "Oliver's",
+      "start_ms": 22280,
+      "end_ms": 23320
+    },
+    {
+      "word": "heart",
+      "start_ms": 23320,
+      "end_ms": 23840
+    },
+    {
+      "word": "almost",
+      "start_ms": 23840,
+      "end_ms": 24560
+    },
+    {
+      "word": "stops.",
+      "start_ms": 24560,
+      "end_ms": 25400
+    },
+    {
+      "word": "He",
+      "start_ms": 25400,
+      "end_ms": 26740
+    },
+    {
+      "word": "walks",
+      "start_ms": 26740,
+      "end_ms": 27100
+    },
+    {
+      "word": "over",
+      "start_ms": 27100,
+      "end_ms": 27620
+    },
+    {
+      "word": "and",
+      "start_ms": 27620,
+      "end_ms": 28320
+    },
+    {
+      "word": "taps",
+      "start_ms": 28320,
+      "end_ms": 28740
+    },
+    {
+      "word": "on",
+      "start_ms": 28740,
+      "end_ms": 29020
+    },
+    {
+      "word": "the",
+      "start_ms": 29020,
+      "end_ms": 29160
+    },
+    {
+      "word": "door.",
+      "start_ms": 29160,
+      "end_ms": 29540
+    },
+    {
+      "word": "Emma",
+      "start_ms": 30480,
+      "end_ms": 31020
+    },
+    {
+      "word": "shakes",
+      "start_ms": 31020,
+      "end_ms": 31540
+    },
+    {
+      "word": "her",
+      "start_ms": 31540,
+      "end_ms": 32000
+    },
+    {
+      "word": "head",
+      "start_ms": 32000,
+      "end_ms": 32320
+    },
+    {
+      "word": "and",
+      "start_ms": 32320,
+      "end_ms": 33100
+    },
+    {
+      "word": "stops",
+      "start_ms": 33100,
+      "end_ms": 33540
+    },
+    {
+      "word": "writing.",
+      "start_ms": 33540,
+      "end_ms": 34020
+    },
+    {
+      "word": "She",
+      "start_ms": 35160,
+      "end_ms": 35880
+    },
+    {
+      "word": "is",
+      "start_ms": 35880,
+      "end_ms": 36180
+    },
+    {
+      "word": "new",
+      "start_ms": 36180,
+      "end_ms": 36620
+    },
+    {
+      "word": "at",
+      "start_ms": 36620,
+      "end_ms": 37080
+    },
+    {
+      "word": "this",
+      "start_ms": 37080,
+      "end_ms": 37520
+    },
+    {
+      "word": "school.",
+      "start_ms": 37520,
+      "end_ms": 37920
+    },
+    {
+      "word": "There",
+      "start_ms": 38680,
+      "end_ms": 39120
+    },
+    {
+      "word": "are",
+      "start_ms": 39120,
+      "end_ms": 39340
+    },
+    {
+      "word": "no",
+      "start_ms": 39340,
+      "end_ms": 39700
+    },
+    {
+      "word": "old",
+      "start_ms": 39700,
+      "end_ms": 40260
+    },
+    {
+      "word": "classmates",
+      "start_ms": 40260,
+      "end_ms": 40880
+    },
+    {
+      "word": "here.",
+      "start_ms": 40880,
+      "end_ms": 41440
+    },
+    {
+      "word": "She",
+      "start_ms": 42200,
+      "end_ms": 42680
+    },
+    {
+      "word": "feels",
+      "start_ms": 42680,
+      "end_ms": 43120
+    },
+    {
+      "word": "a",
+      "start_ms": 43120,
+      "end_ms": 43360
+    },
+    {
+      "word": "bit",
+      "start_ms": 43360,
+      "end_ms": 43500
+    },
+    {
+      "word": "lonely.",
+      "start_ms": 43500,
+      "end_ms": 43980
+    },
+    {
+      "word": "Emma",
+      "start_ms": 45180,
+      "end_ms": 45800
+    },
+    {
+      "word": "likes",
+      "start_ms": 45800,
+      "end_ms": 46320
+    },
+    {
+      "word": "writing",
+      "start_ms": 46320,
+      "end_ms": 46900
+    },
+    {
+      "word": "magic",
+      "start_ms": 46900,
+      "end_ms": 47460
+    },
+    {
+      "word": "stories.",
+      "start_ms": 47460,
+      "end_ms": 48240
+    },
+    {
+      "word": "She",
+      "start_ms": 49120,
+      "end_ms": 49560
+    },
+    {
+      "word": "wants",
+      "start_ms": 49560,
+      "end_ms": 49900
+    },
+    {
+      "word": "to",
+      "start_ms": 49900,
+      "end_ms": 50180
+    },
+    {
+      "word": "make",
+      "start_ms": 50180,
+      "end_ms": 50360
+    },
+    {
+      "word": "friends",
+      "start_ms": 50360,
+      "end_ms": 50940
+    },
+    {
+      "word": "and",
+      "start_ms": 50940,
+      "end_ms": 51640
+    },
+    {
+      "word": "share",
+      "start_ms": 51640,
+      "end_ms": 52080
+    },
+    {
+      "word": "the",
+      "start_ms": 52080,
+      "end_ms": 52300
+    },
+    {
+      "word": "joy",
+      "start_ms": 52300,
+      "end_ms": 52740
+    },
+    {
+      "word": "of",
+      "start_ms": 52740,
+      "end_ms": 53180
+    },
+    {
+      "word": "writing.",
+      "start_ms": 53180,
+      "end_ms": 53620
+    },
+    {
+      "word": "She",
+      "start_ms": 53620,
+      "end_ms": 54540
+    },
+    {
+      "word": "looks",
+      "start_ms": 54540,
+      "end_ms": 55600
+    },
+    {
+      "word": "around",
+      "start_ms": 55600,
+      "end_ms": 56100
+    },
+    {
+      "word": "the",
+      "start_ms": 56100,
+      "end_ms": 56360
+    },
+    {
+      "word": "library.",
+      "start_ms": 56360,
+      "end_ms": 56860
+    },
+    {
+      "word": "An",
+      "start_ms": 57820,
+      "end_ms": 58060
+    },
+    {
+      "word": "idea",
+      "start_ms": 58060,
+      "end_ms": 58840
+    },
+    {
+      "word": "hits",
+      "start_ms": 58840,
+      "end_ms": 59460
+    },
+    {
+      "word": "her.",
+      "start_ms": 59460,
+      "end_ms": 59820
+    },
+    {
+      "word": "Hello!",
+      "start_ms": 60880,
+      "end_ms": 61320
+    },
+    {
+      "word": "This",
+      "start_ms": 62440,
+      "end_ms": 63020
+    },
+    {
+      "word": "is",
+      "start_ms": 63020,
+      "end_ms": 63460
+    },
+    {
+      "word": "my",
+      "start_ms": 63460,
+      "end_ms": 63720
+    },
+    {
+      "word": "notebook.",
+      "start_ms": 63720,
+      "end_ms": 64260
+    },
+    {
+      "word": "Do",
+      "start_ms": 65240,
+      "end_ms": 65720
+    },
+    {
+      "word": "you",
+      "start_ms": 65720,
+      "end_ms": 65960
+    },
+    {
+      "word": "like",
+      "start_ms": 65960,
+      "end_ms": 66260
+    },
+    {
+      "word": "the",
+      "start_ms": 66260,
+      "end_ms": 66500
+    },
+    {
+      "word": "story?",
+      "start_ms": 66500,
+      "end_ms": 67100
+    },
+    {
+      "word": "Please",
+      "start_ms": 68160,
+      "end_ms": 68800
+    },
+    {
+      "word": "write",
+      "start_ms": 68800,
+      "end_ms": 69240
+    },
+    {
+      "word": "more.",
+      "start_ms": 69240,
+      "end_ms": 69720
+    },
+    {
+      "word": "Emma",
+      "start_ms": 70960,
+      "end_ms": 71220
+    },
+    {
+      "word": "puts",
+      "start_ms": 71220,
+      "end_ms": 71680
+    },
+    {
+      "word": "the",
+      "start_ms": 71680,
+      "end_ms": 72080
+    },
+    {
+      "word": "notebook",
+      "start_ms": 72080,
+      "end_ms": 72500
+    },
+    {
+      "word": "on",
+      "start_ms": 72500,
+      "end_ms": 73060
+    },
+    {
+      "word": "a",
+      "start_ms": 73060,
+      "end_ms": 73180
+    },
+    {
+      "word": "shelf",
+      "start_ms": 73180,
+      "end_ms": 73580
+    },
+    {
+      "word": "and",
+      "start_ms": 73580,
+      "end_ms": 74180
+    },
+    {
+      "word": "leaves.",
+      "start_ms": 74180,
+      "end_ms": 74700
+    },
+    {
+      "word": "A",
+      "start_ms": 75640,
+      "end_ms": 75920
+    },
+    {
+      "word": "week",
+      "start_ms": 75920,
+      "end_ms": 76180
+    },
+    {
+      "word": "later",
+      "start_ms": 76180,
+      "end_ms": 76680
+    },
+    {
+      "word": "Emma's",
+      "start_ms": 76680,
+      "end_ms": 77720
+    },
+    {
+      "word": "notebook",
+      "start_ms": 77720,
+      "end_ms": 78120
+    },
+    {
+      "word": "is",
+      "start_ms": 78120,
+      "end_ms": 78860
+    },
+    {
+      "word": "still",
+      "start_ms": 78860,
+      "end_ms": 79280
+    },
+    {
+      "word": "on",
+      "start_ms": 79280,
+      "end_ms": 79700
+    },
+    {
+      "word": "the",
+      "start_ms": 79700,
+      "end_ms": 79860
+    },
+    {
+      "word": "shelf",
+      "start_ms": 79860,
+      "end_ms": 80280
+    },
+    {
+      "word": "in",
+      "start_ms": 80280,
+      "end_ms": 80680
+    },
+    {
+      "word": "the",
+      "start_ms": 80680,
+      "end_ms": 80820
+    },
+    {
+      "word": "library.",
+      "start_ms": 80820,
+      "end_ms": 81300
+    },
+    {
+      "word": "Nervously",
+      "start_ms": 82360,
+      "end_ms": 83140
+    },
+    {
+      "word": "she",
+      "start_ms": 83140,
+      "end_ms": 83860
+    },
+    {
+      "word": "opens",
+      "start_ms": 83860,
+      "end_ms": 84260
+    },
+    {
+      "word": "it.",
+      "start_ms": 84260,
+      "end_ms": 84580
+    },
+    {
+      "word": "Her",
+      "start_ms": 85560,
+      "end_ms": 85800
+    },
+    {
+      "word": "eyes",
+      "start_ms": 85800,
+      "end_ms": 86220
+    },
+    {
+      "word": "open",
+      "start_ms": 86220,
+      "end_ms": 86900
+    },
+    {
+      "word": "wide.",
+      "start_ms": 86900,
+      "end_ms": 87620
+    },
+    {
+      "word": "There",
+      "start_ms": 88540,
+      "end_ms": 88820
+    },
+    {
+      "word": "are",
+      "start_ms": 88820,
+      "end_ms": 89000
+    },
+    {
+      "word": "pages",
+      "start_ms": 89000,
+      "end_ms": 89740
+    },
+    {
+      "word": "of",
+      "start_ms": 89740,
+      "end_ms": 90180
+    },
+    {
+      "word": "new",
+      "start_ms": 90180,
+      "end_ms": 90520
+    },
+    {
+      "word": "writing",
+      "start_ms": 90520,
+      "end_ms": 91060
+    },
+    {
+      "word": "by",
+      "start_ms": 91060,
+      "end_ms": 91740
+    },
+    {
+      "word": "different",
+      "start_ms": 91740,
+      "end_ms": 92220
+    },
+    {
+      "word": "people.",
+      "start_ms": 92220,
+      "end_ms": 92780
+    },
+    {
+      "word": "And",
+      "start_ms": 93480,
+      "end_ms": 94220
+    },
+    {
+      "word": "there",
+      "start_ms": 94220,
+      "end_ms": 94520
+    },
+    {
+      "word": "is",
+      "start_ms": 94520,
+      "end_ms": 94740
+    },
+    {
+      "word": "a",
+      "start_ms": 94740,
+      "end_ms": 94860
+    },
+    {
+      "word": "note",
+      "start_ms": 94860,
+      "end_ms": 95280
+    },
+    {
+      "word": "on",
+      "start_ms": 95280,
+      "end_ms": 95800
+    },
+    {
+      "word": "the",
+      "start_ms": 95800,
+      "end_ms": 95960
+    },
+    {
+      "word": "last",
+      "start_ms": 95960,
+      "end_ms": 96460
+    },
+    {
+      "word": "page.",
+      "start_ms": 96460,
+      "end_ms": 97000
+    },
+    {
+      "word": "How",
+      "start_ms": 98220,
+      "end_ms": 98720
+    },
+    {
+      "word": "about",
+      "start_ms": 98720,
+      "end_ms": 99040
+    },
+    {
+      "word": "starting",
+      "start_ms": 99040,
+      "end_ms": 99720
+    },
+    {
+      "word": "a",
+      "start_ms": 99720,
+      "end_ms": 100040
+    },
+    {
+      "word": "writing",
+      "start_ms": 100040,
+      "end_ms": 100480
+    },
+    {
+      "word": "group?",
+      "start_ms": 100480,
+      "end_ms": 101040
+    },
+    {
+      "word": "Let's",
+      "start_ms": 102020,
+      "end_ms": 102700
+    },
+    {
+      "word": "meet",
+      "start_ms": 102700,
+      "end_ms": 102880
+    },
+    {
+      "word": "here",
+      "start_ms": 102880,
+      "end_ms": 103320
+    },
+    {
+      "word": "on",
+      "start_ms": 103320,
+      "end_ms": 103680
+    },
+    {
+      "word": "Wednesday",
+      "start_ms": 103680,
+      "end_ms": 104240
+    },
+    {
+      "word": "after",
+      "start_ms": 104240,
+      "end_ms": 105040
+    },
+    {
+      "word": "lunch.",
+      "start_ms": 105040,
+      "end_ms": 105500
+    },
+    {
+      "word": "It's",
+      "start_ms": 106540,
+      "end_ms": 107260
+    },
+    {
+      "word": "the",
+      "start_ms": 107260,
+      "end_ms": 107440
+    },
+    {
+      "word": "best",
+      "start_ms": 107440,
+      "end_ms": 108020
+    },
+    {
+      "word": "ending",
+      "start_ms": 108020,
+      "end_ms": 108580
+    },
+    {
+      "word": "to",
+      "start_ms": 108580,
+      "end_ms": 108960
+    },
+    {
+      "word": "my",
+      "start_ms": 108960,
+      "end_ms": 109220
+    },
+    {
+      "word": "story.",
+      "start_ms": 109220,
+      "end_ms": 109860
+    },
+    {
+      "word": "Thanks",
+      "start_ms": 110440,
+      "end_ms": 111000
+    },
+    {
+      "word": "Emma.",
+      "start_ms": 111000,
+      "end_ms": 111360
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 13.2
+  }
+}

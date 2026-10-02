@@ -1,0 +1,118 @@
+{
+  "model": "intervention_model",
+  "version": "v1",
+  "stage": "P2-5",
+  "purpose": "把‘问题类型 → 最合适干预’写成可执行规则，明确什么时候必须回教材、什么时候 AI 才能生成新练习。",
+  "global_rules": [
+    {"id": "GR-1", "rule": "教材优先：任何干预先问‘教材里有没有对应的原文/音频/练习’，有就先回教材。", "why": "教材是主线，AI 生成内容不是主线。"},
+    {"id": "GR-2", "rule": "孩子同意才干预：系统只给建议，不自动进入练习。", "why": "孩子做主。"},
+    {"id": "GR-3", "rule": "单次错误不触发干预（只记录）。", "why": "避免错一次=薄弱。"},
+    {"id": "GR-4", "rule": "AI 生成练习必须是教材范围内的变式，且必须引用同一 LearningObject 与教材证据。", "why": "防止变成题库。"},
+    {"id": "GR-5", "rule": "干预后必须有一次‘换任务或延迟’的验证，才算闭环。", "why": "避免短期记忆伪装成掌握。"}
+  ],
+  "problem_types": [
+    {
+      "id": "P1", "problem": "词汇形义不牢（看得懂但写不出/记不住意思）",
+      "signals": ["回忆型作答 incorrect", "填空题拼写错误但语境选对"],
+      "interventions": [
+        {"type": "textbook_recall", "detail": "回教材词表与出现该词的课文原句，读一遍再回忆", "textbook_first": true},
+        {"type": "ai_variant", "detail": "AI 用同一词的教材原句做 1–2 道变式（中文→英文 / 语境选词）", "textbook_first": false,
+         "only_when": ["教材词表与课文已看过", "同一错误出现 ≥2 次"]}
+      ],
+      "ai_may_generate": true
+    },
+    {
+      "id": "P2", "problem": "语音/听辨问题（听不出词，或分不清音）",
+      "signals": ["听力题错但在文本里能认出来", "Phonetics in use 相关任务错误"],
+      "interventions": [
+        {"type": "textbook_audio_replay", "detail": "重听官方教材音频（🎧）对应片段，可重复", "textbook_first": true},
+        {"type": "textbook_original_redo", "detail": "重做同一教材听力题", "textbook_first": true},
+        {"type": "ai_hint", "detail": "AI 提示关键音与易混音（不生成新题）", "textbook_first": false}
+      ],
+      "ai_may_generate": false
+    },
+    {
+      "id": "P3", "problem": "理解偏差（读懂了大意，但答错细节或推理）",
+      "signals": ["阅读理解题 incorrect，AI 归因为‘未在文中定位’或‘与教材事实不符’"],
+      "interventions": [
+        {"type": "textbook_reread", "detail": "回教材原文（P2-4 related_text 指向的段落）重读，标出关键句", "textbook_first": true},
+        {"type": "ai_scaffold", "detail": "AI 用提问引导定位关键句（不给答案）", "textbook_first": false},
+        {"type": "textbook_original_redo", "detail": "重做教材原题", "textbook_first": true}
+      ],
+      "ai_may_generate": false
+    },
+    {
+      "id": "P4", "problem": "语法结构不稳（形式用错）",
+      "signals": ["语法类活动错误（圈词/句型转换）", "写作中同类形式错误"],
+      "interventions": [
+        {"type": "textbook_grammar", "detail": "回教材语法指针（Know more about … pNN）与附录 Guide to the language use 对应页", "textbook_first": true},
+        {"type": "textbook_example_review", "detail": "看教材例句，再做教材同类练习", "textbook_first": true},
+        {"type": "ai_explain", "detail": "AI 结合教材例句解释规则（不引入教材外语法）", "textbook_first": false},
+        {"type": "ai_variant", "detail": "教材范围内同类形式的变式练习 1–3 题", "textbook_first": false,
+         "only_when": ["教材例句已看过", "同类错误出现在 ≥2 个任务"]}
+      ],
+      "ai_may_generate": true
+    },
+    {
+      "id": "P5", "problem": "听力细节记录问题（听懂了但填错/漏填）",
+      "signals": ["听力填空题 partial/incorrect，且拼写与形式基本正确"],
+      "interventions": [
+        {"type": "textbook_audio_replay", "detail": "重听并对照教材题目结构定位信息点", "textbook_first": true},
+        {"type": "textbook_original_redo", "detail": "重做教材听力题", "textbook_first": true}
+      ],
+      "ai_may_generate": false
+    },
+    {
+      "id": "P6", "problem": "表达类问题（写作/口语达不到教材要求）",
+      "signals": ["写作任务 AI 反馈：结构缺失/本单元表达未使用", "口语任务不完整"],
+      "interventions": [
+        {"type": "textbook_model_review", "detail": "对照教材范例（Reading for writing 范例文本）找结构", "textbook_first": true},
+        {"type": "ai_feedback", "detail": "AI 就给教材要求的三个方面给反馈（内容/本单元词汇/语法形式）", "textbook_first": false},
+        {"type": "textbook_rewrite", "detail": "按教材要求重写一次（可只改一处）", "textbook_first": true}
+      ],
+      "ai_may_generate": false
+    },
+    {
+      "id": "P7", "problem": "粗心/偶发错误",
+      "signals": ["同一 LearningObject 只有 1 次错误且此前表现稳定", "错误为拼写笔误、单位/大小写等非结构性错误"],
+      "interventions": [
+        {"type": "no_intervention", "detail": "只记录，不生成练习、不提示薄弱", "textbook_first": true}
+      ],
+      "ai_may_generate": false
+    },
+    {
+      "id": "P8", "problem": "综合/迁移不足（单题会做，混起来不会）",
+      "signals": ["阶段验证跨活动时错误率明显上升", "同一 LearningObject 在不同任务类型下表现不一致"],
+      "interventions": [
+        {"type": "stage_assessment", "detail": "进入阶段验证（见 stage_assessment_model）", "textbook_first": true},
+        {"type": "textbook_mixed_practice", "detail": "从教材原题中挑选不同板块、不同题型混合练习", "textbook_first": true},
+        {"type": "ai_variant", "detail": "教材范围内混合变式（低频，最多 5 题）", "textbook_first": false,
+         "only_when": ["教材混合练习已完成", "孩子主动要求更多练习"]}
+      ],
+      "ai_may_generate": true
+    }
+  ],
+  "intervention_types": [
+    {"type": "textbook_reread", "cost": "0", "ai_calls": 0},
+    {"type": "textbook_audio_replay", "cost": "0", "ai_calls": 0},
+    {"type": "textbook_recall", "cost": "0", "ai_calls": 0},
+    {"type": "textbook_grammar", "cost": "0", "ai_calls": 0},
+    {"type": "textbook_model_review", "cost": "0", "ai_calls": 0},
+    {"type": "textbook_original_redo", "cost": "0", "ai_calls": 0},
+    {"type": "textbook_mixed_practice", "cost": "0", "ai_calls": 0},
+    {"type": "ai_explain", "cost": "低", "ai_calls": 1, "cache": true},
+    {"type": "ai_hint", "cost": "低", "ai_calls": 1, "cache": true},
+    {"type": "ai_scaffold", "cost": "低", "ai_calls": 1, "cache": false},
+    {"type": "ai_feedback", "cost": "中", "ai_calls": 1, "cache": false},
+    {"type": "ai_variant", "cost": "中", "ai_calls": 1, "cache": true,
+     "conditions": ["教材范围内", "同一错误 ≥2 次 或 综合迁移不足", "孩子主动选择"]},
+    {"type": "no_intervention", "cost": "0", "ai_calls": 0}
+  ],
+  "forbidden": [
+    {"id": "F-1", "rule": "错题 → 无限出同类题", "verdict": "REJECT", "why": "退化为刷题，与教材主线冲突。"},
+    {"id": "F-2", "rule": "AI 生成教材之外的知识点讲解", "verdict": "REJECT", "why": "脱离教材事实源。"},
+    {"id": "F-3", "rule": "系统自动进入巩固流程", "verdict": "REJECT", "why": "剥夺孩子决定权。"},
+    {"id": "F-4", "rule": "用巩固结果直接判定掌握", "verdict": "REJECT", "why": "巩固是干预，不是验证；验证需换任务或延迟。"
+    }
+  ]
+}

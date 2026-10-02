@@ -1,0 +1,59 @@
+{
+  "model": "learning_evidence_model",
+  "version": "v1",
+  "stage": "P2-5",
+  "purpose": "定义什么算学习证据、证据强度如何、哪些判断必须靠组合证据，避免单条事件推出结论。",
+  "evidence_sources": [
+    {"id": "EV-study-done", "source": "教材学习动作：我学完了 / 我看完了", "record": "study + done",
+     "strength": "weak", "proves": "接触过教材内容", "does_not_prove": "理解、会做、记得"},
+    {"id": "EV-listen", "source": "播放官方教材音频（🎧）", "record": "listen（可选记录）",
+     "strength": "weak", "proves": "听过该教材音频", "does_not_prove": "听懂"},
+    {"id": "EV-self-check", "source": "孩子自评（完成/再看一遍）", "record": "practice + done/partial",
+     "strength": "weak", "proves": "孩子判断自己做完了", "does_not_prove": "正确"},
+    {"id": "EV-recall", "source": "回忆型作答（我记得 / 有点模糊 / 忘了）", "record": "practice + correct/partial/incorrect",
+     "strength": "medium-strong", "proves": "能在无提示下回忆", "does_not_prove": "能在新语境中运用",
+     "note": "回忆是初中词汇学习最强的可自动化证据之一，但单次仍不足以判稳定。"},
+    {"id": "EV-choice", "source": "教材选择题（A/B/C/D）", "record": "practice + correct/incorrect",
+     "strength": "medium", "proves": "能在给定选项中识别", "does_not_prove": "能自主产出",
+     "risk": "四选一有猜测概率，必须与回忆/填空类证据结合。"},
+    {"id": "EV-fill", "source": "教材填空题（保留教材下划线）", "record": "practice + correct/partial/incorrect",
+     "strength": "medium-strong", "proves": "能在语境中产出目标形式", "does_not_prove": "长期保持"},
+    {"id": "EV-match-order", "source": "教材匹配/排序题", "record": "practice + correct/incorrect",
+     "strength": "medium", "proves": "能建立教材内的对应关系", "does_not_prove": "能表达"},
+    {"id": "EV-reading", "source": "教材阅读理解题（简答/信息匹配）", "record": "practice + AI 批改结论",
+     "strength": "strong", "proves": "能在真实文本中定位与推理", "does_not_prove": "语法形式准确",
+     "note": "需 AI 批改判断‘符合教材事实’，不能只看字符串是否相同。"},
+    {"id": "EV-listening", "source": "教材听力题（配合官方音频）", "record": "practice + AI 批改结论",
+     "strength": "strong", "proves": "能在真实语流中获取信息", "does_not_prove": "能自行表达"},
+    {"id": "EV-speaking", "source": "教材口语任务（说/角色扮演，孩子自述或转写）", "record": "produce/repeat + AI 批改",
+     "strength": "strong", "proves": "能做教材要求的表达任务", "does_not_prove": "书写准确"},
+    {"id": "EV-writing", "source": "教材写作任务", "record": "produce + AI 批改（教材范例对照）",
+     "strength": "strong", "proves": "能整合教材语言完成输出", "does_not_prove": "语音"},
+    {"id": "EV-ai-grading", "source": "AI 在教材证据范围内的批改结论", "record": "写入 response 分析结果",
+     "strength": "medium", "proves": "与教材事实的符合程度（附理由）", "does_not_prove": "真实语言能力上限",
+     "guard": "AI 结论必须带证据引用与不确定度；不得单独作为稳定掌握的依据。"},
+    {"id": "EV-repeat-times", "source": "多次、跨日表现", "record": "同 LearningObject 的多条记录聚合",
+     "strength": "strong", "proves": "保持与稳定性", "does_not_prove": "迁移到新任务",
+     "guard": "必须来自不同自然日，且不可是同一会话内的重复点击。"}
+  ],
+  "strength_scale": {
+    "weak": {"weight": 1, "may_alone_raise_state": false},
+    "medium": {"weight": 2, "may_alone_raise_state": "to practicing / likely_understood(部分满足)"},
+    "medium-strong": {"weight": 3, "may_alone_raise_state": "likely_understood"},
+    "strong": {"weight": 4, "may_alone_raise_state": "likely_understood（仍不足以 stable）"}
+  },
+  "combination_rules": [
+    {"id": "CR-1", "rule": "stable 必须由 ≥3 条判断证据 + ≥2 种任务类型 + ≥2 个自然日共同支持。", "why": "避免刚做过就会的假掌握。"},
+    {"id": "CR-2", "rule": "weak 证据只能推动‘学过/练过’，永远不能单独推动 likely_understood 或 stable。", "why": "接触与自评不构成能力证明。"},
+    {"id": "CR-3", "rule": "同一会话内对同一 LearningObject 的重复作答只按 1 条有效证据计。", "why": "防刷。"},
+    {"id": "CR-4", "rule": "AI 批改结论必须与孩子原始作答一起保存，判断时以原始作答为准。", "why": "AI 可能出错，证据要可复核。"},
+    {"id": "CR-5", "rule": "当前错误（最近一次 judged=incorrect）只是事实状态；升级为‘疑似薄弱’需 ≥2 次错误或 ≥1 次错误 + 明确归因（如同类错误在 2 个不同任务出现）。", "why": "避免‘错一次=薄弱’。"},
+    {"id": "CR-6", "rule": "任何状态降级都必须可解释（说明是哪几条证据导致的），并且只影响系统提示，不向孩子展示等级评语。", "why": "保持孩子主动权与心理安全。"}
+  ],
+  "anti_patterns": [
+    {"id": "AP-1", "pattern": "用 evidence_count 直接升级等级", "verdict": "REJECT", "why": "计数不含任务类型、时间、证据强度。"},
+    {"id": "AP-2", "pattern": "把 skipped / NULL / done 计为正确证据", "verdict": "REJECT", "why": "与既有 P1-06-C2-A 规则冲突，会污染池与状态。"},
+    {"id": "AP-3", "pattern": "只用最新一条记录代表全部历史", "verdict": "EXTEND", "why": "当前池服务即如此：作为‘当前状态’可用，但作为诊断结论不足。"},
+    {"id": "AP-4", "pattern": "AI 一次批改即写入薄弱点", "verdict": "REJECT", "why": "AI 结论为中等强度证据，需与多次表现结合。"}
+  ]
+}

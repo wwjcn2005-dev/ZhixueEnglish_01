@@ -1,0 +1,338 @@
+{
+ "stage": "P1-03",
+ "audited_at": "2026-09-17T18:35:30",
+ "A_generation": {
+  "ai_call_count": 1,
+  "model": "deepseek-v4-pro",
+  "provider": "deepseek",
+  "retries": 0,
+  "second_model_used": false,
+  "local_model_used": false,
+  "runs": [
+   {
+    "run_id": "AIRUN:20260917T1840:P103",
+    "generation_scope_key": "66865B625409F6911F8D428B1FE924040BB8694328517AF9EF10E2193DAB1D70",
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+    "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": null,
+    "model": "deepseek-v4-pro",
+    "prompt_version": "P0-v1",
+    "context_hash": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+    "provider": "deepseek",
+    "context_ref": "audit\\AI_question_generation_spike\\20260917_1630_deepseek_second_section_8192\\input_context.json",
+    "raw_response_ref": "P1_03_minimal_pipeline/raw_response.json",
+    "requested_max": 3,
+    "max_tokens": 8192,
+    "finish_reason": "stop",
+    "elapsed_ms": 116579,
+    "question_count": 3,
+    "status": "OK",
+    "insufficient_evidence": 0,
+    "error": null,
+    "note": "single generation call; no retry",
+    "generated_at": "2026-09-17T18:40:00+08:00"
+   }
+  ],
+  "usage": [
+   {
+    "prompt_tokens": 9451,
+    "completion_tokens": 7332,
+    "total_tokens": 16783,
+    "prompt_tokens_details": {
+     "cached_tokens": 9344
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 6638
+    },
+    "prompt_cache_hit_tokens": 9344,
+    "prompt_cache_miss_tokens": 107
+   }
+  ]
+ },
+ "B_question": {
+  "generated": 3,
+  "inserted": 2,
+  "validator_pass_this_run": 2,
+  "validator_fail_this_run": 1,
+  "validation_rows_in_db": {
+   "PASS": 2,
+   "FAIL": 0,
+   "note": "题库只保存入库题（PASS）的校验记录；FAIL 题的校验结论保存在 validation_result.json 与 generation_run.question_count 中"
+  },
+  "pending_review": 2,
+  "not_entered": 1,
+  "not_entered_reason": "validator v2 FAIL on 5_vocab_scope（模型自造教材外人物 Mozi）"
+ },
+ "C_provenance": {
+  "all_complete": true,
+  "chains": [
+   {
+    "question_id": "AIQ:3179968E3E74",
+    "generation_run_id": "AIRUN:20260917T1840:P103",
+    "model": "deepseek-v4-pro",
+    "prompt_version": "P0-v1",
+    "context_hash": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+    "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+    "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "textbook_page": 17,
+    "evidence_block_ids": [
+     "FLTRP-EN-7A-2022CUR:P22:B2"
+    ],
+    "complete": true
+   },
+   {
+    "question_id": "AIQ:7EBCDBC29563",
+    "generation_run_id": "AIRUN:20260917T1840:P103",
+    "model": "deepseek-v4-pro",
+    "prompt_version": "P0-v1",
+    "context_hash": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+    "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+    "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "textbook_page": 17,
+    "evidence_block_ids": [
+     "FLTRP-EN-7A-2022CUR:P22:B0"
+    ],
+    "complete": true
+   }
+  ]
+ },
+ "D_learning_object": {
+  "dangling": [],
+  "question_id_like": [],
+  "all_valid": true
+ },
+ "E_validator": {
+  "questions_with_validation": 2,
+  "questions_total": 2,
+  "all_have_validation": true
+ },
+ "F_lifecycle": {
+  "active_questions": [],
+  "review_approved_events": [],
+  "all_pending_review": true,
+  "no_active": true,
+  "no_review_approved": true
+ },
+ "G_reuse": {
+  "generation_scope_key_present": true,
+  "keys": [
+   "66865B625409F6911F8D428B1FE924040BB8694328517AF9EF10E2193DAB1D70"
+  ]
+ },
+ "H_fingerprint": {
+  "all_present": true,
+  "missing": []
+ },
+ "counts": {
+  "generation_run": 1,
+  "ai_question": 2,
+  "question_evidence": 2,
+  "question_learning_object": 4,
+  "question_validation": 2,
+  "question_event": 2
+ },
+ "readback": [
+  {
+   "question_id": "AIQ:3179968E3E74",
+   "version": 1,
+   "question_type": "vocab_choice",
+   "question_text": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+   "options": [
+    "polite",
+    "dry",
+    "important",
+    "mistake"
+   ],
+   "correct_option": "A",
+   "correct_answer": "polite",
+   "explanation": "The passage uses “polite” to describe whether it is OK to point out the mistake in the first lesson.",
+   "difficulty": "easy",
+   "textbook_page": 17,
+   "lifecycle_status": "PENDING_REVIEW",
+   "active": 0,
+   "stale": 0,
+   "needs_human_review": 1,
+   "question_fingerprint": "3179968E3E7400B28A2312579728FF0B6DDA54DB3B50C16761445908D12A63F1",
+   "evidence": [
+    {
+     "ordinal": 1,
+     "evidence_block_id": "FLTRP-EN-7A-2022CUR:P22:B2",
+     "evidence_quote": "But is it OK to point out the mistake? Is that polite, in the first lesson?”",
+     "textbook_page_from_block": 17,
+     "block_exists_in_contentpack": true
+    }
+   ],
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:813A79C77A94",
+     "is_primary": 1,
+     "exists_in_contentpack": true,
+     "is_question_id_like": false
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:0F6BF1CC2913",
+     "is_primary": 0,
+     "exists_in_contentpack": true,
+     "is_question_id_like": false
+    }
+   ],
+   "validation": [
+    {
+     "validator_version": "v2",
+     "validation_result": "PASS",
+     "answer_support_type": "EXACT",
+     "checks_json": "{\"1_location\": true, \"2_evidence_ids\": true, \"3_evidence_quote\": true, \"4_answer_support\": true, \"5_vocab_scope\": true, \"6_options\": true, \"7_dedup\": true, \"8_type_rules\": true}",
+     "out_of_scope_tokens_json": "[]",
+     "needs_human_review": 1,
+     "validated_at": "2026-09-17T18:40:00+08:00"
+    }
+   ],
+   "events": [
+    {
+     "event_id": "AIEV:3179968E3E74:V1",
+     "event_type": "VALIDATED",
+     "from_status": "GENERATED",
+     "to_status": "PENDING_REVIEW",
+     "event_at": "2026-09-17T18:40:00+08:00",
+     "actor": "validator_v2",
+     "actor_kind": "machine"
+    }
+   ],
+   "provenance_chain": {
+    "question_id": "AIQ:3179968E3E74",
+    "generation_run_id": "AIRUN:20260917T1840:P103",
+    "model": "deepseek-v4-pro",
+    "prompt_version": "P0-v1",
+    "context_hash": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+    "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+    "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "textbook_page": 17,
+    "evidence_block_ids": [
+     "FLTRP-EN-7A-2022CUR:P22:B2"
+    ],
+    "complete": true
+   }
+  },
+  {
+   "question_id": "AIQ:7EBCDBC29563",
+   "version": 1,
+   "question_type": "fill",
+   "question_text": "Our English teacher Ms Chen writes the ___ on the blackboard and says, “Please write this down.”",
+   "options": [
+    "sentence",
+    "mistake",
+    "polite",
+    "meaning"
+   ],
+   "correct_option": "A",
+   "correct_answer": "sentence",
+   "explanation": "The reading passage says the English teacher writes the sentence on the blackboard.",
+   "difficulty": "easy",
+   "textbook_page": 17,
+   "lifecycle_status": "PENDING_REVIEW",
+   "active": 0,
+   "stale": 0,
+   "needs_human_review": 1,
+   "question_fingerprint": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD",
+   "evidence": [
+    {
+     "ordinal": 1,
+     "evidence_block_id": "FLTRP-EN-7A-2022CUR:P22:B0",
+     "evidence_quote": "Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.”",
+     "textbook_page_from_block": 17,
+     "block_exists_in_contentpack": true
+    }
+   ],
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:3571476C132A",
+     "is_primary": 1,
+     "exists_in_contentpack": true,
+     "is_question_id_like": false
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:0F6BF1CC2913",
+     "is_primary": 0,
+     "exists_in_contentpack": true,
+     "is_question_id_like": false
+    }
+   ],
+   "validation": [
+    {
+     "validator_version": "v2",
+     "validation_result": "PASS",
+     "answer_support_type": "EXACT",
+     "checks_json": "{\"1_location\": true, \"2_evidence_ids\": true, \"3_evidence_quote\": true, \"4_answer_support\": true, \"5_vocab_scope\": true, \"6_options\": true, \"7_dedup\": true, \"8_type_rules\": true}",
+     "out_of_scope_tokens_json": "[]",
+     "needs_human_review": 1,
+     "validated_at": "2026-09-17T18:40:00+08:00"
+    }
+   ],
+   "events": [
+    {
+     "event_id": "AIEV:7EBCDBC29563:V1",
+     "event_type": "VALIDATED",
+     "from_status": "GENERATED",
+     "to_status": "PENDING_REVIEW",
+     "event_at": "2026-09-17T18:40:00+08:00",
+     "actor": "validator_v2",
+     "actor_kind": "machine"
+    }
+   ],
+   "provenance_chain": {
+    "question_id": "AIQ:7EBCDBC29563",
+    "generation_run_id": "AIRUN:20260917T1840:P103",
+    "model": "deepseek-v4-pro",
+    "prompt_version": "P0-v1",
+    "context_hash": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+    "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+    "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+    "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "textbook_page": 17,
+    "evidence_block_ids": [
+     "FLTRP-EN-7A-2022CUR:P22:B0"
+    ],
+    "complete": true
+   }
+  }
+ ],
+ "protection": {
+  "learning_db": {
+   "path": "D:\\ZhixueEnglish\\structured\\learning\\learning.db",
+   "size_bytes": 118784,
+   "mtime": "2026-09-13T15:50:09",
+   "sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91"
+  },
+  "validator_v2": {
+   "path": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\20260917_1520_validator_fix\\validator_v2.py",
+   "size_bytes": 5910,
+   "mtime": "2026-09-17T14:31:02",
+   "sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683"
+  },
+  "contentpack": {
+   "path": "D:\\ZhixueEnglish\\structured\\contentpack\\v5\\FLTRP-EN-7A-2022CUR.sqlite",
+   "size_bytes": 2715648,
+   "mtime": "2026-09-14T14:37:54",
+   "sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39"
+  },
+  "question_library_db": {
+   "path": "D:\\ZhixueEnglish\\structured\\ai\\question_library.db",
+   "size_bytes": 126976,
+   "mtime": "2026-09-17T18:34:19",
+   "sha256": "9064964DFF526F38AC0ED2773E14C1ABACBF65216EDE239DBCC4B697405D4CB6"
+  }
+ },
+ "pdf_reparsed": false,
+ "local_qwen_used": false,
+ "learning_db_modified": false,
+ "contentpack_modified": false
+}

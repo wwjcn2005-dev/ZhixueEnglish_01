@@ -1,0 +1,176 @@
+{
+ "stage": "P1-05-D",
+ "final_status": "CALIBRATION_PASS",
+ "single_variable": {
+  "changed": "max_tokens 8192 -> 16384",
+  "confirmed_by_field_diff_vs_p1_05c": true,
+  "other_field_diffs": [],
+  "context_and_prompt_identical": true,
+  "system_prompt_sha256": "193B43B80BBB564DD89C340E07C397409F6736FA7F06165D2FCC52D58A61FC8E",
+  "user_prompt_sha256": "6846317BE314EF44E9B68EB5985C95DF68A0A831FECDB669EB9DD190C48A98F7",
+  "context_hash": "D00F004A341D0927F73BD74B784EEDD377B6E5BD43570BD9F69E0B265B560F25",
+  "model": "deepseek-v4-pro",
+  "temperature": 0.2,
+  "thinking": {
+   "type": "enabled"
+  },
+  "reasoning_effort": "low",
+  "prompt_version": "P1-05-v1",
+  "response_format": "未使用（与 P1-05-B/C 一致）"
+ },
+ "call": {
+  "api_calls": 1,
+  "retry_count": 0,
+  "second_call_made": false,
+  "http_ok": true,
+  "api_error": null,
+  "latency_ms": 172875,
+  "latency_s": 172.9,
+  "finish_reason": "stop",
+  "content_chars": 6817,
+  "reasoning_chars": 41558,
+  "max_tokens_requested": 16384,
+  "prompt_tokens": 10540,
+  "cached_tokens": 10496,
+  "completion_tokens": 12434,
+  "reasoning_tokens": 10481,
+  "total_tokens": 22974
+ },
+ "budget_analysis": {
+  "reasoning_needed_at_least": 10481,
+  "previous_cap": 8192,
+  "deficit_of_previous_cap": 2289,
+  "new_cap": 16384,
+  "headroom_after_reasoning": 5903,
+  "reasoning_hit_cap": false,
+  "conclusion": "reasoning 需要 10,481 tokens —— 超过 8,192 上限约 2,289 tokens，但远低于 16,384；因此 8192 必然截断，16384 有约 5,903 tokens 余量。"
+ },
+ "json_and_structure": {
+  "json_parseable": true,
+  "questions_field_present": true,
+  "questions_count": 10,
+  "questions_is_list": true,
+  "type_distribution": {
+   "fill": 4,
+   "reading_choice": 3,
+   "vocab_choice": 3
+  },
+  "pages_present": [
+   32,
+   33,
+   34
+  ],
+  "activities_present": [
+   1,
+   2,
+   3
+  ],
+  "note": "仅做『是否完整解析 + questions 字段存在 + 必填字段是否缺失』的只读检查；**未进入正式 validator 流程**，也未做任何质量评价（P1-05-D §十一）"
+ },
+ "comparison_across_runs": {
+  "P0-1630_8192_stop": {
+   "max_tokens_requested": 8192,
+   "finish_reason": "stop",
+   "prompt_tokens": 9451,
+   "cached_tokens": 9344,
+   "completion_tokens": 6123,
+   "reasoning_tokens": 5648,
+   "total_tokens": 15574,
+   "content_chars": 1685,
+   "latency_ms": 113300,
+   "reasoning_over_completion": 0.922
+  },
+  "P1-03_8192_stop": {
+   "max_tokens_requested": 8192,
+   "finish_reason": "stop",
+   "prompt_tokens": 9451,
+   "cached_tokens": 9344,
+   "completion_tokens": 7332,
+   "reasoning_tokens": 6638,
+   "total_tokens": 16783,
+   "content_chars": 2436,
+   "latency_ms": 116579,
+   "reasoning_over_completion": 0.905
+  },
+  "P1-05-B_run1_8192_length": {
+   "max_tokens_requested": 8192,
+   "finish_reason": "length",
+   "prompt_tokens": 10619,
+   "cached_tokens": 256,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 8192,
+   "total_tokens": 18811,
+   "content_chars": 0,
+   "latency_ms": 123364,
+   "reasoning_over_completion": 1.0,
+   "max_tokens_source": "该轮 raw_response 未记录该字段；取自 P1-05-B 执行脚本常量与报告（8192）"
+  },
+  "P1-05-C_8192_low_length": {
+   "max_tokens_requested": 8192,
+   "finish_reason": "length",
+   "prompt_tokens": 10540,
+   "cached_tokens": 0,
+   "completion_tokens": 8192,
+   "reasoning_tokens": 8192,
+   "total_tokens": 18732,
+   "content_chars": 0,
+   "latency_ms": 190682,
+   "reasoning_over_completion": 1.0,
+   "max_tokens_source": "该轮 raw_response 未记录该字段；取自 calibration_request.json（8192）"
+  },
+  "P1-05-D_16384_low_stop": {
+   "max_tokens_requested": 16384,
+   "finish_reason": "stop",
+   "prompt_tokens": 10540,
+   "cached_tokens": 10496,
+   "completion_tokens": 12434,
+   "reasoning_tokens": 10481,
+   "total_tokens": 22974,
+   "content_chars": 6817,
+   "latency_ms": 172875,
+   "reasoning_over_completion": 0.843
+  }
+ },
+ "guard": {
+  "module": "P1-05-C generation_guard.py（只读复用，未修改）",
+  "decision": "PROCEED",
+  "verdict_status": "OK"
+ },
+ "protection": {
+  "before": {
+   "question_library.db": "3970408E3C0FE341C38EFAA9E5208AB61FC363465BE71AD10192ABF49F01CAAA",
+   "learning.db": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+   "contentpack": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39",
+   "validator_v2": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+   "validator_v3": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+   "P1-05-A_matrix": "1AAE82635F0F4CFBD4D5D18A0497EB49D4EC696EA0729D83F63B0336B2785FCC",
+   "P1-05-B_report": "33BDEB8D3286F4429A3BFE7D414CE321E79D70691556C8113D0C7209789AF405",
+   "P1-05-C_report": "C29671162571476965179759D3FF2F81DF270BEBB541C16D161D00CC9BF2C3A1",
+   "P1-05-C_request": "9C73146306E76386D93CF57730C2C5CE643BE05DDF88CF93FE27F54EF124040C",
+   "P1-05-C_response": "5B351E07A6DB988656190DCEE7435486E5A02AA2F81FB162CACF031E98742003",
+   "P1-05-C_guard": "EBFE59E846CAB35C8D281BF8BA93F0DA7689856F73F40B3DA3DE277E232C24E1"
+  },
+  "after": {
+   "question_library.db": "3970408E3C0FE341C38EFAA9E5208AB61FC363465BE71AD10192ABF49F01CAAA",
+   "learning.db": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+   "contentpack": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39",
+   "validator_v2": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+   "validator_v3": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+   "P1-05-A_matrix": "1AAE82635F0F4CFBD4D5D18A0497EB49D4EC696EA0729D83F63B0336B2785FCC",
+   "P1-05-B_report": "33BDEB8D3286F4429A3BFE7D414CE321E79D70691556C8113D0C7209789AF405",
+   "P1-05-C_report": "C29671162571476965179759D3FF2F81DF270BEBB541C16D161D00CC9BF2C3A1",
+   "P1-05-C_request": "9C73146306E76386D93CF57730C2C5CE643BE05DDF88CF93FE27F54EF124040C",
+   "P1-05-C_response": "5B351E07A6DB988656190DCEE7435486E5A02AA2F81FB162CACF031E98742003",
+   "P1-05-C_guard": "EBFE59E846CAB35C8D281BF8BA93F0DA7689856F73F40B3DA3DE277E232C24E1"
+  },
+  "all_unchanged": true,
+  "changed": []
+ },
+ "not_done_in_this_round": [
+  "未进入正式 validator 流程",
+  "未做人工审核",
+  "未写入 question_library.db（无 generation_run、无 AIQ:*）",
+  "未计算 Natural Value Rate / APPROVE Rate",
+  "未宣布 P1-05 通过"
+ ]
+}

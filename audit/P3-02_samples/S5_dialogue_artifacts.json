@@ -1,0 +1,14 @@
+{
+ "sample": "S5_dialogue_artifacts",
+ "category": "D 多人对话",
+ "audio": "AU13",
+ "textbook_original": "Dad Mia, how do you feel about your first day in junior high tomorrow? Mia Don’t worry. We’ve got something for you! Look! Well, I’m a little nervous. Mum MiaA paper boat? MiaA paper boat? Dad Yes, and it’s also a letter from Mum and me. We want to share some thoughts with you. Mia Oh, thank you!",
+ "textbook_with_blanks": null,
+ "recovered_sentence": null,
+ "recovery_method": null,
+ "matching_method": null,
+ "status": "NEEDS_REVIEW",
+ "reason": "对话文本存在提取瑕疵（重复片段、说话人标签粘连），句级对应不可靠",
+ "speech_runs": 42,
+ "duration_ms": 101381
+}

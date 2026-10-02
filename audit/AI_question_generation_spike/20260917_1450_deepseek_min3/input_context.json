@@ -1,0 +1,727 @@
+{
+ "textbook_position": {
+  "unit": "Unit 3",
+  "unit_title": "Family ties",
+  "section": "READING_FOR_WRITING",
+  "section_title": "Reading for writing",
+  "textbook_pages": [
+   56,
+   57,
+   58,
+   59
+  ],
+  "pdf_pages": [
+   61,
+   62,
+   63,
+   64
+  ]
+ },
+ "activity_instructions": [
+  {
+   "activity_no": 1,
+   "page": 56,
+   "instruction": "Look at the three pictures on the right and describe them. Use the words and expression to help you."
+  },
+  {
+   "activity_no": 2,
+   "page": 56,
+   "instruction": "Look at the title and the pictures. What is the story about?Now read the story and check your answer."
+  },
+  {
+   "activity_no": 4,
+   "page": 58,
+   "instruction": "Answer the questions.1 What does “it” refer to in “He puts Robert in a trailer and pulls it along with his bike”?"
+  },
+  {
+   "activity_no": 5,
+   "page": 59,
+   "instruction": "Write a short paragraph about your family members’ support."
+  }
+ ],
+ "textbook_blocks": [
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B4",
+   "page": 56,
+   "kind": "heading",
+   "role": "section_title",
+   "text": "Reading for writing"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B1",
+   "page": 56,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B0",
+   "page": 56,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Look at the three pictures on the right and describe them. Use the words and expression to help you."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B6",
+   "page": 56,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "familyclose tolovesmileenjoyimportant"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B3",
+   "page": 56,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "2"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B2",
+   "page": 56,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Look at the title and the pictures. What is the story about?Now read the story and check your answer."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B8",
+   "page": 56,
+   "kind": "heading",
+   "role": "heading",
+   "text": "Racing"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B5",
+   "page": 56,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1  \u0007John and Robert Taylor are brothers. They are always close to each other. But Robert has a serious disease and cannot move at all. He has to stay at home every day and he often feels lonely. He wants to join the other kids. He wants to go out and play."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P61:B7",
+   "page": 56,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "2  \u0007John sees Robert’s sad face and wants to help. One day, he finds a way. He puts Robert in a trailer and pulls it along with his bike. For the first time, Robert feels like the other kids. A big, bright smile appears on his face."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P62:B3",
+   "page": 57,
+   "kind": "heading",
+   "role": "heading",
+   "text": "together"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P62:B0",
+   "page": 57,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "3  \u0007Now, the brothers often take part in bike races together. It is hard for John to pull Robert’s trailer. But John refuses to race without his brother. They don’t often win. But for the brothers, some things are more important than winning. They enjoy"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P62:B1",
+   "page": 57,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "the time together. “We are family,” John says."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P62:B2",
+   "page": 57,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "4  \u0007For the Taylor brothers, the result doesn’t really matter. The love between them powers their bike.  And love always wins."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B0",
+   "page": 58,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Complete the notes with the words and expression from the story.3"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B6",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Who is in the story?John and Robert Taylor. They are brothers and are always"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B7",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1  each other."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B8",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What happens?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B9",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "At firstRobert cannot move at all. He often feels"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B10",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "2 .ThenJohn puts Robert in a trailer and"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B11",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "3  it along with his bike. For the"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B12",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "4  time, Robert feels like the other kids.NowThey often take part in bike races. They enjoy the"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B13",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "5  together."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B14",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What does the writer think of them?The"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B15",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "6  between them powers their bike. And love always wins."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B1",
+   "page": 58,
+   "kind": "dialogue",
+   "role": "body",
+   "text": "4 Answer the questions.1\tWhat does “it” refer to in “He puts Robert in a trailer and pulls it along with his bike”?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B2",
+   "page": 58,
+   "kind": "dialogue",
+   "role": "body",
+   "text": "2\tWhat does “They” refer to in “They don’t often win”?3\tWhat’s the meaning of “powers” in the last paragraph?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B4",
+   "page": 58,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Think and share"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B3",
+   "page": 58,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1\tWhat really matters for the Taylor brothers?2\tDo you think the Taylor brothers win? Why or why not?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P63:B5",
+   "page": 58,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "Learning to think for question 1  Learn to read between the lines. Sometimes the writer doesn’t state the point directly. They use some details to show their idea."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P64:B0",
+   "page": 59,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Write a short paragraph about your family members’ support."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P64:B12",
+   "page": 59,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Complete the table."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P64:B19",
+   "page": 59,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Write your paragraph with the help of the table."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P64:B8",
+   "page": 59,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Check. Did you: ☐\t describe your family members’ support?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P64:B11",
+   "page": 59,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Share your paragraph with the class."
+  }
+ ],
+ "unit_vocabulary": [
+  {
+   "word": "silent",
+   "pos": "adj",
+   "meaning_zh": "不作声的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "along",
+   "pos": "prep",
+   "meaning_zh": "顺着沿着",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "mountain",
+   "pos": "n",
+   "meaning_zh": "高山山岳",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "road",
+   "pos": "n",
+   "meaning_zh": "路道路公路",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "handsome",
+   "pos": "adj",
+   "meaning_zh": "男子英俊的漂亮的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "strict",
+   "pos": "adj",
+   "meaning_zh": "严格的严厉的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "follow",
+   "pos": "v",
+   "meaning_zh": "跟着跟随",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "postman",
+   "pos": "n",
+   "meaning_zh": "邮递员邮差",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "touching",
+   "pos": "adj",
+   "meaning_zh": "感人的动人的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "son",
+   "pos": "n",
+   "meaning_zh": "儿子",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "serve",
+   "pos": "v",
+   "meaning_zh": "为工作供职",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "area",
+   "pos": "n",
+   "meaning_zh": "国家市镇等的地区区域",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "absent",
+   "pos": "adj",
+   "meaning_zh": "不在的缺席的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "seldom",
+   "pos": "adv",
+   "meaning_zh": "很少罕见不常",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "position",
+   "pos": "n",
+   "meaning_zh": "职位职务",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 48
+  },
+  {
+   "word": "carry",
+   "pos": "v",
+   "meaning_zh": "把某物或某人带至新的地点或位置",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "across",
+   "pos": "prep",
+   "meaning_zh": "从一边到另一边穿过",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "memory",
+   "pos": "n",
+   "meaning_zh": "记忆回忆",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 49
+  },
+  {
+   "word": "tear",
+   "pos": "n",
+   "meaning_zh": "眼泪泪水",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 49
+  },
+  {
+   "word": "growth",
+   "pos": "n",
+   "meaning_zh": "性格智力或情感的发展成长",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "hide",
+   "pos": "v",
+   "meaning_zh": "把藏起来隐藏",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "care",
+   "pos": "n",
+   "meaning_zh": "关心",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "hug",
+   "pos": "n",
+   "meaning_zh": "拥抱",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "kiss",
+   "pos": "n",
+   "meaning_zh": "吻",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 49
+  },
+  {
+   "word": "marry",
+   "pos": "v",
+   "meaning_zh": "结婚娶嫁",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 51
+  },
+  {
+   "word": "queen",
+   "pos": "n",
+   "meaning_zh": "女王",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 53
+  },
+  {
+   "word": "pick up",
+   "pos": null,
+   "meaning_zh": "搭载接载",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 53
+  },
+  {
+   "word": "actress",
+   "pos": "n",
+   "meaning_zh": "女演员",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 54
+  },
+  {
+   "word": "change",
+   "pos": "v",
+   "meaning_zh": "换衣服",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 55
+  },
+  {
+   "word": "race",
+   "pos": "v",
+   "meaning_zh": "比赛",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "serious",
+   "pos": "adj",
+   "meaning_zh": "严重的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "disease",
+   "pos": "n",
+   "meaning_zh": "疾病病",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "stay",
+   "pos": "v",
+   "meaning_zh": "停留逗留留下",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "trailer",
+   "pos": "n",
+   "meaning_zh": "拖车挂车",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 56
+  },
+  {
+   "word": "pull",
+   "pos": "v",
+   "meaning_zh": "拉扯拖",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "bright",
+   "pos": "adj",
+   "meaning_zh": "欢快的充满生气的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 56
+  },
+  {
+   "word": "refuse",
+   "pos": "v",
+   "meaning_zh": "拒绝回绝",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 57
+  },
+  {
+   "word": "result",
+   "pos": "n",
+   "meaning_zh": "结果后果",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 57
+  },
+  {
+   "word": "matter",
+   "pos": "v",
+   "meaning_zh": "尤指对某人自己或对发生之事重要要紧有关系",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 57
+  },
+  {
+   "word": "power",
+   "pos": "v",
+   "meaning_zh": "给车辆或机器提供动力",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 57
+  }
+ ],
+ "evidence_packages": [
+  {
+   "question_id": "Q:DAB58AFB5BC1",
+   "activity_no": 1,
+   "page": 56,
+   "instruction": "Look at the three pictures on the right and describe them. Use the words and expression to help you.",
+   "original_question_text": "them. Use the words and expression to help you. family smile close to love enjoy important together 3 \u0007Now, the brothers often take part the time together. “We are family,” in bike races together. It is hard for John says. John to pull Robert’s trailer. But John refuses to race without his 4 \u0007For th",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:AC5D8BACAFF5",
+   "activity_no": 2,
+   "page": 56,
+   "instruction": "Look at the title and the pictures. What is the story about? Now read the story and check your answer.",
+   "original_question_text": "Now read the story and check your answer. Racing 1 \u0007John and Robert Taylor are brothers. 2 \u0007John sees Robert’s sad face and They are always close to each other. wants to help. One day, he finds a But Robert has a serious disease and way. He puts Robert in a trailer and cannot move at all. He has to ",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:452C97C56AC5",
+   "activity_no": 2,
+   "page": 56,
+   "instruction": "Look at the title and the pictures. What is the story about? Now read the story and check your answer.",
+   "original_question_text": "UNIT 3 together 3 \u0007Now, the brothers often take part the time together. “We are family,” in bike races together. It is hard for John says. John to pull Robert’s trailer. But John refuses to race without his 4 \u0007For the Taylor brothers, the result brother. They don’t often win. But for doesn’t really ",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:56F14AEFAA93",
+   "activity_no": 3,
+   "page": 58,
+   "instruction": "Complete the notes with the words and expression from the story.",
+   "original_question_text": "Who is in the story? John and Robert Taylor.",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:56F14AEFAA93",
+   "activity_no": 3,
+   "page": 58,
+   "instruction": "Complete the notes with the words and expression from the story.",
+   "original_question_text": "They are brothers and are always each other. What happens? At first 2 Robert cannot move at all. He often feels . Then 3 John puts Robert in a trailer and it along with his 4 bike. For the time, Robert feels like the other kids. Now 5 They often take part in bike races. They enjoy the together. What",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:6F0B412955D2",
+   "activity_no": 3,
+   "page": 58,
+   "instruction": "Complete the notes with the words and expression from the story.",
+   "original_question_text": "The between them powers their bike. And love always wins. 5",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:DC652443D0ED",
+   "activity_no": 4,
+   "page": 58,
+   "instruction": "Answer the questions. 1 What does “it” refer to in “He puts Robert in a trailer and pulls it along with",
+   "original_question_text": "What does “it” refer to in “He puts Robert in a trailer and pulls it along with his bike”?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:42AA8A8B5543",
+   "activity_no": 4,
+   "page": 58,
+   "instruction": "Answer the questions. 1 What does “it” refer to in “He puts Robert in a trailer and pulls it along with",
+   "original_question_text": "What does “They” refer to in “They don’t often win”?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:5D3E0BB2AFA6",
+   "activity_no": 4,
+   "page": 58,
+   "instruction": "Answer the questions. 1 What does “it” refer to in “He puts Robert in a trailer and pulls it along with",
+   "original_question_text": "What’s the meaning of “powers” in the last paragraph? Think and share 1 What really matters for the Taylor brothers?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:42AA8A8B5543",
+   "activity_no": 4,
+   "page": 58,
+   "instruction": "Answer the questions. 1 What does “it” refer to in “He puts Robert in a trailer and pulls it along with",
+   "original_question_text": "Do you think the Taylor brothers win? Why or why not? Learning to think for question 1 Learn to read between the lines. Sometimes the writer doesn’t state the point directly. They use some details to show their idea.",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:32E2FDEDBAE8",
+   "activity_no": 4,
+   "page": 58,
+   "instruction": "Answer the questions. 1 What does “it” refer to in “He puts Robert in a trailer and pulls it along with",
+   "original_question_text": "UNIT 3 5",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:429991713D2E",
+   "activity_no": 5,
+   "page": 59,
+   "instruction": "Write a short paragraph about your family members’ support.",
+   "original_question_text": "Step How do your family members support each other? Think of some examples. Step 2 Complete the table. Who are the family members? What do you do to support each other? Give three examples. Example 1: Example 2: Example 3: What do you think of the family members? Step 3 Write your paragraph with the",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:4025B7F11B7F",
+   "activity_no": 5,
+   "page": 59,
+   "instruction": "Write a short paragraph about your family members’ support.",
+   "original_question_text": "UNIT 3 Step 3 Practise and present your photo album to the class. Step 4 Vote on the best three photo albums and the best three presentations. Reflection 1",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  }
+ ],
+ "rules": {
+  "BOLD": "core textbook word (教材黑体重点词)",
+  "PLAIN": "ordinary textbook word (非核心重点词)"
+ }
+}

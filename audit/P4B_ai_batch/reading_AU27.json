@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 3\nSECTION: READING_FOR_WRITING\nACTIVITY_INSTRUCTION: 27_Unit 3_Developing ideas _Reading for writing_2 Look at the and the pictures. What is the story about Now read the story and check your answer.mp3\nPASSAGE BLOCKS (id + verbatim textbook text):\n[FLTRP-EN-7A-2022CUR:P61:B0] Look at the three pictures on the right and describe them. Use the words and expression to help you.\n[FLTRP-EN-7A-2022CUR:P61:B6] familyclose tolovesmileenjoyimportant\n[FLTRP-EN-7A-2022CUR:P61:B2] Look at the title and the pictures. What is the story about?Now read the story and check your answer.\n[FLTRP-EN-7A-2022CUR:P61:B5] 1  \u0007John and Robert Taylor are brothers. They are always close to each other. But Robert has a serious disease and cannot move at all. He has to stay at home every day and he often feels lonely. He wants to join the other kids. He wants to go out and play.\n[FLTRP-EN-7A-2022CUR:P61:B7] 2  \u0007John sees Robert’s sad face and wants to help. One day, he finds a way. He puts Robert in a trailer and pulls it along with his bike. For the first time, Robert feels like the other kids. A big, bright smile appears on his face.\n[FLTRP-EN-7A-2022CUR:P62:B0] 3  \u0007Now, the brothers often take part in bike races together. It is hard for John to pull Robert’s trailer. But John refuses to race without his brother. They don’t often win. But for the brothers, some things are more important than winning. They enjoy\n[FLTRP-EN-7A-2022CUR:P62:B1] the time together. “We are family,” John says.\n[FLTRP-EN-7A-2022CUR:P62:B2] 4  \u0007For the Taylor brothers, the result doesn’t really matter. The love between them powers their bike.  And love always wins.\n\nWrite 2-3 multiple-choice reading questions about this passage.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What is Robert's problem in the story?\",\n      \"options\": [\n        \"He cannot see.\",\n        \"He cannot move at all.\",\n        \"He cannot hear.\",\n        \"He cannot speak.\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P61:B5\",\n      \"evidence_quote\": \"But Robert has a serious disease and cannot move at all.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"How does John help Robert for the first time?\",\n      \"options\": [\n        \"He puts him in a trailer and pulls it with his bike.\",\n        \"He buys him a new bike.\",\n        \"He carries him on his back.\",\n        \"He asks other kids to play with him.\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P61:B7\",\n      \"evidence_quote\": \"He puts Robert in a trailer and pulls it along with his bike.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What is the main message of the passage?\",\n      \"options\": [\n        \"Winning is everything.\",\n        \"Love is powerful and always wins.\",\n        \"Bikes need love.\",\n        \"Races are dangerous.\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P62:B2\",\n      \"evidence_quote\": \"And love always wins.\",\n      \"skill\": \"simple gist\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 816,
+  "completion_tokens": 2818,
+  "total_tokens": 3634,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2455
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 560
+ }
+}

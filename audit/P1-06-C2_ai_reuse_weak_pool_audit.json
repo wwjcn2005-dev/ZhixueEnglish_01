@@ -1,0 +1,237 @@
+{
+  "task": "P1-06-C2 错误/薄弱资源池 + AI 数据复用机制只读审计与设计冻结",
+  "generated_at": "2026-09-12T15:53:07+08:00",
+  "verdict": "PASS",
+  "new_ai_principle": {
+    "text": "AI 已经调用并产生、且仍然有价值的数据必须优先复用；禁止因页面重新进入/刷新/重复分析/重复学习/任务重建/入口变化而无意义再次调用 AI",
+    "recorded_in": "audit/P1-06-C2_ai_reuse_weak_pool_audit.md",
+    "written_into_governing_doc": false,
+    "governing_doc_existing_partial": "第八章：静态页面浏览不应无意义调用 AI，应优先使用缓存和规则（仅部分覆盖）",
+    "suggested_followup": "受控文档任务追加（本轮禁止修改文档）"
+  },
+  "scan": {
+    "scope": "全项目文本 + v1-v5 + learning.db",
+    "json_files": 24,
+    "ai_artifact_rows": {
+      "v1": 0,
+      "v2": 0,
+      "v3": 0,
+      "v4": 0,
+      "v5": 0
+    },
+    "learning_db_ai_tables": "NONE",
+    "ai_call_sites": 0,
+    "cache_files": [
+      "learning/__pycache__",
+      "parser/__pycache__"
+    ],
+    "false_positives": [
+      {
+        "hit": "llm",
+        "file": "parser/textbook_parser_v01.py",
+        "real": "re.fullmatch 正则（8 处）"
+      },
+      {
+        "hit": "urllib/http://",
+        "file": "workbench/review_workbench_v01.py",
+        "real": "本机 127.0.0.1 只读预览服务 + 内存缓存，无外部请求"
+      },
+      {
+        "hit": "prompt_version",
+        "file": "builder/build_content_db_v01.py:946",
+        "real": "ai_artifact 建表列定义"
+      },
+      {
+        "hit": "openai/deepseek/ollama/torch 等",
+        "file": "learning/test_learning_service.py",
+        "real": "C1 禁用词静态检查清单"
+      },
+      {
+        "hit": "ai_artifact",
+        "file": "builder/validator/audit 报告",
+        "real": "表名引用与计数校验"
+      }
+    ]
+  },
+  "ai_assets": {
+    "total": 0,
+    "reusable": {
+      "A": 0,
+      "B": 0
+    },
+    "historical_only": {
+      "C": 0
+    },
+    "not_reusable": {
+      "D": 0
+    },
+    "future_to_persist": {
+      "E": [
+        "AI 解释",
+        "AI 诊断",
+        "AI 提示",
+        "AI 建议",
+        "AI 生成练习（须审核）",
+        "AI 生成例句/对比句"
+      ]
+    }
+  },
+  "reuse_levels": {
+    "0": "完全匹配有效数据 → 直接复用（0 调用）",
+    "1": "版本兼容 → 复用（0 调用）",
+    "2": "部分可复用 → 只补缺失，禁止整包重生成",
+    "3": "实质失效（教材/prompt/模型变化）→ 才允许重新生成",
+    "4": "完全无数据 → 才允许首次生成",
+    "5": "用户明确要求重新生成 → 允许，但保留旧数据关系、不无痕覆盖"
+  },
+  "duplicate_call_risk": {
+    "current_high": 0,
+    "current_medium": 0,
+    "current_none": "全部（AI 入口 = 0）",
+    "future_requirements": {
+      "cache_key": "(artifact_kind, target_layer, target_id, textbook_id, snapshot_id, prompt_version, model)",
+      "must_check_cache_before_call": true,
+      "page_refresh": false,
+      "reenter_page": false,
+      "repeat_learning": false,
+      "task_reenter": false,
+      "display_triggered_call": false,
+      "prompt_change": "新产物，旧数据保留",
+      "model_change": "新产物，旧数据保留",
+      "user_request_regenerate": "允许（保留旧数据关系）"
+    }
+  },
+  "weak_pool": {
+    "table_needed": "NO",
+    "wrong_question_table": false,
+    "source_of_truth": "learning_record",
+    "mastery_role": "缓存参考，不承载池资格",
+    "judged_results": [
+      "correct",
+      "incorrect",
+      "partial"
+    ],
+    "ignored_results": [
+      "done",
+      "skipped",
+      null
+    ],
+    "rules": [
+      "最近参与判断记录为 incorrect/partial → 在池",
+      "最近参与判断记录为 correct → 出池",
+      "多次 incorrect → 保持在池",
+      "skipped/NULL/done → 不清除池资格",
+      "correct 后再次 incorrect → 重新入池",
+      "历史 Record 永久保留"
+    ],
+    "consistency_with_b115": "无冲突（不写 review_needed、不改 Record、不新增字段）",
+    "query_examples": "窗口函数写法 + 无窗口函数兼容写法（报告第 5.4 节，仅设计不执行）"
+  },
+  "ai_boundary": {
+    "can": [
+      "分析已有错误",
+      "解释为什么错",
+      "给出提示与复习建议",
+      "辅助理解薄弱点"
+    ],
+    "cannot": [
+      "凭空制造错误",
+      "修改 LearningRecord",
+      "修改历史事实",
+      "直接修改 MasteryState",
+      "自动创建 Task/TaskItem",
+      "自动安排学习"
+    ]
+  },
+  "child_control": {
+    "ai_may": [
+      "建议"
+    ],
+    "system_executes_after": "孩子确认",
+    "auto_actions": false
+  },
+  "textbook_freeze": {
+    "ai_writes_back_to_textbook": false,
+    "violations_found": 0
+  },
+  "c1_compatibility": {
+    "compatible": true,
+    "c1_service_modified": false
+  },
+  "schema_change_required": false,
+  "schema_observations": {
+    "ai_artifact_has": [
+      "artifact_kind",
+      "target_layer",
+      "target_id",
+      "context_ref_ids",
+      "content_markdown",
+      "model",
+      "prompt_version",
+      "confidence",
+      "review_status",
+      "is_visible_to_child",
+      "textbook_id",
+      "snapshot_id"
+    ],
+    "missing_later": [
+      "created_at",
+      "data_version",
+      "reusable",
+      "invalid_reason"
+    ]
+  },
+  "next_stage": {
+    "C2_A": "错误/薄弱池只读查询服务（无 AI）",
+    "C2_B": "池的只读展示/导出（可选）",
+    "C3": "AI 数据层最小实现（须先满足 13 条与 Level 0–5）",
+    "doc_task": "把 AI 复用优先原则追加到最高指导原则文档（独立受控任务）"
+  },
+  "risks": {
+    "P0": 0,
+    "P1": 0,
+    "P2": [
+      "未来 AI 入口若未先实现缓存键与先查缓存流程，将出现高频重复调用"
+    ],
+    "P3": [
+      "AI 复用优先原则尚未写入最高指导原则文档",
+      "ai_artifact 缺 created_at/data_version/reusable/invalid_reason（LATER）",
+      "存在 __pycache__ 目录（非 AI 数据）"
+    ]
+  },
+  "boundaries": {
+    "learning_db_modified": false,
+    "contentpack_modified": false,
+    "source_modified": false,
+    "governing_doc_modified": false,
+    "tables_added": 0,
+    "fields_added": 0,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "network": 0,
+    "new_deps": 0,
+    "android_touched": false,
+    "zhixue_ai": false,
+    "new_files": [
+      "audit/P1-06-C2_ai_reuse_weak_pool_audit.md",
+      "audit/P1-06-C2_ai_reuse_weak_pool_audit.json"
+    ]
+  },
+  "answers": {
+    "1_c1_compatible": "是",
+    "2_ai_assets": "0 条",
+    "3_reusable": "无（A/B=0）",
+    "4_not_reusable": "无 D 类；未来失效数据仅作历史参考",
+    "5_current_call_risk": "当前无风险（入口=0）",
+    "6_ai_identity": "artifact_kind+target+textbook_id+snapshot_id+prompt_version+model 组成缓存键",
+    "7_weak_pool_supported": "可以（LearningRecord 为事实源）",
+    "8_wrong_question_table": "NO",
+    "9_boundary": "AI 只分析/解释/建议，不写 Record/Mastery，不建 Task",
+    "10_allow_new_call": "Level 3/4/5",
+    "11_must_reuse": "Level 0/1/2",
+    "12_repeat_call": "当前不会；未来只读缓存",
+    "13_schema_immediate_change": "否",
+    "14_next_scope": "C2-A 错误/薄弱池只读查询服务（无 AI）"
+  }
+}

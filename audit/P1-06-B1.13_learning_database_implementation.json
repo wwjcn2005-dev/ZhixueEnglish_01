@@ -1,0 +1,194 @@
+{
+  "task": "P1-06-B1.13 学习层独立数据库实际建库实施",
+  "generated_at": "2026-09-12T15:38:47+08:00",
+  "verdict": "PASS",
+  "pre_state": {
+    "learning_dir_existed": false,
+    "learning_db_existed": false,
+    "sql_files": "NONE",
+    "migration_scripts": "NONE"
+  },
+  "new_files": [
+    "structured/learning/init_learning_db.py",
+    "structured/learning/learning.db",
+    "audit/P1-06-B1.13_learning_database_implementation.md",
+    "audit/P1-06-B1.13_learning_database_implementation.json"
+  ],
+  "learning_db": {
+    "path": "D:\\ZhixueEnglish\\structured\\learning\\learning.db",
+    "sha256": "16E3952D64E749879D8FF78814F0434D544D4CBAD7D52AAC7E0B145DE43414E9",
+    "size": 73728,
+    "user_version": 1,
+    "tables": [
+      "learner",
+      "learning_record",
+      "learning_task",
+      "mastery_state",
+      "schema_migration",
+      "task_item"
+    ],
+    "indexes": [
+      "idx_learning_task_learner",
+      "idx_mastery_review",
+      "idx_record_learner_item_time",
+      "idx_record_learner_time",
+      "idx_record_task",
+      "idx_task_item_item"
+    ],
+    "row_counts": {
+      "learner": 0,
+      "learning_record": 0,
+      "learning_task": 0,
+      "mastery_state": 0,
+      "schema_migration": 1,
+      "task_item": 0
+    },
+    "integrity": "ok",
+    "foreign_key_check": 0,
+    "schema_migration": [
+      [
+        1,
+        "2026-09-12T15:37:16+08:00",
+        "P1-06-B1.13 initial learning schema (frozen by B1.12)",
+        "e70826dc02cbee2fe7065302fa313c3e03d7309285c11e192c8a832a094da58b"
+      ]
+    ]
+  },
+  "v5": {
+    "sha_before": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+    "sha_after": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+    "size_before": 2457600,
+    "size_after": 2457600,
+    "tables_before": 21,
+    "tables_after": 21
+  },
+  "checks": [
+    {
+      "id": "V5-PRE",
+      "name": "v5 实施前 hash/size/tables",
+      "status": "PASS",
+      "detail": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A / 2457600 / 21"
+    },
+    {
+      "id": "DB-EXISTS",
+      "name": "learning.db 存在",
+      "status": "PASS",
+      "detail": "D:\\ZhixueEnglish\\structured\\learning\\learning.db"
+    },
+    {
+      "id": "TABLES",
+      "name": "表数量=6 且精确匹配",
+      "status": "PASS",
+      "detail": "6: learner, learning_record, learning_task, mastery_state, schema_migration, task_item"
+    },
+    {
+      "id": "INTEGRITY",
+      "name": "integrity_check",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "id": "FKCHECK",
+      "name": "foreign_key_check",
+      "status": "PASS",
+      "detail": "0 rows"
+    },
+    {
+      "id": "USERVER",
+      "name": "PRAGMA user_version=1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "id": "EMPTY",
+      "name": "五张业务表 0 行",
+      "status": "PASS",
+      "detail": "{\"learner\": 0, \"learning_record\": 0, \"learning_task\": 0, \"mastery_state\": 0, \"schema_migration\": 1, \"task_item\": 0}"
+    },
+    {
+      "id": "MIGRATION",
+      "name": "schema_migration 1 行且完整",
+      "status": "PASS",
+      "detail": "version=1 applied_at=2026-09-12T15:37:16+08:00 sha_len=64"
+    },
+    {
+      "id": "COLUMNS",
+      "name": "字段名/类型/NOT NULL/DEFAULT/PK 与 B1.12 一致",
+      "status": "PASS",
+      "detail": "差异表=[]"
+    },
+    {
+      "id": "FK",
+      "name": "库内 5 条 FK（含 ON DELETE / ON UPDATE）",
+      "status": "PASS",
+      "detail": "5 条 FK"
+    },
+    {
+      "id": "INDEXES",
+      "name": "6 个业务索引（名称/表/列顺序）",
+      "status": "PASS",
+      "detail": "6 个"
+    },
+    {
+      "id": "ISOLATION",
+      "name": "无 contentpack ATTACH / 无教材表副本",
+      "status": "PASS",
+      "detail": "attached=[]"
+    },
+    {
+      "id": "NO-TEXTBOOK-TEXT",
+      "name": "learning.db 无教材正文副本",
+      "status": "PASS",
+      "detail": "匹配=0"
+    },
+    {
+      "id": "IDEMPOTENT",
+      "name": "重复执行幂等（第二次运行不改变文件）",
+      "status": "PASS",
+      "detail": "ALREADY_INITIALIZED；hash/size 未变（16E3952D…14E9 / 73728）"
+    },
+    {
+      "id": "V5-POST",
+      "name": "v5 实施后 hash/size/tables/integrity/FK",
+      "status": "PASS",
+      "detail": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A / 2457600 / 21"
+    }
+  ],
+  "checks_failed": [],
+  "boundaries": {
+    "contentpack_written": false,
+    "v1_v5_modified": false,
+    "android_modified": false,
+    "zhixue_ai": false,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "new_deps": 0,
+    "network": 0,
+    "learner_created": false,
+    "business_rows": 0
+  },
+  "verification_notes": [
+    "ISOLATION 初次判定失败系检查逻辑问题：PRAGMA database_list 在脚本运行中短暂出现 SQLite 内部 'temp' 库，按数量判定误报；已改为按名称白名单（main/temp）+ 路径不含 contentpack + 无教材表副本判定，复检 PASS（无外部 ATTACH）"
+  ],
+  "risks": {
+    "P0": [],
+    "P1": [],
+    "P2": [],
+    "P3": [
+      "SQLite 对非 INTEGER 主键列不隐含 NOT NULL（learner_id / task_id / record_id），应用层必须保证非空；如需数据库级强约束需受控迁移",
+      "learning_task 列顺序按 B1.13 文本（title 位于最后），与 B1.12 列举顺序不同（仅顺序差异，无语义差异）"
+    ]
+  },
+  "final_answers": {
+    "db_created": true,
+    "schema_matches_b112": true,
+    "business_tables_empty": true,
+    "schema_migration_ok": true,
+    "integrity_ok": true,
+    "fk_ok": true,
+    "v5_unchanged": true,
+    "contentpack_not_written": true,
+    "ready_for_business_implementation": true
+  }
+}

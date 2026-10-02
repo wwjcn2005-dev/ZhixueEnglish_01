@@ -1,0 +1,559 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU29",
+  "audio_num": "AU29",
+  "filename": "29_Unit 4_Understanding ideas_8 Work in pairs. Talk about your ways to celebrate a traditional festival.mp3",
+  "duration_ms": 62093,
+  "segment_count": 12,
+  "word_count": 96,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1440,
+      "text": "Activity 8"
+    },
+    {
+      "start_ms": 2640,
+      "end_ms": 3920,
+      "text": "Work in pairs"
+    },
+    {
+      "start_ms": 4880,
+      "end_ms": 9320,
+      "text": "Talk about your ways to celebrate a traditional festival."
+    },
+    {
+      "start_ms": 9880,
+      "end_ms": 14160,
+      "text": "Use the thinking map to organise your ideas."
+    },
+    {
+      "start_ms": 15120,
+      "end_ms": 19140,
+      "text": "Use the words and expressions from the reading passage"
+    },
+    {
+      "start_ms": 19720,
+      "end_ms": 23040,
+      "text": "and the useful expressions to help you."
+    },
+    {
+      "start_ms": 24220,
+      "end_ms": 25860,
+      "text": "Example conversation"
+    },
+    {
+      "start_ms": 27360,
+      "end_ms": 31840,
+      "text": "How do you usually celebrate the Mid-Autumn Festival?"
+    },
+    {
+      "start_ms": 32900,
+      "end_ms": 41660,
+      "text": "I always spend the Mid-Autumn Festival with my family. We always have moon cakes. Sometimes"
+    },
+    {
+      "start_ms": 42300,
+      "end_ms": 47020,
+      "text": "we go for a walk to watch the moon. What about you?"
+    },
+    {
+      "start_ms": 47020,
+      "end_ms": 56000,
+      "text": "We often have a family party after dinner. We sing, dance and play games together."
+    },
+    {
+      "start_ms": 57100,
+      "end_ms": 58800,
+      "text": "That sounds like fun!"
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 900
+    },
+    {
+      "word": "8",
+      "start_ms": 900,
+      "end_ms": 1440
+    },
+    {
+      "word": "Work",
+      "start_ms": 2640,
+      "end_ms": 3160
+    },
+    {
+      "word": "in",
+      "start_ms": 3160,
+      "end_ms": 3460
+    },
+    {
+      "word": "pairs",
+      "start_ms": 3460,
+      "end_ms": 3920
+    },
+    {
+      "word": "Talk",
+      "start_ms": 4820,
+      "end_ms": 5340
+    },
+    {
+      "word": "about",
+      "start_ms": 5340,
+      "end_ms": 5740
+    },
+    {
+      "word": "your",
+      "start_ms": 5740,
+      "end_ms": 6160
+    },
+    {
+      "word": "ways",
+      "start_ms": 6160,
+      "end_ms": 6560
+    },
+    {
+      "word": "to",
+      "start_ms": 6560,
+      "end_ms": 6880
+    },
+    {
+      "word": "celebrate",
+      "start_ms": 6880,
+      "end_ms": 7420
+    },
+    {
+      "word": "a",
+      "start_ms": 7420,
+      "end_ms": 7960
+    },
+    {
+      "word": "traditional",
+      "start_ms": 7960,
+      "end_ms": 8460
+    },
+    {
+      "word": "festival.",
+      "start_ms": 8460,
+      "end_ms": 9320
+    },
+    {
+      "word": "Use",
+      "start_ms": 9880,
+      "end_ms": 10920
+    },
+    {
+      "word": "the",
+      "start_ms": 10920,
+      "end_ms": 11180
+    },
+    {
+      "word": "thinking",
+      "start_ms": 11180,
+      "end_ms": 11580
+    },
+    {
+      "word": "map",
+      "start_ms": 11580,
+      "end_ms": 11980
+    },
+    {
+      "word": "to",
+      "start_ms": 11980,
+      "end_ms": 12580
+    },
+    {
+      "word": "organise",
+      "start_ms": 12580,
+      "end_ms": 13100
+    },
+    {
+      "word": "your",
+      "start_ms": 13100,
+      "end_ms": 13560
+    },
+    {
+      "word": "ideas.",
+      "start_ms": 13560,
+      "end_ms": 14160
+    },
+    {
+      "word": "Use",
+      "start_ms": 15120,
+      "end_ms": 15900
+    },
+    {
+      "word": "the",
+      "start_ms": 15900,
+      "end_ms": 16120
+    },
+    {
+      "word": "words",
+      "start_ms": 16120,
+      "end_ms": 16580
+    },
+    {
+      "word": "and",
+      "start_ms": 16580,
+      "end_ms": 16980
+    },
+    {
+      "word": "expressions",
+      "start_ms": 16980,
+      "end_ms": 17540
+    },
+    {
+      "word": "from",
+      "start_ms": 17540,
+      "end_ms": 18120
+    },
+    {
+      "word": "the",
+      "start_ms": 18120,
+      "end_ms": 18320
+    },
+    {
+      "word": "reading",
+      "start_ms": 18320,
+      "end_ms": 18700
+    },
+    {
+      "word": "passage",
+      "start_ms": 18700,
+      "end_ms": 19140
+    },
+    {
+      "word": "and",
+      "start_ms": 19720,
+      "end_ms": 20260
+    },
+    {
+      "word": "the",
+      "start_ms": 20260,
+      "end_ms": 20560
+    },
+    {
+      "word": "useful",
+      "start_ms": 20560,
+      "end_ms": 21140
+    },
+    {
+      "word": "expressions",
+      "start_ms": 21140,
+      "end_ms": 21780
+    },
+    {
+      "word": "to",
+      "start_ms": 21780,
+      "end_ms": 22400
+    },
+    {
+      "word": "help",
+      "start_ms": 22400,
+      "end_ms": 22680
+    },
+    {
+      "word": "you.",
+      "start_ms": 22680,
+      "end_ms": 23040
+    },
+    {
+      "word": "Example",
+      "start_ms": 24220,
+      "end_ms": 25140
+    },
+    {
+      "word": "conversation",
+      "start_ms": 25140,
+      "end_ms": 25860
+    },
+    {
+      "word": "How",
+      "start_ms": 27360,
+      "end_ms": 28200
+    },
+    {
+      "word": "do",
+      "start_ms": 28200,
+      "end_ms": 28420
+    },
+    {
+      "word": "you",
+      "start_ms": 28420,
+      "end_ms": 28660
+    },
+    {
+      "word": "usually",
+      "start_ms": 28660,
+      "end_ms": 29200
+    },
+    {
+      "word": "celebrate",
+      "start_ms": 29200,
+      "end_ms": 29920
+    },
+    {
+      "word": "the",
+      "start_ms": 29920,
+      "end_ms": 30480
+    },
+    {
+      "word": "Mid",
+      "start_ms": 30480,
+      "end_ms": 30780
+    },
+    {
+      "word": "-Autumn",
+      "start_ms": 30780,
+      "end_ms": 31220
+    },
+    {
+      "word": "Festival?",
+      "start_ms": 31220,
+      "end_ms": 31840
+    },
+    {
+      "word": "I",
+      "start_ms": 32900,
+      "end_ms": 33180
+    },
+    {
+      "word": "always",
+      "start_ms": 33180,
+      "end_ms": 33500
+    },
+    {
+      "word": "spend",
+      "start_ms": 33500,
+      "end_ms": 33960
+    },
+    {
+      "word": "the",
+      "start_ms": 33960,
+      "end_ms": 34320
+    },
+    {
+      "word": "Mid",
+      "start_ms": 34320,
+      "end_ms": 34660
+    },
+    {
+      "word": "-Autumn",
+      "start_ms": 34660,
+      "end_ms": 35080
+    },
+    {
+      "word": "Festival",
+      "start_ms": 35080,
+      "end_ms": 35800
+    },
+    {
+      "word": "with",
+      "start_ms": 35800,
+      "end_ms": 36320
+    },
+    {
+      "word": "my",
+      "start_ms": 36320,
+      "end_ms": 36620
+    },
+    {
+      "word": "family.",
+      "start_ms": 36620,
+      "end_ms": 37120
+    },
+    {
+      "word": "We",
+      "start_ms": 38060,
+      "end_ms": 38380
+    },
+    {
+      "word": "always",
+      "start_ms": 38380,
+      "end_ms": 38800
+    },
+    {
+      "word": "have",
+      "start_ms": 38800,
+      "end_ms": 39200
+    },
+    {
+      "word": "moon",
+      "start_ms": 39200,
+      "end_ms": 39600
+    },
+    {
+      "word": "cakes.",
+      "start_ms": 39600,
+      "end_ms": 40060
+    },
+    {
+      "word": "Sometimes",
+      "start_ms": 41080,
+      "end_ms": 41660
+    },
+    {
+      "word": "we",
+      "start_ms": 42080,
+      "end_ms": 42500
+    },
+    {
+      "word": "go",
+      "start_ms": 42500,
+      "end_ms": 42800
+    },
+    {
+      "word": "for",
+      "start_ms": 42800,
+      "end_ms": 43080
+    },
+    {
+      "word": "a",
+      "start_ms": 43080,
+      "end_ms": 43340
+    },
+    {
+      "word": "walk",
+      "start_ms": 43340,
+      "end_ms": 43600
+    },
+    {
+      "word": "to",
+      "start_ms": 43600,
+      "end_ms": 43980
+    },
+    {
+      "word": "watch",
+      "start_ms": 43980,
+      "end_ms": 44380
+    },
+    {
+      "word": "the",
+      "start_ms": 44380,
+      "end_ms": 44700
+    },
+    {
+      "word": "moon.",
+      "start_ms": 44700,
+      "end_ms": 45120
+    },
+    {
+      "word": "What",
+      "start_ms": 45880,
+      "end_ms": 46340
+    },
+    {
+      "word": "about",
+      "start_ms": 46340,
+      "end_ms": 46640
+    },
+    {
+      "word": "you?",
+      "start_ms": 46640,
+      "end_ms": 47020
+    },
+    {
+      "word": "We",
+      "start_ms": 47020,
+      "end_ms": 48300
+    },
+    {
+      "word": "often",
+      "start_ms": 48300,
+      "end_ms": 48700
+    },
+    {
+      "word": "have",
+      "start_ms": 48700,
+      "end_ms": 49080
+    },
+    {
+      "word": "a",
+      "start_ms": 49080,
+      "end_ms": 49260
+    },
+    {
+      "word": "family",
+      "start_ms": 49260,
+      "end_ms": 49660
+    },
+    {
+      "word": "party",
+      "start_ms": 49660,
+      "end_ms": 50360
+    },
+    {
+      "word": "after",
+      "start_ms": 50360,
+      "end_ms": 50900
+    },
+    {
+      "word": "dinner.",
+      "start_ms": 50900,
+      "end_ms": 51340
+    },
+    {
+      "word": "We",
+      "start_ms": 52040,
+      "end_ms": 52300
+    },
+    {
+      "word": "sing,",
+      "start_ms": 52300,
+      "end_ms": 52820
+    },
+    {
+      "word": "dance",
+      "start_ms": 53460,
+      "end_ms": 53960
+    },
+    {
+      "word": "and",
+      "start_ms": 53960,
+      "end_ms": 54680
+    },
+    {
+      "word": "play",
+      "start_ms": 54680,
+      "end_ms": 55020
+    },
+    {
+      "word": "games",
+      "start_ms": 55020,
+      "end_ms": 55540
+    },
+    {
+      "word": "together.",
+      "start_ms": 55540,
+      "end_ms": 56000
+    },
+    {
+      "word": "That",
+      "start_ms": 57100,
+      "end_ms": 57560
+    },
+    {
+      "word": "sounds",
+      "start_ms": 57560,
+      "end_ms": 57960
+    },
+    {
+      "word": "like",
+      "start_ms": 57960,
+      "end_ms": 58380
+    },
+    {
+      "word": "fun!",
+      "start_ms": 58380,
+      "end_ms": 58800
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 7.7
+  }
+}

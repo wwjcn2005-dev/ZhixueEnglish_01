@@ -1,0 +1,14 @@
+{
+ "sample": "S3_fill_single_blank",
+ "category": "A 单个填空句",
+ "audio": "AU02",
+ "textbook_original": "oneseventwoeightthreefourfivesix nineteneleventwelve Mum:\t How about you, Li Meng?Li Meng:\t \u0007I am ready, too. Look. I have 2  pens. I also have 1  pencils and 4  ruler. They are all in my pencil case. 3  eraser and Know more about numbers and articles ⇢ p131 4",
+ "textbook_with_blanks": true,
+ "recovered_sentence": null,
+ "recovery_method": null,
+ "matching_method": null,
+ "status": "NEEDS_REVIEW",
+ "reason": "教材原题为填空（a/an 或数字），完整句只在音频里；无 ASR 无法恢复",
+ "speech_runs": 16,
+ "duration_ms": 33541
+}

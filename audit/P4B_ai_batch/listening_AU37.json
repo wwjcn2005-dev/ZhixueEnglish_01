@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 5\nSECTION: DEVELOPING_IDEAS\nACTIVITY_AUDIO: 37_Unit 5_Developing ideas _1 Listen to the opening of the vlog. What is Jason talking about.mp3\nOFFICIAL AUDIO TRANSCRIPT SEGMENTS (id, time range, text):\n[ASR:AU37:001 0-4040ms] Developing ideas. Activity 1\n[ASR:AU37:002 5000-10940ms] Listen to the opening of the vlog. What is Jason talking about?\n[ASR:AU37:003 12480-22320ms] Welcome to Amazing Plants. This is Jason. I'm at the Sweet Corn Festival in Mexico.\n[ASR:AU37:004 22320-31840ms] Mexico. Look at this ear of corn. Can you believe the size of it? But it's not the biggest.\n[ASR:AU37:005 32680-42780ms] The biggest one is nearly 40 centimetres long. People started growing corn in Mexico about\n[ASR:AU37:006 42780-52260ms] 9,000 years ago. Today it's a big part of their cooking. There are over 600 corn\n[ASR:AU37:007 52260-62960ms] dishes now. Corn isn't just food. People even use it to make toys. It's also part\n[ASR:AU37:008 62960-67060ms] of Mexican culture. Let's go and see!\n\nWrite 2-3 multiple-choice listening questions about what is said in this audio.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What is Jason mainly talking about?\",\n      \"options\": [\n        \"Corn in Mexico\",\n        \"A festival in China\",\n        \"How to make toys\",\n        \"The weather in Mexico\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU37:003\",\n      \"evidence_quote\": \"Welcome to Amazing Plants. This is Jason. I'm at the Sweet Corn Festival in Mexico.\",\n      \"skill\": \"gist\"\n    },\n    {\n      \"stem\": \"How long is the biggest ear of corn?\",\n      \"options\": [\n        \"Nearly 40 centimetres\",\n        \"Nearly 30 centimetres\",\n        \"Nearly 20 centimetres\",\n        \"Nearly 50 centimetres\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU37:005\",\n      \"evidence_quote\": \"The biggest one is nearly 40 centimetres long.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What does Jason say about corn in Mexico?\",\n      \"options\": [\n        \"It is only used for food.\",\n        \"It is also used to make toys.\",\n        \"It is the biggest plant in Mexico.\",\n        \"It has over 600 colours.\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_segment_id\": \"ASR:AU37:007\",\n      \"evidence_quote\": \"Corn isn't just food. People even use it to make toys.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 675,
+  "completion_tokens": 4169,
+  "total_tokens": 4844,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3827
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 419
+ }
+}

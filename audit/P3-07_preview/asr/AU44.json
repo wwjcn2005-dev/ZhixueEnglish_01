@@ -1,0 +1,129 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU44",
+  "audio_num": "AU44",
+  "filename": "44_Unit 6_Developing ideas _Phonetics in use.mp3",
+  "duration_ms": 52349,
+  "segment_count": 4,
+  "word_count": 18,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3420,
+      "text": "phonetics in use, pronunciation"
+    },
+    {
+      "start_ms": 5280,
+      "end_ms": 19200,
+      "text": "ə, work, 13, learn, earthquake, ə, over, after"
+    },
+    {
+      "start_ms": 20880,
+      "end_ms": 22700,
+      "text": "now practice more"
+    },
+    {
+      "start_ms": 50900,
+      "end_ms": 52300,
+      "text": "listen and repeat"
+    }
+  ],
+  "words": [
+    {
+      "word": "phonetics",
+      "start_ms": 0,
+      "end_ms": 760
+    },
+    {
+      "word": "in",
+      "start_ms": 760,
+      "end_ms": 1100
+    },
+    {
+      "word": "use,",
+      "start_ms": 1100,
+      "end_ms": 1560
+    },
+    {
+      "word": "pronunciation",
+      "start_ms": 2360,
+      "end_ms": 3420
+    },
+    {
+      "word": "ə,",
+      "start_ms": 5280,
+      "end_ms": 5980
+    },
+    {
+      "word": "work,",
+      "start_ms": 6440,
+      "end_ms": 7960
+    },
+    {
+      "word": "13,",
+      "start_ms": 9180,
+      "end_ms": 9700
+    },
+    {
+      "word": "learn,",
+      "start_ms": 10460,
+      "end_ms": 11500
+    },
+    {
+      "word": "earthquake,",
+      "start_ms": 12180,
+      "end_ms": 13420
+    },
+    {
+      "word": "ə,",
+      "start_ms": 13860,
+      "end_ms": 15700
+    },
+    {
+      "word": "over,",
+      "start_ms": 16620,
+      "end_ms": 17440
+    },
+    {
+      "word": "after",
+      "start_ms": 18520,
+      "end_ms": 19200
+    },
+    {
+      "word": "now",
+      "start_ms": 20860,
+      "end_ms": 21560
+    },
+    {
+      "word": "practice",
+      "start_ms": 21560,
+      "end_ms": 22100
+    },
+    {
+      "word": "more",
+      "start_ms": 22100,
+      "end_ms": 22700
+    },
+    {
+      "word": "listen",
+      "start_ms": 50900,
+      "end_ms": 52300
+    },
+    {
+      "word": "and",
+      "start_ms": 52300,
+      "end_ms": 52300
+    },
+    {
+      "word": "repeat",
+      "start_ms": 52300,
+      "end_ms": 52300
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 4.5
+  }
+}

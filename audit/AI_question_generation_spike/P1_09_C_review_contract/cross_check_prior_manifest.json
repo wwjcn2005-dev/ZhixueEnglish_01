@@ -1,0 +1,32 @@
+{
+  "stage": "P1-09-C",
+  "anchors": [
+    {
+      "anchor": "P1-09-B protect_after.json",
+      "manifest_sha256": "0292CD6BB701F04CEB07428BA02B7FF336E21903DB6E761A7FC3A38ED1F48CB6",
+      "files_checked": 1116,
+      "mismatched": 0,
+      "missing": 0,
+      "all_match": true,
+      "problems": []
+    },
+    {
+      "anchor": "P1-09-A protect_after.json",
+      "manifest_sha256": "FE66A3291BC97805D7646F54C5748C775BD89D56D910339D87B97B9EEB449653",
+      "files_checked": 1095,
+      "mismatched": 0,
+      "missing": 0,
+      "all_match": true,
+      "problems": []
+    },
+    {
+      "anchor": "P1-08-C protect_after.json",
+      "manifest_sha256": "653A0DF87568B9F698EEA9D42BBC279F6A0258DC5352A537FF88198A9C5A25FA",
+      "files_checked": 1095,
+      "mismatched": 0,
+      "missing": 0,
+      "all_match": true,
+      "problems": []
+    }
+  ]
+}

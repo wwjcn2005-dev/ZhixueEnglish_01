@@ -1,0 +1,209 @@
+{
+  "review_run_id": "AIRV:20260918T105827:P111_B",
+  "review_version": "P1-11-v1",
+  "written_at": "2026-09-18T10:58:27+08:00",
+  "review_count": 2,
+  "meta": {
+    "fixtures": [
+      "FIX-C1",
+      "FIX-C2"
+    ],
+    "source": "P1_09_D_boundary_validation/fixtures.json (verbatim)",
+    "usage": {
+      "prompt_tokens": 1369,
+      "completion_tokens": 8578,
+      "total_tokens": 9947,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7601
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1369
+    },
+    "latency_ms": 152557,
+    "finish_reason": "stop",
+    "api_calls": 1,
+    "retry_count": 0
+  },
+  "reviews": [
+    {
+      "question_id": "FIX-C1",
+      "question_fingerprint": "D267340CB812490023626C841B938956015D3CBC314F15874960596CE5676E26",
+      "review_context_hash": "EC89C23C99B6B30B3EEE8C1BC4F33616300289F38DA84F7BF3F95769F5401020",
+      "review_version": "P1-11-v1",
+      "prompt_version_effective": "P1-11-v1",
+      "prompt_version_current_source": "P1-11-v1.1",
+      "question_text": "Grandpa likes playing the erhu in the park with his ___.",
+      "question_type": "vocab_choice",
+      "candidates": [
+        {
+          "candidate": "A",
+          "candidate_text": "friends",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "教材原文明确是 with his friends，语法和语义都自然。"
+        },
+        {
+          "candidate": "B",
+          "candidate_text": "students",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "NO",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "如果把 Grandpa 理解为教二胡的人，with his students 也能构成通顺自然的句子，题干本身没有排除这一理解。"
+        },
+        {
+          "candidate": "C",
+          "candidate_text": "parents",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "NO",
+          "need_more_context": "NO",
+          "valid_alternative": "NO",
+          "reason_cn": "语法上可填，但对一位爷爷来说，和自己的父母去公园拉二胡不太自然，教材也未支持这种理解。"
+        },
+        {
+          "candidate": "D",
+          "candidate_text": "teachers",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "NO",
+          "need_more_context": "NO",
+          "valid_alternative": "NO",
+          "reason_cn": "语法上可填，但爷爷和老师去公园拉二胡缺乏典型语境，教材未支持，不作为合理替代答案。"
+        }
+      ],
+      "candidate_coverage": "COMPLETE",
+      "answer_unique": "FAIL",
+      "answer_unique_status": "UNIQUE_RISK",
+      "answer_unique_basis": "存在 1 个非当前答案选项被判为可能成立（三字段全 YES 的有 0 个；模型 valid_alternative=YES 的有 1 个）",
+      "flagged_candidates": [
+        "students"
+      ],
+      "english_correct": "PASS",
+      "naturalness": "PASS",
+      "learning_value": "CONCERN",
+      "distractor_quality": "CONCERN",
+      "grade_fit": "PASS",
+      "suggested_decision": "CAUTION",
+      "summary_zh": "英语句子本身正确，也与教材原句相符；但离开课本后，这个空并不只有 friends 能填，students 也可以构成通顺句子，因此作为独立单选题存在答案不够唯一的风险。建议结合课文上下文使用，或把题干改得更明确。",
+      "issues_zh": [
+        "'students' 也可以填入 'Grandpa likes playing the erhu in the park with his students'，答案不够唯一。"
+      ],
+      "evidence_note_zh": "本题基于教材第 32 页 Activity 1 课文原句：'He likes playing the erhu in the park with his friends.'",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "P1-11-v1",
+      "assessed_at": "2026-09-18T10:58:27+08:00",
+      "safety": {
+        "ok": true,
+        "forbidden_keys_present": []
+      },
+      "human_view": {
+        "这道题": "Grandpa likes playing the erhu in the park with his ___.",
+        "AI审核提示": "CAUTION",
+        "教材依据": "本题基于教材第 32 页 Activity 1 课文原句：'He likes playing the erhu in the park with his friends.'",
+        "需要注意的问题": [
+          "'students' 也可以填入 'Grandpa likes playing the erhu in the park with his students'，答案不够唯一。"
+        ],
+        "AI说明": "英语句子本身正确，也与教材原句相符；但离开课本后，这个空并不只有 friends 能填，students 也可以构成通顺句子，因此作为独立单选题存在答案不够唯一的风险。建议结合课文上下文使用，或把题干改得更明确。",
+        "采用或不采用": null
+      }
+    },
+    {
+      "question_id": "FIX-C2",
+      "question_fingerprint": "37705D53BF99232ADAE447D987AF53E1E53C664D24F2A4C2B2B94D2276533244",
+      "review_context_hash": "7126D0E1FF5FF6EE844057357EB91EA64EE39838E33EB8B8FF24C63C4EDBE28D",
+      "review_version": "P1-11-v1",
+      "prompt_version_effective": "P1-11-v1",
+      "prompt_version_current_source": "P1-11-v1.1",
+      "question_text": "Ms Chen writes a ___ on the blackboard.",
+      "question_type": "vocab_choice",
+      "candidates": [
+        {
+          "candidate": "A",
+          "candidate_text": "sentence",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "教材原文中 Ms Chen writes the sentence on the blackboard，语法和语义都自然。"
+        },
+        {
+          "candidate": "B",
+          "candidate_text": "word",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "NO",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "Ms Chen writes a word on the blackboard 也完全成立，题干没有限定黑板上的内容必须是句子。"
+        },
+        {
+          "candidate": "C",
+          "candidate_text": "picture",
+          "grammar_valid": "YES",
+          "semantic_valid": "NO",
+          "textbook_context_valid": "NO",
+          "need_more_context": "NO",
+          "valid_alternative": "NO",
+          "reason_cn": "通常说 draw a picture，而不说 write a picture，语义搭配不自然。"
+        },
+        {
+          "candidate": "D",
+          "candidate_text": "name",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "NO",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "Ms Chen writes a name on the blackboard 也自然成立，题干未提供足够信息排除这一理解。"
+        }
+      ],
+      "candidate_coverage": "COMPLETE",
+      "answer_unique": "FAIL",
+      "answer_unique_status": "UNIQUE_RISK",
+      "answer_unique_basis": "存在 2 个非当前答案选项被判为可能成立（三字段全 YES 的有 0 个；模型 valid_alternative=YES 的有 2 个）",
+      "flagged_candidates": [
+        "name",
+        "word"
+      ],
+      "english_correct": "PASS",
+      "naturalness": "PASS",
+      "learning_value": "CONCERN",
+      "distractor_quality": "CONCERN",
+      "grade_fit": "PASS",
+      "suggested_decision": "CAUTION",
+      "summary_zh": "英语句子正确，sentence 也符合教材原句；但题干没有限定黑板内容，word 和 name 也都能自然填入，独立使用时存在答案不够唯一的风险。建议结合课文或增加提示后使用。",
+      "issues_zh": [
+        "题干未限定黑板内容，'word' 和 'name' 也都可以自然填入，如 Ms Chen writes a word/name on the blackboard，答案不够唯一。",
+        "'picture' 通常不用 write 而用 draw，作为干扰项错误比较明显。"
+      ],
+      "evidence_note_zh": "本题基于教材第 17 页 Activity 2 课文原句：'Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.”'",
+      "model": "deepseek-v4-pro",
+      "prompt_version": "P1-11-v1",
+      "assessed_at": "2026-09-18T10:58:27+08:00",
+      "safety": {
+        "ok": true,
+        "forbidden_keys_present": []
+      },
+      "human_view": {
+        "这道题": "Ms Chen writes a ___ on the blackboard.",
+        "AI审核提示": "CAUTION",
+        "教材依据": "本题基于教材第 17 页 Activity 2 课文原句：'Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.”'",
+        "需要注意的问题": [
+          "题干未限定黑板内容，'word' 和 'name' 也都可以自然填入，如 Ms Chen writes a word/name on the blackboard，答案不够唯一。",
+          "'picture' 通常不用 write 而用 draw，作为干扰项错误比较明显。"
+        ],
+        "AI说明": "英语句子正确，sentence 也符合教材原句；但题干没有限定黑板内容，word 和 name 也都能自然填入，独立使用时存在答案不够唯一的风险。建议结合课文或增加提示后使用。",
+        "采用或不采用": null
+      }
+    }
+  ]
+}

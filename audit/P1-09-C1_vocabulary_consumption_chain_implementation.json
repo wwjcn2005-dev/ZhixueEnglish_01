@@ -1,0 +1,72 @@
+{
+  "task": "P1-09-C1 Vocabulary 最小学习消费链路（归档）",
+  "archived_at": "2026-09-12T16:46:09+08:00",
+  "verdict": "PASS",
+  "new_files": [
+    "learning/vocabulary_service.py",
+    "learning/test_vocabulary_service.py"
+  ],
+  "modified_existing_files": [],
+  "schema_change": false,
+  "core_vocabulary_basis": {
+    "field": "learning_item.learning_requirement='CORE'",
+    "evidence_chain": "source_ref.textbook_emphasis='BOLD' (font FrutigerNextLTW1G-Medium) ← P1-06-B1.7-D",
+    "distribution": {
+      "CORE": 243,
+      "RECOGNITION": 43,
+      "NEED_REVIEW": 1
+    },
+    "rejected": [
+      "RECOGNITION",
+      "NEED_REVIEW"
+    ]
+  },
+  "interfaces": [
+    "get_vocabulary",
+    "is_core_vocabulary",
+    "require_core_vocabulary",
+    "start_vocabulary_study",
+    "record_vocabulary_study",
+    "record_vocabulary_practice"
+  ],
+  "tests": {
+    "file": "learning/test_vocabulary_service.py",
+    "ran": 8,
+    "result": "OK",
+    "covers": "任务书 §十 9 组"
+  },
+  "regression": {
+    "rounds": 2,
+    "suites": {
+      "P1-06-C1": 14,
+      "P1-06-C2-A": 10,
+      "P1-07-C1": 9,
+      "P1-07-C2": 9,
+      "P1-08-C1": 8,
+      "P1-09-C1": 8
+    },
+    "result": "OK"
+  },
+  "safety": {
+    "ai": 0,
+    "network": 0,
+    "contentpack_written": false,
+    "official_db_polluted": false
+  },
+  "frozen_hashes": {
+    "learning_service.py": "01341A05231EFCA6E0C801CF95D8A96F3DF732753F1F679688D44708586DF1D6",
+    "session_service.py": "0CF7A20615780831F544BDF295202028CE2EEFB15D234820CD1184AD4A6B665F",
+    "activity_service.py": "AAFF907C869797EE697D5F756C7E03C62CEB942809B2406933761195DA092028",
+    "resource_pool_service.py": "D4488E1FFBA6B553EB6932BE195932A4C464D9526790B138C0C55DAA612D2F37",
+    "behavior_service.py": "0C6EF4822F60D9251B68382C95A5D3D9987650811F4FC93C70875AF48249FC6D",
+    "vocabulary_service.py": "D06DCC76A5A4CCAF5C0BC3C17BB33CFF5D6056B7C872406A3934223C8870D632",
+    "learning.db": "DB97E460CDEC59CDC27AD2CAF0CC8FDF671E4832BAC0A09E6CE9BB986A0C311C",
+    "contentpack_v5": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A"
+  },
+  "known_open_items": [
+    "同秒 tie-break 未修复",
+    "activity_type 双重含义未统一",
+    "附录词表 section 归属不适用",
+    "practice 自动判分未实现（由调用方提供结果）"
+  ]
+}

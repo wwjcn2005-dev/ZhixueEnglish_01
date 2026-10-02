@@ -1,0 +1,585 @@
+{
+  "stage": "P1-09-D",
+  "note": "本文件是实验人员侧的对照标签，**绝不允许进入 AI 输入**。",
+  "gold": [
+    {
+      "fixture_id": "FIX-A1",
+      "category": "A_true_english_error",
+      "subcategory": "主谓一致",
+      "question_type": "fill",
+      "scored": {
+        "english_correct": {
+          "must_be_in": [
+            "FAIL"
+          ],
+          "fn_if": [
+            "PASS",
+            "CONCERN"
+          ],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "not_accept",
+      "gold_reason": "题干存在明确主谓一致错误（Grandpa like），属于真实英语错误，不依赖争议性语法解释。",
+      "introduced_defect": "题干第一句主语与谓语不一致：Grandpa like（应为 Grandpa likes）",
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-A2",
+      "category": "A_true_english_error",
+      "subcategory": "主谓一致（判断题）",
+      "question_type": "reading_judge",
+      "scored": {
+        "english_correct": {
+          "must_be_in": [
+            "FAIL"
+          ],
+          "fn_if": [
+            "PASS",
+            "CONCERN"
+          ],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "not_accept",
+      "gold_reason": "题干存在明确主谓一致错误（Plants is），事实判断为 True 不代表英语正确。",
+      "introduced_defect": "判断题题干主语与 be 动词不一致：Plants is（应为 Plants are）",
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-B1",
+      "category": "B_broken_distractor",
+      "subcategory": "干扰项与题干不匹配",
+      "question_type": "vocab_choice",
+      "scored": {
+        "distractor_quality": {
+          "must_be_in": [
+            "FAIL",
+            "CONCERN"
+          ],
+          "fn_if": [
+            "PASS",
+            "NOT_APPLICABLE"
+          ],
+          "fp_if": []
+        },
+        "answer_unique": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ],
+          "soft": [
+            "CONCERN"
+          ]
+        }
+      },
+      "decision_rule": "not_accept",
+      "gold_reason": "答案 band 本身正确且唯一；问题出在干扰项 quality：guitar 无法与题干介词搭配。",
+      "introduced_defect": "干扰项 guitar 放在 in the school ___ 中语法不成立（in the school guitar）；stage 需要介词 on；三个干扰项中至少 1 个明显残缺",
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-B2",
+      "category": "B_broken_distractor",
+      "subcategory": "干扰项词形与题干不匹配",
+      "question_type": "reading_choice",
+      "scored": {
+        "distractor_quality": {
+          "must_be_in": [
+            "FAIL",
+            "CONCERN"
+          ],
+          "fn_if": [
+            "PASS",
+            "NOT_APPLICABLE"
+          ],
+          "fp_if": []
+        },
+        "answer_unique": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ],
+          "soft": [
+            "CONCERN"
+          ]
+        }
+      },
+      "decision_rule": "not_accept",
+      "gold_reason": "答案正确；to make rain 这个干扰项在语法位置上不成立，属于干扰项缺陷。",
+      "introduced_defect": "干扰项 to make rain 与 can make ___ 的宾语位置不匹配（词形错误）",
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-C1",
+      "category": "C_true_second_answer",
+      "subcategory": "名词宾语两解",
+      "question_type": "vocab_choice",
+      "scored": {
+        "answer_unique": {
+          "must_be_in": [
+            "FAIL"
+          ],
+          "fn_if": [
+            "PASS",
+            "CONCERN"
+          ],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "not_accept",
+      "gold_reason": "with his students 同样自然、语法成立、不被教材语境排除 → 真正的第二正确答案。",
+      "introduced_defect": "干扰项 students 语法与语义都成立，且不被课文排除（课文只说 with his friends，并没有说不和学生一起）",
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-C2",
+      "category": "C_true_second_answer",
+      "subcategory": "名词宾语两解（同词性）",
+      "question_type": "vocab_choice",
+      "scored": {
+        "answer_unique": {
+          "must_be_in": [
+            "FAIL"
+          ],
+          "fn_if": [
+            "PASS",
+            "CONCERN"
+          ],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "not_accept",
+      "gold_reason": "writes a word on the blackboard 完全成立 → 语言层面的第二正确答案。",
+      "introduced_defect": "干扰项 word 语法语义都成立（writes a word on the blackboard），课文只说 sentence，并未排除 word",
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-D1",
+      "category": "D_reality_conflict",
+      "subcategory": "现实常识 vs 课文陈述（树）",
+      "question_type": "reading_choice",
+      "scored": {
+        "answer_unique": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ],
+          "soft": [
+            "CONCERN"
+          ]
+        }
+      },
+      "decision_rule": "not_reject",
+      "gold_reason": "课文明确陈述 trees can make their own rain；sugar/oxygen/food 只在现实世界成立，属于 Answer Uniqueness Contract V1 的 B 类（现实常识存在其他解释），不得据此判答案不唯一。",
+      "introduced_defect": null,
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-D2",
+      "category": "D_reality_conflict",
+      "subcategory": "现实常识 vs 课文陈述（水）",
+      "question_type": "reading_choice",
+      "scored": {
+        "answer_unique": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ],
+          "soft": [
+            "CONCERN"
+          ]
+        }
+      },
+      "decision_rule": "not_reject",
+      "gold_reason": "课文陈述 Water from the root will ...；现实世界水来自土壤，属于 B 类现实常识，不得据此判答案不唯一。",
+      "introduced_defect": null,
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-E1",
+      "category": "E_insufficient_context",
+      "subcategory": "缺少指标物",
+      "question_type": "fill",
+      "scored": {
+        "context_status": {
+          "must_be_in": [
+            "CONTEXT_INSUFFICIENT"
+          ],
+          "fn_if": [
+            "SUFFICIENT"
+          ],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "not_reject",
+      "gold_reason": "上下文缺少指标物，属于 Context Insufficient，而不是答案不唯一。",
+      "introduced_defect": null,
+      "context_design": "故意只提供教材另一段对话（关于明天穿什么），既没有指标物、也没有任何颜色信息，因此无法判断这个空该填什么颜色。"
+    },
+    {
+      "fixture_id": "FIX-E2",
+      "category": "E_insufficient_context",
+      "subcategory": "指代无法解析",
+      "question_type": "fill",
+      "scored": {
+        "context_status": {
+          "must_be_in": [
+            "CONTEXT_INSUFFICIENT"
+          ],
+          "fn_if": [
+            "SUFFICIENT"
+          ],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "not_reject",
+      "gold_reason": "所给上下文与题干不同源，无法判断答案；属于 Context Insufficient。",
+      "introduced_defect": null,
+      "context_design": "故意只提供课文的一个片段（不含 After a week’s practice, we are on the stage 一句），因此无法确定这个空是 stage 还是别的地点词。"
+    },
+    {
+      "fixture_id": "FIX-F1",
+      "category": "F_high_value_normal",
+      "subcategory": "词汇重组（fans of）",
+      "question_type": "vocab_choice",
+      "scored": {
+        "english_correct": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "CONCERN",
+            "FAIL"
+          ]
+        },
+        "answer_unique": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "naturalness": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "learning_value": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [
+            "FAIL"
+          ],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "distractor_quality": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "grade_fit": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "mechanical_level": {
+          "must_be_in": [
+            "RECOMBINED"
+          ],
+          "fn_if": [],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "accept",
+      "gold_reason": "用课文短语 fans of 重新组织成新语境，学习点明确（fan of 的用法），答案唯一、英语正确、年级适配，属于高学习价值正常题。",
+      "introduced_defect": null,
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-F2",
+      "category": "F_high_value_normal",
+      "subcategory": "因果理解题",
+      "question_type": "reading_choice",
+      "scored": {
+        "english_correct": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "CONCERN",
+            "FAIL"
+          ]
+        },
+        "answer_unique": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "naturalness": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "learning_value": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [
+            "FAIL"
+          ],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "distractor_quality": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "grade_fit": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "mechanical_level": {
+          "must_be_in": [
+            "NOT_APPLICABLE",
+            "RECOMBINED"
+          ],
+          "fn_if": [],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "accept",
+      "gold_reason": "因果理解题：需要把学生的提问与 Questions jump into my mind 连起来，比事实定位题有更高的学习价值。",
+      "introduced_defect": null,
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-F3",
+      "category": "F_high_value_normal",
+      "subcategory": "两句信息整合题",
+      "question_type": "reading_choice",
+      "scored": {
+        "english_correct": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "CONCERN",
+            "FAIL"
+          ]
+        },
+        "answer_unique": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "naturalness": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "learning_value": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [
+            "FAIL"
+          ],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "distractor_quality": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "grade_fit": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "mechanical_level": {
+          "must_be_in": [
+            "NOT_APPLICABLE",
+            "RECOMBINED"
+          ],
+          "fn_if": [],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "accept",
+      "gold_reason": "需要整合课文两句信息（erhu + Beijing opera），而不是抄一句；干扰项均取自同一 Unit 的教材素材。",
+      "introduced_defect": null,
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-G1",
+      "category": "G_mechanical_but_valid",
+      "subcategory": "名词性物主代词重点词",
+      "question_type": "fill",
+      "scored": {
+        "answer_unique": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [
+            "FAIL"
+          ],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "english_correct": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "CONCERN",
+            "FAIL"
+          ]
+        },
+        "learning_value": {
+          "must_be_in": [
+            "PASS",
+            "CONCERN"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "mechanical_level": {
+          "must_be_in": [
+            "DIRECT_REPRODUCTION",
+            "MECHANICAL_REWRITE"
+          ],
+          "fn_if": [],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "not_reject",
+      "gold_reason": "形式是教材原句挖空（机械），但考的是 Activity 5 的语法重点（名词性物主代词 hers），答案唯一、英语正确 → 不能因为机械形式判 FAIL。",
+      "introduced_defect": null,
+      "context_design": null
+    },
+    {
+      "fixture_id": "FIX-G2",
+      "category": "G_mechanical_but_valid",
+      "subcategory": "say + 直接引语重点词",
+      "question_type": "fill",
+      "scored": {
+        "answer_unique": {
+          "must_be_in": [
+            "PASS",
+            "CONCERN"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "english_correct": {
+          "must_be_in": [
+            "PASS"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "CONCERN",
+            "FAIL"
+          ]
+        },
+        "learning_value": {
+          "must_be_in": [
+            "PASS",
+            "CONCERN"
+          ],
+          "fn_if": [],
+          "fp_if": [
+            "FAIL"
+          ]
+        },
+        "mechanical_level": {
+          "must_be_in": [
+            "DIRECT_REPRODUCTION",
+            "MECHANICAL_REWRITE"
+          ],
+          "fn_if": [],
+          "fp_if": []
+        }
+      },
+      "decision_rule": "not_reject",
+      "gold_reason": "机械挖空形式，但考的是 say + 直接引语的搭配（教材重点表达），答案由语法与搭配唯一确定 → 不能因为机械形式判 FAIL。",
+      "introduced_defect": null,
+      "context_design": null
+    }
+  ]
+}

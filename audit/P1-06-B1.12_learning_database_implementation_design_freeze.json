@@ -1,0 +1,524 @@
+{
+  "task": "P1-06-B1.12 学习层独立数据库与第一批 Schema 实施方案冻结审计",
+  "generated_at": "2026-09-12T15:35:28+08:00",
+  "verdict": "PASS",
+  "baseline": {
+    "v5_sha256": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+    "v5_size": 2457600,
+    "Vocabulary": 287,
+    "Phrase": 23,
+    "Sentence Pattern": 52,
+    "learning_item": 362,
+    "source_ref": 815,
+    "tables": 21,
+    "integrity": "ok",
+    "fk": 0,
+    "user_version": 0
+  },
+  "existing_mechanisms": {
+    "migration_dir": "NONE",
+    "sql_files": "NONE",
+    "learning_dir": "NONE",
+    "version_tables": "NONE",
+    "note": "项目当前无迁移机制，PRAGMA user_version=0"
+  },
+  "learning_db": {
+    "path": "D:\\ZhixueEnglish\\structured\\learning\\learning.db",
+    "dir": "structured/learning",
+    "relation_to_contentpack": "单向只读逻辑引用",
+    "init": "幂等初始化脚本（实施阶段创建）；不自动创建",
+    "version": "PRAGMA user_version + schema_migration 表",
+    "migration": "编号步骤 + 事务 + 迁移前备份；不引入新依赖",
+    "backup": "教材库=发布资产（可重建）；学习库=用户数据（不可再生，单独备份）"
+  },
+  "tables": {
+    "learner": {
+      "cols": [
+        [
+          "learner_id",
+          "TEXT",
+          "NN",
+          null,
+          "PK"
+        ],
+        [
+          "display_name",
+          "TEXT",
+          "NN",
+          null,
+          "NOT UNIQUE"
+        ],
+        [
+          "status",
+          "TEXT",
+          "NN",
+          "active",
+          null
+        ],
+        [
+          "created_at",
+          "TEXT",
+          "NN",
+          null,
+          null
+        ],
+        [
+          "updated_at",
+          "TEXT",
+          "NULL",
+          null,
+          null
+        ]
+      ],
+      "forbidden": [
+        "deleted_at",
+        "账号体系",
+        "掌握度"
+      ],
+      "delete": "禁止物理删除（status=inactive）"
+    },
+    "learning_task": {
+      "cols": [
+        [
+          "task_id",
+          "TEXT",
+          "NN",
+          null,
+          "PK"
+        ],
+        [
+          "learner_id",
+          "TEXT",
+          "NN",
+          null,
+          "FK→learner RESTRICT"
+        ],
+        [
+          "goal_id",
+          "TEXT",
+          "NULL",
+          null,
+          "逻辑引用"
+        ],
+        [
+          "task_kind",
+          "TEXT",
+          "NN",
+          null,
+          "learn|review"
+        ],
+        [
+          "status",
+          "TEXT",
+          "NN",
+          "active",
+          "active|completed|dropped"
+        ],
+        [
+          "textbook_id",
+          "TEXT",
+          "NN",
+          null,
+          null
+        ],
+        [
+          "title",
+          "TEXT",
+          "NULL",
+          null,
+          null
+        ],
+        [
+          "created_at",
+          "TEXT",
+          "NN",
+          null,
+          null
+        ],
+        [
+          "started_at",
+          "TEXT",
+          "NULL",
+          null,
+          null
+        ],
+        [
+          "completed_at",
+          "TEXT",
+          "NULL",
+          null,
+          null
+        ]
+      ],
+      "indexes": [
+        "(learner_id,status,created_at)"
+      ],
+      "delete": "有 Record 只能 dropped"
+    },
+    "task_item": {
+      "cols": [
+        [
+          "task_id",
+          "TEXT",
+          "NN",
+          null,
+          "PK/FK→learning_task CASCADE"
+        ],
+        [
+          "item_id",
+          "TEXT",
+          "NN",
+          null,
+          "PK/逻辑引用"
+        ],
+        [
+          "ordinal",
+          "INTEGER",
+          "NULL",
+          null,
+          null
+        ],
+        [
+          "created_at",
+          "TEXT",
+          "NULL",
+          null,
+          null
+        ]
+      ],
+      "pk": "(task_id,item_id)",
+      "indexes": [
+        "(item_id)"
+      ],
+      "not_included": [
+        "item_type",
+        "item_role",
+        "required",
+        "status"
+      ]
+    },
+    "learning_record": {
+      "cols": [
+        [
+          "record_id",
+          "TEXT",
+          "NN",
+          null,
+          "PK"
+        ],
+        [
+          "learner_id",
+          "TEXT",
+          "NN",
+          null,
+          "FK→learner RESTRICT"
+        ],
+        [
+          "task_id",
+          "TEXT",
+          "NN",
+          null,
+          "FK→learning_task RESTRICT"
+        ],
+        [
+          "item_id",
+          "TEXT",
+          "NN",
+          null,
+          "逻辑引用"
+        ],
+        [
+          "activity_type",
+          "TEXT",
+          "NN",
+          null,
+          null
+        ],
+        [
+          "result",
+          "TEXT",
+          "NULL",
+          null,
+          null
+        ],
+        [
+          "response_raw",
+          "TEXT",
+          "NULL",
+          null,
+          "仅文本"
+        ],
+        [
+          "attempt_no",
+          "INTEGER",
+          "NN",
+          "1",
+          null
+        ],
+        [
+          "hints_used",
+          "INTEGER",
+          "NN",
+          "0",
+          "仅数量"
+        ],
+        [
+          "textbook_id",
+          "TEXT",
+          "NN",
+          null,
+          null
+        ],
+        [
+          "snapshot_id",
+          "TEXT",
+          "NULL",
+          null,
+          "逻辑引用"
+        ],
+        [
+          "created_at",
+          "TEXT",
+          "NN",
+          null,
+          null
+        ]
+      ],
+      "indexes": [
+        "(learner_id,created_at)",
+        "(learner_id,item_id,created_at)",
+        "(task_id)"
+      ],
+      "append_only": true,
+      "forbidden": [
+        "activity_id",
+        "duration_ms",
+        "mastery",
+        "review_due",
+        "AI 诊断",
+        "媒体"
+      ],
+      "task_relation": "record(task_id,item_id)；不建到 task_item 的 FK"
+    },
+    "mastery_state": {
+      "cols": [
+        [
+          "learner_id",
+          "TEXT",
+          "NN",
+          null,
+          "PK/FK→learner RESTRICT"
+        ],
+        [
+          "item_id",
+          "TEXT",
+          "NN",
+          null,
+          "PK/逻辑引用"
+        ],
+        [
+          "mastery_level",
+          "TEXT",
+          "NN",
+          "unknown",
+          null
+        ],
+        [
+          "evidence_count",
+          "INTEGER",
+          "NN",
+          "0",
+          null
+        ],
+        [
+          "correct_count",
+          "INTEGER",
+          "NN",
+          "0",
+          null
+        ],
+        [
+          "last_result",
+          "TEXT",
+          "NULL",
+          null,
+          "派生缓存"
+        ],
+        [
+          "last_practiced_at",
+          "TEXT",
+          "NULL",
+          null,
+          null
+        ],
+        [
+          "review_needed",
+          "INTEGER",
+          "NN",
+          "0",
+          null
+        ],
+        [
+          "updated_at",
+          "TEXT",
+          "NN",
+          null,
+          null
+        ]
+      ],
+      "pk": "(learner_id,item_id)",
+      "indexes": [
+        "(learner_id,review_needed)"
+      ],
+      "next_review_at": "LATER"
+    }
+  },
+  "enums": {
+    "learner_status": [
+      "active",
+      "inactive"
+    ],
+    "task_kind": [
+      "learn",
+      "review"
+    ],
+    "task_status": [
+      "active",
+      "completed",
+      "dropped"
+    ],
+    "activity_type": [
+      "recognize",
+      "read",
+      "understand",
+      "listen",
+      "repeat",
+      "spell",
+      "substitute",
+      "produce",
+      "review"
+    ],
+    "result": [
+      "correct",
+      "incorrect",
+      "partial",
+      "done",
+      "skipped",
+      null
+    ],
+    "mastery_level": [
+      "unknown",
+      "learning",
+      "familiar",
+      "stable"
+    ],
+    "check_constraints": "不使用（应用层校验 + 文档冻结）"
+  },
+  "type_policy": {
+    "id": "TEXT",
+    "time": "TEXT ISO-8601",
+    "bool": "INTEGER 0/1",
+    "count": "INTEGER",
+    "long_text": "TEXT",
+    "enum": "TEXT"
+  },
+  "fk_policy": {
+    "internal": [
+      "learning_task.learner_id→learner(RESTRICT)",
+      "task_item.task_id→learning_task(CASCADE)",
+      "learning_record.learner_id→learner(RESTRICT)",
+      "learning_record.task_id→learning_task(RESTRICT)",
+      "mastery_state.learner_id→learner(RESTRICT)"
+    ],
+    "logical": [
+      "task_item.item_id",
+      "mastery_state.item_id",
+      "learning_record.item_id",
+      "learning_record.snapshot_id",
+      "learning_task.goal_id"
+    ],
+    "note": "跨库不建 FK；连接需 PRAGMA foreign_keys=ON"
+  },
+  "unique": {
+    "learner.display_name": "不唯一",
+    "task": "无自然键",
+    "task_item": "(task_id,item_id)",
+    "mastery_state": "(learner_id,item_id)",
+    "record": "无幂等键（第一阶段）"
+  },
+  "transaction": "BEGIN; INSERT learning_record; UPSERT mastery_state; COMMIT;（失败整体回滚；Mastery 可由 Record 重建）",
+  "snapshot_policy": {
+    "learning_task": "textbook_id MUST（方案 B：不存 snapshot_id）",
+    "learning_record": "textbook_id MUST + snapshot_id 可空",
+    "task_item": "仅 item_id",
+    "mastery_state": "仅 item_id"
+  },
+  "v6_scenarios": {
+    "same_item": "无缝继续",
+    "item_removed": "历史保留；展示提示资源已不在当前版本",
+    "text_reintroduced_new_id": "视为新资源，不自动合并"
+  },
+  "ai_artifact": {
+    "migrated": false,
+    "note": "仍在 contentpack；未来含用户上下文的产物建议迁往 learning 库（LATER）"
+  },
+  "implementation_order": [
+    "Step1 备份/确认 v5 未变",
+    "Step2 创建空 learning.db",
+    "Step3 事务内建 5 表 + schema_migration",
+    "Step4 事务内建索引",
+    "Step5 写 schema_migration v1 + PRAGMA user_version=1",
+    "Step6 提交并验证",
+    "Step7 用户显式创建首个 Learner",
+    "Step8 失败则回滚并删除空库"
+  ],
+  "post_checks": [
+    "integrity_check=ok",
+    "foreign_key_check=0",
+    "表数=6",
+    "字段/类型/NULL/默认",
+    "PK/FK/索引",
+    "唯一性",
+    "事务回滚",
+    "append-only 应用层约束",
+    "v5 SHA256 未变",
+    "contentpack 未被写入"
+  ],
+  "risks": {
+    "P0": 0,
+    "P1": 0,
+    "P2": [
+      "跨库逻辑引用一致性校验",
+      "v6/v7 资源消失的展示提示",
+      "MasteryState 重建工具"
+    ],
+    "P3": [
+      "枚举文档化维护",
+      "TaskItem 删除事件不留痕",
+      "AIArtifact 归属迁移（LATER）",
+      "备份保留策略 N 值待定"
+    ]
+  },
+  "boundaries": {
+    "db_changes": "NONE",
+    "learning_db_created": false,
+    "sql_executed": 0,
+    "code_changes": "NONE",
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "new_deps": 0,
+    "network": 0,
+    "zhixue_ai": false,
+    "v5_modified": false,
+    "new_files": [
+      "audit/P1-06-B1.12_learning_database_implementation_design_freeze.md",
+      "audit/P1-06-B1.12_learning_database_implementation_design_freeze.json"
+    ]
+  },
+  "final_answers": {
+    "independent_sqlite": true,
+    "schema_freezable": true,
+    "ready_for_table_creation": true
+  }
+}

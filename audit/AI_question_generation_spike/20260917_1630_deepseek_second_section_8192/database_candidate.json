@@ -1,0 +1,90 @@
+{
+ "run": "20260917_1630_deepseek_second_section_8192",
+ "reused_from": "20260917_1610_deepseek_second_section",
+ "single_variable_changed": "max_tokens 4096 -> 8192",
+ "section": {
+  "unit": "Unit 1",
+  "section": "UNDERSTANDING_IDEAS",
+  "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+  "textbook_pages": [16, 17, 18, 19, 20],
+  "pdf_pages": [21, 22, 23, 24, 25]
+ },
+ "input_context_sha256": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+ "model": "deepseek-v4-pro",
+ "max_tokens": 8192,
+ "cloud_generation_calls": 1,
+ "local_ai_calls": 0,
+ "questions_returned": 3,
+ "program_validation_pass": 3,
+ "program_validation_fail": 0,
+ "database_candidate_yes": 3,
+ "database_candidate_no": 0,
+ "status": "EVALUATED",
+ "criteria_reference": {
+  "YES_requires_all": [
+   "教材定位真实存在",
+   "evidence_block_ids 真实存在",
+   "evidence_quote 命中教材原文",
+   "答案由教材证据直接或可验证地支持",
+   "无明显超纲",
+   "选项唯一且合理",
+   "无明显重复",
+   "英语表达自然",
+   "有实际学习价值",
+   "无明显模型编造"
+  ],
+  "NO_rule": "任一关键条件不满足即 NO。"
+ },
+ "items": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "database_candidate": "YES",
+   "location": "Unit 1 / UNDERSTANDING_IDEAS / 教材页 17 / activity 2",
+   "evidence_block_ids": ["FLTRP-EN-7A-2022CUR:P22:B9"],
+   "evidence_quote": "That’s really an important lesson!",
+   "evidence_verified_verbatim": true,
+   "answer": "important",
+   "answer_support_type": "EXACT",
+   "answer_in_unit_vocabulary": "BOLD（核心重点词，教材页 17，adj，重要的）",
+   "notes": "题干 = 教材原句删去 important，其余逐字未改；答案即被删词本身，证据唯一。"
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "database_candidate": "YES",
+   "location": "Unit 1 / UNDERSTANDING_IDEAS / 教材页 17 / activity 2",
+   "evidence_block_ids": ["FLTRP-EN-7A-2022CUR:P22:B2"],
+   "evidence_quote": "But is it OK to point out the mistake?",
+   "evidence_verified_verbatim": true,
+   "answer": "mistake",
+   "answer_support_type": "EXACT",
+   "options": ["mistake", "meaning", "mind", "sentence"],
+   "distractor_provenance": "另外 3 个选项均为 Unit 1 BOLD 教材重点词（meaning / mind / sentence，教材页 17），未引入教材外词汇。",
+   "answer_in_unit_vocabulary": "BOLD（核心重点词，教材页 17，n，错误）",
+   "notes": "题干 = 教材原句留空；4 个选项全部来自本 Unit 词表，符合“干扰项使用本单元词”的要求。"
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "database_candidate": "YES",
+   "location": "Unit 1 / UNDERSTANDING_IDEAS / 教材页 17 / activity 2",
+   "evidence_block_ids": ["FLTRP-EN-7A-2022CUR:P22:B6"],
+   "evidence_quote": "That sentence is from Confucius, not from Mencius.",
+   "evidence_verified_verbatim": true,
+   "answer": "That sentence is from Confucius, not from Mencius.",
+   "answer_support_type": "EXACT",
+   "options": ["That sentence is from Confucius, not from Mencius.",
+               "That sentence is from Mencius, not from Confucius.",
+               "That sentence is from Ms Chen, not from Confucius.",
+               "That sentence has no mistake."],
+   "distractor_provenance": "B 为教材事实反转，C 使用教材人物 Ms Chen，D 与教材事实相反；均为教材内素材，无外部事实。",
+   "answer_in_unit_vocabulary": "N/A（答案为整句，非单词）",
+   "notes": "题干涉及的 Wang Han 为教材原文人物（见 P22:B3 / P22:B7），非模型虚构；答案在 evidence_quote 中逐字可定位。"
+  }
+ ],
+ "caveats": [
+  "本文件只判定“程序校验通过 + 人工确认可回溯教材原文”的入库候选资格，不代表题目已进入正式题库，也不代表批量生成质量已稳定。",
+  "3 题均出自教材页 17 同一段落，未使用教材页 18–20 的证据；页面覆盖度窄是本次样本的观察项，不是本次单变量实验的失败项。"
+ ]
+}

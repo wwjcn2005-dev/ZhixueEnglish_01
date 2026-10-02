@@ -1,0 +1,765 @@
+{
+  "stage": "P1-08-C",
+  "generated_at": "2026-09-17T20:59:36+08:00",
+  "db_sha256_before": "F74CA83F7C8A98F2A4A2E672E7BA61ECC34CBFC2338AC10064BF18C0FFD1FD6A",
+  "pre_counts": {
+    "generation_run": 12,
+    "ai_question": 21,
+    "question_evidence": 22,
+    "question_learning_object": 37,
+    "question_validation": 21,
+    "question_event": 41,
+    "lifecycle": {
+      "PENDING_REVIEW": 21
+    },
+    "events": {
+      "MARKED_STALE": 1,
+      "PENDING_REVIEW": 19,
+      "VALIDATED": 21
+    }
+  },
+  "journal_mode": "delete",
+  "pre_states": {
+    "AIQ:BD59C5958D45": {
+      "question_id": "AIQ:BD59C5958D45",
+      "version": 1,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 1,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    "AIQ:1B3AF72923C4": {
+      "question_id": "AIQ:1B3AF72923C4",
+      "version": 1,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    "AIQ:75AAEBFE06DF": {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "version": 1,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 1,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    "AIQ:7EBCDBC29563": {
+      "question_id": "AIQ:7EBCDBC29563",
+      "version": 1,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 1,
+      "stale_reason": "VALIDATOR_CHANGED",
+      "needs_human_review": 1,
+      "updated_at": "2026-09-17T19:10:00+08:00"
+    }
+  },
+  "fingerprints": {
+    "AIQ:BD59C5958D45": "BD59C5958D455E98B9AC542A03F7172F68D33152AC82F4C0DDE21AB2E5832196",
+    "AIQ:1B3AF72923C4": "1B3AF72923C4AEE1848E4E92554DE8E14A2DD1B9DFF503E9A87DCCB561A57B78",
+    "AIQ:75AAEBFE06DF": "75AAEBFE06DFC6E750DBBE748A476ABD568F716C13FEEB296517F7297798020B",
+    "AIQ:7EBCDBC29563": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD"
+  },
+  "probe_event_id": "AIEV:7EBCDBC29563:V1",
+  "refusal_tests": [
+    {
+      "id": "T1_direct_pending_to_active",
+      "intent": "PENDING_REVIEW -> ACTIVE (no APPROVED step, no REVIEW_APPROVED event)",
+      "expected": "BLOCKED",
+      "test": "T1",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: ACTIVE requires a human REVIEW_APPROVED event"
+    },
+    {
+      "id": "T1b_canonical_path_without_review",
+      "intent": "insert ACTIVATED event then flip status, with no human REVIEW_APPROVED event",
+      "expected": "BLOCKED",
+      "test": "T1b",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: ACTIVE requires a human REVIEW_APPROVED event"
+    },
+    {
+      "id": "T12_active_flag_without_active_status",
+      "intent": "UPDATE ai_question SET active=1 while lifecycle_status='PENDING_REVIEW'",
+      "expected": "BLOCKED",
+      "test": "T12",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: CHECK constraint failed: (lifecycle_status = 'ACTIVE' AND active = 1)\n             OR (lifecycle_status <> 'ACTIVE' AND active = 0)"
+    },
+    {
+      "id": "T14_machine_actor_cannot_approve",
+      "intent": "INSERT REVIEW_APPROVED with actor_kind='machine'",
+      "expected": "BLOCKED",
+      "test": "T14",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: CHECK constraint failed: event_type <> 'REVIEW_APPROVED' OR actor_kind = 'human'"
+    },
+    {
+      "id": "T15_illegal_event_type",
+      "intent": "INSERT question_event with event_type='FORCED_APPROVE'",
+      "expected": "BLOCKED",
+      "test": "T15",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: CHECK constraint failed: event_type IN\n                   ('GENERATED','VALIDATED','PENDING_REVIEW','REVIEW_APPROVED',\n                    'REVIEW_REJECTED','ACTIVATED','DISABLED','MARKED_STALE')"
+    },
+    {
+      "id": "T16_reject_without_reason_code",
+      "intent": "INSERT REVIEW_REJECTED without reason_code",
+      "expected": "BLOCKED",
+      "test": "T16",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: CHECK constraint failed: event_type <> 'REVIEW_REJECTED' OR reason_code IS NOT NULL"
+    },
+    {
+      "id": "T17_event_update_forbidden",
+      "intent": "UPDATE question_event SET note='tampered' WHERE event_id=AIEV:7EBCDBC29563:V1",
+      "expected": "BLOCKED",
+      "test": "T17",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: question_event is append-only: UPDATE is forbidden"
+    },
+    {
+      "id": "T18_event_delete_forbidden",
+      "intent": "DELETE FROM question_event WHERE event_id=AIEV:7EBCDBC29563:V1",
+      "expected": "BLOCKED",
+      "test": "T18",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: question_event is append-only: DELETE is forbidden"
+    },
+    {
+      "id": "T19_question_delete_forbidden",
+      "intent": "DELETE FROM ai_question WHERE question_id=AIQ:75AAEBFE06DF",
+      "expected": "BLOCKED",
+      "test": "T19",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: ai_question rows may not be deleted; use DISABLED instead"
+    },
+    {
+      "id": "T20_insert_active_forbidden",
+      "intent": "INSERT ai_question with lifecycle_status='ACTIVE'",
+      "expected": "BLOCKED",
+      "test": "T20",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: validator PASS is not enough: a question cannot be inserted as ACTIVE"
+    },
+    {
+      "id": "T4_rejected_to_active",
+      "intent": "REJECTED -> ACTIVE with no fresh human approval",
+      "expected": "BLOCKED",
+      "test": "T4",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: ACTIVE requires a human REVIEW_APPROVED event"
+    },
+    {
+      "id": "T5_stale_to_active_without_review",
+      "intent": "STALE(stale=1, VALIDATOR_CHANGED) -> ACTIVE with no fresh human REVIEW_APPROVED",
+      "expected": "BLOCKED",
+      "test": "T5",
+      "rolled_back": true,
+      "blocked": true,
+      "error": "IntegrityError: ACTIVE requires a human REVIEW_APPROVED event"
+    },
+    {
+      "id": "T5b_stale_rereview_then_active",
+      "intent": "probe only (rolled back): STALE -> fresh human REVIEW_APPROVED -> ACTIVE",
+      "expected": "INFORMATIONAL (re-review path)",
+      "test": "T5b",
+      "rolled_back": true,
+      "blocked": false,
+      "error": null
+    }
+  ],
+  "dependency_missing_rows": [],
+  "T6_status": "NOT_TESTED_NO_ELIGIBLE_OBJECT",
+  "learning_candidate_query": "SELECT question_id FROM ai_question WHERE lifecycle_status='ACTIVE' AND active=1 AND stale=0",
+  "learning_candidate_rows": [
+    "AIQ:BD59C5958D45"
+  ],
+  "learning_candidate_excluded_probe": {
+    "PENDING_REVIEW": 1,
+    "APPROVED_not_active_rows": 0,
+    "REJECTED": 1,
+    "STALE": 1
+  },
+  "real_lifecycle": {
+    "sample_A_approve": {
+      "event_id": "AIEV:BD59C5958D45:RA",
+      "event_type": "REVIEW_APPROVED",
+      "from_status": "PENDING_REVIEW",
+      "to_status": "APPROVED",
+      "event_at": "2026-09-17T20:59:36+08:00",
+      "actor": "human:project-owner",
+      "actor_kind": "human",
+      "reason_code": null
+    },
+    "sample_D_state_after_approval": {
+      "question_id": "AIQ:BD59C5958D45",
+      "version": 1,
+      "lifecycle_status": "APPROVED",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 1,
+      "updated_at": "2026-09-17T20:59:36+08:00"
+    },
+    "sample_D_auto_active_check": {
+      "lifecycle_status": "APPROVED",
+      "active": 0,
+      "auto_promoted": false
+    },
+    "sample_A_activate": {
+      "event_id": "AIEV:BD59C5958D45:AC",
+      "event_type": "ACTIVATED",
+      "from_status": "APPROVED",
+      "to_status": "ACTIVE",
+      "event_at": "2026-09-17T20:59:36+08:00",
+      "actor": "human:project-owner",
+      "actor_kind": "human",
+      "reason_code": null
+    },
+    "sample_A_final_state": {
+      "question_id": "AIQ:BD59C5958D45",
+      "version": 1,
+      "lifecycle_status": "ACTIVE",
+      "active": 1,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 1,
+      "updated_at": "2026-09-17T20:59:36+08:00"
+    },
+    "sample_B_reject": {
+      "event_id": "AIEV:1B3AF72923C4:RR",
+      "event_type": "REVIEW_REJECTED",
+      "from_status": "PENDING_REVIEW",
+      "to_status": "REJECTED",
+      "event_at": "2026-09-17T20:59:36+08:00",
+      "actor": "human:project-owner",
+      "actor_kind": "human",
+      "reason_code": "LOW_VALUE"
+    },
+    "sample_B_final_state": {
+      "question_id": "AIQ:1B3AF72923C4",
+      "version": 1,
+      "lifecycle_status": "REJECTED",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 0,
+      "updated_at": "2026-09-17T20:59:36+08:00"
+    }
+  },
+  "post_counts": {
+    "generation_run": 12,
+    "ai_question": 21,
+    "question_evidence": 22,
+    "question_learning_object": 37,
+    "question_validation": 21,
+    "question_event": 44,
+    "lifecycle": {
+      "ACTIVE": 1,
+      "PENDING_REVIEW": 19,
+      "REJECTED": 1
+    },
+    "events": {
+      "ACTIVATED": 1,
+      "MARKED_STALE": 1,
+      "PENDING_REVIEW": 19,
+      "REVIEW_APPROVED": 1,
+      "REVIEW_REJECTED": 1,
+      "VALIDATED": 21
+    }
+  },
+  "post_states": {
+    "AIQ:BD59C5958D45": {
+      "question_id": "AIQ:BD59C5958D45",
+      "version": 1,
+      "lifecycle_status": "ACTIVE",
+      "active": 1,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 1,
+      "updated_at": "2026-09-17T20:59:36+08:00"
+    },
+    "AIQ:1B3AF72923C4": {
+      "question_id": "AIQ:1B3AF72923C4",
+      "version": 1,
+      "lifecycle_status": "REJECTED",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 0,
+      "updated_at": "2026-09-17T20:59:36+08:00"
+    },
+    "AIQ:75AAEBFE06DF": {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "version": 1,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "needs_human_review": 1,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    "AIQ:7EBCDBC29563": {
+      "question_id": "AIQ:7EBCDBC29563",
+      "version": 1,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 1,
+      "stale_reason": "VALIDATOR_CHANGED",
+      "needs_human_review": 1,
+      "updated_at": "2026-09-17T19:10:00+08:00"
+    }
+  },
+  "post_events_for_samples": {
+    "AIQ:BD59C5958D45": [
+      {
+        "event_id": "AIEV:BD59C5958D45:V1",
+        "event_type": "VALIDATED",
+        "from_status": "GENERATED",
+        "to_status": "VALIDATED",
+        "event_at": "2026-09-17T20:36:52+08:00",
+        "actor": "validator_v3",
+        "actor_kind": "machine",
+        "reason_code": null,
+        "note": "P1-07 只读复算通过（gate1..gate5）"
+      },
+      {
+        "event_id": "AIEV:BD59C5958D45:P1",
+        "event_type": "PENDING_REVIEW",
+        "from_status": "VALIDATED",
+        "to_status": "PENDING_REVIEW",
+        "event_at": "2026-09-17T20:36:52+08:00",
+        "actor": "p1_07_ingest",
+        "actor_kind": "machine",
+        "reason_code": null,
+        "note": "P1-07 入库；等待人工审核"
+      },
+      {
+        "event_id": "AIEV:BD59C5958D45:RA",
+        "event_type": "REVIEW_APPROVED",
+        "from_status": "PENDING_REVIEW",
+        "to_status": "APPROVED",
+        "event_at": "2026-09-17T20:59:36+08:00",
+        "actor": "human:project-owner",
+        "actor_kind": "human",
+        "reason_code": null,
+        "note": "P1-08-C human review: textbook basis traceable, stem readable, answer directly supported by the textbook sentence; evidence/learning_object/validation/provenance complete; decision=APPROVE"
+      },
+      {
+        "event_id": "AIEV:BD59C5958D45:AC",
+        "event_type": "ACTIVATED",
+        "from_status": "APPROVED",
+        "to_status": "ACTIVE",
+        "event_at": "2026-09-17T20:59:36+08:00",
+        "actor": "human:project-owner",
+        "actor_kind": "human",
+        "reason_code": null,
+        "note": "P1-08-C explicit enable: after human approval the project owner explicitly enables this question (second, separate lifecycle action)"
+      }
+    ],
+    "AIQ:1B3AF72923C4": [
+      {
+        "event_id": "AIEV:1B3AF72923C4:V1",
+        "event_type": "VALIDATED",
+        "from_status": "GENERATED",
+        "to_status": "VALIDATED",
+        "event_at": "2026-09-17T20:36:52+08:00",
+        "actor": "validator_v3",
+        "actor_kind": "machine",
+        "reason_code": null,
+        "note": "P1-07 只读复算通过（gate1..gate5）"
+      },
+      {
+        "event_id": "AIEV:1B3AF72923C4:P1",
+        "event_type": "PENDING_REVIEW",
+        "from_status": "VALIDATED",
+        "to_status": "PENDING_REVIEW",
+        "event_at": "2026-09-17T20:36:52+08:00",
+        "actor": "p1_07_ingest",
+        "actor_kind": "machine",
+        "reason_code": null,
+        "note": "P1-07 入库；等待人工审核"
+      },
+      {
+        "event_id": "AIEV:1B3AF72923C4:RR",
+        "event_type": "REVIEW_REJECTED",
+        "from_status": "PENDING_REVIEW",
+        "to_status": "REJECTED",
+        "event_at": "2026-09-17T20:59:36+08:00",
+        "actor": "human:project-owner",
+        "actor_kind": "human",
+        "reason_code": "LOW_VALUE",
+        "note": "P1-08-C human reject (LOW_VALUE): the item is a mechanical gap-fill fragment of the textbook sentence P8:B16 'I am ready, too'; learning increment below the bar; the row is kept in the library but must never reach ACTIVE"
+      }
+    ],
+    "AIQ:75AAEBFE06DF": [
+      {
+        "event_id": "AIEV:75AAEBFE06DF:V1",
+        "event_type": "VALIDATED",
+        "from_status": "GENERATED",
+        "to_status": "VALIDATED",
+        "event_at": "2026-09-17T20:36:52+08:00",
+        "actor": "validator_v3",
+        "actor_kind": "machine",
+        "reason_code": null,
+        "note": "P1-07 只读复算通过（gate1..gate5）"
+      },
+      {
+        "event_id": "AIEV:75AAEBFE06DF:P1",
+        "event_type": "PENDING_REVIEW",
+        "from_status": "VALIDATED",
+        "to_status": "PENDING_REVIEW",
+        "event_at": "2026-09-17T20:36:52+08:00",
+        "actor": "p1_07_ingest",
+        "actor_kind": "machine",
+        "reason_code": null,
+        "note": "P1-07 入库；等待人工审核"
+      }
+    ],
+    "AIQ:7EBCDBC29563": [
+      {
+        "event_id": "AIEV:7EBCDBC29563:V1",
+        "event_type": "VALIDATED",
+        "from_status": "GENERATED",
+        "to_status": "PENDING_REVIEW",
+        "event_at": "2026-09-17T18:40:00+08:00",
+        "actor": "validator_v2",
+        "actor_kind": "machine",
+        "reason_code": null,
+        "note": "lifecycle chain GENERATED -> VALIDATED -> PENDING_REVIEW; 本轮无人工审核"
+      },
+      {
+        "event_id": "AIEV:7EBCDBC29563:STALE1",
+        "event_type": "MARKED_STALE",
+        "from_status": "PENDING_REVIEW",
+        "to_status": "PENDING_REVIEW",
+        "event_at": "2026-09-17T19:10:00+08:00",
+        "actor": "validator_v3",
+        "actor_kind": "machine",
+        "reason_code": null,
+        "note": "P1-04: fill 结构规则收紧（fill 不得携带 options/correct_option）；原因：fill must not carry options (P1-04: fill = 纯填空)"
+      }
+    ]
+  },
+  "post_integrity_check": [
+    "ok"
+  ],
+  "post_foreign_key_check": [],
+  "post_active_rows": [
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "lifecycle_status": "ACTIVE",
+      "active": 1,
+      "stale": 0,
+      "human_approvals": 1,
+      "activations": 1,
+      "evidence_n": 1,
+      "lo_n": 2,
+      "val_n": 1
+    }
+  ],
+  "post_lifecycle_event_consistency": [
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "lifecycle_status": "REJECTED",
+      "last_event_type": "REVIEW_REJECTED",
+      "last_event_to_status": "REJECTED"
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:3179968E3E74",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "VALIDATED",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:3C02F6486DFF",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:5B4C80443D5F",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:6721EC6C5D1F",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:7EBCDBC29563",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "MARKED_STALE",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:80F1D28C3101",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:A9D1F3EC6020",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "lifecycle_status": "ACTIVE",
+      "last_event_type": "ACTIVATED",
+      "last_event_to_status": "ACTIVE"
+    },
+    {
+      "question_id": "AIQ:C3E6FD29F680",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:CD8B21681B4C",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:D976787A0A43",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    },
+    {
+      "question_id": "AIQ:E5F4C046FA61",
+      "lifecycle_status": "PENDING_REVIEW",
+      "last_event_type": "PENDING_REVIEW",
+      "last_event_to_status": "PENDING_REVIEW"
+    }
+  ],
+  "post_schema_objects": [
+    "ai_question",
+    "generation_run",
+    "idx_ai_question_lifecycle",
+    "idx_ai_question_run",
+    "idx_ai_question_scope",
+    "idx_ai_question_stale",
+    "idx_generation_run_scope",
+    "idx_generation_run_target",
+    "idx_generation_run_time",
+    "idx_qlo_item",
+    "idx_question_event_q",
+    "idx_question_event_type",
+    "idx_question_evidence_block",
+    "idx_validation_result",
+    "idx_validation_support",
+    "question_event",
+    "question_evidence",
+    "question_learning_object",
+    "question_validation",
+    "sqlite_autoindex_ai_question_1",
+    "sqlite_autoindex_generation_run_1",
+    "sqlite_autoindex_question_event_1",
+    "sqlite_autoindex_question_evidence_1",
+    "sqlite_autoindex_question_learning_object_1",
+    "sqlite_autoindex_question_validation_1",
+    "trg_ai_question_active_requires_human_approval",
+    "trg_ai_question_insert_active_forbidden",
+    "trg_ai_question_no_delete",
+    "trg_question_event_no_delete",
+    "trg_question_event_no_update",
+    "trg_validation_exact_trap",
+    "uq_ai_question_fingerprint"
+  ],
+  "post_other_question_states": [
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:3179968E3E74",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T18:40:00+08:00"
+    },
+    {
+      "question_id": "AIQ:3C02F6486DFF",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:5B4C80443D5F",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:6721EC6C5D1F",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:80F1D28C3101",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:A9D1F3EC6020",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:C3E6FD29F680",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:CD8B21681B4C",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:D976787A0A43",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    },
+    {
+      "question_id": "AIQ:E5F4C046FA61",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "updated_at": "2026-09-17T20:36:52+08:00"
+    }
+  ],
+  "db_sha256_after": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+  "db_size_after": 180224
+}

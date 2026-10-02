@@ -1,0 +1,499 @@
+{
+  "task": "P1-05-B 第二阶段正式构建",
+  "generated_at": "2026-09-12T11:11:50+08:00",
+  "verdict": "PASS",
+  "database_path": "D:\\ZhixueEnglish\\structured\\contentpack\\v1\\FLTRP-EN-7A-2022CUR.sqlite",
+  "staging_path": "D:\\ZhixueEnglish\\structured\\staging\\FLTRP-EN-7A-2022CUR.sqlite",
+  "textbook_id": "FLTRP-EN-7A-2022CUR",
+  "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T111145",
+  "import_batch": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+  "parser_version": "v01-P1-03-C",
+  "rule_set_version": "P1-03-C",
+  "schema_version": "p1-04-v1",
+  "pdf_sha256": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+  "mp3_count": 54,
+  "table_counts": {
+    "textbook_edition": 1,
+    "source_artifact": 55,
+    "parse_snapshot": 1,
+    "page": 178,
+    "unit": 8,
+    "section": 46,
+    "activity": 96,
+    "content_block": 3854,
+    "content_asset": 628,
+    "evidence": 351,
+    "activity_content": 31,
+    "audio_asset": 54,
+    "audio_mapping": 54,
+    "ai_artifact": 0,
+    "sub_question": 13,
+    "learning_item": 0,
+    "learning_goal": 6,
+    "source_ref": 6,
+    "transcript": 0,
+    "import_batch": 1,
+    "import_batch_stage": 20
+  },
+  "validation": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "integrity_check",
+        "status": "PASS",
+        "detail": "ok"
+      },
+      {
+        "name": "foreign_key_check",
+        "status": "PASS",
+        "detail": "violations=0"
+      },
+      {
+        "name": "count_textbook_edition",
+        "status": "PASS",
+        "detail": "1 (期望 1)"
+      },
+      {
+        "name": "count_source_artifact",
+        "status": "PASS",
+        "detail": "55 (期望 55)"
+      },
+      {
+        "name": "count_parse_snapshot",
+        "status": "PASS",
+        "detail": "1 (期望 1)"
+      },
+      {
+        "name": "count_page",
+        "status": "PASS",
+        "detail": "178 (期望 178)"
+      },
+      {
+        "name": "count_unit",
+        "status": "PASS",
+        "detail": "8 (期望 8)"
+      },
+      {
+        "name": "count_section",
+        "status": "PASS",
+        "detail": "46 (期望 46)"
+      },
+      {
+        "name": "count_activity",
+        "status": "PASS",
+        "detail": "96 (期望 96)"
+      },
+      {
+        "name": "count_content_block",
+        "status": "PASS",
+        "detail": "3854 (期望 3854)"
+      },
+      {
+        "name": "count_content_asset",
+        "status": "PASS",
+        "detail": "628 (期望 628)"
+      },
+      {
+        "name": "count_evidence",
+        "status": "PASS",
+        "detail": "351 (期望 351)"
+      },
+      {
+        "name": "count_activity_content",
+        "status": "PASS",
+        "detail": "31 (期望 31)"
+      },
+      {
+        "name": "count_audio_asset",
+        "status": "PASS",
+        "detail": "54 (期望 54)"
+      },
+      {
+        "name": "count_audio_mapping",
+        "status": "PASS",
+        "detail": "54 (期望 54)"
+      },
+      {
+        "name": "count_ai_artifact",
+        "status": "PASS",
+        "detail": "0 (期望 0)"
+      },
+      {
+        "name": "count_sub_question",
+        "status": "PASS",
+        "detail": "13（候选记录，全部 NEED_REVIEW）"
+      },
+      {
+        "name": "business_key_page",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_page",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_unit",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_section",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_activity",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_content_block",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_content_asset",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_audio_asset",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_audio_mapping",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "pk_unique_evidence",
+        "status": "PASS",
+        "detail": "duplicates=0"
+      },
+      {
+        "name": "textbook_id_consistent",
+        "status": "PASS",
+        "detail": "distinct textbook_id in page = 1"
+      },
+      {
+        "name": "snapshot_id_consistent",
+        "status": "PASS",
+        "detail": "distinct snapshot_id in page = 1"
+      },
+      {
+        "name": "source_ref_completeness",
+        "status": "PASS",
+        "detail": "learning_goal=6 learning_item=0 source_ref=6 linked_goals=6"
+      },
+      {
+        "name": "content_hash_complete",
+        "status": "PASS",
+        "detail": "empty=0"
+      },
+      {
+        "name": "audio_mapping_candidate",
+        "status": "PASS",
+        "detail": "{'CANDIDATE': 54}"
+      },
+      {
+        "name": "audio_mapping_total_54",
+        "status": "PASS",
+        "detail": "total=54"
+      },
+      {
+        "name": "ai_artifact_zero",
+        "status": "PASS",
+        "detail": "0"
+      },
+      {
+        "name": "need_review_preserved",
+        "status": "PASS",
+        "detail": "activity=23 page_reading_order=88"
+      }
+    ],
+    "counts": {
+      "textbook_edition": 1,
+      "source_artifact": 55,
+      "parse_snapshot": 1,
+      "page": 178,
+      "unit": 8,
+      "section": 46,
+      "activity": 96,
+      "content_block": 3854,
+      "content_asset": 628,
+      "evidence": 351,
+      "activity_content": 31,
+      "audio_asset": 54,
+      "audio_mapping": 54,
+      "ai_artifact": 0,
+      "sub_question": 13,
+      "learning_item": 0,
+      "learning_goal": 6,
+      "source_ref": 6,
+      "transcript": 0,
+      "import_batch": 1,
+      "import_batch_stage": 20
+    },
+    "failures": [],
+    "audio_status": {
+      "CANDIDATE": 54
+    },
+    "need_review": {
+      "activity": 23,
+      "page": 88
+    }
+  },
+  "publish": {
+    "ok": true,
+    "tmp_path": "D:\\ZhixueEnglish\\structured\\contentpack\\v1\\FLTRP-EN-7A-2022CUR.sqlite.tmp",
+    "final_path": "D:\\ZhixueEnglish\\structured\\contentpack\\v1\\FLTRP-EN-7A-2022CUR.sqlite",
+    "final_sha256": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+    "final_size": 1835008,
+    "staging_sha256": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3"
+  },
+  "final_sha256": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+  "staging_sha256": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+  "final_independent_verification": {
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "audio_mapping": 54,
+    "audio_confirmed": 0,
+    "ai_artifact": 0,
+    "learning_item": 0,
+    "learning_goal": 6,
+    "source_ref": 6,
+    "sub_question": 13
+  },
+  "stage_records": [
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:01",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "parse_snapshot",
+      "row_count": 1,
+      "started_at": "2026-09-12T11:11:48+08:00",
+      "finished_at": "2026-09-12T11:11:48+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:02",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "textbook_edition",
+      "row_count": 1,
+      "started_at": "2026-09-12T11:11:48+08:00",
+      "finished_at": "2026-09-12T11:11:48+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:03",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "source_artifact",
+      "row_count": 55,
+      "started_at": "2026-09-12T11:11:48+08:00",
+      "finished_at": "2026-09-12T11:11:48+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:04",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "page",
+      "row_count": 178,
+      "started_at": "2026-09-12T11:11:48+08:00",
+      "finished_at": "2026-09-12T11:11:48+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:05",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "unit",
+      "row_count": 8,
+      "started_at": "2026-09-12T11:11:48+08:00",
+      "finished_at": "2026-09-12T11:11:48+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:06",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "section",
+      "row_count": 46,
+      "started_at": "2026-09-12T11:11:48+08:00",
+      "finished_at": "2026-09-12T11:11:48+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:07",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "activity",
+      "row_count": 96,
+      "started_at": "2026-09-12T11:11:48+08:00",
+      "finished_at": "2026-09-12T11:11:48+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:08",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "content_block",
+      "row_count": 3854,
+      "started_at": "2026-09-12T11:11:48+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:09",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "content_asset",
+      "row_count": 628,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:10",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "evidence",
+      "row_count": 351,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:11",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "activity_content",
+      "row_count": 31,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:12",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "sub_question",
+      "row_count": 13,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:13",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "audio_asset",
+      "row_count": 54,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:14",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "audio_mapping",
+      "row_count": 54,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:15",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "transcript",
+      "row_count": 0,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:16",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "source_ref",
+      "row_count": 6,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:17",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "learning_item",
+      "row_count": 0,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:18",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "learning_goal",
+      "row_count": 6,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:19",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "ai_artifact",
+      "row_count": 0,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    },
+    {
+      "stage_record_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0:20",
+      "batch_id": "FLTRP-EN-7A-2022CUR:S20260912T111145:B0",
+      "stage": "quality_validation",
+      "row_count": 0,
+      "started_at": "2026-09-12T11:11:49+08:00",
+      "finished_at": "2026-09-12T11:11:49+08:00",
+      "status": "SUCCESS",
+      "last_key": null,
+      "error_message": null
+    }
+  ],
+  "boundaries": {
+    "ai_calls": 0,
+    "learner_rows": 0,
+    "source_pdf_modified": false,
+    "source_mp3_modified": false,
+    "parser_modified": false
+  }
+}

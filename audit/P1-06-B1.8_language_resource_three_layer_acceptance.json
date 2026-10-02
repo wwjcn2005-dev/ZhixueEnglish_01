@@ -1,0 +1,289 @@
+{
+  "task": "P1-06-B1.8 教材语言资源三层总体验收",
+  "generated_at": "2026-09-12T15:22:22+08:00",
+  "verdict": "PASS",
+  "sha256": {
+    "v3": "13E1B961383794259907F388EDBD856C3C5E5B0303FF19ACBB0E76F569A9BE0C",
+    "v4": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E",
+    "v5": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+    "pdf": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F"
+  },
+  "mp3": {
+    "count": 54,
+    "digest": "C2E2E60E7DE50691D5315C4A55E7C3BA4A1AFFD6AB206DC0CF6708BCEFB59109"
+  },
+  "counts": {
+    "Vocabulary": 287,
+    "Phrase": 23,
+    "Sentence Pattern": 52,
+    "learning_item": 362,
+    "source_ref": 815,
+    "tables": 21
+  },
+  "source_ref_breakdown": {
+    "learning_goal": 6,
+    "learning_item": 708,
+    "phrase": 48,
+    "sentence_pattern": 53
+  },
+  "layers": [
+    {
+      "type": "Vocabulary",
+      "count": 287,
+      "item_type": "vocabulary",
+      "ns": ":V:",
+      "emphasis": "BOLD 616 / PLAIN 92（source_ref 级，v3 教材字重逻辑）",
+      "requirement": "CORE 243 / RECOGNITION 43 / NEED_REVIEW 1",
+      "review": "OK 196 / NEED_REVIEW 91",
+      "status": "frozen（v3 身份未变）"
+    },
+    {
+      "type": "Phrase",
+      "count": 23,
+      "item_type": "phrase",
+      "ns": ":P:",
+      "emphasis": "PLAIN 44 / UNKNOWN 4（自身来源证据）",
+      "requirement": "RECOGNITION 21 / CORE 2",
+      "review": "NEED_REVIEW 23",
+      "status": "frozen（v4）"
+    },
+    {
+      "type": "Sentence Pattern",
+      "count": 52,
+      "item_type": "sentence_pattern",
+      "ns": ":SP:",
+      "emphasis": "UNKNOWN 53（source_ref 级）",
+      "requirement": "CORE 1 / NEED_REVIEW 51",
+      "review": "AUTO_OK 1 / NEED_REVIEW 51",
+      "status": "frozen（v5）"
+    }
+  ],
+  "checks": [
+    {
+      "id": "V5",
+      "name": "v5 SHA256 / size",
+      "status": "PASS",
+      "detail": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A / 2457600"
+    },
+    {
+      "id": "V4",
+      "name": "v4 SHA256 / size（未变）",
+      "status": "PASS",
+      "detail": "C1E54D1F78F2B90DEBC38CF8F7F42969B0880413A07D3DDBE98ABA78CEA09D1E"
+    },
+    {
+      "id": "V3",
+      "name": "v3 SHA256（未变）",
+      "status": "PASS",
+      "detail": "13E1B961383794259907F388EDBD856C3C5E5B0303FF19ACBB0E76F569A9BE0C"
+    },
+    {
+      "id": "PDF",
+      "name": "PDF SHA256 / MP3 数量",
+      "status": "PASS",
+      "detail": "pdf ok / MP3 54"
+    },
+    {
+      "id": "COUNTS",
+      "name": "287 / 23 / 52 / 362 / 815 / 21 表",
+      "status": "PASS",
+      "detail": "{\"phrase\": 23, \"sentence_pattern\": 52, \"vocabulary\": 287}"
+    },
+    {
+      "id": "INT",
+      "name": "v5 integrity / FK",
+      "status": "PASS",
+      "detail": "ok/0"
+    },
+    {
+      "id": "VOC-ID",
+      "name": "Vocabulary：:V: ｜ id/hash 可重算 287/287",
+      "status": "PASS",
+      "detail": "287/287"
+    },
+    {
+      "id": "VOC-FREEZE",
+      "name": "Vocabulary 身份未被后续阶段改变（v3 → v5）",
+      "status": "PASS",
+      "detail": "287 行逐字段一致"
+    },
+    {
+      "id": "VOC-EMPH",
+      "name": "Vocabulary emphasis 保持 v3 教材字重逻辑",
+      "status": "PASS",
+      "detail": "{\"BOLD\": 616, \"PLAIN\": 92}"
+    },
+    {
+      "id": "PH-ID",
+      "name": "Phrase：:P: ｜ id/hash 可重算 23/23",
+      "status": "PASS",
+      "detail": "23/23"
+    },
+    {
+      "id": "PH-EMPH",
+      "name": "Phrase emphasis = PLAIN 44 / UNKNOWN 4",
+      "status": "PASS",
+      "detail": "{\"PLAIN\": 44, \"UNKNOWN\": 4}"
+    },
+    {
+      "id": "PH-ATTR",
+      "name": "Phrase requirement RECOGNITION 21 / CORE 2 ｜ review 23 NEED_REVIEW",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "id": "PH-INDEP",
+      "name": "Phrase 不继承 Vocabulary 的 item_id / content_hash（21 组同文本）",
+      "status": "PASS",
+      "detail": "21 组"
+    },
+    {
+      "id": "SP-ID",
+      "name": "Sentence Pattern：:SP: ｜ id/hash 可重算 52/52",
+      "status": "PASS",
+      "detail": "52/52"
+    },
+    {
+      "id": "SP-EMPH",
+      "name": "Sentence Pattern emphasis UNKNOWN（53 条 source_ref）",
+      "status": "PASS",
+      "detail": "{\"UNKNOWN\": 53}"
+    },
+    {
+      "id": "SP-ATTR",
+      "name": "SP requirement 1 CORE/51 NR ｜ conflict OK 52",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "id": "ID-ISO",
+      "name": "362 条 item_id 全局唯一 / 无跨层冲突",
+      "status": "PASS",
+      "detail": "362 唯一"
+    },
+    {
+      "id": "HASH-ISO",
+      "name": "同一文本跨层 hash 不同（21 组 V↔P）",
+      "status": "PASS",
+      "detail": "21/21 不同"
+    },
+    {
+      "id": "OVERLAP",
+      "name": "跨层文本重叠分析完成",
+      "status": "PASS",
+      "detail": "精确 V↔P 21 ｜ P↔SP 0 ｜ V↔SP 0 ｜ 包含 39"
+    },
+    {
+      "id": "EXCL-MULTI",
+      "name": "11 个普通正文多词单位未进入 Phrase",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "BD-PHRASE",
+      "name": "protect / along = Phrase ｜ prefer A to B 未入库 ｜ it’s no secret that... = SP",
+      "status": "PASS",
+      "detail": "2 Phrase / 0 prefer A to B / 1 SP（注：Vocabulary 单词 `prefer` 合法存在，不属于 `prefer A to B`）"
+    },
+    {
+      "id": "BD-GRAMMAR",
+      "name": "Grammar-only 未进入 SP",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "BD-SENT",
+      "name": "SP 52/52 含教材 slot（非完整句实例）",
+      "status": "PASS",
+      "detail": "52/52"
+    },
+    {
+      "id": "BD-CE",
+      "name": "13 条 COMMUNICATION_EXPRESSION 未升级 ｜ 5 条 NEED_REVIEW 未入库",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "EVIDENCE",
+      "name": "三层证据链完整",
+      "status": "PASS",
+      "detail": "Vocabulary 708 ｜ Phrase 48 ｜ SP 53 ｜ 断链 0"
+    },
+    {
+      "id": "SR-815",
+      "name": "source_ref 815 = 762 + 53",
+      "status": "PASS",
+      "detail": "{\"learning_goal\": 6, \"learning_item\": 708, \"phrase\": 48, \"sentence_pattern\": 53}"
+    },
+    {
+      "id": "SHARED-BLOCK",
+      "name": "同一 content_block 服务多个资源属合法",
+      "status": "PASS",
+      "detail": "44 个共享 block"
+    },
+    {
+      "id": "AUDIO",
+      "name": "audio_asset 54 ｜ mapping 54 CANDIDATE ｜ SP 映射 0",
+      "status": "PASS",
+      "detail": "{\"CANDIDATE\": 54}"
+    },
+    {
+      "id": "CHAIN",
+      "name": "v3→v4→v5 冻结链连续",
+      "status": "PASS",
+      "detail": "v4 310 行在 v5 未变"
+    },
+    {
+      "id": "ENV",
+      "name": "AI=0 / OCR=0 / TTS=0 / 无写操作 / 未访问 ZhixueAI",
+      "status": "PASS",
+      "detail": "0/0/0"
+    }
+  ],
+  "checks_failed": [],
+  "overlap": {
+    "exact": {
+      "V_P": 21,
+      "P_SP": 0,
+      "V_SP": 0,
+      "V_P_examples": [
+        "a bit",
+        "against the law",
+        "as dead as a dodo",
+        "as happy as a clam",
+        "corn silk"
+      ]
+    },
+    "containment_count": 39,
+    "shared_blocks": 44
+  },
+  "backlog": {
+    "P0": 0,
+    "P1": 0,
+    "P2": [
+      "G1D-01 6 条低特异性骨架",
+      "G1D-02 斜杠/括号变体未结构化"
+    ],
+    "P3": [
+      "G1D-03 example 未落库",
+      "G1D-04 paired_response 未落库",
+      "G1D-05 51 条 meaning_zh NULL",
+      "G1D-06 SP unit/section 未单独建模",
+      "G1D-07 跨 content block 释义证据表达"
+    ]
+  },
+  "boundaries": {
+    "db_writes": 0,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "new_deps": 0,
+    "network": 0,
+    "zhixue_ai": false,
+    "v5_modified": false,
+    "new_files": [
+      "audit/P1-06-B1.8_language_resource_three_layer_acceptance.md",
+      "audit/P1-06-B1.8_language_resource_three_layer_acceptance.json"
+    ]
+  }
+}

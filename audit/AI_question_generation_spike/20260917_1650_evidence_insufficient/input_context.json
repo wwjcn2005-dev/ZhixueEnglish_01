@@ -1,0 +1,473 @@
+{
+ "textbook_position": {
+  "unit": "Unit 1",
+  "unit_title": "A new start",
+  "section": "DEVELOPING_IDEAS",
+  "section_title": "Developing ideas",
+  "textbook_pages": [
+   21
+  ],
+  "pdf_pages": [
+   26
+  ]
+ },
+ "activity_instructions": [
+  {
+   "activity_no": 1,
+   "page": 21,
+   "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends.b It’s hard to plan their time.c It’s hard to do well in exams."
+  }
+ ],
+ "audio_reference": [
+  {
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+   "target_type": "activity",
+   "target_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+   "filename": "09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3",
+   "duration_ms": 51096
+  }
+ ],
+ "textbook_blocks": [
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B2",
+   "page": 21,
+   "kind": "heading",
+   "role": "section_title",
+   "text": "Developing ideas"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B7",
+   "page": 21,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What do you think they are doing?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B6",
+   "page": 21,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "DID YOU KNOW?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B3",
+   "page": 21,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "A students’ union supports students at school. Students’ unions help hold all kinds of"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B4",
+   "page": 21,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "activities, such as cultural festivals and sports meets. They also help students with their"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B5",
+   "page": 21,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "problems."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B1",
+   "page": 21,
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B0",
+   "page": 21,
+   "kind": "instruction",
+   "role": "body",
+   "text": "Listen to the radio. What’s the biggest problem for new students? a\t It’s hard to make new friends.b\tIt’s hard to plan their time.c\t It’s hard to do well in exams."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B12",
+   "page": 21,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "Phonetics in use"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B8",
+   "page": 21,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "Pronunciation:"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B9",
+   "page": 21,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "/ɑː/  are  hard"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B10",
+   "page": 21,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "/æ/  activity  plan"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B11",
+   "page": 21,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "/e/  welcome  second"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P26:B13",
+   "page": 21,
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "Practise more ⇢ p111"
+  }
+ ],
+ "unit_vocabulary": [
+  {
+   "word": "without",
+   "pos": "prep",
+   "meaning_zh": "缺乏没有",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 16
+  },
+  {
+   "word": "sentence",
+   "pos": "n",
+   "meaning_zh": "句子",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "point out",
+   "pos": null,
+   "meaning_zh": "指出指明",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 17
+  },
+  {
+   "word": "mistake",
+   "pos": "n",
+   "meaning_zh": "错误",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "polite",
+   "pos": "adj",
+   "meaning_zh": "有礼貌的客气的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "mind",
+   "pos": "n",
+   "meaning_zh": "头脑思想思维",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "hers",
+   "pos": "pron",
+   "meaning_zh": "她的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "dry",
+   "pos": "adj",
+   "meaning_zh": "干的干燥的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "meaning",
+   "pos": "n",
+   "meaning_zh": "意义意思含义",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "fact",
+   "pos": "n",
+   "meaning_zh": "事实真相",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "in fact",
+   "pos": null,
+   "meaning_zh": "事实上",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 17
+  },
+  {
+   "word": "need",
+   "pos": "v",
+   "meaning_zh": "需要",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "remember",
+   "pos": "v",
+   "meaning_zh": "记住记得",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "really",
+   "pos": "adv",
+   "meaning_zh": "确实地的确",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "important",
+   "pos": "adj",
+   "meaning_zh": "重要的重大的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 17
+  },
+  {
+   "word": "plan",
+   "pos": "v",
+   "meaning_zh": "计划",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 21
+  },
+  {
+   "word": "problem",
+   "pos": "n",
+   "meaning_zh": "问题难题困难",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 22
+  },
+  {
+   "word": "homework",
+   "pos": "n",
+   "meaning_zh": "家庭作业功课",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 22
+  },
+  {
+   "word": "task",
+   "pos": "n",
+   "meaning_zh": "工作任务",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 23
+  },
+  {
+   "word": "project",
+   "pos": "n",
+   "meaning_zh": "学校的课题研究项目",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 23
+  },
+  {
+   "word": "advice",
+   "pos": "n",
+   "meaning_zh": "意见建议忠告劝告",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 23
+  },
+  {
+   "word": "journey",
+   "pos": "n",
+   "meaning_zh": "旅行旅程历程过程",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 24
+  },
+  {
+   "word": "something",
+   "pos": "pron",
+   "meaning_zh": "某物某事某些东西",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 24
+  },
+  {
+   "word": "thought",
+   "pos": "n",
+   "meaning_zh": "意见主意观点",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 24
+  },
+  {
+   "word": "life",
+   "pos": "n",
+   "meaning_zh": "生活",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  },
+  {
+   "word": "primary school",
+   "pos": null,
+   "meaning_zh": "小学",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 25
+  },
+  {
+   "word": "pool",
+   "pos": "n",
+   "meaning_zh": "水塘水洼",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  },
+  {
+   "word": "protect",
+   "pos": "v",
+   "meaning_zh": "保护防护",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  },
+  {
+   "word": "wind",
+   "pos": "n",
+   "meaning_zh": "风",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  },
+  {
+   "word": "wide",
+   "pos": "adj",
+   "meaning_zh": "宽的宽阔的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  },
+  {
+   "word": "sail",
+   "pos": "v",
+   "meaning_zh": "驾驶船只",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 25
+  },
+  {
+   "word": "through",
+   "pos": "prep",
+   "meaning_zh": "从一端至另一端穿过通过",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  },
+  {
+   "word": "storm",
+   "pos": "n",
+   "meaning_zh": "暴风雨雪",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  },
+  {
+   "word": "towards",
+   "pos": "prep",
+   "meaning_zh": "向着朝着某个方向",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  },
+  {
+   "word": "hope",
+   "pos": "v",
+   "meaning_zh": "希望期望指望",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 25
+  }
+ ],
+ "evidence_packages": [
+  {
+   "question_id": "Q:5F6F4CFF2FBC",
+   "activity_no": 1,
+   "question_no": 1,
+   "page": 21,
+   "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends. b It’s hard to plan their time.",
+   "original_question_text": "problem for new students? Pronunciation: a It’s hard to make new friends. /ɑː/ are hard /æ/ activity plan b It’s hard to plan their time. /e/ welcome second c It’s hard to do well in exams. Practise more ⇢ p111 A new start 21 2 Listen again and complete the poster. Students’ Union talk 1 The new sch",
+   "question_type": "short_answer",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:1BD08B8FED4E",
+   "activity_no": 1,
+   "question_no": 2,
+   "page": 21,
+   "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends. b It’s hard to plan their time.",
+   "original_question_text": "What are the students’ problems? The biggest problem 3 They have more and more homework.",
+   "question_type": "short_answer",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:D7843891740D",
+   "activity_no": 1,
+   "question_no": 4,
+   "page": 21,
+   "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends. b It’s hard to plan their time.",
+   "original_question_text": "They also have activities.",
+   "question_type": "short_answer",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:092338F93488",
+   "activity_no": 1,
+   "question_no": 5,
+   "page": 21,
+   "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends. b It’s hard to plan their time.",
+   "original_question_text": "How can they make good use of their ? The Students’ Union will hold a talk this Come and 6 to help you. join us!",
+   "question_type": "short_answer",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:6968E643CD3D",
+   "activity_no": 1,
+   "question_no": 22,
+   "page": 21,
+   "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends. b It’s hard to plan their time.",
+   "original_question_text": "UNIT 1 3",
+   "question_type": "short_answer",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  }
+ ],
+ "rules": {
+  "BOLD": "core textbook word (教材黑体重点词)",
+  "PLAIN": "ordinary textbook word (非核心重点词)"
+ }
+}

@@ -1,0 +1,1039 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU35",
+  "audio_num": "AU35",
+  "filename": "35_Unit 5_Understanding ideas_2 Read the passage and check your answers.mp3",
+  "duration_ms": 106240,
+  "segment_count": 19,
+  "word_count": 185,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 3800,
+      "text": "Unit 5. The power of plants."
+    },
+    {
+      "start_ms": 5280,
+      "end_ms": 9280,
+      "text": "Understanding ideas. Activity too."
+    },
+    {
+      "start_ms": 10740,
+      "end_ms": 13940,
+      "text": "Read the passage and check your answers."
+    },
+    {
+      "start_ms": 16080,
+      "end_ms": 17340,
+      "text": "Within a plant."
+    },
+    {
+      "start_ms": 19000,
+      "end_ms": 20580,
+      "text": "It's quarter past seven."
+    },
+    {
+      "start_ms": 21640,
+      "end_ms": 25520,
+      "text": "Here's worker number fifty-five in his green uniform."
+    },
+    {
+      "start_ms": 25520,
+      "end_ms": 37940,
+      "text": "He's going to start work in the plant. He works in workshop 1001 in the leaf. There are 20-100"
+    },
+    {
+      "start_ms": 37940,
+      "end_ms": 46900,
+      "text": "workers in each workshop. They collect sunlight and carbon dioxide during the day. Now workers"
+    },
+    {
+      "start_ms": 46900,
+      "end_ms": 55200,
+      "text": "from the root send up water. The water will rise up to the leaf through the stem. Then"
+    },
+    {
+      "start_ms": 55200,
+      "end_ms": 60260,
+      "text": "Then workers in the leaf will mix water, carbon dioxide and sunlight."
+    },
+    {
+      "start_ms": 61840,
+      "end_ms": 62780,
+      "text": "What are they going to produce?"
+    },
+    {
+      "start_ms": 64160,
+      "end_ms": 67980,
+      "text": "Most importantly for them, there will be sugar."
+    },
+    {
+      "start_ms": 69060,
+      "end_ms": 71660,
+      "text": "It's useful for the growth of the plant."
+    },
+    {
+      "start_ms": 72700,
+      "end_ms": 74840,
+      "text": "Another product will be oxygen."
+    },
+    {
+      "start_ms": 75720,
+      "end_ms": 77820,
+      "text": "But the plant doesn't need much of it."
+    },
+    {
+      "start_ms": 78500,
+      "end_ms": 81700,
+      "text": "It means a lot to animals and humans though."
+    },
+    {
+      "start_ms": 82240,
+      "end_ms": 83620,
+      "text": "They need it to breathe."
+    },
+    {
+      "start_ms": 83620,
+      "end_ms": 94060,
+      "text": "The workers work hard. Soon it's going to get dark. They will take a rest. There are millions of"
+    },
+    {
+      "start_ms": 94060,
+      "end_ms": 103020,
+      "text": "plants on earth. They give more than food and oxygen. Without plants the natural world would be very different."
+    }
+  ],
+  "words": [
+    {
+      "word": "Unit",
+      "start_ms": 0,
+      "end_ms": 660
+    },
+    {
+      "word": "5.",
+      "start_ms": 660,
+      "end_ms": 1240
+    },
+    {
+      "word": "The",
+      "start_ms": 2040,
+      "end_ms": 2340
+    },
+    {
+      "word": "power",
+      "start_ms": 2340,
+      "end_ms": 2820
+    },
+    {
+      "word": "of",
+      "start_ms": 2820,
+      "end_ms": 3180
+    },
+    {
+      "word": "plants.",
+      "start_ms": 3180,
+      "end_ms": 3800
+    },
+    {
+      "word": "Understanding",
+      "start_ms": 5280,
+      "end_ms": 6240
+    },
+    {
+      "word": "ideas.",
+      "start_ms": 6240,
+      "end_ms": 7080
+    },
+    {
+      "word": "Activity",
+      "start_ms": 8180,
+      "end_ms": 8900
+    },
+    {
+      "word": "too.",
+      "start_ms": 8900,
+      "end_ms": 9280
+    },
+    {
+      "word": "Read",
+      "start_ms": 10740,
+      "end_ms": 11200
+    },
+    {
+      "word": "the",
+      "start_ms": 11200,
+      "end_ms": 11540
+    },
+    {
+      "word": "passage",
+      "start_ms": 11540,
+      "end_ms": 12020
+    },
+    {
+      "word": "and",
+      "start_ms": 12020,
+      "end_ms": 12860
+    },
+    {
+      "word": "check",
+      "start_ms": 12860,
+      "end_ms": 13200
+    },
+    {
+      "word": "your",
+      "start_ms": 13200,
+      "end_ms": 13420
+    },
+    {
+      "word": "answers.",
+      "start_ms": 13420,
+      "end_ms": 13940
+    },
+    {
+      "word": "Within",
+      "start_ms": 16080,
+      "end_ms": 16520
+    },
+    {
+      "word": "a",
+      "start_ms": 16520,
+      "end_ms": 16960
+    },
+    {
+      "word": "plant.",
+      "start_ms": 16960,
+      "end_ms": 17340
+    },
+    {
+      "word": "It's",
+      "start_ms": 19000,
+      "end_ms": 19460
+    },
+    {
+      "word": "quarter",
+      "start_ms": 19460,
+      "end_ms": 19680
+    },
+    {
+      "word": "past",
+      "start_ms": 19680,
+      "end_ms": 20080
+    },
+    {
+      "word": "seven.",
+      "start_ms": 20080,
+      "end_ms": 20580
+    },
+    {
+      "word": "Here's",
+      "start_ms": 21640,
+      "end_ms": 22080
+    },
+    {
+      "word": "worker",
+      "start_ms": 22080,
+      "end_ms": 22440
+    },
+    {
+      "word": "number",
+      "start_ms": 22440,
+      "end_ms": 22980
+    },
+    {
+      "word": "fifty",
+      "start_ms": 22980,
+      "end_ms": 23380
+    },
+    {
+      "word": "-five",
+      "start_ms": 23380,
+      "end_ms": 23820
+    },
+    {
+      "word": "in",
+      "start_ms": 23820,
+      "end_ms": 24420
+    },
+    {
+      "word": "his",
+      "start_ms": 24420,
+      "end_ms": 24580
+    },
+    {
+      "word": "green",
+      "start_ms": 24580,
+      "end_ms": 24940
+    },
+    {
+      "word": "uniform.",
+      "start_ms": 24940,
+      "end_ms": 25520
+    },
+    {
+      "word": "He's",
+      "start_ms": 25520,
+      "end_ms": 26780
+    },
+    {
+      "word": "going",
+      "start_ms": 26780,
+      "end_ms": 27020
+    },
+    {
+      "word": "to",
+      "start_ms": 27020,
+      "end_ms": 27240
+    },
+    {
+      "word": "start",
+      "start_ms": 27240,
+      "end_ms": 27540
+    },
+    {
+      "word": "work",
+      "start_ms": 27540,
+      "end_ms": 28000
+    },
+    {
+      "word": "in",
+      "start_ms": 28000,
+      "end_ms": 28380
+    },
+    {
+      "word": "the",
+      "start_ms": 28380,
+      "end_ms": 28500
+    },
+    {
+      "word": "plant.",
+      "start_ms": 28500,
+      "end_ms": 28840
+    },
+    {
+      "word": "He",
+      "start_ms": 30260,
+      "end_ms": 30540
+    },
+    {
+      "word": "works",
+      "start_ms": 30540,
+      "end_ms": 30940
+    },
+    {
+      "word": "in",
+      "start_ms": 30940,
+      "end_ms": 31420
+    },
+    {
+      "word": "workshop",
+      "start_ms": 31420,
+      "end_ms": 32040
+    },
+    {
+      "word": "1001",
+      "start_ms": 32040,
+      "end_ms": 33780
+    },
+    {
+      "word": "in",
+      "start_ms": 33780,
+      "end_ms": 34340
+    },
+    {
+      "word": "the",
+      "start_ms": 34340,
+      "end_ms": 34480
+    },
+    {
+      "word": "leaf.",
+      "start_ms": 34480,
+      "end_ms": 34700
+    },
+    {
+      "word": "There",
+      "start_ms": 35740,
+      "end_ms": 36200
+    },
+    {
+      "word": "are",
+      "start_ms": 36200,
+      "end_ms": 36480
+    },
+    {
+      "word": "20",
+      "start_ms": 36480,
+      "end_ms": 37060
+    },
+    {
+      "word": "-100",
+      "start_ms": 37060,
+      "end_ms": 37940
+    },
+    {
+      "word": "workers",
+      "start_ms": 37940,
+      "end_ms": 38860
+    },
+    {
+      "word": "in",
+      "start_ms": 38860,
+      "end_ms": 39360
+    },
+    {
+      "word": "each",
+      "start_ms": 39360,
+      "end_ms": 39640
+    },
+    {
+      "word": "workshop.",
+      "start_ms": 39640,
+      "end_ms": 40200
+    },
+    {
+      "word": "They",
+      "start_ms": 41020,
+      "end_ms": 41440
+    },
+    {
+      "word": "collect",
+      "start_ms": 41440,
+      "end_ms": 41880
+    },
+    {
+      "word": "sunlight",
+      "start_ms": 41880,
+      "end_ms": 42420
+    },
+    {
+      "word": "and",
+      "start_ms": 42420,
+      "end_ms": 43040
+    },
+    {
+      "word": "carbon",
+      "start_ms": 43040,
+      "end_ms": 43400
+    },
+    {
+      "word": "dioxide",
+      "start_ms": 43400,
+      "end_ms": 43960
+    },
+    {
+      "word": "during",
+      "start_ms": 43960,
+      "end_ms": 44620
+    },
+    {
+      "word": "the",
+      "start_ms": 44620,
+      "end_ms": 44820
+    },
+    {
+      "word": "day.",
+      "start_ms": 44820,
+      "end_ms": 45140
+    },
+    {
+      "word": "Now",
+      "start_ms": 45920,
+      "end_ms": 46400
+    },
+    {
+      "word": "workers",
+      "start_ms": 46400,
+      "end_ms": 46900
+    },
+    {
+      "word": "from",
+      "start_ms": 46900,
+      "end_ms": 47320
+    },
+    {
+      "word": "the",
+      "start_ms": 47320,
+      "end_ms": 47460
+    },
+    {
+      "word": "root",
+      "start_ms": 47460,
+      "end_ms": 47820
+    },
+    {
+      "word": "send",
+      "start_ms": 47820,
+      "end_ms": 48420
+    },
+    {
+      "word": "up",
+      "start_ms": 48420,
+      "end_ms": 48700
+    },
+    {
+      "word": "water.",
+      "start_ms": 48700,
+      "end_ms": 49100
+    },
+    {
+      "word": "The",
+      "start_ms": 50120,
+      "end_ms": 50540
+    },
+    {
+      "word": "water",
+      "start_ms": 50540,
+      "end_ms": 50940
+    },
+    {
+      "word": "will",
+      "start_ms": 50940,
+      "end_ms": 51480
+    },
+    {
+      "word": "rise",
+      "start_ms": 51480,
+      "end_ms": 51860
+    },
+    {
+      "word": "up",
+      "start_ms": 51860,
+      "end_ms": 52140
+    },
+    {
+      "word": "to",
+      "start_ms": 52140,
+      "end_ms": 52300
+    },
+    {
+      "word": "the",
+      "start_ms": 52300,
+      "end_ms": 52420
+    },
+    {
+      "word": "leaf",
+      "start_ms": 52420,
+      "end_ms": 52780
+    },
+    {
+      "word": "through",
+      "start_ms": 52780,
+      "end_ms": 53160
+    },
+    {
+      "word": "the",
+      "start_ms": 53160,
+      "end_ms": 53320
+    },
+    {
+      "word": "stem.",
+      "start_ms": 53320,
+      "end_ms": 53700
+    },
+    {
+      "word": "Then",
+      "start_ms": 54720,
+      "end_ms": 55200
+    },
+    {
+      "word": "Then",
+      "start_ms": 55200,
+      "end_ms": 55240
+    },
+    {
+      "word": "workers",
+      "start_ms": 55240,
+      "end_ms": 55640
+    },
+    {
+      "word": "in",
+      "start_ms": 55640,
+      "end_ms": 56040
+    },
+    {
+      "word": "the",
+      "start_ms": 56040,
+      "end_ms": 56140
+    },
+    {
+      "word": "leaf",
+      "start_ms": 56140,
+      "end_ms": 56420
+    },
+    {
+      "word": "will",
+      "start_ms": 56420,
+      "end_ms": 56920
+    },
+    {
+      "word": "mix",
+      "start_ms": 56920,
+      "end_ms": 57260
+    },
+    {
+      "word": "water,",
+      "start_ms": 57260,
+      "end_ms": 57760
+    },
+    {
+      "word": "carbon",
+      "start_ms": 58300,
+      "end_ms": 58540
+    },
+    {
+      "word": "dioxide",
+      "start_ms": 58540,
+      "end_ms": 58840
+    },
+    {
+      "word": "and",
+      "start_ms": 58840,
+      "end_ms": 59820
+    },
+    {
+      "word": "sunlight.",
+      "start_ms": 59820,
+      "end_ms": 60260
+    },
+    {
+      "word": "What",
+      "start_ms": 61540,
+      "end_ms": 61880
+    },
+    {
+      "word": "are",
+      "start_ms": 61880,
+      "end_ms": 61980
+    },
+    {
+      "word": "they",
+      "start_ms": 61980,
+      "end_ms": 62100
+    },
+    {
+      "word": "going",
+      "start_ms": 62100,
+      "end_ms": 62300
+    },
+    {
+      "word": "to",
+      "start_ms": 62300,
+      "end_ms": 62500
+    },
+    {
+      "word": "produce?",
+      "start_ms": 62500,
+      "end_ms": 62780
+    },
+    {
+      "word": "Most",
+      "start_ms": 64160,
+      "end_ms": 64560
+    },
+    {
+      "word": "importantly",
+      "start_ms": 64560,
+      "end_ms": 65240
+    },
+    {
+      "word": "for",
+      "start_ms": 65240,
+      "end_ms": 65940
+    },
+    {
+      "word": "them,",
+      "start_ms": 65940,
+      "end_ms": 66220
+    },
+    {
+      "word": "there",
+      "start_ms": 66760,
+      "end_ms": 66980
+    },
+    {
+      "word": "will",
+      "start_ms": 66980,
+      "end_ms": 67140
+    },
+    {
+      "word": "be",
+      "start_ms": 67140,
+      "end_ms": 67420
+    },
+    {
+      "word": "sugar.",
+      "start_ms": 67420,
+      "end_ms": 67980
+    },
+    {
+      "word": "It's",
+      "start_ms": 69060,
+      "end_ms": 69440
+    },
+    {
+      "word": "useful",
+      "start_ms": 69440,
+      "end_ms": 69740
+    },
+    {
+      "word": "for",
+      "start_ms": 69740,
+      "end_ms": 70340
+    },
+    {
+      "word": "the",
+      "start_ms": 70340,
+      "end_ms": 70460
+    },
+    {
+      "word": "growth",
+      "start_ms": 70460,
+      "end_ms": 70860
+    },
+    {
+      "word": "of",
+      "start_ms": 70860,
+      "end_ms": 71180
+    },
+    {
+      "word": "the",
+      "start_ms": 71180,
+      "end_ms": 71300
+    },
+    {
+      "word": "plant.",
+      "start_ms": 71300,
+      "end_ms": 71660
+    },
+    {
+      "word": "Another",
+      "start_ms": 72700,
+      "end_ms": 73160
+    },
+    {
+      "word": "product",
+      "start_ms": 73160,
+      "end_ms": 73680
+    },
+    {
+      "word": "will",
+      "start_ms": 73680,
+      "end_ms": 73920
+    },
+    {
+      "word": "be",
+      "start_ms": 73920,
+      "end_ms": 74180
+    },
+    {
+      "word": "oxygen.",
+      "start_ms": 74180,
+      "end_ms": 74840
+    },
+    {
+      "word": "But",
+      "start_ms": 75720,
+      "end_ms": 75960
+    },
+    {
+      "word": "the",
+      "start_ms": 75960,
+      "end_ms": 76080
+    },
+    {
+      "word": "plant",
+      "start_ms": 76080,
+      "end_ms": 76420
+    },
+    {
+      "word": "doesn't",
+      "start_ms": 76420,
+      "end_ms": 76880
+    },
+    {
+      "word": "need",
+      "start_ms": 76880,
+      "end_ms": 77200
+    },
+    {
+      "word": "much",
+      "start_ms": 77200,
+      "end_ms": 77500
+    },
+    {
+      "word": "of",
+      "start_ms": 77500,
+      "end_ms": 77660
+    },
+    {
+      "word": "it.",
+      "start_ms": 77660,
+      "end_ms": 77820
+    },
+    {
+      "word": "It",
+      "start_ms": 78500,
+      "end_ms": 78800
+    },
+    {
+      "word": "means",
+      "start_ms": 78800,
+      "end_ms": 79160
+    },
+    {
+      "word": "a",
+      "start_ms": 79160,
+      "end_ms": 79420
+    },
+    {
+      "word": "lot",
+      "start_ms": 79420,
+      "end_ms": 79620
+    },
+    {
+      "word": "to",
+      "start_ms": 79620,
+      "end_ms": 79840
+    },
+    {
+      "word": "animals",
+      "start_ms": 79840,
+      "end_ms": 80260
+    },
+    {
+      "word": "and",
+      "start_ms": 80260,
+      "end_ms": 80820
+    },
+    {
+      "word": "humans",
+      "start_ms": 80820,
+      "end_ms": 81340
+    },
+    {
+      "word": "though.",
+      "start_ms": 81340,
+      "end_ms": 81700
+    },
+    {
+      "word": "They",
+      "start_ms": 82240,
+      "end_ms": 82540
+    },
+    {
+      "word": "need",
+      "start_ms": 82540,
+      "end_ms": 82860
+    },
+    {
+      "word": "it",
+      "start_ms": 82860,
+      "end_ms": 83060
+    },
+    {
+      "word": "to",
+      "start_ms": 83060,
+      "end_ms": 83280
+    },
+    {
+      "word": "breathe.",
+      "start_ms": 83280,
+      "end_ms": 83620
+    },
+    {
+      "word": "The",
+      "start_ms": 83620,
+      "end_ms": 85180
+    },
+    {
+      "word": "workers",
+      "start_ms": 85180,
+      "end_ms": 85660
+    },
+    {
+      "word": "work",
+      "start_ms": 85660,
+      "end_ms": 86140
+    },
+    {
+      "word": "hard.",
+      "start_ms": 86140,
+      "end_ms": 86640
+    },
+    {
+      "word": "Soon",
+      "start_ms": 87460,
+      "end_ms": 87860
+    },
+    {
+      "word": "it's",
+      "start_ms": 87860,
+      "end_ms": 88420
+    },
+    {
+      "word": "going",
+      "start_ms": 88420,
+      "end_ms": 88620
+    },
+    {
+      "word": "to",
+      "start_ms": 88620,
+      "end_ms": 88840
+    },
+    {
+      "word": "get",
+      "start_ms": 88840,
+      "end_ms": 89000
+    },
+    {
+      "word": "dark.",
+      "start_ms": 89000,
+      "end_ms": 89440
+    },
+    {
+      "word": "They",
+      "start_ms": 90220,
+      "end_ms": 90420
+    },
+    {
+      "word": "will",
+      "start_ms": 90420,
+      "end_ms": 90580
+    },
+    {
+      "word": "take",
+      "start_ms": 90580,
+      "end_ms": 90880
+    },
+    {
+      "word": "a",
+      "start_ms": 90880,
+      "end_ms": 91180
+    },
+    {
+      "word": "rest.",
+      "start_ms": 91180,
+      "end_ms": 91580
+    },
+    {
+      "word": "There",
+      "start_ms": 92580,
+      "end_ms": 93020
+    },
+    {
+      "word": "are",
+      "start_ms": 93020,
+      "end_ms": 93200
+    },
+    {
+      "word": "millions",
+      "start_ms": 93200,
+      "end_ms": 93660
+    },
+    {
+      "word": "of",
+      "start_ms": 93660,
+      "end_ms": 94060
+    },
+    {
+      "word": "plants",
+      "start_ms": 94060,
+      "end_ms": 94440
+    },
+    {
+      "word": "on",
+      "start_ms": 94440,
+      "end_ms": 94820
+    },
+    {
+      "word": "earth.",
+      "start_ms": 94820,
+      "end_ms": 95140
+    },
+    {
+      "word": "They",
+      "start_ms": 95960,
+      "end_ms": 96200
+    },
+    {
+      "word": "give",
+      "start_ms": 96200,
+      "end_ms": 96440
+    },
+    {
+      "word": "more",
+      "start_ms": 96440,
+      "end_ms": 96760
+    },
+    {
+      "word": "than",
+      "start_ms": 96760,
+      "end_ms": 96940
+    },
+    {
+      "word": "food",
+      "start_ms": 96940,
+      "end_ms": 97280
+    },
+    {
+      "word": "and",
+      "start_ms": 97280,
+      "end_ms": 97480
+    },
+    {
+      "word": "oxygen.",
+      "start_ms": 97480,
+      "end_ms": 97940
+    },
+    {
+      "word": "Without",
+      "start_ms": 98960,
+      "end_ms": 99260
+    },
+    {
+      "word": "plants",
+      "start_ms": 99260,
+      "end_ms": 99900
+    },
+    {
+      "word": "the",
+      "start_ms": 99900,
+      "end_ms": 100520
+    },
+    {
+      "word": "natural",
+      "start_ms": 100520,
+      "end_ms": 101000
+    },
+    {
+      "word": "world",
+      "start_ms": 101000,
+      "end_ms": 101480
+    },
+    {
+      "word": "would",
+      "start_ms": 101480,
+      "end_ms": 101940
+    },
+    {
+      "word": "be",
+      "start_ms": 101940,
+      "end_ms": 102160
+    },
+    {
+      "word": "very",
+      "start_ms": 102160,
+      "end_ms": 102600
+    },
+    {
+      "word": "different.",
+      "start_ms": 102600,
+      "end_ms": 103020
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 11.4
+  }
+}

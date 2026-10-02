@@ -1,0 +1,27 @@
+{
+ "input_context_sha256": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+ "model": "deepseek-v4-pro",
+ "cloud_calls": 1,
+ "local_ai_calls": 0,
+ "elapsed_s": 73.1,
+ "requested_max": 3,
+ "returned": 0,
+ "pass": 0,
+ "fail": 0,
+ "whitelist_size": 320,
+ "rows": [],
+ "section": {
+  "unit": "Unit 1",
+  "section": "UNDERSTANDING_IDEAS",
+  "pages": [
+   16,
+   17,
+   18,
+   19,
+   20
+  ],
+  "blocks": 63,
+  "vocab": 35,
+  "packages": 19
+ }
+}

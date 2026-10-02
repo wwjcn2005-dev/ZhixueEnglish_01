@@ -1,0 +1,29 @@
+{
+  "stage": "P1-09-F",
+  "source": "P1_09_D_boundary_validation/fixtures.json (verbatim reuse, not re-designed)",
+  "source_fixtures_sha256": "2BA8A2C29DEA4903F8507EC361F20941C56214160F686F59C6E4837A7AD1BD1E",
+  "source_fixtures_sha256_matches_p1_09_d_manifest": true,
+  "ai_input_sha256": "C5D1A900E202A6511A7E11B0F3503816E8096543A0B728B17FFE50960D9B3E84",
+  "ai_input_chars": 1352,
+  "fixture_count": 2,
+  "leak_check": "PASS (no hidden_gold / category / defect / validator / unique token)",
+  "forbidden_token_scan": {
+    "checked": [
+      "hidden_gold",
+      "gold_reason",
+      "introduced_defect",
+      "known_issue",
+      "category",
+      "expected",
+      "validator",
+      "mechanical_rewrite",
+      "lifecycle",
+      "second answer",
+      "第二答案",
+      "P1-09-D",
+      "P1-09-B",
+      "unique"
+    ],
+    "found": []
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU15",
+  "audio_num": "AU15",
+  "filename": "15_Unit 2_Understanding ideas_8 Work in pairs. Write about your hobby.mp3",
+  "duration_ms": 50965,
+  "segment_count": 11,
+  "word_count": 81,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 4140,
+      "text": "Activity 8 Work in pairs."
+    },
+    {
+      "start_ms": 4620,
+      "end_ms": 14520,
+      "text": "Write about your hobby. Use the words and expressions from the reading passage and the useful expressions to help you."
+    },
+    {
+      "start_ms": 15420,
+      "end_ms": 20620,
+      "text": "Then talk with your partner and take notes of his or her hobby."
+    },
+    {
+      "start_ms": 22180,
+      "end_ms": 23640,
+      "text": "Example conversation"
+    },
+    {
+      "start_ms": 25600,
+      "end_ms": 27280,
+      "text": "What's your hobby?"
+    },
+    {
+      "start_ms": 27280,
+      "end_ms": 29940,
+      "text": "I like taking photos."
+    },
+    {
+      "start_ms": 30940,
+      "end_ms": 32700,
+      "text": "Why do you like it?"
+    },
+    {
+      "start_ms": 33460,
+      "end_ms": 35460,
+      "text": "Because it's so much fun."
+    },
+    {
+      "start_ms": 36360,
+      "end_ms": 39220,
+      "text": "I have many friends with the same hobby."
+    },
+    {
+      "start_ms": 40120,
+      "end_ms": 43840,
+      "text": "We go to different places and take photos together."
+    },
+    {
+      "start_ms": 44760,
+      "end_ms": 47140,
+      "text": "It feels great to share our photos."
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1160
+    },
+    {
+      "word": "8",
+      "start_ms": 1160,
+      "end_ms": 1820
+    },
+    {
+      "word": "Work",
+      "start_ms": 1820,
+      "end_ms": 3200
+    },
+    {
+      "word": "in",
+      "start_ms": 3200,
+      "end_ms": 3680
+    },
+    {
+      "word": "pairs.",
+      "start_ms": 3680,
+      "end_ms": 4140
+    },
+    {
+      "word": "Write",
+      "start_ms": 4620,
+      "end_ms": 5520
+    },
+    {
+      "word": "about",
+      "start_ms": 5520,
+      "end_ms": 5940
+    },
+    {
+      "word": "your",
+      "start_ms": 5940,
+      "end_ms": 6240
+    },
+    {
+      "word": "hobby.",
+      "start_ms": 6240,
+      "end_ms": 6620
+    },
+    {
+      "word": "Use",
+      "start_ms": 7440,
+      "end_ms": 8080
+    },
+    {
+      "word": "the",
+      "start_ms": 8080,
+      "end_ms": 8300
+    },
+    {
+      "word": "words",
+      "start_ms": 8300,
+      "end_ms": 8720
+    },
+    {
+      "word": "and",
+      "start_ms": 8720,
+      "end_ms": 8960
+    },
+    {
+      "word": "expressions",
+      "start_ms": 8960,
+      "end_ms": 9560
+    },
+    {
+      "word": "from",
+      "start_ms": 9560,
+      "end_ms": 10240
+    },
+    {
+      "word": "the",
+      "start_ms": 10240,
+      "end_ms": 10380
+    },
+    {
+      "word": "reading",
+      "start_ms": 10380,
+      "end_ms": 10740
+    },
+    {
+      "word": "passage",
+      "start_ms": 10740,
+      "end_ms": 11140
+    },
+    {
+      "word": "and",
+      "start_ms": 11140,
+      "end_ms": 12020
+    },
+    {
+      "word": "the",
+      "start_ms": 12020,
+      "end_ms": 12320
+    },
+    {
+      "word": "useful",
+      "start_ms": 12320,
+      "end_ms": 12780
+    },
+    {
+      "word": "expressions",
+      "start_ms": 12780,
+      "end_ms": 13440
+    },
+    {
+      "word": "to",
+      "start_ms": 13440,
+      "end_ms": 13940
+    },
+    {
+      "word": "help",
+      "start_ms": 13940,
+      "end_ms": 14160
+    },
+    {
+      "word": "you.",
+      "start_ms": 14160,
+      "end_ms": 14520
+    },
+    {
+      "word": "Then",
+      "start_ms": 15420,
+      "end_ms": 15800
+    },
+    {
+      "word": "talk",
+      "start_ms": 15800,
+      "end_ms": 16140
+    },
+    {
+      "word": "with",
+      "start_ms": 16140,
+      "end_ms": 16400
+    },
+    {
+      "word": "your",
+      "start_ms": 16400,
+      "end_ms": 16560
+    },
+    {
+      "word": "partner",
+      "start_ms": 16560,
+      "end_ms": 17000
+    },
+    {
+      "word": "and",
+      "start_ms": 17000,
+      "end_ms": 17700
+    },
+    {
+      "word": "take",
+      "start_ms": 17700,
+      "end_ms": 18020
+    },
+    {
+      "word": "notes",
+      "start_ms": 18020,
+      "end_ms": 18400
+    },
+    {
+      "word": "of",
+      "start_ms": 18400,
+      "end_ms": 19080
+    },
+    {
+      "word": "his",
+      "start_ms": 19080,
+      "end_ms": 19340
+    },
+    {
+      "word": "or",
+      "start_ms": 19340,
+      "end_ms": 19840
+    },
+    {
+      "word": "her",
+      "start_ms": 19840,
+      "end_ms": 20180
+    },
+    {
+      "word": "hobby.",
+      "start_ms": 20180,
+      "end_ms": 20620
+    },
+    {
+      "word": "Example",
+      "start_ms": 22180,
+      "end_ms": 22940
+    },
+    {
+      "word": "conversation",
+      "start_ms": 22940,
+      "end_ms": 23640
+    },
+    {
+      "word": "What's",
+      "start_ms": 25600,
+      "end_ms": 26500
+    },
+    {
+      "word": "your",
+      "start_ms": 26500,
+      "end_ms": 26760
+    },
+    {
+      "word": "hobby?",
+      "start_ms": 26760,
+      "end_ms": 27280
+    },
+    {
+      "word": "I",
+      "start_ms": 27280,
+      "end_ms": 28520
+    },
+    {
+      "word": "like",
+      "start_ms": 28520,
+      "end_ms": 28880
+    },
+    {
+      "word": "taking",
+      "start_ms": 28880,
+      "end_ms": 29400
+    },
+    {
+      "word": "photos.",
+      "start_ms": 29400,
+      "end_ms": 29940
+    },
+    {
+      "word": "Why",
+      "start_ms": 30940,
+      "end_ms": 31460
+    },
+    {
+      "word": "do",
+      "start_ms": 31460,
+      "end_ms": 31740
+    },
+    {
+      "word": "you",
+      "start_ms": 31740,
+      "end_ms": 31940
+    },
+    {
+      "word": "like",
+      "start_ms": 31940,
+      "end_ms": 32240
+    },
+    {
+      "word": "it?",
+      "start_ms": 32240,
+      "end_ms": 32700
+    },
+    {
+      "word": "Because",
+      "start_ms": 33460,
+      "end_ms": 33960
+    },
+    {
+      "word": "it's",
+      "start_ms": 33960,
+      "end_ms": 34380
+    },
+    {
+      "word": "so",
+      "start_ms": 34380,
+      "end_ms": 34740
+    },
+    {
+      "word": "much",
+      "start_ms": 34740,
+      "end_ms": 35100
+    },
+    {
+      "word": "fun.",
+      "start_ms": 35100,
+      "end_ms": 35460
+    },
+    {
+      "word": "I",
+      "start_ms": 36360,
+      "end_ms": 36820
+    },
+    {
+      "word": "have",
+      "start_ms": 36820,
+      "end_ms": 37100
+    },
+    {
+      "word": "many",
+      "start_ms": 37100,
+      "end_ms": 37520
+    },
+    {
+      "word": "friends",
+      "start_ms": 37520,
+      "end_ms": 38120
+    },
+    {
+      "word": "with",
+      "start_ms": 38120,
+      "end_ms": 38400
+    },
+    {
+      "word": "the",
+      "start_ms": 38400,
+      "end_ms": 38540
+    },
+    {
+      "word": "same",
+      "start_ms": 38540,
+      "end_ms": 38920
+    },
+    {
+      "word": "hobby.",
+      "start_ms": 38920,
+      "end_ms": 39220
+    },
+    {
+      "word": "We",
+      "start_ms": 40120,
+      "end_ms": 40460
+    },
+    {
+      "word": "go",
+      "start_ms": 40460,
+      "end_ms": 40780
+    },
+    {
+      "word": "to",
+      "start_ms": 40780,
+      "end_ms": 40980
+    },
+    {
+      "word": "different",
+      "start_ms": 40980,
+      "end_ms": 41400
+    },
+    {
+      "word": "places",
+      "start_ms": 41400,
+      "end_ms": 41980
+    },
+    {
+      "word": "and",
+      "start_ms": 41980,
+      "end_ms": 42620
+    },
+    {
+      "word": "take",
+      "start_ms": 42620,
+      "end_ms": 42920
+    },
+    {
+      "word": "photos",
+      "start_ms": 42920,
+      "end_ms": 43360
+    },
+    {
+      "word": "together.",
+      "start_ms": 43360,
+      "end_ms": 43840
+    },
+    {
+      "word": "It",
+      "start_ms": 44760,
+      "end_ms": 44960
+    },
+    {
+      "word": "feels",
+      "start_ms": 44960,
+      "end_ms": 45340
+    },
+    {
+      "word": "great",
+      "start_ms": 45340,
+      "end_ms": 45780
+    },
+    {
+      "word": "to",
+      "start_ms": 45780,
+      "end_ms": 46040
+    },
+    {
+      "word": "share",
+      "start_ms": 46040,
+      "end_ms": 46380
+    },
+    {
+      "word": "our",
+      "start_ms": 46380,
+      "end_ms": 46640
+    },
+    {
+      "word": "photos.",
+      "start_ms": 46640,
+      "end_ms": 47140
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 5.5
+  }
+}

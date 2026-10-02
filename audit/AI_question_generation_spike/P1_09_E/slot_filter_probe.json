@@ -1,0 +1,216 @@
+{
+  "stage": "P1-09-E",
+  "ai_calls": 0,
+  "slot_patterns": {
+    "with his X": {
+      "candidate_count": 3,
+      "top": [
+        [
+          "friends",
+          3
+        ],
+        [
+          "bike",
+          3
+        ],
+        [
+          "family",
+          1
+        ]
+      ]
+    },
+    "a X on the blackboard": {
+      "candidate_count": 1,
+      "top": [
+        [
+          "sentence",
+          1
+        ]
+      ]
+    },
+    "X on the blackboard": {
+      "candidate_count": 2,
+      "top": [
+        [
+          "sentence",
+          2
+        ],
+        [
+          "write",
+          1
+        ]
+      ]
+    },
+    "X with his friends": {
+      "candidate_count": 2,
+      "top": [
+        [
+          "park",
+          2
+        ],
+        [
+          "town",
+          1
+        ]
+      ]
+    },
+    "his X": {
+      "candidate_count": 54,
+      "top": [
+        [
+          "unit",
+          25
+        ],
+        [
+          "is",
+          19
+        ],
+        [
+          "year",
+          6
+        ],
+        [
+          "father",
+          6
+        ],
+        [
+          "weekend",
+          5
+        ],
+        [
+          "section",
+          5
+        ],
+        [
+          "friends",
+          4
+        ],
+        [
+          "first",
+          3
+        ],
+        [
+          "room",
+          3
+        ],
+        [
+          "hobby",
+          3
+        ],
+        [
+          "love",
+          3
+        ],
+        [
+          "back",
+          3
+        ],
+        [
+          "bike",
+          3
+        ],
+        [
+          "down",
+          2
+        ],
+        [
+          "letter",
+          2
+        ]
+      ]
+    },
+    "a X kind of music": {
+      "candidate_count": 1,
+      "top": [
+        [
+          "different",
+          1
+        ]
+      ]
+    },
+    "play the X": {
+      "candidate_count": 2,
+      "top": [
+        [
+          "electric",
+          3
+        ],
+        [
+          "piano",
+          1
+        ]
+      ]
+    }
+  },
+  "note": "同槽位代入：把题目空位前后的字面片段当模板，在全教材正文里找同位置出现过的词。完全确定性，不需要新依赖。",
+  "targeted_checks": {
+    "FIX-C1_students": {
+      "slot": "with his ___",
+      "target": "students",
+      "in_same_slot_pool": false,
+      "occurrences": 0,
+      "pool_size": 3,
+      "pool_top": [
+        [
+          "friends",
+          3
+        ],
+        [
+          "bike",
+          3
+        ],
+        [
+          "family",
+          1
+        ]
+      ]
+    },
+    "FIX-C1_grandpa": {
+      "slot": "with his ___",
+      "target": "grandpa",
+      "in_same_slot_pool": false,
+      "occurrences": 0,
+      "pool_size": 3,
+      "pool_top": [
+        [
+          "friends",
+          3
+        ],
+        [
+          "bike",
+          3
+        ],
+        [
+          "family",
+          1
+        ]
+      ]
+    },
+    "FIX-C2_word": {
+      "slot": "a ___ on the blackboard",
+      "target": "word",
+      "in_same_slot_pool": false,
+      "occurrences": 0,
+      "pool_size": 1,
+      "pool_top": [
+        [
+          "sentence",
+          1
+        ]
+      ]
+    },
+    "FIX-C2_name": {
+      "slot": "a ___ on the blackboard",
+      "target": "name",
+      "in_same_slot_pool": false,
+      "occurrences": 0,
+      "pool_size": 1,
+      "pool_top": [
+        [
+          "sentence",
+          1
+        ]
+      ]
+    }
+  }
+}

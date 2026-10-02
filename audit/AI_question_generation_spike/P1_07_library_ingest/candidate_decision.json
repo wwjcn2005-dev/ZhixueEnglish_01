@@ -1,0 +1,1625 @@
+{
+ "stage": "P1-07",
+ "mode": "candidate_decision",
+ "ai_calls": 0,
+ "fixture_files": {
+  "S1": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S1_parsed.json",
+  "S2": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S2_parsed.json",
+  "S3": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S3_parsed.json",
+  "S4": "audit\\AI_question_generation_spike\\P1_06_batch_stability\\S4_parsed.json"
+ },
+ "library_snapshot_before": {
+  "counts": {
+   "generation_run": 8,
+   "ai_question": 2,
+   "question_evidence": 2,
+   "question_learning_object": 4,
+   "question_validation": 2,
+   "question_event": 3
+  },
+  "sha256": "3970408E3C0FE341C38EFAA9E5208AB61FC363465BE71AD10192ABF49F01CAAA"
+ },
+ "gate_definitions": {
+  "gate1": "page/activity/block/quote 可追溯 + answer 被引用支持 + 题干完整(D4)",
+  "gate2": "与教材练习文本按 token 连续片段比对（空位附近含编号标记）→ ORIGINAL_TEXTBOOK",
+  "gate3": "题干为引用 block 的连续片段（含空位）→ mechanical_rewrite=true；若答案不是明确学习点则 MECHANICAL_REPRODUCTION",
+  "gate4": "dedupe_key=sha256(section×activity×type×norm_answer×block set)；并检查 question_fingerprint",
+  "gate5": "unit_id / activity LO / run 元数据 / model / prompt_version",
+  "d2": "reading_judge 豁免规则 4，改用事实一致性判定（rule4_waived_for_judge）",
+  "d3": "越界 token 先做词形归一化，再判是否教材内合法词形",
+  "d4": "题干含省略号，或引用 block 无句末标点 → EVIDENCE_INCOMPLETE"
+ },
+ "decision_counts": {
+  "PASS": 19,
+  "EVIDENCE_INCOMPLETE": 3
+ },
+ "candidates": [
+  {
+   "source_section": "S1",
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+   "source_question_id": "q1",
+   "source_row": "S1-Q1",
+   "derived_question_id": "AIQ:E5F4C046FA61",
+   "question_fingerprint": "E5F4C046FA61C1316730AFE4E3A64E1908C2BDD0EEE84757109A4DF36A584120",
+   "dedupe_key": "514D5A302F161BAB3560F1D3164AB10747AD69FE05244B494973CF0014830CED",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "sound",
+   "question": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "The passage uses 'sound' as a core word in this sentence about Grandpa’s erhu.",
+   "page": 32,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P37:B11"
+   ],
+   "quote": "Right at this moment, the sound of Grandpa’s erhu cuts in.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:98A27993BFCE",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S1",
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+   "source_question_id": "q2",
+   "source_row": "S1-Q2",
+   "derived_question_id": "AIQ:04CC9B1CF690",
+   "question_fingerprint": "04CC9B1CF690F62D3DD91EE8ABEA626A2E703D83F114BB8BBA355EAE4208F159",
+   "dedupe_key": "ABEB18A6041745526704B201EAD411E0315B4B9A0EA33B4BFFF452D147C3B113",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "enjoy",
+   "question": "It feels great to ___ our hobby together.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "The passage says 'It feels great to enjoy our hobby together', so the missing word is 'enjoy'.",
+   "page": 33,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P38:B5"
+   ],
+   "quote": "It feels great to enjoy our hobby together.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:2035233BCB26",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:76733936D5BA",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S1",
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+   "source_question_id": "q3",
+   "source_row": "S1-Q3",
+   "derived_question_id": "AIQ:BD59C5958D45",
+   "question_fingerprint": "BD59C5958D455E98B9AC542A03F7172F68D33152AC82F4C0DDE21AB2E5832196",
+   "dedupe_key": "EBDE08BAF2A13D20E2E0745EE9AE748C1D85654B37715D7D2BD9CF7A68E29219",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "vocab_choice",
+   "answer": "band",
+   "question": "As a rock music lover, I play the electric guitar in the school ___.",
+   "options": [
+    "band",
+    "club",
+    "stage",
+    "instrument"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "The passage says 'I play the electric guitar in the school band', so the correct word is 'band'.",
+   "page": 32,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P37:B10"
+   ],
+   "quote": "As a rock music lover, I play the electric guitar in the school band.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:758EAAF3C83B",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S1",
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+   "source_question_id": "q4",
+   "source_row": "S1-Q4",
+   "derived_question_id": "AIQ:75AAEBFE06DF",
+   "question_fingerprint": "75AAEBFE06DFC6E750DBBE748A476ABD568F716C13FEEB296517F7297798020B",
+   "dedupe_key": "97D16FFC8F937CDA842803836172CCB3F65FA0B12584510FDD70700999A67419",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "vocab_choice",
+   "answer": "different",
+   "question": "But it’s a ___ kind of music.",
+   "options": [
+    "different",
+    "traditional",
+    "electric",
+    "weak"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "The passage says 'But it’s a different kind of music', so the correct word is 'different'.",
+   "page": 32,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "quote": "But it’s a different kind of music.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:8CCC14F572CB",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S1",
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+   "source_question_id": "q5",
+   "source_row": "S1-Q5",
+   "derived_question_id": "AIQ:879007FA4FC7",
+   "question_fingerprint": "879007FA4FC7DD75D79B593F81CD04F22BEBF976276DE8F9DAEB6A7F18243561",
+   "dedupe_key": "480090F33EB171368A2B180380FFEE6E3C4E362A74683CAF87F3771BD9EA6F6E",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "reading_choice",
+   "answer": "in the park",
+   "question": "Grandpa likes playing the erhu ___.",
+   "options": [
+    "in the park",
+    "in the school band",
+    "on the stage",
+    "in his room"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "The passage says Grandpa likes playing the erhu in the park with his friends, so the correct place is 'in the park'.",
+   "page": 32,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "quote": "He likes playing the erhu in the park with his friends.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+     "is_primary": 1
+    }
+   ],
+   "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S1",
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+   "source_question_id": "q6",
+   "source_row": "S1-Q6",
+   "derived_question_id": "AIQ:6ECD02B9D381",
+   "question_fingerprint": "6ECD02B9D381600D03E2E2C6A2CA77568CA945BF8917F295D632D9DBB79A9362",
+   "dedupe_key": "7EDDAAB7E7D5E5807EC7F2C48D4484A4B7445B306686D355B53E9FC152C57CD5",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "VERIFIABLE_REPHRASE",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "reading_choice",
+   "answer": "fire up instruments",
+   "question": "At the school art festival, the writer and Grandpa ___.",
+   "options": [
+    "write songs",
+    "share songs online",
+    "fire up instruments",
+    "sing Beijing opera"
+   ],
+   "correct_option": "C",
+   "difficulty": "medium",
+   "explanation": "The passage says 'I nod to Grandpa and we fire up our instruments', so the correct action is 'fire up instruments'.",
+   "page": 33,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "quote": "I nod to Grandpa and we fire up our instruments.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:76733936D5BA",
+     "is_primary": 1
+    }
+   ],
+   "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S2",
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+   "source_question_id": "q1",
+   "source_row": "S2-Q1",
+   "derived_question_id": "AIQ:C3E6FD29F680",
+   "question_fingerprint": "C3E6FD29F680AB1C167266EF572566F8637D8F64FF3E4743EE21456C56A06B44",
+   "dedupe_key": "D88B289DA230C5EE03F08FE4480603A4D914316DDC29E2DD565FC033A195E888",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "hers",
+   "question": "I look up at Ms Chen. My eyes meet ___.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "The reading passage uses the possessive pronoun 'hers' to refer to Ms Chen's eyes. The grammar focus of Activity 5 is on possessive pronouns and adjectives.",
+   "page": 19,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P24:B1"
+   ],
+   "quote": "My eyes meet hers.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:084C9E5223A4",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:3363F6C7E84E",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S2",
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+   "source_question_id": "q2",
+   "source_row": "S2-Q2",
+   "derived_question_id": "AIQ:5B4C80443D5F",
+   "question_fingerprint": "5B4C80443D5FE94E0C4CE374D47CB800BE0CA226E01269DDEE850E8A929397F6",
+   "dedupe_key": "C8E7452D47597F0C349EE35105E98146C477A383C50EAA9126F54360BF457BD7",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [
+    "points",
+    "student"
+   ],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "vocab_choice",
+   "answer": "mistake",
+   "question": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+   "options": [
+    "mistake",
+    "mind",
+    "meaning",
+    "fact"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "In the summary, the student says 'point out the mistake', and 'mistake' is a core word in the Unit vocabulary list.",
+   "page": 18,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P23:B6"
+   ],
+   "quote": "point out the mistake",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:FEADBBD10A87",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:C17DC2B4A7A2",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S2",
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+   "source_question_id": "q3",
+   "source_row": "S2-Q3",
+   "derived_question_id": "AIQ:D976787A0A43",
+   "question_fingerprint": "D976787A0A43F6C7E9F41550C3037D7EBC6837393326A60BC684D2D8E1412F5C",
+   "dedupe_key": "8F683ED6E9C2C6A39560EAC203E8A9236A88B9AA3F520D56D39130188AB3E7E1",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "mind",
+   "question": "In the first lesson, some questions jump into my ___.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "The summary shows that questions jump into the writer's mind. 'Mind' is a core vocabulary word in this unit.",
+   "page": 18,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P23:B5"
+   ],
+   "quote": "jump into my mind",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:6763F64AB363",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:C17DC2B4A7A2",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S2",
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+   "source_question_id": "q4",
+   "source_row": "S2-Q4",
+   "derived_question_id": "AIQ:1BA260727793",
+   "question_fingerprint": "1BA2607277936E2B6AE2A521F66C0CDC356C90B5269988801D9C1A28E9F8280E",
+   "dedupe_key": "FAC67D8814215070A74E065E16CF4E0952A8F13D67E8AB8FE048C230FB5AE639",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "In fact",
+   "question": "___ ___, this is my first lesson for all of you.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "The reading passage uses 'in fact' as a key expression. It is listed in the Unit vocabulary list.",
+   "page": 19,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P24:B2"
+   ],
+   "quote": "In fact, this is my first lesson for all of you.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:28FFB2954477",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:3363F6C7E84E",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S2",
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+   "source_question_id": "q5",
+   "source_row": "S2-Q5",
+   "derived_question_id": "AIQ:A9D1F3EC6020",
+   "question_fingerprint": "A9D1F3EC6020F5DA7C4BD46C13C1D1E690B9A8EE9E47ABF5D8CB31546F01C048",
+   "dedupe_key": "7790C234413399B4BD0DE0EBBC2E6FB822E6FF8276735B0A507F60C01ED9A21B",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [
+    "writes"
+   ],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "vocab_choice",
+   "answer": "sentence",
+   "question": "Ms Chen writes a ___ on the blackboard.",
+   "options": [
+    "sentence",
+    "mistake",
+    "mind",
+    "meaning"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "The summary states that Ms Chen writes a sentence on the blackboard. 'Sentence' is a core word in the Unit vocabulary list.",
+   "page": 18,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P23:B4"
+   ],
+   "quote": "a sentence on the blackboard",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:3571476C132A",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:C17DC2B4A7A2",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S3",
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+   "source_question_id": "q1",
+   "source_row": "S3-Q1",
+   "derived_question_id": "AIQ:6721EC6C5D1F",
+   "question_fingerprint": "6721EC6C5D1F543B6D45B7C9AFE0E6167E13DC6947490D86A582B4339AEB8F39",
+   "dedupe_key": "200414C32D03C3A8736029A0041762A63B02D828653500D117DB4510B966EAF8",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "vocab_choice",
+   "answer": "root",
+   "question": "Water from the ___ will rise to the leaf through the stem.",
+   "options": [
+    "root",
+    "stem",
+    "sugar",
+    "oxygen"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "The passage says water comes from the root and goes up through the stem to the leaf; “root” is the correct plant part.",
+   "page": 82,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P85:B12",
+    "FLTRP-EN-7A-2022CUR:P87:B7"
+   ],
+   "quote": "root",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:17C72197AB67",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:0C54AFF17092",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S3",
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+   "source_question_id": "q2",
+   "source_row": "S3-Q2",
+   "derived_question_id": "AIQ:021D3AAEEACF",
+   "question_fingerprint": "021D3AAEEACF18FFD94BB1ABA0454E4829890ACFDA22AACFEBF23C6A35E89E06",
+   "dedupe_key": "72F1BD6C4382EDB5A7AC983B743743530E49BA9FB666F35EDDAE3F3F53B748AE",
+   "decision": "EVIDENCE_INCOMPLETE",
+   "reasons": [
+    "题干残缺（省略号=False / 证据块无句末标点=True）",
+    "答案不被引用支持（UNSUPPORTED ）",
+    "与教材练习空位逐字重合：[{'package': 'Q:8FF16FAF7049', 'activity_no': 4, 'skipped_blank_marker': '1'}]"
+   ],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": false,
+    "g1_stem_complete": false,
+    "gate1_evidence_complete": false,
+    "gate2_not_textbook_original": false,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": true,
+   "evidence_status": "INCOMPLETE",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "UNSUPPORTED",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "leaf",
+   "question": "Sunlight and CO2 come into the ___.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "The sentence describes where sunlight and CO2 enter; the missing word is “leaf”, a core plant part in this unit.",
+   "page": 82,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P87:B9",
+    "FLTRP-EN-7A-2022CUR:P85:B5"
+   ],
+   "quote": "Sunlight and CO2 come into the",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:6419CF2C2342",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:0C54AFF17092",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S3",
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+   "source_question_id": "q3",
+   "source_row": "S3-Q3",
+   "derived_question_id": "AIQ:433EF984F1BF",
+   "question_fingerprint": "433EF984F1BF4964FFEF8C8A168800F8B878C797C2FF4211CAF8338AD6D612F8",
+   "dedupe_key": "8AAD34AC63DE174E6D0001835B6ECF49E06AC9C3BFC1FF2AE929C97BE9F7CA06",
+   "decision": "EVIDENCE_INCOMPLETE",
+   "reasons": [
+    "答案不被引用支持（UNSUPPORTED ）",
+    "与教材练习空位逐字重合：[{'package': 'Q:8FF16FAF7049', 'activity_no': 4, 'skipped_blank_marker': '2'}]"
+   ],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": false,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": false,
+    "gate2_not_textbook_original": false,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": true,
+   "evidence_status": "INCOMPLETE",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "UNSUPPORTED",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "rise",
+   "question": "Water from the root will ___ to the leaf through the stem.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "medium",
+   "explanation": "The missing word “rise” is a key verb in the unit; the sentence means water moves upward from the root to the leaf.",
+   "page": 82,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P87:B7",
+    "FLTRP-EN-7A-2022CUR:P87:B8"
+   ],
+   "quote": "to the leaf through the stem.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:7AEAF8B1531D",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:0C54AFF17092",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S3",
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+   "source_question_id": "q4",
+   "source_row": "S3-Q4",
+   "derived_question_id": "AIQ:B6463523F9E5",
+   "question_fingerprint": "B6463523F9E5EF6F9B7B1EE0A2F0A48448326F4888AB1EC1464ED3143A97D78E",
+   "dedupe_key": "0B63271F7A51277FD671DEF277ECE4C0846E2AB6D1EAC64A01C212D54814432D",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "reading_choice",
+   "answer": "their own rain",
+   "question": "In the Great Bear Rainforest, what can the trees make?",
+   "options": [
+    "their own rain",
+    "sugar",
+    "oxygen",
+    "food"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "The guide says the trees can make their own rain, so the answer is “their own rain”.",
+   "page": 83,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P88:B14"
+   ],
+   "quote": "The trees in a rainforest can make their own rain.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE",
+     "is_primary": 1
+    }
+   ],
+   "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S3",
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+   "source_question_id": "q5",
+   "source_row": "S3-Q5",
+   "derived_question_id": "AIQ:7EAC0ED29A0A",
+   "question_fingerprint": "7EAC0ED29A0AF3893040D0E8D60A552F4234E7393B9933E6EFC8E8F87CF6D480",
+   "dedupe_key": "2496A101D857484910CE29E91C342BA1088D61FB7DEA16D65C89383C2A73311B",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "JUDGE_FACT_OK",
+   "rule4_waived_for_judge": true,
+   "judge_coverage": 1.0,
+   "type": "reading_judge",
+   "answer": "True",
+   "question": "The Great Bear Rainforest is in Canada.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "The guide states the rainforest is in Canada, so the statement is true.",
+   "page": 83,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P88:B12"
+   ],
+   "quote": "Welcome to the Great Bear Rainforest in Canada!",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE",
+     "is_primary": 1
+    }
+   ],
+   "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S3",
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+   "source_question_id": "q6",
+   "source_row": "S3-Q6",
+   "derived_question_id": "AIQ:80F1D28C3101",
+   "question_fingerprint": "80F1D28C3101BC108B5AED3B7D16A854462785F00E6EA272C53EE7F7FA75D742",
+   "dedupe_key": "019370AE74C24C799F5A01AE906ED6EE1B9024E3B48A7ED5682A4E407E2DB45A",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "JUDGE_FACT_OK",
+   "rule4_waived_for_judge": true,
+   "judge_coverage": 1.0,
+   "type": "reading_judge",
+   "answer": "False",
+   "question": "Plants are not important to us.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "The guide says plants are so important, so the negative statement is false.",
+   "page": 83,
+   "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P88:B20"
+   ],
+   "quote": "Now we can see plants are so important. They mean so much to us.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE",
+     "is_primary": 1
+    }
+   ],
+   "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S4",
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+   "source_question_id": "q1",
+   "source_row": "S4-Q1",
+   "derived_question_id": "AIQ:1B3AF72923C4",
+   "question_fingerprint": "1B3AF72923C4AEE1848E4E92554DE8E14A2DD1B9DFF503E9A87DCCB561A57B78",
+   "dedupe_key": "8FC1B600F5CD35C75C8B2DDED4BB079254A937A775B675F1E2D1D7D28C5AB924",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "ready",
+   "question": "I am ___, too.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "This fill practises the core vocabulary word 'ready' in a sentence from the conversation.",
+   "page": 3,
+   "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P8:B16"
+   ],
+   "quote": "I am ready, too",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:EAB999ECEC5C",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:02809AEEFBB6",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S4",
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+   "source_question_id": "q2",
+   "source_row": "S4-Q2",
+   "derived_question_id": "AIQ:3C02F6486DFF",
+   "question_fingerprint": "3C02F6486DFF754AB9CD4B66F1A1A3AA077A73136D504EB2C2104C920D1EE293",
+   "dedupe_key": "B0B1455A82D385ED9802BFF48025A097F6A2B80F6225CFD6448C1B0AA0182745",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "eraser",
+   "question": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "This fill practises the core vocabulary word 'eraser' in a model sentence for talking about school things.",
+   "page": 3,
+   "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P8:B32"
+   ],
+   "quote": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:7A89AA02D979",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:737C6C9C364F",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S4",
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+   "source_question_id": "q3",
+   "source_row": "S4-Q3",
+   "derived_question_id": "AIQ:120FFEECA78F",
+   "question_fingerprint": "120FFEECA78F0974566EF18C485C09FFEF71F66EBE1663AF126A180704EF74A0",
+   "dedupe_key": "6AC8985DA68EA72AEF683EC52600555AB58E7913685C1F05F19569A6F9EB500E",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "fill",
+   "answer": "grey",
+   "question": "What colour is it? It’s ___.",
+   "options": null,
+   "correct_option": null,
+   "difficulty": "easy",
+   "explanation": "This fill practises the core vocabulary word 'grey' in the colour question-and-answer pattern from the textbook.",
+   "page": 5,
+   "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P10:B20"
+   ],
+   "quote": "It’s grey.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:751A8391C690",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:B3D847CC7B0D",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S4",
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+   "source_question_id": "q4",
+   "source_row": "S4-Q4",
+   "derived_question_id": "AIQ:C71824B0D09D",
+   "question_fingerprint": "C71824B0D09D2A9E7CF87CD64D7725DDF3D57987DB5AB6DC3E2D59B9385B019A",
+   "dedupe_key": "4B0FE062C1B5DD5338DD83F80DAAC6C413CB742041FF1B8573BAC68C769EAD13",
+   "decision": "EVIDENCE_INCOMPLETE",
+   "reasons": [
+    "题干残缺（省略号=True / 证据块无句末标点=True）"
+   ],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": false,
+    "gate1_evidence_complete": false,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": true,
+   "original_textbook": false,
+   "evidence_status": "INCOMPLETE",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "vocab_choice",
+   "answer": "forget",
+   "question": "Oh, don’t ___ your ...",
+   "options": [
+    "forget",
+    "wear",
+    "have",
+    "like"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "This choice practises the core vocabulary word 'forget' in the warning expression from the conversation.",
+   "page": 5,
+   "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P10:B12"
+   ],
+   "quote": "don’t forget your",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:E94EF5FC5FDE",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:1C4143922B1C",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  },
+  {
+   "source_section": "S4",
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+   "source_question_id": "q5",
+   "source_row": "S4-Q5",
+   "derived_question_id": "AIQ:CD8B21681B4C",
+   "question_fingerprint": "CD8B21681B4C6783278E52FA2CE76A49F5BB3571CACF0091A75E591DAB3EA301",
+   "dedupe_key": "8E725BCD5BE30C17D4744A6C3258F1E39A72F90B55CDA449AEDC475F4B9D9377",
+   "decision": "PASS",
+   "reasons": [],
+   "gate_results": {
+    "g1_page": true,
+    "g1_activity": true,
+    "g1_blocks_exist": true,
+    "g1_block_in_contentpack": true,
+    "g1_quote_nonempty": true,
+    "g1_quote_in_block": true,
+    "g1_answer_supported": true,
+    "g1_stem_complete": true,
+    "gate1_evidence_complete": true,
+    "gate2_not_textbook_original": true,
+    "gate3_mechanical_allowed": true,
+    "gate4_no_duplicate": true,
+    "gate5_schema_provenance": true,
+    "d3_vocab_after_lemma": true,
+    "gate5_detail": {
+     "unit_id_exists": true,
+     "activity_lo_exists": true,
+     "run_meta_available": true,
+     "model_ok": true,
+     "prompt_version_ok": true
+    }
+   },
+   "mechanical_rewrite": false,
+   "original_textbook": false,
+   "evidence_status": "OK",
+   "vocabulary_status": "OK",
+   "vocabulary_raw_flags": [],
+   "vocabulary_after_lemma": [],
+   "answer_support_type": "EXACT",
+   "rule4_waived_for_judge": false,
+   "judge_coverage": null,
+   "type": "reading_choice",
+   "answer": "school uniform",
+   "question": "What is Wang Tao going to wear tomorrow for school?",
+   "options": [
+    "school uniform",
+    "sports jacket",
+    "T-shirt",
+    "red scarf"
+   ],
+   "correct_option": "A",
+   "difficulty": "easy",
+   "explanation": "This reading question checks the key information about what Wang Tao is going to wear.",
+   "page": 5,
+   "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+   "blocks": [
+    "FLTRP-EN-7A-2022CUR:P10:B5"
+   ],
+   "quote": "My school uniform, of course.",
+   "learning_objects": [
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:V:9DC23D3EC118",
+     "is_primary": 1
+    },
+    {
+     "item_id": "FLTRP-EN-7A-2022CUR:X:1C4143922B1C",
+     "is_primary": 0
+    }
+   ],
+   "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+   "prompt_version": "P1-05-v3",
+   "model": "deepseek-v4-pro"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+  "AU13-LTR-01": {
+    "suggested_start_ms": 47860,
+    "suggested_end_ms": 49440,
+    "status": "READY",
+    "source": "P3-07_AU13_LTR_selected_audio_location_report"
+  },
+  "AU13-LTR-02": {
+    "suggested_start_ms": 50140,
+    "suggested_end_ms": 52330,
+    "status": "READY",
+    "source": "P3-07_AU13_LTR_selected_audio_location_report"
+  },
+  "AU13-LTR-03": {
+    "suggested_start_ms": 52760,
+    "suggested_end_ms": 54760,
+    "status": "READY",
+    "source": "P3-07_AU13_LTR_selected_audio_location_report"
+  },
+  "AU13-LTR-09": {
+    "suggested_start_ms": 73320,
+    "suggested_end_ms": 75580,
+    "status": "READY",
+    "source": "P3-07_AU13_LTR_selected_audio_location_report"
+  },
+  "AU13-LTR-10": {
+    "suggested_start_ms": 76140,
+    "suggested_end_ms": 78120,
+    "status": "READY",
+    "source": "P3-07_AU13_LTR_selected_audio_location_report"
+  },
+  "AU13-LTR-11": {
+    "suggested_start_ms": 78600,
+    "suggested_end_ms": 82520,
+    "status": "NEEDS_MANUAL_REVIEW",
+    "source": "P3-07_AU13_LTR_selected_audio_location_report"
+  },
+  "AU13-LTR-12": {
+    "suggested_start_ms": 82765,
+    "suggested_end_ms": 86490,
+    "status": "NEEDS_MANUAL_REVIEW",
+    "source": "P3-07_AU13_LTR_selected_audio_location_report"
+  }
+}

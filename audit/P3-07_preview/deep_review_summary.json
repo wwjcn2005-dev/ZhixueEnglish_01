@@ -1,0 +1,16 @@
+{
+  "selected": 20,
+  "old_boundary_high": 4,
+  "new_boundary_high": 16,
+  "reclass": {
+    "GOOD_BOUNDARY": 9,
+    "REAL_UNCERTAIN": 3,
+    "NEXT_SENTENCE_INTRUSION": 1,
+    "AUTO_RESOLVED": 7
+  },
+  "uncertain_counts": {
+    "NON_SPOKEN_OR_INSTRUCTION": 113,
+    "POSSIBLE_MISMATCH": 175,
+    "ASR_ERROR_OR_PARTIAL_MATCH": 136
+  }
+}

@@ -1,0 +1,212 @@
+{
+ "task_id": "P3-03",
+ "title": "本地离线语音转写 / 强制对齐技术选型验证",
+ "date": "2026-09-13",
+ "read_only": true,
+ "ai_calls": 0,
+ "external_network_requests": 0,
+ "installs": 0,
+ "environment": {
+  "python": "3.12.10",
+  "pip": "25.0.1",
+  "python_path": "C:\\Users\\wwenj\\AppData\\Local\\Programs\\Python\\Python312",
+  "cpu": "Intel Core i5-14400F (10C/16T)",
+  "ram_gb": 15.8,
+  "gpu": "NVIDIA GeForce GTX 1070 (4GB, driver 32.0.15.6094)",
+  "cuda_toolkit": "UNAVAILABLE (no nvcc)",
+  "existing_offline_capability": [
+   "wave",
+   "audioop",
+   "builder/mp3_to_wav.ps1 (WinRT decode)"
+  ]
+ },
+ "available_tools": {
+  "python_stdlib_wave_audioop": "AVAILABLE",
+  "winrt_mp3_decode": "AVAILABLE",
+  "silence_segmentation_pipeline": "AVAILABLE"
+ },
+ "unavailable_tools": {
+  "binaries": {
+   "ffmpeg": "UNAVAILABLE",
+   "ffprobe": "UNAVAILABLE",
+   "sox": "UNAVAILABLE",
+   "whisper_cli_whisper_cpp": "UNAVAILABLE",
+   "nvcc": "UNAVAILABLE",
+   "git": "UNAVAILABLE"
+  },
+  "python_packages": {
+   "torch": "UNAVAILABLE",
+   "torchaudio": "UNAVAILABLE",
+   "transformers": "UNAVAILABLE",
+   "ctranslate2": "UNAVAILABLE",
+   "openai-whisper": "UNAVAILABLE",
+   "faster-whisper": "UNAVAILABLE",
+   "vosk": "UNAVAILABLE",
+   "speech_recognition": "UNAVAILABLE",
+   "onnxruntime": "UNAVAILABLE",
+   "montreal-forced-aligner": "UNAVAILABLE",
+   "gentle": "UNAVAILABLE",
+   "aeneas": "UNAVAILABLE",
+   "numpy": "UNAVAILABLE",
+   "scipy": "UNAVAILABLE",
+   "librosa": "UNAVAILABLE",
+   "soundfile": "UNAVAILABLE",
+   "pydub": "UNAVAILABLE"
+  },
+  "model_files_found": 0,
+  "site_packages_asr_dirs": 0
+ },
+ "routes": [
+  {
+   "route": "A_offline_ASR",
+   "needs": [
+    "whisper/faster-whisper/whisper.cpp/vosk",
+    "model",
+    "decoder"
+   ],
+   "available_locally": false,
+   "executable_now": false
+  },
+  {
+   "route": "B_forced_alignment",
+   "needs": [
+    "MFA/gentle/aeneas/torchaudio-align",
+    "acoustic model",
+    "pronunciation dictionary"
+   ],
+   "available_locally": false,
+   "executable_now": false
+  },
+  {
+   "route": "C_ASR_plus_alignment",
+   "needs": [
+    "A + B"
+   ],
+   "available_locally": false,
+   "executable_now": false
+  },
+  {
+   "route": "baseline_silence_segmentation",
+   "needs": [
+    "wave+audioop"
+   ],
+   "available_locally": true,
+   "executable_now": true
+  }
+ ],
+ "actual_runs": {
+  "note": "本阶段没有任何 ASR/对齐工具可运行，未产生新转写或对齐结果；仅复核非 ASR 基线数值",
+  "test_1_AU06": {
+   "target": "Hello everyone!",
+   "start_ms": 560,
+   "end_ms": 2090,
+   "duration_ms": 1530,
+   "word_timestamps": "UNAVAILABLE",
+   "independent_recheck": "UNAVAILABLE",
+   "status": "CANDIDATE"
+  },
+  "test_2_AU13": {
+   "target": "多人对话中的完整句",
+   "located": false,
+   "status": "NEEDS_REVIEW",
+   "reason": "对话文本有提取瑕疵 + 无匹配器"
+  },
+  "test_3_fill_blank": {
+   "target": "I am ______ years old.",
+   "recovered": false,
+   "status": "NEEDS_REVIEW",
+   "reason": "完整句只存在于音频中"
+  }
+ },
+ "time_boundaries": {
+  "au06_silence_baseline_ms": [
+   560,
+   2090
+  ],
+  "evidence_level": "辅助证据（静音/能量），不能证明内容即为目标句",
+  "asr_word_timestamps": "UNAVAILABLE",
+  "forced_alignment": "UNAVAILABLE"
+ },
+ "slices": {
+  "new_slices": 0,
+  "reason": "任务要求只有得到可信时间范围后才切片；可信范围需 ASR/对齐复核，本机不具备",
+  "reference_existing": [
+   "audit/P3-02_samples/sample_02_sentence_01.wav (AU06 560-2090ms, CANDIDATE)",
+   "audit/P3-02_samples/sample_01_word_01.wav"
+  ]
+ },
+ "route_comparison": {
+  "best_for_project": "B_forced_alignment",
+  "why": "项目输入天然包含权威教材文本；B 只需文本+音频即可给出词级时间，不需要 ASR 重新猜文本；A 会引入识别错误；C 适合作为文本/音频不完全一致时的兜底",
+  "table": [
+   {
+    "route": "A 完整 ASR",
+    "known_text": "可选",
+    "needs_asr": "是",
+    "word_times": "有",
+    "boundary": "中～高",
+    "complexity": "中",
+    "executable_now": false
+   },
+   {
+    "route": "B 强制对齐",
+    "known_text": "必需",
+    "needs_asr": "否（需声学模型+词典）",
+    "word_times": "有",
+    "boundary": "高",
+    "complexity": "中高",
+    "executable_now": false
+   },
+   {
+    "route": "C ASR+对齐",
+    "known_text": "必需",
+    "needs_asr": "是",
+    "word_times": "有",
+    "boundary": "最高",
+    "complexity": "高",
+    "executable_now": false
+   },
+   {
+    "route": "静音分段（对照）",
+    "known_text": "不需要",
+    "needs_asr": "否",
+    "word_times": "无",
+    "boundary": "低",
+    "complexity": "低",
+    "executable_now": true
+   }
+  ]
+ },
+ "human_workload": {
+  "manual_timeline": "不可扩展",
+  "silence_plus_manual_check": "勉强，错误率不可控",
+  "forced_alignment_plus_spot_check": "可扩展（约 5–15% 抽查）——推荐目标",
+  "asr_alignment_plus_spot_check": "可扩展（依赖 ASR 质量与算力）"
+ },
+ "final_verdict": {
+  "choice": "D",
+  "text": "当前不建议继续",
+  "bottleneck": "本机不存在任何本地离线 ASR / 强制对齐实现或模型，且本阶段禁止安装 → 完整句文本 ↔ 音频时间轴无法可靠对应，句级 CONFIRMED 必然为 0",
+  "unblock_conditions": [
+   "用户批准安装离线方案：faster-whisper（CPU int8 或 GTX1070 CUDA float16，用 word timestamps）",
+   "或 whisper.cpp（GGML 量化，CPU/4GB 显存均可）",
+   "或 MFA / torchaudio forced-align（最贴合路线 B，需发音词典）",
+   "安装后按 P3-02 三个样本重跑，以“切片重新识别 == 目标句”作为 CONFIRMED 门槛"
+  ],
+  "expected_after_unblock": "按 i5-14400F + 16GB + GTX1070 判断，路线 B/C 预计可达 B 级（自动对齐 + 人工抽查）"
+ },
+ "baseline": {
+  "learning_db_sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+  "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+  "mp3_count": 54,
+  "mp3_set_fingerprint": "C2E2E60E7DE50691D5315C4A55E7C3BA",
+  "v121_docx_sha256": "31AC3638F324C23733652DD0187FE42C5DFC07B75F1688797331E585D5E94EBB",
+  "v121_md_sha256": "C4532C79C7EDCB174169C88D10DEE5CCEAB2479FDBABC6AFDFE6CA9806C12890",
+  "web_file_count": 18,
+  "learning_file_count": 19,
+  "android_modified": false,
+  "tests_run": false,
+  "changed": false
+ },
+ "stop": "P3-03 完成，立即停止；未进入 P3-04。"
+}

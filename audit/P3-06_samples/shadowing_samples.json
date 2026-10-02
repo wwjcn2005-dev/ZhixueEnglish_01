@@ -1,0 +1,95 @@
+{
+ "task": "P3-06 第二阶段 Spike 样本（实验数据，不进入正式数据）",
+ "status": "TIMING_NOT_AVAILABLE",
+ "blocked_reason": "句子级 start/end 必须来自人工听标；本环境无法听取音频，声学分组无法唯一对应句子",
+ "acoustic_evidence": {
+  "AU06": {
+   "runs_gap200": 14,
+   "runs_gap400": 13,
+   "runs_gap600": 12,
+   "runs_gap800": 10,
+   "sentences": 8
+  },
+  "AU13": {
+   "runs_gap200": 42,
+   "runs_gap400": 36,
+   "runs_gap600": 30,
+   "runs_gap800": 21,
+   "sentences": 9
+  }
+ },
+ "unblock": "人工在 audit/P3-06_samples/shadowing_samples.json 中为 4-5 句填写 start_ms/end_ms，并把 timing_source 改为 manual_verified",
+ "count": 5,
+ "samples": [
+  {
+   "sample_id": "P3-06-S001",
+   "module": null,
+   "unit": "Starter",
+   "activity": "A4",
+   "sentence": "Hello everyone!",
+   "speaker": null,
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_path": "/audio/official/AU06.mp3",
+   "start_ms": null,
+   "end_ms": null,
+   "timing_source": "unverified",
+   "verification_note": "未人工听标：声学静音分组与句子数不匹配（AU06 14 组 vs 8 句；AU13 42 组 vs 9 句），按规范「宁可不用，也不猜时间」保持为空"
+  },
+  {
+   "sample_id": "P3-06-S002",
+   "module": null,
+   "unit": "Starter",
+   "activity": "A4",
+   "sentence": "My name is Zhu Xiaomeng.",
+   "speaker": null,
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_path": "/audio/official/AU06.mp3",
+   "start_ms": null,
+   "end_ms": null,
+   "timing_source": "unverified",
+   "verification_note": "未人工听标：声学静音分组与句子数不匹配（AU06 14 组 vs 8 句；AU13 42 组 vs 9 句），按规范「宁可不用，也不猜时间」保持为空"
+  },
+  {
+   "sample_id": "P3-06-S003",
+   "module": null,
+   "unit": "Starter",
+   "activity": "A4",
+   "sentence": "I’m thirteen years old.",
+   "speaker": null,
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_path": "/audio/official/AU06.mp3",
+   "start_ms": null,
+   "end_ms": null,
+   "timing_source": "unverified",
+   "verification_note": "未人工听标：声学静音分组与句子数不匹配（AU06 14 组 vs 8 句；AU13 42 组 vs 9 句），按规范「宁可不用，也不猜时间」保持为空"
+  },
+  {
+   "sample_id": "P3-06-S004",
+   "module": null,
+   "unit": "Starter",
+   "activity": "A4",
+   "sentence": "I want to make friends with you all!",
+   "speaker": null,
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+   "audio_path": "/audio/official/AU06.mp3",
+   "start_ms": null,
+   "end_ms": null,
+   "timing_source": "unverified",
+   "verification_note": "未人工听标：声学静音分组与句子数不匹配（AU06 14 组 vs 8 句；AU13 42 组 vs 9 句），按规范「宁可不用，也不猜时间」保持为空"
+  },
+  {
+   "sample_id": "P3-06-S005",
+   "module": null,
+   "unit": "Unit 1",
+   "activity": "A2",
+   "sentence": "We want to share some thoughts with you.",
+   "speaker": null,
+   "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+   "audio_path": "/audio/official/AU13.mp3",
+   "start_ms": null,
+   "end_ms": null,
+   "timing_source": "unverified",
+   "verification_note": "未人工听标：声学静音分组与句子数不匹配（AU06 14 组 vs 8 句；AU13 42 组 vs 9 句），按规范「宁可不用，也不猜时间」保持为空"
+  }
+ ]
+}

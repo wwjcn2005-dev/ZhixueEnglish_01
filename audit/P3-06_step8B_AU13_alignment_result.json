@@ -1,0 +1,1525 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+  "audio_url": "/audio/official/AU13.mp3",
+  "original_file": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\13_Unit 1_Developing ideas _Reading for writing_2 Read the passage and find out the meaning of the title.mp3",
+  "duration_ms": 101355,
+  "source": "faster-whisper-word-timestamps",
+  "alignment_method": "faster-whisper word timestamps + normalized contiguous textbook-sequence matching",
+  "model": "small (Systran/faster-whisper-small, local snapshot)",
+  "runtime": {
+    "python": "3.12.10",
+    "device": "cpu",
+    "compute_type": "int8",
+    "model_load_s": 1.4,
+    "transcribe_s": 23.1,
+    "download_model": false,
+    "cloud_ai_calls": 0,
+    "local_files_only": true
+  },
+  "segment_count": 23,
+  "word_count": 173,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.4,
+      "text": "Reading for writing. Activity too."
+    },
+    {
+      "start": 4.42,
+      "end": 8.5,
+      "text": "Read the passage and find out the meaning of the title."
+    },
+    {
+      "start": 10.22,
+      "end": 12.58,
+      "text": "Before your journey starts"
+    },
+    {
+      "start": 13.94,
+      "end": 20.26,
+      "text": "Mia, how do you feel about your first day in junior high tomorrow?"
+    },
+    {
+      "start": 21.08,
+      "end": 24.3,
+      "text": "Well, I'm a little nervous."
+    },
+    {
+      "start": 25.2,
+      "end": 28.94,
+      "text": "Don't worry, we've got something for you."
+    },
+    {
+      "start": 28.94,
+      "end": 32.4,
+      "text": "Look, a paper boat?"
+    },
+    {
+      "start": 33.38,
+      "end": 38.3,
+      "text": "Yes, and it's also a letter from mum and me."
+    },
+    {
+      "start": 39.04,
+      "end": 41.6,
+      "text": "We want to share some thoughts with you."
+    },
+    {
+      "start": 42.28,
+      "end": 44.42,
+      "text": "Oh, thank you."
+    },
+    {
+      "start": 46.2,
+      "end": 48.94,
+      "text": "Dear Mia, time flies."
+    },
+    {
+      "start": 50.22,
+      "end": 54.64,
+      "text": "You are now in junior high. Are you ready for your new life?"
+    },
+    {
+      "start": 55.72,
+      "end": 58.5,
+      "text": "Primary school is like a small pool."
+    },
+    {
+      "start": 59.44,
+      "end": 64.58,
+      "text": "Your boat is safe there. Dad and mum can protect it from winds."
+    },
+    {
+      "start": 65.6,
+      "end": 68.06,
+      "text": "But junior high is like a river."
+    },
+    {
+      "start": 69.06,
+      "end": 72.3,
+      "text": "It is wide and the water moves fast."
+    },
+    {
+      "start": 73.4,
+      "end": 75.24,
+      "text": "You will face new problems."
+    },
+    {
+      "start": 76.22,
+      "end": 78.02,
+      "text": "We are still here to help."
+    },
+    {
+      "start": 78.68,
+      "end": 82.52,
+      "text": "But sometimes you have to sail your boat by yourself."
+    },
+    {
+      "start": 82.52,
+      "end": 86.32,
+      "text": "Just try your best and work hard."
+    },
+    {
+      "start": 87.26,
+      "end": 90.14,
+      "text": "You will go through storms towards the sea."
+    },
+    {
+      "start": 91.5,
+      "end": 94.42,
+      "text": "We hope this letter helps you in the coming years."
+    },
+    {
+      "start": 95.3,
+      "end": 98.12,
+      "text": "With love, dad and mum."
+    }
+  ],
+  "words": [
+    {
+      "word": "Reading",
+      "start": 0.0,
+      "end": 0.64
+    },
+    {
+      "word": "for",
+      "start": 0.64,
+      "end": 1.06
+    },
+    {
+      "word": "writing.",
+      "start": 1.06,
+      "end": 1.52
+    },
+    {
+      "word": "Activity",
+      "start": 2.26,
+      "end": 3.0
+    },
+    {
+      "word": "too.",
+      "start": 3.0,
+      "end": 3.4
+    },
+    {
+      "word": "Read",
+      "start": 4.42,
+      "end": 4.78
+    },
+    {
+      "word": "the",
+      "start": 4.78,
+      "end": 5.02
+    },
+    {
+      "word": "passage",
+      "start": 5.02,
+      "end": 5.48
+    },
+    {
+      "word": "and",
+      "start": 5.48,
+      "end": 6.28
+    },
+    {
+      "word": "find",
+      "start": 6.28,
+      "end": 6.7
+    },
+    {
+      "word": "out",
+      "start": 6.7,
+      "end": 7.0
+    },
+    {
+      "word": "the",
+      "start": 7.0,
+      "end": 7.22
+    },
+    {
+      "word": "meaning",
+      "start": 7.22,
+      "end": 7.66
+    },
+    {
+      "word": "of",
+      "start": 7.66,
+      "end": 7.92
+    },
+    {
+      "word": "the",
+      "start": 7.92,
+      "end": 8.06
+    },
+    {
+      "word": "title.",
+      "start": 8.06,
+      "end": 8.5
+    },
+    {
+      "word": "Before",
+      "start": 10.22,
+      "end": 10.9
+    },
+    {
+      "word": "your",
+      "start": 10.9,
+      "end": 11.38
+    },
+    {
+      "word": "journey",
+      "start": 11.38,
+      "end": 11.86
+    },
+    {
+      "word": "starts",
+      "start": 11.86,
+      "end": 12.58
+    },
+    {
+      "word": "Mia,",
+      "start": 13.94,
+      "end": 14.86
+    },
+    {
+      "word": "how",
+      "start": 15.42,
+      "end": 16.08
+    },
+    {
+      "word": "do",
+      "start": 16.08,
+      "end": 16.26
+    },
+    {
+      "word": "you",
+      "start": 16.26,
+      "end": 16.44
+    },
+    {
+      "word": "feel",
+      "start": 16.44,
+      "end": 16.84
+    },
+    {
+      "word": "about",
+      "start": 16.84,
+      "end": 17.14
+    },
+    {
+      "word": "your",
+      "start": 17.14,
+      "end": 17.46
+    },
+    {
+      "word": "first",
+      "start": 17.46,
+      "end": 17.92
+    },
+    {
+      "word": "day",
+      "start": 17.92,
+      "end": 18.42
+    },
+    {
+      "word": "in",
+      "start": 18.42,
+      "end": 18.78
+    },
+    {
+      "word": "junior",
+      "start": 18.78,
+      "end": 19.18
+    },
+    {
+      "word": "high",
+      "start": 19.18,
+      "end": 19.8
+    },
+    {
+      "word": "tomorrow?",
+      "start": 19.8,
+      "end": 20.26
+    },
+    {
+      "word": "Well,",
+      "start": 21.08,
+      "end": 21.76
+    },
+    {
+      "word": "I'm",
+      "start": 22.54,
+      "end": 23.12
+    },
+    {
+      "word": "a",
+      "start": 23.12,
+      "end": 23.26
+    },
+    {
+      "word": "little",
+      "start": 23.26,
+      "end": 23.6
+    },
+    {
+      "word": "nervous.",
+      "start": 23.6,
+      "end": 24.3
+    },
+    {
+      "word": "Don't",
+      "start": 25.2,
+      "end": 25.84
+    },
+    {
+      "word": "worry,",
+      "start": 25.84,
+      "end": 26.28
+    },
+    {
+      "word": "we've",
+      "start": 26.9,
+      "end": 27.4
+    },
+    {
+      "word": "got",
+      "start": 27.4,
+      "end": 27.64
+    },
+    {
+      "word": "something",
+      "start": 27.64,
+      "end": 28.08
+    },
+    {
+      "word": "for",
+      "start": 28.08,
+      "end": 28.54
+    },
+    {
+      "word": "you.",
+      "start": 28.54,
+      "end": 28.94
+    },
+    {
+      "word": "Look,",
+      "start": 28.94,
+      "end": 29.72
+    },
+    {
+      "word": "a",
+      "start": 30.84,
+      "end": 31.08
+    },
+    {
+      "word": "paper",
+      "start": 31.08,
+      "end": 31.82
+    },
+    {
+      "word": "boat?",
+      "start": 31.82,
+      "end": 32.4
+    },
+    {
+      "word": "Yes,",
+      "start": 33.38,
+      "end": 33.92
+    },
+    {
+      "word": "and",
+      "start": 34.76,
+      "end": 35.26
+    },
+    {
+      "word": "it's",
+      "start": 35.26,
+      "end": 35.66
+    },
+    {
+      "word": "also",
+      "start": 35.66,
+      "end": 36.14
+    },
+    {
+      "word": "a",
+      "start": 36.14,
+      "end": 36.46
+    },
+    {
+      "word": "letter",
+      "start": 36.46,
+      "end": 36.78
+    },
+    {
+      "word": "from",
+      "start": 36.78,
+      "end": 37.32
+    },
+    {
+      "word": "mum",
+      "start": 37.32,
+      "end": 37.7
+    },
+    {
+      "word": "and",
+      "start": 37.7,
+      "end": 37.94
+    },
+    {
+      "word": "me.",
+      "start": 37.94,
+      "end": 38.3
+    },
+    {
+      "word": "We",
+      "start": 39.04,
+      "end": 39.64
+    },
+    {
+      "word": "want",
+      "start": 39.64,
+      "end": 39.86
+    },
+    {
+      "word": "to",
+      "start": 39.86,
+      "end": 40.06
+    },
+    {
+      "word": "share",
+      "start": 40.06,
+      "end": 40.38
+    },
+    {
+      "word": "some",
+      "start": 40.38,
+      "end": 40.66
+    },
+    {
+      "word": "thoughts",
+      "start": 40.66,
+      "end": 41.06
+    },
+    {
+      "word": "with",
+      "start": 41.06,
+      "end": 41.34
+    },
+    {
+      "word": "you.",
+      "start": 41.34,
+      "end": 41.6
+    },
+    {
+      "word": "Oh,",
+      "start": 42.28,
+      "end": 42.96
+    },
+    {
+      "word": "thank",
+      "start": 43.28,
+      "end": 43.78
+    },
+    {
+      "word": "you.",
+      "start": 43.78,
+      "end": 44.42
+    },
+    {
+      "word": "Dear",
+      "start": 46.2,
+      "end": 46.82
+    },
+    {
+      "word": "Mia,",
+      "start": 46.82,
+      "end": 47.08
+    },
+    {
+      "word": "time",
+      "start": 47.94,
+      "end": 48.48
+    },
+    {
+      "word": "flies.",
+      "start": 48.48,
+      "end": 48.94
+    },
+    {
+      "word": "You",
+      "start": 50.22,
+      "end": 50.6
+    },
+    {
+      "word": "are",
+      "start": 50.6,
+      "end": 50.72
+    },
+    {
+      "word": "now",
+      "start": 50.72,
+      "end": 50.92
+    },
+    {
+      "word": "in",
+      "start": 50.92,
+      "end": 51.2
+    },
+    {
+      "word": "junior",
+      "start": 51.2,
+      "end": 51.52
+    },
+    {
+      "word": "high.",
+      "start": 51.52,
+      "end": 52.08
+    },
+    {
+      "word": "Are",
+      "start": 52.84,
+      "end": 53.04
+    },
+    {
+      "word": "you",
+      "start": 53.04,
+      "end": 53.18
+    },
+    {
+      "word": "ready",
+      "start": 53.18,
+      "end": 53.46
+    },
+    {
+      "word": "for",
+      "start": 53.46,
+      "end": 53.78
+    },
+    {
+      "word": "your",
+      "start": 53.78,
+      "end": 53.94
+    },
+    {
+      "word": "new",
+      "start": 53.94,
+      "end": 54.24
+    },
+    {
+      "word": "life?",
+      "start": 54.24,
+      "end": 54.64
+    },
+    {
+      "word": "Primary",
+      "start": 55.72,
+      "end": 56.44
+    },
+    {
+      "word": "school",
+      "start": 56.44,
+      "end": 57.0
+    },
+    {
+      "word": "is",
+      "start": 57.0,
+      "end": 57.32
+    },
+    {
+      "word": "like",
+      "start": 57.32,
+      "end": 57.54
+    },
+    {
+      "word": "a",
+      "start": 57.54,
+      "end": 57.7
+    },
+    {
+      "word": "small",
+      "start": 57.7,
+      "end": 58.02
+    },
+    {
+      "word": "pool.",
+      "start": 58.02,
+      "end": 58.5
+    },
+    {
+      "word": "Your",
+      "start": 59.44,
+      "end": 59.66
+    },
+    {
+      "word": "boat",
+      "start": 59.66,
+      "end": 60.02
+    },
+    {
+      "word": "is",
+      "start": 60.02,
+      "end": 60.36
+    },
+    {
+      "word": "safe",
+      "start": 60.36,
+      "end": 60.74
+    },
+    {
+      "word": "there.",
+      "start": 60.74,
+      "end": 61.1
+    },
+    {
+      "word": "Dad",
+      "start": 61.82,
+      "end": 62.14
+    },
+    {
+      "word": "and",
+      "start": 62.14,
+      "end": 62.48
+    },
+    {
+      "word": "mum",
+      "start": 62.48,
+      "end": 62.8
+    },
+    {
+      "word": "can",
+      "start": 62.8,
+      "end": 63.06
+    },
+    {
+      "word": "protect",
+      "start": 63.06,
+      "end": 63.44
+    },
+    {
+      "word": "it",
+      "start": 63.44,
+      "end": 63.82
+    },
+    {
+      "word": "from",
+      "start": 63.82,
+      "end": 64.06
+    },
+    {
+      "word": "winds.",
+      "start": 64.06,
+      "end": 64.58
+    },
+    {
+      "word": "But",
+      "start": 65.6,
+      "end": 65.92
+    },
+    {
+      "word": "junior",
+      "start": 65.92,
+      "end": 66.3
+    },
+    {
+      "word": "high",
+      "start": 66.3,
+      "end": 66.9
+    },
+    {
+      "word": "is",
+      "start": 66.9,
+      "end": 67.5
+    },
+    {
+      "word": "like",
+      "start": 67.5,
+      "end": 67.7
+    },
+    {
+      "word": "a",
+      "start": 67.7,
+      "end": 67.86
+    },
+    {
+      "word": "river.",
+      "start": 67.86,
+      "end": 68.06
+    },
+    {
+      "word": "It",
+      "start": 69.06,
+      "end": 69.24
+    },
+    {
+      "word": "is",
+      "start": 69.24,
+      "end": 69.36
+    },
+    {
+      "word": "wide",
+      "start": 69.36,
+      "end": 69.82
+    },
+    {
+      "word": "and",
+      "start": 69.82,
+      "end": 70.44
+    },
+    {
+      "word": "the",
+      "start": 70.44,
+      "end": 70.7
+    },
+    {
+      "word": "water",
+      "start": 70.7,
+      "end": 71.08
+    },
+    {
+      "word": "moves",
+      "start": 71.08,
+      "end": 71.74
+    },
+    {
+      "word": "fast.",
+      "start": 71.74,
+      "end": 72.3
+    },
+    {
+      "word": "You",
+      "start": 73.4,
+      "end": 73.84
+    },
+    {
+      "word": "will",
+      "start": 73.84,
+      "end": 74.08
+    },
+    {
+      "word": "face",
+      "start": 74.08,
+      "end": 74.42
+    },
+    {
+      "word": "new",
+      "start": 74.42,
+      "end": 74.76
+    },
+    {
+      "word": "problems.",
+      "start": 74.76,
+      "end": 75.24
+    },
+    {
+      "word": "We",
+      "start": 76.22,
+      "end": 76.78
+    },
+    {
+      "word": "are",
+      "start": 76.78,
+      "end": 76.96
+    },
+    {
+      "word": "still",
+      "start": 76.96,
+      "end": 77.16
+    },
+    {
+      "word": "here",
+      "start": 77.16,
+      "end": 77.48
+    },
+    {
+      "word": "to",
+      "start": 77.48,
+      "end": 77.68
+    },
+    {
+      "word": "help.",
+      "start": 77.68,
+      "end": 78.02
+    },
+    {
+      "word": "But",
+      "start": 78.68,
+      "end": 79.04
+    },
+    {
+      "word": "sometimes",
+      "start": 79.04,
+      "end": 79.5
+    },
+    {
+      "word": "you",
+      "start": 79.5,
+      "end": 80.46
+    },
+    {
+      "word": "have",
+      "start": 80.46,
+      "end": 80.64
+    },
+    {
+      "word": "to",
+      "start": 80.64,
+      "end": 80.82
+    },
+    {
+      "word": "sail",
+      "start": 80.82,
+      "end": 81.16
+    },
+    {
+      "word": "your",
+      "start": 81.16,
+      "end": 81.4
+    },
+    {
+      "word": "boat",
+      "start": 81.4,
+      "end": 81.84
+    },
+    {
+      "word": "by",
+      "start": 81.84,
+      "end": 82.1
+    },
+    {
+      "word": "yourself.",
+      "start": 82.1,
+      "end": 82.52
+    },
+    {
+      "word": "Just",
+      "start": 82.52,
+      "end": 83.74
+    },
+    {
+      "word": "try",
+      "start": 83.74,
+      "end": 84.38
+    },
+    {
+      "word": "your",
+      "start": 84.38,
+      "end": 84.62
+    },
+    {
+      "word": "best",
+      "start": 84.62,
+      "end": 85.04
+    },
+    {
+      "word": "and",
+      "start": 85.04,
+      "end": 85.62
+    },
+    {
+      "word": "work",
+      "start": 85.62,
+      "end": 85.88
+    },
+    {
+      "word": "hard.",
+      "start": 85.88,
+      "end": 86.32
+    },
+    {
+      "word": "You",
+      "start": 87.26,
+      "end": 87.72
+    },
+    {
+      "word": "will",
+      "start": 87.72,
+      "end": 87.96
+    },
+    {
+      "word": "go",
+      "start": 87.96,
+      "end": 88.18
+    },
+    {
+      "word": "through",
+      "start": 88.18,
+      "end": 88.44
+    },
+    {
+      "word": "storms",
+      "start": 88.44,
+      "end": 89.06
+    },
+    {
+      "word": "towards",
+      "start": 89.06,
+      "end": 89.42
+    },
+    {
+      "word": "the",
+      "start": 89.42,
+      "end": 89.8
+    },
+    {
+      "word": "sea.",
+      "start": 89.8,
+      "end": 90.14
+    },
+    {
+      "word": "We",
+      "start": 91.5,
+      "end": 91.78
+    },
+    {
+      "word": "hope",
+      "start": 91.78,
+      "end": 92.0
+    },
+    {
+      "word": "this",
+      "start": 92.0,
+      "end": 92.26
+    },
+    {
+      "word": "letter",
+      "start": 92.26,
+      "end": 92.58
+    },
+    {
+      "word": "helps",
+      "start": 92.58,
+      "end": 93.02
+    },
+    {
+      "word": "you",
+      "start": 93.02,
+      "end": 93.32
+    },
+    {
+      "word": "in",
+      "start": 93.32,
+      "end": 93.54
+    },
+    {
+      "word": "the",
+      "start": 93.54,
+      "end": 93.64
+    },
+    {
+      "word": "coming",
+      "start": 93.64,
+      "end": 93.92
+    },
+    {
+      "word": "years.",
+      "start": 93.92,
+      "end": 94.42
+    },
+    {
+      "word": "With",
+      "start": 95.3,
+      "end": 95.56
+    },
+    {
+      "word": "love,",
+      "start": 95.56,
+      "end": 95.84
+    },
+    {
+      "word": "dad",
+      "start": 96.62,
+      "end": 97.1
+    },
+    {
+      "word": "and",
+      "start": 97.1,
+      "end": 97.86
+    },
+    {
+      "word": "mum.",
+      "start": 97.86,
+      "end": 98.12
+    }
+  ],
+  "sentences": [
+    {
+      "sentence_index": 1,
+      "speaker": "Dad",
+      "textbook_text": "Mia, how do you feel about your first day in junior high tomorrow?",
+      "start_ms": 13940,
+      "end_ms": 20260,
+      "duration_ms": 6320,
+      "matched_words": [
+        {
+          "word": "Mia,",
+          "start_ms": 13940,
+          "end_ms": 14860
+        },
+        {
+          "word": "how",
+          "start_ms": 15420,
+          "end_ms": 16080
+        },
+        {
+          "word": "do",
+          "start_ms": 16080,
+          "end_ms": 16260
+        },
+        {
+          "word": "you",
+          "start_ms": 16260,
+          "end_ms": 16440
+        },
+        {
+          "word": "feel",
+          "start_ms": 16440,
+          "end_ms": 16840
+        },
+        {
+          "word": "about",
+          "start_ms": 16840,
+          "end_ms": 17140
+        },
+        {
+          "word": "your",
+          "start_ms": 17140,
+          "end_ms": 17460
+        },
+        {
+          "word": "first",
+          "start_ms": 17460,
+          "end_ms": 17920
+        },
+        {
+          "word": "day",
+          "start_ms": 17920,
+          "end_ms": 18420
+        },
+        {
+          "word": "in",
+          "start_ms": 18420,
+          "end_ms": 18780
+        },
+        {
+          "word": "junior",
+          "start_ms": 18780,
+          "end_ms": 19180
+        },
+        {
+          "word": "high",
+          "start_ms": 19180,
+          "end_ms": 19800
+        },
+        {
+          "word": "tomorrow?",
+          "start_ms": 19800,
+          "end_ms": 20260
+        }
+      ],
+      "expected_words": [
+        "mia",
+        "how",
+        "do",
+        "you",
+        "feel",
+        "about",
+        "your",
+        "first",
+        "day",
+        "in",
+        "junior",
+        "high",
+        "tomorrow"
+      ],
+      "match_score": 1.0,
+      "match_count": "13/13",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": null
+    },
+    {
+      "sentence_index": 2,
+      "speaker": "Mia",
+      "textbook_text": "Well, I'm a little nervous.",
+      "start_ms": 21080,
+      "end_ms": 24300,
+      "duration_ms": 3220,
+      "matched_words": [
+        {
+          "word": "Well,",
+          "start_ms": 21080,
+          "end_ms": 21760
+        },
+        {
+          "word": "I'm",
+          "start_ms": 22540,
+          "end_ms": 23120
+        },
+        {
+          "word": "a",
+          "start_ms": 23120,
+          "end_ms": 23260
+        },
+        {
+          "word": "little",
+          "start_ms": 23260,
+          "end_ms": 23600
+        },
+        {
+          "word": "nervous.",
+          "start_ms": 23600,
+          "end_ms": 24300
+        }
+      ],
+      "expected_words": [
+        "well",
+        "i",
+        "am",
+        "a",
+        "little",
+        "nervous"
+      ],
+      "match_score": 1.0,
+      "match_count": "6/6",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": 820
+    },
+    {
+      "sentence_index": 3,
+      "speaker": "Mum",
+      "textbook_text": "Don't worry.",
+      "start_ms": 25200,
+      "end_ms": 26280,
+      "duration_ms": 1080,
+      "matched_words": [
+        {
+          "word": "Don't",
+          "start_ms": 25200,
+          "end_ms": 25840
+        },
+        {
+          "word": "worry,",
+          "start_ms": 25840,
+          "end_ms": 26280
+        }
+      ],
+      "expected_words": [
+        "do",
+        "not",
+        "worry"
+      ],
+      "match_score": 1.0,
+      "match_count": "3/3",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": 900
+    },
+    {
+      "sentence_index": 4,
+      "speaker": "Mum",
+      "textbook_text": "We've got something for you!",
+      "start_ms": 26900,
+      "end_ms": 28940,
+      "duration_ms": 2040,
+      "matched_words": [
+        {
+          "word": "we've",
+          "start_ms": 26900,
+          "end_ms": 27400
+        },
+        {
+          "word": "got",
+          "start_ms": 27400,
+          "end_ms": 27640
+        },
+        {
+          "word": "something",
+          "start_ms": 27640,
+          "end_ms": 28080
+        },
+        {
+          "word": "for",
+          "start_ms": 28080,
+          "end_ms": 28540
+        },
+        {
+          "word": "you.",
+          "start_ms": 28540,
+          "end_ms": 28940
+        }
+      ],
+      "expected_words": [
+        "we",
+        "have",
+        "got",
+        "something",
+        "for",
+        "you"
+      ],
+      "match_score": 1.0,
+      "match_count": "6/6",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": 620
+    },
+    {
+      "sentence_index": 5,
+      "speaker": "Mum",
+      "textbook_text": "Look!",
+      "start_ms": 28940,
+      "end_ms": 29720,
+      "duration_ms": 780,
+      "matched_words": [
+        {
+          "word": "Look,",
+          "start_ms": 28940,
+          "end_ms": 29720
+        }
+      ],
+      "expected_words": [
+        "look"
+      ],
+      "match_score": 1.0,
+      "match_count": "1/1",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": 0
+    },
+    {
+      "sentence_index": 6,
+      "speaker": "Mia",
+      "textbook_text": "A paper boat?",
+      "start_ms": 30840,
+      "end_ms": 32400,
+      "duration_ms": 1560,
+      "matched_words": [
+        {
+          "word": "a",
+          "start_ms": 30840,
+          "end_ms": 31080
+        },
+        {
+          "word": "paper",
+          "start_ms": 31080,
+          "end_ms": 31820
+        },
+        {
+          "word": "boat?",
+          "start_ms": 31820,
+          "end_ms": 32400
+        }
+      ],
+      "expected_words": [
+        "a",
+        "paper",
+        "boat"
+      ],
+      "match_score": 1.0,
+      "match_count": "3/3",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": 1120
+    },
+    {
+      "sentence_index": 7,
+      "speaker": "Dad",
+      "textbook_text": "Yes, and it's also a letter from Mum and me.",
+      "start_ms": 33380,
+      "end_ms": 38300,
+      "duration_ms": 4920,
+      "matched_words": [
+        {
+          "word": "Yes,",
+          "start_ms": 33380,
+          "end_ms": 33920
+        },
+        {
+          "word": "and",
+          "start_ms": 34760,
+          "end_ms": 35260
+        },
+        {
+          "word": "it's",
+          "start_ms": 35260,
+          "end_ms": 35660
+        },
+        {
+          "word": "also",
+          "start_ms": 35660,
+          "end_ms": 36140
+        },
+        {
+          "word": "a",
+          "start_ms": 36140,
+          "end_ms": 36460
+        },
+        {
+          "word": "letter",
+          "start_ms": 36460,
+          "end_ms": 36780
+        },
+        {
+          "word": "from",
+          "start_ms": 36780,
+          "end_ms": 37320
+        },
+        {
+          "word": "mum",
+          "start_ms": 37320,
+          "end_ms": 37700
+        },
+        {
+          "word": "and",
+          "start_ms": 37700,
+          "end_ms": 37940
+        },
+        {
+          "word": "me.",
+          "start_ms": 37940,
+          "end_ms": 38300
+        }
+      ],
+      "expected_words": [
+        "yes",
+        "and",
+        "it",
+        "is",
+        "also",
+        "a",
+        "letter",
+        "from",
+        "mum",
+        "and",
+        "me"
+      ],
+      "match_score": 1.0,
+      "match_count": "11/11",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": 980
+    },
+    {
+      "sentence_index": 8,
+      "speaker": "Dad",
+      "textbook_text": "We want to share some thoughts with you.",
+      "start_ms": 39040,
+      "end_ms": 41600,
+      "duration_ms": 2560,
+      "matched_words": [
+        {
+          "word": "We",
+          "start_ms": 39040,
+          "end_ms": 39640
+        },
+        {
+          "word": "want",
+          "start_ms": 39640,
+          "end_ms": 39860
+        },
+        {
+          "word": "to",
+          "start_ms": 39860,
+          "end_ms": 40060
+        },
+        {
+          "word": "share",
+          "start_ms": 40060,
+          "end_ms": 40380
+        },
+        {
+          "word": "some",
+          "start_ms": 40380,
+          "end_ms": 40660
+        },
+        {
+          "word": "thoughts",
+          "start_ms": 40660,
+          "end_ms": 41060
+        },
+        {
+          "word": "with",
+          "start_ms": 41060,
+          "end_ms": 41340
+        },
+        {
+          "word": "you.",
+          "start_ms": 41340,
+          "end_ms": 41600
+        }
+      ],
+      "expected_words": [
+        "we",
+        "want",
+        "to",
+        "share",
+        "some",
+        "thoughts",
+        "with",
+        "you"
+      ],
+      "match_score": 1.0,
+      "match_count": "8/8",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": 740
+    },
+    {
+      "sentence_index": 9,
+      "speaker": "Mia",
+      "textbook_text": "Oh, thank you!",
+      "start_ms": 42280,
+      "end_ms": 44420,
+      "duration_ms": 2140,
+      "matched_words": [
+        {
+          "word": "Oh,",
+          "start_ms": 42280,
+          "end_ms": 42960
+        },
+        {
+          "word": "thank",
+          "start_ms": 43280,
+          "end_ms": 43780
+        },
+        {
+          "word": "you.",
+          "start_ms": 43780,
+          "end_ms": 44420
+        }
+      ],
+      "expected_words": [
+        "oh",
+        "thank",
+        "you"
+      ],
+      "match_score": 1.0,
+      "match_count": "3/3",
+      "match_mode": "exact",
+      "status": "CANDIDATE",
+      "gap_from_prev_ms": 680
+    }
+  ],
+  "status": "CANDIDATE_WITH_MATCH_REVIEW_REQUIRED",
+  "textbook_is_authority": true,
+  "coverage": {
+    "status": "MATCH_REVIEW_REQUIRED",
+    "reason": "Step 8B-0 的 9 句基准只覆盖 AU13 音频中的对话部分；原始 AU13 音频还包含标题、instruction 和后续书信正文，本步骤按任务要求未对书信正文生成时间候选。",
+    "baseline_scope": "AU13 对话 9 句（Step 8B-0 §3）",
+    "extra_audio_text": [
+      {
+        "kind": "instruction",
+        "segment_index": 1,
+        "start_ms": 0,
+        "end_ms": 3400,
+        "text": "Reading for writing. Activity too."
+      },
+      {
+        "kind": "instruction",
+        "segment_index": 2,
+        "start_ms": 4420,
+        "end_ms": 8500,
+        "text": "Read the passage and find out the meaning of the title."
+      },
+      {
+        "kind": "title",
+        "segment_index": 3,
+        "start_ms": 10220,
+        "end_ms": 12580,
+        "text": "Before your journey starts"
+      },
+      {
+        "kind": "passage_letter",
+        "segment_indexes": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "start_ms": 46200,
+        "end_ms": 98120,
+        "text": "Dear Mia, time flies. / You are now in junior high. Are you ready for your new life? / Primary school is like a small pool. / Your boat is safe there. Dad and mum can protect it from winds. / But junior high is like a river. / It is wide and the water moves fast. / You will face new problems. / We are still here to help. / But sometimes you have to sail your boat by yourself. / Just try your best and work hard. / You will go through storms towards the sea. / We hope this letter helps you in the coming years. / With love, dad and mum."
+      }
+    ],
+    "note": "该额外文本已出现在原始 AU13 音频与项目既有结构化教材记录中；不得自动扩展为正式时间数据，需等待后续权威文本补核。"
+  },
+  "match_summary": {
+    "baseline_sentence_count": 9,
+    "candidate_count": 9,
+    "match_review_required_count": 0,
+    "all_baseline_sentences_matched": true,
+    "monotonic_start_ms": true,
+    "no_overlap": true,
+    "within_duration": true
+  }
+}

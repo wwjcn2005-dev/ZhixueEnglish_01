@@ -1,0 +1,967 @@
+{
+ "run": "sentence distractors full generation",
+ "model": "deepseek-v4-pro",
+ "prompt_version": "sentence-distractor-v1",
+ "rules_version": "rules-v2",
+ "batch_size": 5,
+ "targets": 38,
+ "batches": 8,
+ "ai_calls": 8,
+ "failed_batches": [
+  {
+   "batch": 6,
+   "api_error": "HTTPError 402: Payment Required",
+   "finish_reason": null,
+   "sentences": [
+    "Dad and Mum can protect it from winds.",
+    "Just try your best and work hard.",
+    "“Why don’t we put our music together?",
+    "Why do you know so much about birds?",
+    "What do you like about bird-watching?"
+   ]
+  },
+  {
+   "batch": 7,
+   "api_error": "HTTPError 402: Payment Required",
+   "finish_reason": null,
+   "sentences": [
+    "Let’s meet here on Wednesday after lunch.",
+    "Can you change your clothes before you come?",
+    "How I wish to have four hands now!",
+    "“Are you joking?",
+    "What does tea mean to you?"
+   ]
+  },
+  {
+   "batch": 8,
+   "api_error": "HTTPError 402: Payment Required",
+   "finish_reason": null,
+   "sentences": [
+    "Do you remember your first meeting?",
+    "Are you looking at me?",
+    "Do you know me?"
+   ]
+  }
+ ],
+ "samples": [
+  {
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "Are you ready?",
+   "sentence_uid": "PREVIEW:AU01:S0005",
+   "textbook_page": 8,
+   "raw_count": 2,
+   "kept_count": 1,
+   "kept": [
+    "Are you nervous?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Are you nervous?",
+     "confidence": 0.72,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU01:S0005",
+      "FLTRP-EN-7A-2022CUR:V:AE91EA82D493"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Are you thirteen?",
+     "reason": "low_confidence"
+    }
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "What are you going to wear tomorrow for school?",
+   "sentence_uid": "PREVIEW:AU03:S0063",
+   "textbook_page": 10,
+   "raw_count": 2,
+   "kept_count": 2,
+   "kept": [
+    "What shoes are you going to wear?",
+    "What jacket are you going to wear tomorrow for school?"
+   ],
+   "kept_detail": [
+    {
+     "text": "What shoes are you going to wear?",
+     "confidence": 0.9,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU03:S0067"
+     ]
+    },
+    {
+     "text": "What jacket are you going to wear tomorrow for school?",
+     "confidence": 0.62,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU03:S0063",
+      "FLTRP-EN-7A-2022CUR:V:237D9646D08E"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "How about you?",
+   "sentence_uid": "PREVIEW:AU03:S0065",
+   "textbook_page": 10,
+   "raw_count": 2,
+   "kept_count": 2,
+   "kept": [
+    "What about you?",
+    "How are you?"
+   ],
+   "kept_detail": [
+    {
+     "text": "What about you?",
+     "confidence": 0.82,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU03:S0065",
+      "PREVIEW:AU03:S0063"
+     ]
+    },
+    {
+     "text": "How are you?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU03:S0065",
+      "PREVIEW:AU01:S0005"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "What shoes are you going to wear?",
+   "sentence_uid": "PREVIEW:AU03:S0067",
+   "textbook_page": 10,
+   "raw_count": 2,
+   "kept_count": 2,
+   "kept": [
+    "What are you going to wear tomorrow for school?",
+    "What uniform are you going to wear?"
+   ],
+   "kept_detail": [
+    {
+     "text": "What are you going to wear tomorrow for school?",
+     "confidence": 0.9,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU03:S0063"
+     ]
+    },
+    {
+     "text": "What uniform are you going to wear?",
+     "confidence": 0.68,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU03:S0067",
+      "FLTRP-EN-7A-2022CUR:V:60B467B3131A"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "KNOW_YOUR_SCHOOL",
+   "correct_answer": "Let’s go around the school together!",
+   "sentence_uid": "PREVIEW:AU04:S0083",
+   "textbook_page": 11,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "Let’s explore the school together!",
+    "Let’s go around the lab together!"
+   ],
+   "kept_detail": [
+    {
+     "text": "Let’s explore the school together!",
+     "confidence": 0.72,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU04:S0083",
+      "FLTRP-EN-7A-2022CUR:V:61227E6086D6"
+     ]
+    },
+    {
+     "text": "Let’s go around the lab together!",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU04:S0083",
+      "FLTRP-EN-7A-2022CUR:V:5DA4F16D9DDC"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Let’s go around the teaching building together!",
+     "reason": "out_of_stage:teaching,building"
+    }
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "Hello everyone!",
+   "sentence_uid": "P3-06:AU06:1",
+   "textbook_page": 15,
+   "raw_count": 0,
+   "kept_count": 0,
+   "kept": [],
+   "kept_detail": [],
+   "filtered": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "My name is Zhu Xiaomeng.",
+   "sentence_uid": "P3-06:AU06:2",
+   "textbook_page": 15,
+   "raw_count": 2,
+   "kept_count": 2,
+   "kept": [
+    "My birthday is in May.",
+    "I’m thirteen years old."
+   ],
+   "kept_detail": [
+    {
+     "text": "My birthday is in May.",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:4"
+     ]
+    },
+    {
+     "text": "I’m thirteen years old.",
+     "confidence": 0.72,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:3"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I’m thirteen years old.",
+   "sentence_uid": "P3-06:AU06:3",
+   "textbook_page": 15,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "My name is Zhu Xiaomeng.",
+    "My birthday is in May.",
+    "I love sports very much."
+   ],
+   "kept_detail": [
+    {
+     "text": "My name is Zhu Xiaomeng.",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:2"
+     ]
+    },
+    {
+     "text": "My birthday is in May.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:4"
+     ]
+    },
+    {
+     "text": "I love sports very much.",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:5"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "My birthday is in May.",
+   "sentence_uid": "P3-06:AU06:4",
+   "textbook_page": 15,
+   "raw_count": 2,
+   "kept_count": 2,
+   "kept": [
+    "My name is Zhu Xiaomeng.",
+    "I’m thirteen years old."
+   ],
+   "kept_detail": [
+    {
+     "text": "My name is Zhu Xiaomeng.",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:2"
+     ]
+    },
+    {
+     "text": "I’m thirteen years old.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:3"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I love sports very much.",
+   "sentence_uid": "P3-06:AU06:5",
+   "textbook_page": 15,
+   "raw_count": 2,
+   "kept_count": 2,
+   "kept": [
+    "I like sports very much.",
+    "I like running, playing football and swimming."
+   ],
+   "kept_detail": [
+    {
+     "text": "I like sports very much.",
+     "confidence": 0.8,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:5",
+      "P3-06:AU06:6"
+     ]
+    },
+    {
+     "text": "I like running, playing football and swimming.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:6"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I like running, playing football and swimming.",
+   "sentence_uid": "P3-06:AU06:6",
+   "textbook_page": 15,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "I love running, playing football and swimming.",
+    "I like running and playing football."
+   ],
+   "kept_detail": [
+    {
+     "text": "I love running, playing football and swimming.",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:5",
+      "P3-06:AU06:6"
+     ]
+    },
+    {
+     "text": "I like running and playing football.",
+     "confidence": 0.6,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:6"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "My hobby is running, playing football and swimming.",
+     "reason": "low_confidence"
+    }
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I’m a bit nervous now, but I’m also happy to meet you.",
+   "sentence_uid": "P3-06:AU06:7",
+   "textbook_page": 15,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "I’m a bit nervous now, but I’m happy to meet you.",
+    "I’m a bit nervous, but I’m also happy to meet you."
+   ],
+   "kept_detail": [
+    {
+     "text": "I’m a bit nervous now, but I’m happy to meet you.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:7"
+     ]
+    },
+    {
+     "text": "I’m a bit nervous, but I’m also happy to meet you.",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:7"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "I’m a bit nervous now, but I’m also happy to meet everyone.",
+     "reason": "low_confidence"
+    }
+   ]
+  },
+  {
+   "unit": "Starter",
+   "lesson": "GET_TO_KNOW_EACH_OTHER",
+   "correct_answer": "I want to make friends with you all!",
+   "sentence_uid": "P3-06:AU06:8",
+   "textbook_page": 15,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "I want to make friends with everyone.",
+    "I want to meet you all!",
+    "I want to make friends with you."
+   ],
+   "kept_detail": [
+    {
+     "text": "I want to make friends with everyone.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:8",
+      "FLTRP-EN-7A-2022CUR:V:45B1D6F833F5"
+     ]
+    },
+    {
+     "text": "I want to meet you all!",
+     "confidence": 0.6,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:7",
+      "P3-06:AU06:8"
+     ]
+    },
+    {
+     "text": "I want to make friends with you.",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "P3-06:AU06:8"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "The new school year is beginning.",
+   "sentence_uid": "P3-07:AU11-B01",
+   "textbook_page": 27,
+   "raw_count": 2,
+   "kept_count": 2,
+   "kept": [
+    "The new school life is beginning.",
+    "The school year is beginning."
+   ],
+   "kept_detail": [
+    {
+     "text": "The new school life is beginning.",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B01",
+      "FLTRP-EN-7A-2022CUR:V:BC30B074EC0C"
+     ]
+    },
+    {
+     "text": "The school year is beginning.",
+     "confidence": 0.6,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B01"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "What are the new students' problems?",
+   "sentence_uid": "P3-07:AU11-B02",
+   "textbook_page": 27,
+   "raw_count": 3,
+   "kept_count": 1,
+   "kept": [
+    "What are the new students' activities?"
+   ],
+   "kept_detail": [
+    {
+     "text": "What are the new students' activities?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B02",
+      "P3-07:AU11-B04"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "What are the new students' homework?",
+     "reason": "low_confidence"
+    },
+    {
+     "text": "What are the new student's problems?",
+     "reason": "out_of_stage:student's"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "They have more subjects and more homework.",
+   "sentence_uid": "P3-07:AU11-B03",
+   "textbook_page": 27,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "They have more problems and more homework.",
+    "They have more subjects and more activities.",
+    "They have many subjects and more homework."
+   ],
+   "kept_detail": [
+    {
+     "text": "They have more problems and more homework.",
+     "confidence": 0.8,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B02",
+      "P3-07:AU11-B03"
+     ]
+    },
+    {
+     "text": "They have more subjects and more activities.",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B03",
+      "P3-07:AU11-B04"
+     ]
+    },
+    {
+     "text": "They have many subjects and more homework.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B03",
+      "P3-07:AU11-B04"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "They also have many activities.",
+   "sentence_uid": "P3-07:AU11-B04",
+   "textbook_page": 27,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "They also have many problems.",
+    "They also have more activities.",
+    "They also have more subjects and more homework."
+   ],
+   "kept_detail": [
+    {
+     "text": "They also have many problems.",
+     "confidence": 0.8,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B02",
+      "P3-07:AU11-B04"
+     ]
+    },
+    {
+     "text": "They also have more activities.",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B03",
+      "P3-07:AU11-B04"
+     ]
+    },
+    {
+     "text": "They also have more subjects and more homework.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B03",
+      "P3-07:AU11-B04"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "How can they make good use of their time?",
+   "sentence_uid": "P3-07:AU11-B05",
+   "textbook_page": 27,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "How do they make good use of their time?",
+    "How can they plan their time?",
+    "How can they make good use of their life?"
+   ],
+   "kept_detail": [
+    {
+     "text": "How do they make good use of their time?",
+     "confidence": 0.78,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B05",
+      "P3-07:AU13-DLG-01"
+     ]
+    },
+    {
+     "text": "How can they plan their time?",
+     "confidence": 0.72,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B05",
+      "FLTRP-EN-7A-2022CUR:V:D5F30C2F0466"
+     ]
+    },
+    {
+     "text": "How can they make good use of their life?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B05",
+      "FLTRP-EN-7A-2022CUR:V:BC30B074EC0C"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "The Students' Union will hold a talk this Thursday to help you.",
+   "sentence_uid": "P3-07:AU11-B06",
+   "textbook_page": 27,
+   "raw_count": 3,
+   "kept_count": 1,
+   "kept": [
+    "The Students' Union will plan a talk this Thursday to help you."
+   ],
+   "kept_detail": [
+    {
+     "text": "The Students' Union will plan a talk this Thursday to help you.",
+     "confidence": 0.72,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU11-B06",
+      "FLTRP-EN-7A-2022CUR:V:D5F30C2F0466"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "The new students will hold a talk this Thursday to help you.",
+     "reason": "out_of_stage:students"
+    },
+    {
+     "text": "The Students' Union will hold a talk this Thursday to help the new students.",
+     "reason": "out_of_stage:students"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Mia, how do you feel about your first day in junior high tomorrow?",
+   "sentence_uid": "P3-07:AU13-DLG-01",
+   "textbook_page": 29,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "Mia, are you ready for your first day in junior high tomorrow?",
+    "Mia, how do you feel about your new life in junior high?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Mia, are you ready for your first day in junior high tomorrow?",
+     "confidence": 0.75,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-01",
+      "PREVIEW:AU13:S0279"
+     ]
+    },
+    {
+     "text": "Mia, how do you feel about your new life in junior high?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-01",
+      "PREVIEW:AU13:S0279"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Mia, how do you feel about your first day in primary school tomorrow?",
+     "reason": "out_of_stage:primary"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Well, I'm a little nervous.",
+   "sentence_uid": "P3-07:AU13-DLG-02",
+   "textbook_page": 29,
+   "raw_count": 2,
+   "kept_count": 1,
+   "kept": [
+    "Well, I'm really nervous."
+   ],
+   "kept_detail": [
+    {
+     "text": "Well, I'm really nervous.",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-02",
+      "FLTRP-EN-7A-2022CUR:V:BFD5FA410477"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Well, I'm a little lucky.",
+     "reason": "out_of_stage:lucky"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "We've got something for you!",
+   "sentence_uid": "P3-07:AU13-DLG-04",
+   "textbook_page": 29,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "We've got some thoughts for you!",
+    "We want something for you!",
+    "We've got something for Mum and me!"
+   ],
+   "kept_detail": [
+    {
+     "text": "We've got some thoughts for you!",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-04",
+      "P3-07:AU13-DLG-08"
+     ]
+    },
+    {
+     "text": "We want something for you!",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-04",
+      "P3-07:AU13-DLG-08"
+     ]
+    },
+    {
+     "text": "We've got something for Mum and me!",
+     "confidence": 0.6,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-04",
+      "P3-07:AU13-DLG-07"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Yes, and it's also a letter from Mum and me.",
+   "sentence_uid": "P3-07:AU13-DLG-07",
+   "textbook_page": 29,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "Yes, and it's also a letter from Dad and Mum.",
+    "Yes, and it's also a problem from Mum and me."
+   ],
+   "kept_detail": [
+    {
+     "text": "Yes, and it's also a letter from Dad and Mum.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-07",
+      "PREVIEW:AU13:S0282"
+     ]
+    },
+    {
+     "text": "Yes, and it's also a problem from Mum and me.",
+     "confidence": 0.6,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-07",
+      "FLTRP-EN-7A-2022CUR:V:2F50FD129B97"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Yes, and it's also a thought from Mum and me.",
+     "reason": "low_confidence"
+    }
+   ]
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "We want to share some thoughts with you.",
+   "sentence_uid": "P3-07:AU13-DLG-08",
+   "textbook_page": 29,
+   "raw_count": 3,
+   "kept_count": 3,
+   "kept": [
+    "We need to share some thoughts with you.",
+    "We want to share some advice with you.",
+    "We want to share some problems with you."
+   ],
+   "kept_detail": [
+    {
+     "text": "We need to share some thoughts with you.",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-08",
+      "FLTRP-EN-7A-2022CUR:V:EED7618B30C9"
+     ]
+    },
+    {
+     "text": "We want to share some advice with you.",
+     "confidence": 0.65,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-08",
+      "FLTRP-EN-7A-2022CUR:V:B2E48136F7AC"
+     ]
+    },
+    {
+     "text": "We want to share some problems with you.",
+     "confidence": 0.6,
+     "origin": "ai",
+     "evidence": [
+      "P3-07:AU13-DLG-08",
+      "FLTRP-EN-7A-2022CUR:V:2F50FD129B97"
+     ]
+    }
+   ],
+   "filtered": []
+  },
+  {
+   "unit": "Unit 1",
+   "lesson": "READING_FOR_WRITING",
+   "correct_answer": "Are you ready for your new life?",
+   "sentence_uid": "PREVIEW:AU13:S0279",
+   "textbook_page": 30,
+   "raw_count": 3,
+   "kept_count": 2,
+   "kept": [
+    "Are you ready for your new school year?",
+    "Are you ready for your new journey?"
+   ],
+   "kept_detail": [
+    {
+     "text": "Are you ready for your new school year?",
+     "confidence": 0.7,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU13:S0279",
+      "P3-07:AU11-B01"
+     ]
+    },
+    {
+     "text": "Are you ready for your new journey?",
+     "confidence": 0.6,
+     "origin": "ai",
+     "evidence": [
+      "PREVIEW:AU13:S0279",
+      "FLTRP-EN-7A-2022CUR:V:5FF4A6413FF0"
+     ]
+    }
+   ],
+   "filtered": [
+    {
+     "text": "Are you ready for your new homework?",
+     "reason": "low_confidence"
+    }
+   ]
+  }
+ ],
+ "started_at": "20260919T114305",
+ "elapsed_sec": 462.1,
+ "raw_candidates": 63,
+ "kept_candidates": 51,
+ "kept_distribution": {
+  "0": 1,
+  "1": 4,
+  "2": 13,
+  "3": 7
+ },
+ "filtered_reasons": {
+  "low_confidence": 6,
+  "out_of_stage": 6
+ },
+ "fallback_count": 1,
+ "cache_entries": 38,
+ "cache_file": "D:\\ZhixueEnglish\\demo\\ai_cache\\sentence_distractors.json",
+ "finished_at": "20260919T115047"
+}

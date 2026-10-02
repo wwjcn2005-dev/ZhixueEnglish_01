@@ -1,0 +1,1138 @@
+{
+ "stage": "P1-06",
+ "mode": "read_only_analysis",
+ "prompt_version": "P1-05-v3",
+ "api_calls": 4,
+ "retry_count": 0,
+ "formal_assets_changed": false,
+ "protection": {
+  "checked_files": 85,
+  "all_unchanged": true,
+  "changed": []
+ },
+ "sections": {
+  "S1": {
+   "name": "Unit 2 · UNDERSTANDING_IDEAS（丰富阅读 / 基准）",
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "evidence": {
+    "blocks": 78,
+    "packages": 21,
+    "vocab": 45,
+    "bold_vocab": 41
+   },
+   "generated": 6,
+   "zero_question": false,
+   "types": {
+    "fill": 2,
+    "vocab_choice": 2,
+    "reading_choice": 2
+   },
+   "learning_point_hit": 6,
+   "vocab_answer": 5,
+   "bold_answer": 5,
+   "material_legal": 6,
+   "real_out_of_textbook_tokens": [],
+   "unique_answer": 6,
+   "recombined": 3,
+   "mechanical_rewrite": 3,
+   "textbook_copy": 0,
+   "low_value": 0,
+   "block_reuse": {
+    "B12": 2
+   },
+   "grades": {
+    "B": 3,
+    "A": 3
+   },
+   "cost": {
+    "prompt_tokens": 11387,
+    "completion_tokens": 12021,
+    "reasoning_tokens": 10823,
+    "total_tokens": 23408,
+    "latency_ms": 176546,
+    "finish_reason": "stop"
+   },
+   "rows": [
+    {
+     "key": "S1-Q1",
+     "section": "S1",
+     "type": "fill",
+     "question": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+     "options": [],
+     "answer": "sound",
+     "blocks": [
+      "B11"
+     ],
+     "vocab_hit": [
+      "sound"
+     ],
+     "bold_hit": [
+      "sound"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "教材原句挖空，答案 sound 为 BOLD 重点词；与 P1-05-F/G 同答案同 block（跨轮重复）"
+    },
+    {
+     "key": "S1-Q2",
+     "section": "S1",
+     "type": "fill",
+     "question": "It feels great to ___ our hobby together.",
+     "options": [],
+     "answer": "enjoy",
+     "blocks": [
+      "B5"
+     ],
+     "vocab_hit": [
+      "enjoy",
+      "joy"
+     ],
+     "bold_hit": [
+      "enjoy",
+      "joy"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "教材原句挖空，答案 enjoy 为 BOLD 重点词"
+    },
+    {
+     "key": "S1-Q3",
+     "section": "S1",
+     "type": "vocab_choice",
+     "question": "As a rock music lover, I play the electric guitar in the school ___.",
+     "options": [
+      "band",
+      "club",
+      "stage",
+      "instrument"
+     ],
+     "answer": "band",
+     "blocks": [
+      "B10"
+     ],
+     "vocab_hit": [
+      "band"
+     ],
+     "bold_hit": [
+      "band"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "A",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "原句 + AI 组织的四个 BOLD 选项（band/club/stage/instrument），构成有效词义辨析"
+    },
+    {
+     "key": "S1-Q4",
+     "section": "S1",
+     "type": "vocab_choice",
+     "question": "But it’s a ___ kind of music.",
+     "options": [
+      "different",
+      "traditional",
+      "electric",
+      "weak"
+     ],
+     "answer": "different",
+     "blocks": [
+      "B12"
+     ],
+     "vocab_hit": [
+      "different"
+     ],
+     "bold_hit": [
+      "different"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "A",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "把 P1-05-G 中答案不唯一的填空改成选择题，traditional 作为干扰项，歧义被消除"
+    },
+    {
+     "key": "S1-Q5",
+     "section": "S1",
+     "type": "reading_choice",
+     "question": "Grandpa likes playing the erhu ___.",
+     "options": [
+      "in the park",
+      "in the school band",
+      "on the stage",
+      "in his room"
+     ],
+     "answer": "in the park",
+     "blocks": [
+      "B12"
+     ],
+     "vocab_hit": [],
+     "bold_hit": [],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "教材原句挖去状语；干扰项 in the school band 是有效陷阱；与 P1-05-D/F 同答案同 block"
+    },
+    {
+     "key": "S1-Q6",
+     "section": "S1",
+     "type": "reading_choice",
+     "question": "At the school art festival, the writer and Grandpa ___.",
+     "options": [
+      "write songs",
+      "share songs online",
+      "fire up instruments",
+      "sing Beijing opera"
+     ],
+     "answer": "fire up instruments",
+     "blocks": [
+      "B3"
+     ],
+     "vocab_hit": [
+      "instrument"
+     ],
+     "bold_hit": [
+      "instrument"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "VERIFIABLE_REPHRASE",
+     "grade": "A",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "跨句理解：艺术节上两人做了什么；四个选项全部来自课文"
+    }
+   ]
+  },
+  "S2": {
+   "name": "Unit 1 · UNDERSTANDING_IDEAS（对话 / B）",
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "evidence": {
+    "blocks": 53,
+    "packages": 19,
+    "vocab": 35,
+    "bold_vocab": 31
+   },
+   "generated": 5,
+   "zero_question": false,
+   "types": {
+    "fill": 3,
+    "vocab_choice": 2
+   },
+   "learning_point_hit": 5,
+   "vocab_answer": 5,
+   "bold_answer": 5,
+   "material_legal": 5,
+   "real_out_of_textbook_tokens": [],
+   "unique_answer": 5,
+   "recombined": 3,
+   "mechanical_rewrite": 2,
+   "textbook_copy": 0,
+   "low_value": 0,
+   "block_reuse": {},
+   "grades": {
+    "B": 2,
+    "A": 3
+   },
+   "cost": {
+    "prompt_tokens": 9448,
+    "completion_tokens": 7852,
+    "reasoning_tokens": 7111,
+    "total_tokens": 17300,
+    "latency_ms": 111300,
+    "finish_reason": "stop"
+   },
+   "rows": [
+    {
+     "key": "S2-Q1",
+     "section": "S2",
+     "type": "fill",
+     "question": "I look up at Ms Chen. My eyes meet ___.",
+     "options": [],
+     "answer": "hers",
+     "blocks": [
+      "B1"
+     ],
+     "vocab_hit": [
+      "hers"
+     ],
+     "bold_hit": [
+      "hers"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "教材语法聚焦句（物主代词 hers）原句挖空，答案 BOLD"
+    },
+    {
+     "key": "S2-Q2",
+     "section": "S2",
+     "type": "vocab_choice",
+     "question": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+     "options": [
+      "mistake",
+      "mind",
+      "meaning",
+      "fact"
+     ],
+     "answer": "mistake",
+     "blocks": [
+      "B6"
+     ],
+     "vocab_hit": [
+      "mistake"
+     ],
+     "bold_hit": [
+      "mistake"
+     ],
+     "out_of_scope": [
+      "points",
+      "student"
+     ],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "A",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "题干被重组（In Ms Chen's first lesson, the student points out a ___）；四个选项均为本单元词"
+    },
+    {
+     "key": "S2-Q3",
+     "section": "S2",
+     "type": "fill",
+     "question": "In the first lesson, some questions jump into my ___.",
+     "options": [],
+     "answer": "mind",
+     "blocks": [
+      "B5"
+     ],
+     "vocab_hit": [
+      "mind"
+     ],
+     "bold_hit": [
+      "mind"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "A",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "题干重组（In the first lesson, some questions jump into my ___）；答案 mind 为 BOLD 词"
+    },
+    {
+     "key": "S2-Q4",
+     "section": "S2",
+     "type": "fill",
+     "question": "___ ___, this is my first lesson for all of you.",
+     "options": [],
+     "answer": "In fact",
+     "blocks": [
+      "B2"
+     ],
+     "vocab_hit": [
+      "fact",
+      "in fact"
+     ],
+     "bold_hit": [
+      "fact"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "教材重点表达 In fact 两空填空；答案取自词表（in fact）"
+    },
+    {
+     "key": "S2-Q5",
+     "section": "S2",
+     "type": "vocab_choice",
+     "question": "Ms Chen writes a ___ on the blackboard.",
+     "options": [
+      "sentence",
+      "mistake",
+      "mind",
+      "meaning"
+     ],
+     "answer": "sentence",
+     "blocks": [
+      "B4"
+     ],
+     "vocab_hit": [
+      "sentence"
+     ],
+     "bold_hit": [
+      "sentence"
+     ],
+     "out_of_scope": [
+      "writes"
+     ],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "A",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "题干重组（Ms Chen writes a ___ on the blackboard）；四个选项均为 BOLD 词"
+    }
+   ]
+  },
+  "S3": {
+   "name": "Unit 5 · UNDERSTANDING_IDEAS（词汇 / 语言运用）",
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "evidence": {
+    "blocks": 75,
+    "packages": 21,
+    "vocab": 46,
+    "bold_vocab": 38
+   },
+   "generated": 6,
+   "zero_question": false,
+   "types": {
+    "vocab_choice": 1,
+    "fill": 2,
+    "reading_choice": 1,
+    "reading_judge": 2
+   },
+   "learning_point_hit": 4,
+   "vocab_answer": 3,
+   "bold_answer": 2,
+   "material_legal": 6,
+   "real_out_of_textbook_tokens": [],
+   "unique_answer": 6,
+   "recombined": 3,
+   "mechanical_rewrite": 3,
+   "textbook_copy": 2,
+   "low_value": 2,
+   "block_reuse": {
+    "B12": 2,
+    "B7": 2
+   },
+   "grades": {
+    "B": 3,
+    "D": 2,
+    "A": 1
+   },
+   "cost": {
+    "prompt_tokens": 10812,
+    "completion_tokens": 11796,
+    "reasoning_tokens": 10884,
+    "total_tokens": 22608,
+    "latency_ms": 161473,
+    "finish_reason": "stop"
+   },
+   "rows": [
+    {
+     "key": "S3-Q1",
+     "section": "S3",
+     "type": "vocab_choice",
+     "question": "Water from the ___ will rise to the leaf through the stem.",
+     "options": [
+      "root",
+      "stem",
+      "sugar",
+      "oxygen"
+     ],
+     "answer": "root",
+     "blocks": [
+      "B12",
+      "B7"
+     ],
+     "vocab_hit": [
+      "root"
+     ],
+     "bold_hit": [],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "教材原句挖空；答案为 root，属本单元词但为 PLAIN（非 BOLD）"
+    },
+    {
+     "key": "S3-Q2",
+     "section": "S3",
+     "type": "fill",
+     "question": "Sunlight and CO2 come into the ___.",
+     "options": [],
+     "answer": "leaf",
+     "blocks": [
+      "B9",
+      "B5"
+     ],
+     "vocab_hit": [
+      "leaf"
+     ],
+     "bold_hit": [
+      "leaf"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "UNSUPPORTED",
+     "grade": "D",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": true,
+     "value": "LOW",
+     "note": "与教材 a4 填空原题完全相同；且 evidence_quote（Sunlight and CO2 come into the）不含答案词 leaf → P0 规则下 answer_support=UNSUPPORTED，引用不足以确认答案"
+    },
+    {
+     "key": "S3-Q3",
+     "section": "S3",
+     "type": "fill",
+     "question": "Water from the root will ___ to the leaf through the stem.",
+     "options": [],
+     "answer": "rise",
+     "blocks": [
+      "B7",
+      "B8"
+     ],
+     "vocab_hit": [
+      "rise"
+     ],
+     "bold_hit": [
+      "rise"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "UNSUPPORTED",
+     "grade": "D",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": true,
+     "value": "LOW",
+     "note": "与教材 a4 填空原题完全相同；evidence_quote（to the leaf through the stem.）不含答案词 rise → answer_support=UNSUPPORTED"
+    },
+    {
+     "key": "S3-Q4",
+     "section": "S3",
+     "type": "reading_choice",
+     "question": "In the Great Bear Rainforest, what can the trees make?",
+     "options": [
+      "their own rain",
+      "sugar",
+      "oxygen",
+      "food"
+     ],
+     "answer": "their own rain",
+     "blocks": [
+      "B14"
+     ],
+     "vocab_hit": [],
+     "bold_hit": [],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "A",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "雨林树木能自己造雨的阅读理解题；选项由 AI 组织且都在课文范围内"
+    },
+    {
+     "key": "S3-Q5",
+     "section": "S3",
+     "type": "reading_judge",
+     "question": "The Great Bear Rainforest is in Canada.",
+     "options": [],
+     "answer": "True",
+     "blocks": [
+      "B12"
+     ],
+     "vocab_hit": [],
+     "bold_hit": [],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "UNSUPPORTED",
+     "grade": "B",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "判断句 The Great Bear Rainforest is in Canada 与课文一致；布尔答案使 validator 的 answer_support 无法判定（工具局限，非题目问题）"
+    },
+    {
+     "key": "S3-Q6",
+     "section": "S3",
+     "type": "reading_judge",
+     "question": "Plants are not important to us.",
+     "options": [],
+     "answer": "False",
+     "blocks": [
+      "B20"
+     ],
+     "vocab_hit": [],
+     "bold_hit": [],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "UNSUPPORTED",
+     "grade": "B",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "反向判断（Plants are not important to us → False）需要理解课文主旨；同上属工具局限"
+    }
+   ]
+  },
+  "S4": {
+   "name": "Starter · GET_READY（信息匹配 + 部分音频证据）",
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "evidence": {
+    "blocks": 77,
+    "packages": 21,
+    "vocab": 32,
+    "bold_vocab": 22
+   },
+   "generated": 5,
+   "zero_question": false,
+   "types": {
+    "fill": 3,
+    "vocab_choice": 1,
+    "reading_choice": 1
+   },
+   "learning_point_hit": 4,
+   "vocab_answer": 5,
+   "bold_answer": 5,
+   "material_legal": 5,
+   "real_out_of_textbook_tokens": [],
+   "unique_answer": 5,
+   "recombined": 1,
+   "mechanical_rewrite": 4,
+   "textbook_copy": 0,
+   "low_value": 1,
+   "block_reuse": {},
+   "grades": {
+    "B": 3,
+    "D": 1,
+    "A": 1
+   },
+   "cost": {
+    "prompt_tokens": 9928,
+    "completion_tokens": 9397,
+    "reasoning_tokens": 8706,
+    "total_tokens": 19325,
+    "latency_ms": 133227,
+    "finish_reason": "stop"
+   },
+   "rows": [
+    {
+     "key": "S4-Q1",
+     "section": "S4",
+     "type": "fill",
+     "question": "I am ___, too.",
+     "options": [],
+     "answer": "ready",
+     "blocks": [
+      "B16"
+     ],
+     "vocab_hit": [
+      "ready"
+     ],
+     "bold_hit": [
+      "ready"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "对白句原句挖空，答案 ready 为 BOLD 词"
+    },
+    {
+     "key": "S4-Q2",
+     "section": "S4",
+     "type": "fill",
+     "question": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+     "options": [],
+     "answer": "eraser",
+     "blocks": [
+      "B32"
+     ],
+     "vocab_hit": [
+      "eraser"
+     ],
+     "bold_hit": [
+      "eraser"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "学习用品清单原句挖空，答案 eraser 为 BOLD 词"
+    },
+    {
+     "key": "S4-Q3",
+     "section": "S4",
+     "type": "fill",
+     "question": "What colour is it? It’s ___.",
+     "options": [],
+     "answer": "grey",
+     "blocks": [
+      "B20"
+     ],
+     "vocab_hit": [
+      "grey"
+     ],
+     "bold_hit": [
+      "grey"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "B",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "颜色对白原句挖空，答案 grey 为 BOLD 词"
+    },
+    {
+     "key": "S4-Q4",
+     "section": "S4",
+     "type": "vocab_choice",
+     "question": "Oh, don’t ___ your ...",
+     "options": [
+      "forget",
+      "wear",
+      "have",
+      "like"
+     ],
+     "answer": "forget",
+     "blocks": [
+      "B12"
+     ],
+     "vocab_hit": [
+      "forget"
+     ],
+     "bold_hit": [
+      "forget"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "D",
+     "recombined": false,
+     "mechanical": true,
+     "textbook_copy": false,
+     "value": "LOW",
+     "note": "题干残缺：'Oh, don't ___ your ...'。根因是 content pack 中该听力练习被切成碎片 block（P10:B12 结束于 your，B13 才是下一空位），属证据/抽取问题，不是提示词规则问题"
+    },
+    {
+     "key": "S4-Q5",
+     "section": "S4",
+     "type": "reading_choice",
+     "question": "What is Wang Tao going to wear tomorrow for school?",
+     "options": [
+      "school uniform",
+      "sports jacket",
+      "T-shirt",
+      "red scarf"
+     ],
+     "answer": "school uniform",
+     "blocks": [
+      "B5"
+     ],
+     "vocab_hit": [
+      "uniform",
+      "school uniform"
+     ],
+     "bold_hit": [
+      "uniform"
+     ],
+     "out_of_scope": [],
+     "real_out_of_scope": [],
+     "location_ok": true,
+     "quote_in_block": true,
+     "answer_support": "EXACT",
+     "grade": "A",
+     "recombined": true,
+     "mechanical": false,
+     "textbook_copy": false,
+     "value": "MEDIUM",
+     "note": "对白理解题（明天穿什么上学）；选项由 AI 组织且在课文范围内"
+    }
+   ]
+  }
+ },
+ "totals": {
+  "questions": 22,
+  "grades": {
+   "B": 11,
+   "A": 8,
+   "D": 3
+  },
+  "vocab_answer": 18,
+  "bold_answer": 17,
+  "material_legal": 22,
+  "real_out_of_textbook_tokens": [],
+  "recombined": 10,
+  "mechanical_rewrite": 12,
+  "textbook_copy": 2,
+  "low_value": 3,
+  "quote_failures": 0,
+  "location_failures": 0
+ },
+ "cost": {
+  "per_section": {
+   "S1": {
+    "prompt_tokens": 11387,
+    "completion_tokens": 12021,
+    "reasoning_tokens": 10823,
+    "total_tokens": 23408,
+    "latency_ms": 176546,
+    "finish_reason": "stop"
+   },
+   "S2": {
+    "prompt_tokens": 9448,
+    "completion_tokens": 7852,
+    "reasoning_tokens": 7111,
+    "total_tokens": 17300,
+    "latency_ms": 111300,
+    "finish_reason": "stop"
+   },
+   "S3": {
+    "prompt_tokens": 10812,
+    "completion_tokens": 11796,
+    "reasoning_tokens": 10884,
+    "total_tokens": 22608,
+    "latency_ms": 161473,
+    "finish_reason": "stop"
+   },
+   "S4": {
+    "prompt_tokens": 9928,
+    "completion_tokens": 9397,
+    "reasoning_tokens": 8706,
+    "total_tokens": 19325,
+    "latency_ms": 133227,
+    "finish_reason": "stop"
+   }
+  },
+  "total_tokens": 82641,
+  "total_latency_ms": 582546,
+  "api_calls": 4,
+  "retry_count": 0,
+  "avg_tokens_per_section": 20660.2,
+  "avg_tokens_per_question": 3756.4,
+  "avg_latency_s": 145.6
+ },
+ "stability_observations": {
+  "1_template_risk": {
+   "observation": "题型分布并未固定成模板",
+   "detail": {
+    "S1": {
+     "fill": 2,
+     "vocab_choice": 2,
+     "reading_choice": 2
+    },
+    "S2": {
+     "fill": 3,
+     "vocab_choice": 2
+    },
+    "S3": {
+     "vocab_choice": 1,
+     "fill": 2,
+     "reading_choice": 1,
+     "reading_judge": 2
+    },
+    "S4": {
+     "fill": 3,
+     "vocab_choice": 1,
+     "reading_choice": 1
+    }
+   },
+   "note": "fill 在 22 题中占 9 题（41%），是最常见题型，但各 Section 的组合明显不同；S2 完全没有阅读题，S3 有两道判断题"
+  },
+  "2_vocab_over_reliance": {
+   "observation": "没有出现“有词表就疯狂考词”",
+   "detail": {
+    "S1": "5/6",
+    "S2": "5/5",
+    "S3": "2/6",
+    "S4": "5/5"
+   },
+   "note": "BOLD 答案占比 17/22；词汇最密集的 S3 反而只有 2/6（该段的两道 fill 来自教材 a4 填空原题，答案 root 为 PLAIN 词）"
+  },
+  "3_forcing_questions": {
+   "observation": "4 个 Section 都产出了 5–6 题，没有出现 0 题或明显硬凑",
+   "detail": {
+    "S1": 6,
+    "S2": 5,
+    "S3": 6,
+    "S4": 5
+   },
+   "note": "但本轮 4 个样本的证据体量都较大（blocks 53–78、packages 19–21），**没有真正的低证据样本**，因此“低证据是否会自然少出/不出”本轮无法验证；S4 是唯一证据不完整的样本，它产出的 5 题里有 1 题因证据碎片而不可用"
+  },
+  "4_out_of_textbook": {
+   "observation": "真正教材外词汇 = 0",
+   "detail": "22 题中被检查器标出的 token 全部是词形变化（points←point、writes←write、student←students）或复数形式，逐条回查教材 block 后均成立"
+  },
+  "5_cross_section_duplication": {
+   "observation": "跨 Section 无同答案同 block 的重复；但与本项目历史轮次有明显重复",
+   "cross_section": "无",
+   "cross_round": [
+    "S1-Q1 ≡ F-Q7 ≡ G-Q2（sound, B11）",
+    "S1-Q4 ≡ G-Q3（different, B12）",
+    "S1-Q5 ≡ D-Q8 ≡ F-Q2（in the park, B12）"
+   ],
+   "within_section": {
+    "S1": "B12 被 Q4/Q5 使用（考查点不同，可接受）",
+    "S3": "B7/B12 被 Q1/Q3 使用，且两题是同一句的两个空 → 机械重复"
+   },
+   "note": "S1 与 P1-05-G 是同一 Section + 同一提示词的重跑，模型收敛到 3 道相同题；题干措辞略有不同，因此 P1-02 的 question_fingerprint 未必能拦住"
+  }
+ },
+ "cross_round_table": {
+  "headers": [
+   "指标",
+   "P1-05-D",
+   "P1-05-F",
+   "P1-05-G",
+   "P1-06-S1",
+   "S2",
+   "S3",
+   "S4"
+  ],
+  "rows": [
+   [
+    "题量",
+    10,
+    7,
+    8,
+    6,
+    5,
+    6,
+    5
+   ],
+   [
+    "fill 数量",
+    4,
+    0,
+    4,
+    2,
+    3,
+    2,
+    3
+   ],
+   [
+    "词汇表答案",
+    "5/10",
+    "4/7",
+    "4/7",
+    "5/6",
+    "5/5",
+    "3/6",
+    "5/5"
+   ],
+   [
+    "BOLD 答案",
+    "4/10",
+    "4/7",
+    "4/7",
+    "5/6",
+    "5/5",
+    "2/6",
+    "5/5"
+   ],
+   [
+    "真正教材外词汇",
+    4,
+    9,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    "真正重新组合",
+    "5/10",
+    "6/7",
+    "3/8",
+    3,
+    3,
+    3,
+    1
+   ],
+   [
+    "机械挖空",
+    "7/10",
+    "3/7",
+    "4/8",
+    3,
+    2,
+    3,
+    4
+   ],
+   [
+    "教材原题复现",
+    1,
+    1,
+    0,
+    0,
+    0,
+    2,
+    0
+   ],
+   [
+    "明显低价值题",
+    4,
+    1,
+    1,
+    0,
+    0,
+    2,
+    1
+   ]
+  ]
+ },
+ "answers": {
+  "A_learning_point_first_across_sections": {
+   "verdict": "是",
+   "evidence": [
+    "22/22 题都能对应到一个教材学习点（词汇表词、重点表达、语法聚焦句或课文重要事实）",
+    "题干的 location 与 evidence_quote 全部有效（0 处失效）"
+   ]
+  },
+  "B_out_of_textbook_material": {
+   "verdict": "是，真正教材外词汇 = 0",
+   "evidence": [
+    "4 个 Section 22 题中，检查器标出的所有 token 经逐条回查都是词形变化（point→points、write→writes、students→student）或复数形式",
+    "S4 的听力练习虽然有音频证据缺口，但题目用的仍是 content_block 里已印出的文本"
+   ]
+  },
+  "C_type_variation_by_section": {
+   "verdict": "是，题型随 Section 变化",
+   "evidence": {
+    "S1": "fill2/vocab2/reading2",
+    "S2": "fill3/vocab2（无阅读）",
+    "S3": "vocab1/fill2/reading1/judge2",
+    "S4": "fill3/vocab1/reading1"
+   },
+   "note": "fill 占 41% 但组合不同；未出现固定模板"
+  },
+  "D_low_evidence_section_behaviour": {
+   "verdict": "未验证",
+   "evidence": [
+    "本轮 4 个样本证据体量都较大（blocks 53–78、packages 19–21），没有低证据样本（P1-05-A 里的 Unit 3 STARTING_OUT 只有 11 blocks，本轮未纳入）",
+    "S4 是唯一证据不完整的样本，它仍然产出 5 题，其中 1 题因证据碎片不可用"
+   ]
+  },
+  "E_readiness_for_small_formal_library": {
+   "verified": [
+    "学习点优先在 4 个不同类型的 Section 上稳定成立",
+    "真正教材外词汇 0；每题的 evidence 都可追溯",
+    "题型组合随 Section 变化，没有固定模板",
+    "22 题中 19 题（A8+B11）可直接或基本可用；成本 4 次调用 82,641 tokens / 9.7 分钟"
+   ],
+   "unverified": [
+    "低证据 Section 是否会自然少出（本轮无此类样本）",
+    "跨轮重复的自动拦截（fingerprint 对措辞不同的同题无效）",
+    "人工审核成本（本轮未做人工审核）"
+   ],
+   "blockers": [
+    "① 当教材练习本身就是填空（Unit 5 a4）时，AI 会直接复现该题，且 evidence_quote 不含答案词（S3-Q2/Q3）→ 需要在校验/引用层面收口",
+    "② content_block 碎片化（Starter 听力练习被切成带序号空位的碎片）会产生残缺题干（S4-Q4）→ 属于证据/抽取问题",
+    "③ 同一 Section 重跑会收敛到相同题（S1 与 G 有 3 题相同）→ 题库层去重需要比fingerprint 更强的机制"
+   ],
+   "verdict": "已达到“可以进入小规模正式 AI 题库建设”的条件，但上述 3 个阻塞项需要在入库/校验层面而非提示词层面解决"
+  }
+ },
+ "not_done": [
+  "未写入 question_library.db",
+  "未做人工审核评分",
+  "未修改任何提示词/validator/正式数据"
+ ]
+}

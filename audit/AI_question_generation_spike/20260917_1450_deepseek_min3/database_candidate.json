@@ -1,0 +1,51 @@
+{
+ "run": "20260917_1450_deepseek_min3",
+ "cloud_calls": 1,
+ "cloud_provider": "DeepSeek (Codex 已配置 provider，base_url=https://api.deepseek.com/)",
+ "model": "deepseek-v4-pro",
+ "local_ai_calls": 0,
+ "requested_max": 3,
+ "returned": 3,
+ "human_ready_threshold": "几秒内能指出该题来自教材哪一页哪一句",
+ "candidates": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "program_result": "PASS",
+   "human_verdict": "合格",
+   "database_candidate": "YES",
+   "evidence_locate_seconds": "1-2 秒（教材 p56 故事第 1 段原句）",
+   "reason": "原句填空，答案 disease 逐字来自原句，句子未改写，无干扰项问题"
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "program_result": "FAIL（疑似超纲词: 'trailer' states）",
+   "program_fail_is_validator_artifact": true,
+   "program_fail_explanation": "两处命中均来自 explanation 文本：引号包裹的单词 'trailer'（白名单未做引号归一）与解释用词 states / correct / so / that / word；题干、选项、答案三处的词全部在教材白名单内",
+   "human_verdict": "合格",
+   "database_candidate": "YES",
+   "evidence_locate_seconds": "1-2 秒（教材 p56 故事第 2 段原句）",
+   "reason": "语境选词；正确答案 trailer 逐字来自原句；三个干扰项均为教材内词，无虚假信息"
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "program_result": "FAIL（答案无原文支持；疑似超纲词: text）",
+   "program_fail_is_validator_artifact": true,
+   "program_fail_explanation": "答案规则要求 answer 逐字出现在 evidence_quote；本题为正常指代替换（They = the brothers），故逐字规则不命中；超纲命中 text 同样来自 explanation",
+   "human_verdict": "合格（附口径条件）",
+   "database_candidate": "YES",
+   "evidence_locate_seconds": "1-2 秒（教材 p57 故事第 3 段原句 Now, the brothers often take part in bike races together.）",
+   "reason": "阅读细节题；正选项由该原句直接支持，干扰项 A/C/D 均与教材其他句子冲突或无关，无编造"
+  }
+ ],
+ "totals": {"database_candidate_yes": 3, "database_candidate_no": 0,
+            "program_pass": 1, "program_fail": 2, "program_fail_validator_artifact": 2,
+            "program_fail_real_ai_problem": 0},
+ "validator_improvement_items": [
+  "白名单范围应只覆盖题干 / 选项 / 答案（不含 explanation），并对引号包裹的词做归一化",
+  "答案支持规则需明确：允许指代/同义替换，但必须记录替换依据（如 They→the brothers），否则逐字命中"
+ ],
+ "not_done": ["未写入正式 AI artifact", "未做第二次 AI 调用", "未自动修改任何 AI 输出"]
+}

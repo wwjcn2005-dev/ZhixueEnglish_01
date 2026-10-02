@@ -1,0 +1,1004 @@
+{
+ "textbook_position": {
+  "unit": "Starter",
+  "unit_title": "Welcome to junior high!",
+  "section": "GET_READY",
+  "section_title": "Get ready",
+  "textbook_pages": [
+   3,
+   4,
+   5
+  ],
+  "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+  "is_listening_gap_control": false
+ },
+ "activity_instructions": [
+  {
+   "activity_no": 1,
+   "page": 3,
+   "instruction": "Match the words and expression with the things in the picture.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 3,
+   "page": 3,
+   "instruction": "Listen and complete the conversation with a / an or a number.",
+   "audio_required": true
+  },
+  {
+   "activity_no": 4,
+   "page": 3,
+   "instruction": "Talk about your school things.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 5,
+   "page": 4,
+   "instruction": "Match the subjects with the textbooks.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 7,
+   "page": 4,
+   "instruction": "Work in pairs. Talk about your subjects.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 8,
+   "page": 5,
+   "instruction": "Point and say.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 9,
+   "page": 5,
+   "instruction": "Match the words and expressions with the pictures.",
+   "audio_required": false
+  },
+  {
+   "activity_no": 10,
+   "page": 5,
+   "instruction": "Listen and choose.",
+   "audio_required": true
+  }
+ ],
+ "textbook_blocks": [
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B0",
+   "kind": "heading",
+   "role": "section_title",
+   "text": "Get ready"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B26",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "a"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B2",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B1",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Match the words and expression with the things in the picture."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B21",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "☐\ttextbook ☐\tpencil case☐\tpen☐\tschoolbag"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B25",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "☐\truler☐\tpencil☐\teraser☐\tpaper"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B27",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "bc"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B28",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "d"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B29",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "h"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B30",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "gf"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B31",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "e"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B3",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Read and complete. Then listen and check.2"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B22",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "textbookspencil casepensschoolbagruler"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B10",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Mum:\t Tomorrow is your first day of junior high school. Are you ready?Li Ming:\t Yes, Mum!\t Mum:\t Where is your"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B11",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1 ?Li Ming:\t \u0007Here it is. And look at my"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B12",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "2 . I have two pencils, three"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B14",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "4  in it.\t Mum:\t And your"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B13",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "3 , an eraser and a"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B15",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "5 ? Put them in your schoolbag.Li Ming:\t OK."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B8",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "Know more about nouns ⇢ p130"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B6",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "3"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B4",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Listen and complete the conversation with a / an or a number."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B23",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "oneseventwoeightthreefourfivesix"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B24",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "nineteneleventwelve"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Mum:\t How about you, Li Meng?Li Meng:\t \u0007I am ready, too. Look. I have"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B18",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "2  pens. I also have"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B17",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "1  pencils and"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B20",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "4  ruler. They are all in my pencil case."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B19",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "3  eraser and"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B9",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Know more about numbers and articles ⇢ p131"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B7",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "4"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B5",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Talk about your school things."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P8:B32",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B2",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "5"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B0",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Match the subjects with the textbooks."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B19",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "☐\tgeography☐\tbiology☐\tPE"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B21",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "☐\tart☐\tmusic☐\thistory☐\tethics and the rule of law"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B20",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "☐\tEnglish☐\tmaths☐\tChinese"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B18",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "aefdcb"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B17",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "jg"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B16",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "i"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B15",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "h"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B22",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Read and answer. What subjects do Li Ming and Li Meng like best?6"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B5",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Mum:\t What subjects do you have now?\tLi Ming:\t \u0007Look here. We have Chinese, maths, English, ethics and the rule of law,"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B6",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "art, music and PE.Li Meng:\t We also have many new subjects, like history, geography and biology.\tMum:\t What subjects do you like best?\tLi Ming:\t I like Chinese, English and art best.Li Meng:\t I like maths, music and PE best."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B4",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Know more about the simple present tense ⇢ p131"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B3",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "7"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B1",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Work in pairs. Talk about your subjects."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B11",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "A"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B9",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What subjects do you have now?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B7",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "I have..."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B13",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "B"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B12",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "A"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B10",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What subjects do you like best?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B8",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "I like... best."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P9:B14",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "B"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B2",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "8"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B0",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Point and say."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B19",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "What colour is it?"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B20",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "It’s grey."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B3",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "9"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B1",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Match the words and expressions with the pictures."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B14",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "☐\tsports trousers☐\tsports jacket☐\tred scarf☐\tT-shirt☐\tskirt☐\tshoes☐\tsports shoes☐\tshirt☐\tcoat"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B21",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "abcd"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B22",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "higfe"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B17",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "10"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B15",
+   "kind": "instruction",
+   "role": "body",
+   "text": "Listen and choose."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B5",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Nana:\t Hi, Wang Tao. What are you going to wear tomorrow for school? Wang Tao:\t \u0007My school uniform, of course. I’m going to wear a"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B6",
+   "kind": "sidebar_tip",
+   "role": "sidebar",
+   "text": "1d and"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B7",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "2 . How about you?\tNana:\t \u0007I’m also going to wear my school uniform. I have a"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B8",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "3 ,  a"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B10",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "5 .Wang Tao:\t What shoes are you going to wear?\tNana:\t I’m going to wear a pair of"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B9",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "4  and a"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B11",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "6 . How about you?Wang Tao:\t I’ll wear"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B12",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "7 .\tNana:\t Oh, don’t forget your"
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B13",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "8 .Wang Tao:\t Thanks, I won’t."
+  },
+  {
+   "block_id": "FLTRP-EN-7A-2022CUR:P10:B4",
+   "kind": "exercise_item",
+   "role": "body",
+   "text": "Know more about the simple future tense ⇢ p132"
+  }
+ ],
+ "unit_vocabulary": [
+  {
+   "word": "ready",
+   "pos": "adj",
+   "meaning_zh": "准备好做某事的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 3
+  },
+  {
+   "word": "textbook",
+   "pos": "n",
+   "meaning_zh": "教科书教材课本",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 3
+  },
+  {
+   "word": "eraser",
+   "pos": "n",
+   "meaning_zh": "橡皮",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 3
+  },
+  {
+   "word": "junior high",
+   "pos": null,
+   "meaning_zh": "初级中学",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 3
+  },
+  {
+   "word": "geography",
+   "pos": "n",
+   "meaning_zh": "地理",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 4
+  },
+  {
+   "word": "biology",
+   "pos": "n",
+   "meaning_zh": "生物",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 4
+  },
+  {
+   "word": "history",
+   "pos": "n",
+   "meaning_zh": "历史",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 4
+  },
+  {
+   "word": "grey",
+   "pos": "adj",
+   "meaning_zh": "灰色的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 5
+  },
+  {
+   "word": "jacket",
+   "pos": "n",
+   "meaning_zh": "夹克短上衣",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 5
+  },
+  {
+   "word": "red scarf",
+   "pos": null,
+   "meaning_zh": "红领巾",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 5
+  },
+  {
+   "word": "t-shirt",
+   "pos": "n",
+   "meaning_zh": "恤衫短袖运动衫",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 5
+  },
+  {
+   "word": "uniform",
+   "pos": "n",
+   "meaning_zh": "制服",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 5
+  },
+  {
+   "word": "school uniform",
+   "pos": null,
+   "meaning_zh": "校服",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 5
+  },
+  {
+   "word": "of course",
+   "pos": null,
+   "meaning_zh": "当然",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 5
+  },
+  {
+   "word": "forget",
+   "pos": "v",
+   "meaning_zh": "忘记遗忘",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 5
+  },
+  {
+   "word": "teaching building",
+   "pos": null,
+   "meaning_zh": "教学楼",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 6
+  },
+  {
+   "word": "dining hall",
+   "pos": null,
+   "meaning_zh": "食堂",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 6
+  },
+  {
+   "word": "together",
+   "pos": "adv",
+   "meaning_zh": "一起共同一齐一块儿",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 6
+  },
+  {
+   "word": "lab",
+   "pos": "n",
+   "meaning_zh": "实验室",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 6
+  },
+  {
+   "word": "start",
+   "pos": "v",
+   "meaning_zh": "开始",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 8
+  },
+  {
+   "word": "each other",
+   "pos": null,
+   "meaning_zh": "互相彼此",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 9
+  },
+  {
+   "word": "everyone",
+   "pos": "pron",
+   "meaning_zh": "每个人人人",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 9
+  },
+  {
+   "word": "explore",
+   "pos": "v",
+   "meaning_zh": "探索探讨探究",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 9
+  },
+  {
+   "word": "fun",
+   "pos": "n",
+   "meaning_zh": "乐趣",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 9
+  },
+  {
+   "word": "introduce",
+   "pos": "v",
+   "meaning_zh": "介绍",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 9
+  },
+  {
+   "word": "yourself",
+   "pos": "pron",
+   "meaning_zh": "你自己",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 9
+  },
+  {
+   "word": "hobby",
+   "pos": "n",
+   "meaning_zh": "业余爱好嗜好",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 9
+  },
+  {
+   "word": "a bit",
+   "pos": null,
+   "meaning_zh": "有点儿稍微",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 10
+  },
+  {
+   "word": "nervous",
+   "pos": "adj",
+   "meaning_zh": "神经紧张的焦虑不安的",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 10
+  },
+  {
+   "word": "join",
+   "pos": "v",
+   "meaning_zh": "成为的一员加入",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 13
+  },
+  {
+   "word": "team",
+   "pos": "n",
+   "meaning_zh": "游戏或体育比赛的队",
+   "emphasis": "BOLD",
+   "is_core": true,
+   "textbook_page": 13
+  },
+  {
+   "word": "take part in",
+   "pos": null,
+   "meaning_zh": "参加参与",
+   "emphasis": "PLAIN",
+   "is_core": false,
+   "textbook_page": 13
+  }
+ ],
+ "evidence_packages": [
+  {
+   "question_id": "Q:2ED7343CDBBE",
+   "activity_no": 1,
+   "question_no": 1,
+   "page": 3,
+   "instruction": "Match the words and expression with the things in the picture.",
+   "original_question_text": "with the things in the picture. ☐ textbook ☐ ruler h c b ☐ pencil case ☐ pencil d ☐ pen ☐ eraser e ☐ schoolbag ☐ paper f g 5",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:ED00E089D7A1",
+   "activity_no": 2,
+   "question_no": 1,
+   "page": 3,
+   "instruction": "Read and complete. Then listen and check.",
+   "original_question_text": "textbooks pencil case pens schoolbag ruler Mum: Tomorrow is your first day of junior high school. Are you ready? Li Ming: Yes, Mum!",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:ED00E089D7A1",
+   "activity_no": 2,
+   "question_no": 1,
+   "page": 3,
+   "instruction": "Read and complete. Then listen and check.",
+   "original_question_text": "Mum: Where is your ?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:00A578B5C08B",
+   "activity_no": 2,
+   "question_no": 2,
+   "page": 3,
+   "instruction": "Read and complete. Then listen and check.",
+   "original_question_text": "Li Ming: \u0007Here it is. And look at my . I have two pencils, three 3 4 , an eraser and a in it.",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:080751A158DF",
+   "activity_no": 2,
+   "question_no": 5,
+   "page": 3,
+   "instruction": "Read and complete. Then listen and check.",
+   "original_question_text": "Mum: And your ? Put them in your schoolbag. Li Ming: OK. Know more about nouns ⇢ p130 5",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:294A659E5A01",
+   "activity_no": 3,
+   "question_no": 1,
+   "page": 3,
+   "instruction": "Listen and complete the conversation with a / an or a number.",
+   "original_question_text": "one two three four five six seven eight nine ten eleven twelve Mum: How about you, Li Meng? 1 2 Li Meng: \u0007I am ready, too. Look. I have pencils and 3 4 pens. I also have eraser and ruler. They are all in my pencil case. Know more about numbers and articles ⇢ p131 5",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:74DB0FF1E331",
+   "activity_no": 4,
+   "question_no": 1,
+   "page": 3,
+   "instruction": "Talk about your school things.",
+   "original_question_text": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler. Welcome to junior high! 3 5",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:C90A9513B0C0",
+   "activity_no": 5,
+   "question_no": 1,
+   "page": 4,
+   "instruction": "Match the subjects with the textbooks.",
+   "original_question_text": "☐ geography ☐ English ☐ art ☐ biology ☐ maths ☐ music ☐ PE ☐ Chinese ☐ history ☐ ethics and the rule of law a c e b d f j g i h 8",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:998A8E083B5F",
+   "activity_no": 6,
+   "question_no": 1,
+   "page": 4,
+   "instruction": "Read and answer. What subjects do Li Ming and Li Meng like best?",
+   "original_question_text": "Mum: What subjects do you have now? Li Ming: \u0007Look here. We have Chinese, maths, English, ethics and the rule of law, art, music and PE. Li Meng: We also have many new subjects, like history, geography and biology. Mum: What subjects do you like best? Li Ming: I like Chinese, English and art best. L",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:8116BC000F22",
+   "activity_no": 7,
+   "question_no": 1,
+   "page": 4,
+   "instruction": "Work in pairs. Talk about your subjects.",
+   "original_question_text": "A What subjects do you have now? B I have… A What subjects do you like best? B I like… best.",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:F06EA85C8AEF",
+   "activity_no": 7,
+   "question_no": 4,
+   "page": 4,
+   "instruction": "Work in pairs. Talk about your subjects.",
+   "original_question_text": "Starter 8",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:B28EC96A174A",
+   "activity_no": 8,
+   "question_no": 1,
+   "page": 5,
+   "instruction": "Point and say.",
+   "original_question_text": "What colour is it? It’s grey. Know your school 1",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:3702668ACEB2",
+   "activity_no": 9,
+   "question_no": 1,
+   "page": 5,
+   "instruction": "Match the words and expressions with the pictures.",
+   "original_question_text": "☐ sports trousers ☐ sports jacket ☐ red scarf ☐ T-shirt a c ☐ skirt b d ☐ shoes ☐ sports shoes ☐ shirt ☐ coat e g f h i Know your school 1",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:70D9A121C3C3",
+   "activity_no": 10,
+   "question_no": 1,
+   "page": 5,
+   "instruction": "Listen and choose.",
+   "original_question_text": "Nana: Hi, Wang Tao. What are you going to wear tomorrow for school?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:70D9A121C3C3",
+   "activity_no": 10,
+   "question_no": 1,
+   "page": 5,
+   "instruction": "Listen and choose.",
+   "original_question_text": "Wang Tao: \u0007My school uniform, of course. I’m going to wear a d and 2 . How about you?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:937C82D5D984",
+   "activity_no": 10,
+   "question_no": 3,
+   "page": 5,
+   "instruction": "Listen and choose.",
+   "original_question_text": "Nana: \u0007I’m also going to wear my school uniform. I have a , 4 5 a and a . Wang Tao: What shoes are you going to wear?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:A56DB676C92F",
+   "activity_no": 10,
+   "question_no": 6,
+   "page": 5,
+   "instruction": "Listen and choose.",
+   "original_question_text": "Nana: I’m going to wear a pair of . How about you?",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:8EC64F6DE2F8",
+   "activity_no": 10,
+   "question_no": 7,
+   "page": 5,
+   "instruction": "Listen and choose.",
+   "original_question_text": "Wang Tao: I’ll wear .",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:60DB6FBE84EC",
+   "activity_no": 10,
+   "question_no": 8,
+   "page": 5,
+   "instruction": "Listen and choose.",
+   "original_question_text": "Nana: Oh, don’t forget your . Wang Tao: Thanks, I won’t. Know more about the simple future tense ⇢ p132 Know your school 1",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:0DA315D3EA74",
+   "activity_no": 11,
+   "question_no": 1,
+   "page": 5,
+   "instruction": "Talk about what you are going to wear this weekend.",
+   "original_question_text": "Welcome to junior high!",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  },
+  {
+   "question_id": "Q:0B20382B874D",
+   "activity_no": 11,
+   "question_no": 5,
+   "page": 5,
+   "instruction": "Talk about what you are going to wear this weekend.",
+   "original_question_text": "Know your school 1",
+   "answer_source": "NO_RELIABLE_SOURCE",
+   "answer_note": "教材未提供可核对的答案；AI 批改必须基于以上教材证据，不得编造教材事实。"
+  }
+ ],
+ "rules": {
+  "BOLD": "core textbook word (教材黑体重点词)",
+  "PLAIN": "ordinary textbook word (非核心重点词)",
+  "audio_required": "该活动的内容在音频中，提供的证据里没有音频转写文本"
+ }
+}

@@ -1,0 +1,454 @@
+{
+ "spike": "P1-12-AI sentence distractors",
+ "model": "deepseek-v4-pro",
+ "prompt_version": "sentence-distractor-v1",
+ "rules_version": "rules-v2",
+ "ai_calls": 1,
+ "retry_count": 0,
+ "api_error": null,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 8095,
+  "completion_tokens": 15397,
+  "total_tokens": 23492,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 14614
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 8095
+ },
+ "latency_ms": 152996,
+ "candidates_for_dispatch_verified": true,
+ "samples": [
+  {
+   "sentence_index": 0,
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "Are you ready?",
+   "sentence_uid": "PREVIEW:AU01:S0005",
+   "textbook_page": 8,
+   "raw_ai_candidates": [
+    {
+     "text": "Are you nervous?",
+     "origin": "ai",
+     "confidence": 0.6,
+     "reason": "用教材词汇 nervous 替换 ready，保留 Are you... 疑问结构，语义相关且容易听混。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:AE91EA82D493",
+       "textbook_page": 155,
+       "quote": "nervous"
+      }
+     ]
+    },
+    {
+     "text": "How about you?",
+     "origin": "ai",
+     "confidence": 0.45,
+     "reason": "同单元简短询问句，节奏和对话功能相近，容易在句子听辨中混淆。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0065",
+       "textbook_page": 10,
+       "quote": "How about you?"
+      }
+     ]
+    }
+   ],
+   "raw_count": 2,
+   "kept": [
+    {
+     "text": "Are you nervous?",
+     "origin": "ai",
+     "confidence": 0.6,
+     "reason": "用教材词汇 nervous 替换 ready，保留 Are you... 疑问结构，语义相关且容易听混。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:AE91EA82D493",
+       "textbook_page": 155,
+       "quote": "nervous"
+      }
+     ]
+    }
+   ],
+   "kept_count": 1,
+   "filtered": [
+    {
+     "text": "How about you?",
+     "reason": "low_confidence",
+     "confidence": 0.45,
+     "evidence": [
+      "PREVIEW:AU03:S0065"
+     ]
+    }
+   ],
+   "simulated_baseline": []
+  },
+  {
+   "sentence_index": 1,
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "What are you going to wear tomorrow for school?",
+   "sentence_uid": "PREVIEW:AU03:S0063",
+   "textbook_page": 10,
+   "raw_ai_candidates": [
+    {
+     "text": "What shoes are you going to wear tomorrow?",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "用同单元教材原句将 wear 的具体对象替换为 shoes，并保留 tomorrow，结构高度一致。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0067",
+       "textbook_page": 10,
+       "quote": "What shoes are you going to wear?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    }
+   ],
+   "raw_count": 1,
+   "kept": [
+    {
+     "text": "What shoes are you going to wear tomorrow?",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "用同单元教材原句将 wear 的具体对象替换为 shoes，并保留 tomorrow，结构高度一致。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0067",
+       "textbook_page": 10,
+       "quote": "What shoes are you going to wear?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    }
+   ],
+   "kept_count": 1,
+   "filtered": [],
+   "simulated_baseline": []
+  },
+  {
+   "sentence_index": 2,
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "The new school year is beginning.",
+   "sentence_uid": "P3-07:AU11-B01",
+   "textbook_page": 27,
+   "raw_ai_candidates": [
+    {
+     "text": "The new life is beginning.",
+     "origin": "ai",
+     "confidence": 0.65,
+     "reason": "用教材中 new life 替换 new school year，句子结构完全一致，句义相关但关键信息不同。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0279",
+       "textbook_page": 30,
+       "quote": "Are you ready for your new life?"
+      }
+     ]
+    },
+    {
+     "text": "The new school journey is beginning.",
+     "origin": "ai",
+     "confidence": 0.5,
+     "reason": "用教材词汇 journey 替换 year，保持原句结构，词义相关但与原句不同。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:5FF4A6413FF0",
+       "textbook_page": 156,
+       "quote": "journey"
+      }
+     ]
+    }
+   ],
+   "raw_count": 2,
+   "kept": [
+    {
+     "text": "The new life is beginning.",
+     "origin": "ai",
+     "confidence": 0.65,
+     "reason": "用教材中 new life 替换 new school year，句子结构完全一致，句义相关但关键信息不同。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0279",
+       "textbook_page": 30,
+       "quote": "Are you ready for your new life?"
+      }
+     ]
+    }
+   ],
+   "kept_count": 1,
+   "filtered": [
+    {
+     "text": "The new school journey is beginning.",
+     "reason": "low_confidence",
+     "confidence": 0.5,
+     "evidence": [
+      "P3-07:AU11-B01",
+      "FLTRP-EN-7A-2022CUR:V:5FF4A6413FF0"
+     ]
+    }
+   ],
+   "simulated_baseline": []
+  },
+  {
+   "sentence_index": 3,
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "What are the new students' problems?",
+   "sentence_uid": "P3-07:AU11-B02",
+   "textbook_page": 27,
+   "raw_ai_candidates": [
+    {
+     "text": "What are the new students' tasks?",
+     "origin": "ai",
+     "confidence": 0.6,
+     "reason": "用教材词汇 tasks 替换 problems，保留原问句结构，语义相近但明确错误。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:D8A353EAEE75",
+       "textbook_page": 156,
+       "quote": "task"
+      }
+     ]
+    },
+    {
+     "text": "What are the new students' projects?",
+     "origin": "ai",
+     "confidence": 0.55,
+     "reason": "用教材词汇 projects 替换 problems，结构一致，属于同单元常见学习任务词。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:7161FACBD9C5",
+       "textbook_page": 156,
+       "quote": "project"
+      }
+     ]
+    }
+   ],
+   "raw_count": 2,
+   "kept": [],
+   "kept_count": 0,
+   "filtered": [
+    {
+     "text": "What are the new students' tasks?",
+     "reason": "out_of_stage:tasks",
+     "confidence": 0.6,
+     "evidence": [
+      "P3-07:AU11-B02",
+      "FLTRP-EN-7A-2022CUR:V:D8A353EAEE75"
+     ]
+    },
+    {
+     "text": "What are the new students' projects?",
+     "reason": "out_of_stage:projects",
+     "confidence": 0.55,
+     "evidence": [
+      "P3-07:AU11-B02",
+      "FLTRP-EN-7A-2022CUR:V:7161FACBD9C5"
+     ]
+    }
+   ],
+   "simulated_baseline": []
+  },
+  {
+   "sentence_index": 4,
+   "unit": "Unit 2",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "“Why don’t we put our music together?",
+   "sentence_uid": "PREVIEW:AU14:S0294",
+   "textbook_page": 38,
+   "raw_ai_candidates": [
+    {
+     "text": "Why don’t we put our band together?",
+     "origin": "ai",
+     "confidence": 0.75,
+     "reason": "用教材词汇 band 替换 music，保留原句结构和音乐主题，关键信息不同。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:C62FC49D6BF8",
+       "textbook_page": 156,
+       "quote": "band"
+      }
+     ]
+    },
+    {
+     "text": "Why do you know so much about birds?",
+     "origin": "ai",
+     "confidence": 0.6,
+     "reason": "同单元以 Why 开头的疑问句，整体长度和疑问节奏相近，易在听觉上混淆。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0367",
+       "textbook_page": 44,
+       "quote": "Why do you know so much about birds?"
+      }
+     ]
+    },
+    {
+     "text": "Why don’t we put our rock music together?",
+     "origin": "ai",
+     "confidence": 0.55,
+     "reason": "用教材短语 rock music 替换 music，结构一致且主题相关，多出的修饰词易被忽略。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "phrase",
+       "id": "FLTRP-EN-7A-2022CUR:P:8AB872FEB6B5",
+       "textbook_page": 156,
+       "quote": "rock music"
+      }
+     ]
+    }
+   ],
+   "raw_count": 3,
+   "kept": [
+    {
+     "text": "Why don’t we put our band together?",
+     "origin": "ai",
+     "confidence": 0.75,
+     "reason": "用教材词汇 band 替换 music，保留原句结构和音乐主题，关键信息不同。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:C62FC49D6BF8",
+       "textbook_page": 156,
+       "quote": "band"
+      }
+     ]
+    },
+    {
+     "text": "Why do you know so much about birds?",
+     "origin": "ai",
+     "confidence": 0.6,
+     "reason": "同单元以 Why 开头的疑问句，整体长度和疑问节奏相近，易在听觉上混淆。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0367",
+       "textbook_page": 44,
+       "quote": "Why do you know so much about birds?"
+      }
+     ]
+    }
+   ],
+   "kept_count": 2,
+   "filtered": [
+    {
+     "text": "Why don’t we put our rock music together?",
+     "reason": "out_of_stage:rock",
+     "confidence": 0.55,
+     "evidence": [
+      "PREVIEW:AU14:S0294",
+      "FLTRP-EN-7A-2022CUR:P:8AB872FEB6B5"
+     ]
+    }
+   ],
+   "simulated_baseline": []
+  }
+ ],
+ "summary": {
+  "sentences": 5,
+  "ai_calls": 1,
+  "candidates_for_dispatch_verified": true,
+  "raw_candidates": 10,
+  "kept_candidates": 5,
+  "kept_distribution": {
+   "0": 1,
+   "1": 3,
+   "2": 1,
+   "3": 0
+  },
+  "filtered_reasons": {
+   "low_confidence": 2,
+   "out_of_stage": 3
+  },
+  "filter_ratio": 0.5
+ }
+}

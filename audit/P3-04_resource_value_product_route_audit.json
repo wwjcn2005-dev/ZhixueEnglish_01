@@ -1,0 +1,566 @@
+{
+ "task_id": "P3-04",
+ "title": "资源价值盘点与产品路线重构只读审计",
+ "date": "2026-09-13",
+ "status": "PASS",
+ "read_only": true,
+ "ai_calls": 0,
+ "external_network": 0,
+ "dependencies_installed": 0,
+ "decision": {
+  "core_direction": "把 288 个单词 + 官方音频 + 教材原文 接成孩子每天能用的听说读微训练（从教材搬运转向资源训练化复用）",
+  "continue": [
+   "单词音频映射(288)",
+   "词汇学习闭环 Study→Recall→Result",
+   "教材原文(对话/短文/阅读)",
+   "完整官方音频(活动级 41 条)",
+   "Review 复习池",
+   "Phrase(23)/Pattern(52) 的出处锚定",
+   "教材练习原题呈现(已恢复 102/157，余下需人工)"
+  ],
+  "defer": [
+   "句子级音频切片(技术储备)",
+   "ASR",
+   "Forced Alignment",
+   "Grammar 条目化",
+   "Writing/Speaking 作答载体(F-5)",
+   "剩余 55 条练习结构(人工核验)"
+  ],
+  "drop": [
+   "AI 猜答案/猜音频边界",
+   "无答案来源的自动判分",
+   "为完整度继续大规模清洗教材",
+   "未验证的选项/题目结构进入孩子界面",
+   "无 ASR 的文本-音频对齐"
+  ]
+ },
+ "assets": [
+  {
+   "layer": "教材结构",
+   "count": {
+    "unit": 8,
+    "section": 46,
+    "activity": 96,
+    "page": 178
+   }
+  },
+  {
+   "layer": "内容块",
+   "count": 3854,
+   "detail": {
+    "dialogue": 132,
+    "exercise_item": 2133,
+    "heading": 344,
+    "instruction": 194,
+    "footer_text": 178,
+    "sidebar_tip": 348,
+    "vocabulary_entry": 525
+   }
+  },
+  {
+   "layer": "词条",
+   "count": {
+    "vocabulary": 288,
+    "phrase": 23,
+    "sentence_pattern": 52
+   },
+   "detail": {
+    "CORE": 244,
+    "RECOGNITION": 43,
+    "NEED_REVIEW": 1
+   }
+  },
+  {
+   "layer": "练习/题",
+   "count": {
+    "exercise": 157,
+    "question": 360
+   },
+   "answer_status": "NO_RELIABLE_SOURCE × 157"
+  },
+  {
+   "layer": "官方音频",
+   "count": 54,
+   "detail": {
+    "activity": 41,
+    "section": 13,
+    "word_list": 7,
+    "phonetics": 6
+   },
+   "mapping": "54/54 CONFIRMED"
+  },
+  {
+   "layer": "派生词音频",
+   "count": 288,
+   "detail": {
+    "Starter": 32,
+    "Unit 1": 35,
+    "Unit 2": 45,
+    "Unit 3": 40,
+    "Unit 4": 45,
+    "Unit 5": 46,
+    "Unit 6": 45
+   },
+   "note": "derived_from_official_unit_audio（非官方独立单词音频）"
+  },
+  {
+   "layer": "题目锚定",
+   "count": {
+    "sub_question": 13,
+    "transcript": 0
+   }
+  },
+  {
+   "layer": "学习数据",
+   "count": {
+    "learner": 1,
+    "learning_record": 21,
+    "learning_session": 33,
+    "mastery_state": 7
+   },
+   "results": {
+    "done": 17,
+    "correct": 3,
+    "partial": 1
+   }
+  },
+  {
+   "layer": "学习对象",
+   "count": {
+    "exercises_total": 157,
+    "mapped": 89,
+    "unmapped": 68
+   },
+   "source": "P2-6-D-1"
+  },
+  {
+   "layer": "测试基线",
+   "count": {
+    "web": 256,
+    "learning": 112,
+    "workbench": 50,
+    "total": 418
+   }
+  }
+ ],
+ "classification": {
+  "A_direct_high_value": [
+   "288 词 ↔ 官方词表音频（派生）",
+   "词汇学习闭环",
+   "CORE/RECOGNITION 区分",
+   "Unit↔词汇归属",
+   "54 条官方音频 + 活动级映射",
+   "教材原文文本(3854 块, 已进 UI)"
+  ],
+  "B_low_cost": [
+   "教材原文→阅读/跟读/复述",
+   "完整官方音频→听力/整段跟读",
+   "Phrase/Pattern 出处锚定",
+   "教材印刷完整句(104 句候选)",
+   "练习原题结构(102/157 已恢复)"
+  ],
+  "C_high_cost": [
+   "句子级音频切片",
+   "听力填空完整句恢复",
+   "多人对话角色切分",
+   "教材客观题答案恢复",
+   "剩余 55 条练习结构"
+  ],
+  "D_defer_or_drop": [
+   "AI 猜答案/边界",
+   "无答案来源自动判分",
+   "为完整度继续大规模清洗",
+   "ASR/对齐安装(暂缓)",
+   "未验证选项进 UI"
+  ]
+ },
+ "reuse_analysis": [
+  {
+   "resource": "词条(词/释义/词性/音标)",
+   "uses": {
+    "vocab": "◎",
+    "listen": "△",
+    "shadow": "○",
+    "speak": "○",
+    "read": "○",
+    "write": "○",
+    "grammar": "△"
+   },
+   "cost": "低",
+   "reliability": "高"
+  },
+  {
+   "resource": "词条派生音频(288)",
+   "uses": {
+    "vocab": "◎",
+    "listen": "◎",
+    "shadow": "◎",
+    "speak": "◎",
+    "read": "△",
+    "write": "△",
+    "grammar": "△"
+   },
+   "cost": "低(已有)",
+   "reliability": "中高(派生)"
+  },
+  {
+   "resource": "官方词表音频(7)",
+   "uses": {
+    "vocab": "◎",
+    "listen": "◎",
+    "shadow": "○",
+    "speak": "△",
+    "read": "△",
+    "write": "△",
+    "grammar": "△"
+   },
+   "cost": "低",
+   "reliability": "高(官方)"
+  },
+  {
+   "resource": "教材原文(对话/短文)",
+   "uses": {
+    "vocab": "○",
+    "listen": "◎",
+    "shadow": "◎",
+    "speak": "◎",
+    "read": "◎",
+    "write": "◎",
+    "grammar": "◎"
+   },
+   "cost": "低",
+   "reliability": "高"
+  },
+  {
+   "resource": "活动级官方音频(41)",
+   "uses": {
+    "vocab": "△",
+    "listen": "◎",
+    "shadow": "◎",
+    "speak": "○",
+    "read": "○",
+    "write": "△",
+    "grammar": "△"
+   },
+   "cost": "低",
+   "reliability": "高(CONFIRMED)"
+  },
+  {
+   "resource": "Phrase(23)/Pattern(52)",
+   "uses": {
+    "vocab": "○",
+    "listen": "△",
+    "shadow": "○",
+    "speak": "○",
+    "read": "○",
+    "write": "◎",
+    "grammar": "◎"
+   },
+   "cost": "中",
+   "reliability": "中(缺出处句)"
+  },
+  {
+   "resource": "练习原题结构(102/157)",
+   "uses": {
+    "vocab": "○",
+    "listen": "○",
+    "shadow": "△",
+    "speak": "△",
+    "read": "○",
+    "write": "△",
+    "grammar": "○"
+   },
+   "cost": "中",
+   "reliability": "中"
+  },
+  {
+   "resource": "句子级音频切片",
+   "uses": {
+    "vocab": "△",
+    "listen": "◎",
+    "shadow": "◎",
+    "speak": "◎",
+    "read": "△",
+    "write": "△",
+    "grammar": "△"
+   },
+   "cost": "高",
+   "reliability": "低(P3-03 CONFIRMED 0)"
+  },
+  {
+   "resource": "教材练习题答案",
+   "uses": {
+    "vocab": "△",
+    "listen": "△",
+    "shadow": "△",
+    "speak": "△",
+    "read": "△",
+    "write": "△",
+    "grammar": "△"
+   },
+   "cost": "极高(人工)",
+   "reliability": "无(0 来源)"
+  }
+ ],
+ "high_value_resources": [
+  {
+   "rank": 1,
+   "resource": "Word + 官方音频 + 教材上下文",
+   "why": "100% 覆盖、结构确定、零新技术、闭环已验证"
+  },
+  {
+   "rank": 2,
+   "resource": "教材原文 + 活动级官方音频",
+   "why": "文本与音频均 CONFIRMED，直接支撑阅读/听读/跟读"
+  },
+  {
+   "rank": 3,
+   "resource": "Review / 需要再学（证据与掌握链路）",
+   "why": "已有 21 条真实记录与 7 条 mastery，闭环成立"
+  },
+  {
+   "rank": 4,
+   "resource": "Phrase / Pattern 出处锚定",
+   "why": "低成本增量，直接服务写作与语法感知"
+  },
+  {
+   "rank": 5,
+   "resource": "教材练习原题呈现（已恢复 102 条）",
+   "why": "已有投入，继续边际成本低"
+  }
+ ],
+ "sentence_audio": {
+  "status": "暂缓（技术储备，不进入主线）",
+  "decision": "defer",
+  "reason": "P3-01 CONFIRMED=0；P3-02 CANDIDATE=2/NEEDS_REVIEW=3；P3-03 判定 D —— 本机无本地 ASR/强制对齐（UNAVAILABLE），且本阶段禁止安装；实测声学段数≠句数（AU06 8 句 vs 14 段）",
+  "unblock_condition": "用户批准安装离线方案（faster-whisper / whisper.cpp / MFA），并以『切片重新识别 == 目标句』作为 CONFIRMED 门槛",
+  "replacement_now": "活动级完整官方音频 + 教材原文（无需切片）"
+ },
+ "asr_alignment_decision": {
+  "asr": "暂缓（需批准；当前 UNAVAILABLE）",
+  "forced_alignment": "暂缓（若未来做句级，优先于 ASR）",
+  "no_asr_text_audio_alignment": "放弃（无法证明内容对应）"
+ },
+ "minimal_core": {
+  "statement": "教材词汇(288+音频) → 教材原文(对话/短文) → 官方完整音频跟读 → Review 复习",
+  "keep": [
+   "Vocabulary",
+   "Reading(教材原文)",
+   "Listening/跟读(活动级完整音频)",
+   "Review"
+  ],
+  "second_batch": [
+   "Phrase",
+   "Pattern"
+  ],
+  "not_now": [
+   "练习判分",
+   "AI diagnosis",
+   "Grammar 条目化",
+   "句子级切片"
+  ]
+ },
+ "decision_table": [
+  {
+   "item": "单词音频映射",
+   "value": "高",
+   "reliability": "中高(派生)",
+   "cost": "低(已有)",
+   "child_value": "高",
+   "decision": "继续"
+  },
+  {
+   "item": "词汇学习闭环",
+   "value": "高",
+   "reliability": "高",
+   "cost": "低(已有)",
+   "child_value": "高",
+   "decision": "继续"
+  },
+  {
+   "item": "教材正文",
+   "value": "高",
+   "reliability": "高",
+   "cost": "低(已完成)",
+   "child_value": "高",
+   "decision": "继续"
+  },
+  {
+   "item": "完整官方音频",
+   "value": "高",
+   "reliability": "高(CONFIRMED)",
+   "cost": "低",
+   "child_value": "高",
+   "decision": "继续"
+  },
+  {
+   "item": "Phrase",
+   "value": "中",
+   "reliability": "中",
+   "cost": "中低",
+   "child_value": "中",
+   "decision": "继续(低成本补出处)"
+  },
+  {
+   "item": "Pattern",
+   "value": "中高",
+   "reliability": "中",
+   "cost": "中低",
+   "child_value": "中高",
+   "decision": "继续(同上)"
+  },
+  {
+   "item": "Reading / Dialogue",
+   "value": "高",
+   "reliability": "高",
+   "cost": "低",
+   "child_value": "高",
+   "decision": "继续"
+  },
+  {
+   "item": "Review",
+   "value": "高",
+   "reliability": "高",
+   "cost": "低",
+   "child_value": "高",
+   "decision": "继续"
+  },
+  {
+   "item": "教材练习原题呈现",
+   "value": "中",
+   "reliability": "中",
+   "cost": "已投入",
+   "child_value": "中",
+   "decision": "继续(剩余需人工)"
+  },
+  {
+   "item": "Grammar 条目化",
+   "value": "中",
+   "reliability": "低(13 指针)",
+   "cost": "中",
+   "child_value": "中",
+   "decision": "暂缓"
+  },
+  {
+   "item": "Writing / Speaking 载体",
+   "value": "中高",
+   "reliability": "高",
+   "cost": "中",
+   "child_value": "中高",
+   "decision": "暂缓(下一批)"
+  },
+  {
+   "item": "句子级音频切片",
+   "value": "低(当前)",
+   "reliability": "低(0 CONFIRMED)",
+   "cost": "高",
+   "child_value": "中",
+   "decision": "暂缓(技术储备)"
+  },
+  {
+   "item": "ASR",
+   "value": "—",
+   "reliability": "—",
+   "cost": "高",
+   "child_value": "间接",
+   "decision": "暂缓(需批准)"
+  },
+  {
+   "item": "Forced Alignment",
+   "value": "—",
+   "reliability": "—",
+   "cost": "高",
+   "child_value": "间接",
+   "decision": "暂缓(需批准)"
+  },
+  {
+   "item": "教材客观题答案恢复",
+   "value": "低",
+   "reliability": "无(0 来源)",
+   "cost": "极高(人工)",
+   "child_value": "中",
+   "decision": "放弃(自动化)"
+  }
+ ],
+ "child_value": {
+  "high_value": [
+   "单词学习(发音+释义+记录)",
+   "教材原文(不用翻书)",
+   "Review(知道哪些词忘了)",
+   "官方音频跟读"
+  ],
+  "low_value": [
+   "360 道无答案的题",
+   "68 条未映射练习",
+   "13 条语法指针",
+   "句子级切片(当前不可用)"
+  ],
+  "confusing": [
+   "做完练习没有反馈",
+   "有的题只有音频没有选项",
+   "『需要再学』经常为空"
+  ],
+  "keep_30_percent": [
+   "288 词(词+释义+音标+派生音频+Unit)",
+   "教材原文文本(对话/短文/阅读)",
+   "54 条官方音频 + 活动映射",
+   "词汇学习闭环 + Review"
+  ],
+  "drop_70_percent": [
+   "无答案的客观题判分",
+   "句子级切片",
+   "语法指针结构化",
+   "未验证的选项/题目结构",
+   "大规模清洗产物"
+  ]
+ },
+ "next_stage_candidates": [
+  {
+   "rank": 1,
+   "item": "词汇 + 音频的听说读微训练（听音识词/跟读/拼写/词义回忆）",
+   "cost": "低",
+   "value": "高"
+  },
+  {
+   "rank": 2,
+   "item": "教材原文 + 官方音频的整段听读/跟读页（活动级，不切片）",
+   "cost": "低",
+   "value": "高"
+  },
+  {
+   "rank": 3,
+   "item": "Phrase / Pattern 出处锚定 + 微练习",
+   "cost": "中低",
+   "value": "中高"
+  }
+ ],
+ "risks": [
+  "派生词音频非官方独立音频，对外表述需标注来源",
+  "learning.db 已有真机使用痕迹（21 条），验收口径需同步调整",
+  "Phrase/Pattern 出处匹配必须坚持逐字出现口径，避免重演 A9/A10 归属错误",
+  "教材原文页是 Section 粒度，同页跨活动精确切分仍为 NEEDS_REVIEW",
+  "句子级路线若重启，必须先建立 CONFIRMED 门槛"
+ ],
+ "baseline": {
+  "project_root": "D:\\ZhixueEnglish",
+  "git": "UNAVAILABLE",
+  "database_changed": false,
+  "contentpack_changed": false,
+  "audio_changed": false,
+  "code_changed": false,
+  "android_changed": false,
+  "v121_changed": false,
+  "ai_calls": 0,
+  "external_network": 0,
+  "dependencies_installed": 0,
+  "learning_db_sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+  "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+  "mp3_count": 54,
+  "mp3_set_fingerprint": "C2E2E60E7DE50691D5315C4A55E7C3BA",
+  "v121_docx_sha256": "31AC3638F324C23733652DD0187FE42C5DFC07B75F1688797331E585D5E94EBB",
+  "v121_md_sha256": "C4532C79C7EDCB174169C88D10DEE5CCEAB2479FDBABC6AFDFE6CA9806C12890",
+  "tests_run": false
+ },
+ "one_line": "现在最值得做的是把 288 个单词 + 官方音频 + 教材原文接成孩子每天能用的听说读微训练；现在最应该停止的是继续扩大教材搬运与句子级音频切片；暂时不要碰的是无可靠答案的自动判分与 ASR/强制对齐安装。",
+ "stop": "P3-04 只读审计完成，立即停止；未进入 P3-05。"
+}

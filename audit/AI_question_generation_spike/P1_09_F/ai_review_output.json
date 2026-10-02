@@ -1,0 +1,102 @@
+{
+  "stage": "P1-09-F",
+  "prompt_version": "P1-09-F-v1",
+  "model": "deepseek-v4-pro",
+  "raw_review_version": "P1-09-F-v1",
+  "raw_object_keys": [
+    "items",
+    "review_version"
+  ],
+  "items": [
+    {
+      "question_id": "FIX-C1",
+      "candidates": [
+        {
+          "option": "A",
+          "candidate_text": "friends",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "课文原句为“with his friends”，语法和语义均正确。"
+        },
+        {
+          "option": "B",
+          "candidate_text": "students",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "“和他的学生一起拉二胡”语法正确，语义通顺，未被课文排除。"
+        },
+        {
+          "option": "C",
+          "candidate_text": "parents",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "“和他的父母一起拉二胡”语法正确，语义可理解，未被课文排除。"
+        },
+        {
+          "option": "D",
+          "candidate_text": "teachers",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "“和他的老师一起拉二胡”语法正确，语义通顺，未被课文排除。"
+        }
+      ]
+    },
+    {
+      "question_id": "FIX-C2",
+      "candidates": [
+        {
+          "option": "A",
+          "candidate_text": "sentence",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "课文原句为“writes the sentence”，语法和语义均正确。"
+        },
+        {
+          "option": "B",
+          "candidate_text": "word",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "“写一个单词”语法正确，语义通顺，未被课文排除。"
+        },
+        {
+          "option": "C",
+          "candidate_text": "picture",
+          "grammar_valid": "YES",
+          "semantic_valid": "NO",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "NO",
+          "reason_cn": "“write a picture”动宾搭配不当，应为 draw a picture。"
+        },
+        {
+          "option": "D",
+          "candidate_text": "name",
+          "grammar_valid": "YES",
+          "semantic_valid": "YES",
+          "textbook_context_valid": "YES",
+          "need_more_context": "NO",
+          "valid_alternative": "YES",
+          "reason_cn": "“写一个名字”语法正确，语义通顺，未被课文排除。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "task_id": "P2-6-F-0-B",
+  "title": "初中英语AI辅助学习系统 最高指导原则与开发规范 V1.2 → V1.2.1 修订",
+  "date": "2026-09-13",
+  "project_root": "D:\\ZhixueEnglish",
+  "ai_calls": 0,
+  "network_requests": 0,
+  "code_changes": 0,
+  "basis": [
+    "audit/P2-6-F-0_textbook_exercise_repair_readiness.md",
+    "audit/P2-6-F-0_textbook_exercise_repair_readiness.json",
+    "audit/P2-6-F-0-A_v12_sync_and_repair_boundary.md",
+    "audit/P2-6-F-0-A_v12_sync_and_repair_boundary.json"
+  ],
+  "v12_before": {
+    "docx": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+    "docx_size_bytes": 53130,
+    "docx_sha256": "6D3595CF7D83879ADF3E6452C5E5A74C5300E89265DE1B4F2FA8A1EBDBB861A9",
+    "md": "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.md",
+    "md_sha256": "83D39D93EB9255BF6C229FB195A387B1E31C5F8DAB846C86B63D7229079EF88F",
+    "md_lines": 850,
+    "docx_body_elements": 415,
+    "preserved_untouched": true
+  },
+  "v121_after": {
+    "docx": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.1.docx",
+    "docx_size_bytes": 58063,
+    "docx_sha256": "31AC3638F324C23733652DD0187FE42C5DFC07B75F1688797331E585D5E94EBB",
+    "md": "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.1.md",
+    "md_size_bytes": 51395,
+    "md_sha256": "C4532C79C7EDCB174169C88D10DEE5CCEAB2479FDBABC6AFDFE6CA9806C12890",
+    "md_lines": 1040,
+    "docx_paragraphs": 545,
+    "docx_tables": 1,
+    "docx_styles": {"Heading1": 22, "Heading2": 60, "ListBullet": 223, "Normal": 240},
+    "chapters": 22,
+    "new_sections": ["六·8", "六·9", "七·7", "七·8", "七·9", "七·10", "十一·8"],
+    "revised_sections": ["五·2", "六·2", "六·3", "六·6", "九", "十·3", "十八", "二十一", "二十二·3", "二十二·5", "二十二·7", "二十二·10"]
+  },
+  "revision_reasons": [
+    "教材文字—音频—上下文—Question 严谨锚定原则正式化",
+    "官方完整音频与音频切分边界正式化",
+    "正式教材练习批改责任正式化",
+    "自评不能作为正式 Evidence 正式化",
+    "教材内容事实与答案事实分离正式化",
+    "NEEDS_REVIEW 正式化",
+    "消除第七章等章节与已经确定设计/实现之间的滞后"
+  ],
+  "new_principle_A": {
+    "location": "六·8 教材文字—音频—上下文—Question 严谨锚定原则",
+    "chain": "教材文本 → 上下文 → 官方音频 → 教材活动 → Question → 回答区域",
+    "requirements": [
+      "每条关系必须可验证、可追溯，并保留审核状态",
+      "只有存在教材事实或确定性结构证据时才允许建立映射",
+      "正式教材事实优先于程序推断"
+    ],
+    "weak_evidence_not_sufficient_alone": [
+      "页面相邻",
+      "文件相邻",
+      "活动编号相近",
+      "音频时长",
+      "文字长度",
+      "文件名相似",
+      "AI 语义判断",
+      "看起来应该对应",
+      "同页存在的其他内容"
+    ],
+    "hard_rules": [
+      "同一页存在多个活动时，不得仅按页码把题目、正文、对话或音频串到一起",
+      "Question 必须锚定到明确的教材活动与上下文；无法确定时不返回题目并标记 NEEDS_REVIEW",
+      "听力材料与 Question 必须锚定；一段音频可服务同一活动多题，但不得跨活动",
+      "正文、Dialogue、Reading 不得因为解析方便而被当作 Question 题干",
+      "锚定关系只能是只读派生，不得反向修改教材事实"
+    ]
+  },
+  "new_audio_boundary": {
+    "location": "六·9 官方音频完整性与切分原则",
+    "rules": [
+      "出版社已按活动提供独立官方音频时，默认使用官方完整音频",
+      "不得因为文字短、音频长认为音频错误",
+      "不得根据文字长度推测音频播放范围",
+      "不得根据音频时长推测题目边界",
+      "不得使用 AI 猜测音频切点",
+      "不得为了 UI 方便制造未经验证的音频片段",
+      "只有存在教材结构提供的明确可验证边界时，才允许建立片段级映射",
+      "无法确定边界时：保留完整音频 + 完整教材文本 + 标记 NEEDS_REVIEW + 禁止自动猜测",
+      "准确锚定优先于切割；官方完整音频优先于未经验证的切割；本规范不要求把听力切成短句或短片段",
+      "音频播放行为本身不产生正式判断证据"
+    ],
+    "current_facts": {"assets": 54, "activity_level": 41, "section_level": 13, "cross_activity": 0, "split_required": 0}
+  },
+  "new_principle_B": {
+    "location": "七·7 正式教材练习批改责任原则",
+    "chain": "孩子选择练习 → 孩子作答 → 系统/规则/AI 批改 → 结果 → 错误与薄弱分析 → Evidence → Mastery / Diagnosis",
+    "child_autonomy": ["学什么", "哪个单元", "哪项内容", "什么时候学", "学多久", "是否暂停", "是否继续", "是否复习", "是否进行阶段验证"],
+    "system_ai_duties": ["批改", "判断正确/错误/部分正确", "错误分析", "教材证据解释", "Evidence 形成", "Mastery 计算", "Diagnosis", "后续建议"],
+    "must_state": "孩子拥有学习选择权，但不承担系统应该完成的专业批改责任",
+    "prohibited": [
+      "把“请你自己判断做得怎么样”作为正式教材练习的核心闭环",
+      "把“我完成了这次练习”作为正式正确或错误证据"
+    ],
+    "companion": {
+      "七·8": "客观题（choice/judge/fill_blank/match）有可靠答案时用确定性规则判分，无答案时不判分并标记 NEEDS_REVIEW；禁止 AI 猜答案、常识替代、语言模型生成答案、上下文推测写入正式答案。主观题（short_answer/writing/speaking 开放任务）可用 AI 做语义分析、教材证据对照、评分判断、错误分析与建议，但必须受教材事实、上下文、题目要求、评分标准约束，AI 不能创造教材事实。",
+      "七·10": "“我完成了/我觉得会了/我觉得做对了/我觉得做得不错/我自己判断掌握了”均不能产生 correct/incorrect/partial，也不能产生正式 Evidence；done 尤其不能作为正式正确或错误证据；完成动作只表示发生过一次学习或作答行为；正式 Evidence 只能来自可验证的规则判分、可靠答案事实、AI 批改结果或明确的正式判断结果。"
+    }
+  },
+  "answer_fact_principle": {
+    "location": "七·9 答案事实原则",
+    "statement": "教材答案是独立于教材内容事实的另一类事实",
+    "content_facts": ["正文", "对话", "阅读", "词汇", "句型", "活动", "音频"],
+    "answer_facts": ["choice 正确选项", "judge 判断结果", "fill_blank 答案", "match 对应关系", "其他需要标准答案的客观题"],
+    "rules": [
+      "即使教材内容事实完整，也不能推导出可靠教材答案",
+      "没有可靠答案来源时禁止自动补答案，进入 NEEDS_REVIEW",
+      "等待教师用书、官方答案或人工核验的可靠来源",
+      "实测基线：157 练习 / 360 题，可靠答案 0；人工核验前客观题不判分"
+    ]
+  },
+  "needs_review_principle": {
+    "location": "十一·8 NEEDS_REVIEW 规则",
+    "scope": ["题目结构", "题目与上下文关系", "音频与文本关系", "音频片段边界", "选择题选项", "填空位置", "教材答案", "主观题评分标准", "其他不确定教材事实"],
+    "meaning": ["禁止自动修复", "等待可靠事实来源或人工核验"],
+    "not_meaning": ["AI 帮忙猜一下", "先补上再核验"],
+    "visibility": "只存在于开发数据与报告中，不得进入孩子界面",
+    "release_path": "出现可靠事实来源并记录审核人与依据"
+  },
+  "c_items_handling": [
+    {"id": "C-1", "issue": "“检查”主体不明", "location": "六·2", "handled": true, "how": "改为由系统/规则/AI 批改，并说明无答案时暂不判分并标记 NEEDS_REVIEW"},
+    {"id": "C-2", "issue": "“检查”主体不明", "location": "十八", "handled": true, "how": "流程改为由系统/规则/AI 批改，并加说明段"},
+    {"id": "C-3", "issue": "“不直接给答案”易被读成系统永不提供教材答案", "location": "九", "handled": true, "how": "限定为解题辅导场景；批改必须给判定；教材答案不得由 AI 生成"},
+    {"id": "C-4", "issue": "“待进一步判断”主体不明", "location": "十·3", "handled": true, "how": "明确判断主体是系统、依据是教材事实与可靠答案、进入 NEEDS_REVIEW"},
+    {"id": "C-5", "issue": "音频转写边界不清", "location": "五·2", "handled": true, "how": "转写结果不得作为教材事实或答案来源"},
+    {"id": "C-6", "issue": "“以后可增加逐句播放”无前提", "location": "六·3", "handled": true, "how": "限定为后续能力；不得为此切割音频或推算切点"},
+    {"id": "C-7", "issue": "弱证据清单缺项", "location": "六·6", "handled": true, "how": "新增页面相邻/文件相邻、同页多活动相邻关系、音频时长与文本长度比例；加“同页多活动不得按位置串联”特别规定"},
+    {"id": "C-8", "issue": "“不必一次性全部自动执行”可能被读成批改可省略", "location": "二十二·10", "handled": true, "how": "补“批改/证据聚合/孩子决定必须显式存在”“批改属最低闭环，不得以自评替代”"}
+  ],
+  "easy_misreading_items": [
+    {"id": 1, "item": "检查", "where": ["六·2", "十八"], "handled": true},
+    {"id": 2, "item": "不直接给答案", "where": ["九"], "handled": true},
+    {"id": 3, "item": "待进一步判断", "where": ["十·3"], "handled": true},
+    {"id": 4, "item": "自我评价", "where": ["七·10", "二十二·5"], "handled": true},
+    {"id": 5, "item": "完成", "where": ["七·10"], "handled": true},
+    {"id": 6, "item": "音频播放", "where": ["六·9", "二十二·5"], "handled": true},
+    {"id": 7, "item": "听力学习", "where": ["六·7", "六·8"], "handled": true},
+    {"id": 8, "item": "AI 辅助", "where": ["九"], "handled": true}
+  ],
+  "preserved_core_principles": [
+    "教材是主线，AI 是辅助",
+    "孩子做主；自主权不等于取消结构",
+    "APP 负责整理与提效，而不是替代教材",
+    "原始教材必须只读保留；教材真实性优先于开发便利",
+    "教材内容 ≠ 知识点；学习对象/Activity/Exercise 三层不得混用",
+    "Evidence-first；学过 ≠ 掌握；一次错误不等于薄弱",
+    "Mastery 规则（3+2+2 与最近 3 次至少 2 次正确，标注为可调整工程参数）",
+    "教材优先巩固顺序",
+    "AI 角色边界（不决定学什么、不自动安排路径、不自动推进、不分数排名等级、证据不足不做确定结论）",
+    "阶段验证原则",
+    "专项学习的位置",
+    "不游戏化、不排行榜、不积分、不等级",
+    "AI 数据复用优先、成本控制、教材/AI 数据隔离、AI 反馈水平与阶段适配",
+    "十九章 冲突时的最终裁决顺序"
+  ],
+  "docx_construction": {
+    "method": "template-preserving OOXML build：以 V1.2 原件为模板，仅重建 word/document.xml 与 docProps/core.xml",
+    "template_reference": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+    "reused_byte_identical_elements": 406,
+    "replaced_elements": 9,
+    "newly_generated_paragraphs": 104,
+    "regenerated_tables": 0,
+    "replaced_element_list": [
+      "最高指导原则与开发规范 V1.2（标题）",
+      "如需音频转写，原始音频必须保留，转写结果只能作为辅助。",
+      "播放 → 完成教材听力任务 → 检查 → 重听 → 查看文字 → 理解 → 诊断",
+      "简单编号推测。",
+      "优先给提示和思路，而不是直接给答案。",
+      "至少应能完成：选择教材 → … → 检查 → 发现问题 → …",
+      "从本文件 V1.2 起，本项目后续开发统一以本规范作为最高指导依据。…",
+      "自评不能单独升级掌握状态；",
+      "说明：这是产品设计原则，不代表必须一次性全部自动执行；其中“证据聚合”与“孩子决定”两个环节必须显式存在。"
+    ],
+    "package_parts_only_in_template": [],
+    "package_parts_only_in_new": [],
+    "package_parts_differing": ["docProps/core.xml", "word/document.xml"],
+    "sectPr_identical_to_template": true,
+    "styles_reused": ["Normal", "Heading1", "Heading2", "ListBullet", "TableGrid"],
+    "no_new_styles": true,
+    "numbering_convention": "沿用模板既有约定：编号项为 Normal 段落 + 文字编号（模板第十九章即如此），未引入新的编号定义"
+  },
+  "structural_verification": {
+    "zip_integrity": "OK",
+    "document_xml_well_formed": true,
+    "docx_text_equals_md_text": true,
+    "headings": {"chapter_heading1": 22, "section_heading2": 60},
+    "list_bullets": 223,
+    "tables": 1,
+    "package_part_inventory_unchanged": true
+  },
+  "render_gate": {
+    "attempted": true,
+    "completed": false,
+    "reason": "LibreOffice/soffice 未安装；render_docx.py 依赖的 pdf2image 模块缺失；Word COM 自动化因不可见模态对话框无法完成导出（进程已终止，未产生文件）",
+    "fallback": "按 documents skill 的降级路径完成结构级校验（XML 良构、样式分布、段落/表格计数、文本逐字符一致、包部件逐字节对比、页面几何一致）",
+    "explicit_note": "本次未完成 PNG/PDF 渲染级视觉验证，不代表已通过渲染门"
+  },
+  "file_sha256": {
+    "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx": "6D3595CF7D83879ADF3E6452C5E5A74C5300E89265DE1B4F2FA8A1EBDBB861A9",
+    "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.md": "83D39D93EB9255BF6C229FB195A387B1E31C5F8DAB846C86B63D7229079EF88F",
+    "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.1.docx": "31AC3638F324C23733652DD0187FE42C5DFC07B75F1688797331E585D5E94EBB",
+    "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.1.md": "C4532C79C7EDCB174169C88D10DEE5CCEAB2479FDBABC6AFDFE6CA9806C12890",
+    "structured/learning/learning.db": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "structured/contentpack/v5/FLTRP-EN-7A-2022CUR.sqlite": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F"
+  },
+  "baseline_protection": {
+    "v12_docx_sha_unchanged": true,
+    "v12_md_sha_unchanged": true,
+    "learning_db_sha_unchanged": true,
+    "learning_db_mtime_unchanged": "2026-09-12 23:15:13",
+    "learning_db_tables": 7,
+    "learning_record_rows": 20,
+    "mastery_state_rows": 7,
+    "integrity_check": "ok",
+    "foreign_key_check": 0,
+    "contentpack_sha_unchanged": true,
+    "android_unchanged": true,
+    "android_application_id": "com.zhixueenglish.app.dev",
+    "android_web_base_url": "http://192.168.2.3:8770/",
+    "tests": "本轮未运行测试（纯规范修订）；测试文件未修改；基线仍为 397 PASS",
+    "code_changes": 0,
+    "ai_calls": 0,
+    "network_requests": 0,
+    "files_added": [
+      "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.1.docx",
+      "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.1.md",
+      "audit/P2-6-F-0-B_v12_1_revision_report.md",
+      "audit/P2-6-F-0-B_v12_1_revision_report.json"
+    ]
+  },
+  "conclusion": {
+    "result": "PASS",
+    "summary": "V1.2.1 已正式建立；原则 A、音频边界、原则 B、批改边界、答案事实、自评证据边界、NEEDS_REVIEW 均写入正式规范；C-1～C-8 与 8 项易误解条款全部处理；V1.2 原文件与全部代码/数据基线未变。",
+    "caveat": "未完成渲染级视觉验证（LibreOffice/pdf2image 不可用，Word COM 无法导出）；已按 skill 降级路径完成结构级校验。",
+    "stop": "本次只做规范修订，立即停止，不进入 F-1。"
+  }
+}

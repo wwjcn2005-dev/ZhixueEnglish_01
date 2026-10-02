@@ -1,0 +1,1442 @@
+{
+  "stage": "P1-09-D",
+  "summary": {
+    "total_fixtures": 15,
+    "dimension_checks": 41,
+    "dimension_matches": 36,
+    "dimension_false_negative": 2,
+    "dimension_false_positive": 0,
+    "dimension_soft_deviation": 0,
+    "dimension_unclassified": 3,
+    "decision_matches": 12,
+    "decision_false_negative": 2,
+    "decision_false_positive": 0,
+    "fixtures_fully_matched": 12,
+    "generic_explanation_count": 8,
+    "generic_explanation_ids": [
+      "FIX-C1",
+      "FIX-C2",
+      "FIX-D1",
+      "FIX-D2",
+      "FIX-F2",
+      "FIX-F3",
+      "FIX-G1",
+      "FIX-G2"
+    ],
+    "decision_masked_dimension_errors": [],
+    "by_category": {
+      "A_true_english_error": {
+        "label": "A 真正错误英语",
+        "n": 2,
+        "scored_dimension_checks": 2,
+        "dimension_matches": 2,
+        "false_negative_dimensions": 0,
+        "false_positive_dimensions": 0,
+        "soft_deviations": 0,
+        "decision_matches": 2,
+        "fixtures_fully_matched": 2
+      },
+      "B_broken_distractor": {
+        "label": "B 明显错误干扰项",
+        "n": 2,
+        "scored_dimension_checks": 4,
+        "dimension_matches": 4,
+        "false_negative_dimensions": 0,
+        "false_positive_dimensions": 0,
+        "soft_deviations": 0,
+        "decision_matches": 2,
+        "fixtures_fully_matched": 2
+      },
+      "C_true_second_answer": {
+        "label": "C 真正第二正确答案",
+        "n": 2,
+        "scored_dimension_checks": 2,
+        "dimension_matches": 0,
+        "false_negative_dimensions": 2,
+        "false_positive_dimensions": 0,
+        "soft_deviations": 0,
+        "decision_matches": 0,
+        "fixtures_fully_matched": 0
+      },
+      "D_reality_conflict": {
+        "label": "D 现实常识冲突",
+        "n": 2,
+        "scored_dimension_checks": 2,
+        "dimension_matches": 2,
+        "false_negative_dimensions": 0,
+        "false_positive_dimensions": 0,
+        "soft_deviations": 0,
+        "decision_matches": 2,
+        "fixtures_fully_matched": 2
+      },
+      "E_insufficient_context": {
+        "label": "E 上下文不足",
+        "n": 2,
+        "scored_dimension_checks": 2,
+        "dimension_matches": 2,
+        "false_negative_dimensions": 0,
+        "false_positive_dimensions": 0,
+        "soft_deviations": 0,
+        "decision_matches": 2,
+        "fixtures_fully_matched": 2
+      },
+      "F_high_value_normal": {
+        "label": "F 高学习价值正常题",
+        "n": 3,
+        "scored_dimension_checks": 21,
+        "dimension_matches": 18,
+        "false_negative_dimensions": 0,
+        "false_positive_dimensions": 0,
+        "soft_deviations": 0,
+        "decision_matches": 2,
+        "fixtures_fully_matched": 2
+      },
+      "G_mechanical_but_valid": {
+        "label": "G 机械但合理的重点词填空",
+        "n": 2,
+        "scored_dimension_checks": 8,
+        "dimension_matches": 8,
+        "false_negative_dimensions": 0,
+        "false_positive_dimensions": 0,
+        "soft_deviations": 0,
+        "decision_matches": 2,
+        "fixtures_fully_matched": 2
+      }
+    }
+  },
+  "rows": [
+    {
+      "fixture_id": "FIX-A1",
+      "category": "A_true_english_error",
+      "subcategory": "主谓一致",
+      "question_type": "fill",
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "FAIL"
+            ],
+            "fn_if": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "题干存在明确主谓一致错误（Grandpa like），属于真实英语错误，不依赖争议性语法解释。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-A1",
+        "english_correct": "FAIL",
+        "answer_unique": "PASS",
+        "naturalness": "FAIL",
+        "learning_value": "CONCERN",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_REJECT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "题干中 Grandpa like 应为 Grandpa likes，主谓不一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "english_correct": {
+          "gold_expected": [
+            "FAIL"
+          ],
+          "ai": "FAIL",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "题干中 Grandpa like 应为 Grandpa likes，主谓不一致。",
+        "chars": 40,
+        "generic": false,
+        "same_text_count": 1
+      }
+    },
+    {
+      "fixture_id": "FIX-A2",
+      "category": "A_true_english_error",
+      "subcategory": "主谓一致（判断题）",
+      "question_type": "reading_judge",
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "FAIL"
+            ],
+            "fn_if": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "题干存在明确主谓一致错误（Plants is），事实判断为 True 不代表英语正确。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-A2",
+        "english_correct": "FAIL",
+        "answer_unique": "PASS",
+        "naturalness": "FAIL",
+        "learning_value": "CONCERN",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_REJECT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "题干中 Plants is 应为 Plants are，主谓不一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "english_correct": {
+          "gold_expected": [
+            "FAIL"
+          ],
+          "ai": "FAIL",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "题干中 Plants is 应为 Plants are，主谓不一致。",
+        "chars": 34,
+        "generic": false,
+        "same_text_count": 1
+      }
+    },
+    {
+      "fixture_id": "FIX-B1",
+      "category": "B_broken_distractor",
+      "subcategory": "干扰项与题干不匹配",
+      "question_type": "vocab_choice",
+      "gold": {
+        "scored": {
+          "distractor_quality": {
+            "must_be_in": [
+              "FAIL",
+              "CONCERN"
+            ],
+            "fn_if": [
+              "PASS",
+              "NOT_APPLICABLE"
+            ],
+            "fp_if": []
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ],
+            "soft": [
+              "CONCERN"
+            ]
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "答案 band 本身正确且唯一；问题出在干扰项 quality：guitar 无法与题干介词搭配。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-B1",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "CONCERN",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_REVIEW",
+        "context_status": "SUFFICIENT",
+        "short_reason": "三个干扰项在 in the school ___ 中都不自然，干扰性较弱。",
+        "confidence": "MEDIUM"
+      },
+      "dimension_results": {
+        "distractor_quality": {
+          "gold_expected": [
+            "FAIL",
+            "CONCERN"
+          ],
+          "ai": "CONCERN",
+          "verdict": "MATCH"
+        },
+        "answer_unique": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "三个干扰项在 in the school ___ 中都不自然，干扰性较弱。",
+        "chars": 37,
+        "generic": false,
+        "same_text_count": 1
+      }
+    },
+    {
+      "fixture_id": "FIX-B2",
+      "category": "B_broken_distractor",
+      "subcategory": "干扰项词形与题干不匹配",
+      "question_type": "reading_choice",
+      "gold": {
+        "scored": {
+          "distractor_quality": {
+            "must_be_in": [
+              "FAIL",
+              "CONCERN"
+            ],
+            "fn_if": [
+              "PASS",
+              "NOT_APPLICABLE"
+            ],
+            "fp_if": []
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ],
+            "soft": [
+              "CONCERN"
+            ]
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "答案正确；to make rain 这个干扰项在语法位置上不成立，属于干扰项缺陷。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-B2",
+        "english_correct": "FAIL",
+        "answer_unique": "PASS",
+        "naturalness": "CONCERN",
+        "learning_value": "PASS",
+        "distractor_quality": "CONCERN",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_REJECT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "选项 to make rain 不能作 make 的宾语，语法上不可选。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "distractor_quality": {
+          "gold_expected": [
+            "FAIL",
+            "CONCERN"
+          ],
+          "ai": "CONCERN",
+          "verdict": "MATCH"
+        },
+        "answer_unique": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "选项 to make rain 不能作 make 的宾语，语法上不可选。",
+        "chars": 36,
+        "generic": false,
+        "same_text_count": 1
+      }
+    },
+    {
+      "fixture_id": "FIX-C1",
+      "category": "C_true_second_answer",
+      "subcategory": "名词宾语两解",
+      "question_type": "vocab_choice",
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "FAIL"
+            ],
+            "fn_if": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "with his students 同样自然、语法成立、不被教材语境排除 → 真正的第二正确答案。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-C1",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "无显著问题，答案与课文一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "answer_unique": {
+          "gold_expected": [
+            "FAIL"
+          ],
+          "ai": "PASS",
+          "verdict": "FALSE_NEGATIVE"
+        }
+      },
+      "dimension_match": false,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [
+        "answer_unique"
+      ],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": false,
+      "decision_false_negative": true,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "无显著问题，答案与课文一致。",
+        "chars": 14,
+        "generic": true,
+        "same_text_count": 7
+      }
+    },
+    {
+      "fixture_id": "FIX-C2",
+      "category": "C_true_second_answer",
+      "subcategory": "名词宾语两解（同词性）",
+      "question_type": "vocab_choice",
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "FAIL"
+            ],
+            "fn_if": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_accept",
+        "gold_reason": "writes a word on the blackboard 完全成立 → 语言层面的第二正确答案。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-C2",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "MECHANICAL_REWRITE",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "无显著问题，答案与课文一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "answer_unique": {
+          "gold_expected": [
+            "FAIL"
+          ],
+          "ai": "PASS",
+          "verdict": "FALSE_NEGATIVE"
+        }
+      },
+      "dimension_match": false,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [
+        "answer_unique"
+      ],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": false,
+      "decision_false_negative": true,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "无显著问题，答案与课文一致。",
+        "chars": 14,
+        "generic": true,
+        "same_text_count": 7
+      }
+    },
+    {
+      "fixture_id": "FIX-D1",
+      "category": "D_reality_conflict",
+      "subcategory": "现实常识 vs 课文陈述（树）",
+      "question_type": "reading_choice",
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ],
+            "soft": [
+              "CONCERN"
+            ]
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "课文明确陈述 trees can make their own rain；sugar/oxygen/food 只在现实世界成立，属于 Answer Uniqueness Contract V1 的 B 类（现实常识存在其他解释），不得据此判答案不唯一。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-D1",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "无显著问题，答案与课文一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "answer_unique": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "无显著问题，答案与课文一致。",
+        "chars": 14,
+        "generic": true,
+        "same_text_count": 7
+      }
+    },
+    {
+      "fixture_id": "FIX-D2",
+      "category": "D_reality_conflict",
+      "subcategory": "现实常识 vs 课文陈述（水）",
+      "question_type": "reading_choice",
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ],
+            "soft": [
+              "CONCERN"
+            ]
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "课文陈述 Water from the root will ...；现实世界水来自土壤，属于 B 类现实常识，不得据此判答案不唯一。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-D2",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "无显著问题，答案与课文一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "answer_unique": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "无显著问题，答案与课文一致。",
+        "chars": 14,
+        "generic": true,
+        "same_text_count": 7
+      }
+    },
+    {
+      "fixture_id": "FIX-E1",
+      "category": "E_insufficient_context",
+      "subcategory": "缺少指标物",
+      "question_type": "fill",
+      "gold": {
+        "scored": {
+          "context_status": {
+            "must_be_in": [
+              "CONTEXT_INSUFFICIENT"
+            ],
+            "fn_if": [
+              "SUFFICIENT"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "上下文缺少指标物，属于 Context Insufficient，而不是答案不唯一。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-E1",
+        "english_correct": "PASS",
+        "answer_unique": "CONCERN",
+        "naturalness": "CONCERN",
+        "learning_value": "CONCERN",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_REVIEW",
+        "context_status": "CONTEXT_INSUFFICIENT",
+        "short_reason": "上下文未提供颜色信息，无法判断 grey 是否唯一。",
+        "confidence": "LOW"
+      },
+      "dimension_results": {
+        "context_status": {
+          "gold_expected": [
+            "CONTEXT_INSUFFICIENT"
+          ],
+          "ai": "CONTEXT_INSUFFICIENT",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "上下文未提供颜色信息，无法判断 grey 是否唯一。",
+        "chars": 26,
+        "generic": false,
+        "same_text_count": 1
+      }
+    },
+    {
+      "fixture_id": "FIX-E2",
+      "category": "E_insufficient_context",
+      "subcategory": "指代无法解析",
+      "question_type": "fill",
+      "gold": {
+        "scored": {
+          "context_status": {
+            "must_be_in": [
+              "CONTEXT_INSUFFICIENT"
+            ],
+            "fn_if": [
+              "SUFFICIENT"
+            ],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "所给上下文与题干不同源，无法判断答案；属于 Context Insufficient。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-E2",
+        "english_correct": "PASS",
+        "answer_unique": "CONCERN",
+        "naturalness": "PASS",
+        "learning_value": "CONCERN",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_REVIEW",
+        "context_status": "CONTEXT_INSUFFICIENT",
+        "short_reason": "上下文未出现 stage，无法验证答案依据。",
+        "confidence": "LOW"
+      },
+      "dimension_results": {
+        "context_status": {
+          "gold_expected": [
+            "CONTEXT_INSUFFICIENT"
+          ],
+          "ai": "CONTEXT_INSUFFICIENT",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "上下文未出现 stage，无法验证答案依据。",
+        "chars": 22,
+        "generic": false,
+        "same_text_count": 1
+      }
+    },
+    {
+      "fixture_id": "FIX-F1",
+      "category": "F_high_value_normal",
+      "subcategory": "词汇重组（fans of）",
+      "question_type": "vocab_choice",
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "naturalness": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [
+              "FAIL"
+            ],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "distractor_quality": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "grade_fit": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "RECOMBINED"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "accept",
+        "gold_reason": "用课文短语 fans of 重新组织成新语境，学习点明确（fan of 的用法），答案唯一、英语正确、年级适配，属于高学习价值正常题。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-F1",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "CONCERN",
+        "learning_value": "PASS",
+        "distractor_quality": "CONCERN",
+        "grade_fit": "PASS",
+        "mechanical_level": "MECHANICAL_REWRITE",
+        "suggested_decision": "SUGGEST_REVIEW",
+        "context_status": "SUFFICIENT",
+        "short_reason": "fans of him 说法不自然，干扰项语法上无法填入。",
+        "confidence": "MEDIUM"
+      },
+      "dimension_results": {
+        "english_correct": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "answer_unique": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "naturalness": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "CONCERN",
+          "verdict": "UNCLASSIFIED_DEVIATION"
+        },
+        "learning_value": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "distractor_quality": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "CONCERN",
+          "verdict": "UNCLASSIFIED_DEVIATION"
+        },
+        "grade_fit": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "mechanical_level": {
+          "gold_expected": [
+            "RECOMBINED"
+          ],
+          "ai": "MECHANICAL_REWRITE",
+          "verdict": "UNCLASSIFIED_DEVIATION"
+        }
+      },
+      "dimension_match": false,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [
+        "naturalness",
+        "distractor_quality",
+        "mechanical_level"
+      ],
+      "decision_match": false,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "fans of him 说法不自然，干扰项语法上无法填入。",
+        "chars": 29,
+        "generic": false,
+        "same_text_count": 1
+      }
+    },
+    {
+      "fixture_id": "FIX-F2",
+      "category": "F_high_value_normal",
+      "subcategory": "因果理解题",
+      "question_type": "reading_choice",
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "naturalness": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [
+              "FAIL"
+            ],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "distractor_quality": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "grade_fit": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "NOT_APPLICABLE",
+              "RECOMBINED"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "accept",
+        "gold_reason": "因果理解题：需要把学生的提问与 Questions jump into my mind 连起来，比事实定位题有更高的学习价值。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-F2",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "无显著问题，答案与课文一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "english_correct": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "answer_unique": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "naturalness": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "learning_value": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "distractor_quality": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "grade_fit": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "mechanical_level": {
+          "gold_expected": [
+            "NOT_APPLICABLE",
+            "RECOMBINED"
+          ],
+          "ai": "NOT_APPLICABLE",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "无显著问题，答案与课文一致。",
+        "chars": 14,
+        "generic": true,
+        "same_text_count": 7
+      }
+    },
+    {
+      "fixture_id": "FIX-F3",
+      "category": "F_high_value_normal",
+      "subcategory": "两句信息整合题",
+      "question_type": "reading_choice",
+      "gold": {
+        "scored": {
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "naturalness": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [
+              "FAIL"
+            ],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "distractor_quality": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "grade_fit": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "NOT_APPLICABLE",
+              "RECOMBINED"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "accept",
+        "gold_reason": "需要整合课文两句信息（erhu + Beijing opera），而不是抄一句；干扰项均取自同一 Unit 的教材素材。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-F3",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "PASS",
+        "grade_fit": "PASS",
+        "mechanical_level": "NOT_APPLICABLE",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "无显著问题，答案与课文一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "english_correct": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "answer_unique": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "naturalness": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "learning_value": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "distractor_quality": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "grade_fit": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "mechanical_level": {
+          "gold_expected": [
+            "NOT_APPLICABLE",
+            "RECOMBINED"
+          ],
+          "ai": "NOT_APPLICABLE",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "无显著问题，答案与课文一致。",
+        "chars": 14,
+        "generic": true,
+        "same_text_count": 7
+      }
+    },
+    {
+      "fixture_id": "FIX-G1",
+      "category": "G_mechanical_but_valid",
+      "subcategory": "名词性物主代词重点词",
+      "question_type": "fill",
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [
+              "FAIL"
+            ],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "DIRECT_REPRODUCTION",
+              "MECHANICAL_REWRITE"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "形式是教材原句挖空（机械），但考的是 Activity 5 的语法重点（名词性物主代词 hers），答案唯一、英语正确 → 不能因为机械形式判 FAIL。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-G1",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "无显著问题，考查物主代词 hers。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "answer_unique": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "english_correct": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "learning_value": {
+          "gold_expected": [
+            "PASS",
+            "CONCERN"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "mechanical_level": {
+          "gold_expected": [
+            "DIRECT_REPRODUCTION",
+            "MECHANICAL_REWRITE"
+          ],
+          "ai": "DIRECT_REPRODUCTION",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "无显著问题，考查物主代词 hers。",
+        "chars": 18,
+        "generic": true,
+        "same_text_count": 1
+      }
+    },
+    {
+      "fixture_id": "FIX-G2",
+      "category": "G_mechanical_but_valid",
+      "subcategory": "say + 直接引语重点词",
+      "question_type": "fill",
+      "gold": {
+        "scored": {
+          "answer_unique": {
+            "must_be_in": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "english_correct": {
+            "must_be_in": [
+              "PASS"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "CONCERN",
+              "FAIL"
+            ]
+          },
+          "learning_value": {
+            "must_be_in": [
+              "PASS",
+              "CONCERN"
+            ],
+            "fn_if": [],
+            "fp_if": [
+              "FAIL"
+            ]
+          },
+          "mechanical_level": {
+            "must_be_in": [
+              "DIRECT_REPRODUCTION",
+              "MECHANICAL_REWRITE"
+            ],
+            "fn_if": [],
+            "fp_if": []
+          }
+        },
+        "decision_rule": "not_reject",
+        "gold_reason": "机械挖空形式，但考的是 say + 直接引语的搭配（教材重点表达），答案由语法与搭配唯一确定 → 不能因为机械形式判 FAIL。"
+      },
+      "ai_result": {
+        "fixture_id": "FIX-G2",
+        "english_correct": "PASS",
+        "answer_unique": "PASS",
+        "naturalness": "PASS",
+        "learning_value": "PASS",
+        "distractor_quality": "NOT_APPLICABLE",
+        "grade_fit": "PASS",
+        "mechanical_level": "DIRECT_REPRODUCTION",
+        "suggested_decision": "SUGGEST_ACCEPT",
+        "context_status": "SUFFICIENT",
+        "short_reason": "无显著问题，答案与课文一致。",
+        "confidence": "HIGH"
+      },
+      "dimension_results": {
+        "answer_unique": {
+          "gold_expected": [
+            "PASS",
+            "CONCERN"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "english_correct": {
+          "gold_expected": [
+            "PASS"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "learning_value": {
+          "gold_expected": [
+            "PASS",
+            "CONCERN"
+          ],
+          "ai": "PASS",
+          "verdict": "MATCH"
+        },
+        "mechanical_level": {
+          "gold_expected": [
+            "DIRECT_REPRODUCTION",
+            "MECHANICAL_REWRITE"
+          ],
+          "ai": "DIRECT_REPRODUCTION",
+          "verdict": "MATCH"
+        }
+      },
+      "dimension_match": true,
+      "false_positive_dimensions": [],
+      "false_negative_dimensions": [],
+      "soft_deviation_dimensions": [],
+      "unclassified_dimensions": [],
+      "decision_match": true,
+      "decision_false_negative": false,
+      "decision_false_positive": false,
+      "explanation": {
+        "short_reason": "无显著问题，答案与课文一致。",
+        "chars": 14,
+        "generic": true,
+        "same_text_count": 7
+      }
+    }
+  ]
+}

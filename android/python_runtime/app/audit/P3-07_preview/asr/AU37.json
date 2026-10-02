@@ -1,0 +1,584 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU37",
+  "audio_num": "AU37",
+  "filename": "37_Unit 5_Developing ideas _1 Listen to the opening of the vlog. What is Jason talking about.mp3",
+  "duration_ms": 70374,
+  "segment_count": 8,
+  "word_count": 105,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 4040,
+      "text": "Developing ideas. Activity 1"
+    },
+    {
+      "start_ms": 5000,
+      "end_ms": 10940,
+      "text": "Listen to the opening of the vlog. What is Jason talking about?"
+    },
+    {
+      "start_ms": 12480,
+      "end_ms": 22320,
+      "text": "Welcome to Amazing Plants. This is Jason. I'm at the Sweet Corn Festival in Mexico."
+    },
+    {
+      "start_ms": 22320,
+      "end_ms": 31840,
+      "text": "Mexico. Look at this ear of corn. Can you believe the size of it? But it's not the biggest."
+    },
+    {
+      "start_ms": 32680,
+      "end_ms": 42780,
+      "text": "The biggest one is nearly 40 centimetres long. People started growing corn in Mexico about"
+    },
+    {
+      "start_ms": 42780,
+      "end_ms": 52260,
+      "text": "9,000 years ago. Today it's a big part of their cooking. There are over 600 corn"
+    },
+    {
+      "start_ms": 52260,
+      "end_ms": 62960,
+      "text": "dishes now. Corn isn't just food. People even use it to make toys. It's also part"
+    },
+    {
+      "start_ms": 62960,
+      "end_ms": 67060,
+      "text": "of Mexican culture. Let's go and see!"
+    }
+  ],
+  "words": [
+    {
+      "word": "Developing",
+      "start_ms": 0,
+      "end_ms": 1120
+    },
+    {
+      "word": "ideas.",
+      "start_ms": 1120,
+      "end_ms": 1860
+    },
+    {
+      "word": "Activity",
+      "start_ms": 2860,
+      "end_ms": 3620
+    },
+    {
+      "word": "1",
+      "start_ms": 3620,
+      "end_ms": 4040
+    },
+    {
+      "word": "Listen",
+      "start_ms": 5000,
+      "end_ms": 5720
+    },
+    {
+      "word": "to",
+      "start_ms": 5720,
+      "end_ms": 6020
+    },
+    {
+      "word": "the",
+      "start_ms": 6020,
+      "end_ms": 6200
+    },
+    {
+      "word": "opening",
+      "start_ms": 6200,
+      "end_ms": 6580
+    },
+    {
+      "word": "of",
+      "start_ms": 6580,
+      "end_ms": 7060
+    },
+    {
+      "word": "the",
+      "start_ms": 7060,
+      "end_ms": 7200
+    },
+    {
+      "word": "vlog.",
+      "start_ms": 7200,
+      "end_ms": 7580
+    },
+    {
+      "word": "What",
+      "start_ms": 8200,
+      "end_ms": 9020
+    },
+    {
+      "word": "is",
+      "start_ms": 9020,
+      "end_ms": 9280
+    },
+    {
+      "word": "Jason",
+      "start_ms": 9280,
+      "end_ms": 9840
+    },
+    {
+      "word": "talking",
+      "start_ms": 9840,
+      "end_ms": 10340
+    },
+    {
+      "word": "about?",
+      "start_ms": 10340,
+      "end_ms": 10940
+    },
+    {
+      "word": "Welcome",
+      "start_ms": 12480,
+      "end_ms": 13520
+    },
+    {
+      "word": "to",
+      "start_ms": 13520,
+      "end_ms": 14080
+    },
+    {
+      "word": "Amazing",
+      "start_ms": 14080,
+      "end_ms": 14900
+    },
+    {
+      "word": "Plants.",
+      "start_ms": 14900,
+      "end_ms": 15740
+    },
+    {
+      "word": "This",
+      "start_ms": 16640,
+      "end_ms": 17120
+    },
+    {
+      "word": "is",
+      "start_ms": 17120,
+      "end_ms": 17460
+    },
+    {
+      "word": "Jason.",
+      "start_ms": 17460,
+      "end_ms": 18060
+    },
+    {
+      "word": "I'm",
+      "start_ms": 18940,
+      "end_ms": 19460
+    },
+    {
+      "word": "at",
+      "start_ms": 19460,
+      "end_ms": 19600
+    },
+    {
+      "word": "the",
+      "start_ms": 19600,
+      "end_ms": 19860
+    },
+    {
+      "word": "Sweet",
+      "start_ms": 19860,
+      "end_ms": 20240
+    },
+    {
+      "word": "Corn",
+      "start_ms": 20240,
+      "end_ms": 20560
+    },
+    {
+      "word": "Festival",
+      "start_ms": 20560,
+      "end_ms": 21080
+    },
+    {
+      "word": "in",
+      "start_ms": 21080,
+      "end_ms": 21760
+    },
+    {
+      "word": "Mexico.",
+      "start_ms": 21760,
+      "end_ms": 22320
+    },
+    {
+      "word": "Mexico.",
+      "start_ms": 22320,
+      "end_ms": 22580
+    },
+    {
+      "word": "Look",
+      "start_ms": 23040,
+      "end_ms": 23920
+    },
+    {
+      "word": "at",
+      "start_ms": 23920,
+      "end_ms": 24320
+    },
+    {
+      "word": "this",
+      "start_ms": 24320,
+      "end_ms": 24900
+    },
+    {
+      "word": "ear",
+      "start_ms": 24900,
+      "end_ms": 25440
+    },
+    {
+      "word": "of",
+      "start_ms": 25440,
+      "end_ms": 25660
+    },
+    {
+      "word": "corn.",
+      "start_ms": 25660,
+      "end_ms": 26040
+    },
+    {
+      "word": "Can",
+      "start_ms": 26800,
+      "end_ms": 27240
+    },
+    {
+      "word": "you",
+      "start_ms": 27240,
+      "end_ms": 27500
+    },
+    {
+      "word": "believe",
+      "start_ms": 27500,
+      "end_ms": 27960
+    },
+    {
+      "word": "the",
+      "start_ms": 27960,
+      "end_ms": 28340
+    },
+    {
+      "word": "size",
+      "start_ms": 28340,
+      "end_ms": 28760
+    },
+    {
+      "word": "of",
+      "start_ms": 28760,
+      "end_ms": 28960
+    },
+    {
+      "word": "it?",
+      "start_ms": 28960,
+      "end_ms": 29180
+    },
+    {
+      "word": "But",
+      "start_ms": 29780,
+      "end_ms": 30360
+    },
+    {
+      "word": "it's",
+      "start_ms": 30360,
+      "end_ms": 30800
+    },
+    {
+      "word": "not",
+      "start_ms": 30800,
+      "end_ms": 31180
+    },
+    {
+      "word": "the",
+      "start_ms": 31180,
+      "end_ms": 31480
+    },
+    {
+      "word": "biggest.",
+      "start_ms": 31480,
+      "end_ms": 31840
+    },
+    {
+      "word": "The",
+      "start_ms": 32680,
+      "end_ms": 33020
+    },
+    {
+      "word": "biggest",
+      "start_ms": 33020,
+      "end_ms": 33480
+    },
+    {
+      "word": "one",
+      "start_ms": 33480,
+      "end_ms": 33960
+    },
+    {
+      "word": "is",
+      "start_ms": 33960,
+      "end_ms": 34420
+    },
+    {
+      "word": "nearly",
+      "start_ms": 34420,
+      "end_ms": 34800
+    },
+    {
+      "word": "40",
+      "start_ms": 34800,
+      "end_ms": 35500
+    },
+    {
+      "word": "centimetres",
+      "start_ms": 35500,
+      "end_ms": 36640
+    },
+    {
+      "word": "long.",
+      "start_ms": 36640,
+      "end_ms": 37000
+    },
+    {
+      "word": "People",
+      "start_ms": 38820,
+      "end_ms": 39400
+    },
+    {
+      "word": "started",
+      "start_ms": 39400,
+      "end_ms": 40120
+    },
+    {
+      "word": "growing",
+      "start_ms": 40120,
+      "end_ms": 40560
+    },
+    {
+      "word": "corn",
+      "start_ms": 40560,
+      "end_ms": 41180
+    },
+    {
+      "word": "in",
+      "start_ms": 41180,
+      "end_ms": 41500
+    },
+    {
+      "word": "Mexico",
+      "start_ms": 41500,
+      "end_ms": 42100
+    },
+    {
+      "word": "about",
+      "start_ms": 42100,
+      "end_ms": 42780
+    },
+    {
+      "word": "9",
+      "start_ms": 42780,
+      "end_ms": 43300
+    },
+    {
+      "word": ",000",
+      "start_ms": 43300,
+      "end_ms": 44040
+    },
+    {
+      "word": "years",
+      "start_ms": 44040,
+      "end_ms": 44480
+    },
+    {
+      "word": "ago.",
+      "start_ms": 44480,
+      "end_ms": 44920
+    },
+    {
+      "word": "Today",
+      "start_ms": 45820,
+      "end_ms": 46280
+    },
+    {
+      "word": "it's",
+      "start_ms": 46280,
+      "end_ms": 47180
+    },
+    {
+      "word": "a",
+      "start_ms": 47180,
+      "end_ms": 47300
+    },
+    {
+      "word": "big",
+      "start_ms": 47300,
+      "end_ms": 47660
+    },
+    {
+      "word": "part",
+      "start_ms": 47660,
+      "end_ms": 48160
+    },
+    {
+      "word": "of",
+      "start_ms": 48160,
+      "end_ms": 48480
+    },
+    {
+      "word": "their",
+      "start_ms": 48480,
+      "end_ms": 48680
+    },
+    {
+      "word": "cooking.",
+      "start_ms": 48680,
+      "end_ms": 49040
+    },
+    {
+      "word": "There",
+      "start_ms": 49860,
+      "end_ms": 50220
+    },
+    {
+      "word": "are",
+      "start_ms": 50220,
+      "end_ms": 50380
+    },
+    {
+      "word": "over",
+      "start_ms": 50380,
+      "end_ms": 50740
+    },
+    {
+      "word": "600",
+      "start_ms": 50740,
+      "end_ms": 51460
+    },
+    {
+      "word": "corn",
+      "start_ms": 51460,
+      "end_ms": 52260
+    },
+    {
+      "word": "dishes",
+      "start_ms": 52260,
+      "end_ms": 52660
+    },
+    {
+      "word": "now.",
+      "start_ms": 52660,
+      "end_ms": 53160
+    },
+    {
+      "word": "Corn",
+      "start_ms": 54640,
+      "end_ms": 55540
+    },
+    {
+      "word": "isn't",
+      "start_ms": 55540,
+      "end_ms": 56160
+    },
+    {
+      "word": "just",
+      "start_ms": 56160,
+      "end_ms": 56460
+    },
+    {
+      "word": "food.",
+      "start_ms": 56460,
+      "end_ms": 57020
+    },
+    {
+      "word": "People",
+      "start_ms": 57780,
+      "end_ms": 58260
+    },
+    {
+      "word": "even",
+      "start_ms": 58260,
+      "end_ms": 58820
+    },
+    {
+      "word": "use",
+      "start_ms": 58820,
+      "end_ms": 59240
+    },
+    {
+      "word": "it",
+      "start_ms": 59240,
+      "end_ms": 59420
+    },
+    {
+      "word": "to",
+      "start_ms": 59420,
+      "end_ms": 59680
+    },
+    {
+      "word": "make",
+      "start_ms": 59680,
+      "end_ms": 59980
+    },
+    {
+      "word": "toys.",
+      "start_ms": 59980,
+      "end_ms": 60360
+    },
+    {
+      "word": "It's",
+      "start_ms": 61380,
+      "end_ms": 61880
+    },
+    {
+      "word": "also",
+      "start_ms": 61880,
+      "end_ms": 62460
+    },
+    {
+      "word": "part",
+      "start_ms": 62460,
+      "end_ms": 62960
+    },
+    {
+      "word": "of",
+      "start_ms": 62960,
+      "end_ms": 63360
+    },
+    {
+      "word": "Mexican",
+      "start_ms": 63360,
+      "end_ms": 63960
+    },
+    {
+      "word": "culture.",
+      "start_ms": 63960,
+      "end_ms": 64560
+    },
+    {
+      "word": "Let's",
+      "start_ms": 65560,
+      "end_ms": 66400
+    },
+    {
+      "word": "go",
+      "start_ms": 66400,
+      "end_ms": 66560
+    },
+    {
+      "word": "and",
+      "start_ms": 66560,
+      "end_ms": 66740
+    },
+    {
+      "word": "see!",
+      "start_ms": 66740,
+      "end_ms": 67060
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 8.0
+  }
+}

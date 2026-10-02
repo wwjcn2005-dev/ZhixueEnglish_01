@@ -1,0 +1,293 @@
+{
+  "phase": "P2-6-C-1",
+  "title": "学习对象映射与证据闭环只读审计",
+  "mode": "read_only",
+  "conclusion": "PASS_WITH_GAPS",
+  "audited_at": "2026-09-13",
+  "project": "D:\\ZhixueEnglish",
+  "environment": {
+    "git": "无 Git 仓库（git 命令不可用）",
+    "learning_db_actual": "structured/learning/learning.db",
+    "learning_db_in_task_prompt": "database/learning.db（不存在）",
+    "spec_current": "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx"
+  },
+  "tests": {
+    "learning": {"pass": 89, "fail": 0, "skip": 0},
+    "workbench": {"pass": 50, "fail": 0, "skip": 0},
+    "web": {"pass": 224, "fail": 0, "skip": 0},
+    "total": {"pass": 363, "fail": 0, "skip": 0},
+    "baseline_matches": true,
+    "learning_db_unchanged_before_after": true
+  },
+  "spec_check": {
+    "learning_object_definition": "二十二·3：教材学习对象包括单词/短语/句型/语法点/听力任务/阅读文本/写作任务；Activity 是任务容器不是学习对象；Exercise（含 Question）是产生学习证据的任务；三层不得混用",
+    "learned_vs_mastery": "二十二·4：学过=事实记录；掌握较稳定需多维证据（≥3 证据 / ≥2 任务类型 / ≥2 自然日 / 最近 3 次 ≥2 正确 / 无未处理当前错误）且为可调整工程参数",
+    "evidence_first": "二十二·5：看过/听过/自评不能单独证明掌握；同段重复不计独立证据；一次错误不等于薄弱",
+    "textbook_first": "二十二·6：回看教材文本 → 重听官方音频 → 语法提示 → 对照范文 → 重做原题 → 跨 Section 练习；AI 辅助须三条件满足",
+    "ai_boundary": "二十二·7：AI 不得决定学什么/何时学/自动推进/分数排名/证据不足下结论",
+    "child_autonomy": "二十二·2 / 二十二·10：自主权不等于取消结构；证据聚合与孩子决定必须显式存在"
+  },
+  "baseline_check": {
+    "p2_6_a_archived": true,
+    "p2_6_b_archived_frozen": true,
+    "open_issues_recheck": [
+      {"issue": "Learning Object 映射尚未建立", "verdict": "确认成立"},
+      {"issue": "巩固动作记录缺失，未处理当前错误为近似判断", "verdict": "确认成立"},
+      {"issue": "掌握/诊断阈值需真实数据校准", "verdict": "确认成立（真实数据仅 1 个自然日）"},
+      {"issue": "frozen pool 与 diagnosis 是否统一未决", "verdict": "确认成立（当前语义互补可共存）"}
+    ]
+  },
+  "learning_object": {
+    "definition": "教材学习对象 = 单词/短语/句型/语法点/听力任务/阅读文本/写作任务（V1.2 二十二·3）",
+    "current_implementation": "无（代码零命中；概念仅存在于设计文档）",
+    "closest_entity_today": "item_id（资源条目粒度）",
+    "stable_id_exists": false,
+    "mapping_possible": true,
+    "mapping_evidence": {
+      "related_vocabulary_references": 1512,
+      "uniquely_resolved_to_item_id": 1512,
+      "miss": 0,
+      "ambiguous": 0,
+      "vocabulary_word_surface_unique": "288/288",
+      "exercise_id_equals_item_id": "157/157"
+    },
+    "gaps": [
+      "无 learning_object_id 字段或派生服务",
+      "词汇 item_id 与练习 item_id 零交集（0 条词汇 id 出现在 exercise_catalog_v3）",
+      "grammar 无资源对象（仅有 13 条教材语法/语音指针）"
+    ]
+  },
+  "activity": {
+    "db_entity": "learning.db 无 activity 表；contentpack.activity 96 行为解析快照",
+    "activity_type_values": ["recognize", "read", "understand", "listen", "repeat", "spell",
+                             "substitute", "produce", "review", "study", "practice"],
+    "semantic_mixing": true,
+    "mixing_evidence": [
+      "activity_service 取 contentpack learning_item.item_type（资源类型）",
+      "web/app.py 写 TYPE_BEHAVIOR[e.type]（行为类型）",
+      "workbench 写 study/practice"
+    ]
+  },
+  "exercise_question": {
+    "exercise_count": 157,
+    "question_count": 360,
+    "question_type_distribution": {"fill": 45, "short_answer": 34, "reflection": 18,
+                                   "speaking": 16, "other": 14, "choice": 12, "match": 9,
+                                   "writing": 7, "order": 1, "judge": 1},
+    "question_type_usable_as_task_type": true,
+    "textbook_location_exists": true,
+    "learning_object_relation_exists": false
+  },
+  "vocabulary": {
+    "item_count": 288,
+    "word_surface_unique": true,
+    "unit_resolvable": true,
+    "textbook_anchor": "附录 Words and expressions，textbook p150 起",
+    "word_audio_available": true,
+    "evidence_merges_with_other_tasks": false,
+    "breakpoint": "词汇 item_id 与练习 item_id 不相通；练习提交写入 exercise item_id"
+  },
+  "grammar": {
+    "grammar_item_exists": false,
+    "grammar_task_exists": false,
+    "grammar_evidence_exists": false,
+    "pointer_relations": 13,
+    "lo_mapping_ready": false
+  },
+  "evidence": {
+    "definition": "由 learning_record 派生的有效判断证据（不落库、无独立 id）",
+    "valid_rule": "result ∈ {correct, incorrect, partial} 且非 study 且非仅自评",
+    "dedupe_key": ["learner_id", "item_id", "evidence_date", "task_type"],
+    "aggregation_supported": false,
+    "task_type_supported": true,
+    "fields": {
+      "evidence_id": "缺失",
+      "learning_object_id": "缺失",
+      "item_id": "已有",
+      "task_type": "可推导",
+      "result": "已有",
+      "evidence_date": "可推导（created_at 前缀）",
+      "source": "已有（source_record_id）",
+      "session": "可推导（task_id → learning_session）",
+      "parent_related_evidence": "缺失"
+    },
+    "gaps": [
+      "去重键含 item_id → 同一 LO 的不同任务无法汇聚",
+      "无 evidence_id 与 LO 归属",
+      "无 evidence 之间的父子/关联关系"
+    ]
+  },
+  "mastery": {
+    "object_granularity": "item_id（mastery_state 主键 = learner_id + item_id）",
+    "matches_learning_object": false,
+    "rules_file": "structured/learning/mastery_rules_v1.json",
+    "algorithm_implements_five_conditions": true,
+    "reachable": false,
+    "reachability_evidence": {
+      "max_valid_evidence_per_item": 1,
+      "required": 3,
+      "task_types_per_item": ["recall"],
+      "required_task_types": 2,
+      "natural_days_in_data": ["2026-09-12"],
+      "required_natural_days": 2
+    },
+    "gaps": ["算法支持但业务数据不可达", "无 LO 粒度聚合"]
+  },
+  "diagnosis": {
+    "granularity": "item 级",
+    "inputs": ["latest valid result", "error_count", "error_task_types", "partial_count",
+               "partial_task_types", "pool_state（冻结池事实）"],
+    "missing_inputs": ["Learning Object", "跨项 evidence history", "consolidation history",
+                       "handled / resolved 状态"],
+    "current_error_handling": "最近一条有效判断证据为 incorrect（近似，无处理状态）",
+    "gaps": ["无法区分“未点击/点击未答题/巩固后仍错/巩固后暂时正确”"]
+  },
+  "consolidation": {
+    "suggestion_exists": true,
+    "suggestion_is_readonly": true,
+    "child_click_is_plain_link": true,
+    "action_record_exists": false,
+    "closed_loop": false,
+    "e1_s1_a1_e2_chain_exists": false,
+    "gaps": ["无 consolidation action record", "新证据无法关联到原诊断"]
+  },
+  "mapping_keys": {
+    "item_id": {"stable": true, "unique": true, "shared_across_tasks": false,
+                "suitable_as_lo_key": false, "note": "粒度错：词汇与练习不相通"},
+    "word": {"stable": true, "unique": true, "shared_across_tasks": true,
+             "suitable_as_lo_key": "candidate", "note": "288/288 唯一；需设计确认语义"},
+    "exercise_id": {"stable": true, "unique": true, "shared_across_tasks": false,
+                    "suitable_as_lo_key": false, "note": "≡ learning_item(exercise).item_id，157/157"},
+    "question_id": {"stable": true, "unique": true, "shared_across_tasks": false,
+                    "suitable_as_lo_key": false, "note": "P2-4 派生 Q:hash"},
+    "question_type": {"stable": true, "shared_across_tasks": true,
+                      "suitable_as_lo_key": false, "note": "是 task_type 来源"},
+    "grammar_id": {"exists": false},
+    "unit_id_section_id": {"stable": true, "shared_across_tasks": true,
+                           "suitable_as_lo_key": false, "note": "LO 的归属层级，过粗"},
+    "textbook_id": {"stable": true, "shared_across_tasks": true,
+                    "suitable_as_lo_key": false},
+    "content_id_knowledge_id_resource_id": {"exists_as_field": false,
+                                            "note": "knowledge_id 是 item_id 的别名"}
+  },
+  "real_samples": {
+    "records_total": 20,
+    "exercise_located": 6,
+    "vocabulary_located": 14,
+    "textbook_position_map_rate": "20/20 (100%)",
+    "candidate_lo_map_rate": "无法精确计算（取决于 LO 语义选择，按要求不做估算）",
+    "units_sections_covered": ["Starter/GET_READY p5", "Unit 1/DEVELOPING_IDEAS p21",
+                               "Unit 1/DEVELOPING_IDEAS p22", "Starter|Unit 1|Unit 6 词表 p150"]
+  },
+  "current_error_loop_cases": {
+    "A_saw_suggestion_no_click": "无法区分（无 action record）",
+    "B_clicked_textbook_no_evidence": "无法区分（GET 不写库）",
+    "C_rereview_correct": "可近似判断（latest=correct）",
+    "D_rereview_still_wrong": "可近似判断（latest=incorrect），但无巩固次数",
+    "E_temporarily_correct_then_wrong": "部分（可判再次错误，无法评估巩固有效性）"
+  },
+  "frozen_pool_vs_diagnosis": {
+    "pool_semantics": "最近一条 judged 记录的事实（含自评）",
+    "diagnosis_semantics": "基于有效证据的重复性/跨任务结论",
+    "same_input": false,
+    "same_output": false,
+    "semantic_conflict": false,
+    "can_coexist": true,
+    "long_term_merge": "待设计（本轮不决定）",
+    "frozen_service_modified": false
+  },
+  "ai": {
+    "calls": 0,
+    "required_for_p2_6_c1": false,
+    "business_code_network_calls": 0,
+    "note": "LO 映射 / 证据聚合 / 掌握 / 诊断 / 巩固建议均为确定性规则"
+  },
+  "database": {
+    "migration_required": "for_mapping: no; for_consolidation_action: maybe",
+    "option_a_no_db_change": "可行（派生映射）",
+    "option_b_readonly_derived_layer": "推荐（learning_object_service，无 schema 变更）",
+    "option_c_new_structure": "仅巩固动作/处理状态需要（最小独立表 learner_action_log）",
+    "affected_frozen_services": false,
+    "affects_v12": false,
+    "executed": false
+  },
+  "risk_matrix": [
+    {"risk": "Learning Object 无稳定映射", "severity": "高", "must_fix_first": true},
+    {"risk": "Evidence 无统一对象", "severity": "高", "must_fix_first": true},
+    {"risk": "task_type 不可达（<2 种）", "severity": "高", "must_fix_first": true},
+    {"risk": "当前错误无法闭环", "severity": "高", "must_fix_first": true},
+    {"risk": "consolidation action 缺失", "severity": "高", "must_fix_first": true},
+    {"risk": "frozen pool / diagnosis 重叠", "severity": "中", "must_fix_first": false},
+    {"risk": "教材映射不稳定", "severity": "低", "must_fix_first": false},
+    {"risk": "数据库模型不足", "severity": "中", "must_fix_first": "仅动作层"},
+    {"risk": "AI 越权风险", "severity": "低", "must_fix_first": false},
+    {"risk": "正式数据污染风险", "severity": "中", "must_fix_first": "校准时须排除测试记录"}
+  ],
+  "answers_12": {
+    "q1_candidate_entity": "教材词汇条目（词/短语/句型）+ 语法点（暂无对象）+ 教材任务类对象；不是 Activity / Exercise",
+    "q2_stable_lo_id_exists": false,
+    "q3_deterministic_mapping_possible": true,
+    "q4_one_lo_many_activities": "当前不能；设计上应当能",
+    "q5_one_lo_many_exercises": "当前不能；数据侧可行",
+    "q6_one_lo_many_evidences": "当前不能（item 级去重与判定）",
+    "q7_mastery_at_lo_granularity": false,
+    "q8_two_task_types_reachable": false,
+    "q9_error_consolidation_loop": false,
+    "q10_need_consolidation_action_record": true,
+    "q11_need_db_migration": "映射不需要；巩固动作可能需最小新结构",
+    "q12_next_step": "进入 P2-6-C-2 设计（LO 语义与派生键、evidence 聚集粒度、consolidation action 结构）；无需重新设计整体模型"
+  },
+  "open_issues": [
+    "LO 语义与派生键未定（影响 evidence 聚集粒度）",
+    "consolidation action record 结构与来源未定",
+    "阈值待真实非测试数据校准（当前仅 1 个自然日）",
+    "frozen pool 与 diagnosis 长期是否统一未决",
+    "grammar 作为 LO 需先有资源对象（独立课题）"
+  ],
+  "protected_files": [
+    "初中英语AI辅助学习系统_最高指导原则与开发规范_V1.2.docx",
+    "docs/初中英语AI辅助学习系统最高指导原则与开发规范_V1.2.md",
+    "audit/P2-6-A_mastery_and_intervention_audit.md",
+    "audit/P2-6-A_mastery_and_intervention_audit.json",
+    "audit/P2-6-B_mastery_and_intervention_implementation.md",
+    "audit/P2-6-B_mastery_and_intervention_implementation.json",
+    "structured/learning/mastery_rules_v1.json",
+    "learning/evidence_service.py",
+    "learning/mastery_service.py",
+    "learning/diagnosis_service.py",
+    "learning/intervention_service.py",
+    "learning/learning_service.py",
+    "learning/session_service.py",
+    "learning/activity_service.py",
+    "learning/behavior_service.py",
+    "learning/vocabulary_service.py",
+    "learning/resource_pool_service.py",
+    "structured/learning/learning.db",
+    "structured/contentpack/v5/FLTRP-EN-7A-2022CUR.sqlite",
+    "structured/exercises/exercise_catalog_v3.json",
+    "structured/exercises/exercise_question_relations_v3.json"
+  ],
+  "modified_files": [],
+  "created_files": [
+    "audit/P2-6-C-1_learning_object_evidence_loop_audit.md",
+    "audit/P2-6-C-1_learning_object_evidence_loop_audit.json"
+  ],
+  "sha256": {
+    "spec_v12_docx": "6D3595CF7D83879ADF3E6452C5E5A74C5300E89265DE1B4F2FA8A1EBDBB861A9",
+    "spec_v12_md": "83D39D93EB9255BF6C229FB195A387B1E31C5F8DAB846C86B63D7229079EF88F",
+    "p2_6_a_md": "0FB87839CC09BA8D27BB7D0E980838DA0E9BE0D2DA2BF4325B6CBC6DB5ADAE5B",
+    "p2_6_a_json": "E83CFFEA959296E9A47D73BBF614FEAA1BB35D3334803BDEAC00C551380F5D0D",
+    "p2_6_b_md": "C79852740B6C24563953CE7A37DA801660B0AA3C49BABAF8946FB947BA7AF02C",
+    "p2_6_b_json": "2C51C276310C59A5DC91C6E1E13C46E643149D571C36B47A6B44B9F39F7BCD04",
+    "mastery_rules_v1_json": "E7EC99DB55DDCF04BA7C8B5393160ED4C6C99DF2CE1795FB028A5327CFF85D12",
+    "evidence_service_py": "864536DEF937E4B39A5C63BDB9956FF6CD090FEC0E47F2BE96166A400AD34F07",
+    "mastery_service_py": "8F7372A07E905EF46A7B75DEF6CCE16FF2ED7E9BB5DE490BB6C1081472EA4FDF",
+    "diagnosis_service_py": "14CD114724982C7D712160D402C18461AB870EC8B54E644954011B7154612028",
+    "intervention_service_py": "4E12CB1AAF429C819AE6014A18F3B13AFB70367121E951CA382DAD7619D5B621",
+    "learning_db": "DBAB743BF6D8F0A3832E599CBD5DD2267F008FD9FB3903BACEA93780A466D633",
+    "contentpack_v5": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+    "exercise_catalog_v3": "EB2D8E7BD0BD71404FBE2B3C010289158CCB8A12F4DF031ED7444B4BE9570A39",
+    "exercise_question_relations_v3": "D5A2632D267719449AABA3697AF49675A7E1EBF68E3348A90B75732A6B88A221"
+  },
+  "stopped": "审计完成即停止；不进入 P2-6-C-2 / P2-6-D"
+}

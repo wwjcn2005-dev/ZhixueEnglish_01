@@ -1,0 +1,639 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+  "audio_num": "AU08",
+  "filename": "08_Unit 1_Understanding ideas_8 Work in pairs. Talk about a teacher you like.mp3",
+  "duration_ms": 72464,
+  "segment_count": 11,
+  "word_count": 113,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 4260,
+      "text": "Activity 8 Work in pairs"
+    },
+    {
+      "start_ms": 5000,
+      "end_ms": 11980,
+      "text": "Talk about a teacher you like. Use the thinking map to organise your ideas."
+    },
+    {
+      "start_ms": 12740,
+      "end_ms": 19980,
+      "text": "Use the words and expressions from the reading passage and the useful expressions to help you."
+    },
+    {
+      "start_ms": 21120,
+      "end_ms": 22720,
+      "text": "Example conversation"
+    },
+    {
+      "start_ms": 24400,
+      "end_ms": 29720,
+      "text": "Mr Lee is our history teacher. He is great."
+    },
+    {
+      "start_ms": 30720,
+      "end_ms": 32720,
+      "text": "Why do you think so?"
+    },
+    {
+      "start_ms": 33540,
+      "end_ms": 40640,
+      "text": "He is very different. He wants us to ask questions about history in class."
+    },
+    {
+      "start_ms": 41720,
+      "end_ms": 48840,
+      "text": "He can answer all kinds of questions and this makes the class so fun."
+    },
+    {
+      "start_ms": 48840,
+      "end_ms": 52220,
+      "text": "Do you like his way of teaching?"
+    },
+    {
+      "start_ms": 53080,
+      "end_ms": 63840,
+      "text": "Yes, of course. He tells us we need to ask good questions. We need to think hard to ask"
+    },
+    {
+      "start_ms": 63840,
+      "end_ms": 68200,
+      "text": "good questions. It's a great way to learn."
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1240
+    },
+    {
+      "word": "8",
+      "start_ms": 1240,
+      "end_ms": 1840
+    },
+    {
+      "word": "Work",
+      "start_ms": 1840,
+      "end_ms": 3480
+    },
+    {
+      "word": "in",
+      "start_ms": 3480,
+      "end_ms": 3800
+    },
+    {
+      "word": "pairs",
+      "start_ms": 3800,
+      "end_ms": 4260
+    },
+    {
+      "word": "Talk",
+      "start_ms": 5000,
+      "end_ms": 5560
+    },
+    {
+      "word": "about",
+      "start_ms": 5560,
+      "end_ms": 6040
+    },
+    {
+      "word": "a",
+      "start_ms": 6040,
+      "end_ms": 6360
+    },
+    {
+      "word": "teacher",
+      "start_ms": 6360,
+      "end_ms": 6740
+    },
+    {
+      "word": "you",
+      "start_ms": 6740,
+      "end_ms": 7080
+    },
+    {
+      "word": "like.",
+      "start_ms": 7080,
+      "end_ms": 7500
+    },
+    {
+      "word": "Use",
+      "start_ms": 7860,
+      "end_ms": 8780
+    },
+    {
+      "word": "the",
+      "start_ms": 8780,
+      "end_ms": 9020
+    },
+    {
+      "word": "thinking",
+      "start_ms": 9020,
+      "end_ms": 9440
+    },
+    {
+      "word": "map",
+      "start_ms": 9440,
+      "end_ms": 9860
+    },
+    {
+      "word": "to",
+      "start_ms": 9860,
+      "end_ms": 10360
+    },
+    {
+      "word": "organise",
+      "start_ms": 10360,
+      "end_ms": 10880
+    },
+    {
+      "word": "your",
+      "start_ms": 10880,
+      "end_ms": 11340
+    },
+    {
+      "word": "ideas.",
+      "start_ms": 11340,
+      "end_ms": 11980
+    },
+    {
+      "word": "Use",
+      "start_ms": 12740,
+      "end_ms": 13520
+    },
+    {
+      "word": "the",
+      "start_ms": 13520,
+      "end_ms": 13720
+    },
+    {
+      "word": "words",
+      "start_ms": 13720,
+      "end_ms": 14140
+    },
+    {
+      "word": "and",
+      "start_ms": 14140,
+      "end_ms": 14440
+    },
+    {
+      "word": "expressions",
+      "start_ms": 14440,
+      "end_ms": 15040
+    },
+    {
+      "word": "from",
+      "start_ms": 15040,
+      "end_ms": 15740
+    },
+    {
+      "word": "the",
+      "start_ms": 15740,
+      "end_ms": 15920
+    },
+    {
+      "word": "reading",
+      "start_ms": 15920,
+      "end_ms": 16240
+    },
+    {
+      "word": "passage",
+      "start_ms": 16240,
+      "end_ms": 16660
+    },
+    {
+      "word": "and",
+      "start_ms": 16660,
+      "end_ms": 17500
+    },
+    {
+      "word": "the",
+      "start_ms": 17500,
+      "end_ms": 17680
+    },
+    {
+      "word": "useful",
+      "start_ms": 17680,
+      "end_ms": 18140
+    },
+    {
+      "word": "expressions",
+      "start_ms": 18140,
+      "end_ms": 18760
+    },
+    {
+      "word": "to",
+      "start_ms": 18760,
+      "end_ms": 19380
+    },
+    {
+      "word": "help",
+      "start_ms": 19380,
+      "end_ms": 19620
+    },
+    {
+      "word": "you.",
+      "start_ms": 19620,
+      "end_ms": 19980
+    },
+    {
+      "word": "Example",
+      "start_ms": 21120,
+      "end_ms": 22020
+    },
+    {
+      "word": "conversation",
+      "start_ms": 22020,
+      "end_ms": 22720
+    },
+    {
+      "word": "Mr",
+      "start_ms": 24400,
+      "end_ms": 25320
+    },
+    {
+      "word": "Lee",
+      "start_ms": 25320,
+      "end_ms": 25680
+    },
+    {
+      "word": "is",
+      "start_ms": 25680,
+      "end_ms": 26220
+    },
+    {
+      "word": "our",
+      "start_ms": 26220,
+      "end_ms": 26440
+    },
+    {
+      "word": "history",
+      "start_ms": 26440,
+      "end_ms": 26880
+    },
+    {
+      "word": "teacher.",
+      "start_ms": 26880,
+      "end_ms": 27420
+    },
+    {
+      "word": "He",
+      "start_ms": 28160,
+      "end_ms": 28600
+    },
+    {
+      "word": "is",
+      "start_ms": 28600,
+      "end_ms": 29080
+    },
+    {
+      "word": "great.",
+      "start_ms": 29080,
+      "end_ms": 29720
+    },
+    {
+      "word": "Why",
+      "start_ms": 30720,
+      "end_ms": 31400
+    },
+    {
+      "word": "do",
+      "start_ms": 31400,
+      "end_ms": 31720
+    },
+    {
+      "word": "you",
+      "start_ms": 31720,
+      "end_ms": 31980
+    },
+    {
+      "word": "think",
+      "start_ms": 31980,
+      "end_ms": 32320
+    },
+    {
+      "word": "so?",
+      "start_ms": 32320,
+      "end_ms": 32720
+    },
+    {
+      "word": "He",
+      "start_ms": 33540,
+      "end_ms": 33820
+    },
+    {
+      "word": "is",
+      "start_ms": 33820,
+      "end_ms": 34080
+    },
+    {
+      "word": "very",
+      "start_ms": 34080,
+      "end_ms": 34520
+    },
+    {
+      "word": "different.",
+      "start_ms": 34520,
+      "end_ms": 35140
+    },
+    {
+      "word": "He",
+      "start_ms": 36080,
+      "end_ms": 36440
+    },
+    {
+      "word": "wants",
+      "start_ms": 36440,
+      "end_ms": 36820
+    },
+    {
+      "word": "us",
+      "start_ms": 36820,
+      "end_ms": 37160
+    },
+    {
+      "word": "to",
+      "start_ms": 37160,
+      "end_ms": 37440
+    },
+    {
+      "word": "ask",
+      "start_ms": 37440,
+      "end_ms": 37820
+    },
+    {
+      "word": "questions",
+      "start_ms": 37820,
+      "end_ms": 38560
+    },
+    {
+      "word": "about",
+      "start_ms": 38560,
+      "end_ms": 39120
+    },
+    {
+      "word": "history",
+      "start_ms": 39120,
+      "end_ms": 39760
+    },
+    {
+      "word": "in",
+      "start_ms": 39760,
+      "end_ms": 40220
+    },
+    {
+      "word": "class.",
+      "start_ms": 40220,
+      "end_ms": 40640
+    },
+    {
+      "word": "He",
+      "start_ms": 41720,
+      "end_ms": 42100
+    },
+    {
+      "word": "can",
+      "start_ms": 42100,
+      "end_ms": 42300
+    },
+    {
+      "word": "answer",
+      "start_ms": 42300,
+      "end_ms": 42820
+    },
+    {
+      "word": "all",
+      "start_ms": 42820,
+      "end_ms": 43240
+    },
+    {
+      "word": "kinds",
+      "start_ms": 43240,
+      "end_ms": 43880
+    },
+    {
+      "word": "of",
+      "start_ms": 43880,
+      "end_ms": 44140
+    },
+    {
+      "word": "questions",
+      "start_ms": 44140,
+      "end_ms": 44660
+    },
+    {
+      "word": "and",
+      "start_ms": 44660,
+      "end_ms": 45840
+    },
+    {
+      "word": "this",
+      "start_ms": 45840,
+      "end_ms": 46220
+    },
+    {
+      "word": "makes",
+      "start_ms": 46220,
+      "end_ms": 46680
+    },
+    {
+      "word": "the",
+      "start_ms": 46680,
+      "end_ms": 46920
+    },
+    {
+      "word": "class",
+      "start_ms": 46920,
+      "end_ms": 47540
+    },
+    {
+      "word": "so",
+      "start_ms": 47540,
+      "end_ms": 48200
+    },
+    {
+      "word": "fun.",
+      "start_ms": 48200,
+      "end_ms": 48840
+    },
+    {
+      "word": "Do",
+      "start_ms": 48840,
+      "end_ms": 49960
+    },
+    {
+      "word": "you",
+      "start_ms": 49960,
+      "end_ms": 50360
+    },
+    {
+      "word": "like",
+      "start_ms": 50360,
+      "end_ms": 50740
+    },
+    {
+      "word": "his",
+      "start_ms": 50740,
+      "end_ms": 51140
+    },
+    {
+      "word": "way",
+      "start_ms": 51140,
+      "end_ms": 51520
+    },
+    {
+      "word": "of",
+      "start_ms": 51520,
+      "end_ms": 51780
+    },
+    {
+      "word": "teaching?",
+      "start_ms": 51780,
+      "end_ms": 52220
+    },
+    {
+      "word": "Yes,",
+      "start_ms": 53080,
+      "end_ms": 53640
+    },
+    {
+      "word": "of",
+      "start_ms": 54160,
+      "end_ms": 54320
+    },
+    {
+      "word": "course.",
+      "start_ms": 54320,
+      "end_ms": 54820
+    },
+    {
+      "word": "He",
+      "start_ms": 55980,
+      "end_ms": 56260
+    },
+    {
+      "word": "tells",
+      "start_ms": 56260,
+      "end_ms": 56660
+    },
+    {
+      "word": "us",
+      "start_ms": 56660,
+      "end_ms": 57100
+    },
+    {
+      "word": "we",
+      "start_ms": 57100,
+      "end_ms": 57520
+    },
+    {
+      "word": "need",
+      "start_ms": 57520,
+      "end_ms": 57840
+    },
+    {
+      "word": "to",
+      "start_ms": 57840,
+      "end_ms": 58180
+    },
+    {
+      "word": "ask",
+      "start_ms": 58180,
+      "end_ms": 58620
+    },
+    {
+      "word": "good",
+      "start_ms": 58620,
+      "end_ms": 59160
+    },
+    {
+      "word": "questions.",
+      "start_ms": 59160,
+      "end_ms": 59880
+    },
+    {
+      "word": "We",
+      "start_ms": 60920,
+      "end_ms": 61220
+    },
+    {
+      "word": "need",
+      "start_ms": 61220,
+      "end_ms": 61540
+    },
+    {
+      "word": "to",
+      "start_ms": 61540,
+      "end_ms": 61800
+    },
+    {
+      "word": "think",
+      "start_ms": 61800,
+      "end_ms": 62180
+    },
+    {
+      "word": "hard",
+      "start_ms": 62180,
+      "end_ms": 62820
+    },
+    {
+      "word": "to",
+      "start_ms": 62820,
+      "end_ms": 63380
+    },
+    {
+      "word": "ask",
+      "start_ms": 63380,
+      "end_ms": 63840
+    },
+    {
+      "word": "good",
+      "start_ms": 63840,
+      "end_ms": 64260
+    },
+    {
+      "word": "questions.",
+      "start_ms": 64260,
+      "end_ms": 65000
+    },
+    {
+      "word": "It's",
+      "start_ms": 65900,
+      "end_ms": 66420
+    },
+    {
+      "word": "a",
+      "start_ms": 66420,
+      "end_ms": 66540
+    },
+    {
+      "word": "great",
+      "start_ms": 66540,
+      "end_ms": 67020
+    },
+    {
+      "word": "way",
+      "start_ms": 67020,
+      "end_ms": 67480
+    },
+    {
+      "word": "to",
+      "start_ms": 67480,
+      "end_ms": 67820
+    },
+    {
+      "word": "learn.",
+      "start_ms": 67820,
+      "end_ms": 68200
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 8.1
+  }
+}

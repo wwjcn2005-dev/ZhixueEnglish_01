@@ -1,0 +1,228 @@
+{
+  "stage": "P1-09-B",
+  "source": "D:\\ZhixueEnglish\\structured\\ai\\question_library.db",
+  "source_sha256": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+  "sample_count": 10,
+  "coverage": {
+    "A_known_normal": 5,
+    "B_low_value_mechanical": 2,
+    "C_answer_uniqueness_risk": 1,
+    "D_distractor_risk": 2,
+    "question_types": [
+      "fill",
+      "reading_choice",
+      "reading_judge",
+      "vocab_choice"
+    ]
+  },
+  "label_class_counts": {
+    "KNOWN_NORMAL": 5,
+    "RECORDED_RISK": 4,
+    "CONFIRMED_PROBLEM": 1
+  },
+  "note": "ground_truth_label 是实验人员依据 P1-08-C / P1-09-A 既有证据得出的对照标签，不是新的 AI 判断；这些标签只在 AI 返回之后用于对照，绝不进入 AI 输入。",
+  "samples": [
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "coverage_bucket": "A_known_normal",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "ground_truth_note": "P1-08-C 人工审核通过并 ACTIVE；答案 band 在教材原句逐字命中，四个选项均为教材 BOLD 核心词",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "ACTIVE",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P37:B10"
+      ]
+    },
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "coverage_bucket": "A_known_normal",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "ground_truth_note": "P1-09-A 明显合格样本；答案为教材 BOLD 核心词，题干为完整句",
+      "question_type": "fill",
+      "lifecycle_status": "PENDING_REVIEW",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P38:B5"
+      ]
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "coverage_bucket": "A_known_normal",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "ground_truth_note": "P1-09-A 阅读理解正常样本；difficulty=medium，answer_support=VERIFIABLE_REPHRASE",
+      "question_type": "reading_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P38:B3"
+      ]
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "coverage_bucket": "A_known_normal",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "ground_truth_note": "P1-09-A 阅读理解正常样本；答案为教材原句中的地点短语",
+      "question_type": "reading_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P37:B12"
+      ]
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "coverage_bucket": "A_known_normal",
+      "ground_truth_label": "KNOWN_NORMAL",
+      "ground_truth_note": "P1-09-A judge 样本（True）；教材原句直接支持",
+      "question_type": "reading_judge",
+      "lifecycle_status": "PENDING_REVIEW",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P88:B12"
+      ]
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "coverage_bucket": "B_low_value_mechanical",
+      "ground_truth_label": "CONFIRMED_PROBLEM",
+      "ground_truth_note": "P1-08-C 已人工驳回（reason_code=LOW_VALUE）；审核记录同时记录题干单独看不唯一（happy/fine 等）",
+      "question_type": "fill",
+      "lifecycle_status": "REJECTED",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P8:B16"
+      ]
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "coverage_bucket": "B_low_value_mechanical",
+      "ground_truth_label": "RECORDED_RISK",
+      "ground_truth_note": "P1-09-A C2/C4：双空挖空的语篇标记词片段，mechanical_rewrite=True",
+      "question_type": "fill",
+      "lifecycle_status": "PENDING_REVIEW",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P24:B2"
+      ]
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "coverage_bucket": "C_answer_uniqueness_risk",
+      "ground_truth_label": "RECORDED_RISK",
+      "ground_truth_note": "P1-09-A C3：程序判 EXACT，但单看题干任意颜色都成立",
+      "question_type": "fill",
+      "lifecycle_status": "PENDING_REVIEW",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P10:B20"
+      ]
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "coverage_bucket": "D_distractor_risk",
+      "ground_truth_label": "RECORDED_RISK",
+      "ground_truth_note": "P1-09-A C5：干扰项 traditional/electric/weak 均为教材 BOLD 核心形容词且语法成立",
+      "question_type": "vocab_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P37:B12"
+      ]
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "coverage_bucket": "D_distractor_risk",
+      "ground_truth_label": "RECORDED_RISK",
+      "ground_truth_note": "P1-09-A C5：干扰项 sugar/oxygen/food 在其他语境下对树木同样成立",
+      "question_type": "reading_choice",
+      "lifecycle_status": "PENDING_REVIEW",
+      "evidence_block_ids": [
+        "FLTRP-EN-7A-2022CUR:P88:B14"
+      ]
+    }
+  ],
+  "before_state": {
+    "AIQ:BD59C5958D45": {
+      "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+      "options_json": "[\"band\", \"club\", \"stage\", \"instrument\"]",
+      "correct_answer": "band",
+      "correct_option": "A",
+      "lifecycle_status": "ACTIVE",
+      "active": 1,
+      "question_event_count": 4
+    },
+    "AIQ:04CC9B1CF690": {
+      "question_text": "It feels great to ___ our hobby together.",
+      "options_json": null,
+      "correct_answer": "enjoy",
+      "correct_option": null,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "question_event_count": 2
+    },
+    "AIQ:6ECD02B9D381": {
+      "question_text": "At the school art festival, the writer and Grandpa ___.",
+      "options_json": "[\"write songs\", \"share songs online\", \"fire up instruments\", \"sing Beijing opera\"]",
+      "correct_answer": "fire up instruments",
+      "correct_option": "C",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "question_event_count": 2
+    },
+    "AIQ:879007FA4FC7": {
+      "question_text": "Grandpa likes playing the erhu ___.",
+      "options_json": "[\"in the park\", \"in the school band\", \"on the stage\", \"in his room\"]",
+      "correct_answer": "in the park",
+      "correct_option": "A",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "question_event_count": 2
+    },
+    "AIQ:7EAC0ED29A0A": {
+      "question_text": "The Great Bear Rainforest is in Canada.",
+      "options_json": null,
+      "correct_answer": "True",
+      "correct_option": null,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "question_event_count": 2
+    },
+    "AIQ:1B3AF72923C4": {
+      "question_text": "I am ___, too.",
+      "options_json": null,
+      "correct_answer": "ready",
+      "correct_option": null,
+      "lifecycle_status": "REJECTED",
+      "active": 0,
+      "question_event_count": 3
+    },
+    "AIQ:1BA260727793": {
+      "question_text": "___ ___, this is my first lesson for all of you.",
+      "options_json": null,
+      "correct_answer": "In fact",
+      "correct_option": null,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "question_event_count": 2
+    },
+    "AIQ:120FFEECA78F": {
+      "question_text": "What colour is it? It’s ___.",
+      "options_json": null,
+      "correct_answer": "grey",
+      "correct_option": null,
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "question_event_count": 2
+    },
+    "AIQ:75AAEBFE06DF": {
+      "question_text": "But it’s a ___ kind of music.",
+      "options_json": "[\"different\", \"traditional\", \"electric\", \"weak\"]",
+      "correct_answer": "different",
+      "correct_option": "A",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "question_event_count": 2
+    },
+    "AIQ:B6463523F9E5": {
+      "question_text": "In the Great Bear Rainforest, what can the trees make?",
+      "options_json": "[\"their own rain\", \"sugar\", \"oxygen\", \"food\"]",
+      "correct_answer": "their own rain",
+      "correct_option": "A",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "question_event_count": 2
+    }
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+  "audio_num": "AU03",
+  "filename": "03_Starter_Get ready_10 Listen and choose.mp3",
+  "duration_ms": 58149,
+  "segment_count": 11,
+  "word_count": 90,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 4520,
+      "text": "activity 10 listen and choose"
+    },
+    {
+      "start_ms": 6100,
+      "end_ms": 12060,
+      "text": "Hi Wong Tao what are you going to wear tomorrow for school?"
+    },
+    {
+      "start_ms": 12740,
+      "end_ms": 15180,
+      "text": "my school uniform of course"
+    },
+    {
+      "start_ms": 16260,
+      "end_ms": 22740,
+      "text": "I'm going to wear a blue sports jacket and blue sports trousers"
+    },
+    {
+      "start_ms": 23700,
+      "end_ms": 24940,
+      "text": "how about you?"
+    },
+    {
+      "start_ms": 24940,
+      "end_ms": 35500,
+      "text": "I'm also going to wear my school uniform. I have a grey coat, a white shirt and a grey skirt."
+    },
+    {
+      "start_ms": 36520,
+      "end_ms": 38900,
+      "text": "What shoes are you going to wear?"
+    },
+    {
+      "start_ms": 39620,
+      "end_ms": 44400,
+      "text": "I'm going to wear a pair of black shoes. How about you?"
+    },
+    {
+      "start_ms": 45440,
+      "end_ms": 48220,
+      "text": "I'll wear white sports shoes."
+    },
+    {
+      "start_ms": 49000,
+      "end_ms": 52180,
+      "text": "Oh! Don't forget your red scarf."
+    },
+    {
+      "start_ms": 52180,
+      "end_ms": 55020,
+      "text": "Thanks. I won't."
+    }
+  ],
+  "words": [
+    {
+      "word": "activity",
+      "start_ms": 0,
+      "end_ms": 880
+    },
+    {
+      "word": "10",
+      "start_ms": 880,
+      "end_ms": 1720
+    },
+    {
+      "word": "listen",
+      "start_ms": 1720,
+      "end_ms": 3140
+    },
+    {
+      "word": "and",
+      "start_ms": 3140,
+      "end_ms": 3960
+    },
+    {
+      "word": "choose",
+      "start_ms": 3960,
+      "end_ms": 4520
+    },
+    {
+      "word": "Hi",
+      "start_ms": 6100,
+      "end_ms": 6980
+    },
+    {
+      "word": "Wong",
+      "start_ms": 6980,
+      "end_ms": 7380
+    },
+    {
+      "word": "Tao",
+      "start_ms": 7380,
+      "end_ms": 7820
+    },
+    {
+      "word": "what",
+      "start_ms": 7820,
+      "end_ms": 9420
+    },
+    {
+      "word": "are",
+      "start_ms": 9420,
+      "end_ms": 9640
+    },
+    {
+      "word": "you",
+      "start_ms": 9640,
+      "end_ms": 9860
+    },
+    {
+      "word": "going",
+      "start_ms": 9860,
+      "end_ms": 10160
+    },
+    {
+      "word": "to",
+      "start_ms": 10160,
+      "end_ms": 10480
+    },
+    {
+      "word": "wear",
+      "start_ms": 10480,
+      "end_ms": 10760
+    },
+    {
+      "word": "tomorrow",
+      "start_ms": 10760,
+      "end_ms": 11240
+    },
+    {
+      "word": "for",
+      "start_ms": 11240,
+      "end_ms": 11620
+    },
+    {
+      "word": "school?",
+      "start_ms": 11620,
+      "end_ms": 12060
+    },
+    {
+      "word": "my",
+      "start_ms": 12740,
+      "end_ms": 13140
+    },
+    {
+      "word": "school",
+      "start_ms": 13140,
+      "end_ms": 13560
+    },
+    {
+      "word": "uniform",
+      "start_ms": 13560,
+      "end_ms": 14380
+    },
+    {
+      "word": "of",
+      "start_ms": 14380,
+      "end_ms": 14780
+    },
+    {
+      "word": "course",
+      "start_ms": 14780,
+      "end_ms": 15180
+    },
+    {
+      "word": "I'm",
+      "start_ms": 16260,
+      "end_ms": 16720
+    },
+    {
+      "word": "going",
+      "start_ms": 16720,
+      "end_ms": 17020
+    },
+    {
+      "word": "to",
+      "start_ms": 17020,
+      "end_ms": 17380
+    },
+    {
+      "word": "wear",
+      "start_ms": 17380,
+      "end_ms": 17760
+    },
+    {
+      "word": "a",
+      "start_ms": 17760,
+      "end_ms": 18120
+    },
+    {
+      "word": "blue",
+      "start_ms": 18120,
+      "end_ms": 18420
+    },
+    {
+      "word": "sports",
+      "start_ms": 18420,
+      "end_ms": 18940
+    },
+    {
+      "word": "jacket",
+      "start_ms": 18940,
+      "end_ms": 19620
+    },
+    {
+      "word": "and",
+      "start_ms": 19620,
+      "end_ms": 20880
+    },
+    {
+      "word": "blue",
+      "start_ms": 20880,
+      "end_ms": 21300
+    },
+    {
+      "word": "sports",
+      "start_ms": 21300,
+      "end_ms": 22080
+    },
+    {
+      "word": "trousers",
+      "start_ms": 22080,
+      "end_ms": 22740
+    },
+    {
+      "word": "how",
+      "start_ms": 23700,
+      "end_ms": 24240
+    },
+    {
+      "word": "about",
+      "start_ms": 24240,
+      "end_ms": 24480
+    },
+    {
+      "word": "you?",
+      "start_ms": 24480,
+      "end_ms": 24940
+    },
+    {
+      "word": "I'm",
+      "start_ms": 24940,
+      "end_ms": 26400
+    },
+    {
+      "word": "also",
+      "start_ms": 26400,
+      "end_ms": 26900
+    },
+    {
+      "word": "going",
+      "start_ms": 26900,
+      "end_ms": 27300
+    },
+    {
+      "word": "to",
+      "start_ms": 27300,
+      "end_ms": 27620
+    },
+    {
+      "word": "wear",
+      "start_ms": 27620,
+      "end_ms": 27840
+    },
+    {
+      "word": "my",
+      "start_ms": 27840,
+      "end_ms": 28100
+    },
+    {
+      "word": "school",
+      "start_ms": 28100,
+      "end_ms": 28460
+    },
+    {
+      "word": "uniform.",
+      "start_ms": 28460,
+      "end_ms": 29160
+    },
+    {
+      "word": "I",
+      "start_ms": 29520,
+      "end_ms": 30260
+    },
+    {
+      "word": "have",
+      "start_ms": 30260,
+      "end_ms": 30620
+    },
+    {
+      "word": "a",
+      "start_ms": 30620,
+      "end_ms": 30880
+    },
+    {
+      "word": "grey",
+      "start_ms": 30880,
+      "end_ms": 31240
+    },
+    {
+      "word": "coat,",
+      "start_ms": 31240,
+      "end_ms": 31920
+    },
+    {
+      "word": "a",
+      "start_ms": 32560,
+      "end_ms": 32720
+    },
+    {
+      "word": "white",
+      "start_ms": 32720,
+      "end_ms": 33020
+    },
+    {
+      "word": "shirt",
+      "start_ms": 33020,
+      "end_ms": 33540
+    },
+    {
+      "word": "and",
+      "start_ms": 33540,
+      "end_ms": 34440
+    },
+    {
+      "word": "a",
+      "start_ms": 34440,
+      "end_ms": 34680
+    },
+    {
+      "word": "grey",
+      "start_ms": 34680,
+      "end_ms": 34980
+    },
+    {
+      "word": "skirt.",
+      "start_ms": 34980,
+      "end_ms": 35500
+    },
+    {
+      "word": "What",
+      "start_ms": 36520,
+      "end_ms": 36940
+    },
+    {
+      "word": "shoes",
+      "start_ms": 36940,
+      "end_ms": 37540
+    },
+    {
+      "word": "are",
+      "start_ms": 37540,
+      "end_ms": 37880
+    },
+    {
+      "word": "you",
+      "start_ms": 37880,
+      "end_ms": 38040
+    },
+    {
+      "word": "going",
+      "start_ms": 38040,
+      "end_ms": 38340
+    },
+    {
+      "word": "to",
+      "start_ms": 38340,
+      "end_ms": 38600
+    },
+    {
+      "word": "wear?",
+      "start_ms": 38600,
+      "end_ms": 38900
+    },
+    {
+      "word": "I'm",
+      "start_ms": 39620,
+      "end_ms": 40200
+    },
+    {
+      "word": "going",
+      "start_ms": 40200,
+      "end_ms": 40440
+    },
+    {
+      "word": "to",
+      "start_ms": 40440,
+      "end_ms": 40760
+    },
+    {
+      "word": "wear",
+      "start_ms": 40760,
+      "end_ms": 41120
+    },
+    {
+      "word": "a",
+      "start_ms": 41120,
+      "end_ms": 41420
+    },
+    {
+      "word": "pair",
+      "start_ms": 41420,
+      "end_ms": 41680
+    },
+    {
+      "word": "of",
+      "start_ms": 41680,
+      "end_ms": 41960
+    },
+    {
+      "word": "black",
+      "start_ms": 41960,
+      "end_ms": 42300
+    },
+    {
+      "word": "shoes.",
+      "start_ms": 42300,
+      "end_ms": 42940
+    },
+    {
+      "word": "How",
+      "start_ms": 43440,
+      "end_ms": 43680
+    },
+    {
+      "word": "about",
+      "start_ms": 43680,
+      "end_ms": 43960
+    },
+    {
+      "word": "you?",
+      "start_ms": 43960,
+      "end_ms": 44400
+    },
+    {
+      "word": "I'll",
+      "start_ms": 45440,
+      "end_ms": 45940
+    },
+    {
+      "word": "wear",
+      "start_ms": 45940,
+      "end_ms": 46260
+    },
+    {
+      "word": "white",
+      "start_ms": 46260,
+      "end_ms": 46900
+    },
+    {
+      "word": "sports",
+      "start_ms": 46900,
+      "end_ms": 47500
+    },
+    {
+      "word": "shoes.",
+      "start_ms": 47500,
+      "end_ms": 48220
+    },
+    {
+      "word": "Oh!",
+      "start_ms": 49000,
+      "end_ms": 49540
+    },
+    {
+      "word": "Don't",
+      "start_ms": 50120,
+      "end_ms": 50560
+    },
+    {
+      "word": "forget",
+      "start_ms": 50560,
+      "end_ms": 50840
+    },
+    {
+      "word": "your",
+      "start_ms": 50840,
+      "end_ms": 51280
+    },
+    {
+      "word": "red",
+      "start_ms": 51280,
+      "end_ms": 51600
+    },
+    {
+      "word": "scarf.",
+      "start_ms": 51600,
+      "end_ms": 52180
+    },
+    {
+      "word": "Thanks.",
+      "start_ms": 52180,
+      "end_ms": 53580
+    },
+    {
+      "word": "I",
+      "start_ms": 54180,
+      "end_ms": 54500
+    },
+    {
+      "word": "won't.",
+      "start_ms": 54500,
+      "end_ms": 55020
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 7.7
+  }
+}

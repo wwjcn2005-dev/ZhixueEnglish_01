@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 2\nSECTION: DEVELOPING_IDEAS\nACTIVITY_AUDIO: 18_Unit 2_Developing ideas _2 Listen again and order the pictures.mp3\nOFFICIAL AUDIO TRANSCRIPT SEGMENTS (id, time range, text):\n[ASR:AU18:001 0-1880ms] Activity 2\n[ASR:AU18:002 3000-5980ms] Listen again and order the pictures.\n[ASR:AU18:003 8000-12240ms] Look Wei Feng, there's a brown bird over there.\n[ASR:AU18:004 12860-14820ms] Let's go closer.\n[ASR:AU18:005 16000-19800ms] Oh no, it can't fly.\n[ASR:AU18:006 20780-22660ms] Shall we get the teacher?\n[ASR:AU18:007 23740-26820ms] I have an idea.\n[ASR:AU18:008 26820-33340ms] Wang Chen is in the bird watching club. Let's ask him.\n[ASR:AU18:009 34340-36400ms] Wang Chen, help!\n[ASR:AU18:010 37560-49400ms] Let me see. Don't worry, I know this kind of bird. I can help. We just need to hold it up to the window.\n[ASR:AU18:011 50220-53900ms] Wow! The bird flies away!\n[ASR:AU18:012 53900-66340ms] Wang Chen, you know so much about birds. I'm in the school news station. Can I interview you next week?\n[ASR:AU18:013 67180-67820ms] Sure.\n\nWrite 2-3 multiple-choice listening questions about what is said in this audio.",
+ "content": "{\"questions\":[{\"stem\":\"What is wrong with the bird?\",\"options\":[\"It cannot fly.\",\"It cannot walk.\",\"It cannot see.\",\"It cannot sing.\"],\"answer_index\":0,\"evidence_segment_id\":\"ASR:AU18:005\",\"evidence_quote\":\"Oh no, it can't fly.\",\"skill\":\"detail\"},{\"stem\":\"Who do the speakers ask for help?\",\"options\":[\"The teacher\",\"Wang Chen\",\"A parent\",\"A doctor\"],\"answer_index\":1,\"evidence_segment_id\":\"ASR:AU18:008\",\"evidence_quote\":\"Wang Chen is in the bird watching club. Let's ask him.\",\"skill\":\"detail\"},{\"stem\":\"What does Wang Chen tell them to do?\",\"options\":[\"Feed the bird\",\"Hold it up to the window\",\"Take it home\",\"Catch it carefully\"],\"answer_index\":1,\"evidence_segment_id\":\"ASR:AU18:010\",\"evidence_quote\":\"We just need to hold it up to the window.\",\"skill\":\"detail\"}]}",
+ "usage": {
+  "prompt_tokens": 737,
+  "completion_tokens": 1101,
+  "total_tokens": 1838,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 882
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 481
+ }
+}

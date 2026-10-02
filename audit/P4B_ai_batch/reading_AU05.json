@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Starter\nSECTION: GET_TO_KNOW_EACH_OTHER\nACTIVITY_INSTRUCTION: 05_Starter_Get to know each other_1 Read and complete.mp3\nPASSAGE BLOCKS (id + verbatim textbook text):\n[FLTRP-EN-7A-2022CUR:P14:B1] Read and complete.1\n[FLTRP-EN-7A-2022CUR:P14:B8] Good morning, everyone!\n[FLTRP-EN-7A-2022CUR:P14:B6] Good morning, Teacher!\n[FLTRP-EN-7A-2022CUR:P14:B7] Welcome to junior high. I’m Mr Pan, your English teacher. I’m so happy to meet you all. I like playing the piano, reading books and travelling. And I love working with students. This year, we’ll explore the world of English together. It’ll be a lot of fun! Now, it’s your turn to introduce yourselves. Please tell us your name and your hobby. Who wants to go first?\n[FLTRP-EN-7A-2022CUR:P14:B3] 1\tMr Pan is a(n)   teacher.2\tMr Pan likes  ,   and  .3\tThe students will   the world of English together.4\tThe students are going to   themselves.\n[FLTRP-EN-7A-2022CUR:P14:B2] Work in groups. Think about ways to greet each other.2\n[FLTRP-EN-7A-2022CUR:P14:B4] Good morning.Good afternoon.Good evening.Good night.\n[FLTRP-EN-7A-2022CUR:P14:B5] Nice to meet you.How are you?...\n\nWrite 2-3 multiple-choice reading questions about this passage.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What is Mr Pan's job?\",\n      \"options\": [\"English teacher\", \"Music teacher\", \"Student\", \"Headmaster\"],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P14:B7\",\n      \"evidence_quote\": \"I’m Mr Pan, your English teacher.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"Which activity does Mr Pan mention as a hobby?\",\n      \"options\": [\"Playing the piano\", \"Drawing\", \"Swimming\", \"Cooking\"],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P14:B7\",\n      \"evidence_quote\": \"I like playing the piano, reading books and travelling.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"Which of the following is listed as a way to greet each other?\",\n      \"options\": [\"Good morning\", \"Good luck\", \"Goodbye\", \"Good job\"],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P14:B4\",\n      \"evidence_quote\": \"Good morning.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 703,
+  "completion_tokens": 3167,
+  "total_tokens": 3870,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 2872
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 447
+ }
+}

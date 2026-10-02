@@ -1,0 +1,335 @@
+{
+  "stage": "P1-09-E",
+  "ai_calls": 0,
+  "vocab_size": 288,
+  "vocab_with_pos": 263,
+  "phrase_count": 23,
+  "sentence_pattern_count": 52,
+  "book_distinct_words": 2063,
+  "book_distinct_words_with_pos": 263,
+  "cases": {
+    "FIX-C1": {
+      "fixture_id": "FIX-C1",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "stored_answer": "friends",
+      "designed_alternatives": [
+        "students",
+        "grandpa",
+        "teachers"
+      ],
+      "scopes": {
+        "SECTION": {
+          "answer_pos": "",
+          "pool_size": 1395,
+          "alternative_hits": {
+            "students": true,
+            "grandpa": true,
+            "teachers": false
+          },
+          "detail": {
+            "students": {
+              "in_pool": true,
+              "matched_surface": "students",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "grandpa": {
+              "in_pool": true,
+              "matched_surface": "grandpa",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "teachers": {
+              "in_pool": false,
+              "matched_surface": null,
+              "in_section_text": false,
+              "in_unit_text": false,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            }
+          }
+        },
+        "UNIT": {
+          "answer_pos": "",
+          "pool_size": 1571,
+          "alternative_hits": {
+            "students": true,
+            "grandpa": true,
+            "teachers": false
+          },
+          "detail": {
+            "students": {
+              "in_pool": true,
+              "matched_surface": "students",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "grandpa": {
+              "in_pool": true,
+              "matched_surface": "grandpa",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "teachers": {
+              "in_pool": false,
+              "matched_surface": null,
+              "in_section_text": false,
+              "in_unit_text": false,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            }
+          }
+        },
+        "BOOK": {
+          "answer_pos": "",
+          "pool_size": 2879,
+          "alternative_hits": {
+            "students": true,
+            "grandpa": true,
+            "teachers": true
+          },
+          "detail": {
+            "students": {
+              "in_pool": true,
+              "matched_surface": "students",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "grandpa": {
+              "in_pool": true,
+              "matched_surface": "grandpa",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "teachers": {
+              "in_pool": true,
+              "matched_surface": "teachers",
+              "in_section_text": false,
+              "in_unit_text": false,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            }
+          }
+        }
+      },
+      "gold_alternative": "students"
+    },
+    "FIX-C2": {
+      "fixture_id": "FIX-C2",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "stored_answer": "sentence",
+      "designed_alternatives": [
+        "word",
+        "name"
+      ],
+      "scopes": {
+        "SECTION": {
+          "answer_pos": "n",
+          "pool_size": 859,
+          "alternative_hits": {
+            "word": true,
+            "name": true
+          },
+          "detail": {
+            "word": {
+              "in_pool": true,
+              "matched_surface": "word",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "name": {
+              "in_pool": true,
+              "matched_surface": "name",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            }
+          }
+        },
+        "UNIT": {
+          "answer_pos": "n",
+          "pool_size": 1041,
+          "alternative_hits": {
+            "word": true,
+            "name": true
+          },
+          "detail": {
+            "word": {
+              "in_pool": true,
+              "matched_surface": "word",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "name": {
+              "in_pool": true,
+              "matched_surface": "name",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            }
+          }
+        },
+        "BOOK": {
+          "answer_pos": "n",
+          "pool_size": 2398,
+          "alternative_hits": {
+            "word": true,
+            "name": true
+          },
+          "detail": {
+            "word": {
+              "in_pool": true,
+              "matched_surface": "word",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            },
+            "name": {
+              "in_pool": true,
+              "matched_surface": "name",
+              "in_section_text": true,
+              "in_unit_text": true,
+              "in_book_text": true,
+              "in_vocabulary": false,
+              "vocab_pos": "",
+              "bold": false
+            }
+          }
+        }
+      },
+      "gold_alternative": "word"
+    }
+  },
+  "pool_size_by_type": {
+    "fill": [
+      {
+        "fixture_id": "FIX-A1",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      },
+      {
+        "fixture_id": "FIX-E1",
+        "answer_in_vocab": true,
+        "answer_pos": "adj"
+      },
+      {
+        "fixture_id": "FIX-E2",
+        "answer_in_vocab": true,
+        "answer_pos": "n"
+      },
+      {
+        "fixture_id": "FIX-G1",
+        "answer_in_vocab": true,
+        "answer_pos": "pron"
+      },
+      {
+        "fixture_id": "FIX-G2",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      }
+    ],
+    "reading_judge": [
+      {
+        "fixture_id": "FIX-A2",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      }
+    ],
+    "vocab_choice": [
+      {
+        "fixture_id": "FIX-B1",
+        "answer_in_vocab": true,
+        "answer_pos": "n"
+      },
+      {
+        "fixture_id": "FIX-C1",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      },
+      {
+        "fixture_id": "FIX-C2",
+        "answer_in_vocab": true,
+        "answer_pos": "n"
+      },
+      {
+        "fixture_id": "FIX-F1",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      }
+    ],
+    "reading_choice": [
+      {
+        "fixture_id": "FIX-B2",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      },
+      {
+        "fixture_id": "FIX-D1",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      },
+      {
+        "fixture_id": "FIX-D2",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      },
+      {
+        "fixture_id": "FIX-F2",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      },
+      {
+        "fixture_id": "FIX-F3",
+        "answer_in_vocab": false,
+        "answer_pos": ""
+      }
+    ]
+  }
+}

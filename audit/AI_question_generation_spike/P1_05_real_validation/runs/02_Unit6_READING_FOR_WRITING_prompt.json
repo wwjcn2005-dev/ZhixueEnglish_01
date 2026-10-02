@@ -1,0 +1,42 @@
+{
+ "section_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING",
+ "context_hash": "9114D87E91991DE848B9E1E194FBD211A4F4B816695341D8C8784219A5EC8A48",
+ "scope_key": "25FC2C928D1B901425FEDF4A873AF73C28C5FC36AD9D9376AF8849E957E1E02C",
+ "system_prompt_sha256": "8B105A1977E742094919D0FEE6A15731F1804642B9A4FA560C554376134EE34C",
+ "user_prompt_sha256": "BD61D3713B5980E5F3CB2F64F2581FF7E4369255132B333B085CD47E838A561B",
+ "system_prompt": "You generate English practice questions for Chinese Grade 7 students from a textbook.\nYou must not use outside knowledge to establish textbook facts or answers.\nEvery question and answer must be directly supported by the supplied textbook evidence.\nIf the evidence is insufficient to determine a reliable answer, do not generate that question.\n\nHard rules:\n1. Use only the provided textbook evidence (unit, section, pages, blocks, vocabulary).\n2. Never invent textbook characters, events, quotes or answers.\n3. Never change textbook facts; never present common sense as a textbook answer.\n4. Never present your own reasoning as a textbook answer.\n5. Do not create a question just to reach the requested quantity.\n6. Every question must carry evidence_block_ids that exist in the provided blocks.\n7. evidence_quote must be an exact substring of the referenced block text.\n8. In unit_vocabulary, emphasis=BOLD marks a core textbook word; PLAIN is not core.\n9. Answer language and level must stay inside the provided textbook range.\n10. Output JSON only (no markdown, no code fences, no comments).\n\nOutput JSON schema:\n{\"questions\":[{\"question_id\":\"q1\",\n \"type\":\"fill|vocab_choice|reading_choice|reading_judge\",\n \"question\":\"...\",\"options\":[\"...\"],\"correct_option\":\"A\",\n \"answer\":\"...\",\"unit\":\"Unit 1\",\"section\":\"UNDERSTANDING_IDEAS\",\n \"page\":17,\"activity\":2,\n \"evidence_block_ids\":[\"FLTRP-EN-7A-2022CUR:P22:B0\"],\n \"evidence_quote\":\"...\",\"explanation\":\"...\",\n \"difficulty\":\"easy|medium\",\"ai_confidence\":0.0}]}\n\nQuantity: no quota. Generate as many questions as the supplied textbook evidence can reliably and uniquely support, and no more. Fewer is acceptable. 0 is an acceptable and expected answer when the evidence does not support reliable, unique, traceable questions. Do not create a question merely to reach a number. Prefer covering different pieces of evidence over restating the same sentence.\n  - fill: a real textbook sentence with one word/phrase replaced by ___ ; answer = the exact removed word(s);\n    the rest of the sentence must stay unchanged.\n  - vocab_choice: a real textbook sentence with a blank and 4 options; the correct option must be a word from\n    unit_vocabulary whose meaning/part of speech fits the sentence; distractors may be other unit words.\n  - reading_choice / reading_judge: about explicit facts in the provided textbook blocks; the answer must be\n    located inside evidence_quote. No open interpretation, no outside knowledge.\npage must be one of 104,105,106,107 and activity must be one of 1,4,5 (or null).",
+ "user_prompt_len": 19985,
+ "pages": [
+  104,
+  105,
+  106,
+  107
+ ],
+ "activity_nos": [
+  1,
+  4,
+  5
+ ],
+ "blocks": 54,
+ "packages": 12,
+ "activity_instructions": [
+  {
+   "activity_no": 1,
+   "page": 104,
+   "instruction": "a",
+   "audio_required": false
+  },
+  {
+   "activity_no": 4,
+   "page": 106,
+   "instruction": "Answer the questions.1 Why is the dodo “just a character” to some readers?2 What do “as happy as a clam” and “as dead as a dodo” mean?3 Why does the writer use the two expressions at the end of the passage?",
+   "audio_required": false
+  },
+  {
+   "activity_no": 5,
+   "page": 107,
+   "instruction": "Write a short paragraph about dodos.",
+   "audio_required": false
+  }
+ ]
+}

@@ -1,0 +1,847 @@
+{
+  "task": "P1-05-C contentpack v1 独立验收",
+  "generated_at": "2026-09-12T11:22:40+08:00",
+  "verdict": "PASS WITH NOTES",
+  "database": {
+    "path": "D:\\ZhixueEnglish\\structured\\contentpack\\v1\\FLTRP-EN-7A-2022CUR.sqlite",
+    "size_bytes": 1835008,
+    "sha256": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+    "mtime": "2026-09-12T11:11:50"
+  },
+  "sqlite": {
+    "integrity_check": "ok",
+    "foreign_key_check_rows": 0,
+    "journal_mode": "delete",
+    "user_version": 0,
+    "page_count": 448,
+    "freelist_count": 0,
+    "encoding": "UTF-8",
+    "foreign_keys_pragma": 0
+  },
+  "schema_table_count": 21,
+  "schema_tables": [
+    "activity",
+    "activity_content",
+    "ai_artifact",
+    "audio_asset",
+    "audio_mapping",
+    "content_asset",
+    "content_block",
+    "evidence",
+    "import_batch",
+    "import_batch_stage",
+    "learning_goal",
+    "learning_item",
+    "page",
+    "parse_snapshot",
+    "section",
+    "source_artifact",
+    "source_ref",
+    "sub_question",
+    "textbook_edition",
+    "transcript",
+    "unit"
+  ],
+  "textbook_identity": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "publisher": "外语教学与研究出版社",
+    "title": "义务教育教科书·英语 七年级上册",
+    "grade": "7",
+    "volume": "A",
+    "curriculum_standard": "义务教育英语课程标准（2022年版）",
+    "edition_label": "根据2022年版课程标准修订"
+  },
+  "counts": {
+    "structure": {
+      "page": 178,
+      "unit": 8,
+      "section": 46,
+      "activity": 96
+    }
+  },
+  "audio": {
+    "assets": 54,
+    "mapping": {
+      "CANDIDATE": 54
+    },
+    "with_target": 23
+  },
+  "learning": {
+    "goals": 6,
+    "source_refs": 6,
+    "items": 0
+  },
+  "ai_l4": {
+    "ai_artifact": 0,
+    "transcript": 0,
+    "l4_tables": []
+  },
+  "need_review": {
+    "activity": 23,
+    "order": 88,
+    "sub_question": 13
+  },
+  "evidence": {
+    "total": 351,
+    "no_extraction_version": 351,
+    "no_bbox": 351,
+    "no_textbook_page": 9,
+    "no_isolation_fields": 351
+  },
+  "content_asset": {
+    "total": 628,
+    "tiny_fragment": 352
+  },
+  "content_block": {
+    "total": 3854
+  },
+  "activity_content": {
+    "total": 31,
+    "by_type": {
+      "auxiliary_same_column": 22,
+      "separate_region": 9
+    }
+  },
+  "sub_question": {
+    "total": 13,
+    "statuses": {
+      "NEED_REVIEW": 13
+    },
+    "sample": [
+      [
+        "FLTRP-EN-7A-2022CUR:P15:Q1",
+        15,
+        1,
+        "Where are the new students?2 What is the"
+      ],
+      [
+        "FLTRP-EN-7A-2022CUR:P39:Q1",
+        39,
+        1,
+        "What does “An idea suddenly hits me” mea"
+      ],
+      [
+        "FLTRP-EN-7A-2022CUR:P45:Q1",
+        45,
+        1,
+        "What hobby do the pictures show?2 What c"
+      ],
+      [
+        "FLTRP-EN-7A-2022CUR:P47:Q1",
+        47,
+        1,
+        "What is the best ending for Emma?2 Do yo"
+      ],
+      [
+        "FLTRP-EN-7A-2022CUR:P53:Q1",
+        53,
+        1,
+        "Which picture reminds you of your father"
+      ]
+    ]
+  },
+  "page": {
+    "sample": [
+      [
+        35,
+        30,
+        "footer_confirmed",
+        "unit_opener",
+        "dense_visual"
+      ],
+      [
+        36,
+        31,
+        "footer_confirmed",
+        "content",
+        "dense_visual"
+      ],
+      [
+        101,
+        96,
+        "footer_confirmed",
+        "content",
+        "dense_visual"
+      ],
+      [
+        24,
+        19,
+        "footer_confirmed",
+        "content",
+        "single_column_with_sidebar"
+      ],
+      [
+        40,
+        35,
+        "footer_confirmed",
+        "content",
+        "single_column_with_sidebar"
+      ],
+      [
+        118,
+        113,
+        "footer_confirmed",
+        "content",
+        "two_column"
+      ],
+      [
+        155,
+        150,
+        "footer_confirmed",
+        "content",
+        "two_column"
+      ],
+      [
+        156,
+        151,
+        "footer_confirmed",
+        "content",
+        "two_column"
+      ],
+      [
+        5,
+        null,
+        "front_matter",
+        "front_matter",
+        "mixed"
+      ],
+      [
+        6,
+        null,
+        "front_matter",
+        "front_matter",
+        "mixed"
+      ],
+      [
+        8,
+        3,
+        "footer_confirmed",
+        "content",
+        "mixed"
+      ],
+      [
+        9,
+        4,
+        "footer_confirmed",
+        "content",
+        "mixed"
+      ],
+      [
+        7,
+        2,
+        "footer_confirmed",
+        "unit_opener",
+        "single_column"
+      ],
+      [
+        19,
+        14,
+        "footer_confirmed",
+        "unit_opener",
+        "single_column"
+      ],
+      [
+        20,
+        15,
+        "footer_confirmed",
+        "content",
+        "mixed"
+      ],
+      [
+        51,
+        46,
+        "footer_confirmed",
+        "unit_opener",
+        "single_column"
+      ],
+      [
+        52,
+        47,
+        "footer_confirmed",
+        "content",
+        "mixed"
+      ],
+      [
+        99,
+        94,
+        "footer_confirmed",
+        "unit_opener",
+        "single_column"
+      ],
+      [
+        100,
+        95,
+        "footer_confirmed",
+        "content",
+        "mixed"
+      ],
+      [
+        115,
+        null,
+        "no_printed_page_number",
+        "appendix_index",
+        "mixed"
+      ],
+      [
+        116,
+        111,
+        "footer_confirmed",
+        "content",
+        "mixed"
+      ]
+    ],
+    "special": [
+      [
+        1,
+        null,
+        "front_matter"
+      ],
+      [
+        2,
+        null,
+        "front_matter"
+      ],
+      [
+        3,
+        null,
+        "front_matter"
+      ],
+      [
+        4,
+        null,
+        "front_matter"
+      ],
+      [
+        5,
+        null,
+        "front_matter"
+      ],
+      [
+        6,
+        null,
+        "front_matter"
+      ],
+      [
+        115,
+        null,
+        "no_printed_page_number"
+      ],
+      [
+        177,
+        null,
+        "no_printed_page_number"
+      ],
+      [
+        178,
+        null,
+        "back_cover"
+      ]
+    ]
+  },
+  "pollution": {
+    "hits": []
+  },
+  "checks": [
+    {
+      "group": "file",
+      "name": "db_exists",
+      "status": "PASS",
+      "detail": "D:\\ZhixueEnglish\\structured\\contentpack\\v1\\FLTRP-EN-7A-2022CUR.sqlite"
+    },
+    {
+      "group": "file",
+      "name": "db_sha256",
+      "status": "PASS",
+      "detail": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3（P1-05-B 构建值 B7372AAC3782DF88…）"
+    },
+    {
+      "group": "sqlite",
+      "name": "integrity_check",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "group": "sqlite",
+      "name": "foreign_key_check",
+      "status": "PASS",
+      "detail": "0 rows"
+    },
+    {
+      "group": "sqlite",
+      "name": "journal_mode",
+      "status": "PASS",
+      "detail": "delete"
+    },
+    {
+      "group": "sqlite",
+      "name": "encoding",
+      "status": "PASS",
+      "detail": "UTF-8"
+    },
+    {
+      "group": "schema",
+      "name": "schema_required_tables",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "group": "schema",
+      "name": "schema_no_unexpected_tables",
+      "status": "PASS",
+      "detail": "extra=[]"
+    },
+    {
+      "group": "schema",
+      "name": "schema_no_temp_tables",
+      "status": "PASS",
+      "detail": "suspicious=[]"
+    },
+    {
+      "group": "schema",
+      "name": "schema_every_table_has_pk",
+      "status": "PASS",
+      "detail": "no_pk=[]"
+    },
+    {
+      "group": "schema",
+      "name": "schema_foreign_keys_present",
+      "status": "PASS",
+      "detail": "tables_with_fk=['import_batch_stage', 'section', 'activity', 'content_block', 'content_asset', 'activity_content', 'sub_question', 'audio_mapping']"
+    },
+    {
+      "group": "schema",
+      "name": "schema_indexes",
+      "status": "NOTE",
+      "detail": "当前仅有 PRIMARY KEY / UNIQUE 隐式索引，未建显式查询索引（首次构建可接受，建议后续版本按查询路径补索引）"
+    },
+    {
+      "group": "identity",
+      "name": "textbook_edition_count",
+      "status": "PASS",
+      "detail": "1 rows"
+    },
+    {
+      "group": "identity",
+      "name": "textbook_id",
+      "status": "PASS",
+      "detail": "FLTRP-EN-7A-2022CUR"
+    },
+    {
+      "group": "identity",
+      "name": "textbook_publisher",
+      "status": "PASS",
+      "detail": "外语教学与研究出版社"
+    },
+    {
+      "group": "identity",
+      "name": "textbook_grade_volume",
+      "status": "PASS",
+      "detail": "grade=7 volume=A title=义务教育教科书·英语 七年级上册"
+    },
+    {
+      "group": "identity",
+      "name": "textbook_curriculum",
+      "status": "PASS",
+      "detail": "义务教育英语课程标准（2022年版）"
+    },
+    {
+      "group": "identity",
+      "name": "textbook_id_single_in_pages",
+      "status": "PASS",
+      "detail": "distinct=1"
+    },
+    {
+      "group": "artifact",
+      "name": "source_artifact_total",
+      "status": "PASS",
+      "detail": "55（pdf=1 audio=54）"
+    },
+    {
+      "group": "artifact",
+      "name": "source_artifact_pdf_sha256",
+      "status": "PASS",
+      "detail": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F"
+    },
+    {
+      "group": "artifact",
+      "name": "source_artifact_pdf_on_disk",
+      "status": "PASS",
+      "detail": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\（根据2022年版课程标准修订）义务教育教科书·英语 七年级上册.pdf"
+    },
+    {
+      "group": "structure",
+      "name": "count_page",
+      "status": "PASS",
+      "detail": "178 (期望 178)"
+    },
+    {
+      "group": "structure",
+      "name": "count_unit",
+      "status": "PASS",
+      "detail": "8 (期望 8)"
+    },
+    {
+      "group": "structure",
+      "name": "count_section",
+      "status": "PASS",
+      "detail": "46 (期望 46)"
+    },
+    {
+      "group": "structure",
+      "name": "count_activity",
+      "status": "PASS",
+      "detail": "96 (期望 96)"
+    },
+    {
+      "group": "structure",
+      "name": "unit_codes",
+      "status": "PASS",
+      "detail": "['Appendix', 'Starter', 'Unit 1', 'Unit 2', 'Unit 3', 'Unit 4', 'Unit 5', 'Unit 6']"
+    },
+    {
+      "group": "structure",
+      "name": "structure_no_orphan_section",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "structure",
+      "name": "structure_no_orphan_activity",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "structure",
+      "name": "structure_activity_page_traceable",
+      "status": "PASS",
+      "detail": "activity 无对应 page 的数量=0"
+    },
+    {
+      "group": "structure",
+      "name": "structure_activity_fields",
+      "status": "PASS",
+      "detail": "缺字段行数=0"
+    },
+    {
+      "group": "page",
+      "name": "page_sample_size",
+      "status": "PASS",
+      "detail": "21 页"
+    },
+    {
+      "group": "page",
+      "name": "page_mapping_consistency",
+      "status": "PASS",
+      "detail": "异常=[]"
+    },
+    {
+      "group": "page",
+      "name": "page_special_pages",
+      "status": "PASS",
+      "detail": "[(1, None, 'front_matter'), (2, None, 'front_matter'), (3, None, 'front_matter'), (4, None, 'front_matter'), (5, None, 'front_matter'), (6, None, 'front_matter'), (115, None, 'no_printed_page_number'), (177, None, 'no_printed_page_number'), (178, None, 'back_cover')]"
+    },
+    {
+      "group": "block",
+      "name": "count_content_block",
+      "status": "PASS",
+      "detail": "3854"
+    },
+    {
+      "group": "block",
+      "name": "block_raw_not_replaced",
+      "status": "PASS",
+      "detail": "text_raw 为空但 normalized 非空=0"
+    },
+    {
+      "group": "block",
+      "name": "block_hash_present",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "block",
+      "name": "block_page_fk",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "block",
+      "name": "block_hash_recompute",
+      "status": "PASS",
+      "detail": "checked=3854 mismatch=0"
+    },
+    {
+      "group": "block",
+      "name": "block_control_chars",
+      "status": "NOTE",
+      "detail": "全库含控制字符的 block = 22/3854，字符集 ['0x7']，样例 [{'block_id': 'FLTRP-EN-7A-2022CUR:P2:B5', 'snippet': '编    者:\\x07王德美  刘敬雯  何润青  宋靖霞 '}, {'block_id': 'FLTRP-EN-7A-2022CUR:P8:B11', 'snippet': '1 ?Li Ming:\\t \\x07Here it is. And look a'}, {'block_id': 'FLTRP-EN-7A-2022CUR:P8:B16', 'snippet': '\\tMum:\\t How about you, Li Meng?Li Men'}]（来自 PDF 文本层原始标记，text_raw 保留原文；建议后续在 text_normalized 中清理）"
+    },
+    {
+      "group": "block",
+      "name": "block_kind_distribution",
+      "status": "NOTE",
+      "detail": "{'exercise_item': 2984, 'sidebar_tip': 348, 'heading': 344, 'footer_text': 178}（dialogue=0 说明构建器的 block_kind 启发式未命中教材中的弯引号对话，属分类精度问题，不影响原文保全）"
+    },
+    {
+      "group": "asset",
+      "name": "count_content_asset",
+      "status": "PASS",
+      "detail": "628 (期望 628)"
+    },
+    {
+      "group": "asset",
+      "name": "asset_unique_page_xref",
+      "status": "PASS",
+      "detail": "duplicates=0"
+    },
+    {
+      "group": "asset",
+      "name": "asset_page_fk",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "asset",
+      "name": "asset_placement_count",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "asset",
+      "name": "asset_tiny_fragment_preserved",
+      "status": "PASS",
+      "detail": "tiny_fragment=352"
+    },
+    {
+      "group": "evidence",
+      "name": "count_evidence",
+      "status": "PASS",
+      "detail": "351"
+    },
+    {
+      "group": "evidence",
+      "name": "evidence_page_fk",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "evidence",
+      "name": "evidence_extraction_version",
+      "status": "NOTE",
+      "detail": "缺少 extraction_version 的行数=351"
+    },
+    {
+      "group": "evidence",
+      "name": "evidence_bbox",
+      "status": "NOTE",
+      "detail": "缺少 bbox 的行数=351"
+    },
+    {
+      "group": "evidence",
+      "name": "evidence_textbook_page",
+      "status": "PASS",
+      "detail": "textbook_page 为空 9 条，其中因对应页面本身无印刷页码（特殊页）9 条属预期；真实缺失 0 条"
+    },
+    {
+      "group": "evidence",
+      "name": "evidence_isolation_fields",
+      "status": "NOTE",
+      "detail": "缺少 textbook_id/snapshot_id 的行数=351"
+    },
+    {
+      "group": "evidence",
+      "name": "evidence_source_types",
+      "status": "PASS",
+      "detail": "{'parser_rule': 69, 'pdf_text': 274, 'pdf_toc': 8}"
+    },
+    {
+      "group": "activity_content",
+      "name": "count_activity_content",
+      "status": "PASS",
+      "detail": "31"
+    },
+    {
+      "group": "activity_content",
+      "name": "activity_content_types",
+      "status": "PASS",
+      "detail": "{'auxiliary_same_column': 22, 'separate_region': 9}"
+    },
+    {
+      "group": "activity_content",
+      "name": "activity_content_no_orphan",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "sub_question",
+      "name": "count_sub_question",
+      "status": "PASS",
+      "detail": "13"
+    },
+    {
+      "group": "sub_question",
+      "name": "sub_question_all_need_review",
+      "status": "PASS",
+      "detail": "{'NEED_REVIEW': 13}"
+    },
+    {
+      "group": "sub_question",
+      "name": "sub_question_no_guessed_activity",
+      "status": "PASS",
+      "detail": "activity_id 为空=13"
+    },
+    {
+      "group": "audio",
+      "name": "count_audio_asset",
+      "status": "PASS",
+      "detail": "54"
+    },
+    {
+      "group": "audio",
+      "name": "audio_asset_fields",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "audio",
+      "name": "audio_file_set_match",
+      "status": "PASS",
+      "detail": "disk=54 db=54"
+    },
+    {
+      "group": "audio",
+      "name": "audio_disk_cross_check",
+      "status": "PASS",
+      "detail": "checked=54 mismatches=[]"
+    },
+    {
+      "group": "audio",
+      "name": "count_audio_mapping",
+      "status": "PASS",
+      "detail": "54"
+    },
+    {
+      "group": "audio",
+      "name": "audio_mapping_status",
+      "status": "PASS",
+      "detail": "{'CANDIDATE': 54}"
+    },
+    {
+      "group": "audio",
+      "name": "audio_mapping_targets",
+      "status": "PASS",
+      "detail": "有目标=23 无效目标=0"
+    },
+    {
+      "group": "learning",
+      "name": "count_learning_goal",
+      "status": "PASS",
+      "detail": "6"
+    },
+    {
+      "group": "learning",
+      "name": "learning_goal_origin",
+      "status": "PASS",
+      "detail": "{'TEXTBOOK_EXPLICIT'}"
+    },
+    {
+      "group": "learning",
+      "name": "learning_goal_scopes",
+      "status": "PASS",
+      "detail": "['FLTRP-EN-7A-2022CUR:U1', 'FLTRP-EN-7A-2022CUR:U2', 'FLTRP-EN-7A-2022CUR:U3', 'FLTRP-EN-7A-2022CUR:U4', 'FLTRP-EN-7A-2022CUR:U5', 'FLTRP-EN-7A-2022CUR:U6']"
+    },
+    {
+      "group": "learning",
+      "name": "learning_goal_source_ref",
+      "status": "PASS",
+      "detail": "goals=6 refs=6"
+    },
+    {
+      "group": "learning",
+      "name": "learning_goal_trace_chain",
+      "status": "PASS",
+      "detail": "断链=0"
+    },
+    {
+      "group": "learning",
+      "name": "learning_item_zero",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "ai",
+      "name": "ai_artifact_zero",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "ai",
+      "name": "transcript_zero",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "group": "ai",
+      "name": "l4_not_in_contentpack",
+      "status": "PASS",
+      "detail": "contentpack 内 L4 表=[]"
+    },
+    {
+      "group": "ai",
+      "name": "no_learner_db",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "group": "need_review",
+      "name": "need_review_activity_boundary",
+      "status": "PASS",
+      "detail": "23 (期望 23)"
+    },
+    {
+      "group": "need_review",
+      "name": "need_review_reading_order",
+      "status": "PASS",
+      "detail": "88 (期望 88)"
+    },
+    {
+      "group": "need_review",
+      "name": "need_review_sub_question",
+      "status": "PASS",
+      "detail": "13 (期望 13)"
+    },
+    {
+      "group": "pollution",
+      "name": "pollution_scan",
+      "status": "PASS",
+      "detail": "无命中"
+    },
+    {
+      "group": "readonly",
+      "name": "readonly_open",
+      "status": "PASS",
+      "detail": "mode=ro 只读打开成功，page=178"
+    },
+    {
+      "group": "readonly",
+      "name": "readonly_suitability",
+      "status": "PASS",
+      "detail": "数据库为单文件、无外部依赖、可用 mode=ro 打开；适合作为随 APP 发布的只读内容包"
+    },
+    {
+      "group": "independence",
+      "name": "independence",
+      "status": "PASS",
+      "detail": "验收脚本仅使用标准库 sqlite3/hashlib/json/re/struct/os/pathlib，未 import parser、未 import builder"
+    }
+  ],
+  "failures": [],
+  "notes": [
+    "schema_indexes",
+    "block_control_chars",
+    "block_kind_distribution",
+    "evidence_extraction_version",
+    "evidence_bbox",
+    "evidence_isolation_fields"
+  ]
+}

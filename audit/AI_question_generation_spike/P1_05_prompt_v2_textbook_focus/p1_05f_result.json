@@ -1,0 +1,19 @@
+{
+ "mode": "TEXTBOOK_FOCUS_VALIDATION",
+ "prompt_version": "P1-05-v2",
+ "api_calls": 1,
+ "retry_count": 0,
+ "api_error": null,
+ "latency_ms": 119179,
+ "guard_decision": "PROCEED",
+ "truncated": false,
+ "json_parseable": true,
+ "questions_count": 7,
+ "wrote_to_question_library": false,
+ "final_status": "P1_05_F_PASS",
+ "questions_field_present": true,
+ "protection": {
+  "all_unchanged": true,
+  "changed": []
+ }
+}

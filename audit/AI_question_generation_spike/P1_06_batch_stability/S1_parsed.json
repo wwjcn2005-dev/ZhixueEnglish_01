@@ -1,0 +1,138 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "question": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+   "options": [],
+   "correct_option": "",
+   "answer": "sound",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B11"
+   ],
+   "evidence_quote": "Right at this moment, the sound of Grandpa’s erhu cuts in.",
+   "explanation": "The passage uses 'sound' as a core word in this sentence about Grandpa’s erhu.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q2",
+   "type": "fill",
+   "question": "It feels great to ___ our hobby together.",
+   "options": [],
+   "correct_option": "",
+   "answer": "enjoy",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B5"
+   ],
+   "evidence_quote": "It feels great to enjoy our hobby together.",
+   "explanation": "The passage says 'It feels great to enjoy our hobby together', so the missing word is 'enjoy'.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q3",
+   "type": "vocab_choice",
+   "question": "As a rock music lover, I play the electric guitar in the school ___.",
+   "options": [
+    "band",
+    "club",
+    "stage",
+    "instrument"
+   ],
+   "correct_option": "A",
+   "answer": "band",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B10"
+   ],
+   "evidence_quote": "As a rock music lover, I play the electric guitar in the school band.",
+   "explanation": "The passage says 'I play the electric guitar in the school band', so the correct word is 'band'.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q4",
+   "type": "vocab_choice",
+   "question": "But it’s a ___ kind of music.",
+   "options": [
+    "different",
+    "traditional",
+    "electric",
+    "weak"
+   ],
+   "correct_option": "A",
+   "answer": "different",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "evidence_quote": "But it’s a different kind of music.",
+   "explanation": "The passage says 'But it’s a different kind of music', so the correct word is 'different'.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q5",
+   "type": "reading_choice",
+   "question": "Grandpa likes playing the erhu ___.",
+   "options": [
+    "in the park",
+    "in the school band",
+    "on the stage",
+    "in his room"
+   ],
+   "correct_option": "A",
+   "answer": "in the park",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "evidence_quote": "He likes playing the erhu in the park with his friends.",
+   "explanation": "The passage says Grandpa likes playing the erhu in the park with his friends, so the correct place is 'in the park'.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q6",
+   "type": "reading_choice",
+   "question": "At the school art festival, the writer and Grandpa ___.",
+   "options": [
+    "write songs",
+    "share songs online",
+    "fire up instruments",
+    "sing Beijing opera"
+   ],
+   "correct_option": "C",
+   "answer": "fire up instruments",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "evidence_quote": "I nod to Grandpa and we fire up our instruments.",
+   "explanation": "The passage says 'I nod to Grandpa and we fire up our instruments', so the correct action is 'fire up instruments'.",
+   "difficulty": "medium",
+   "ai_confidence": 0.92
+  }
+ ]
+}

@@ -1,0 +1,497 @@
+{
+  "task": "P1-06-A 教材派生学习资源设计与只读审计",
+  "generated_at": "2026-09-12T11:27:41+08:00",
+  "verdict": "PASS WITH NOTES",
+  "database": {
+    "path": "D:\\ZhixueEnglish\\structured\\contentpack\\v1\\FLTRP-EN-7A-2022CUR.sqlite",
+    "size_bytes": 1835008,
+    "sha256": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+    "readonly": true
+  },
+  "counts": {
+    "page": 178,
+    "unit": 8,
+    "section": 46,
+    "activity": 96,
+    "content_block": 3854,
+    "content_asset": 628,
+    "evidence": 351,
+    "audio_asset": 54,
+    "audio_mapping": 54,
+    "sub_question": 13,
+    "learning_item": 0,
+    "learning_goal": 6,
+    "ai_artifact": 0
+  },
+  "vocabulary_sources": {
+    "Words and expressions p155-162": {
+      "blocks": 377,
+      "kinds": {
+        "latin_only": 16,
+        "head_entry": 266,
+        "continuation_or_cjk": 68,
+        "latin_cjk_entry": 23,
+        "other": 4
+      },
+      "entries": 289,
+      "multiword_entries": 46,
+      "multiword_samples": [
+        "junior high 初级中学 3",
+        "red scarf 红领巾 5",
+        "T-shirt /ˈtiː ʃɜːt/ n. T恤衫,短袖运动衫 5",
+        " school uniform 校服 5",
+        "of course 当然 5",
+        "teaching building 教学楼 6",
+        "dining hall 食堂 6",
+        "each other 互相,彼此 9"
+      ],
+      "page_status": {
+        "155": {
+          "layout_type": "two_column",
+          "reading_order_status": "OK",
+          "page_role": "content"
+        },
+        "156": {
+          "layout_type": "two_column",
+          "reading_order_status": "OK",
+          "page_role": "content"
+        }
+      }
+    },
+    "Proper nouns p163-164": {
+      "blocks": 39,
+      "kinds": {
+        "latin_only": 5,
+        "head_entry": 27,
+        "other": 1,
+        "latin_cjk_entry": 6
+      },
+      "entries": 33,
+      "multiword_entries": 10,
+      "multiword_samples": [
+        "Great Bear Rainforest 大熊雨林 83",
+        "the Indian /ˈɪndiən/ Ocean 印度洋 104",
+        "ethics /ˈeθɪks/ and the rule /ruːl/ of law /lɔː/ 道德与法治 4",
+        "students’ union 学生会 22",
+        "Beijing opera /ˈɒpərə/ 京剧 32",
+        "Dragon Boat Festival 端午节 67",
+        "Double Fifth Festival 重午节 67",
+        "lunar /ˈluːnə/ month 太阴月;朔望月 67"
+      ],
+      "page_status": {
+        "163": {
+          "layout_type": "single_column",
+          "reading_order_status": "OK",
+          "page_role": "content"
+        },
+        "164": {
+          "layout_type": "single_column",
+          "reading_order_status": "OK",
+          "page_role": "content"
+        }
+      }
+    },
+    "Vocabulary A-Z p165-173": {
+      "blocks": 395,
+      "kinds": {
+        "latin_only": 34,
+        "head_entry": 266,
+        "latin_cjk_entry": 23,
+        "continuation_or_cjk": 67,
+        "other": 5
+      },
+      "entries": 289,
+      "multiword_entries": 46,
+      "multiword_samples": [
+        "a bit 有点儿,稍微 10",
+        "against the law 违法 65",
+        "appear /əˈpɪə/ v. (尤指突然)出现, ",
+        "area /ˈeəriə/ n. (国家,市镇等的) ",
+        "as dead as a dodo 彻底死亡 104",
+        "as happy as a clam 非常高兴的, ",
+        "character /ˈkærəktə/ n. (书、剧本、 ",
+        "corn silk 玉米须 87"
+      ],
+      "page_status": {
+        "165": {
+          "layout_type": "two_column",
+          "reading_order_status": "OK",
+          "page_role": "content"
+        },
+        "166": {
+          "layout_type": "two_column",
+          "reading_order_status": "OK",
+          "page_role": "content"
+        }
+      }
+    }
+  },
+  "communication_bank": {
+    "pages": [
+      4,
+      115,
+      117,
+      118
+    ],
+    "bullets": 80,
+    "useful": 30,
+    "samples": [
+      "•\t Ms Chen 1  a sentence on the blackboard. But ",
+      "•\tMr / Ms... is our... teacher.",
+      "•\tMr / Ms... tells us...",
+      "•\tHis / Her... make(s) me feel...",
+      "•\tI’m so lucky to have a teacher like...",
+      "•\tWe need to...",
+      "•\tThat’s really a(n)... lesson!",
+      "•\t Mia will face 3 . Dad and Mum will still help",
+      "•\tWhat’s your hobby?",
+      "•\tI like..."
+    ]
+  },
+  "grammar_evidence": {
+    "pointers": [
+      {
+        "page": 24,
+        "text": "Read the sentences from the reading passage and "
+      },
+      {
+        "page": 24,
+        "text": "Grammar rules ⇢ p136"
+      },
+      {
+        "page": 40,
+        "text": "Grammar rules ⇢ p138"
+      },
+      {
+        "page": 40,
+        "text": "Read the sentences from the reading passage and "
+      },
+      {
+        "page": 56,
+        "text": "Read the sentences from the reading passage and "
+      },
+      {
+        "page": 56,
+        "text": "Grammar rules ⇢ p142"
+      },
+      {
+        "page": 72,
+        "text": "Read the sentences from the reading passage and "
+      },
+      {
+        "page": 72,
+        "text": "Grammar rules ⇢ p142"
+      },
+      {
+        "page": 88,
+        "text": "Read the sentences from the reading passage and "
+      },
+      {
+        "page": 88,
+        "text": "Grammar rules ⇢ p143"
+      },
+      {
+        "page": 104,
+        "text": "Read the sentences from the reading passage and "
+      },
+      {
+        "page": 104,
+        "text": "Grammar rules ⇢ p147"
+      }
+    ],
+    "guide_start": 135,
+    "guide_topics": [
+      {
+        "page": 135,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 135,
+        "text": "Starter  "
+      },
+      {
+        "page": 135,
+        "text": "可数名词和不可数名词"
+      },
+      {
+        "page": 135,
+        "text": "1. 可数名词"
+      },
+      {
+        "page": 135,
+        "text": "2. 不可数名词"
+      },
+      {
+        "page": 136,
+        "text": "基数词和冠词"
+      },
+      {
+        "page": 136,
+        "text": "1. 基数词"
+      },
+      {
+        "page": 136,
+        "text": "2. 冠词"
+      },
+      {
+        "page": 136,
+        "text": "一般现在时"
+      },
+      {
+        "page": 137,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 137,
+        "text": "一般将来时"
+      },
+      {
+        "page": 137,
+        "text": "there be 句型的用法"
+      },
+      {
+        "page": 139,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 139,
+        "text": "简单句的基本句型"
+      },
+      {
+        "page": 139,
+        "text": "1. 主语 + 系动词 + 表语"
+      },
+      {
+        "page": 139,
+        "text": "2. 主语 + 谓语(不及物动词)"
+      },
+      {
+        "page": 139,
+        "text": "3. 主语 + 谓语(及物动词)+ 宾语"
+      },
+      {
+        "page": 140,
+        "text": "形容词的基本形式"
+      },
+      {
+        "page": 141,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 141,
+        "text": "Unit 1 "
+      },
+      {
+        "page": 141,
+        "text": "人称代词和物主代词"
+      },
+      {
+        "page": 141,
+        "text": "1. 人称代词"
+      },
+      {
+        "page": 141,
+        "text": "He doesn’t believe me.他不相信我。 -Who is it? 是谁? -It’s m"
+      },
+      {
+        "page": 141,
+        "text": "-Who wants a ride on my bike? 谁想骑我的自行车? -Me! / Not m"
+      },
+      {
+        "page": 142,
+        "text": "2. 物主代词"
+      },
+      {
+        "page": 143,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 143,
+        "text": "Unit 2 "
+      },
+      {
+        "page": 143,
+        "text": "一般现在时"
+      },
+      {
+        "page": 143,
+        "text": "1. be 动词的一般现在时"
+      },
+      {
+        "page": 144,
+        "text": "2. 行为动词的一般现在时"
+      },
+      {
+        "page": 145,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 145,
+        "text": "- Does he play the piano every day? 他每天都练钢琴吗? - No, "
+      },
+      {
+        "page": 147,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 147,
+        "text": "Unit 3 "
+      },
+      {
+        "page": 147,
+        "text": "名词的所有格"
+      },
+      {
+        "page": 147,
+        "text": "Unit 4 "
+      },
+      {
+        "page": 147,
+        "text": "频度副词"
+      },
+      {
+        "page": 148,
+        "text": "Unit 5 "
+      },
+      {
+        "page": 148,
+        "text": "一般将来时:be going to / will"
+      },
+      {
+        "page": 148,
+        "text": "1. be going to"
+      },
+      {
+        "page": 149,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 150,
+        "text": "2. will"
+      },
+      {
+        "page": 151,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 152,
+        "text": "Unit 6 "
+      },
+      {
+        "page": 152,
+        "text": "现在进行时"
+      },
+      {
+        "page": 152,
+        "text": "特殊变化lie - lying"
+      },
+      {
+        "page": 153,
+        "text": "Guide to the language use"
+      },
+      {
+        "page": 155,
+        "text": "Words and expressions"
+      },
+      {
+        "page": 155,
+        "text": "Starter"
+      },
+      {
+        "page": 155,
+        "text": "Unit 1 "
+      }
+    ],
+    "toc_mentions": [
+      "Welcome to junior high! p2nouns; numbers; articles; simple p",
+      "ReadingGrammar1 p14",
+      "Pronouns",
+      "Simple present tense",
+      "Simple future tense",
+      "Present continuous tense"
+    ]
+  },
+  "need_review": {
+    "activity_boundary": 23,
+    "reading_order": 88,
+    "sub_question": 13,
+    "by_range": {
+      "WordsAndExpressions": {
+        "two_column|OK": 8
+      },
+      "Vocabulary": {
+        "two_column|OK": 9
+      },
+      "CommunicationBank": {
+        "mixed|NEED_REVIEW": 9,
+        "single_column|OK": 8,
+        "two_column|OK": 1
+      },
+      "GuideToLanguageUse": {
+        "mixed|NEED_REVIEW": 11,
+        "single_column|OK": 9
+      },
+      "UnitContent": {
+        "dense_visual|NEED_REVIEW": 3,
+        "mixed|NEED_REVIEW": 54,
+        "single_column|OK": 37,
+        "single_column_with_sidebar|OK_SIDEBAR_LAST": 2
+      }
+    }
+  },
+  "block_kind_distribution": {
+    "exercise_item": 2984,
+    "sidebar_tip": 348,
+    "heading": 344,
+    "footer_text": 178
+  },
+  "resource_verdicts": {
+    "Vocabulary": {
+      "verdict": "可行（部分自动 + 部分人工）",
+      "auto": "附录 head_entry 型条目（含音标或词性 + 中文释义）",
+      "manual": "跨块续行条目合并、Proper nouns 归类",
+      "forbidden": "从正文/对话/语法说明自动抽词；AI 推荐词"
+    },
+    "Phrase": {
+      "verdict": "部分可行（以人工确认为主）",
+      "auto": "附录词汇表中 headword 含空格的多词条目",
+      "manual": "Communication bank / Useful expressions 中的交际表达",
+      "forbidden": "把普通连续文本机械切片成短语"
+    },
+    "Sentence Pattern": {
+      "verdict": "部分可行（需人工确认）",
+      "auto": "Communication bank 的 • 条目结构化定位",
+      "manual": "占位符规范化、归属 Unit 与功能、是否核心句型",
+      "forbidden": "把阅读课文/语法例句中的普通句子当作句型"
+    },
+    "Grammar": {
+      "verdict": "可行（结构证据明确）",
+      "auto": "Guide to the language use 主题标题 + Grammar rules 指针 + 目录 Grammar 栏",
+      "manual": "主题规范命名、绑定教学页范围",
+      "forbidden": "根据文本用法推断教材正在教授某语法点"
+    }
+  },
+  "learning_item_fields": {
+    "item_id": "必需（稳定主键）",
+    "textbook_id": "必需（版本隔离）",
+    "snapshot_id": "必需（快照隔离）",
+    "item_type": "必需（vocabulary/phrase/sentence_pattern/grammar）",
+    "canonical_text": "必需（规范形式，用于去重检索）",
+    "display_text": "必需（保留教材原始写法）",
+    "explanation": "不放入 L2；解释属 L3 AI 辅助层",
+    "source_ref": "必需（至少一条，指向 content_block）",
+    "review_status": "必需（EXTRACTED/NEED_REVIEW/REVIEWED_OK/REJECTED）",
+    "schema_version": "必需",
+    "content_hash": "必需",
+    "created_at/updated_at": "必需"
+  },
+  "boundaries": {
+    "sqlite_modified": false,
+    "pdf_modified": false,
+    "mp3_modified": false,
+    "parser_modified": false,
+    "builder_modified": false,
+    "learning_item_created": false,
+    "ai_calls": 0
+  }
+}

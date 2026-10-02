@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 6\nSECTION: DEVELOPING_IDEAS\nACTIVITY_AUDIO: 45_Unit 6_Developing ideas _2 Listen again and complete the webpage for Bingjie.mp3\nOFFICIAL AUDIO TRANSCRIPT SEGMENTS (id, time range, text):\n[ASR:AU45:001 0-1440ms] Activity 2\n[ASR:AU45:002 2000-7060ms] Listen again and complete the webpage for Bingjia.\n[ASR:AU45:003 8640-11520ms] Welcome to Animal Stars.\n[ASR:AU45:004 12500-17200ms] Today's Animal Star is a special dog, Bingjia.\n[ASR:AU45:005 18060-22140ms] He was a rescue dog and worked with firemen.\n[ASR:AU45:006 23180-26600ms] Bingjia had a good sense of smell.\n[ASR:AU45:007 26600-32640ms] He worked after many earthquakes and helped find missing people.\n[ASR:AU45:008 34240-37040ms] Over the years he saved many lives.\n[ASR:AU45:009 37960-44280ms] His most famous rescue took place after the 2008 Wenchuan earthquake.\n[ASR:AU45:010 45120-48080ms] He helped to find 13 people.\n[ASR:AU45:011 49340-58820ms] Binhjia died on 2 October 2021 at the age of 14. He was a hero.\n\nWrite 2-3 multiple-choice listening questions about what is said in this audio.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"What was Bingjia's job?\",\n      \"options\": [\"A rescue dog\", \"A police dog\", \"A guide dog\", \"A pet dog\"],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU45:005\",\n      \"evidence_quote\": \"He was a rescue dog and worked with firemen.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What did Bingjia help to do after earthquakes?\",\n      \"options\": [\"Find missing people\", \"Put out fires\", \"Build houses\", \"Take photos\"],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU45:007\",\n      \"evidence_quote\": \"He worked after many earthquakes and helped find missing people.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What happened on 2 October 2021?\",\n      \"options\": [\"Bingjia died\", \"Bingjia was born\", \"Bingjia saved 13 people\", \"Bingjia became a rescue dog\"],\n      \"answer_index\": 0,\n      \"evidence_segment_id\": \"ASR:AU45:011\",\n      \"evidence_quote\": \"Binhjia died on 2 October 2021 at the age of 14. He was a hero.\",\n      \"skill\": \"detail\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 695,
+  "completion_tokens": 2217,
+  "total_tokens": 2912,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1910
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 439
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "vocab_choice",
+   "question": "Water from the ___ will rise to the leaf through the stem.",
+   "options": [
+    "root",
+    "stem",
+    "sugar",
+    "oxygen"
+   ],
+   "correct_option": "A",
+   "answer": "root",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 82,
+   "activity": 4,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P85:B12",
+    "FLTRP-EN-7A-2022CUR:P87:B7"
+   ],
+   "evidence_quote": "root",
+   "explanation": "The passage says water comes from the root and goes up through the stem to the leaf; “root” is the correct plant part.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q2",
+   "type": "fill",
+   "question": "Sunlight and CO2 come into the ___.",
+   "options": [],
+   "correct_option": "",
+   "answer": "leaf",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 82,
+   "activity": 4,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P87:B9",
+    "FLTRP-EN-7A-2022CUR:P85:B5"
+   ],
+   "evidence_quote": "Sunlight and CO2 come into the",
+   "explanation": "The sentence describes where sunlight and CO2 enter; the missing word is “leaf”, a core plant part in this unit.",
+   "difficulty": "easy",
+   "ai_confidence": 0.95
+  },
+  {
+   "question_id": "q3",
+   "type": "fill",
+   "question": "Water from the root will ___ to the leaf through the stem.",
+   "options": [],
+   "correct_option": "",
+   "answer": "rise",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 82,
+   "activity": 4,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P87:B7",
+    "FLTRP-EN-7A-2022CUR:P87:B8"
+   ],
+   "evidence_quote": "to the leaf through the stem.",
+   "explanation": "The missing word “rise” is a key verb in the unit; the sentence means water moves upward from the root to the leaf.",
+   "difficulty": "medium",
+   "ai_confidence": 0.9
+  },
+  {
+   "question_id": "q4",
+   "type": "reading_choice",
+   "question": "In the Great Bear Rainforest, what can the trees make?",
+   "options": [
+    "their own rain",
+    "sugar",
+    "oxygen",
+    "food"
+   ],
+   "correct_option": "A",
+   "answer": "their own rain",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 83,
+   "activity": 7,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P88:B14"
+   ],
+   "evidence_quote": "The trees in a rainforest can make their own rain.",
+   "explanation": "The guide says the trees can make their own rain, so the answer is “their own rain”.",
+   "difficulty": "easy",
+   "ai_confidence": 0.97
+  },
+  {
+   "question_id": "q5",
+   "type": "reading_judge",
+   "question": "The Great Bear Rainforest is in Canada.",
+   "options": [],
+   "correct_option": "",
+   "answer": "True",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 83,
+   "activity": 7,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P88:B12"
+   ],
+   "evidence_quote": "Welcome to the Great Bear Rainforest in Canada!",
+   "explanation": "The guide states the rainforest is in Canada, so the statement is true.",
+   "difficulty": "easy",
+   "ai_confidence": 0.98
+  },
+  {
+   "question_id": "q6",
+   "type": "reading_judge",
+   "question": "Plants are not important to us.",
+   "options": [],
+   "correct_option": "",
+   "answer": "False",
+   "unit": "Unit 5",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 83,
+   "activity": 7,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P88:B20"
+   ],
+   "evidence_quote": "Now we can see plants are so important. They mean so much to us.",
+   "explanation": "The guide says plants are so important, so the negative statement is false.",
+   "difficulty": "easy",
+   "ai_confidence": 0.98
+  }
+ ]
+}

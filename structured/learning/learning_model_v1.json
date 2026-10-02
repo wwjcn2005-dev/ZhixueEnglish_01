@@ -1,0 +1,113 @@
+{
+  "model": "learning_model",
+  "version": "v1",
+  "stage": "P2-5",
+  "principle": "教材是主线，APP负责整理与提效，学习是核心，孩子做主，AI做助手。",
+  "purpose": "定义‘学什么算学过’‘什么算掌握较稳定’，以及系统可以用什么证据支持这些判断。",
+  "core_learning_unit": {
+    "name": "LearningObject",
+    "definition": "教材中客观存在、值得被学会的最小学习内容（一个词/短语/句型/语法点/听力任务/阅读文本/写作任务）。",
+    "why_not_activity": "Activity 是教材的任务容器（含指令与作答方式），不是知识本身；把 Activity 当学习对象会导致‘做完题=学会’。",
+    "why_not_exercise": "Exercise/Question 是产生证据的手段，不是学习对象；把题当掌握会退化成刷题系统。",
+    "evidence_producer": "教材 Exercise / Question（真实题型）",
+    "aggregation_unit": "LearningObject",
+    "relation_to_textbook": "LearningObject 必须能回溯到 P2-4 教材结构的 unit/section/activity/question 与教材页码。",
+    "object_kinds": [
+      {"kind": "vocabulary", "source": "Appendix Words and expressions / 正文文本", "example_unit": "Unit 1 without"},
+      {"kind": "phrase", "source": "Appendix / 正文固定搭配", "example_unit": "Unit 1 point out"},
+      {"kind": "sentence_pattern", "source": "正文句式与 Guide to the language use", "example_unit": "I am going to …"},
+      {"kind": "grammar_point", "source": "教材 Know more about … 指针 + 附录语法页", "example_unit": "the simple future tense"},
+      {"kind": "listening_task", "source": "带耳机图标活动 + 官方 MP3", "example_unit": "Unit 1 Developing ideas A1"},
+      {"kind": "reading_text", "source": "Understanding ideas / Reading for writing 正文", "example_unit": "Unit 1 阅读课文"},
+      {"kind": "writing_task", "source": "Reading for writing 写作任务", "example_unit": "Unit 1 写作任务"}
+    ]
+  },
+  "states": [
+    {
+      "id": "not_started",
+      "label": "未接触",
+      "meaning": "没有任何学习记录。",
+      "required_evidence": [],
+      "is_ability_claim": false
+    },
+    {
+      "id": "contacted",
+      "label": "学过",
+      "meaning": "孩子主动完成过一次教材学习动作（看/听/读/记），系统只记录事实，不声称‘懂了’。",
+      "required_evidence": ["至少 1 条 study 行为记录（done 或 partial）"],
+      "is_ability_claim": false,
+      "display_rule": "页面只说‘学过’，不得显示‘掌握/会了’。"
+    },
+    {
+      "id": "practicing",
+      "label": "练过",
+      "meaning": "围绕该学习对象做过教材练习，并有可判断结果。",
+      "required_evidence": ["至少 1 条 practice 行为记录，result ∈ {correct, partial, incorrect}"],
+      "is_ability_claim": false
+    },
+    {
+      "id": "likely_understood",
+      "label": "看起来会了",
+      "meaning": "有中等强度证据支持‘会做’，但次数/时间/任务类型尚不足以判断稳定。",
+      "required_evidence": [
+        "≥2 次独立表现，且最近一次为 correct 或 partial",
+        "至少 1 次来自‘不给提示’的任务"
+      ],
+      "is_ability_claim": true,
+      "confidence_ceiling": "medium"
+    },
+    {
+      "id": "stable",
+      "label": "掌握较稳定",
+      "meaning": "多次、跨时间、跨任务类型都表现出稳定正确，且没有未处理的当前错误。",
+      "required_evidence": [
+        "≥3 条独立判断证据（result ∈ {correct, incorrect, partial}）",
+        "≥2 种不同任务类型（如 识别 + 回忆，或 选择 + 填空）",
+        "跨 ≥2 个不同自然日",
+        "最近 3 次中 ≥2 次 correct，且最近一次不是 incorrect",
+        "当前无未处理的 incorrect"
+      ],
+      "is_ability_claim": true,
+      "confidence_ceiling": "high"
+    }
+  ],
+  "rejected_concepts": [
+    {
+      "id": "REJECT-1",
+      "concept": "看过 = 学过 = 会了",
+      "reason": "接触只证明教材呈现过，不证明理解或可回忆；把接触当能力会造成假掌握。"
+    },
+    {
+      "id": "REJECT-2",
+      "concept": "做对一次 = 掌握",
+      "reason": "单次正确可能来自刚看过、猜测或题型熟悉；稳定掌握需要跨时间与跨任务的证据。"
+    },
+    {
+      "id": "REJECT-3",
+      "concept": "错一次 = 薄弱点",
+      "reason": "单次错误可能是粗心或偶发；错误只有重复出现或伴随明确归因时才升级为‘疑似薄弱’。"
+    },
+    {
+      "id": "REJECT-4",
+      "concept": "用连续计数器自动升级 mastery_level",
+      "reason": "现有实现只有 evidence_count/correct_count，没有任务类型、时间间隔与证据强度，按计数升级会产生假掌握（当前实现正好没有推进等级，这一点应保留为‘先不判定’）。"
+    },
+    {
+      "id": "REJECT-5",
+      "concept": "把 Level 当作给孩子看的评价（分数/等级/排名）",
+      "reason": "会变成游戏化评价，与‘孩子做主’和‘教材为主’冲突；状态只用于系统内部决定该不该提示。"
+    }
+  ],
+  "state_transition_rules": [
+    {"from": "not_started", "to": "contacted", "trigger": "首条 study 记录"},
+    {"from": "contacted", "to": "practicing", "trigger": "首条 practice 记录（有可判断结果）"},
+    {"from": "practicing", "to": "likely_understood", "trigger": "满足 likely_understood.required_evidence"},
+    {"from": "any", "to": "stable", "trigger": "满足 stable.required_evidence"},
+    {"from": "stable", "to": "likely_understood", "trigger": "最近 3 次中出现 ≥2 次 incorrect，或出现未处理的当前错误（降级必须可见、可解释）"}
+  ],
+  "display_contract": {
+    "child_sees": ["未接触", "学过", "练过", "看起来会了（可选，不下评价）"],
+    "child_never_sees": ["分数", "百分比", "排名", "等级徽章", "掌握度百分比"],
+    "teacher_or_parent_view": "本阶段不做。"
+  }
+}

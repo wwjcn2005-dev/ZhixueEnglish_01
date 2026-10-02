@@ -1,0 +1,22 @@
+{
+  "stage": "P1-09-F",
+  "api_calls": 1,
+  "retry_count": 0,
+  "model": "deepseek-v4-pro",
+  "temperature": 0.2,
+  "max_tokens": 16384,
+  "reasoning_effort": "low",
+  "prompt_version": "P1-09-F-v1",
+  "latency_ms": 147647,
+  "finish_reason": "stop",
+  "api_error": null,
+  "input_tokens": 1216,
+  "output_tokens": 9088,
+  "reasoning_tokens": 8533,
+  "total_tokens": 10304,
+  "content_chars": 1835,
+  "reasoning_chars": 38933,
+  "fixture_count": 2,
+  "status": "PARSED",
+  "notes": []
+}

@@ -1,0 +1,660 @@
+{
+ "spike": "P1-12-AI sentence distractors",
+ "model": "deepseek-v4-pro",
+ "prompt_version": "sentence-distractor-v1",
+ "rules_version": "rules-v1",
+ "ai_calls": 1,
+ "retry_count": 0,
+ "api_error": null,
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 8008,
+  "completion_tokens": 15509,
+  "total_tokens": 23517,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 14474
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 8008
+ },
+ "latency_ms": 142798,
+ "candidates_for_dispatch_verified": true,
+ "samples": [
+  {
+   "sentence_index": 0,
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "Are you ready?",
+   "sentence_uid": "PREVIEW:AU01:S0005",
+   "textbook_page": 8,
+   "raw_ai_candidates": [
+    {
+     "text": "Are you ready, everyone?",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "与正确答案同以 Are you ready 开头，仅多了 everyone，听觉接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:45B1D6F833F5",
+       "textbook_page": 155,
+       "quote": "everyone"
+      }
+     ]
+    },
+    {
+     "text": "Are you ready to start?",
+     "origin": "ai",
+     "confidence": 0.75,
+     "reason": "保留 Are you ready 主干，仅多 to start，听辨时易混。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:1B64823E6F9C",
+       "textbook_page": 155,
+       "quote": "start"
+      }
+     ]
+    },
+    {
+     "text": "Are you ready for school?",
+     "origin": "ai",
+     "confidence": 0.7,
+     "reason": "在 Are you ready 后添加 for school，与正确句高度接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    }
+   ],
+   "raw_count": 3,
+   "kept": [
+    {
+     "text": "Are you ready, everyone?",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "与正确答案同以 Are you ready 开头，仅多了 everyone，听觉接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:45B1D6F833F5",
+       "textbook_page": 155,
+       "quote": "everyone"
+      }
+     ]
+    },
+    {
+     "text": "Are you ready to start?",
+     "origin": "ai",
+     "confidence": 0.75,
+     "reason": "保留 Are you ready 主干，仅多 to start，听辨时易混。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:1B64823E6F9C",
+       "textbook_page": 155,
+       "quote": "start"
+      }
+     ]
+    },
+    {
+     "text": "Are you ready for school?",
+     "origin": "ai",
+     "confidence": 0.7,
+     "reason": "在 Are you ready 后添加 for school，与正确句高度接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    }
+   ],
+   "kept_count": 3,
+   "filtered": [],
+   "simulated_baseline": [
+    "What shoes are you going to wear?",
+    "What are you going to wear tomorrow for school?",
+    "Are you nervous"
+   ]
+  },
+  {
+   "sentence_index": 1,
+   "unit": "Starter",
+   "lesson": "GET_READY",
+   "correct_answer": "What are you going to wear tomorrow for school?",
+   "sentence_uid": "PREVIEW:AU03:S0063",
+   "textbook_page": 10,
+   "raw_ai_candidates": [
+    {
+     "text": "What shoes are you going to wear?",
+     "origin": "ai",
+     "confidence": 0.85,
+     "reason": "同为询问穿着，且句式接近，只将 what 改为 what shoes。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0067",
+       "textbook_page": 10,
+       "quote": "What shoes are you going to wear?"
+      }
+     ]
+    },
+    {
+     "text": "What are you going to wear tomorrow?",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "与正确答案相比只缺少 for school，听力中极易混淆。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    },
+    {
+     "text": "What are you going to wear for school?",
+     "origin": "ai",
+     "confidence": 0.75,
+     "reason": "与正确答案相比只缺少 tomorrow，语义和句式高度接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    }
+   ],
+   "raw_count": 3,
+   "kept": [
+    {
+     "text": "What shoes are you going to wear?",
+     "origin": "ai",
+     "confidence": 0.85,
+     "reason": "同为询问穿着，且句式接近，只将 what 改为 what shoes。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0067",
+       "textbook_page": 10,
+       "quote": "What shoes are you going to wear?"
+      }
+     ]
+    },
+    {
+     "text": "What are you going to wear tomorrow?",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "与正确答案相比只缺少 for school，听力中极易混淆。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    },
+    {
+     "text": "What are you going to wear for school?",
+     "origin": "ai",
+     "confidence": 0.75,
+     "reason": "与正确答案相比只缺少 tomorrow，语义和句式高度接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    }
+   ],
+   "kept_count": 3,
+   "filtered": [],
+   "simulated_baseline": [
+    "What shoes are you going to wear?",
+    "Are you ready?"
+   ]
+  },
+  {
+   "sentence_index": 2,
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "The new school year is beginning.",
+   "sentence_uid": "P3-07:AU11-B01",
+   "textbook_page": 27,
+   "raw_ai_candidates": [
+    {
+     "text": "Are you ready for your new life?",
+     "origin": "ai",
+     "confidence": 0.7,
+     "reason": "都含 new，且与新学期开始话题相关，但句式不同。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0279",
+       "textbook_page": 30,
+       "quote": "Are you ready for your new life?"
+      }
+     ]
+    },
+    {
+     "text": "The new life is beginning.",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "与正确答案结构相同，仅将 school year 替换为 life，听觉接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:BC30B074EC0C",
+       "textbook_page": 156,
+       "quote": "life"
+      }
+     ]
+    },
+    {
+     "text": "The new school year is beginning for you.",
+     "origin": "ai",
+     "confidence": 0.65,
+     "reason": "保留原句主干，仅在句末添加 for you，容易误听为原句。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-04",
+       "textbook_page": 29,
+       "quote": "We've got something for you!"
+      }
+     ]
+    }
+   ],
+   "raw_count": 3,
+   "kept": [
+    {
+     "text": "Are you ready for your new life?",
+     "origin": "ai",
+     "confidence": 0.7,
+     "reason": "都含 new，且与新学期开始话题相关，但句式不同。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0279",
+       "textbook_page": 30,
+       "quote": "Are you ready for your new life?"
+      }
+     ]
+    },
+    {
+     "text": "The new life is beginning.",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "与正确答案结构相同，仅将 school year 替换为 life，听觉接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:BC30B074EC0C",
+       "textbook_page": 156,
+       "quote": "life"
+      }
+     ]
+    },
+    {
+     "text": "The new school year is beginning for you.",
+     "origin": "ai",
+     "confidence": 0.65,
+     "reason": "保留原句主干，仅在句末添加 for you，容易误听为原句。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-04",
+       "textbook_page": 29,
+       "quote": "We've got something for you!"
+      }
+     ]
+    }
+   ],
+   "kept_count": 3,
+   "filtered": [],
+   "simulated_baseline": [
+    "What are the new students' problems?",
+    "Are you ready for your new life?"
+   ]
+  },
+  {
+   "sentence_index": 3,
+   "unit": "Unit 1",
+   "lesson": "DEVELOPING_IDEAS",
+   "correct_answer": "What are the new students' problems?",
+   "sentence_uid": "P3-07:AU11-B02",
+   "textbook_page": 27,
+   "raw_ai_candidates": [
+    {
+     "text": "What are the new students' projects?",
+     "origin": "ai",
+     "confidence": 0.7,
+     "reason": "与正确答案句式完全一致，仅 problems 替换为 projects。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:7161FACBD9C5",
+       "textbook_page": 156,
+       "quote": "project"
+      }
+     ]
+    },
+    {
+     "text": "What are the new students' tasks?",
+     "origin": "ai",
+     "confidence": 0.68,
+     "reason": "与正确答案句式相同，仅 problems 替换为 tasks。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:D8A353EAEE75",
+       "textbook_page": 156,
+       "quote": "task"
+      }
+     ]
+    },
+    {
+     "text": "What are the new students' homework problems?",
+     "origin": "ai",
+     "confidence": 0.72,
+     "reason": "保留 problems 一词，同时加入 homework，听辨时容易混淆。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B03",
+       "textbook_page": 27,
+       "quote": "They have more subjects and more homework."
+      }
+     ]
+    }
+   ],
+   "raw_count": 3,
+   "kept": [
+    {
+     "text": "What are the new students' homework problems?",
+     "origin": "ai",
+     "confidence": 0.72,
+     "reason": "保留 problems 一词，同时加入 homework，听辨时容易混淆。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B03",
+       "textbook_page": 27,
+       "quote": "They have more subjects and more homework."
+      }
+     ]
+    }
+   ],
+   "kept_count": 1,
+   "filtered": [
+    {
+     "text": "What are the new students' projects?",
+     "reason": "out_of_stage:projects",
+     "confidence": 0.7,
+     "evidence": [
+      "P3-07:AU11-B02",
+      "FLTRP-EN-7A-2022CUR:V:7161FACBD9C5"
+     ]
+    },
+    {
+     "text": "What are the new students' tasks?",
+     "reason": "out_of_stage:tasks",
+     "confidence": 0.68,
+     "evidence": [
+      "P3-07:AU11-B02",
+      "FLTRP-EN-7A-2022CUR:V:D8A353EAEE75"
+     ]
+    }
+   ],
+   "simulated_baseline": [
+    "Are you ready for your new life?",
+    "The new school year is beginning."
+   ]
+  },
+  {
+   "sentence_index": 4,
+   "unit": "Unit 2",
+   "lesson": "UNDERSTANDING_IDEAS",
+   "correct_answer": "“Why don’t we put our music together?",
+   "sentence_uid": "PREVIEW:AU14:S0294",
+   "textbook_page": 38,
+   "raw_ai_candidates": [
+    {
+     "text": "“Why don’t we put our band together?",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "与正确答案句式相同，仅将 music 替换为 band，听感接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:C62FC49D6BF8",
+       "textbook_page": 156,
+       "quote": "band"
+      }
+     ]
+    },
+    {
+     "text": "“Why don’t we put our instruments together?",
+     "origin": "ai",
+     "confidence": 0.75,
+     "reason": "保留原句主干，仅将 music 替换为 instruments，容易混淆。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:8D55C1D1BF72",
+       "textbook_page": 157,
+       "quote": "instrument"
+      }
+     ]
+    },
+    {
+     "text": "“Why don’t we put our music together here?",
+     "origin": "ai",
+     "confidence": 0.82,
+     "reason": "与正确答案几乎一致，仅在句末添加 here，听辨时极易误选。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU20:S0425",
+       "textbook_page": 46,
+       "quote": "Let’s meet here on Wednesday after lunch."
+      }
+     ]
+    }
+   ],
+   "raw_count": 3,
+   "kept": [
+    {
+     "text": "“Why don’t we put our band together?",
+     "origin": "ai",
+     "confidence": 0.8,
+     "reason": "与正确答案句式相同，仅将 music 替换为 band，听感接近。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:C62FC49D6BF8",
+       "textbook_page": 156,
+       "quote": "band"
+      }
+     ]
+    },
+    {
+     "text": "“Why don’t we put our music together here?",
+     "origin": "ai",
+     "confidence": 0.82,
+     "reason": "与正确答案几乎一致，仅在句末添加 here，听辨时极易误选。",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU20:S0425",
+       "textbook_page": 46,
+       "quote": "Let’s meet here on Wednesday after lunch."
+      }
+     ]
+    }
+   ],
+   "kept_count": 2,
+   "filtered": [
+    {
+     "text": "“Why don’t we put our instruments together?",
+     "reason": "out_of_stage:instruments",
+     "confidence": 0.75,
+     "evidence": [
+      "PREVIEW:AU14:S0294",
+      "FLTRP-EN-7A-2022CUR:V:8D55C1D1BF72"
+     ]
+    }
+   ],
+   "simulated_baseline": [
+    "Why do you know so much about birds?"
+   ]
+  }
+ ],
+ "summary": {
+  "sentences": 5,
+  "ai_calls": 1,
+  "candidates_for_dispatch_verified": true,
+  "raw_candidates": 15,
+  "kept_candidates": 12,
+  "kept_distribution": {
+   "0": 0,
+   "1": 1,
+   "2": 1,
+   "3": 3
+  },
+  "filtered_reasons": {
+   "out_of_stage": 3
+  },
+  "filter_ratio": 0.2
+ }
+}

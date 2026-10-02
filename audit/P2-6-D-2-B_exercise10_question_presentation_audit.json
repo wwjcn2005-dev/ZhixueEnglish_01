@@ -1,0 +1,112 @@
+{
+  "phase": "P2-6-D-2-B",
+  "title": "Exercise 10 题目呈现专项只读审计",
+  "status": "ISSUE_CONFIRMED",
+  "severity": "P1",
+  "mode": "read_only_audit",
+  "audited_at": "2026-09-13",
+  "exercise_identity": {
+    "exercise_id": "FLTRP-EN-7A-2022CUR:X:1C4143922B1C",
+    "textbook": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter", "section": "GET_READY", "exercise_no": 10,
+    "textbook_page": 5, "question_type": "choice",
+    "instruction": "Listen and choose.",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+    "audio_file": "03_Starter_Get ready_10 Listen and choose.mp3",
+    "audio_duration_s": 58.2,
+    "number_origin": "UI 卡片 '教材第 X 页 · 练习 N' 中的 exercise_no（非数据库 id）"
+  },
+  "textbook_fact": {
+    "has_question": true,
+    "question_type_on_page": "听力选择题（Listen and choose）",
+    "audio_role": "完整听力材料（覆盖该活动多题）",
+    "is_short_text_plus_long_audio_by_design": false
+  },
+  "catalog_data": {
+    "options": [],
+    "check_items": [],
+    "blanks": 8,
+    "questions_sample": "对话正文（如 Nana: Hi, Wang Tao. ...）而非题干",
+    "question_count": 2,
+    "options_missing": true
+  },
+  "pipeline_breakpoints": [
+    {"id": "BP-1", "layer": "contentpack 解析",
+     "issue": "只有 activity/对话块，无选项与题干结构", "class": ["R2", "R3"]},
+    {"id": "BP-2", "layer": "exercise_catalog_v3",
+     "issue": "question_type=choice 但 options=[]；questions 为对话正文；blanks=8 与选择题不符",
+     "class": ["R3", "R4", "R9"]},
+    {"id": "BP-3", "layer": "build_questions / UI",
+     "issue": "choice 且无 options → 降级 kind=self_check（无任何作答控件）",
+     "class": ["R6（表现，因数据缺失）"]}
+  ],
+  "render_result": {
+    "kind": "self_check",
+    "questions": 0, "options": 0, "items": 0,
+    "html_has_audio": true, "html_has_instruction": true,
+    "html_has_radio_or_input_or_textarea": false,
+    "html_has_self_check_buttons": true,
+    "html_bytes": 9370
+  },
+  "audio_model_check": {
+    "audio_resource_ok": true,
+    "audio_vs_exercise_vs_question_vs_evidence": "Audio=Resource（正确）；Exercise 存在；Question 结构缺失；Evidence 无法产生",
+    "multi_question_single_audio": true,
+    "audio_scope": "activity"
+  },
+  "evidence_feasibility": {
+    "question_exists": false,
+    "answer_control_exists": false,
+    "task_type_exists": true,
+    "exercise_id_exists": true,
+    "record_write_chain_exists": true,
+    "valid_evidence_possible": false,
+    "only_done_self_check": true,
+    "note": "done 按 V1.2 不计为有效判断证据 → 该练习对 LO 掌握判定无贡献"
+  },
+  "lo_mapping": {
+    "mapped": true, "rule": "R1_listening_task", "lo_type": "LISTENING",
+    "does_mapping_mask_the_problem": false,
+    "reason": "映射只决定证据归属；本例没有有效证据"
+  },
+  "root_cause": {
+    "selected": ["R2", "R3", "R9"],
+    "partial": ["R4", "R6（表现层）", "R10（建议人工核对教材原页）"],
+    "not_applicable": ["R1", "R5", "R7", "R8"]
+  },
+  "scope_same_issue": {
+    "choice_judge_total": 13,
+    "options_empty": 5,
+    "items": ["Starter/GET_READY A10", "Unit 1/UNDERSTANDING_IDEAS A6",
+              "Unit 3/UNDERSTANDING_IDEAS A3", "Unit 4/DEVELOPING_IDEAS A2(judge)",
+              "Unit 6/UNDERSTANDING_IDEAS A1"]
+  },
+  "spec_conflict": {
+    "violates_three_layer_separation": false,
+    "evidence_first_impaired": true,
+    "listening_lo_ok": true,
+    "playback_not_evidence_ok": true,
+    "textbook_mainline_impaired": true,
+    "v12_change_required": false
+  },
+  "minimal_fix_suggestions_only": [
+    "P2-3/P2-4 补齐这些活动的选项与题干结构（按教材版面提取，不用 AI 猜测）",
+    "数据未补齐前，UI 对 choice/judge 缺 options 的情形给出明确提示『请在教材上完成这道题』并保留自评",
+    "在 LO 报告中给出『不可作答练习』计数，避免误以为教材练习已全部可用"
+  ],
+  "blocks_p2_6_d_freeze": false,
+  "tests": {"learning": 112, "workbench": 50, "web": 235, "total": 397,
+            "fail": 0, "skip": 0, "matches_baseline": true},
+  "protection_baseline": {
+    "learning_db_sha256_20": "DBAB743BF6D8F0A3832E",
+    "learning_db_mtime": "2026-09-12T23:15:13",
+    "contentpack_sha256_20": "ACEBC8C29CF5D11BAB50",
+    "spec_v12_sha256_20": "6D3595CF7D83879ADF3E",
+    "code_modified": 0, "database_writes": 0, "textbook_modified": 0,
+    "tests_modified": 0, "android_modified": 0, "ai_calls": 0,
+    "created_files": ["audit/P2-6-D-2-B_exercise10_question_presentation_audit.md",
+                      "audit/P2-6-D-2-B_exercise10_question_presentation_audit.json"]
+  },
+  "final": {"conclusion": "ISSUE CONFIRMED / P1",
+            "stopped": "只读审计完成即停止，未做任何修复；等待下一条任务指令"}
+}

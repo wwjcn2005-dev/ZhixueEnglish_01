@@ -1,0 +1,2686 @@
+{
+  "stage": "P1-09-A",
+  "read_only": true,
+  "ai_calls": 0,
+  "question_library": {
+    "path": "D:\\ZhixueEnglish\\structured\\ai\\question_library.db",
+    "sha256": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+    "size_bytes": 180224,
+    "user_version": 2,
+    "integrity_check": [
+      "ok"
+    ],
+    "foreign_key_check": [],
+    "objects": {
+      "idx_ai_question_lifecycle": "index",
+      "idx_ai_question_run": "index",
+      "idx_ai_question_scope": "index",
+      "idx_ai_question_stale": "index",
+      "idx_generation_run_scope": "index",
+      "idx_generation_run_target": "index",
+      "idx_generation_run_time": "index",
+      "idx_qlo_item": "index",
+      "idx_question_event_q": "index",
+      "idx_question_event_type": "index",
+      "idx_question_evidence_block": "index",
+      "idx_validation_result": "index",
+      "idx_validation_support": "index",
+      "sqlite_autoindex_ai_question_1": "index",
+      "sqlite_autoindex_generation_run_1": "index",
+      "sqlite_autoindex_question_event_1": "index",
+      "sqlite_autoindex_question_evidence_1": "index",
+      "sqlite_autoindex_question_learning_object_1": "index",
+      "sqlite_autoindex_question_validation_1": "index",
+      "uq_ai_question_fingerprint": "index",
+      "ai_question": "table",
+      "generation_run": "table",
+      "question_event": "table",
+      "question_evidence": "table",
+      "question_learning_object": "table",
+      "question_validation": "table",
+      "trg_ai_question_active_requires_human_approval": "trigger",
+      "trg_ai_question_insert_active_forbidden": "trigger",
+      "trg_ai_question_no_delete": "trigger",
+      "trg_question_event_no_delete": "trigger",
+      "trg_question_event_no_update": "trigger",
+      "trg_validation_exact_trap": "trigger"
+    },
+    "row_counts": {
+      "generation_run": 12,
+      "ai_question": 21,
+      "question_evidence": 22,
+      "question_learning_object": 37,
+      "question_validation": 21,
+      "question_event": 44
+    },
+    "lifecycle": {
+      "ACTIVE": 1,
+      "PENDING_REVIEW": 19,
+      "REJECTED": 1
+    },
+    "events": {
+      "ACTIVATED": 1,
+      "MARKED_STALE": 1,
+      "PENDING_REVIEW": 19,
+      "REVIEW_APPROVED": 1,
+      "REVIEW_REJECTED": 1,
+      "VALIDATED": 21
+    },
+    "question_type_distribution": {
+      "fill": 9,
+      "reading_choice": 4,
+      "reading_judge": 2,
+      "vocab_choice": 6
+    },
+    "validator_version_distribution": {
+      "v2": 2,
+      "v3": 19
+    },
+    "answer_support_distribution": {
+      "EXACT": 18,
+      "VERIFIABLE_REPHRASE": 3
+    },
+    "stale_rows": [
+      {
+        "question_id": "AIQ:7EBCDBC29563",
+        "lifecycle_status": "PENDING_REVIEW",
+        "stale": 1,
+        "stale_reason": "VALIDATOR_CHANGED",
+        "stale_since": "2026-09-17T19:10:00+08:00"
+      }
+    ],
+    "columns_by_table": {
+      "generation_run": [
+        "run_id",
+        "generation_scope_key",
+        "textbook_id",
+        "snapshot_id",
+        "unit_id",
+        "section_id",
+        "activity_id",
+        "model",
+        "prompt_version",
+        "context_hash",
+        "provider",
+        "context_ref",
+        "raw_response_ref",
+        "requested_max",
+        "max_tokens",
+        "finish_reason",
+        "usage_json",
+        "elapsed_ms",
+        "question_count",
+        "status",
+        "insufficient_evidence",
+        "error",
+        "note",
+        "generated_at"
+      ],
+      "ai_question": [
+        "question_id",
+        "version",
+        "question_type",
+        "question_text",
+        "options_json",
+        "correct_option",
+        "correct_answer",
+        "explanation",
+        "difficulty",
+        "textbook_id",
+        "snapshot_id",
+        "unit_id",
+        "section_id",
+        "activity_id",
+        "page",
+        "generation_run_id",
+        "generated_at",
+        "question_fingerprint",
+        "lifecycle_status",
+        "active",
+        "disabled_reason",
+        "stale",
+        "stale_reason",
+        "stale_since",
+        "validator_version",
+        "needs_human_review",
+        "created_at",
+        "updated_at"
+      ],
+      "question_evidence": [
+        "question_id",
+        "version",
+        "ordinal",
+        "evidence_block_id",
+        "evidence_quote",
+        "is_primary"
+      ],
+      "question_learning_object": [
+        "question_id",
+        "version",
+        "item_id",
+        "is_primary"
+      ],
+      "question_validation": [
+        "question_id",
+        "version",
+        "validator_version",
+        "validation_result",
+        "validated_at",
+        "answer_support_type",
+        "checks_json",
+        "out_of_scope_tokens_json",
+        "needs_human_review",
+        "note"
+      ],
+      "question_event": [
+        "event_id",
+        "question_id",
+        "version",
+        "event_type",
+        "from_status",
+        "to_status",
+        "event_at",
+        "actor",
+        "actor_kind",
+        "reason_code",
+        "note"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "question_id": "AIQ:CD8B21681B4C",
+      "version": 1,
+      "question_type": "reading_choice",
+      "question_text": "What is Wang Tao going to wear tomorrow for school?",
+      "options_json": "[\"school uniform\", \"sports jacket\", \"T-shirt\", \"red scarf\"]",
+      "correct_option": "A",
+      "correct_answer": "school uniform",
+      "explanation": "This reading question checks the key information about what Wang Tao is going to wear.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+      "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+      "page": 5,
+      "generation_run_id": "AIRUN:20260917T202251:P106_S4",
+      "generated_at": "2026-09-17T20:22:51+08:00",
+      "question_fingerprint": "CD8B21681B4C6783278E52FA2CE76A49F5BB3571CACF0091A75E591DAB3EA301",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [
+        "school uniform",
+        "sports jacket",
+        "T-shirt",
+        "red scarf"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P10:B5",
+          "evidence_quote": "My school uniform, of course.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:9DC23D3EC118",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:1C4143922B1C",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 1,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=8E725BCD5BE30C17"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:CD8B21681B4C:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:CD8B21681B4C:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T202251:P106_S4",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9928, \"completion_tokens\": 9397, \"total_tokens\": 19325, \"prompt_tokens_details\": {\"cached_tokens\": 1408}, \"completion_tokens_details\": {\"reasoning_tokens\": 8706}, \"prompt_cache_hit_tokens\": 1408, \"prompt_cache_miss_tokens\": 8520}",
+        "elapsed_ms": 133227,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:22:51+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S4_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S4_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "I am ___, too.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "ready",
+      "explanation": "This fill practises the core vocabulary word 'ready' in a sentence from the conversation.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+      "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+      "page": 3,
+      "generation_run_id": "AIRUN:20260917T202251:P106_S4",
+      "generated_at": "2026-09-17T20:22:51+08:00",
+      "question_fingerprint": "1B3AF72923C4AEE1848E4E92554DE8E14A2DD1B9DFF503E9A87DCCB561A57B78",
+      "lifecycle_status": "REJECTED",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:59:36+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B16",
+          "evidence_quote": "I am ready, too",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:EAB999ECEC5C",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:02809AEEFBB6",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=8FC1B600F5CD35C7"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:1B3AF72923C4:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:1B3AF72923C4:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:1B3AF72923C4:RR",
+          "event_type": "REVIEW_REJECTED",
+          "from_status": "PENDING_REVIEW",
+          "to_status": "REJECTED",
+          "event_at": "2026-09-17T20:59:36+08:00",
+          "actor": "human:project-owner",
+          "actor_kind": "human",
+          "reason_code": "LOW_VALUE"
+        }
+      ],
+      "mechanical_rewrite_from_note": true,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T202251:P106_S4",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9928, \"completion_tokens\": 9397, \"total_tokens\": 19325, \"prompt_tokens_details\": {\"cached_tokens\": 1408}, \"completion_tokens_details\": {\"reasoning_tokens\": 8706}, \"prompt_cache_hit_tokens\": 1408, \"prompt_cache_miss_tokens\": 8520}",
+        "elapsed_ms": 133227,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:22:51+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S4_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S4_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:3C02F6486DFF",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "eraser",
+      "explanation": "This fill practises the core vocabulary word 'eraser' in a model sentence for talking about school things.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+      "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+      "page": 3,
+      "generation_run_id": "AIRUN:20260917T202251:P106_S4",
+      "generated_at": "2026-09-17T20:22:51+08:00",
+      "question_fingerprint": "3C02F6486DFF754AB9CD4B66F1A1A3AA077A73136D504EB2C2104C920D1EE293",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P8:B32",
+          "evidence_quote": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:7A89AA02D979",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:737C6C9C364F",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=B0B1455A82D385ED"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:3C02F6486DFF:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:3C02F6486DFF:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": true,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T202251:P106_S4",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9928, \"completion_tokens\": 9397, \"total_tokens\": 19325, \"prompt_tokens_details\": {\"cached_tokens\": 1408}, \"completion_tokens_details\": {\"reasoning_tokens\": 8706}, \"prompt_cache_hit_tokens\": 1408, \"prompt_cache_miss_tokens\": 8520}",
+        "elapsed_ms": 133227,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:22:51+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S4_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S4_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "What colour is it? It’s ___.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "grey",
+      "explanation": "This fill practises the core vocabulary word 'grey' in the colour question-and-answer pattern from the textbook.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+      "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+      "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+      "page": 5,
+      "generation_run_id": "AIRUN:20260917T202251:P106_S4",
+      "generated_at": "2026-09-17T20:22:51+08:00",
+      "question_fingerprint": "120FFEECA78F0974566EF18C485C09FFEF71F66EBE1663AF126A180704EF74A0",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P10:B20",
+          "evidence_quote": "It’s grey.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:751A8391C690",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:B3D847CC7B0D",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=6AC8985DA68EA72A"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:120FFEECA78F:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:120FFEECA78F:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T202251:P106_S4",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "E1778623DAA55976AA13FE1189E5CA8967AD1CEE8F179E59D2DEF2F3FA23D723",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9928, \"completion_tokens\": 9397, \"total_tokens\": 19325, \"prompt_tokens_details\": {\"cached_tokens\": 1408}, \"completion_tokens_details\": {\"reasoning_tokens\": 8706}, \"prompt_cache_hit_tokens\": 1408, \"prompt_cache_miss_tokens\": 8520}",
+        "elapsed_ms": 133227,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:22:51+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S4_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S4_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:3179968E3E74",
+      "version": 1,
+      "question_type": "vocab_choice",
+      "question_text": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+      "options_json": "[\"polite\", \"dry\", \"important\", \"mistake\"]",
+      "correct_option": "A",
+      "correct_answer": "polite",
+      "explanation": "The passage uses “polite” to describe whether it is OK to point out the mistake in the first lesson.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+      "page": 17,
+      "generation_run_id": "AIRUN:20260917T1840:P103",
+      "generated_at": "2026-09-17T18:40:00+08:00",
+      "question_fingerprint": "3179968E3E7400B28A2312579728FF0B6DDA54DB3B50C16761445908D12A63F1",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v2",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T18:40:00+08:00",
+      "updated_at": "2026-09-17T18:40:00+08:00",
+      "options": [
+        "polite",
+        "dry",
+        "important",
+        "mistake"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P22:B2",
+          "evidence_quote": "But is it OK to point out the mistake? Is that polite, in the first lesson?”",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:813A79C77A94",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:0F6BF1CC2913",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v2",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T18:40:00+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"1_location\": true, \"2_evidence_ids\": true, \"3_evidence_quote\": true, \"4_answer_support\": true, \"5_vocab_scope\": true, \"6_options\": true, \"7_dedup\": true, \"8_type_rules\": true}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 1,
+          "note": "P1-03 minimal pipeline: validator v2 PASS"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:3179968E3E74:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T18:40:00+08:00",
+          "actor": "validator_v2",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": null,
+      "original_textbook_from_note": null,
+      "run": {
+        "run_id": "AIRUN:20260917T1840:P103",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P0-v1",
+        "context_hash": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+        "provider": "deepseek",
+        "max_tokens": 8192,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9451, \"completion_tokens\": 7332, \"total_tokens\": 16783, \"prompt_tokens_details\": {\"cached_tokens\": 9344}, \"completion_tokens_details\": {\"reasoning_tokens\": 6638}, \"prompt_cache_hit_tokens\": 9344, \"prompt_cache_miss_tokens\": 107}",
+        "elapsed_ms": 116579,
+        "status": "OK",
+        "generated_at": "2026-09-17T18:40:00+08:00",
+        "context_ref": "audit\\AI_question_generation_spike\\20260917_1630_deepseek_second_section_8192\\input_context.json",
+        "raw_response_ref": "P1_03_minimal_pipeline/raw_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:7EBCDBC29563",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "Our English teacher Ms Chen writes the ___ on the blackboard and says, “Please write this down.”",
+      "options_json": "[\"sentence\", \"mistake\", \"polite\", \"meaning\"]",
+      "correct_option": "A",
+      "correct_answer": "sentence",
+      "explanation": "The reading passage says the English teacher writes the sentence on the blackboard.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+      "page": 17,
+      "generation_run_id": "AIRUN:20260917T1840:P103",
+      "generated_at": "2026-09-17T18:40:00+08:00",
+      "question_fingerprint": "7EBCDBC29563D699EA0411EC856B61BC0FACF800E6CBFDE32DC7EC2C63EF72CD",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 1,
+      "stale_reason": "VALIDATOR_CHANGED",
+      "validator_version": "v2",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T18:40:00+08:00",
+      "updated_at": "2026-09-17T19:10:00+08:00",
+      "options": [
+        "sentence",
+        "mistake",
+        "polite",
+        "meaning"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P22:B0",
+          "evidence_quote": "Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.”",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:3571476C132A",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:0F6BF1CC2913",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v2",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T18:40:00+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"1_location\": true, \"2_evidence_ids\": true, \"3_evidence_quote\": true, \"4_answer_support\": true, \"5_vocab_scope\": true, \"6_options\": true, \"7_dedup\": true, \"8_type_rules\": true}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 1,
+          "note": "P1-03 minimal pipeline: validator v2 PASS"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:7EBCDBC29563:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T18:40:00+08:00",
+          "actor": "validator_v2",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:7EBCDBC29563:STALE1",
+          "event_type": "MARKED_STALE",
+          "from_status": "PENDING_REVIEW",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T19:10:00+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": null,
+      "original_textbook_from_note": null,
+      "run": {
+        "run_id": "AIRUN:20260917T1840:P103",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P0-v1",
+        "context_hash": "471E6FA7AA82E03B99E31A43265944D2D8CA98C6924DCB6D38D196474677DFA4",
+        "provider": "deepseek",
+        "max_tokens": 8192,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9451, \"completion_tokens\": 7332, \"total_tokens\": 16783, \"prompt_tokens_details\": {\"cached_tokens\": 9344}, \"completion_tokens_details\": {\"reasoning_tokens\": 6638}, \"prompt_cache_hit_tokens\": 9344, \"prompt_cache_miss_tokens\": 107}",
+        "elapsed_ms": 116579,
+        "status": "OK",
+        "generated_at": "2026-09-17T18:40:00+08:00",
+        "context_ref": "audit\\AI_question_generation_spike\\20260917_1630_deepseek_second_section_8192\\input_context.json",
+        "raw_response_ref": "P1_03_minimal_pipeline/raw_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:5B4C80443D5F",
+      "version": 1,
+      "question_type": "vocab_choice",
+      "question_text": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+      "options_json": "[\"mistake\", \"mind\", \"meaning\", \"fact\"]",
+      "correct_option": "A",
+      "correct_answer": "mistake",
+      "explanation": "In the summary, the student says 'point out the mistake', and 'mistake' is a core word in the Unit vocabulary list.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+      "page": 18,
+      "generation_run_id": "AIRUN:20260917T201756:P106_S2",
+      "generated_at": "2026-09-17T20:17:56+08:00",
+      "question_fingerprint": "5B4C80443D5FE94E0C4CE374D47CB800BE0CA226E01269DDEE850E8A929397F6",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [
+        "mistake",
+        "mind",
+        "meaning",
+        "fact"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P23:B6",
+          "evidence_quote": "point out the mistake",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:FEADBBD10A87",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:C17DC2B4A7A2",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[\"points\", \"student\"]",
+          "needs_human_review": 1,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=C8E7452D47597F0C"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:5B4C80443D5F:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:5B4C80443D5F:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201756:P106_S2",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9448, \"completion_tokens\": 7852, \"total_tokens\": 17300, \"prompt_tokens_details\": {\"cached_tokens\": 512}, \"completion_tokens_details\": {\"reasoning_tokens\": 7111}, \"prompt_cache_hit_tokens\": 512, \"prompt_cache_miss_tokens\": 8936}",
+        "elapsed_ms": 111300,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:17:56+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:A9D1F3EC6020",
+      "version": 1,
+      "question_type": "vocab_choice",
+      "question_text": "Ms Chen writes a ___ on the blackboard.",
+      "options_json": "[\"sentence\", \"mistake\", \"mind\", \"meaning\"]",
+      "correct_option": "A",
+      "correct_answer": "sentence",
+      "explanation": "The summary states that Ms Chen writes a sentence on the blackboard. 'Sentence' is a core word in the Unit vocabulary list.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+      "page": 18,
+      "generation_run_id": "AIRUN:20260917T201756:P106_S2",
+      "generated_at": "2026-09-17T20:17:56+08:00",
+      "question_fingerprint": "A9D1F3EC6020F5DA7C4BD46C13C1D1E690B9A8EE9E47ABF5D8CB31546F01C048",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [
+        "sentence",
+        "mistake",
+        "mind",
+        "meaning"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P23:B4",
+          "evidence_quote": "a sentence on the blackboard",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:3571476C132A",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:C17DC2B4A7A2",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[\"writes\"]",
+          "needs_human_review": 1,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=7790C234413399B4"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:A9D1F3EC6020:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:A9D1F3EC6020:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201756:P106_S2",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9448, \"completion_tokens\": 7852, \"total_tokens\": 17300, \"prompt_tokens_details\": {\"cached_tokens\": 512}, \"completion_tokens_details\": {\"reasoning_tokens\": 7111}, \"prompt_cache_hit_tokens\": 512, \"prompt_cache_miss_tokens\": 8936}",
+        "elapsed_ms": 111300,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:17:56+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:D976787A0A43",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "In the first lesson, some questions jump into my ___.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "mind",
+      "explanation": "The summary shows that questions jump into the writer's mind. 'Mind' is a core vocabulary word in this unit.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+      "page": 18,
+      "generation_run_id": "AIRUN:20260917T201756:P106_S2",
+      "generated_at": "2026-09-17T20:17:56+08:00",
+      "question_fingerprint": "D976787A0A43F6C7E9F41550C3037D7EBC6837393326A60BC684D2D8E1412F5C",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P23:B5",
+          "evidence_quote": "jump into my mind",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:6763F64AB363",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:C17DC2B4A7A2",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=8F683ED6E9C2C6A3"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:D976787A0A43:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:D976787A0A43:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201756:P106_S2",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9448, \"completion_tokens\": 7852, \"total_tokens\": 17300, \"prompt_tokens_details\": {\"cached_tokens\": 512}, \"completion_tokens_details\": {\"reasoning_tokens\": 7111}, \"prompt_cache_hit_tokens\": 512, \"prompt_cache_miss_tokens\": 8936}",
+        "elapsed_ms": 111300,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:17:56+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "___ ___, this is my first lesson for all of you.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "In fact",
+      "explanation": "The reading passage uses 'in fact' as a key expression. It is listed in the Unit vocabulary list.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+      "page": 19,
+      "generation_run_id": "AIRUN:20260917T201756:P106_S2",
+      "generated_at": "2026-09-17T20:17:56+08:00",
+      "question_fingerprint": "1BA2607277936E2B6AE2A521F66C0CDC356C90B5269988801D9C1A28E9F8280E",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P24:B2",
+          "evidence_quote": "In fact, this is my first lesson for all of you.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:28FFB2954477",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:3363F6C7E84E",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=FAC67D8814215070"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:1BA260727793:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:1BA260727793:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": true,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201756:P106_S2",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9448, \"completion_tokens\": 7852, \"total_tokens\": 17300, \"prompt_tokens_details\": {\"cached_tokens\": 512}, \"completion_tokens_details\": {\"reasoning_tokens\": 7111}, \"prompt_cache_hit_tokens\": 512, \"prompt_cache_miss_tokens\": 8936}",
+        "elapsed_ms": 111300,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:17:56+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:C3E6FD29F680",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "I look up at Ms Chen. My eyes meet ___.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "hers",
+      "explanation": "The reading passage uses the possessive pronoun 'hers' to refer to Ms Chen's eyes. The grammar focus of Activity 5 is on possessive pronouns and adjectives.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+      "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+      "page": 19,
+      "generation_run_id": "AIRUN:20260917T201756:P106_S2",
+      "generated_at": "2026-09-17T20:17:56+08:00",
+      "question_fingerprint": "C3E6FD29F680AB1C167266EF572566F8637D8F64FF3E4743EE21456C56A06B44",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P24:B1",
+          "evidence_quote": "My eyes meet hers.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:084C9E5223A4",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:3363F6C7E84E",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=D88B289DA230C5EE"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:C3E6FD29F680:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:C3E6FD29F680:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": true,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201756:P106_S2",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "9581B50F9ECF1C8EBA1A36EA53FC4BFD0E27DFCF64B92BB0A23FFE5C8D0CFF52",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 9448, \"completion_tokens\": 7852, \"total_tokens\": 17300, \"prompt_tokens_details\": {\"cached_tokens\": 512}, \"completion_tokens_details\": {\"reasoning_tokens\": 7111}, \"prompt_cache_hit_tokens\": 512, \"prompt_cache_miss_tokens\": 8936}",
+        "elapsed_ms": 111300,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:17:56+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S2_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "version": 1,
+      "question_type": "vocab_choice",
+      "question_text": "But it’s a ___ kind of music.",
+      "options_json": "[\"different\", \"traditional\", \"electric\", \"weak\"]",
+      "correct_option": "A",
+      "correct_answer": "different",
+      "explanation": "The passage says 'But it’s a different kind of music', so the correct word is 'different'.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "page": 32,
+      "generation_run_id": "AIRUN:20260917T201605:P106_S1",
+      "generated_at": "2026-09-17T20:16:05+08:00",
+      "question_fingerprint": "75AAEBFE06DFC6E750DBBE748A476ABD568F716C13FEEB296517F7297798020B",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [
+        "different",
+        "traditional",
+        "electric",
+        "weak"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "evidence_quote": "But it’s a different kind of music.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:8CCC14F572CB",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 1,
+          "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=97D16FFC8F937CDA"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:75AAEBFE06DF:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:75AAEBFE06DF:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": true,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201605:P106_S1",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 11387, \"completion_tokens\": 12021, \"total_tokens\": 23408, \"prompt_tokens_details\": {\"cached_tokens\": 11264}, \"completion_tokens_details\": {\"reasoning_tokens\": 10823}, \"prompt_cache_hit_tokens\": 11264, \"prompt_cache_miss_tokens\": 123}",
+        "elapsed_ms": 176546,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:16:05+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "version": 1,
+      "question_type": "reading_choice",
+      "question_text": "Grandpa likes playing the erhu ___.",
+      "options_json": "[\"in the park\", \"in the school band\", \"on the stage\", \"in his room\"]",
+      "correct_option": "A",
+      "correct_answer": "in the park",
+      "explanation": "The passage says Grandpa likes playing the erhu in the park with his friends, so the correct place is 'in the park'.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "page": 32,
+      "generation_run_id": "AIRUN:20260917T201605:P106_S1",
+      "generated_at": "2026-09-17T20:16:05+08:00",
+      "question_fingerprint": "879007FA4FC7DD75D79B593F81CD04F22BEBF976276DE8F9DAEB6A7F18243561",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [
+        "in the park",
+        "in the school band",
+        "on the stage",
+        "in his room"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B12",
+          "evidence_quote": "He likes playing the erhu in the park with his friends.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+          "is_primary": 1
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 1,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=480090F33EB17136"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:879007FA4FC7:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:879007FA4FC7:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201605:P106_S1",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 11387, \"completion_tokens\": 12021, \"total_tokens\": 23408, \"prompt_tokens_details\": {\"cached_tokens\": 11264}, \"completion_tokens_details\": {\"reasoning_tokens\": 10823}, \"prompt_cache_hit_tokens\": 11264, \"prompt_cache_miss_tokens\": 123}",
+        "elapsed_ms": 176546,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:16:05+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "version": 1,
+      "question_type": "vocab_choice",
+      "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+      "options_json": "[\"band\", \"club\", \"stage\", \"instrument\"]",
+      "correct_option": "A",
+      "correct_answer": "band",
+      "explanation": "The passage says 'I play the electric guitar in the school band', so the correct word is 'band'.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "page": 32,
+      "generation_run_id": "AIRUN:20260917T201605:P106_S1",
+      "generated_at": "2026-09-17T20:16:05+08:00",
+      "question_fingerprint": "BD59C5958D455E98B9AC542A03F7172F68D33152AC82F4C0DDE21AB2E5832196",
+      "lifecycle_status": "ACTIVE",
+      "active": 1,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:59:36+08:00",
+      "options": [
+        "band",
+        "club",
+        "stage",
+        "instrument"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B10",
+          "evidence_quote": "As a rock music lover, I play the electric guitar in the school band.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:758EAAF3C83B",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 1,
+          "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=EBDE08BAF2A13D20"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:BD59C5958D45:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:BD59C5958D45:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:BD59C5958D45:RA",
+          "event_type": "REVIEW_APPROVED",
+          "from_status": "PENDING_REVIEW",
+          "to_status": "APPROVED",
+          "event_at": "2026-09-17T20:59:36+08:00",
+          "actor": "human:project-owner",
+          "actor_kind": "human",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:BD59C5958D45:AC",
+          "event_type": "ACTIVATED",
+          "from_status": "APPROVED",
+          "to_status": "ACTIVE",
+          "event_at": "2026-09-17T20:59:36+08:00",
+          "actor": "human:project-owner",
+          "actor_kind": "human",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": true,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201605:P106_S1",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 11387, \"completion_tokens\": 12021, \"total_tokens\": 23408, \"prompt_tokens_details\": {\"cached_tokens\": 11264}, \"completion_tokens_details\": {\"reasoning_tokens\": 10823}, \"prompt_cache_hit_tokens\": 11264, \"prompt_cache_miss_tokens\": 123}",
+        "elapsed_ms": 176546,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:16:05+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:E5F4C046FA61",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "sound",
+      "explanation": "The passage uses 'sound' as a core word in this sentence about Grandpa’s erhu.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+      "page": 32,
+      "generation_run_id": "AIRUN:20260917T201605:P106_S1",
+      "generated_at": "2026-09-17T20:16:05+08:00",
+      "question_fingerprint": "E5F4C046FA61C1316730AFE4E3A64E1908C2BDD0EEE84757109A4DF36A584120",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P37:B11",
+          "evidence_quote": "Right at this moment, the sound of Grandpa’s erhu cuts in.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:98A27993BFCE",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:90DF89A9545C",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=514D5A302F161BAB"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:E5F4C046FA61:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:E5F4C046FA61:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": true,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201605:P106_S1",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 11387, \"completion_tokens\": 12021, \"total_tokens\": 23408, \"prompt_tokens_details\": {\"cached_tokens\": 11264}, \"completion_tokens_details\": {\"reasoning_tokens\": 10823}, \"prompt_cache_hit_tokens\": 11264, \"prompt_cache_miss_tokens\": 123}",
+        "elapsed_ms": 176546,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:16:05+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "version": 1,
+      "question_type": "fill",
+      "question_text": "It feels great to ___ our hobby together.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "enjoy",
+      "explanation": "The passage says 'It feels great to enjoy our hobby together', so the missing word is 'enjoy'.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+      "page": 33,
+      "generation_run_id": "AIRUN:20260917T201605:P106_S1",
+      "generated_at": "2026-09-17T20:16:05+08:00",
+      "question_fingerprint": "04CC9B1CF690F62D3DD91EE8ABEA626A2E703D83F114BB8BBA355EAE4208F159",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P38:B5",
+          "evidence_quote": "It feels great to enjoy our hobby together.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:2035233BCB26",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:76733936D5BA",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=True original_textbook=False dedupe_key=ABEB18A604174552"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:04CC9B1CF690:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:04CC9B1CF690:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": true,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201605:P106_S1",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 11387, \"completion_tokens\": 12021, \"total_tokens\": 23408, \"prompt_tokens_details\": {\"cached_tokens\": 11264}, \"completion_tokens_details\": {\"reasoning_tokens\": 10823}, \"prompt_cache_hit_tokens\": 11264, \"prompt_cache_miss_tokens\": 123}",
+        "elapsed_ms": 176546,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:16:05+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "version": 1,
+      "question_type": "reading_choice",
+      "question_text": "At the school art festival, the writer and Grandpa ___.",
+      "options_json": "[\"write songs\", \"share songs online\", \"fire up instruments\", \"sing Beijing opera\"]",
+      "correct_option": "C",
+      "correct_answer": "fire up instruments",
+      "explanation": "The passage says 'I nod to Grandpa and we fire up our instruments', so the correct action is 'fire up instruments'.",
+      "difficulty": "medium",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+      "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+      "page": 33,
+      "generation_run_id": "AIRUN:20260917T201605:P106_S1",
+      "generated_at": "2026-09-17T20:16:05+08:00",
+      "question_fingerprint": "6ECD02B9D381600D03E2E2C6A2CA77568CA945BF8917F295D632D9DBB79A9362",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [
+        "write songs",
+        "share songs online",
+        "fire up instruments",
+        "sing Beijing opera"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P38:B3",
+          "evidence_quote": "I nod to Grandpa and we fire up our instruments.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:76733936D5BA",
+          "is_primary": 1
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "VERIFIABLE_REPHRASE",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=7EDDAAB7E7D5E580"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:6ECD02B9D381:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:6ECD02B9D381:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T201605:P106_S1",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "574B24DC8633E26A2B9402A161AD6D5C25EB613E7DB525B4903BF0E2641496E5",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 11387, \"completion_tokens\": 12021, \"total_tokens\": 23408, \"prompt_tokens_details\": {\"cached_tokens\": 11264}, \"completion_tokens_details\": {\"reasoning_tokens\": 10823}, \"prompt_cache_hit_tokens\": 11264, \"prompt_cache_miss_tokens\": 123}",
+        "elapsed_ms": 176546,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:16:05+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S1_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:6721EC6C5D1F",
+      "version": 1,
+      "question_type": "vocab_choice",
+      "question_text": "Water from the ___ will rise to the leaf through the stem.",
+      "options_json": "[\"root\", \"stem\", \"sugar\", \"oxygen\"]",
+      "correct_option": "A",
+      "correct_answer": "root",
+      "explanation": "The passage says water comes from the root and goes up through the stem to the leaf; “root” is the correct plant part.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+      "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+      "page": 82,
+      "generation_run_id": "AIRUN:20260917T202038:P106_S3",
+      "generated_at": "2026-09-17T20:20:38+08:00",
+      "question_fingerprint": "6721EC6C5D1F543B6D45B7C9AFE0E6167E13DC6947490D86A582B4339AEB8F39",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [
+        "root",
+        "stem",
+        "sugar",
+        "oxygen"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P85:B12",
+          "evidence_quote": "root",
+          "is_primary": 1
+        },
+        {
+          "ordinal": 2,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P87:B7",
+          "evidence_quote": "root",
+          "is_primary": 0
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:V:17C72197AB67",
+          "is_primary": 1
+        },
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:0C54AFF17092",
+          "is_primary": 0
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 1,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=200414C32D03C3A8"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:6721EC6C5D1F:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:6721EC6C5D1F:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T202038:P106_S3",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 10812, \"completion_tokens\": 11796, \"total_tokens\": 22608, \"prompt_tokens_details\": {\"cached_tokens\": 1408}, \"completion_tokens_details\": {\"reasoning_tokens\": 10884}, \"prompt_cache_hit_tokens\": 1408, \"prompt_cache_miss_tokens\": 9404}",
+        "elapsed_ms": 161473,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:20:38+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S3_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S3_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "version": 1,
+      "question_type": "reading_judge",
+      "question_text": "The Great Bear Rainforest is in Canada.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "True",
+      "explanation": "The guide states the rainforest is in Canada, so the statement is true.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+      "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+      "page": 83,
+      "generation_run_id": "AIRUN:20260917T202038:P106_S3",
+      "generated_at": "2026-09-17T20:20:38+08:00",
+      "question_fingerprint": "7EAC0ED29A0AF3893040D0E8D60A552F4234E7393B9933E6EFC8E8F87CF6D480",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P88:B12",
+          "evidence_quote": "Welcome to the Great Bear Rainforest in Canada!",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE",
+          "is_primary": 1
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "VERIFIABLE_REPHRASE",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=2496A101D8574849；rule4_waived_for_judge=true（判断题事实一致性判定，coverage=1.0）"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:7EAC0ED29A0A:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:7EAC0ED29A0A:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T202038:P106_S3",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 10812, \"completion_tokens\": 11796, \"total_tokens\": 22608, \"prompt_tokens_details\": {\"cached_tokens\": 1408}, \"completion_tokens_details\": {\"reasoning_tokens\": 10884}, \"prompt_cache_hit_tokens\": 1408, \"prompt_cache_miss_tokens\": 9404}",
+        "elapsed_ms": 161473,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:20:38+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S3_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S3_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:80F1D28C3101",
+      "version": 1,
+      "question_type": "reading_judge",
+      "question_text": "Plants are not important to us.",
+      "options_json": null,
+      "correct_option": null,
+      "correct_answer": "False",
+      "explanation": "The guide says plants are so important, so the negative statement is false.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+      "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+      "page": 83,
+      "generation_run_id": "AIRUN:20260917T202038:P106_S3",
+      "generated_at": "2026-09-17T20:20:38+08:00",
+      "question_fingerprint": "80F1D28C3101BC108B5AED3B7D16A854462785F00E6EA272C53EE7F7FA75D742",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 0,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P88:B20",
+          "evidence_quote": "Now we can see plants are so important. They mean so much to us.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE",
+          "is_primary": 1
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "VERIFIABLE_REPHRASE",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 0,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=019370AE74C24C79；rule4_waived_for_judge=true（判断题事实一致性判定，coverage=1.0）"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:80F1D28C3101:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:80F1D28C3101:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T202038:P106_S3",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 10812, \"completion_tokens\": 11796, \"total_tokens\": 22608, \"prompt_tokens_details\": {\"cached_tokens\": 1408}, \"completion_tokens_details\": {\"reasoning_tokens\": 10884}, \"prompt_cache_hit_tokens\": 1408, \"prompt_cache_miss_tokens\": 9404}",
+        "elapsed_ms": 161473,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:20:38+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S3_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S3_response.json"
+      }
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "version": 1,
+      "question_type": "reading_choice",
+      "question_text": "In the Great Bear Rainforest, what can the trees make?",
+      "options_json": "[\"their own rain\", \"sugar\", \"oxygen\", \"food\"]",
+      "correct_option": "A",
+      "correct_answer": "their own rain",
+      "explanation": "The guide says the trees can make their own rain, so the answer is “their own rain”.",
+      "difficulty": "easy",
+      "textbook_id": "FLTRP-EN-7A-2022CUR",
+      "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+      "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+      "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+      "activity_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+      "page": 83,
+      "generation_run_id": "AIRUN:20260917T202038:P106_S3",
+      "generated_at": "2026-09-17T20:20:38+08:00",
+      "question_fingerprint": "B6463523F9E5EF6F9B7B1EE0A2F0A48448326F4888AB1EC1464ED3143A97D78E",
+      "lifecycle_status": "PENDING_REVIEW",
+      "active": 0,
+      "stale": 0,
+      "stale_reason": null,
+      "validator_version": "v3",
+      "needs_human_review": 1,
+      "created_at": "2026-09-17T20:36:52+08:00",
+      "updated_at": "2026-09-17T20:36:52+08:00",
+      "options": [
+        "their own rain",
+        "sugar",
+        "oxygen",
+        "food"
+      ],
+      "evidence": [
+        {
+          "ordinal": 1,
+          "evidence_block_id": "FLTRP-EN-7A-2022CUR:P88:B14",
+          "evidence_quote": "The trees in a rainforest can make their own rain.",
+          "is_primary": 1
+        }
+      ],
+      "learning_objects": [
+        {
+          "item_id": "FLTRP-EN-7A-2022CUR:X:E8B7DB1240CE",
+          "is_primary": 1
+        }
+      ],
+      "validation": [
+        {
+          "validator_version": "v3",
+          "validation_result": "PASS",
+          "validated_at": "2026-09-17T20:36:52+08:00",
+          "answer_support_type": "EXACT",
+          "checks_json": "{\"g1_page\": true, \"g1_activity\": true, \"g1_blocks_exist\": true, \"g1_block_in_contentpack\": true, \"g1_quote_nonempty\": true, \"g1_quote_in_block\": true, \"g1_answer_supported\": true, \"g1_stem_complete\": true, \"gate1_evidence_complete\": true, \"gate2_not_textbook_original\": true, \"gate3_mechanical_allowed\": true, \"gate4_no_duplicate\": true, \"gate5_schema_provenance\": true, \"d3_vocab_after_lemma\": true, \"gate5_detail\": {\"unit_id_exists\": true, \"activity_lo_exists\": true, \"run_meta_available\": true, \"model_ok\": true, \"prompt_version_ok\": true}}",
+          "out_of_scope_tokens_json": "[]",
+          "needs_human_review": 1,
+          "note": "P1-07 入库演练；mechanical_rewrite=False original_textbook=False dedupe_key=0B63271F7A51277F"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "AIEV:B6463523F9E5:V1",
+          "event_type": "VALIDATED",
+          "from_status": "GENERATED",
+          "to_status": "VALIDATED",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "validator_v3",
+          "actor_kind": "machine",
+          "reason_code": null
+        },
+        {
+          "event_id": "AIEV:B6463523F9E5:P1",
+          "event_type": "PENDING_REVIEW",
+          "from_status": "VALIDATED",
+          "to_status": "PENDING_REVIEW",
+          "event_at": "2026-09-17T20:36:52+08:00",
+          "actor": "p1_07_ingest",
+          "actor_kind": "machine",
+          "reason_code": null
+        }
+      ],
+      "mechanical_rewrite_from_note": false,
+      "original_textbook_from_note": false,
+      "run": {
+        "run_id": "AIRUN:20260917T202038:P106_S3",
+        "model": "deepseek-v4-pro",
+        "prompt_version": "P1-05-v3",
+        "context_hash": "76F66FACC48B680DA08ADAF92818300673E372411E4D1A1329476DE4C4EE8A67",
+        "provider": "deepseek",
+        "max_tokens": 16384,
+        "finish_reason": "stop",
+        "usage_json": "{\"prompt_tokens\": 10812, \"completion_tokens\": 11796, \"total_tokens\": 22608, \"prompt_tokens_details\": {\"cached_tokens\": 1408}, \"completion_tokens_details\": {\"reasoning_tokens\": 10884}, \"prompt_cache_hit_tokens\": 1408, \"prompt_cache_miss_tokens\": 9404}",
+        "elapsed_ms": 161473,
+        "status": "OK",
+        "generated_at": "2026-09-17T20:20:38+08:00",
+        "context_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S3_request.json",
+        "raw_response_ref": "audit/AI_question_generation_spike/P1_06_batch_stability/S3_response.json"
+      }
+    }
+  ],
+  "validator_checks_reference": {
+    "v3_eight_checks": [
+      "1_location",
+      "2_evidence_ids",
+      "3_evidence_quote",
+      "4_answer_support",
+      "5_vocab_scope",
+      "6_options",
+      "7_dedup",
+      "8_type_rules"
+    ],
+    "v2_file_sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+    "v3_file_sha256": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+    "six_db_triggers": [
+      "trg_ai_question_active_requires_human_approval",
+      "trg_ai_question_insert_active_forbidden",
+      "trg_ai_question_no_delete",
+      "trg_question_event_no_delete",
+      "trg_question_event_no_update",
+      "trg_validation_exact_trap"
+    ],
+    "note": "8 项校验全部是结构/证据/词汇/去重类确定性判断；无任何维度判断英语质量、答案唯一性或学习价值。"
+  },
+  "validator_capability_recheck": [
+    {
+      "question_id": "AIQ:CD8B21681B4C",
+      "question_type": "reading_choice",
+      "question_text": "What is Wang Tao going to wear tomorrow for school?",
+      "correct_answer": "school uniform",
+      "options": [
+        "school uniform",
+        "sports jacket",
+        "T-shirt",
+        "red scarf"
+      ],
+      "evidence_quote": "My school uniform, of course.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:1B3AF72923C4",
+      "question_type": "fill",
+      "question_text": "I am ___, too.",
+      "correct_answer": "ready",
+      "options": [],
+      "evidence_quote": "I am ready, too",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:3C02F6486DFF",
+      "question_type": "fill",
+      "question_text": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+      "correct_answer": "eraser",
+      "options": [],
+      "evidence_quote": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:120FFEECA78F",
+      "question_type": "fill",
+      "question_text": "What colour is it? It’s ___.",
+      "correct_answer": "grey",
+      "options": [],
+      "evidence_quote": "It’s grey.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:3179968E3E74",
+      "question_type": "vocab_choice",
+      "question_text": "“But is it OK to point out the mistake? Is that ___, in the first lesson?”",
+      "correct_answer": "polite",
+      "options": [
+        "polite",
+        "dry",
+        "important",
+        "mistake"
+      ],
+      "evidence_quote": "But is it OK to point out the mistake? Is that polite, in the first lesson?”",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:7EBCDBC29563",
+      "question_type": "fill",
+      "question_text": "Our English teacher Ms Chen writes the ___ on the blackboard and says, “Please write this down.”",
+      "correct_answer": "sentence",
+      "options": [
+        "sentence",
+        "mistake",
+        "polite",
+        "meaning"
+      ],
+      "evidence_quote": "Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.”",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": false,
+      "v3_type_rules_reason": "fill must not carry options (P1-04: fill = 纯填空)"
+    },
+    {
+      "question_id": "AIQ:5B4C80443D5F",
+      "question_type": "vocab_choice",
+      "question_text": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+      "correct_answer": "mistake",
+      "options": [
+        "mistake",
+        "mind",
+        "meaning",
+        "fact"
+      ],
+      "evidence_quote": "point out the mistake",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:A9D1F3EC6020",
+      "question_type": "vocab_choice",
+      "question_text": "Ms Chen writes a ___ on the blackboard.",
+      "correct_answer": "sentence",
+      "options": [
+        "sentence",
+        "mistake",
+        "mind",
+        "meaning"
+      ],
+      "evidence_quote": "a sentence on the blackboard",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:D976787A0A43",
+      "question_type": "fill",
+      "question_text": "In the first lesson, some questions jump into my ___.",
+      "correct_answer": "mind",
+      "options": [],
+      "evidence_quote": "jump into my mind",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:1BA260727793",
+      "question_type": "fill",
+      "question_text": "___ ___, this is my first lesson for all of you.",
+      "correct_answer": "In fact",
+      "options": [],
+      "evidence_quote": "In fact, this is my first lesson for all of you.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:C3E6FD29F680",
+      "question_type": "fill",
+      "question_text": "I look up at Ms Chen. My eyes meet ___.",
+      "correct_answer": "hers",
+      "options": [],
+      "evidence_quote": "My eyes meet hers.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:75AAEBFE06DF",
+      "question_type": "vocab_choice",
+      "question_text": "But it’s a ___ kind of music.",
+      "correct_answer": "different",
+      "options": [
+        "different",
+        "traditional",
+        "electric",
+        "weak"
+      ],
+      "evidence_quote": "But it’s a different kind of music.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:879007FA4FC7",
+      "question_type": "reading_choice",
+      "question_text": "Grandpa likes playing the erhu ___.",
+      "correct_answer": "in the park",
+      "options": [
+        "in the park",
+        "in the school band",
+        "on the stage",
+        "in his room"
+      ],
+      "evidence_quote": "He likes playing the erhu in the park with his friends.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:BD59C5958D45",
+      "question_type": "vocab_choice",
+      "question_text": "As a rock music lover, I play the electric guitar in the school ___.",
+      "correct_answer": "band",
+      "options": [
+        "band",
+        "club",
+        "stage",
+        "instrument"
+      ],
+      "evidence_quote": "As a rock music lover, I play the electric guitar in the school band.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:E5F4C046FA61",
+      "question_type": "fill",
+      "question_text": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+      "correct_answer": "sound",
+      "options": [],
+      "evidence_quote": "Right at this moment, the sound of Grandpa’s erhu cuts in.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:04CC9B1CF690",
+      "question_type": "fill",
+      "question_text": "It feels great to ___ our hobby together.",
+      "correct_answer": "enjoy",
+      "options": [],
+      "evidence_quote": "It feels great to enjoy our hobby together.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:6ECD02B9D381",
+      "question_type": "reading_choice",
+      "question_text": "At the school art festival, the writer and Grandpa ___.",
+      "correct_answer": "fire up instruments",
+      "options": [
+        "write songs",
+        "share songs online",
+        "fire up instruments",
+        "sing Beijing opera"
+      ],
+      "evidence_quote": "I nod to Grandpa and we fire up our instruments.",
+      "validator_v2_answer_support": "VERIFIABLE_REPHRASE",
+      "validator_v3_answer_support": "VERIFIABLE_REPHRASE",
+      "stored_answer_support_type": "VERIFIABLE_REPHRASE",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:6721EC6C5D1F",
+      "question_type": "vocab_choice",
+      "question_text": "Water from the ___ will rise to the leaf through the stem.",
+      "correct_answer": "root",
+      "options": [
+        "root",
+        "stem",
+        "sugar",
+        "oxygen"
+      ],
+      "evidence_quote": "root root",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:7EAC0ED29A0A",
+      "question_type": "reading_judge",
+      "question_text": "The Great Bear Rainforest is in Canada.",
+      "correct_answer": "True",
+      "options": [],
+      "evidence_quote": "Welcome to the Great Bear Rainforest in Canada!",
+      "validator_v2_answer_support": "UNSUPPORTED",
+      "validator_v3_answer_support": "UNSUPPORTED",
+      "stored_answer_support_type": "VERIFIABLE_REPHRASE",
+      "recompute_matches_stored": false,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:80F1D28C3101",
+      "question_type": "reading_judge",
+      "question_text": "Plants are not important to us.",
+      "correct_answer": "False",
+      "options": [],
+      "evidence_quote": "Now we can see plants are so important. They mean so much to us.",
+      "validator_v2_answer_support": "UNSUPPORTED",
+      "validator_v3_answer_support": "UNSUPPORTED",
+      "stored_answer_support_type": "VERIFIABLE_REPHRASE",
+      "recompute_matches_stored": false,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    },
+    {
+      "question_id": "AIQ:B6463523F9E5",
+      "question_type": "reading_choice",
+      "question_text": "In the Great Bear Rainforest, what can the trees make?",
+      "correct_answer": "their own rain",
+      "options": [
+        "their own rain",
+        "sugar",
+        "oxygen",
+        "food"
+      ],
+      "evidence_quote": "The trees in a rainforest can make their own rain.",
+      "validator_v2_answer_support": "EXACT",
+      "validator_v3_answer_support": "EXACT",
+      "stored_answer_support_type": "EXACT",
+      "recompute_matches_stored": true,
+      "v3_type_rules_ok": true,
+      "v3_type_rules_reason": ""
+    }
+  ],
+  "cost_model_ref": "cost_model.json (written by triage_and_cost.py)"
+}

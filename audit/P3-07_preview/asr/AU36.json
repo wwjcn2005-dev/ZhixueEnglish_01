@@ -1,0 +1,474 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU36",
+  "audio_num": "AU36",
+  "filename": "36_Unit 5_Understanding ideas_8 Work in pairs. Discuss your plan for Planting Day.mp3",
+  "duration_ms": 52637,
+  "segment_count": 10,
+  "word_count": 81,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1700,
+      "text": "Activity 8"
+    },
+    {
+      "start_ms": 2500,
+      "end_ms": 3780,
+      "text": "Work in pairs"
+    },
+    {
+      "start_ms": 4800,
+      "end_ms": 7480,
+      "text": "Discuss your plan for planting day"
+    },
+    {
+      "start_ms": 8500,
+      "end_ms": 14920,
+      "text": "Use the words and expressions from the reading passage and the useful expressions to help you"
+    },
+    {
+      "start_ms": 16000,
+      "end_ms": 17480,
+      "text": "Example conversation"
+    },
+    {
+      "start_ms": 19180,
+      "end_ms": 23680,
+      "text": "Planting day is coming. Let's do something!"
+    },
+    {
+      "start_ms": 23680,
+      "end_ms": 34720,
+      "text": "Sure. Plants mean a lot to us. They are homes to animals. They also give us food and clean air."
+    },
+    {
+      "start_ms": 35460,
+      "end_ms": 38740,
+      "text": "So what are your plans for planting day?"
+    },
+    {
+      "start_ms": 39420,
+      "end_ms": 47060,
+      "text": "I'm going to make a green corner. How about growing some flowers in our classroom?"
+    },
+    {
+      "start_ms": 47900,
+      "end_ms": 49120,
+      "text": "Sounds great!"
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1080
+    },
+    {
+      "word": "8",
+      "start_ms": 1080,
+      "end_ms": 1700
+    },
+    {
+      "word": "Work",
+      "start_ms": 2500,
+      "end_ms": 3020
+    },
+    {
+      "word": "in",
+      "start_ms": 3020,
+      "end_ms": 3360
+    },
+    {
+      "word": "pairs",
+      "start_ms": 3360,
+      "end_ms": 3780
+    },
+    {
+      "word": "Discuss",
+      "start_ms": 4800,
+      "end_ms": 5260
+    },
+    {
+      "word": "your",
+      "start_ms": 5260,
+      "end_ms": 5560
+    },
+    {
+      "word": "plan",
+      "start_ms": 5560,
+      "end_ms": 6000
+    },
+    {
+      "word": "for",
+      "start_ms": 6000,
+      "end_ms": 6440
+    },
+    {
+      "word": "planting",
+      "start_ms": 6440,
+      "end_ms": 6980
+    },
+    {
+      "word": "day",
+      "start_ms": 6980,
+      "end_ms": 7480
+    },
+    {
+      "word": "Use",
+      "start_ms": 8370,
+      "end_ms": 8820
+    },
+    {
+      "word": "the",
+      "start_ms": 8820,
+      "end_ms": 9060
+    },
+    {
+      "word": "words",
+      "start_ms": 9060,
+      "end_ms": 9440
+    },
+    {
+      "word": "and",
+      "start_ms": 9440,
+      "end_ms": 9660
+    },
+    {
+      "word": "expressions",
+      "start_ms": 9660,
+      "end_ms": 10220
+    },
+    {
+      "word": "from",
+      "start_ms": 10220,
+      "end_ms": 10880
+    },
+    {
+      "word": "the",
+      "start_ms": 10880,
+      "end_ms": 11020
+    },
+    {
+      "word": "reading",
+      "start_ms": 11020,
+      "end_ms": 11340
+    },
+    {
+      "word": "passage",
+      "start_ms": 11340,
+      "end_ms": 11760
+    },
+    {
+      "word": "and",
+      "start_ms": 11760,
+      "end_ms": 12580
+    },
+    {
+      "word": "the",
+      "start_ms": 12580,
+      "end_ms": 12780
+    },
+    {
+      "word": "useful",
+      "start_ms": 12780,
+      "end_ms": 13180
+    },
+    {
+      "word": "expressions",
+      "start_ms": 13180,
+      "end_ms": 13820
+    },
+    {
+      "word": "to",
+      "start_ms": 13820,
+      "end_ms": 14260
+    },
+    {
+      "word": "help",
+      "start_ms": 14260,
+      "end_ms": 14480
+    },
+    {
+      "word": "you",
+      "start_ms": 14480,
+      "end_ms": 14920
+    },
+    {
+      "word": "Example",
+      "start_ms": 16000,
+      "end_ms": 16720
+    },
+    {
+      "word": "conversation",
+      "start_ms": 16720,
+      "end_ms": 17480
+    },
+    {
+      "word": "Planting",
+      "start_ms": 19180,
+      "end_ms": 20080
+    },
+    {
+      "word": "day",
+      "start_ms": 20080,
+      "end_ms": 20540
+    },
+    {
+      "word": "is",
+      "start_ms": 20540,
+      "end_ms": 20880
+    },
+    {
+      "word": "coming.",
+      "start_ms": 20880,
+      "end_ms": 21220
+    },
+    {
+      "word": "Let's",
+      "start_ms": 21880,
+      "end_ms": 22780
+    },
+    {
+      "word": "do",
+      "start_ms": 22780,
+      "end_ms": 23100
+    },
+    {
+      "word": "something!",
+      "start_ms": 23100,
+      "end_ms": 23680
+    },
+    {
+      "word": "Sure.",
+      "start_ms": 23680,
+      "end_ms": 25180
+    },
+    {
+      "word": "Plants",
+      "start_ms": 26120,
+      "end_ms": 26420
+    },
+    {
+      "word": "mean",
+      "start_ms": 26420,
+      "end_ms": 26740
+    },
+    {
+      "word": "a",
+      "start_ms": 26740,
+      "end_ms": 26920
+    },
+    {
+      "word": "lot",
+      "start_ms": 26920,
+      "end_ms": 27220
+    },
+    {
+      "word": "to",
+      "start_ms": 27220,
+      "end_ms": 27520
+    },
+    {
+      "word": "us.",
+      "start_ms": 27520,
+      "end_ms": 27820
+    },
+    {
+      "word": "They",
+      "start_ms": 28700,
+      "end_ms": 28940
+    },
+    {
+      "word": "are",
+      "start_ms": 28940,
+      "end_ms": 29140
+    },
+    {
+      "word": "homes",
+      "start_ms": 29140,
+      "end_ms": 29720
+    },
+    {
+      "word": "to",
+      "start_ms": 29720,
+      "end_ms": 30000
+    },
+    {
+      "word": "animals.",
+      "start_ms": 30000,
+      "end_ms": 30360
+    },
+    {
+      "word": "They",
+      "start_ms": 31140,
+      "end_ms": 31480
+    },
+    {
+      "word": "also",
+      "start_ms": 31480,
+      "end_ms": 31960
+    },
+    {
+      "word": "give",
+      "start_ms": 31960,
+      "end_ms": 32400
+    },
+    {
+      "word": "us",
+      "start_ms": 32400,
+      "end_ms": 32620
+    },
+    {
+      "word": "food",
+      "start_ms": 32620,
+      "end_ms": 33160
+    },
+    {
+      "word": "and",
+      "start_ms": 33160,
+      "end_ms": 33660
+    },
+    {
+      "word": "clean",
+      "start_ms": 33660,
+      "end_ms": 34140
+    },
+    {
+      "word": "air.",
+      "start_ms": 34140,
+      "end_ms": 34720
+    },
+    {
+      "word": "So",
+      "start_ms": 35460,
+      "end_ms": 35980
+    },
+    {
+      "word": "what",
+      "start_ms": 35980,
+      "end_ms": 36560
+    },
+    {
+      "word": "are",
+      "start_ms": 36560,
+      "end_ms": 36740
+    },
+    {
+      "word": "your",
+      "start_ms": 36740,
+      "end_ms": 37040
+    },
+    {
+      "word": "plans",
+      "start_ms": 37040,
+      "end_ms": 37540
+    },
+    {
+      "word": "for",
+      "start_ms": 37540,
+      "end_ms": 37860
+    },
+    {
+      "word": "planting",
+      "start_ms": 37860,
+      "end_ms": 38240
+    },
+    {
+      "word": "day?",
+      "start_ms": 38240,
+      "end_ms": 38740
+    },
+    {
+      "word": "I'm",
+      "start_ms": 39420,
+      "end_ms": 39940
+    },
+    {
+      "word": "going",
+      "start_ms": 39940,
+      "end_ms": 40180
+    },
+    {
+      "word": "to",
+      "start_ms": 40180,
+      "end_ms": 40580
+    },
+    {
+      "word": "make",
+      "start_ms": 40580,
+      "end_ms": 40880
+    },
+    {
+      "word": "a",
+      "start_ms": 40880,
+      "end_ms": 41280
+    },
+    {
+      "word": "green",
+      "start_ms": 41280,
+      "end_ms": 41780
+    },
+    {
+      "word": "corner.",
+      "start_ms": 41780,
+      "end_ms": 42580
+    },
+    {
+      "word": "How",
+      "start_ms": 43520,
+      "end_ms": 43980
+    },
+    {
+      "word": "about",
+      "start_ms": 43980,
+      "end_ms": 44460
+    },
+    {
+      "word": "growing",
+      "start_ms": 44460,
+      "end_ms": 44940
+    },
+    {
+      "word": "some",
+      "start_ms": 44940,
+      "end_ms": 45320
+    },
+    {
+      "word": "flowers",
+      "start_ms": 45320,
+      "end_ms": 45900
+    },
+    {
+      "word": "in",
+      "start_ms": 45900,
+      "end_ms": 46280
+    },
+    {
+      "word": "our",
+      "start_ms": 46280,
+      "end_ms": 46480
+    },
+    {
+      "word": "classroom?",
+      "start_ms": 46480,
+      "end_ms": 47060
+    },
+    {
+      "word": "Sounds",
+      "start_ms": 47900,
+      "end_ms": 48500
+    },
+    {
+      "word": "great!",
+      "start_ms": 48500,
+      "end_ms": 49120
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 5.5
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "task": "P1-06-B1.7-G1-D Sentence Pattern 首批内容质量与证据关系只读审查",
+  "generated_at": "2026-09-12T15:17:37+08:00",
+  "verdict": "PASS",
+  "v5": {
+    "sha256": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+    "size": 2457600,
+    "expected": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A"
+  },
+  "counts": {
+    "Vocabulary": 287,
+    "Phrase": 23,
+    "Sentence Pattern": 52,
+    "learning_item": 362,
+    "source_ref": 815,
+    "new_source_ref": 53,
+    "tables": 21
+  },
+  "surface_distribution": {
+    "communication_bank": 18,
+    "unit_useful_expression": 34,
+    "language_note": 1
+  },
+  "attributes": {
+    "learning_requirement": {
+      "CORE": 1,
+      "NEED_REVIEW": 51
+    },
+    "review_status": {
+      "AUTO_OK": 1,
+      "NEED_REVIEW": 51
+    },
+    "requirement_conflict_status": {
+      "OK": 52
+    },
+    "textbook_emphasis": "UNKNOWN×53"
+  },
+  "checks": [
+    {
+      "id": "V5-SHA",
+      "name": "v5 SHA256 / size",
+      "status": "PASS",
+      "detail": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A / 2457600"
+    },
+    {
+      "id": "V5-INT",
+      "name": "integrity_check / foreign_key_check",
+      "status": "PASS",
+      "detail": "ok / 0"
+    },
+    {
+      "id": "SP52",
+      "name": "Sentence Pattern = 52",
+      "status": "PASS",
+      "detail": "52"
+    },
+    {
+      "id": "IDENTITY",
+      "name": "item_type=sentence_pattern ｜ :SP: 命名空间 ｜ 唯一",
+      "status": "PASS",
+      "detail": "52 条"
+    },
+    {
+      "id": "NOCLASH",
+      "name": "与 287 Vocabulary + 23 Phrase 无冲突",
+      "status": "PASS",
+      "detail": "冲突 0"
+    },
+    {
+      "id": "ID",
+      "name": "item_id 独立重算 52/52",
+      "status": "PASS",
+      "detail": "不一致 0"
+    },
+    {
+      "id": "HASH",
+      "name": "content_hash 独立重算 52/52",
+      "status": "PASS",
+      "detail": "不一致 0"
+    },
+    {
+      "id": "CANON",
+      "name": "canonical_text == lemma（= pattern_template）",
+      "status": "PASS",
+      "detail": "不一致 0"
+    },
+    {
+      "id": "DISPLAY",
+      "name": "display_text == surface_form（教材原文）",
+      "status": "PASS",
+      "detail": "不一致 0"
+    },
+    {
+      "id": "WORD-FIDELITY",
+      "name": "模板与教材原文除槽位外逐词一致（无增词/丢词）",
+      "status": "PASS",
+      "detail": "异常 0"
+    },
+    {
+      "id": "SLOT-COUNT",
+      "name": "槽位数 = 教材 '...' 数",
+      "status": "PASS",
+      "detail": "异常 0"
+    },
+    {
+      "id": "SLOT-ORDER",
+      "name": "槽位编号顺序 {1}{2}{3}",
+      "status": "PASS",
+      "detail": "异常 0"
+    },
+    {
+      "id": "SLOT-NO-SEMANTIC",
+      "name": "无语义槽位类型（仅 {n}）",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "MEANING-COUNT",
+      "name": "meaning_zh 仅 1 条（其余 NULL，未 AI 翻译）",
+      "status": "PASS",
+      "detail": "1 / 51"
+    },
+    {
+      "id": "MEANING-TRACE",
+      "name": "meaning_zh 可在教材注释原样定位（跨块 B21+B22）",
+      "status": "PASS",
+      "detail": "众所周知......,...... 不是秘密"
+    },
+    {
+      "id": "SR-COUNT",
+      "name": "source_ref = 53",
+      "status": "PASS",
+      "detail": "53"
+    },
+    {
+      "id": "SR-SURFACE",
+      "name": "来源面分布（bank/useful/note）",
+      "status": "PASS",
+      "detail": "{\"communication_bank\": 18, \"unit_useful_expression\": 34, \"language_note\": 1}"
+    },
+    {
+      "id": "SR-TRACE",
+      "name": "53/53 可追溯 content_block → page",
+      "status": "PASS",
+      "detail": "断链 0"
+    },
+    {
+      "id": "EMPH",
+      "name": "textbook_emphasis 52/52 = UNKNOWN",
+      "status": "PASS",
+      "detail": "UNKNOWN×53"
+    },
+    {
+      "id": "ROLE",
+      "name": "ref_role 全部 pattern_source",
+      "status": "PASS",
+      "detail": "53/53"
+    },
+    {
+      "id": "ATTR",
+      "name": "学习属性符合设计（CORE1/NR51 ｜ AUTO_OK1/NR51 ｜ OK52）",
+      "status": "PASS",
+      "detail": "{\"req\": {\"CORE\": 1, \"NEED_REVIEW\": 51}, \"rev\": {\"AUTO_OK\": 1, \"NEED_REVIEW\": 51}, \"cf\": {\"OK\": 52}}"
+    },
+    {
+      "id": "NO-VOCAB-INHERIT",
+      "name": "未继承 Vocabulary 字重语义（无 BOLD/PLAIN）",
+      "status": "PASS",
+      "detail": "UNKNOWN"
+    },
+    {
+      "id": "PHRASE-BD",
+      "name": "protect/along 仍为 Phrase；无 Pattern 与 Phrase 文本重合",
+      "status": "PASS",
+      "detail": "2 Phrase 保留"
+    },
+    {
+      "id": "NOT-PHRASE-LEVEL",
+      "name": "52 条均含教材槽位（非词组级 / 非完整句实例）",
+      "status": "PASS",
+      "detail": "52/52"
+    },
+    {
+      "id": "GRAMMAR-BD",
+      "name": "Grammar-only 未进入 52 条",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "NR5-BD",
+      "name": "5 条 NEED_REVIEW 未进入 52 条",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "DUP-EXACT",
+      "name": "exact duplicate = 0",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "id": "DUP-NEAR",
+      "name": "possible near duplicate（≥0.7 严格阈值 = 0；≥0.5 参考 = 6 组）",
+      "status": "PASS",
+      "detail": "仅记录，不合并"
+    },
+    {
+      "id": "INVARIANT-LI",
+      "name": "既有 Vocabulary 287 + Phrase 23 逐行不变",
+      "status": "PASS",
+      "detail": "310 行"
+    },
+    {
+      "id": "INVARIANT-SR",
+      "name": "原有 762 条 source_ref 逐行不变",
+      "status": "PASS",
+      "detail": "762"
+    },
+    {
+      "id": "OTHERTABLES",
+      "name": "其余表逐行等同（页面/结构/音频）",
+      "status": "PASS",
+      "detail": "21 表 / 21"
+    },
+    {
+      "id": "AI",
+      "name": "ai_artifact=0 ｜ transcript=0",
+      "status": "PASS",
+      "detail": "0 / 0"
+    }
+  ],
+  "checks_failed": [],
+  "exact_duplicate": 0,
+  "near_duplicate_strict_0.7": 0,
+  "near_duplicate_reference_0.5": 6,
+  "near_duplicate_pairs": [
+    [
+      0.667,
+      "We need to {1}",
+      "{1} need {2} to {3}"
+    ],
+    [
+      0.667,
+      "I like {1}",
+      "I feel like {1}"
+    ],
+    [
+      0.571,
+      "That’s a(n){1} idea!",
+      "That’s really a(n){1} lesson!"
+    ],
+    [
+      0.5,
+      "{1} is a problem for me.",
+      "{1} is a must for {2}"
+    ],
+    [
+      0.5,
+      "It is about {1}",
+      "It is a {1}"
+    ],
+    [
+      0.5,
+      "I feel {1} because {2}",
+      "I feel like {1}"
+    ]
+  ],
+  "issues": [
+    {
+      "level": "P2",
+      "id": "G1D-01",
+      "title": "低特异性骨架条目（6 条）",
+      "detail": "`It can {1}` / `It eats {1}` / `We need to {1}` / `It is a {1}` / `I like {1}` / `Look, it’s {1}` 骨架信息量低；均已 NEED_REVIEW，建议人工审核时优先复核"
+    },
+    {
+      "level": "P2",
+      "id": "G1D-02",
+      "title": "模板保留教材斜杠/括号变体（未结构化）",
+      "detail": "如 `Without plants, {1} will / won’t {2}`、`It’s amazing / clever / {1}`、`That’s a(n){1} idea!`、`Mr / Ms {1} is our {2} teacher.`；设计如此，未来用于自动出题时需二次解析规则"
+    },
+    {
+      "level": "P3",
+      "id": "G1D-03",
+      "title": "example（ref_role='example'）未落库",
+      "detail": "G1-B 已设计，G1-C 未落库（未冻结具体实例清单）；52 条身份由 pattern_source 证明，不依赖例句；建议未来受控补录"
+    },
+    {
+      "level": "P3",
+      "id": "G1D-04",
+      "title": "paired_response 未落库",
+      "detail": "Communication bank 固定应答未落库；问答关系目前只在 G1-A/G1-B 报告中；建议未来受控补录"
+    },
+    {
+      "level": "P3",
+      "id": "G1D-05",
+      "title": "meaning_zh 51 条为空",
+      "detail": "教材未给中文释义，禁止 AI 翻译；需未来人工受控补录"
+    },
+    {
+      "level": "P3",
+      "id": "G1D-06",
+      "title": "SP 的 unit/section 未建模",
+      "detail": "learning_item 无 unit/section 列；17 条 bank 来源条目在库中无 Unit 归属；v6 设计议题"
+    },
+    {
+      "level": "P3",
+      "id": "G1D-07",
+      "title": "固定句型条目的教材释义跨块",
+      "detail": "`it’s no secret that...` 的释义位于 B21+B22（例句在 B23/B25、正文实例在 pdf94），当前 source_ref 仅引用 B21；建议受控补录完整证据链"
+    }
+  ],
+  "issues_by_level": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 2,
+    "P3": 5
+  },
+  "known_notes": [
+    "G1-C 未落库 example / paired_response（已知 NOTE，非失败）",
+    "G1-A 两个 Note 保持冻结，未处理"
+  ],
+  "boundaries": {
+    "v5_modified": false,
+    "v4_modified": false,
+    "db_writes": 0,
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "zhixue_ai": false,
+    "new_files": [
+      "audit/P1-06-B1.7-G1-D_sentence_pattern_quality_audit.md",
+      "audit/P1-06-B1.7-G1-D_sentence_pattern_quality_audit.json"
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "task": "P2-1-C1 contentpack v5 词表续行修正",
+  "generated_at": "2026-09-12T20:36:15+08:00",
+  "rule_set": "P2-1-C1",
+  "v5_path": "D:\\ZhixueEnglish\\structured\\contentpack\\v5\\FLTRP-EN-7A-2022CUR.sqlite",
+  "sha256_before": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+  "sha256_after": "CBDE825882C80A09D48E86C787B63401A6DFF658D56401D5BBE661650DB42242",
+  "backup": "D:\\ZhixueEnglish\\structured\\contentpack\\v5\\FLTRP-EN-7A-2022CUR.sqlite.bak-P2-1-C1",
+  "snapshot_id": "FLTRP-EN-7A-2022CUR:S20260912T151307",
+  "import_batch": "FLTRP-EN-7A-2022CUR:S20260912T151307:B1",
+  "plan": {
+    "operations": [
+      {
+        "op": "update_item",
+        "item_id": "FLTRP-EN-7A-2022CUR:V:ECCA3970181F",
+        "canonical_text": "introduce",
+        "part_of_speech": "v",
+        "old": {
+          "meaning_zh": "介绍你自己",
+          "display_text": "introduce /ˌɪntrəˈdjuːs/ v. 介绍 9 你自己 9",
+          "surface_form": "introduce /ˌɪntrəˈdjuːs/ v. 介绍 9 你自己 9"
+        },
+        "new": {
+          "meaning_zh": "介绍",
+          "display_text": "introduce /ˌɪntrəˈdjuːs/ v. 介绍 9",
+          "surface_form": "introduce /ˌɪntrəˈdjuːs/ v. 介绍 9"
+        },
+        "drop_ref_to": "FLTRP-EN-7A-2022CUR:P155:B31"
+      },
+      {
+        "op": "update_item",
+        "item_id": "FLTRP-EN-7A-2022CUR:V:E45EFCB94E20",
+        "canonical_text": "yard",
+        "part_of_speech": "n",
+        "old": {
+          "meaning_zh": "庭院",
+          "display_text": "yard /jɑːd/ n. 庭院 89 你自己 9",
+          "surface_form": "yard /jɑːd/ n. 庭院 89 你自己 9"
+        },
+        "new": {
+          "meaning_zh": "庭院",
+          "display_text": "yard /jɑːd/ n. 庭院 89",
+          "surface_form": "yard /jɑːd/ n. 庭院 89"
+        },
+        "drop_ref_to": "FLTRP-EN-7A-2022CUR:P173:B18"
+      },
+      {
+        "op": "add_ref",
+        "item_id": "FLTRP-EN-7A-2022CUR:V:ED850341BA0E",
+        "canonical_text": "smile",
+        "refs": [
+          [
+            "SR0_1",
+            "FLTRP-EN-7A-2022CUR:P157:B15",
+            "Words and expressions"
+          ],
+          [
+            "SR1_1",
+            "FLTRP-EN-7A-2022CUR:P171:B46",
+            "Vocabulary A-Z"
+          ]
+        ]
+      }
+    ],
+    "new_item": {
+      "item_id": "FLTRP-EN-7A-2022CUR:V:4F616B250842",
+      "canonical_text": "yourself",
+      "surface_form": "yourself /jɔːˈself/ pron. (pl. yourselves) 你自己 9",
+      "display_text": "yourself /jɔːˈself/ pron. (pl. yourselves) 你自己 9",
+      "lemma": "yourself",
+      "phonetic": "/jɔːˈself/",
+      "part_of_speech": "pron",
+      "meaning_zh": "你自己",
+      "from_block": "FLTRP-EN-7A-2022CUR:P155:B30",
+      "page_ref": 9,
+      "textbook_emphasis": "BOLD",
+      "learning_requirement": "CORE",
+      "review_status": "NEED_REVIEW",
+      "requirement_conflict_status": "OK"
+    },
+    "evidence": {
+      "yourself": {
+        "we": {
+          "font_name": "FrutigerNextLTW1G-Medium",
+          "flags": 4,
+          "size": 11.9,
+          "span_bbox": [
+            275.7,
+            226.4,
+            316.6,
+            240.7
+          ],
+          "emphasis": "BOLD"
+        },
+        "az": {
+          "font_name": "FrutigerNextLTW1G-Medium",
+          "flags": 4,
+          "size": 11.9,
+          "span_bbox": [
+            275.7,
+            277.3,
+            316.6,
+            291.6
+          ],
+          "emphasis": "BOLD"
+        }
+      }
+    },
+    "smile_item_id": "FLTRP-EN-7A-2022CUR:V:ED850341BA0E"
+  },
+  "applied": {
+    "inserted_items": [
+      "FLTRP-EN-7A-2022CUR:V:4F616B250842"
+    ],
+    "updated_items": [
+      "FLTRP-EN-7A-2022CUR:V:ECCA3970181F",
+      "FLTRP-EN-7A-2022CUR:V:E45EFCB94E20"
+    ],
+    "inserted_refs": [
+      "FLTRP-EN-7A-2022CUR:V:4F616B250842:SR0_0",
+      "FLTRP-EN-7A-2022CUR:V:4F616B250842:SR0_1",
+      "FLTRP-EN-7A-2022CUR:V:4F616B250842:SR1_0",
+      "FLTRP-EN-7A-2022CUR:V:4F616B250842:SR1_1",
+      "FLTRP-EN-7A-2022CUR:V:ED850341BA0E:SR0_1",
+      "FLTRP-EN-7A-2022CUR:V:ED850341BA0E:SR1_1"
+    ],
+    "deleted_refs": [
+      "FLTRP-EN-7A-2022CUR:V:ECCA3970181F -> FLTRP-EN-7A-2022CUR:P155:B31",
+      "FLTRP-EN-7A-2022CUR:V:E45EFCB94E20 -> FLTRP-EN-7A-2022CUR:P173:B18"
+    ],
+    "import_batch": "FLTRP-EN-7A-2022CUR:S20260912T151307:B1"
+  },
+  "counts_before": {
+    "learning_item": 362,
+    "source_ref": 815,
+    "content_block": 3854,
+    "audio_asset": 54,
+    "import_batch": 5
+  },
+  "counts_after": {
+    "learning_item": 363,
+    "source_ref": 819,
+    "content_block": 3854,
+    "audio_asset": 54,
+    "import_batch": 6
+  },
+  "changed_rows": [
+    [
+      "FLTRP-EN-7A-2022CUR:V:4F616B250842",
+      "ADDED"
+    ],
+    [
+      "FLTRP-EN-7A-2022CUR:V:E45EFCB94E20",
+      "UPDATED"
+    ],
+    [
+      "FLTRP-EN-7A-2022CUR:V:ECCA3970181F",
+      "UPDATED"
+    ]
+  ],
+  "unexpected_changes": [],
+  "integrity_check": "ok",
+  "foreign_key_check": 0,
+  "pdf": "D:\\ZhixueEnglish\\2025年度初一外研版英语教材\\（根据2022年版课程标准修订）义务教育教科书·英语 七年级上册.pdf",
+  "boundaries": {
+    "schema_changed": false,
+    "pdf_modified": false,
+    "mp3_modified": false,
+    "learning_db_touched": false,
+    "ai_calls": 0
+  }
+}

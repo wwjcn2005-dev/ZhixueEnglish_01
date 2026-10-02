@@ -1,0 +1,2133 @@
+{
+ "version": "rules-v3",
+ "prompt_version": "sentence-distractor-v1",
+ "entries": {
+  "26c36bca1b88545e": {
+   "context_hash": "26c36bca1b88545e",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_READY",
+    "sentence_uid": "PREVIEW:AU01:S0005"
+   },
+   "correct_answer": "Are you ready?",
+   "distractors": [
+    {
+     "text": "Are you nervous?",
+     "confidence": 0.72,
+     "reason": "保留 Are you...? 疑问结构，用教材词汇 nervous 替换 ready，结构高度接近，听辨时易混；但语义不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:AE91EA82D493",
+       "textbook_page": 155,
+       "quote": "nervous"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "b442e9370a1781f3": {
+   "context_hash": "b442e9370a1781f3",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_READY",
+    "sentence_uid": "PREVIEW:AU03:S0063"
+   },
+   "correct_answer": "What are you going to wear tomorrow for school?",
+   "distractors": [
+    {
+     "text": "What shoes are you going to wear?",
+     "confidence": 0.9,
+     "reason": "同单元教材原句，going to wear 结构一致，容易与正确句混淆；但只问鞋子，语义不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0067",
+       "textbook_page": 10,
+       "quote": "What shoes are you going to wear?"
+      }
+     ]
+    },
+    {
+     "text": "What jacket are you going to wear tomorrow for school?",
+     "confidence": 0.62,
+     "reason": "用教材词汇 jacket 替换正确句中的 are you，保留 tomorrow for school 和 wear 结构；但问具体衣物，关键信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:237D9646D08E",
+       "textbook_page": 155,
+       "quote": "jacket"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "391579cc7492d315": {
+   "context_hash": "391579cc7492d315",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_READY",
+    "sentence_uid": "PREVIEW:AU03:S0065"
+   },
+   "correct_answer": "How about you?",
+   "distractors": [
+    {
+     "text": "What about you?",
+     "confidence": 0.82,
+     "reason": "仅将 How 替换为 What，句长和节奏一致，听辨时极易混淆；但原文是 How。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0065",
+       "textbook_page": 10,
+       "quote": "How about you?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    },
+    {
+     "text": "How are you?",
+     "confidence": 0.7,
+     "reason": "复用教材中的 How 与 are you，开头和词形与 How about you 接近；但语义是问候，不是反问对方。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0065",
+       "textbook_page": 10,
+       "quote": "How about you?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU01:S0005",
+       "textbook_page": 8,
+       "quote": "Are you ready?"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "7829aaa685370743": {
+   "context_hash": "7829aaa685370743",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_READY",
+    "sentence_uid": "PREVIEW:AU03:S0067"
+   },
+   "correct_answer": "What shoes are you going to wear?",
+   "distractors": [
+    {
+     "text": "What are you going to wear tomorrow for school?",
+     "confidence": 0.9,
+     "reason": "同单元教材原句，going to wear 结构和关键词高度重叠，容易干扰听觉判断；但问的是全部穿着而非鞋子。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0063",
+       "textbook_page": 10,
+       "quote": "What are you going to wear tomorrow for school?"
+      }
+     ]
+    },
+    {
+     "text": "What uniform are you going to wear?",
+     "confidence": 0.68,
+     "reason": "用教材词汇 uniform 替换 shoes，句子结构完全一致；但问的是制服而非鞋子，语义不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU03:S0067",
+       "textbook_page": 10,
+       "quote": "What shoes are you going to wear?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:60B467B3131A",
+       "textbook_page": 155,
+       "quote": "uniform"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "e3a4cf5a9499c114": {
+   "context_hash": "e3a4cf5a9499c114",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "KNOW_YOUR_SCHOOL",
+    "sentence_uid": "PREVIEW:AU04:S0083"
+   },
+   "correct_answer": "Let’s go around the school together!",
+   "distractors": [
+    {
+     "text": "Let’s explore the school together!",
+     "confidence": 0.72,
+     "reason": "用教材动词 explore 替换 go around，整体句式、人称和结尾一致，语义近似但关键动作不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU04:S0083",
+       "textbook_page": 11,
+       "quote": "Let’s go around the school together!"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:61227E6086D6",
+       "textbook_page": 155,
+       "quote": "explore"
+      }
+     ]
+    },
+    {
+     "text": "Let’s go around the lab together!",
+     "confidence": 0.75,
+     "reason": "仅将地点 the school 替换为 the lab，句子结构完全一致，听辨时易混；但地点不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU04:S0083",
+       "textbook_page": 11,
+       "quote": "Let’s go around the school together!"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:5DA4F16D9DDC",
+       "textbook_page": 155,
+       "quote": "lab"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "f3270dc07882854c": {
+   "context_hash": "f3270dc07882854c",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_TO_KNOW_EACH_OTHER",
+    "sentence_uid": "P3-06:AU06:1"
+   },
+   "correct_answer": "Hello everyone!",
+   "distractors": [],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "b9a649d6bd554218": {
+   "context_hash": "b9a649d6bd554218",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_TO_KNOW_EACH_OTHER",
+    "sentence_uid": "P3-06:AU06:2"
+   },
+   "correct_answer": "My name is Zhu Xiaomeng.",
+   "distractors": [
+    {
+     "text": "My birthday is in May.",
+     "confidence": 0.75,
+     "reason": "同为 My...is... 结构，自我介绍中姓名与生日信息易混。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:4",
+       "textbook_page": 15,
+       "quote": "My birthday is in May."
+      }
+     ]
+    },
+    {
+     "text": "I’m thirteen years old.",
+     "confidence": 0.72,
+     "reason": "同属自我介绍核心信息，句型长度相近，与姓名句易混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:3",
+       "textbook_page": 15,
+       "quote": "I’m thirteen years old."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "eb7be958afdbfe51": {
+   "context_hash": "eb7be958afdbfe51",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_TO_KNOW_EACH_OTHER",
+    "sentence_uid": "P3-06:AU06:3"
+   },
+   "correct_answer": "I’m thirteen years old.",
+   "distractors": [
+    {
+     "text": "My name is Zhu Xiaomeng.",
+     "confidence": 0.75,
+     "reason": "同段自我介绍中姓名句，与年龄句结构相近、信息易混。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:2",
+       "textbook_page": 15,
+       "quote": "My name is Zhu Xiaomeng."
+      }
+     ]
+    },
+    {
+     "text": "My birthday is in May.",
+     "confidence": 0.7,
+     "reason": "同为个人基本信息句，年龄与生日信息相邻、容易混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:4",
+       "textbook_page": 15,
+       "quote": "My birthday is in May."
+      }
+     ]
+    },
+    {
+     "text": "I love sports very much.",
+     "confidence": 0.65,
+     "reason": "同以 I 开头，同段自我介绍内容，与年龄信息句长度相近。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:5",
+       "textbook_page": 15,
+       "quote": "I love sports very much."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "7e31ce9986606bfd": {
+   "context_hash": "7e31ce9986606bfd",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_TO_KNOW_EACH_OTHER",
+    "sentence_uid": "P3-06:AU06:4"
+   },
+   "correct_answer": "My birthday is in May.",
+   "distractors": [
+    {
+     "text": "My name is Zhu Xiaomeng.",
+     "confidence": 0.75,
+     "reason": "My...is... 结构相同，生日与姓名信息在同一介绍语段中易混。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:2",
+       "textbook_page": 15,
+       "quote": "My name is Zhu Xiaomeng."
+      }
+     ]
+    },
+    {
+     "text": "I’m thirteen years old.",
+     "confidence": 0.7,
+     "reason": "年龄与生日紧邻表达，句子长度相近，信息点易混。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:3",
+       "textbook_page": 15,
+       "quote": "I’m thirteen years old."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "47685b5cf42ca140": {
+   "context_hash": "47685b5cf42ca140",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_TO_KNOW_EACH_OTHER",
+    "sentence_uid": "P3-06:AU06:5"
+   },
+   "correct_answer": "I love sports very much.",
+   "distractors": [
+    {
+     "text": "I like sports very much.",
+     "confidence": 0.8,
+     "reason": "将 love 替换为教材中的 like，语义相近但动词不同，听觉上易混。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:5",
+       "textbook_page": 15,
+       "quote": "I love sports very much."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:6",
+       "textbook_page": 15,
+       "quote": "I like running, playing football and swimming."
+      }
+     ]
+    },
+    {
+     "text": "I like running, playing football and swimming.",
+     "confidence": 0.7,
+     "reason": "与 sports 语义紧密相关的具体运动爱好，同段内容易混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:6",
+       "textbook_page": 15,
+       "quote": "I like running, playing football and swimming."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "deb253e9f565835b": {
+   "context_hash": "deb253e9f565835b",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_TO_KNOW_EACH_OTHER",
+    "sentence_uid": "P3-06:AU06:6"
+   },
+   "correct_answer": "I like running, playing football and swimming.",
+   "distractors": [
+    {
+     "text": "I love running, playing football and swimming.",
+     "confidence": 0.75,
+     "reason": "替换 like 为 love，语义相近但不符合原句；love 来自同篇 I love sports very much。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:5",
+       "textbook_page": 15,
+       "quote": "I love sports very much."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:6",
+       "textbook_page": 15,
+       "quote": "I like running, playing football and swimming."
+      }
+     ]
+    },
+    {
+     "text": "I like running and playing football.",
+     "confidence": 0.6,
+     "reason": "删去 swimming，保留前两项并列活动，易在听辨中忽略信息缺失。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:6",
+       "textbook_page": 15,
+       "quote": "I like running, playing football and swimming."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "1fc36af4bd6758ff": {
+   "context_hash": "1fc36af4bd6758ff",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_TO_KNOW_EACH_OTHER",
+    "sentence_uid": "P3-06:AU06:7"
+   },
+   "correct_answer": "I’m a bit nervous now, but I’m also happy to meet you.",
+   "distractors": [
+    {
+     "text": "I’m a bit nervous now, but I’m happy to meet you.",
+     "confidence": 0.7,
+     "reason": "删去 also，削弱递进语义，易在听辨中漏听。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:7",
+       "textbook_page": 15,
+       "quote": "I’m a bit nervous now, but I’m also happy to meet you."
+      }
+     ]
+    },
+    {
+     "text": "I’m a bit nervous, but I’m also happy to meet you.",
+     "confidence": 0.65,
+     "reason": "删去 now，句子结构相近，但时间信息缺失。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:7",
+       "textbook_page": 15,
+       "quote": "I’m a bit nervous now, but I’m also happy to meet you."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "23f26d6b839a5543": {
+   "context_hash": "23f26d6b839a5543",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Starter",
+    "lesson": "GET_TO_KNOW_EACH_OTHER",
+    "sentence_uid": "P3-06:AU06:8"
+   },
+   "correct_answer": "I want to make friends with you all!",
+   "distractors": [
+    {
+     "text": "I want to make friends with everyone.",
+     "confidence": 0.7,
+     "reason": "将 you all 替换为 everyone，含义接近但与原句不符。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:8",
+       "textbook_page": 15,
+       "quote": "I want to make friends with you all!"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:45B1D6F833F5",
+       "textbook_page": 155,
+       "quote": "everyone"
+      }
+     ]
+    },
+    {
+     "text": "I want to meet you all!",
+     "confidence": 0.6,
+     "reason": "将 make friends with 替换为 meet，动作信息不同但句式相近。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:7",
+       "textbook_page": 15,
+       "quote": "I’m a bit nervous now, but I’m also happy to meet you."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:8",
+       "textbook_page": 15,
+       "quote": "I want to make friends with you all!"
+      }
+     ]
+    },
+    {
+     "text": "I want to make friends with you.",
+     "confidence": 0.65,
+     "reason": "删去 all，语义范围改变，听辨时易忽略。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-06:AU06:8",
+       "textbook_page": 15,
+       "quote": "I want to make friends with you all!"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "84827af21a17f501": {
+   "context_hash": "84827af21a17f501",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "P3-07:AU11-B01"
+   },
+   "correct_answer": "The new school year is beginning.",
+   "distractors": [
+    {
+     "text": "The new school life is beginning.",
+     "confidence": 0.65,
+     "reason": "将 school year 替换为 school life，结构与句长接近，但关键信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:BC30B074EC0C",
+       "textbook_page": 156,
+       "quote": "life"
+      }
+     ]
+    },
+    {
+     "text": "The school year is beginning.",
+     "confidence": 0.6,
+     "reason": "删去 new，保留主句结构，听辨时易漏掉修饰词。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "c9acb5a6accc6328": {
+   "context_hash": "c9acb5a6accc6328",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "P3-07:AU11-B02"
+   },
+   "correct_answer": "What are the new students' problems?",
+   "distractors": [
+    {
+     "text": "What are the new students' activities?",
+     "confidence": 0.7,
+     "reason": "用同句群中的 activities 替换 problems，句式一致，信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B04",
+       "textbook_page": 27,
+       "quote": "They also have many activities."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "7e53d8856b8c6cc5": {
+   "context_hash": "7e53d8856b8c6cc5",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "P3-07:AU11-B03"
+   },
+   "correct_answer": "They have more subjects and more homework.",
+   "distractors": [
+    {
+     "text": "They have more problems and more homework.",
+     "confidence": 0.8,
+     "reason": "用 Unit 1 中的 problems 替换 subjects，保持 more...and more... 结构，听感与语义易混。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B03",
+       "textbook_page": 27,
+       "quote": "They have more subjects and more homework."
+      }
+     ]
+    },
+    {
+     "text": "They have more subjects and more activities.",
+     "confidence": 0.75,
+     "reason": "将 homework 替换为 activities，结构与原句高度一致，关键信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B03",
+       "textbook_page": 27,
+       "quote": "They have more subjects and more homework."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B04",
+       "textbook_page": 27,
+       "quote": "They also have many activities."
+      }
+     ]
+    },
+    {
+     "text": "They have many subjects and more homework.",
+     "confidence": 0.7,
+     "reason": "将 more subjects 改为 many subjects，仅前段数量表达不同，听觉上容易混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B03",
+       "textbook_page": 27,
+       "quote": "They have more subjects and more homework."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B04",
+       "textbook_page": 27,
+       "quote": "They also have many activities."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "a1b39621fc9ad519": {
+   "context_hash": "a1b39621fc9ad519",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "P3-07:AU11-B04"
+   },
+   "correct_answer": "They also have many activities.",
+   "distractors": [
+    {
+     "text": "They also have many problems.",
+     "confidence": 0.8,
+     "reason": "保持 They also have many... 结构，将 activities 替换为 problems，语义相关但错误。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B02",
+       "textbook_page": 27,
+       "quote": "What are the new students' problems?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B04",
+       "textbook_page": 27,
+       "quote": "They also have many activities."
+      }
+     ]
+    },
+    {
+     "text": "They also have more activities.",
+     "confidence": 0.75,
+     "reason": "将 many 替换为 more，与原句高度相似，仅数量表达不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B03",
+       "textbook_page": 27,
+       "quote": "They have more subjects and more homework."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B04",
+       "textbook_page": 27,
+       "quote": "They also have many activities."
+      }
+     ]
+    },
+    {
+     "text": "They also have more subjects and more homework.",
+     "confidence": 0.7,
+     "reason": "将 activities 扩展替换为 subjects and homework，结构相近但关键内容改变。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B03",
+       "textbook_page": 27,
+       "quote": "They have more subjects and more homework."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B04",
+       "textbook_page": 27,
+       "quote": "They also have many activities."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "462f298f7bb86e59": {
+   "context_hash": "462f298f7bb86e59",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "P3-07:AU11-B05"
+   },
+   "correct_answer": "How can they make good use of their time?",
+   "distractors": [
+    {
+     "text": "How do they make good use of their time?",
+     "confidence": 0.78,
+     "reason": "将 can 替换为 do，疑问句结构一致，听感接近但语法功能不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B05",
+       "textbook_page": 27,
+       "quote": "How can they make good use of their time?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-01",
+       "textbook_page": 29,
+       "quote": "Mia, how do you feel about your first day in junior high tomorrow?"
+      }
+     ]
+    },
+    {
+     "text": "How can they plan their time?",
+     "confidence": 0.72,
+     "reason": "用 plan 替换 make good use of，保留 time 与疑问句式，语义相关但非原句。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B05",
+       "textbook_page": 27,
+       "quote": "How can they make good use of their time?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:D5F30C2F0466",
+       "textbook_page": 156,
+       "quote": "plan"
+      }
+     ]
+    },
+    {
+     "text": "How can they make good use of their life?",
+     "confidence": 0.7,
+     "reason": "将 time 替换为 life，结构完全相同，关键信息改变。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B05",
+       "textbook_page": 27,
+       "quote": "How can they make good use of their time?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:BC30B074EC0C",
+       "textbook_page": 156,
+       "quote": "life"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "06d8c2bdccf8d81f": {
+   "context_hash": "06d8c2bdccf8d81f",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "P3-07:AU11-B06"
+   },
+   "correct_answer": "The Students' Union will hold a talk this Thursday to help you.",
+   "distractors": [
+    {
+     "text": "The Students' Union will plan a talk this Thursday to help you.",
+     "confidence": 0.72,
+     "reason": "将 hold 替换为 plan，保留时间与目的状语，动词变化导致语义不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B06",
+       "textbook_page": 27,
+       "quote": "The Students' Union will hold a talk this Thursday to help you."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:D5F30C2F0466",
+       "textbook_page": 156,
+       "quote": "plan"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "494438aaadc3b1a6": {
+   "context_hash": "494438aaadc3b1a6",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "P3-07:AU13-DLG-01"
+   },
+   "correct_answer": "Mia, how do you feel about your first day in junior high tomorrow?",
+   "distractors": [
+    {
+     "text": "Mia, are you ready for your first day in junior high tomorrow?",
+     "confidence": 0.75,
+     "reason": "保留 Mia 与 first day in junior high tomorrow，替换疑问结构为 Are you ready。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-01",
+       "textbook_page": 29,
+       "quote": "Mia, how do you feel about your first day in junior high tomorrow?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0279",
+       "textbook_page": 30,
+       "quote": "Are you ready for your new life?"
+      }
+     ]
+    },
+    {
+     "text": "Mia, how do you feel about your new life in junior high?",
+     "confidence": 0.7,
+     "reason": "将 first day...tomorrow 替换为 new life in junior high，语义相关但非原句。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-01",
+       "textbook_page": 29,
+       "quote": "Mia, how do you feel about your first day in junior high tomorrow?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0279",
+       "textbook_page": 30,
+       "quote": "Are you ready for your new life?"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "874bb3052fdad9b8": {
+   "context_hash": "874bb3052fdad9b8",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "P3-07:AU13-DLG-02"
+   },
+   "correct_answer": "Well, I'm a little nervous.",
+   "distractors": [
+    {
+     "text": "Well, I'm really nervous.",
+     "confidence": 0.65,
+     "reason": "替换程度副词，句子结构与原句一致，听辨时容易忽略程度差异。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-02",
+       "textbook_page": 29,
+       "quote": "Well, I'm a little nervous."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:BFD5FA410477",
+       "textbook_page": 156,
+       "quote": "really"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "4399c76c228320c3": {
+   "context_hash": "4399c76c228320c3",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "P3-07:AU13-DLG-04"
+   },
+   "correct_answer": "We've got something for you!",
+   "distractors": [
+    {
+     "text": "We've got some thoughts for you!",
+     "confidence": 0.7,
+     "reason": "替换宾语something为some thoughts，来自同课分享表达，结构不变，容易混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-04",
+       "textbook_page": 29,
+       "quote": "We've got something for you!"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-08",
+       "textbook_page": 29,
+       "quote": "We want to share some thoughts with you."
+      }
+     ]
+    },
+    {
+     "text": "We want something for you!",
+     "confidence": 0.65,
+     "reason": "替换谓语have got为want，want来自同课，句长和结构相近。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-04",
+       "textbook_page": 29,
+       "quote": "We've got something for you!"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-08",
+       "textbook_page": 29,
+       "quote": "We want to share some thoughts with you."
+      }
+     ]
+    },
+    {
+     "text": "We've got something for Mum and me!",
+     "confidence": 0.6,
+     "reason": "替换对象you为Mum and me，来自对话中相关身份，语义明显改变。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-04",
+       "textbook_page": 29,
+       "quote": "We've got something for you!"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-07",
+       "textbook_page": 29,
+       "quote": "Yes, and it's also a letter from Mum and me."
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "c1da5f1e2fc152f4": {
+   "context_hash": "c1da5f1e2fc152f4",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "P3-07:AU13-DLG-07"
+   },
+   "correct_answer": "Yes, and it's also a letter from Mum and me.",
+   "distractors": [
+    {
+     "text": "Yes, and it's also a letter from Dad and Mum.",
+     "confidence": 0.7,
+     "reason": "替换来源人物为Dad and Mum，来自同课句子，容易与Mum and me混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-07",
+       "textbook_page": 29,
+       "quote": "Yes, and it's also a letter from Mum and me."
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0282",
+       "textbook_page": 30,
+       "quote": "Dad and Mum can protect it from winds."
+      }
+     ]
+    },
+    {
+     "text": "Yes, and it's also a problem from Mum and me.",
+     "confidence": 0.6,
+     "reason": "替换核心名词letter为problem，结构不变，关键信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-07",
+       "textbook_page": 29,
+       "quote": "Yes, and it's also a letter from Mum and me."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:2F50FD129B97",
+       "textbook_page": 156,
+       "quote": "problem"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "996b23ebf674e61a": {
+   "context_hash": "996b23ebf674e61a",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "P3-07:AU13-DLG-08"
+   },
+   "correct_answer": "We want to share some thoughts with you.",
+   "distractors": [
+    {
+     "text": "We need to share some thoughts with you.",
+     "confidence": 0.7,
+     "reason": "替换want为need，need来自教材词汇，结构一致。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-08",
+       "textbook_page": 29,
+       "quote": "We want to share some thoughts with you."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:EED7618B30C9",
+       "textbook_page": 156,
+       "quote": "need"
+      }
+     ]
+    },
+    {
+     "text": "We want to share some advice with you.",
+     "confidence": 0.65,
+     "reason": "替换thoughts为advice，两个名词语义相关但不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-08",
+       "textbook_page": 29,
+       "quote": "We want to share some thoughts with you."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:B2E48136F7AC",
+       "textbook_page": 156,
+       "quote": "advice"
+      }
+     ]
+    },
+    {
+     "text": "We want to share some problems with you.",
+     "confidence": 0.6,
+     "reason": "替换thoughts为problems，结构相同，容易因熟悉problem而误选。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-DLG-08",
+       "textbook_page": 29,
+       "quote": "We want to share some thoughts with you."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:2F50FD129B97",
+       "textbook_page": 156,
+       "quote": "problem"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "1757b58765328272": {
+   "context_hash": "1757b58765328272",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "PREVIEW:AU13:S0279"
+   },
+   "correct_answer": "Are you ready for your new life?",
+   "distractors": [
+    {
+     "text": "Are you ready for your new school year?",
+     "confidence": 0.7,
+     "reason": "替换life为school year，来自同单元表达，句式完全一致。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0279",
+       "textbook_page": 30,
+       "quote": "Are you ready for your new life?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU11-B01",
+       "textbook_page": 27,
+       "quote": "The new school year is beginning."
+      }
+     ]
+    },
+    {
+     "text": "Are you ready for your new journey?",
+     "confidence": 0.6,
+     "reason": "替换life为journey，教材词汇，句长一致。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0279",
+       "textbook_page": 30,
+       "quote": "Are you ready for your new life?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:5FF4A6413FF0",
+       "textbook_page": 156,
+       "quote": "journey"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "02d95e215f601705": {
+   "context_hash": "02d95e215f601705",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "PREVIEW:AU13:S0282"
+   },
+   "correct_answer": "Dad and Mum can protect it from winds.",
+   "distractors": [
+    {
+     "text": "Dad and Mum can protect it from wind.",
+     "confidence": 0.6,
+     "reason": "将 winds 改为单数 wind，听感接近但与原句单复数不一致。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU13:S0282",
+       "textbook_page": 30,
+       "quote": "Dad and Mum can protect it from winds."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:F2D86AB26674",
+       "textbook_page": 156,
+       "quote": "wind"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "97638b72234f4098": {
+   "context_hash": "97638b72234f4098",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 1",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "P3-07:AU13-LTR-12"
+   },
+   "correct_answer": "Just try your best and work hard.",
+   "distractors": [
+    {
+     "text": "Just try your best and plan hard.",
+     "confidence": 0.62,
+     "reason": "用 plan 替换 work，保持原句结构但语义不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-LTR-12",
+       "textbook_page": 30,
+       "quote": "Just try your best and work hard."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:D5F30C2F0466",
+       "textbook_page": 156,
+       "quote": "plan"
+      }
+     ]
+    },
+    {
+     "text": "Just remember your homework and work hard.",
+     "confidence": 0.68,
+     "reason": "保留原句框架，替换中间成分为 remember your homework，结构相近但语义不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "P3-07:AU13-LTR-12",
+       "textbook_page": 30,
+       "quote": "Just try your best and work hard."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:B88C03E8B643",
+       "textbook_page": 156,
+       "quote": "remember"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:AA9F4E68C3C9",
+       "textbook_page": 156,
+       "quote": "homework"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "ade8bc08a46655e9": {
+   "context_hash": "ade8bc08a46655e9",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 2",
+    "lesson": "UNDERSTANDING_IDEAS",
+    "sentence_uid": "PREVIEW:AU14:S0294"
+   },
+   "correct_answer": "“Why don’t we put our music together?",
+   "distractors": [
+    {
+     "text": "Why don’t we put our sound together?",
+     "confidence": 0.85,
+     "reason": "用 sound 替换 music，音乐相关词汇，听感相近但语义错误。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:98A27993BFCE",
+       "textbook_page": 156,
+       "quote": "sound"
+      }
+     ]
+    },
+    {
+     "text": "Why don’t we put our band together?",
+     "confidence": 0.8,
+     "reason": "用 band 替换 music，相关概念但改变原意。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:C62FC49D6BF8",
+       "textbook_page": 156,
+       "quote": "band"
+      }
+     ]
+    },
+    {
+     "text": "Why don’t we put our guitar together?",
+     "confidence": 0.72,
+     "reason": "用 guitar 替换 music，结构一致但语义不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU14:S0294",
+       "textbook_page": 38,
+       "quote": "“Why don’t we put our music together?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:8B358F58EA25",
+       "textbook_page": 156,
+       "quote": "guitar"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "71320f0e3b28009d": {
+   "context_hash": "71320f0e3b28009d",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 2",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "PREVIEW:AU19:S0367"
+   },
+   "correct_answer": "Why do you know so much about birds?",
+   "distractors": [
+    {
+     "text": "Why do you know so much about nature?",
+     "confidence": 0.85,
+     "reason": "用 nature 替换 birds，话题相关但改变原意。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0367",
+       "textbook_page": 44,
+       "quote": "Why do you know so much about birds?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:15919D688F8D",
+       "textbook_page": 157,
+       "quote": "nature"
+      }
+     ]
+    },
+    {
+     "text": "Why do you know so much about bird-watching?",
+     "confidence": 0.75,
+     "reason": "将 birds 替换为 bird-watching，相关但含义不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0367",
+       "textbook_page": 44,
+       "quote": "Why do you know so much about birds?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0369",
+       "textbook_page": 44,
+       "quote": "What do you like about bird-watching?"
+      }
+     ]
+    },
+    {
+     "text": "What do you know so much about birds?",
+     "confidence": 0.65,
+     "reason": "将疑问词 Why 替换为 What，结构相近但提问重点改变。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0367",
+       "textbook_page": 44,
+       "quote": "Why do you know so much about birds?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0369",
+       "textbook_page": 44,
+       "quote": "What do you like about bird-watching?"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "5b4eba2bc34b59b8": {
+   "context_hash": "5b4eba2bc34b59b8",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 2",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "PREVIEW:AU19:S0369"
+   },
+   "correct_answer": "What do you like about bird-watching?",
+   "distractors": [
+    {
+     "text": "What do you like about birds?",
+     "confidence": 0.85,
+     "reason": "将 bird-watching 替换为 birds，相关但范围不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0369",
+       "textbook_page": 44,
+       "quote": "What do you like about bird-watching?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0367",
+       "textbook_page": 44,
+       "quote": "Why do you know so much about birds?"
+      }
+     ]
+    },
+    {
+     "text": "What do you know about bird-watching?",
+     "confidence": 0.7,
+     "reason": "将 like 替换为 know，谓语不同但结构相似。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0369",
+       "textbook_page": 44,
+       "quote": "What do you like about bird-watching?"
+      },
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU19:S0367",
+       "textbook_page": 44,
+       "quote": "Why do you know so much about birds?"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "268d0bcec6c02215": {
+   "context_hash": "268d0bcec6c02215",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 2",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "PREVIEW:AU20:S0425"
+   },
+   "correct_answer": "Let’s meet here on Wednesday after lunch.",
+   "distractors": [
+    {
+     "text": "Let’s meet here on Wednesday at midnight.",
+     "confidence": 0.72,
+     "reason": "替换时间状语，保留原句结构和地点，关键时间信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU20:S0425",
+       "textbook_page": 46,
+       "quote": "Let’s meet here on Wednesday after lunch."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:FADBF09D4729",
+       "textbook_page": 157,
+       "quote": "midnight"
+      }
+     ]
+    },
+    {
+     "text": "Let’s meet at the club on Wednesday after lunch.",
+     "confidence": 0.75,
+     "reason": "替换地点状语，句子结构相同，地点信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU20:S0425",
+       "textbook_page": 46,
+       "quote": "Let’s meet here on Wednesday after lunch."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:9D4BBD1A5AE2",
+       "textbook_page": 157,
+       "quote": "club"
+      }
+     ]
+    },
+    {
+     "text": "Let’s meet here on Wednesday after practice.",
+     "confidence": 0.68,
+     "reason": "替换原句末尾名词，保留 meet here on Wednesday after 的结构。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU20:S0425",
+       "textbook_page": 46,
+       "quote": "Let’s meet here on Wednesday after lunch."
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:28D70C04EDC5",
+       "textbook_page": 157,
+       "quote": "practice"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "d3288d455f5f506f": {
+   "context_hash": "d3288d455f5f506f",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 3",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "PREVIEW:AU26:S0508"
+   },
+   "correct_answer": "Can you change your clothes before you come?",
+   "distractors": [
+    {
+     "text": "Can you carry your clothes before you come?",
+     "confidence": 0.7,
+     "reason": "替换谓语动词，保留宾语和时间状语结构。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU26:S0508",
+       "textbook_page": 60,
+       "quote": "Can you change your clothes before you come?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:61E79FF7C2F9",
+       "textbook_page": 158,
+       "quote": "carry"
+      }
+     ]
+    },
+    {
+     "text": "Can you hide your clothes before you come?",
+     "confidence": 0.65,
+     "reason": "替换谓语动词，句长与句式接近，关键动作不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU26:S0508",
+       "textbook_page": 60,
+       "quote": "Can you change your clothes before you come?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:BB020F2AEF21",
+       "textbook_page": 158,
+       "quote": "hide"
+      }
+     ]
+    },
+    {
+     "text": "Can you change your clothes before you race?",
+     "confidence": 0.68,
+     "reason": "保留原句主结构，替换结尾动词，时间从句信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU26:S0508",
+       "textbook_page": 60,
+       "quote": "Can you change your clothes before you come?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:E0BF34589BFC",
+       "textbook_page": 158,
+       "quote": "race"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "60b60153c1ceeb9d": {
+   "context_hash": "60b60153c1ceeb9d",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 4",
+    "lesson": "UNDERSTANDING_IDEAS",
+    "sentence_uid": "PREVIEW:AU28:S0583"
+   },
+   "correct_answer": "How I wish to have four hands now!",
+   "distractors": [
+    {
+     "text": "How I wish to have four balloons now!",
+     "confidence": 0.72,
+     "reason": "替换原句宾语名词，保留感叹句结构和数量表达。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU28:S0583",
+       "textbook_page": 69,
+       "quote": "How I wish to have four hands now!"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:E9BDADC79B62",
+       "textbook_page": 159,
+       "quote": "balloon"
+      }
+     ]
+    },
+    {
+     "text": "How I wish to have four lanterns now!",
+     "confidence": 0.66,
+     "reason": "替换宾语名词，保留原句感叹结构。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU28:S0583",
+       "textbook_page": 69,
+       "quote": "How I wish to have four hands now!"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:4183787DAEC6",
+       "textbook_page": 159,
+       "quote": "lantern"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "3543dfc00cc44681": {
+   "context_hash": "3543dfc00cc44681",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 4",
+    "lesson": "UNDERSTANDING_IDEAS",
+    "sentence_uid": "PREVIEW:AU28:S0590"
+   },
+   "correct_answer": "“Are you joking?",
+   "distractors": [
+    {
+     "text": "Are you shocked?",
+     "confidence": 0.62,
+     "reason": "保持引语疑问句形式，替换表语，长度接近。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU28:S0590",
+       "textbook_page": 70,
+       "quote": "“Are you joking?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:DC1007846EE7",
+       "textbook_page": 159,
+       "quote": "shocked"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "b0008a7342a515e0": {
+   "context_hash": "b0008a7342a515e0",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 5",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "PREVIEW:AU41:S0821"
+   },
+   "correct_answer": "What does tea mean to you?",
+   "distractors": [
+    {
+     "text": "What does coffee mean to you?",
+     "confidence": 0.78,
+     "reason": "替换主语名词，保留原句疑问结构。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU41:S0821",
+       "textbook_page": 93,
+       "quote": "What does tea mean to you?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:47FA8CFAFE1A",
+       "textbook_page": 160,
+       "quote": "coffee"
+      }
+     ]
+    },
+    {
+     "text": "What does culture mean to you?",
+     "confidence": 0.7,
+     "reason": "替换主语名词，句长与句式一致。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU41:S0821",
+       "textbook_page": 93,
+       "quote": "What does tea mean to you?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:939C4E80768E",
+       "textbook_page": 160,
+       "quote": "culture"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "682a8bf009d8c1e3": {
+   "context_hash": "682a8bf009d8c1e3",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 6",
+    "lesson": "DEVELOPING_IDEAS",
+    "sentence_uid": "PREVIEW:AU46:S0901"
+   },
+   "correct_answer": "Do you remember your first meeting?",
+   "distractors": [
+    {
+     "text": "Do you know me?",
+     "confidence": 0.8,
+     "reason": "同单元教材原声短问句，Do you...? 结构相近，易与原句混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU47:S0946",
+       "textbook_page": 109,
+       "quote": "Do you know me?"
+      }
+     ]
+    },
+    {
+     "text": "Are you looking at me?",
+     "confidence": 0.7,
+     "reason": "同单元教材原声一般疑问句，句式相近，易在听辨时混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU47:S0945",
+       "textbook_page": 109,
+       "quote": "Are you looking at me?"
+      }
+     ]
+    },
+    {
+     "text": "Do you remember your first surprise?",
+     "confidence": 0.65,
+     "reason": "保留原句 Do you remember your first ... 结构，仅将 meeting 替换为同单元名词 surprise，长度一致，关键信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU46:S0901",
+       "textbook_page": 108,
+       "quote": "Do you remember your first meeting?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:7AEAF8B1531D",
+       "textbook_page": 161,
+       "quote": "surprise"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "f1523a53ce308f22": {
+   "context_hash": "f1523a53ce308f22",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 6",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "PREVIEW:AU47:S0945"
+   },
+   "correct_answer": "Are you looking at me?",
+   "distractors": [
+    {
+     "text": "Are you looking at the pigeon?",
+     "confidence": 0.85,
+     "reason": "保留 Are you looking at ... 句型，仅将 me 替换为同单元名词 pigeon，结构一致，听辨时容易混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU47:S0945",
+       "textbook_page": 109,
+       "quote": "Are you looking at me?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:267C8FF2848E",
+       "textbook_page": 161,
+       "quote": "pigeon"
+      }
+     ]
+    },
+    {
+     "text": "Do you know me?",
+     "confidence": 0.8,
+     "reason": "同单元教材原声短问句，句尾相同 me，整体为一般疑问句，易混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU47:S0946",
+       "textbook_page": 109,
+       "quote": "Do you know me?"
+      }
+     ]
+    },
+    {
+     "text": "Do you remember your first meeting?",
+     "confidence": 0.65,
+     "reason": "同单元教材原声疑问句，句式相近，但信息完全不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU46:S0901",
+       "textbook_page": 108,
+       "quote": "Do you remember your first meeting?"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  },
+  "0aaac81426a07af4": {
+   "context_hash": "0aaac81426a07af4",
+   "question_item": {
+    "textbook_id": "FLTRP-EN-7A-2022CUR",
+    "unit": "Unit 6",
+    "lesson": "READING_FOR_WRITING",
+    "sentence_uid": "PREVIEW:AU47:S0946"
+   },
+   "correct_answer": "Do you know me?",
+   "distractors": [
+    {
+     "text": "Do you know the pigeon?",
+     "confidence": 0.85,
+     "reason": "保留 Do you know ... 结构，仅将 me 替换为同单元名词 pigeon，句式与长度相近，关键信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU47:S0946",
+       "textbook_page": 109,
+       "quote": "Do you know me?"
+      },
+      {
+       "kind": "vocabulary",
+       "id": "FLTRP-EN-7A-2022CUR:V:267C8FF2848E",
+       "textbook_page": 161,
+       "quote": "pigeon"
+      }
+     ]
+    },
+    {
+     "text": "Are you looking at me?",
+     "confidence": 0.8,
+     "reason": "同单元教材原声一般疑问句，句尾相同 me，易在听辨时混淆。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU47:S0945",
+       "textbook_page": 109,
+       "quote": "Are you looking at me?"
+      }
+     ]
+    },
+    {
+     "text": "Do you remember your first meeting?",
+     "confidence": 0.65,
+     "reason": "同为 Do you...? 开头的同单元疑问句，结构相似，但信息不同。",
+     "origin": "ai",
+     "source_evidence": [
+      {
+       "kind": "textbook_sentence",
+       "id": "PREVIEW:AU46:S0901",
+       "textbook_page": 108,
+       "quote": "Do you remember your first meeting?"
+      }
+     ]
+    }
+   ],
+   "model": "deepseek-v4-pro",
+   "prompt_version": "sentence-distractor-v1",
+   "rules_version": "rules-v3",
+   "ai_called": true
+  }
+ }
+}

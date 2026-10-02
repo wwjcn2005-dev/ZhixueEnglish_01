@@ -1,0 +1,40 @@
+{
+ "run": "20260917_1650_evidence_insufficient",
+ "scenario": "evidence_insufficient",
+ "section": {
+  "unit": "Unit 1",
+  "section": "DEVELOPING_IDEAS",
+  "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+  "activity_no": 1,
+  "textbook_page": 21,
+  "pdf_page": 26
+ },
+ "input_context_sha256": "7A609A49EC0CBEE9298117970250CEEF4AB3CE2A7D5DA28DBFBC437AA670A88F",
+ "model": "deepseek-v4-pro",
+ "max_tokens": 8192,
+ "cloud_generation_calls": 1,
+ "local_ai_calls": 0,
+ "questions_returned": 0,
+ "database_candidate_yes": 0,
+ "database_candidate_no": 0,
+ "status": "NO_QUESTIONS",
+ "reason": "模型依据本轮提示词中的“证据不足条款”主动返回 0 题，并声明：提供的证据只有音频引用与印刷的题干/选项，没有该广播的文字稿或内容描述，因此任何依赖“广播说了什么”的题目都无法由所给教材证据可靠确定。",
+ "model_declared_reason": "The provided evidence includes only the audio reference and the printed activity instructions/options, but no transcript or content description of the radio programme. Therefore, any question whose answer depends on what the radio programme says cannot be reliably determined from the supplied textbook evidence.",
+ "interpretation_warning": "0/0 表示“无样本可判”，既不表示题目质量合格，也不表示 validator 通过；本轮 validator 未执行。",
+ "criteria_reference": {
+  "YES_requires_all": [
+   "教材定位真实存在",
+   "evidence_block_ids 真实存在",
+   "evidence_quote 命中教材原文",
+   "答案由教材证据直接或可验证地支持",
+   "无明显超纲",
+   "选项唯一且合理",
+   "无明显重复",
+   "英语表达自然",
+   "有实际学习价值",
+   "无明显模型编造"
+  ],
+  "NO_rule": "任一关键条件不满足即 NO。"
+ },
+ "items": []
+}

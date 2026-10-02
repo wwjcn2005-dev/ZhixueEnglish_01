@@ -1,0 +1,94 @@
+{
+ "step": "P4-02 教材资源 AI 补足并正式入库",
+ "generated_at": "2026-09-19T21:14:18",
+ "status": "STOPPED_PER_SECTION_16",
+ "ai_calls": 0,
+ "processed_activities": 14,
+ "supplemented_resources_written": 0,
+ "need_review_written": 0,
+ "questionbank_added": 0,
+ "stop_condition_hit": "§16 第 1 条「必须新增完全不同的 schema」；同时命中 §5「现有正式资源模型确实无法表达 AI 补足资源」",
+ "why_no_ai_call": "AI 产物当前没有合法的正式落点：调用后既不能入 questionbank（其自身完整性门禁把 AI_GENERATED 视为问题），也不能入 AI 题库（无 audio/segment 字段），更不能入被冻结的 contentpack。按 §13 成本控制与「有可靠证据就入库，没有就暂缓」，在落点确认前不产生调用。",
+ "blocker_evidence": {
+  "ai_supplemented_has_no_model": {
+   "grep": "全仓检索 AI_SUPPLEMENTED / AI_SUPPLEMENT 无任何命中（仅本任务文本提出该词）",
+   "conclusion": "项目现有 schema 中不存在 AI_SUPPLEMENTED 资源类型"
+  },
+  "contentpack_has_designed_L3_but_frozen": {
+   "tables": {
+    "ai_artifact": ["artifact_id", "artifact_kind", "target_layer", "target_id", "context_ref_ids", "content_markdown", "model", "prompt_version", "confidence", "review_status", "is_visible_to_child", "textbook_id", "snapshot_id"],
+    "transcript": ["transcript_id", "audio_id", "transcript_kind", "text_raw", "text_normalized", "language", "confidence", "provider", "model", "review_status", "textbook_id", "snapshot_id"]
+   },
+   "rows_now": {"ai_artifact": 0, "transcript": 0},
+   "blocked_by": [
+    "本次任务 §2 明确「不得修改 contentpack」",
+    "docs/AI教材习题生成与题库入库流程规范_V1.0.md §12：contentpack 对 AI 生成内容为「只读，AI 题目一律不得写入」",
+    "docs/P1-04_教材内容数据模型设计_V1.md §17：「本阶段不生成任何 transcript」",
+    "docs/P1-05-A_教材数据库构建方案_V1.md §16：首次构建禁止 AI 生成 Transcript"
+   ]
+  },
+  "ai_question_library_cannot_carry_audio_evidence": {
+   "db": "structured/ai/question_library.db（21 题 / 13 次生成记录，现行生命周期 ACTIVE 1 / PENDING_REVIEW 19 / REJECTED 1）",
+   "ai_question_audio_segment_columns": "无（只有 textbook_id / unit_id / section_id / activity_id / page）",
+   "question_evidence_columns": ["question_id", "version", "ordinal", "evidence_block_id", "evidence_quote", "is_primary"],
+   "conclusion": "§10 门禁要求 audio_id 与 segment_id 有效，该库无法表达音频/时间段证据"
+  },
+  "questionbank_rejects_ai_origin": {
+   "rule": "learning/questionbank_service.py::integrity_report：origin='AI_GENERATED' 计数 > 0 即判定为问题；test_questionbank_service 断言 by_origin['AI_GENERATED']==0",
+   "current": "1463 题，by_origin = {PROGRAM_GENERATED: 946, TEXTBOOK_NATIVE: 517}，integrity ok = true"
+  }
+ },
+ "targets": [
+  {"audio_code": "AU02", "unit_code": "Starter", "section_key": "GET_READY", "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3", "instruction": "Listen and complete the conversation with a / an or a number.", "supplement_kind": "补空类", "printed_activity_text": "有", "verified_segments": 3, "asr_evidence": "audit/P3-07_preview/asr/AU02.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU09", "unit_code": "Unit 1", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1", "instruction": "Listen to the radio. What\u2019s the biggest problem for new students?", "supplement_kind": "理解类（需完整听力文本）", "printed_activity_text": "有", "verified_segments": 2, "asr_evidence": "audit/P3-07_preview/asr/AU09.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU12", "unit_code": "Unit 1", "section_key": "DEVELOPING_IDEAS", "activity_id": null, "instruction": "Listen to the conversation and complete the table.", "supplement_kind": "补空类", "printed_activity_text": "有", "verified_segments": 7, "asr_evidence": "audit/P3-07_preview/asr/AU12.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU16", "unit_code": "Unit 2", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A1", "instruction": "Listen to the conversation. What does Wang Chen do?", "supplement_kind": "理解类（需完整听力文本）", "printed_activity_text": "有", "verified_segments": 4, "asr_evidence": "audit/P3-07_preview/asr/AU16.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU18", "unit_code": "Unit 2", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U2:DEVELOPING_IDEAS:A2", "instruction": "Listen again and order the pictures.", "supplement_kind": "排序类（顺序由音频决定）", "printed_activity_text": "有", "verified_segments": 1, "asr_evidence": "audit/P3-07_preview/asr/AU18.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU23", "unit_code": "Unit 3", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U3:DEVELOPING_IDEAS:A1", "instruction": "Listen to the family hotline. What problem does Tina have with her mother?", "supplement_kind": "理解类（需完整听力文本）", "printed_activity_text": "有", "verified_segments": 4, "asr_evidence": "audit/P3-07_preview/asr/AU23.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU30", "unit_code": "Unit 4", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A1", "instruction": "Listen to the news. What problems does Christmas bring?", "supplement_kind": "理解类（需完整听力文本）", "printed_activity_text": "有", "verified_segments": 7, "asr_evidence": "audit/P3-07_preview/asr/AU30.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU32", "unit_code": "Unit 4", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A2", "instruction": "Listen again and complete the poster. Then write F (fact) or O (opinion) in the boxes.", "supplement_kind": "补空类", "printed_activity_text": "有", "verified_segments": 6, "asr_evidence": "audit/P3-07_preview/asr/AU32.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU33", "unit_code": "Unit 4", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U4:DEVELOPING_IDEAS:A3", "instruction": "Listen to the conversation and complete the ideas. Then match the ideas to the people.", "supplement_kind": "补空类", "printed_activity_text": "有", "verified_segments": 6, "asr_evidence": "audit/P3-07_preview/asr/AU33.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU37", "unit_code": "Unit 5", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A1", "instruction": "Listen to the opening of the vlog. What is Jason talking about?", "supplement_kind": "理解类（需完整听力文本）", "printed_activity_text": "有", "verified_segments": 7, "asr_evidence": "audit/P3-07_preview/asr/AU37.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU39", "unit_code": "Unit 5", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U5:DEVELOPING_IDEAS:A2", "instruction": "Listen again and complete Jason\u2019s notes for the vlog.", "supplement_kind": "补空类", "printed_activity_text": "有", "verified_segments": 5, "asr_evidence": "audit/P3-07_preview/asr/AU39.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU40", "unit_code": "Unit 5", "section_key": "DEVELOPING_IDEAS", "activity_id": null, "instruction": "Listen to the conversation and complete the sentences.", "supplement_kind": "补空类", "printed_activity_text": "有", "verified_segments": 8, "asr_evidence": "audit/P3-07_preview/asr/AU40.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU43", "unit_code": "Unit 6", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A1", "instruction": "Listen to the radio programme. What is it about?", "supplement_kind": "理解类（需完整听力文本）", "printed_activity_text": "有", "verified_segments": 4, "asr_evidence": "audit/P3-07_preview/asr/AU43.json", "result": "STOPPED_NO_STORAGE"},
+  {"audio_code": "AU45", "unit_code": "Unit 6", "section_key": "DEVELOPING_IDEAS", "activity_id": "FLTRP-EN-7A-2022CUR:U6:DEVELOPING_IDEAS:A2", "instruction": "Listen again and complete the webpage for Bingjie.", "supplement_kind": "补空类", "printed_activity_text": "有", "verified_segments": 2, "asr_evidence": "audit/P3-07_preview/asr/AU45.json", "result": "STOPPED_NO_STORAGE"}
+ ],
+ "classification": {
+  "补空类（可用 教材印刷结构 + 官方音频 恢复挖空处）": ["AU02", "AU12", "AU32", "AU33", "AU39", "AU40", "AU45"],
+  "理解类（需先有完整听力文本，规范禁止本阶段生成 transcript）": ["AU09", "AU16", "AU23", "AU30", "AU37", "AU43"],
+  "排序类（顺序由音频决定）": ["AU18"]
+ },
+ "storage_options": [
+  {"option": "A", "target": "contentpack v5 的 L3 表（transcript kind=ASR_AI / ai_artifact）", "schema_change": "无（表已存在）", "needs": "解冻 contentpack + 修订「本阶段不生成任何 transcript」", "blocked_by": "本任务 §2 与 AI 题库规范 §12"},
+  {"option": "B", "target": "structured/ai/ 下新增 AI 资源库（如 ai_resource_v1.db）", "schema_change": "有（新增资源表）", "needs": "用户明确批准新增 schema", "blocked_by": "本任务 §5/§16 禁止自行发明第二套资源体系"},
+  {"option": "C", "target": "直接以题目形式落 questionbank（prompt=教材原挖空文本，answer=AI 补足文本，origin=AI_GENERATED，quality_status=PASS/NEED_REVIEW）", "schema_change": "无（列已存在）", "needs": "同时修订 questionbank 的 AI_GENERATED=0 门禁与 origin 词表", "blocked_by": "learning/questionbank_service.integrity_report 现规则视为问题"}
+ ],
+ "cost_estimate_if_authorized": {
+  "model_calibration": "本项目实测：理解/补空类 1 次调用 prompt≈9,451 / completion≈6,123（P0）；干扰项 5 句 1 次 prompt≈8,008 / completion≈15,509",
+  "补空类 7 个活动": {"calls": 7, "input_tokens_est": 28000, "output_tokens_est": 43000, "total_tokens_est": 71000},
+  "理解类 6 个活动（需 transcript 决策后）": {"calls": 6, "input_tokens_est": 24000, "output_tokens_est": 37000, "total_tokens_est": 61000},
+  "排序类 1 个活动": {"calls": 1, "input_tokens_est": 4000, "output_tokens_est": 6000, "total_tokens_est": 10000}
+ },
+ "invariants": {
+  "questionbank_questions": 1463,
+  "questionbank_by_origin": {"PROGRAM_GENERATED": 946, "TEXTBOOK_NATIVE": 517},
+  "questionbank_integrity_ok": true,
+  "audio_layer_status": {"VERIFIED": 47, "PARTIAL": 1, "NEED_MANUAL_CONFIRMATION": 6},
+  "audio_layer_segments": 800,
+  "ai_library_ai_question": 21,
+  "ai_library_generation_run": 13,
+  "original_mp3": 54,
+  "original_pdf": 1,
+  "sha256_prefix_16": {
+   "audio_resource_v1.json": "7c57ff5f1dc6bcab",
+   "contentpack_v5": "65829ca73e41b75a",
+   "questionbank.db": "fb5d53955eaa775d",
+   "ai_question_library.db": "2c69a2e6bccf96e4",
+   "learning.db": "65734dec4adbae4f",
+   "sentence_distractors.json": "63f3111d00618983"
+  }
+ },
+ "tests": {"learning_suite": "140 PASS / 0 FAIL / 0 SKIP", "questionbank_service": "11 PASS", "questionbank_audio_increment": "7 PASS"},
+ "files_written": ["audit/P4-02_ai_supplement_blocker_report.json"]
+}

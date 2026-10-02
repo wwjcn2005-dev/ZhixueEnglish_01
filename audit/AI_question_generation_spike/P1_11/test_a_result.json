@@ -1,0 +1,27 @@
+{
+  "stage": "P1-11",
+  "test": "A_zero_questions",
+  "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+  "ai_calls": 1,
+  "retry_count": 0,
+  "finish_reason": "stop",
+  "guard_status": "OK",
+  "latency_ms": 9489,
+  "tokens": {
+    "input": 4154,
+    "output": 499,
+    "reasoning": 434,
+    "total": 4653
+  },
+  "questions_returned": 0,
+  "insufficient_reason": "The provided evidence includes the audio reference and the multiple-choice instruction, but no transcript or text describing what the radio programme says. Any question about the content of the radio programme would require knowing what the audio says, which cannot be determined from the supplied evidence.",
+  "outcome": "SUCCESS_ZERO_QUESTIONS",
+  "generation_run_row": {
+    "run_id": "AIRUN:20260918T105435:P111_ZERO",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "insufficient_evidence": 1,
+    "question_count": 0
+  },
+  "context_sha256": "7A609A49EC0CBEE9298117970250CEEF4AB3CE2A7D5DA28DBFBC437AA670A88F",
+  "prompt_version": "P0-v1-inssufficient-scenario"
+}

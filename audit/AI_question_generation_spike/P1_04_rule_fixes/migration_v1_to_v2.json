@@ -1,0 +1,61 @@
+{
+ "migrated_at": "2026-09-17T18:45:12",
+ "user_version_before": 1,
+ "user_version_after": 2,
+ "row_counts_before": {
+  "generation_run": 1,
+  "ai_question": 2,
+  "question_evidence": 2,
+  "question_learning_object": 4,
+  "question_validation": 2,
+  "question_event": 2
+ },
+ "row_counts_after": {
+  "generation_run": 1,
+  "ai_question": 2,
+  "question_evidence": 2,
+  "question_learning_object": 4,
+  "question_validation": 2,
+  "question_event": 2
+ },
+ "row_hashes_before": {
+  "generation_run": "7B2ACF6E44BDFCD0F3DBDB417E11AC2D2EEB19A76E4907BF05661F7680893AC1",
+  "ai_question": "8C35F57F10E8A545A34FC32AA96A3F80C9AE82E55300DE80B32F45FDD98C95D6",
+  "question_evidence": "824C35DBA062921F4B2A19CD7C43FBFCB48C6D3A1DBF2CC6C99C68F9274EFEE6",
+  "question_learning_object": "3F9B8451FC7081177BF76EE2A475EC80255E63AFF8F34B2BB73EA715FDA8A856",
+  "question_validation": "59C8216FD5D19766E357C4E02D81083EA9271B6DEA77427E0F4F0F44A73B9297",
+  "question_event": "A775A2FCC52C005DB8F2BA973A9C280E179993C45EB4D90079BE3A62F6494227"
+ },
+ "row_hashes_after": {
+  "generation_run": "7B2ACF6E44BDFCD0F3DBDB417E11AC2D2EEB19A76E4907BF05661F7680893AC1",
+  "ai_question": "8C35F57F10E8A545A34FC32AA96A3F80C9AE82E55300DE80B32F45FDD98C95D6",
+  "question_evidence": "824C35DBA062921F4B2A19CD7C43FBFCB48C6D3A1DBF2CC6C99C68F9274EFEE6",
+  "question_learning_object": "3F9B8451FC7081177BF76EE2A475EC80255E63AFF8F34B2BB73EA715FDA8A856",
+  "question_validation": "59C8216FD5D19766E357C4E02D81083EA9271B6DEA77427E0F4F0F44A73B9297",
+  "question_event": "A775A2FCC52C005DB8F2BA973A9C280E179993C45EB4D90079BE3A62F6494227"
+ },
+ "event_enum_probe": {
+  "GENERATED": true,
+  "PENDING_REVIEW": true
+ },
+ "problems": [],
+ "result": "PASS",
+ "event_types_v1": [
+  "VALIDATED",
+  "REVIEW_APPROVED",
+  "REVIEW_REJECTED",
+  "ACTIVATED",
+  "DISABLED",
+  "MARKED_STALE"
+ ],
+ "event_types_v2": [
+  "GENERATED",
+  "VALIDATED",
+  "PENDING_REVIEW",
+  "REVIEW_APPROVED",
+  "REVIEW_REJECTED",
+  "ACTIVATED",
+  "DISABLED",
+  "MARKED_STALE"
+ ]
+}

@@ -1,0 +1,429 @@
+{
+ "stage": "P1-05-A",
+ "generated_at": "2026-09-17",
+ "purpose": "P1-05-B 小规模质量验证的样本矩阵（只读设计，不含任何 AI 生成）",
+ "field_definitions": {
+  "content_block_count": "该 Section 页面上所有非 footer 版式块数量（按 activity 页面归属）",
+  "evidence_package_count": "textbook_evidence_map_v1.json 中 scope.unit+section 匹配的证据包数",
+  "question_count": "exercise_question_relations_v3.json 中该 Section 的教材原题数",
+  "activity_types": "exercise_catalog_v3.json 中该 Section 练习的 type 集合",
+  "question_types": "该 Section 教材原题的 question_type 集合",
+  "audio_required": "该 Section 是否存在 audio_required=true 的教材活动",
+  "audio_evidence_available": "该 Section 的音频内容是否有文本证据（transcript / 音频句子注释）",
+  "vocabulary_count": "该 Section 全部证据包 related_vocabulary 去重后的词数",
+  "bold_vocabulary_count": "上述词中命中 contentpack CORE（加粗重点词）的词数",
+  "reading_available": "存在 type=reading 的练习，或长正文块 >= 5",
+  "dialogue_available": "直接引语块 >= 2",
+  "evidence_density": "high: blocks>=50 且 packages>=12；medium: blocks>=20 且 packages>=6；其余 low"
+ },
+ "excluded_from_quality_metrics": {
+  "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+  "label": "LISTENING_EVIDENCE_GAP",
+  "reason": "该 Section 的听力活动答案依赖音频内容，而 contentpack 的 transcript 为 0 行、audio_token_annotation 为 0 行、audio_sentence_annotation 覆盖不全。因此它只作为“宁缺毋滥”对照样本，其题量不进入质量分母。",
+  "evidence": {
+   "transcript_rows": 0,
+   "audio_token_annotation_rows": 0,
+   "audio_sentence_annotation_rows": 15
+  }
+ },
+ "selection_summary": {
+  "section_count": 7,
+  "categories": {
+   "A_READING": 2,
+   "B_DIALOGUE": 1,
+   "C_VOCABULARY": 1,
+   "D_INFO_MATCH": 1,
+   "E_LOW_EVIDENCE": 1,
+   "F_LISTENING_GAP": 1
+  },
+  "not_random": "按教材形态定向选择，覆盖阅读/对话/词汇运用/信息匹配/低证据/听力缺口六类",
+  "no_question_quota": "P1-05-B 不为任何 Section 设定题量配额；0 题也是合法结果"
+ },
+ "sections": [
+  {
+   "category": "A_READING",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U2",
+   "unit": "Unit 2",
+   "unit_title": "More than fun",
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "section_title": "Understanding ideas",
+   "activity_ids": [
+    "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A1",
+    "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A2",
+    "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A3",
+    "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A4",
+    "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A5",
+    "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A6",
+    "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A7",
+    "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS:A8"
+   ],
+   "activity_count": 8,
+   "activity_types": [
+    "grammar",
+    "other",
+    "reading",
+    "speaking",
+    "vocabulary"
+   ],
+   "question_types": [
+    "choice",
+    "fill",
+    "other",
+    "short_answer",
+    "speaking"
+   ],
+   "textbook_page_range": [
+    32,
+    36
+   ],
+   "pdf_page_range": [
+    37,
+    41
+   ],
+   "content_block_count": 83,
+   "long_body_block_count": 22,
+   "quoted_speech_block_count": 3,
+   "evidence_package_count": 21,
+   "question_count": 21,
+   "audio_required": false,
+   "audio_evidence_available": false,
+   "audio_text_annotation_count": 0,
+   "vocabulary_count": 21,
+   "bold_vocabulary_count": 19,
+   "reading_available": true,
+   "dialogue_available": true,
+   "evidence_density": "high",
+   "sample_reason": "正文证据最丰富的阅读段（83 blocks / 21 证据包 / 21 词）",
+   "expected_risk": [
+    "RICH_READING"
+   ],
+   "planned_scope_note": null
+  },
+  {
+   "category": "A_READING",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U6",
+   "unit": "Unit 6",
+   "unit_title": "Fantastic friends",
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING",
+   "section_key": "READING_FOR_WRITING",
+   "section_title": "Reading for writing",
+   "activity_ids": [
+    "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A1",
+    "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A4",
+    "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING:A5"
+   ],
+   "activity_count": 3,
+   "activity_types": [
+    "other",
+    "reading",
+    "vocabulary",
+    "writing"
+   ],
+   "question_types": [
+    "fill",
+    "short_answer",
+    "writing"
+   ],
+   "textbook_page_range": [
+    104,
+    107
+   ],
+   "pdf_page_range": [
+    109,
+    112
+   ],
+   "content_block_count": 54,
+   "long_body_block_count": 10,
+   "quoted_speech_block_count": 1,
+   "evidence_package_count": 12,
+   "question_count": 12,
+   "audio_required": false,
+   "audio_evidence_available": false,
+   "audio_text_annotation_count": 0,
+   "vocabulary_count": 16,
+   "bold_vocabulary_count": 11,
+   "reading_available": true,
+   "dialogue_available": false,
+   "evidence_density": "high",
+   "sample_reason": "读写结合阅读段（54 blocks / 12 证据包 / 16 词）",
+   "expected_risk": [
+    "RICH_READING",
+    "DISTRACTOR_RISK"
+   ],
+   "planned_scope_note": null
+  },
+  {
+   "category": "B_DIALOGUE",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+   "unit": "Unit 1",
+   "unit_title": "A new start",
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "section_title": "Understanding ideas",
+   "activity_ids": [
+    "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A3",
+    "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A4",
+    "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A5",
+    "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A6",
+    "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8"
+   ],
+   "activity_count": 6,
+   "activity_types": [
+    "grammar",
+    "reading",
+    "speaking",
+    "vocabulary"
+   ],
+   "question_types": [
+    "choice",
+    "fill",
+    "other",
+    "short_answer",
+    "speaking"
+   ],
+   "textbook_page_range": [
+    16,
+    20
+   ],
+   "pdf_page_range": [
+    21,
+    25
+   ],
+   "content_block_count": 55,
+   "long_body_block_count": 17,
+   "quoted_speech_block_count": 4,
+   "evidence_package_count": 19,
+   "question_count": 19,
+   "audio_required": false,
+   "audio_evidence_available": false,
+   "audio_text_annotation_count": 0,
+   "vocabulary_count": 14,
+   "bold_vocabulary_count": 12,
+   "reading_available": true,
+   "dialogue_available": true,
+   "evidence_density": "high",
+   "sample_reason": "含直接引语的叙事段；同时是 P1-03 的产生地，可观测跨轮重复",
+   "expected_risk": [
+    "HIGH_DUPLICATION_RISK"
+   ],
+   "planned_scope_note": null
+  },
+  {
+   "category": "C_VOCABULARY",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U5",
+   "unit": "Unit 5",
+   "unit_title": "The power of plants",
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "section_title": "Understanding ideas",
+   "activity_ids": [
+    "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A1",
+    "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A3",
+    "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A4",
+    "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A5",
+    "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A6",
+    "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A7",
+    "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS:A8"
+   ],
+   "activity_count": 7,
+   "activity_types": [
+    "grammar",
+    "other",
+    "reading",
+    "speaking",
+    "vocabulary"
+   ],
+   "question_types": [
+    "choice",
+    "fill",
+    "match",
+    "other",
+    "speaking"
+   ],
+   "textbook_page_range": [
+    80,
+    84
+   ],
+   "pdf_page_range": [
+    85,
+    89
+   ],
+   "content_block_count": 77,
+   "long_body_block_count": 13,
+   "quoted_speech_block_count": 1,
+   "evidence_package_count": 21,
+   "question_count": 21,
+   "audio_required": false,
+   "audio_evidence_available": false,
+   "audio_text_annotation_count": 0,
+   "vocabulary_count": 23,
+   "bold_vocabulary_count": 17,
+   "reading_available": true,
+   "dialogue_available": false,
+   "evidence_density": "high",
+   "sample_reason": "词汇/语言运用最密集（23 词 / 17 加粗 / 4 个 fill）",
+   "expected_risk": [
+    "VOCABULARY_SCOPE"
+   ],
+   "planned_scope_note": null
+  },
+  {
+   "category": "D_INFO_MATCH",
+   "unit_id": "FLTRP-EN-7A-2022CUR:STARTER",
+   "unit": "Starter",
+   "unit_title": "Welcome to junior high!",
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "section_key": "GET_READY",
+   "section_title": "Get ready",
+   "activity_ids": [
+    "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A1",
+    "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+    "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A4",
+    "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A5",
+    "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A7",
+    "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A8",
+    "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A9",
+    "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10"
+   ],
+   "activity_count": 8,
+   "activity_types": [
+    "listening",
+    "reading",
+    "speaking",
+    "vocabulary"
+   ],
+   "question_types": [
+    "choice",
+    "fill",
+    "match",
+    "short_answer",
+    "speaking"
+   ],
+   "textbook_page_range": [
+    3,
+    5
+   ],
+   "pdf_page_range": [
+    8,
+    10
+   ],
+   "content_block_count": 77,
+   "long_body_block_count": 12,
+   "quoted_speech_block_count": 0,
+   "evidence_package_count": 21,
+   "question_count": 21,
+   "audio_required": true,
+   "audio_evidence_available": false,
+   "audio_text_annotation_count": 0,
+   "vocabulary_count": 15,
+   "bold_vocabulary_count": 10,
+   "reading_available": true,
+   "dialogue_available": false,
+   "evidence_density": "high",
+   "sample_reason": "信息匹配/判断类（match×3、fill×2、choice×1；21 个证据包）",
+   "expected_risk": [
+    "PARTIAL_AUDIO_SCOPE",
+    "LISTENING_EVIDENCE_GAP"
+   ],
+   "planned_scope_note": "仅对该 Section 的非听力活动出题；听力活动单列 LISTENING_EVIDENCE_GAP"
+  },
+  {
+   "category": "E_LOW_EVIDENCE",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U3",
+   "unit": "Unit 3",
+   "unit_title": "Family ties",
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:STARTING_OUT",
+   "section_key": "STARTING_OUT",
+   "section_title": "Starting out",
+   "activity_ids": [
+    "FLTRP-EN-7A-2022CUR:U3:STARTING_OUT:A1"
+   ],
+   "activity_count": 1,
+   "activity_types": [
+    "other"
+   ],
+   "question_types": [
+    "short_answer"
+   ],
+   "textbook_page_range": [
+    47,
+    47
+   ],
+   "pdf_page_range": [
+    52,
+    52
+   ],
+   "content_block_count": 11,
+   "long_body_block_count": 2,
+   "quoted_speech_block_count": 1,
+   "evidence_package_count": 4,
+   "question_count": 4,
+   "audio_required": false,
+   "audio_evidence_available": false,
+   "audio_text_annotation_count": 0,
+   "vocabulary_count": 0,
+   "bold_vocabulary_count": 0,
+   "reading_available": false,
+   "dialogue_available": false,
+   "evidence_density": "low",
+   "sample_reason": "证据密度低（11 blocks / 4 证据包 / 0 加粗词）——观察是否会自然少生成",
+   "expected_risk": [
+    "LOW_EVIDENCE"
+   ],
+   "planned_scope_note": null
+  },
+  {
+   "category": "F_LISTENING_GAP",
+   "unit_id": "FLTRP-EN-7A-2022CUR:U1",
+   "unit": "Unit 1",
+   "unit_title": "A new start",
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+   "section_key": "DEVELOPING_IDEAS",
+   "section_title": "Developing ideas",
+   "activity_ids": [
+    "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+    "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+    "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A4"
+   ],
+   "activity_count": 3,
+   "activity_types": [
+    "listening",
+    "speaking"
+   ],
+   "question_types": [
+    "choice",
+    "fill",
+    "short_answer"
+   ],
+   "textbook_page_range": [
+    21,
+    23
+   ],
+   "pdf_page_range": [
+    26,
+    28
+   ],
+   "content_block_count": 62,
+   "long_body_block_count": 9,
+   "quoted_speech_block_count": 0,
+   "evidence_package_count": 14,
+   "question_count": 14,
+   "audio_required": true,
+   "audio_evidence_available": true,
+   "audio_text_annotation_count": 6,
+   "vocabulary_count": 8,
+   "bold_vocabulary_count": 8,
+   "reading_available": true,
+   "dialogue_available": false,
+   "evidence_density": "high",
+   "sample_reason": "已知听力证据缺口（transcript=0）；仅作“宁缺毋滥”对照，不计入质量指标",
+   "expected_risk": [
+    "LISTENING_EVIDENCE_GAP",
+    "PARTIAL_AUDIO_SCOPE"
+   ],
+   "planned_scope_note": "仅对该 Section 的非听力活动出题；听力活动单列 LISTENING_EVIDENCE_GAP"
+  }
+ ]
+}

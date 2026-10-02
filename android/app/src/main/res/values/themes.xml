@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 最小主题：无 ActionBar；具体视觉全部由正式 Web UI 负责（C3-A/C3-B） -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#F6F7F9</item>
+    </style>
+</resources>

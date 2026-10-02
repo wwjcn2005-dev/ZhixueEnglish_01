@@ -1,0 +1,109 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "question": "I am ___, too.",
+   "options": [],
+   "correct_option": null,
+   "answer": "ready",
+   "unit": "Starter",
+   "section": "GET_READY",
+   "page": 3,
+   "activity": 3,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P8:B16"
+   ],
+   "evidence_quote": "I am ready, too",
+   "explanation": "This fill practises the core vocabulary word 'ready' in a sentence from the conversation.",
+   "difficulty": "easy",
+   "ai_confidence": 0.9
+  },
+  {
+   "question_id": "q2",
+   "type": "fill",
+   "question": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+   "options": [],
+   "correct_option": null,
+   "answer": "eraser",
+   "unit": "Starter",
+   "section": "GET_READY",
+   "page": 3,
+   "activity": 4,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P8:B32"
+   ],
+   "evidence_quote": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler.",
+   "explanation": "This fill practises the core vocabulary word 'eraser' in a model sentence for talking about school things.",
+   "difficulty": "easy",
+   "ai_confidence": 0.9
+  },
+  {
+   "question_id": "q3",
+   "type": "fill",
+   "question": "What colour is it? It’s ___.",
+   "options": [],
+   "correct_option": null,
+   "answer": "grey",
+   "unit": "Starter",
+   "section": "GET_READY",
+   "page": 5,
+   "activity": 8,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P10:B20"
+   ],
+   "evidence_quote": "It’s grey.",
+   "explanation": "This fill practises the core vocabulary word 'grey' in the colour question-and-answer pattern from the textbook.",
+   "difficulty": "easy",
+   "ai_confidence": 0.9
+  },
+  {
+   "question_id": "q4",
+   "type": "vocab_choice",
+   "question": "Oh, don’t ___ your ...",
+   "options": [
+    "forget",
+    "wear",
+    "have",
+    "like"
+   ],
+   "correct_option": "A",
+   "answer": "forget",
+   "unit": "Starter",
+   "section": "GET_READY",
+   "page": 5,
+   "activity": 10,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P10:B12"
+   ],
+   "evidence_quote": "don’t forget your",
+   "explanation": "This choice practises the core vocabulary word 'forget' in the warning expression from the conversation.",
+   "difficulty": "easy",
+   "ai_confidence": 0.85
+  },
+  {
+   "question_id": "q5",
+   "type": "reading_choice",
+   "question": "What is Wang Tao going to wear tomorrow for school?",
+   "options": [
+    "school uniform",
+    "sports jacket",
+    "T-shirt",
+    "red scarf"
+   ],
+   "correct_option": "A",
+   "answer": "school uniform",
+   "unit": "Starter",
+   "section": "GET_READY",
+   "page": 5,
+   "activity": 10,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P10:B5"
+   ],
+   "evidence_quote": "My school uniform, of course.",
+   "explanation": "This reading question checks the key information about what Wang Tao is going to wear.",
+   "difficulty": "easy",
+   "ai_confidence": 0.9
+  }
+ ]
+}

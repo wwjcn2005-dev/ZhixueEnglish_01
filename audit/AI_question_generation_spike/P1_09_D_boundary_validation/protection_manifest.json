@@ -1,0 +1,89 @@
+{
+  "stage": "P1-09-D",
+  "manifest_before": "EA604045719475772D0703EC3D0906806044773DB0900338B5E7E3FF1E17742B",
+  "manifest_after": "EA604045719475772D0703EC3D0906806044773DB0900338B5E7E3FF1E17742B",
+  "file_count_before": 1164,
+  "file_count_after": 1164,
+  "added": [],
+  "removed": [],
+  "modified": [],
+  "changed": [],
+  "formal_assets_changed": false,
+  "pycache_changes": [],
+  "key_hashes_before": {
+    "question_library.db": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+    "learning.db": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+    "contentpack_v5": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39"
+  },
+  "key_hashes_after": {
+    "question_library.db": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+    "learning.db": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+    "contentpack_v5": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39"
+  },
+  "question_library": {
+    "row_counts_unchanged": true,
+    "events_unchanged": true,
+    "lifecycle_unchanged": true,
+    "stale_unchanged": true,
+    "sha256_unchanged": true,
+    "before": {
+      "sha256": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+      "size": 180224,
+      "row_counts": {
+        "generation_run": 12,
+        "ai_question": 21,
+        "question_evidence": 22,
+        "question_learning_object": 37,
+        "question_validation": 21,
+        "question_event": 44
+      },
+      "lifecycle": {
+        "ACTIVE": 1,
+        "PENDING_REVIEW": 19,
+        "REJECTED": 1
+      },
+      "events": {
+        "ACTIVATED": 1,
+        "MARKED_STALE": 1,
+        "PENDING_REVIEW": 19,
+        "REVIEW_APPROVED": 1,
+        "REVIEW_REJECTED": 1,
+        "VALIDATED": 21
+      },
+      "stale": 1,
+      "integrity": [
+        "ok"
+      ]
+    },
+    "after": {
+      "sha256": "7AA12CA5EB24417BF0AE7E97A8161920B501825D030D69A8E0863272AC695DA7",
+      "size": 180224,
+      "row_counts": {
+        "generation_run": 12,
+        "ai_question": 21,
+        "question_evidence": 22,
+        "question_learning_object": 37,
+        "question_validation": 21,
+        "question_event": 44
+      },
+      "lifecycle": {
+        "ACTIVE": 1,
+        "PENDING_REVIEW": 19,
+        "REJECTED": 1
+      },
+      "events": {
+        "ACTIVATED": 1,
+        "MARKED_STALE": 1,
+        "PENDING_REVIEW": 19,
+        "REVIEW_APPROVED": 1,
+        "REVIEW_REJECTED": 1,
+        "VALIDATED": 21
+      },
+      "stale": 1,
+      "integrity": [
+        "ok"
+      ]
+    }
+  },
+  "all_checks_pass": true
+}

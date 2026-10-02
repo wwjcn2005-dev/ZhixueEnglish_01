@@ -1,0 +1,429 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+  "audio_num": "AU11",
+  "filename": "11_Unit 1_Developing ideas _2 Listen again and complete the poster.mp3",
+  "duration_ms": 44147,
+  "segment_count": 8,
+  "word_count": 74,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1480,
+      "text": "Activity 2"
+    },
+    {
+      "start_ms": 2000,
+      "end_ms": 5600,
+      "text": "Listen again and complete the poster."
+    },
+    {
+      "start_ms": 6540,
+      "end_ms": 12480,
+      "text": "Welcome to Students Union Radio. The new school year is beginning."
+    },
+    {
+      "start_ms": 13460,
+      "end_ms": 17880,
+      "text": "What are the new students problems? Let's take a look."
+    },
+    {
+      "start_ms": 18920,
+      "end_ms": 26000,
+      "text": "For many students the biggest problem is they have more subjects and more homework."
+    },
+    {
+      "start_ms": 26000,
+      "end_ms": 33640,
+      "text": "They also have many activities. So how can they make good use of their time?"
+    },
+    {
+      "start_ms": 34940,
+      "end_ms": 39540,
+      "text": "The Students' Union will hold a talk this Thursday to help you."
+    },
+    {
+      "start_ms": 40320,
+      "end_ms": 41480,
+      "text": "Come and join us!"
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1000
+    },
+    {
+      "word": "2",
+      "start_ms": 1000,
+      "end_ms": 1480
+    },
+    {
+      "word": "Listen",
+      "start_ms": 2000,
+      "end_ms": 3040
+    },
+    {
+      "word": "again",
+      "start_ms": 3040,
+      "end_ms": 3520
+    },
+    {
+      "word": "and",
+      "start_ms": 3520,
+      "end_ms": 4320
+    },
+    {
+      "word": "complete",
+      "start_ms": 4320,
+      "end_ms": 4800
+    },
+    {
+      "word": "the",
+      "start_ms": 4800,
+      "end_ms": 5140
+    },
+    {
+      "word": "poster.",
+      "start_ms": 5140,
+      "end_ms": 5600
+    },
+    {
+      "word": "Welcome",
+      "start_ms": 6540,
+      "end_ms": 7500
+    },
+    {
+      "word": "to",
+      "start_ms": 7500,
+      "end_ms": 7960
+    },
+    {
+      "word": "Students",
+      "start_ms": 7960,
+      "end_ms": 8600
+    },
+    {
+      "word": "Union",
+      "start_ms": 8600,
+      "end_ms": 9260
+    },
+    {
+      "word": "Radio.",
+      "start_ms": 9260,
+      "end_ms": 9820
+    },
+    {
+      "word": "The",
+      "start_ms": 10420,
+      "end_ms": 10660
+    },
+    {
+      "word": "new",
+      "start_ms": 10660,
+      "end_ms": 10960
+    },
+    {
+      "word": "school",
+      "start_ms": 10960,
+      "end_ms": 11280
+    },
+    {
+      "word": "year",
+      "start_ms": 11280,
+      "end_ms": 11720
+    },
+    {
+      "word": "is",
+      "start_ms": 11720,
+      "end_ms": 12080
+    },
+    {
+      "word": "beginning.",
+      "start_ms": 12080,
+      "end_ms": 12480
+    },
+    {
+      "word": "What",
+      "start_ms": 13460,
+      "end_ms": 13800
+    },
+    {
+      "word": "are",
+      "start_ms": 13800,
+      "end_ms": 14200
+    },
+    {
+      "word": "the",
+      "start_ms": 14200,
+      "end_ms": 14300
+    },
+    {
+      "word": "new",
+      "start_ms": 14300,
+      "end_ms": 14660
+    },
+    {
+      "word": "students",
+      "start_ms": 14660,
+      "end_ms": 15180
+    },
+    {
+      "word": "problems?",
+      "start_ms": 15180,
+      "end_ms": 15700
+    },
+    {
+      "word": "Let's",
+      "start_ms": 16640,
+      "end_ms": 17200
+    },
+    {
+      "word": "take",
+      "start_ms": 17200,
+      "end_ms": 17460
+    },
+    {
+      "word": "a",
+      "start_ms": 17460,
+      "end_ms": 17700
+    },
+    {
+      "word": "look.",
+      "start_ms": 17700,
+      "end_ms": 17880
+    },
+    {
+      "word": "For",
+      "start_ms": 18920,
+      "end_ms": 19600
+    },
+    {
+      "word": "many",
+      "start_ms": 19600,
+      "end_ms": 19900
+    },
+    {
+      "word": "students",
+      "start_ms": 19900,
+      "end_ms": 20460
+    },
+    {
+      "word": "the",
+      "start_ms": 20460,
+      "end_ms": 21060
+    },
+    {
+      "word": "biggest",
+      "start_ms": 21060,
+      "end_ms": 21440
+    },
+    {
+      "word": "problem",
+      "start_ms": 21440,
+      "end_ms": 21900
+    },
+    {
+      "word": "is",
+      "start_ms": 21900,
+      "end_ms": 22260
+    },
+    {
+      "word": "they",
+      "start_ms": 22260,
+      "end_ms": 22900
+    },
+    {
+      "word": "have",
+      "start_ms": 22900,
+      "end_ms": 23180
+    },
+    {
+      "word": "more",
+      "start_ms": 23180,
+      "end_ms": 23560
+    },
+    {
+      "word": "subjects",
+      "start_ms": 23560,
+      "end_ms": 24200
+    },
+    {
+      "word": "and",
+      "start_ms": 24200,
+      "end_ms": 24980
+    },
+    {
+      "word": "more",
+      "start_ms": 24980,
+      "end_ms": 25440
+    },
+    {
+      "word": "homework.",
+      "start_ms": 25440,
+      "end_ms": 26000
+    },
+    {
+      "word": "They",
+      "start_ms": 26000,
+      "end_ms": 27300
+    },
+    {
+      "word": "also",
+      "start_ms": 27300,
+      "end_ms": 27720
+    },
+    {
+      "word": "have",
+      "start_ms": 27720,
+      "end_ms": 28260
+    },
+    {
+      "word": "many",
+      "start_ms": 28260,
+      "end_ms": 28720
+    },
+    {
+      "word": "activities.",
+      "start_ms": 28720,
+      "end_ms": 29360
+    },
+    {
+      "word": "So",
+      "start_ms": 30200,
+      "end_ms": 30740
+    },
+    {
+      "word": "how",
+      "start_ms": 30740,
+      "end_ms": 31320
+    },
+    {
+      "word": "can",
+      "start_ms": 31320,
+      "end_ms": 31580
+    },
+    {
+      "word": "they",
+      "start_ms": 31580,
+      "end_ms": 31760
+    },
+    {
+      "word": "make",
+      "start_ms": 31760,
+      "end_ms": 32000
+    },
+    {
+      "word": "good",
+      "start_ms": 32000,
+      "end_ms": 32320
+    },
+    {
+      "word": "use",
+      "start_ms": 32320,
+      "end_ms": 32760
+    },
+    {
+      "word": "of",
+      "start_ms": 32760,
+      "end_ms": 33040
+    },
+    {
+      "word": "their",
+      "start_ms": 33040,
+      "end_ms": 33220
+    },
+    {
+      "word": "time?",
+      "start_ms": 33220,
+      "end_ms": 33640
+    },
+    {
+      "word": "The",
+      "start_ms": 34940,
+      "end_ms": 35120
+    },
+    {
+      "word": "Students'",
+      "start_ms": 35120,
+      "end_ms": 35560
+    },
+    {
+      "word": "Union",
+      "start_ms": 35880,
+      "end_ms": 36160
+    },
+    {
+      "word": "will",
+      "start_ms": 36160,
+      "end_ms": 36660
+    },
+    {
+      "word": "hold",
+      "start_ms": 36660,
+      "end_ms": 36960
+    },
+    {
+      "word": "a",
+      "start_ms": 36960,
+      "end_ms": 37100
+    },
+    {
+      "word": "talk",
+      "start_ms": 37100,
+      "end_ms": 37480
+    },
+    {
+      "word": "this",
+      "start_ms": 37480,
+      "end_ms": 38080
+    },
+    {
+      "word": "Thursday",
+      "start_ms": 38080,
+      "end_ms": 38560
+    },
+    {
+      "word": "to",
+      "start_ms": 38560,
+      "end_ms": 39020
+    },
+    {
+      "word": "help",
+      "start_ms": 39020,
+      "end_ms": 39260
+    },
+    {
+      "word": "you.",
+      "start_ms": 39260,
+      "end_ms": 39540
+    },
+    {
+      "word": "Come",
+      "start_ms": 40320,
+      "end_ms": 40580
+    },
+    {
+      "word": "and",
+      "start_ms": 40580,
+      "end_ms": 40760
+    },
+    {
+      "word": "join",
+      "start_ms": 40760,
+      "end_ms": 41040
+    },
+    {
+      "word": "us!",
+      "start_ms": 41040,
+      "end_ms": 41480
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 5.3
+  }
+}

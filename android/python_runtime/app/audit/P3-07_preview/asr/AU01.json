@@ -1,0 +1,449 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+  "audio_num": "AU01",
+  "filename": "01_Starter_Get ready_2 Read and complete. Then listen and check.mp3",
+  "duration_ms": 60709,
+  "segment_count": 14,
+  "word_count": 72,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 7040,
+      "text": "义物教育教科書,英語,青年級上策,聽力材料"
+    },
+    {
+      "start_ms": 8720,
+      "end_ms": 9500,
+      "text": "starter"
+    },
+    {
+      "start_ms": 10320,
+      "end_ms": 13280,
+      "text": "welcome to junior high"
+    },
+    {
+      "start_ms": 13280,
+      "end_ms": 15680,
+      "text": "get ready"
+    },
+    {
+      "start_ms": 15680,
+      "end_ms": 17980,
+      "text": "activity to"
+    },
+    {
+      "start_ms": 17980,
+      "end_ms": 20440,
+      "text": "read and complete"
+    },
+    {
+      "start_ms": 21040,
+      "end_ms": 23540,
+      "text": "then listen and check"
+    },
+    {
+      "start_ms": 25120,
+      "end_ms": 31080,
+      "text": "Tomorrow is your first day of junior high school. Are you ready?"
+    },
+    {
+      "start_ms": 31920,
+      "end_ms": 32840,
+      "text": "Yes, Mum."
+    },
+    {
+      "start_ms": 33640,
+      "end_ms": 35540,
+      "text": "Where is your school bag?"
+    },
+    {
+      "start_ms": 36280,
+      "end_ms": 49220,
+      "text": "Here it is. And look at my pencil case. I have two pencils, three pens, an eraser and a ruler in it."
+    },
+    {
+      "start_ms": 49840,
+      "end_ms": 51340,
+      "text": "And your textbooks?"
+    },
+    {
+      "start_ms": 51340,
+      "end_ms": 55000,
+      "text": "books? Put them in your school bag."
+    },
+    {
+      "start_ms": 55660,
+      "end_ms": 56380,
+      "text": "Okay."
+    }
+  ],
+  "words": [
+    {
+      "word": "义物教育教科書",
+      "start_ms": 0,
+      "end_ms": 2040
+    },
+    {
+      "word": ",英語",
+      "start_ms": 2040,
+      "end_ms": 3160
+    },
+    {
+      "word": ",青年級上策",
+      "start_ms": 3160,
+      "end_ms": 5380
+    },
+    {
+      "word": ",聽力材料",
+      "start_ms": 5380,
+      "end_ms": 7040
+    },
+    {
+      "word": "starter",
+      "start_ms": 8720,
+      "end_ms": 9500
+    },
+    {
+      "word": "welcome",
+      "start_ms": 10320,
+      "end_ms": 11360
+    },
+    {
+      "word": "to",
+      "start_ms": 11360,
+      "end_ms": 12040
+    },
+    {
+      "word": "junior",
+      "start_ms": 12040,
+      "end_ms": 12600
+    },
+    {
+      "word": "high",
+      "start_ms": 12600,
+      "end_ms": 13280
+    },
+    {
+      "word": "get",
+      "start_ms": 13280,
+      "end_ms": 15040
+    },
+    {
+      "word": "ready",
+      "start_ms": 15040,
+      "end_ms": 15680
+    },
+    {
+      "word": "activity",
+      "start_ms": 15680,
+      "end_ms": 17280
+    },
+    {
+      "word": "to",
+      "start_ms": 17280,
+      "end_ms": 17980
+    },
+    {
+      "word": "read",
+      "start_ms": 17980,
+      "end_ms": 19440
+    },
+    {
+      "word": "and",
+      "start_ms": 19440,
+      "end_ms": 19920
+    },
+    {
+      "word": "complete",
+      "start_ms": 19920,
+      "end_ms": 20440
+    },
+    {
+      "word": "then",
+      "start_ms": 20960,
+      "end_ms": 21660
+    },
+    {
+      "word": "listen",
+      "start_ms": 21660,
+      "end_ms": 22160
+    },
+    {
+      "word": "and",
+      "start_ms": 22160,
+      "end_ms": 22920
+    },
+    {
+      "word": "check",
+      "start_ms": 22920,
+      "end_ms": 23540
+    },
+    {
+      "word": "Tomorrow",
+      "start_ms": 25120,
+      "end_ms": 25960
+    },
+    {
+      "word": "is",
+      "start_ms": 25960,
+      "end_ms": 26680
+    },
+    {
+      "word": "your",
+      "start_ms": 26680,
+      "end_ms": 26960
+    },
+    {
+      "word": "first",
+      "start_ms": 26960,
+      "end_ms": 27420
+    },
+    {
+      "word": "day",
+      "start_ms": 27420,
+      "end_ms": 27880
+    },
+    {
+      "word": "of",
+      "start_ms": 27880,
+      "end_ms": 28120
+    },
+    {
+      "word": "junior",
+      "start_ms": 28120,
+      "end_ms": 28500
+    },
+    {
+      "word": "high",
+      "start_ms": 28500,
+      "end_ms": 29080
+    },
+    {
+      "word": "school.",
+      "start_ms": 29080,
+      "end_ms": 29520
+    },
+    {
+      "word": "Are",
+      "start_ms": 29940,
+      "end_ms": 30520
+    },
+    {
+      "word": "you",
+      "start_ms": 30520,
+      "end_ms": 30720
+    },
+    {
+      "word": "ready?",
+      "start_ms": 30720,
+      "end_ms": 31080
+    },
+    {
+      "word": "Yes,",
+      "start_ms": 31920,
+      "end_ms": 32500
+    },
+    {
+      "word": "Mum.",
+      "start_ms": 32720,
+      "end_ms": 32840
+    },
+    {
+      "word": "Where",
+      "start_ms": 33640,
+      "end_ms": 34240
+    },
+    {
+      "word": "is",
+      "start_ms": 34240,
+      "end_ms": 34540
+    },
+    {
+      "word": "your",
+      "start_ms": 34540,
+      "end_ms": 34760
+    },
+    {
+      "word": "school",
+      "start_ms": 34760,
+      "end_ms": 35120
+    },
+    {
+      "word": "bag?",
+      "start_ms": 35120,
+      "end_ms": 35540
+    },
+    {
+      "word": "Here",
+      "start_ms": 36280,
+      "end_ms": 36740
+    },
+    {
+      "word": "it",
+      "start_ms": 36740,
+      "end_ms": 36960
+    },
+    {
+      "word": "is.",
+      "start_ms": 36960,
+      "end_ms": 37300
+    },
+    {
+      "word": "And",
+      "start_ms": 38280,
+      "end_ms": 38680
+    },
+    {
+      "word": "look",
+      "start_ms": 38680,
+      "end_ms": 38980
+    },
+    {
+      "word": "at",
+      "start_ms": 38980,
+      "end_ms": 39280
+    },
+    {
+      "word": "my",
+      "start_ms": 39280,
+      "end_ms": 39500
+    },
+    {
+      "word": "pencil",
+      "start_ms": 39500,
+      "end_ms": 40060
+    },
+    {
+      "word": "case.",
+      "start_ms": 40060,
+      "end_ms": 40520
+    },
+    {
+      "word": "I",
+      "start_ms": 41500,
+      "end_ms": 41900
+    },
+    {
+      "word": "have",
+      "start_ms": 41900,
+      "end_ms": 42260
+    },
+    {
+      "word": "two",
+      "start_ms": 42260,
+      "end_ms": 42840
+    },
+    {
+      "word": "pencils,",
+      "start_ms": 42840,
+      "end_ms": 43540
+    },
+    {
+      "word": "three",
+      "start_ms": 44380,
+      "end_ms": 44720
+    },
+    {
+      "word": "pens,",
+      "start_ms": 44720,
+      "end_ms": 45320
+    },
+    {
+      "word": "an",
+      "start_ms": 45980,
+      "end_ms": 46240
+    },
+    {
+      "word": "eraser",
+      "start_ms": 46240,
+      "end_ms": 46600
+    },
+    {
+      "word": "and",
+      "start_ms": 46600,
+      "end_ms": 47960
+    },
+    {
+      "word": "a",
+      "start_ms": 47960,
+      "end_ms": 48300
+    },
+    {
+      "word": "ruler",
+      "start_ms": 48300,
+      "end_ms": 48620
+    },
+    {
+      "word": "in",
+      "start_ms": 48620,
+      "end_ms": 48940
+    },
+    {
+      "word": "it.",
+      "start_ms": 48940,
+      "end_ms": 49220
+    },
+    {
+      "word": "And",
+      "start_ms": 49840,
+      "end_ms": 50360
+    },
+    {
+      "word": "your",
+      "start_ms": 50360,
+      "end_ms": 50700
+    },
+    {
+      "word": "textbooks?",
+      "start_ms": 50700,
+      "end_ms": 51340
+    },
+    {
+      "word": "books?",
+      "start_ms": 51340,
+      "end_ms": 51840
+    },
+    {
+      "word": "Put",
+      "start_ms": 52640,
+      "end_ms": 53440
+    },
+    {
+      "word": "them",
+      "start_ms": 53440,
+      "end_ms": 53740
+    },
+    {
+      "word": "in",
+      "start_ms": 53740,
+      "end_ms": 54020
+    },
+    {
+      "word": "your",
+      "start_ms": 54020,
+      "end_ms": 54280
+    },
+    {
+      "word": "school",
+      "start_ms": 54280,
+      "end_ms": 54580
+    },
+    {
+      "word": "bag.",
+      "start_ms": 54580,
+      "end_ms": 55000
+    },
+    {
+      "word": "Okay.",
+      "start_ms": 55660,
+      "end_ms": 56380
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 7.8
+  }
+}

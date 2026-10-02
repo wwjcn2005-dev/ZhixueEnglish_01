@@ -1,0 +1,37 @@
+{
+ "run": "P4B listening comprehension",
+ "model": "deepseek-v4-pro",
+ "prompt_version": "p4b-listening-v1",
+ "started_at": "2026-09-19T22:10:30",
+ "tasks": [
+  {
+   "audio_code": "AU25",
+   "unit": "Unit 3",
+   "segments": 8,
+   "kept": 3,
+   "dropped": [],
+   "usage": {
+    "prompt_tokens": 627,
+    "completion_tokens": 2344,
+    "total_tokens": 2971,
+    "prompt_tokens_details": {
+     "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2012
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 371
+   },
+   "elapsed_s": 31.4
+  }
+ ],
+ "calls": 1,
+ "usage_total": {
+  "prompt_tokens": 627,
+  "completion_tokens": 2344,
+  "total_tokens": 2971
+ },
+ "kept": 3,
+ "finished_at": "2026-09-19T22:11:01"
+}

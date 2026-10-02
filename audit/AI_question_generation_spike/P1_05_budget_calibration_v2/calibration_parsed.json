@@ -1,0 +1,223 @@
+{
+ "questions": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "question": "___ is coming out of my computer.",
+   "options": [],
+   "correct_option": "",
+   "answer": "Rock music",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B10"
+   ],
+   "evidence_quote": "Rock music is coming out of my computer.",
+   "explanation": "The exact textbook sentence is 'Rock music is coming out of my computer.' The blank replaces 'Rock music'.",
+   "difficulty": "easy",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q2",
+   "type": "fill",
+   "question": "They sing ___ together.",
+   "options": [],
+   "correct_option": "",
+   "answer": "Beijing opera",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "evidence_quote": "They sing Beijing opera together.",
+   "explanation": "The exact textbook sentence is 'They sing Beijing opera together.' The blank replaces 'Beijing opera'.",
+   "difficulty": "easy",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q3",
+   "type": "fill",
+   "question": "There is an art festival every ___ in my school.",
+   "options": [],
+   "correct_option": "",
+   "answer": "autumn",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "evidence_quote": "There is an art festival every autumn in my school.",
+   "explanation": "The exact textbook sentence is 'There is an art festival every autumn in my school.' The blank replaces 'autumn'.",
+   "difficulty": "easy",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q4",
+   "type": "fill",
+   "question": "It feels ___ to enjoy our hobby together.",
+   "options": [],
+   "correct_option": "",
+   "answer": "great",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B5"
+   ],
+   "evidence_quote": "It feels great to enjoy our hobby together.",
+   "explanation": "The exact textbook sentence is 'It feels great to enjoy our hobby together.' The blank replaces 'great'.",
+   "difficulty": "easy",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q5",
+   "type": "vocab_choice",
+   "question": "As a rock music lover, I play the ___ guitar in the school band.",
+   "options": [
+    "electric",
+    "different",
+    "traditional",
+    "magic"
+   ],
+   "correct_option": "A",
+   "answer": "electric",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B10"
+   ],
+   "evidence_quote": "As a rock music lover, I play the electric guitar in the school band.",
+   "explanation": "The correct word is 'electric', which fits the sentence from the passage.",
+   "difficulty": "easy",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q6",
+   "type": "vocab_choice",
+   "question": "An idea ___ hits me: “Why don’t we put our music together? I can write a song for us.”",
+   "options": [
+    "suddenly",
+    "almost",
+    "different",
+    "traditional"
+   ],
+   "correct_option": "A",
+   "answer": "suddenly",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B1"
+   ],
+   "evidence_quote": "An idea suddenly hits me: “Why don’t we put our music together? I can write a song for us.”",
+   "explanation": "The correct word is 'suddenly', which fits the sentence from the passage.",
+   "difficulty": "medium",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q7",
+   "type": "vocab_choice",
+   "question": "I ___ to take part in it with Grandpa this year.",
+   "options": [
+    "decide",
+    "enjoy",
+    "rush",
+    "nod"
+   ],
+   "correct_option": "A",
+   "answer": "decide",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "evidence_quote": "I decide to take part in it with Grandpa this year.",
+   "explanation": "The correct word is 'decide', which fits the sentence from the passage.",
+   "difficulty": "medium",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q8",
+   "type": "reading_choice",
+   "question": "Where does Grandpa like playing the erhu?",
+   "options": [
+    "In the park",
+    "In the school band",
+    "At home",
+    "Online"
+   ],
+   "correct_option": "A",
+   "answer": "In the park",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 32,
+   "activity": 1,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "evidence_quote": "He likes playing the erhu in the park with his friends.",
+   "explanation": "The passage explicitly states that Grandpa likes playing the erhu in the park with his friends.",
+   "difficulty": "easy",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q9",
+   "type": "reading_choice",
+   "question": "What do the listeners do with our music?",
+   "options": [
+    "Everybody moves",
+    "Everybody sings",
+    "Everybody dances",
+    "Everybody claps"
+   ],
+   "correct_option": "A",
+   "answer": "Everybody moves",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 33,
+   "activity": 2,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B4"
+   ],
+   "evidence_quote": "Everybody moves with our music.",
+   "explanation": "The passage explicitly states that everybody moves with their music.",
+   "difficulty": "easy",
+   "ai_confidence": 1.0
+  },
+  {
+   "question_id": "q10",
+   "type": "reading_choice",
+   "question": "What is the best main idea of the passage?",
+   "options": [
+    "Grandpa and I have different hobbies.",
+    "I write a new song for the school art festival.",
+    "Grandpa and I put our music together and have great fun."
+   ],
+   "correct_option": "C",
+   "answer": "Grandpa and I put our music together and have great fun.",
+   "unit": "Unit 2",
+   "section": "UNDERSTANDING_IDEAS",
+   "page": 34,
+   "activity": 3,
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P39:B3"
+   ],
+   "evidence_quote": "Grandpa and I put our music together and have great fun.",
+   "explanation": "The main idea stated in the textbook is that Grandpa and the narrator put their music together and have great fun.",
+   "difficulty": "medium",
+   "ai_confidence": 1.0
+  }
+ ]
+}

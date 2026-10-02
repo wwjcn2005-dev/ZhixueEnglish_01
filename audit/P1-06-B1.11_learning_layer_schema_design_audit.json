@@ -1,0 +1,294 @@
+{
+  "task": "P1-06-B1.11 第一批 Learning Layer Schema 设计审计",
+  "generated_at": "2026-09-12T15:33:02+08:00",
+  "verdict": "PASS",
+  "baseline": {
+    "v5_sha256": "FF3FD568F4DA5348DB1F9DE7D68818CBEFD6A7E36A67C68EEF7F8386F4CE452A",
+    "v5_size": 2457600,
+    "Vocabulary": 287,
+    "Phrase": 23,
+    "Sentence Pattern": 52,
+    "total_resources": 362,
+    "source_ref": 815,
+    "tables": 21,
+    "integrity": "ok",
+    "fk": 0,
+    "active_snapshot": "FLTRP-EN-7A-2022CUR:S20260912T151307"
+  },
+  "present_learning_entities": [],
+  "not_present": [
+    "learner",
+    "learning_task",
+    "task_item",
+    "learning_record",
+    "mastery_state",
+    "learning_activity",
+    "review_item",
+    "resource_goal",
+    "task_goal",
+    "question",
+    "exercise",
+    "recommendation",
+    "learning_session",
+    "attempt"
+  ],
+  "entities": {
+    "Learner": {
+      "pk": "learner_id TEXT (ULID/UUID 风格，应用生成)",
+      "must": [
+        "learner_id",
+        "display_name",
+        "created_at"
+      ],
+      "should": [
+        "status(active/inactive)",
+        "updated_at"
+      ],
+      "not_needed": [
+        "deleted_at"
+      ],
+      "forbidden": [
+        "账号/密码/角色/家长关系/掌握度"
+      ],
+      "delete": "禁止物理删除；status='inactive' 逻辑停用"
+    },
+    "LearningTask": {
+      "pk": "task_id TEXT (ULID)",
+      "must": [
+        "task_id",
+        "learner_id(FK)",
+        "task_kind",
+        "status",
+        "textbook_id",
+        "created_at"
+      ],
+      "should": [
+        "goal_id(NULL 允许)",
+        "title",
+        "started_at",
+        "completed_at"
+      ],
+      "later": [
+        "source_kind"
+      ],
+      "task_kind_enum": [
+        "learn",
+        "review"
+      ],
+      "status_enum": [
+        "active",
+        "completed",
+        "dropped"
+      ],
+      "learner_binding": "必须绑定 learner（模板任务另立 task_template，Later）",
+      "goal_binding": "goal_id 可空",
+      "delete": "无 Record 可物理删除（级联 TaskItem）；有 Record 只能 dropped"
+    },
+    "TaskItem": {
+      "pk": "PK(task_id,item_id)",
+      "must": [
+        "task_id(FK)",
+        "item_id(逻辑引用)"
+      ],
+      "should": [
+        "ordinal",
+        "created_at"
+      ],
+      "later": [
+        "item_role"
+      ],
+      "not_needed": [
+        "item_type",
+        "required",
+        "status"
+      ],
+      "pk_scheme": "方案 A（PK(task_id,item_id)）",
+      "delete": "随任务级联删除"
+    },
+    "LearningRecord": {
+      "pk": "record_id TEXT (ULID)",
+      "must": [
+        "record_id",
+        "learner_id(FK)",
+        "task_id(FK,NOT NULL)",
+        "item_id",
+        "activity_type",
+        "textbook_id",
+        "created_at"
+      ],
+      "should": [
+        "result(NULL)",
+        "response_raw(仅文本)",
+        "attempt_no",
+        "hints_used(仅数量)",
+        "snapshot_id(NULL)"
+      ],
+      "later": [
+        "activity_id(NULL)",
+        "duration_ms",
+        "record_kind/corrects_record_id"
+      ],
+      "forbidden": [
+        "mastery_level",
+        "review_due",
+        "AI 诊断正文",
+        "归一化分数",
+        "手写/音频媒体"
+      ],
+      "record_task_relation": "方案 D：record(task_id,item_id) + 未来可加 activity_id(NULL)；不建 record→task_item FK",
+      "append_only": true,
+      "delete": "禁止 UPDATE/DELETE"
+    },
+    "MasteryState": {
+      "pk": "PK(learner_id,item_id)",
+      "must": [
+        "learner_id",
+        "item_id",
+        "mastery_level",
+        "updated_at"
+      ],
+      "should": [
+        "evidence_count",
+        "correct_count",
+        "last_result",
+        "last_practiced_at",
+        "review_needed"
+      ],
+      "later": [
+        "next_review_at"
+      ],
+      "level_enum": [
+        "unknown",
+        "learning",
+        "familiar",
+        "stable"
+      ],
+      "forbidden": [
+        "教材文本副本",
+        "AI 正文",
+        "算法参数(EF/interval/streak)"
+      ],
+      "delete": "可删除（可由 Record 重建）；推荐软重置为 unknown"
+    }
+  },
+  "enums": {
+    "activity_type": [
+      "recognize",
+      "read",
+      "understand",
+      "listen",
+      "repeat",
+      "spell",
+      "substitute",
+      "produce",
+      "review"
+    ],
+    "result": [
+      "correct",
+      "incorrect",
+      "partial",
+      "done",
+      "skipped"
+    ],
+    "task_kind": [
+      "learn",
+      "review"
+    ],
+    "task_status": [
+      "active",
+      "completed",
+      "dropped"
+    ],
+    "mastery_level": [
+      "unknown",
+      "learning",
+      "familiar",
+      "stable"
+    ],
+    "learner_status": [
+      "active",
+      "inactive"
+    ]
+  },
+  "policies": {
+    "delete": true,
+    "fk": {
+      "task_to_learner": "FK",
+      "taskitem_to_task": "FK+CASCADE",
+      "taskitem_to_learning_item": "逻辑引用",
+      "record_to_learner": "FK",
+      "record_to_task": "FK(无级联)",
+      "record_to_taskitem": "无 FK（逻辑对应）",
+      "mastery_to_learner": "FK",
+      "mastery_to_learning_item": "逻辑引用"
+    },
+    "snapshot_binding": {
+      "learning_task": "textbook_id MUST",
+      "learning_record": "textbook_id MUST + snapshot_id SHOULD",
+      "taskitem": "仅 item_id",
+      "mastery": "仅 item_id"
+    },
+    "cross_db_recommendation": "学习层独立数据库（方案 B）；逻辑外键，禁止跨库 FK",
+    "indexes": {
+      "LearningTask": [
+        "PK",
+        "(learner_id,status,created_at)"
+      ],
+      "TaskItem": [
+        "PK",
+        "(item_id)"
+      ],
+      "LearningRecord": [
+        "PK",
+        "(learner_id,created_at)",
+        "(learner_id,item_id,created_at)",
+        "(task_id)"
+      ],
+      "MasteryState": [
+        "PK",
+        "(learner_id,review_needed)"
+      ]
+    },
+    "uniqueness": {
+      "learner_display_name": "不唯一",
+      "task_natural_key": "无",
+      "taskitem": "(task_id,item_id) 唯一",
+      "mastery": "(learner_id,item_id) 唯一",
+      "record_idempotency_key": "第一阶段不设"
+    },
+    "transaction": "INSERT Record + UPSERT Mastery 同事务；失败整体回滚；Record 为事实源，Mastery 可重建",
+    "ai_artifact": "无 FK；target_layer ∈ {textbook_resource, learning_task, learning_record}；可缓存、可删除、不进主链"
+  },
+  "first_batch_schema_tables": 5,
+  "migration_risk": {
+    "database": "低",
+    "textbook_compat": "低",
+    "history": "低",
+    "future_v6_v7": "中",
+    "ai_coupling": "低"
+  },
+  "final_answers": {
+    "five_entities_enough": true,
+    "activity_required_to_start": false,
+    "review_item_required": false,
+    "resource_goal_required": false,
+    "question_required": false,
+    "v5_change_required": false,
+    "ready_for_implementation_design": true
+  },
+  "boundaries": {
+    "db_changes": "NONE",
+    "code_changes": "NONE",
+    "ai": 0,
+    "ocr": 0,
+    "tts": 0,
+    "new_deps": 0,
+    "network": 0,
+    "zhixue_ai": false,
+    "v5_modified": false,
+    "new_files": [
+      "audit/P1-06-B1.11_learning_layer_schema_design_audit.md",
+      "audit/P1-06-B1.11_learning_layer_schema_design_audit.json"
+    ]
+  }
+}

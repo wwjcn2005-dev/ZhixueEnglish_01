@@ -1,0 +1,17 @@
+{
+ "request_user": "UNIT: Unit 6\nSECTION: READING_FOR_WRITING\nACTIVITY_INSTRUCTION: 47_Unit 6_Developing ideas _Reading for writing_2 Read the passage. What happened to dodos.mp3\nPASSAGE BLOCKS (id + verbatim textbook text):\n[FLTRP-EN-7A-2022CUR:P109:B1] Look at the pictures on the right and answer the questions. Use the words and expressions to help you.\n[FLTRP-EN-7A-2022CUR:P109:B3] 1\tWhere can you see these animals now?2\tWhat happened to them?3\tWhat do you think are the reasons?\n[FLTRP-EN-7A-2022CUR:P109:B0] Read the passage. What happened to dodos?2\n[FLTRP-EN-7A-2022CUR:P109:B14] 1\t Are you looking at me? Do you know me? I’m a dodo! You may think I’m just a character in Alice’s Adventures in Wonderland. Actually, there used to be thousands of us – for real. But now you can only see us in museums.\n[FLTRP-EN-7A-2022CUR:P109:B15] 2\t We lived on an island in the Indian Ocean. In the happy old days, there was plenty of food to eat. All the other animals were\n[FLTRP-EN-7A-2022CUR:P109:B16] friendly. What a peaceful and safe life!\n[FLTRP-EN-7A-2022CUR:P110:B5] 3\t However, in 1598, humans arrived. They cut down the trees and our lovely forest was gone. They hunted us because we were slow and couldn’t fly. What’s more, their pigs, cats and dogs ate our eggs. As a result, we soon died out.\n[FLTRP-EN-7A-2022CUR:P110:B6] 4\t So today we are standing in museums around the world. When you see us, please remember our sad story. The world is full of fantastic animals. Please try your best to\n[FLTRP-EN-7A-2022CUR:P110:B7] help them. Make them as happy as a clam, not as dead as a dodo.\n\nWrite 2-3 multiple-choice reading questions about this passage.",
+ "content": "{\n  \"questions\": [\n    {\n      \"stem\": \"Where can you see dodos now?\",\n      \"options\": [\n        \"In the Indian Ocean\",\n        \"Only in museums\",\n        \"In forests\",\n        \"In Alice's Adventures in Wonderland\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P109:B14\",\n      \"evidence_quote\": \"But now you can only see us in museums.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"Why did dodos die out?\",\n      \"options\": [\n        \"Because humans hunted them and their animals ate their eggs\",\n        \"Because they had no food to eat\",\n        \"Because there were too many dodos\",\n        \"Because they flew too much\"\n      ],\n      \"answer_index\": 0,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P110:B5\",\n      \"evidence_quote\": \"They cut down the trees and our lovely forest was gone. They hunted us because we were slow and couldn’t fly. What’s more, their pigs, cats and dogs ate our eggs.\",\n      \"skill\": \"detail\"\n    },\n    {\n      \"stem\": \"What does the author ask people to do?\",\n      \"options\": [\n        \"Visit museums more often\",\n        \"Help animals\",\n        \"Read Alice's Adventures in Wonderland\",\n        \"Keep dodos as pets\"\n      ],\n      \"answer_index\": 1,\n      \"evidence_block_id\": \"FLTRP-EN-7A-2022CUR:P110:B7\",\n      \"evidence_quote\": \"help them. Make them as happy as a clam, not as dead as a dodo.\",\n      \"skill\": \"simple gist\"\n    }\n  ]\n}",
+ "usage": {
+  "prompt_tokens": 828,
+  "completion_tokens": 3635,
+  "total_tokens": 4463,
+  "prompt_tokens_details": {
+   "cached_tokens": 256
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 3239
+  },
+  "prompt_cache_hit_tokens": 256,
+  "prompt_cache_miss_tokens": 572
+ }
+}

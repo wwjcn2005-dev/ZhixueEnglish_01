@@ -1,0 +1,73 @@
+{
+ "input": {
+  "context": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\20260917_1450_deepseek_min3\\input_context.json",
+  "questions": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\20260917_1450_deepseek_min3\\generated_questions.json",
+  "questions_unchanged": true
+ },
+ "ai_calls": 0,
+ "returned": 3,
+ "pass": 3,
+ "fail": 0,
+ "answer_support_types": {
+  "q1": "EXACT",
+  "q2": "EXACT",
+  "q3": "VERIFIABLE_REFERENCE"
+ },
+ "whitelist_size": 280,
+ "rows": [
+  {
+   "question_id": "q1",
+   "type": "fill",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT",
+   "out_of_scope_tokens": [],
+   "pass": true,
+   "database_candidate_program": "YES"
+  },
+  {
+   "question_id": "q2",
+   "type": "vocab_choice",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT",
+   "out_of_scope_tokens": [],
+   "pass": true,
+   "database_candidate_program": "YES"
+  },
+  {
+   "question_id": "q3",
+   "type": "reading_choice",
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "VERIFIABLE_REFERENCE",
+   "out_of_scope_tokens": [],
+   "pass": true,
+   "database_candidate_program": "YES"
+  }
+ ]
+}

@@ -1,0 +1,210 @@
+{
+ "stage": "P1-05-B",
+ "final_status": "VALIDATION_BLOCKED",
+ "blocker": "输出预算截断（finish_reason=length）：6/6 已执行 Section 生成 0 题",
+ "root_cause": "P1-05-v1 删除了题量上限，模型在 reasoning 阶段不再有收敛压力；在 prompt 7.7k–10.6k tokens 的上下文下，reasoning 用满 max_tokens=8192，content 为空。这与 P0 1610 的失败机理相同，但触发条件是“去配额”，说明 P1-05-A 冻结的 max_tokens=8192 与去配额提示词在预算上不自洽。",
+ "executed_sections": 6,
+ "planned_sections": 7,
+ "stopped_by": "P1-05-B §二（发现机制问题即停止并报告）",
+ "s1_s8_literal_triggers": [],
+ "stop_rationale": "S1–S8 无一条被字面触发（无入库题、无超时、无保护项变更）；停止依据是 §二『发现机制问题：停止并报告，不得现场修机制继续跑』。继续执行只会以真实成本重复得到同样的空结果。",
+ "sections": [
+  {
+   "index": 1,
+   "section_id": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+   "unit": "Unit 2",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "category": "A_READING",
+   "evidence_density": "high",
+   "content_block_count": 83,
+   "evidence_package_count": 21,
+   "run_id": "AIRUN:20260917T1930:P105_1",
+   "run_status": "TRUNCATED",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "counts_toward_quality_metrics": true,
+   "note": ""
+  },
+  {
+   "index": 2,
+   "section_id": "FLTRP-EN-7A-2022CUR:U6:READING_FOR_WRITING",
+   "unit": "Unit 6",
+   "section_key": "READING_FOR_WRITING",
+   "category": "A_READING",
+   "evidence_density": "high",
+   "content_block_count": 54,
+   "evidence_package_count": 12,
+   "run_id": "AIRUN:20260917T1930:P105_2",
+   "run_status": "TRUNCATED",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "counts_toward_quality_metrics": true,
+   "note": ""
+  },
+  {
+   "index": 3,
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS",
+   "unit": "Unit 1",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "category": "B_DIALOGUE",
+   "evidence_density": "high",
+   "content_block_count": 55,
+   "evidence_package_count": 19,
+   "run_id": "AIRUN:20260917T1930:P105_3",
+   "run_status": "TRUNCATED",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "counts_toward_quality_metrics": true,
+   "note": ""
+  },
+  {
+   "index": 4,
+   "section_id": "FLTRP-EN-7A-2022CUR:U5:UNDERSTANDING_IDEAS",
+   "unit": "Unit 5",
+   "section_key": "UNDERSTANDING_IDEAS",
+   "category": "C_VOCABULARY",
+   "evidence_density": "high",
+   "content_block_count": 77,
+   "evidence_package_count": 21,
+   "run_id": "AIRUN:20260917T1930:P105_4",
+   "run_status": "TRUNCATED",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "counts_toward_quality_metrics": true,
+   "note": ""
+  },
+  {
+   "index": 5,
+   "section_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY",
+   "unit": "Starter",
+   "section_key": "GET_READY",
+   "category": "D_INFO_MATCH",
+   "evidence_density": "high",
+   "content_block_count": 77,
+   "evidence_package_count": 21,
+   "run_id": "AIRUN:20260917T1930:P105_5",
+   "run_status": "TRUNCATED",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "counts_toward_quality_metrics": true,
+   "note": ""
+  },
+  {
+   "index": 6,
+   "section_id": "FLTRP-EN-7A-2022CUR:U3:STARTING_OUT",
+   "unit": "Unit 3",
+   "section_key": "STARTING_OUT",
+   "category": "E_LOW_EVIDENCE",
+   "evidence_density": "low",
+   "content_block_count": 11,
+   "evidence_package_count": 4,
+   "run_id": "AIRUN:20260917T1930:P105_6",
+   "run_status": "TRUNCATED",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "counts_toward_quality_metrics": true,
+   "note": ""
+  },
+  {
+   "index": 7,
+   "section_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+   "unit": "Unit 1",
+   "section_key": "DEVELOPING_IDEAS",
+   "category": "F_LISTENING_GAP",
+   "evidence_density": "high",
+   "content_block_count": 62,
+   "evidence_package_count": 14,
+   "run_id": "AIRUN:20260917T1930:P105_7",
+   "run_status": "API_ERROR",
+   "generated": 0,
+   "entered": 0,
+   "pass": 0,
+   "fail": 0,
+   "counts_toward_quality_metrics": false,
+   "note": "控制样本：LISTENING_EVIDENCE_GAP，不计入质量分母"
+  }
+ ],
+ "counts": {
+  "generated_count": 0,
+  "validated_pass_count": 0,
+  "validated_fail_count": 0,
+  "evidence_pass_rate": null,
+  "APPROVE": 0,
+  "REJECT_CONTENT": 0,
+  "REJECT_QUALITY": 0,
+  "REJECT_SCOPE": 0,
+  "natural_value_rate": null
+ },
+ "validator_interception": {
+  "vocabulary_scope": 0,
+  "evidence": 0,
+  "answer_support": 0,
+  "duplicate": 0,
+  "structure": 0,
+  "option_consistency": 0,
+  "other": 0,
+  "note": "validator 没有可拦截的对象——不是“拦截率为 0”，而是“没有内容进入 validator”。"
+ },
+ "acceptance": {
+  "A_reject_content_zero": {
+   "pass": null,
+   "note": "0 道入库题 → 条件空转成立但没有验证力"
+  },
+  "B_natural_zero_question": {
+   "pass": false,
+   "note": "0 题来自技术截断，§二十一明确排除“技术失败导致的 0 题”"
+  },
+  "C_natural_value_rate": {
+   "pass": false,
+   "note": "N/A（0/0），且 APPROVE 0 < 5"
+  },
+  "D_distribution": {
+   "pass": false,
+   "note": "分布为常数 0，无法与证据密度关联"
+  },
+  "E_cost_latency": {
+   "pass": true,
+   "note": "单次 118.5–128.7 s（≤180）；总 12.6 min（≤30）；无 API 层失败"
+  },
+  "F_no_stop_condition": {
+   "pass": null,
+   "note": "S1–S8 均未字面触发；实验因 §二 机制问题条款主动停止"
+  },
+  "overall": "NOT_PASS"
+ },
+ "existing_library_untouched": {
+  "questions_before": 2,
+  "questions_after": 2,
+  "unchanged": true,
+  "ids": [
+   "AIQ:3179968E3E74",
+   "AIQ:7EBCDBC29563"
+  ]
+ },
+ "protection": {
+  "learning_db_sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+  "contentpack_sha256": "65829CA73E41B75ACA010B93B7339EDDF0F666F919148F0F69ED898419700C39",
+  "validator_v2_sha256": "7C61585A99B55576CA82D9946635784964322236BA145A23FBDFA2A1F8DCA683",
+  "validator_v3_sha256": "EDB1AA5431626752B6D4699EC25ADAC76B10996ABFEC2EA43BDF4CAEB28D900C",
+  "all_unchanged": true
+ },
+ "ai_calls": {
+  "completed": 6,
+  "aborted": 1,
+  "retries": 0,
+  "model": "deepseek-v4-pro",
+  "local_models": 0
+ }
+}

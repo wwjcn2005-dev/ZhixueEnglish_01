@@ -1,0 +1,469 @@
+{
+ "stage": "P1-05-E",
+ "mode": "read_only_manual_review",
+ "ai_calls": 0,
+ "source": {
+  "parsed": "D:\\ZhixueEnglish\\audit\\AI_question_generation_spike\\P1_05_budget_calibration_v2\\calibration_parsed.json",
+  "parsed_sha256": "C5E0D452BA0C70E65B52FF818CB70AC7CEDCAC401D34C59278139D6E1B1FD174",
+  "section": "FLTRP-EN-7A-2022CUR:U2:UNDERSTANDING_IDEAS",
+  "generated_by": "P1-05-D 单次预算校准（max_tokens=16384, reasoning_effort=low）"
+ },
+ "dimension_legend": {
+  "basis": "教材依据是否能在现有教材证据中明确找到",
+  "english": "英语正确性（语法/时态/单复数/搭配/自然度）",
+  "answer": "答案是否确实由教材材料支持",
+  "unique": "是否存在两个或以上合理答案",
+  "value": "HIGH/MEDIUM/LOW：这道题值不值得初一学生花时间做",
+  "distractor": "仅选择题：GOOD/ACCEPTABLE/POOR",
+  "out_of_evidence": "是否引入教材未提供的事实/人物/事件/知识",
+  "dup": "NONE/LOW/MEDIUM/HIGH：与同批其它题是否实质重复",
+  "category": "A 基本复现教材 / B 合理重新组合 / C 明显机械改写 / D 教材依据不足"
+ },
+ "reviews": [
+  {
+   "n": 1,
+   "type": "fill",
+   "page": 32,
+   "activity": 1,
+   "block": "FLTRP-EN-7A-2022CUR:P37:B10",
+   "quote": "Rock music is coming out of my computer.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "FAIL",
+   "value": "LOW",
+   "distractor": null,
+   "out_of_evidence": false,
+   "dup": "MEDIUM",
+   "category": "A_DIRECT_REPRODUCTION",
+   "value_note": "教材原句挖去主语，属机械复原；除记住原句外几乎没有学习增量。",
+   "unique_note": "未说明“根据课文原文”，纯语言层面 Music / The music 同样成立。",
+   "dup_note": "与 Q5 同用 block B10。",
+   "question_text": "___ is coming out of my computer.",
+   "options": [],
+   "correct_answer": "Rock music",
+   "correct_option": "",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B10"
+   ],
+   "evidence_quote_model": "Rock music is coming out of my computer.",
+   "difficulty": "easy"
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "page": 32,
+   "activity": 1,
+   "block": "FLTRP-EN-7A-2022CUR:P37:B12",
+   "quote": "They sing Beijing opera together.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "FAIL",
+   "value": "LOW",
+   "distractor": null,
+   "out_of_evidence": false,
+   "dup": "MEDIUM",
+   "category": "A_DIRECT_REPRODUCTION",
+   "value_note": "同上，属于原句复原；Beijing opera 是文化词，但题目只考回忆原句。",
+   "unique_note": "They sing songs / music together 同样成立。",
+   "dup_note": "与 Q8 同用 block B12。",
+   "question_text": "They sing ___ together.",
+   "options": [],
+   "correct_answer": "Beijing opera",
+   "correct_option": "",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "evidence_quote_model": "They sing Beijing opera together.",
+   "difficulty": "easy"
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "page": 33,
+   "activity": 2,
+   "block": "FLTRP-EN-7A-2022CUR:P38:B3",
+   "quote": "There is an art festival every autumn in my school.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "FAIL",
+   "value": "LOW",
+   "distractor": null,
+   "out_of_evidence": false,
+   "dup": "MEDIUM",
+   "category": "A_DIRECT_REPRODUCTION",
+   "value_note": "原句挖空，机械复原。",
+   "unique_note": "every year / every term 同样成立，答案在语言层面不唯一。",
+   "dup_note": "与 Q7 同用 block B3。",
+   "question_text": "There is an art festival every ___ in my school.",
+   "options": [],
+   "correct_answer": "autumn",
+   "correct_option": "",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "evidence_quote_model": "There is an art festival every autumn in my school.",
+   "difficulty": "easy"
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "page": 33,
+   "activity": 2,
+   "block": "FLTRP-EN-7A-2022CUR:P38:B5",
+   "quote": "It feels great to enjoy our hobby together.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "FAIL",
+   "value": "LOW",
+   "distractor": null,
+   "out_of_evidence": false,
+   "dup": "NONE",
+   "category": "A_DIRECT_REPRODUCTION",
+   "value_note": "原句挖空；虽为主题句，但题目只是复原。",
+   "unique_note": "good / nice / wonderful 均成立，答案不唯一。",
+   "dup_note": "本句未被其它题复用。",
+   "question_text": "It feels ___ to enjoy our hobby together.",
+   "options": [],
+   "correct_answer": "great",
+   "correct_option": "",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B5"
+   ],
+   "evidence_quote_model": "It feels great to enjoy our hobby together.",
+   "difficulty": "easy"
+  },
+  {
+   "n": 5,
+   "type": "vocab_choice",
+   "page": 32,
+   "activity": 1,
+   "block": "FLTRP-EN-7A-2022CUR:P37:B10",
+   "quote": "As a rock music lover, I play the electric guitar in the school band.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "PASS",
+   "value": "MEDIUM",
+   "distractor": "ACCEPTABLE",
+   "out_of_evidence": false,
+   "dup": "MEDIUM",
+   "category": "B_RECOMBINED",
+   "value_note": "考形容词+名词搭配 electric guitar；该 Section 教材没有词汇选择题，属新增练习角度。",
+   "unique_note": "只有 electric 构成自然搭配。",
+   "distractor_note": "四个选项均取自本单元词表，但 different / traditional / magic guitar 都不自然，较易排除。",
+   "dup_note": "题干与 Q1 同句（B10），考查点不同（主语 vs 搭配）。",
+   "question_text": "As a rock music lover, I play the ___ guitar in the school band.",
+   "options": [
+    "electric",
+    "different",
+    "traditional",
+    "magic"
+   ],
+   "correct_answer": "electric",
+   "correct_option": "A",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B10"
+   ],
+   "evidence_quote_model": "As a rock music lover, I play the electric guitar in the school band.",
+   "difficulty": "easy"
+  },
+  {
+   "n": 6,
+   "type": "vocab_choice",
+   "page": 33,
+   "activity": 2,
+   "block": "FLTRP-EN-7A-2022CUR:P38:B1",
+   "quote": "An idea suddenly hits me: “Why don’t we put our music together? I can write a song for us.”",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "PASS",
+   "value": "MEDIUM",
+   "distractor": "ACCEPTABLE",
+   "out_of_evidence": false,
+   "dup": "NONE",
+   "category": "B_RECOMBINED",
+   "value_note": "考 an idea suddenly hits me 这一固定表达；教材 Think and share 也正好解释该短语。",
+   "unique_note": "只有 suddenly 合理。",
+   "distractor_note": "almost / different / traditional 均被词义或语法排除，迷惑性一般。",
+   "dup_note": "与其它题不共用 block。",
+   "question_text": "An idea ___ hits me: “Why don’t we put our music together? I can write a song for us.”",
+   "options": [
+    "suddenly",
+    "almost",
+    "different",
+    "traditional"
+   ],
+   "correct_answer": "suddenly",
+   "correct_option": "A",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B1"
+   ],
+   "evidence_quote_model": "An idea suddenly hits me: “Why don’t we put our music together? I can write a song for us.”",
+   "difficulty": "medium"
+  },
+  {
+   "n": 7,
+   "type": "vocab_choice",
+   "page": 33,
+   "activity": 2,
+   "block": "FLTRP-EN-7A-2022CUR:P38:B3",
+   "quote": "I decide to take part in it with Grandpa this year.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "PASS",
+   "value": "MEDIUM",
+   "distractor": "ACCEPTABLE",
+   "out_of_evidence": false,
+   "dup": "MEDIUM",
+   "category": "B_RECOMBINED",
+   "value_note": "考 decide to do sth 这一核心结构。",
+   "unique_note": "enjoy / nod 不合语法；rush 语法可通但语义不自然，最自然答案仍唯一。",
+   "distractor_note": "enjoy to do / nod to take part 明显不成立，排除较容易。",
+   "dup_note": "题干与 Q3 同句（B3），考查点不同（时间名词 vs 动词结构）。",
+   "question_text": "I ___ to take part in it with Grandpa this year.",
+   "options": [
+    "decide",
+    "enjoy",
+    "rush",
+    "nod"
+   ],
+   "correct_answer": "decide",
+   "correct_option": "A",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B3"
+   ],
+   "evidence_quote_model": "I decide to take part in it with Grandpa this year.",
+   "difficulty": "medium"
+  },
+  {
+   "n": 8,
+   "type": "reading_choice",
+   "page": 32,
+   "activity": 1,
+   "block": "FLTRP-EN-7A-2022CUR:P37:B12",
+   "quote": "He likes playing the erhu in the park with his friends.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "PASS",
+   "value": "MEDIUM",
+   "distractor": "GOOD",
+   "out_of_evidence": false,
+   "dup": "MEDIUM",
+   "category": "B_RECOMBINED",
+   "value_note": "考阅读信息定位（爷爷在哪里拉二胡）。",
+   "unique_note": "课文直接给出 in the park，唯一。",
+   "distractor_note": "In the school band 是很好的陷阱（那是叙述者自己的乐队）；At home / Online 较弱，但 online 也确实出现在课文里。",
+   "dup_note": "与 Q2 同用 block B12。",
+   "question_text": "Where does Grandpa like playing the erhu?",
+   "options": [
+    "In the park",
+    "In the school band",
+    "At home",
+    "Online"
+   ],
+   "correct_answer": "In the park",
+   "correct_option": "A",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P37:B12"
+   ],
+   "evidence_quote_model": "He likes playing the erhu in the park with his friends.",
+   "difficulty": "easy"
+  },
+  {
+   "n": 9,
+   "type": "reading_choice",
+   "page": 33,
+   "activity": 2,
+   "block": "FLTRP-EN-7A-2022CUR:P38:B4",
+   "quote": "Everybody moves with our music.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "PASS",
+   "value": "MEDIUM",
+   "distractor": "GOOD",
+   "out_of_evidence": false,
+   "dup": "NONE",
+   "category": "B_RECOMBINED",
+   "value_note": "考阅读细节；题干中的 listeners 来自教材 Think and share 的提问，并非自造。",
+   "unique_note": "课文只写了 moves，唯一。",
+   "distractor_note": "sings 与课文 They sing Beijing opera together 形成干扰，dances / claps 也合理但不对。",
+   "dup_note": "与其它题不共用 block。",
+   "question_text": "What do the listeners do with our music?",
+   "options": [
+    "Everybody moves",
+    "Everybody sings",
+    "Everybody dances",
+    "Everybody claps"
+   ],
+   "correct_answer": "Everybody moves",
+   "correct_option": "A",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P38:B4"
+   ],
+   "evidence_quote_model": "Everybody moves with our music.",
+   "difficulty": "easy"
+  },
+  {
+   "n": 10,
+   "type": "reading_choice",
+   "page": 34,
+   "activity": 3,
+   "block": "FLTRP-EN-7A-2022CUR:P39:B3",
+   "quote": "Grandpa and I put our music together and have great fun.",
+   "basis": "PASS",
+   "english": "PASS",
+   "answer": "PASS",
+   "unique": "PASS",
+   "value": "MEDIUM",
+   "distractor": "GOOD",
+   "out_of_evidence": false,
+   "dup": "NONE",
+   "category": "A_DIRECT_REPRODUCTION",
+   "value_note": "考主旨，是真实阅读技能；但该题就是教材第 34 页原练习（a3 Choose the best main idea），学习增量等于零。",
+   "unique_note": "三个选项中 C 最完整，且与课文内容一致。",
+   "distractor_note": "a / b 都来自课文但不完整，是教材原配干扰项。",
+   "dup_note": "与其它 AI 题不重复，但与教材原题重复。",
+   "flags": [
+    "EXACT_PRINT_CITATION",
+    "evidence_quote 取自教材选项文本本身（而非课文陈述），引用存在循环：答案之所以“被证据支持”，只是因为它印在教材选项里；教材未提供官方答案。"
+   ],
+   "question_text": "What is the best main idea of the passage?",
+   "options": [
+    "Grandpa and I have different hobbies.",
+    "I write a new song for the school art festival.",
+    "Grandpa and I put our music together and have great fun."
+   ],
+   "correct_answer": "Grandpa and I put our music together and have great fun.",
+   "correct_option": "C",
+   "evidence_block_ids": [
+    "FLTRP-EN-7A-2022CUR:P39:B3"
+   ],
+   "evidence_quote_model": "Grandpa and I put our music together and have great fun.",
+   "difficulty": "medium"
+  }
+ ],
+ "stats": {
+  "total_questions": 10,
+  "textbook_basis_pass": 10,
+  "english_pass": 10,
+  "answer_pass": 10,
+  "unique_answer_pass": 6,
+  "learning_value_high": 0,
+  "learning_value_medium": 6,
+  "learning_value_low": 4,
+  "distractor_good": 3,
+  "distractor_acceptable": 3,
+  "distractor_poor": 0,
+  "distractor_not_applicable": 4,
+  "out_of_evidence": 0,
+  "duplicate_low_or_below": 4,
+  "duplicate_medium_or_high": 6,
+  "A_direct_reproduction": 5,
+  "B_recombined": 5,
+  "C_mechanical_rewrite": 0,
+  "D_insufficient_evidence": 0,
+  "directly_usable_as_is": 6,
+  "usable_after_one_line_instruction": 4
+ },
+ "duplicate_analysis": {
+  "blocks_reused": {
+   "FLTRP-EN-7A-2022CUR:P37:B10": [
+    1,
+    5
+   ],
+   "FLTRP-EN-7A-2022CUR:P37:B12": [
+    2,
+    8
+   ],
+   "FLTRP-EN-7A-2022CUR:P38:B3": [
+    3,
+    7
+   ]
+  },
+  "operation_breakdown": {
+   "blank_textbook_sentence": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "reading_comprehension": [
+    8,
+    9
+   ],
+   "textbook_exercise_copy": [
+    10
+   ]
+  },
+  "note": "3 个教材 block 各被两道题使用；10 道题中 7 道是同一个操作（把教材原句挖一个空），1 道是教材原题照搬，2 道是阅读细节题。"
+ },
+ "systemic_findings": [
+  {
+   "id": "F1",
+   "severity": "BLOCKER",
+   "title": "填空题缺少“根据课文”语境，答案在语言层面不唯一",
+   "evidence": "Q1–Q4；例如 Q4「It feels ___ to enjoy our hobby together.」的 great 可换成 good / nice / wonderful",
+   "impact": "4/10 道题按现在写法不能安全地自动判分",
+   "suggested_fix": "fill 题干或题型说明必须带“根据课文原句/从课文中选词”，或给出词库；教材原练习（a4）本身就写了 from the passage，AI 生成时把这条语境丢了"
+  },
+  {
+   "id": "F2",
+   "severity": "IMPROVE",
+   "title": "同批题目操作高度同质",
+   "evidence": "7/10 都是“教材原句挖一个空”，且 3 个 block 各被用两次",
+   "impact": "学生连续遇到同一句式，学习增量低",
+   "suggested_fix": "限制同一 Section 内“原句挖空”的数量，并要求覆盖不同考查点"
+  },
+  {
+   "id": "F3",
+   "severity": "IMPROVE",
+   "title": "EXACT 引用的循环风险实际出现了",
+   "evidence": "Q10 的 evidence_quote 就是教材选项文本本身（Grandpa and I put our music together and have great fun.）",
+   "impact": "“有证据”只是因为它印在教材选项里；教材并没有官方答案（answer_source = NO_RELIABLE_SOURCE）",
+   "suggested_fix": "P1-04 已把这类情况标记为 needs_human_review=1；正式实验里应把这类题单独列出"
+  },
+  {
+   "id": "F4",
+   "severity": "OBSERVE",
+   "title": "有一道题直接照搬教材原练习",
+   "evidence": "Q10 = 教材第 34 页 a3「Choose the best main idea of the passage.」三个选项逐字相同",
+   "impact": "学习增量为零（学生本来就有这道题）",
+   "suggested_fix": "生成时排除与教材原题逐字重合的题，或明确允许“复现原题”的比例"
+  }
+ ],
+ "machine_vs_teacher": {
+  "note": "本轮不依赖任何自动 validator 结论：所有判断来自人工对照教材证据。即便机器校验通过，Q1–Q4 仍然存在答案不唯一的问题。",
+  "validator_run_in_this_round": false
+ },
+ "answers_to_three_questions": {
+  "q1_directly_usable": {
+   "count": 6,
+   "questions": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "note": "Q5–Q10（6 道）内容正确、依据充分、答案唯一，老师可以直接拿去用；Q1–Q4（4 道）内容正确但答案在语言层面不唯一，补一句“根据课文原句”后即可使用。因此“可以直接使用”= 6 道，“加一行指令后可用”= 4 道。"
+  },
+  "q2_reorganization": {
+   "answer": "部分具备，证据有限",
+   "evidence": "该 Section 教材本身没有词汇选择题、也没有关于“爷爷在哪拉二胡”“听众做了什么”的细节题；Q5–Q9 属于在这种句式/情境上新增的练习角度（5/10）。另外 5 道（Q1–Q4、Q10）是原句复原或教材原题照搬。"
+  },
+  "q3_next_stage": "STOP_AND_FIX",
+  "q3_reason": "样本本身没有编造、没有超范围、答案都能落回教材，说明路线可用；但 F1 是必须先修的生成规则问题：填空缺“根据课文”语境会让 40% 的产出在自动判分时出错。修好 F1（并顺带处理 F2–F4）之后再进入多 Section 实验，否则会把同一缺陷复制到 7 个 Section。"
+ }
+}

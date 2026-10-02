@@ -1,0 +1,579 @@
+[
+ {
+  "tag": "S1",
+  "i": 1,
+  "type": "fill",
+  "answer": "sound",
+  "blocks": [
+   "B11"
+  ],
+  "vocab": [
+   "sound"
+  ],
+  "bold": [
+   "sound"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "Right at this moment, the ___ of Grandpa’s erhu cuts in.",
+  "options": [],
+  "quote": "Right at this moment, the sound of Grandpa’s erhu cuts in."
+ },
+ {
+  "tag": "S1",
+  "i": 2,
+  "type": "fill",
+  "answer": "enjoy",
+  "blocks": [
+   "B5"
+  ],
+  "vocab": [
+   "enjoy",
+   "joy"
+  ],
+  "bold": [
+   "enjoy",
+   "joy"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "It feels great to ___ our hobby together.",
+  "options": [],
+  "quote": "It feels great to enjoy our hobby together."
+ },
+ {
+  "tag": "S1",
+  "i": 3,
+  "type": "vocab_choice",
+  "answer": "band",
+  "blocks": [
+   "B10"
+  ],
+  "vocab": [
+   "band"
+  ],
+  "bold": [
+   "band"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "As a rock music lover, I play the electric guitar in the school ___.",
+  "options": [
+   "band",
+   "club",
+   "stage",
+   "instrument"
+  ],
+  "quote": "As a rock music lover, I play the electric guitar in the school band."
+ },
+ {
+  "tag": "S1",
+  "i": 4,
+  "type": "vocab_choice",
+  "answer": "different",
+  "blocks": [
+   "B12"
+  ],
+  "vocab": [
+   "different"
+  ],
+  "bold": [
+   "different"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "But it’s a ___ kind of music.",
+  "options": [
+   "different",
+   "traditional",
+   "electric",
+   "weak"
+  ],
+  "quote": "But it’s a different kind of music."
+ },
+ {
+  "tag": "S1",
+  "i": 5,
+  "type": "reading_choice",
+  "answer": "in the park",
+  "blocks": [
+   "B12"
+  ],
+  "vocab": [],
+  "bold": [],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "Grandpa likes playing the erhu ___.",
+  "options": [
+   "in the park",
+   "in the school band",
+   "on the stage",
+   "in his room"
+  ],
+  "quote": "He likes playing the erhu in the park with his friends."
+ },
+ {
+  "tag": "S1",
+  "i": 6,
+  "type": "reading_choice",
+  "answer": "fire up instruments",
+  "blocks": [
+   "B3"
+  ],
+  "vocab": [
+   "instrument"
+  ],
+  "bold": [
+   "instrument"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "VERIFIABLE_REPHRASE",
+  "question": "At the school art festival, the writer and Grandpa ___.",
+  "options": [
+   "write songs",
+   "share songs online",
+   "fire up instruments",
+   "sing Beijing opera"
+  ],
+  "quote": "I nod to Grandpa and we fire up our instruments."
+ },
+ {
+  "tag": "S2",
+  "i": 1,
+  "type": "fill",
+  "answer": "hers",
+  "blocks": [
+   "B1"
+  ],
+  "vocab": [
+   "hers"
+  ],
+  "bold": [
+   "hers"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "I look up at Ms Chen. My eyes meet ___.",
+  "options": [],
+  "quote": "My eyes meet hers."
+ },
+ {
+  "tag": "S2",
+  "i": 2,
+  "type": "vocab_choice",
+  "answer": "mistake",
+  "blocks": [
+   "B6"
+  ],
+  "vocab": [
+   "mistake"
+  ],
+  "bold": [
+   "mistake"
+  ],
+  "oos": [
+   "points",
+   "student"
+  ],
+  "real_oos": [
+   "points",
+   "student"
+  ],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "In Ms Chen's first lesson, the student points out a ___ in the sentence.",
+  "options": [
+   "mistake",
+   "mind",
+   "meaning",
+   "fact"
+  ],
+  "quote": "point out the mistake"
+ },
+ {
+  "tag": "S2",
+  "i": 3,
+  "type": "fill",
+  "answer": "mind",
+  "blocks": [
+   "B5"
+  ],
+  "vocab": [
+   "mind"
+  ],
+  "bold": [
+   "mind"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "In the first lesson, some questions jump into my ___.",
+  "options": [],
+  "quote": "jump into my mind"
+ },
+ {
+  "tag": "S2",
+  "i": 4,
+  "type": "fill",
+  "answer": "In fact",
+  "blocks": [
+   "B2"
+  ],
+  "vocab": [
+   "fact",
+   "in fact"
+  ],
+  "bold": [
+   "fact"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "___ ___, this is my first lesson for all of you.",
+  "options": [],
+  "quote": "In fact, this is my first lesson for all of you."
+ },
+ {
+  "tag": "S2",
+  "i": 5,
+  "type": "vocab_choice",
+  "answer": "sentence",
+  "blocks": [
+   "B4"
+  ],
+  "vocab": [
+   "sentence"
+  ],
+  "bold": [
+   "sentence"
+  ],
+  "oos": [
+   "writes"
+  ],
+  "real_oos": [
+   "writes"
+  ],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "Ms Chen writes a ___ on the blackboard.",
+  "options": [
+   "sentence",
+   "mistake",
+   "mind",
+   "meaning"
+  ],
+  "quote": "a sentence on the blackboard"
+ },
+ {
+  "tag": "S3",
+  "i": 1,
+  "type": "vocab_choice",
+  "answer": "root",
+  "blocks": [
+   "B12",
+   "B7"
+  ],
+  "vocab": [
+   "root"
+  ],
+  "bold": [],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "Water from the ___ will rise to the leaf through the stem.",
+  "options": [
+   "root",
+   "stem",
+   "sugar",
+   "oxygen"
+  ],
+  "quote": "root"
+ },
+ {
+  "tag": "S3",
+  "i": 2,
+  "type": "fill",
+  "answer": "leaf",
+  "blocks": [
+   "B9",
+   "B5"
+  ],
+  "vocab": [
+   "leaf"
+  ],
+  "bold": [
+   "leaf"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "UNSUPPORTED",
+  "question": "Sunlight and CO2 come into the ___.",
+  "options": [],
+  "quote": "Sunlight and CO2 come into the"
+ },
+ {
+  "tag": "S3",
+  "i": 3,
+  "type": "fill",
+  "answer": "rise",
+  "blocks": [
+   "B7",
+   "B8"
+  ],
+  "vocab": [
+   "rise"
+  ],
+  "bold": [
+   "rise"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "UNSUPPORTED",
+  "question": "Water from the root will ___ to the leaf through the stem.",
+  "options": [],
+  "quote": "to the leaf through the stem."
+ },
+ {
+  "tag": "S3",
+  "i": 4,
+  "type": "reading_choice",
+  "answer": "their own rain",
+  "blocks": [
+   "B14"
+  ],
+  "vocab": [],
+  "bold": [],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "In the Great Bear Rainforest, what can the trees make?",
+  "options": [
+   "their own rain",
+   "sugar",
+   "oxygen",
+   "food"
+  ],
+  "quote": "The trees in a rainforest can make their own rain."
+ },
+ {
+  "tag": "S3",
+  "i": 5,
+  "type": "reading_judge",
+  "answer": "True",
+  "blocks": [
+   "B12"
+  ],
+  "vocab": [],
+  "bold": [],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "UNSUPPORTED",
+  "question": "The Great Bear Rainforest is in Canada.",
+  "options": [],
+  "quote": "Welcome to the Great Bear Rainforest in Canada!"
+ },
+ {
+  "tag": "S3",
+  "i": 6,
+  "type": "reading_judge",
+  "answer": "False",
+  "blocks": [
+   "B20"
+  ],
+  "vocab": [],
+  "bold": [],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "UNSUPPORTED",
+  "question": "Plants are not important to us.",
+  "options": [],
+  "quote": "Now we can see plants are so important. They mean so much to us."
+ },
+ {
+  "tag": "S4",
+  "i": 1,
+  "type": "fill",
+  "answer": "ready",
+  "blocks": [
+   "B16"
+  ],
+  "vocab": [
+   "ready"
+  ],
+  "bold": [
+   "ready"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "I am ___, too.",
+  "options": [],
+  "quote": "I am ready, too"
+ },
+ {
+  "tag": "S4",
+  "i": 2,
+  "type": "fill",
+  "answer": "eraser",
+  "blocks": [
+   "B32"
+  ],
+  "vocab": [
+   "eraser"
+  ],
+  "bold": [
+   "eraser"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "I have a schoolbag, a pencil case, three pencils, an ___ and a ruler.",
+  "options": [],
+  "quote": "I have a schoolbag, a pencil case, three pencils, an eraser and a ruler."
+ },
+ {
+  "tag": "S4",
+  "i": 3,
+  "type": "fill",
+  "answer": "grey",
+  "blocks": [
+   "B20"
+  ],
+  "vocab": [
+   "grey"
+  ],
+  "bold": [
+   "grey"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "What colour is it? It’s ___.",
+  "options": [],
+  "quote": "It’s grey."
+ },
+ {
+  "tag": "S4",
+  "i": 4,
+  "type": "vocab_choice",
+  "answer": "forget",
+  "blocks": [
+   "B12"
+  ],
+  "vocab": [
+   "forget"
+  ],
+  "bold": [
+   "forget"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "Oh, don’t ___ your ...",
+  "options": [
+   "forget",
+   "wear",
+   "have",
+   "like"
+  ],
+  "quote": "don’t forget your"
+ },
+ {
+  "tag": "S4",
+  "i": 5,
+  "type": "reading_choice",
+  "answer": "school uniform",
+  "blocks": [
+   "B5"
+  ],
+  "vocab": [
+   "uniform",
+   "school uniform"
+  ],
+  "bold": [
+   "uniform"
+  ],
+  "oos": [],
+  "real_oos": [],
+  "loc": true,
+  "quote_ok": true,
+  "type_ok": true,
+  "support": "EXACT",
+  "question": "What is Wang Tao going to wear tomorrow for school?",
+  "options": [
+   "school uniform",
+   "sports jacket",
+   "T-shirt",
+   "red scarf"
+  ],
+  "quote": "My school uniform, of course."
+ }
+]

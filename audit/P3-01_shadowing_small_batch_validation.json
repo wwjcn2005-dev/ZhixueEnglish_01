@@ -1,0 +1,446 @@
+{
+ "task_id": "P3-01",
+ "title": "教材官方音频句子级跟读库——小批量验证（Starter + Unit 1）",
+ "date": "2026-09-13",
+ "project_root": "D:\\ZhixueEnglish",
+ "scope": "Starter + Unit 1（未触碰 Unit 2–6）",
+ "ai_calls": 0,
+ "external_network_requests": 0,
+ "read_only": true,
+ "conclusion": {
+  "confirmed": 0,
+  "candidate": 1,
+  "needs_review": 14,
+  "candidate_sentences": 8,
+  "confirmed_sentences": 0,
+  "verdict": "句子级跟读库在当前数据条件下无法可靠建立；活动级跟读库可行",
+  "why": [
+   "听力/填空类教材文本含作答空位 → 完整句子文本不存在于教材事实",
+   "无转写文本（transcript 0 行）、本机无 ffmpeg / 本地 ASR → 无法逐句对齐",
+   "教材文本↔活动关系不完整（text_references 83/96；音频映射 6/15 target_id 为空）",
+   "版面文本提取瑕疵（段落编号误判、说话人标签粘连、重复片段）"
+  ]
+ },
+ "answers": {
+  "Q1_audio_count": 15,
+  "Q2_audio_mapped_to_activity": "13 / 15（另 3 条为 section 级：AU10/AU48/AU49）",
+  "Q3_audio_with_sentences": "10 / 15 可解析句子；仅 2 条无作答空位（AU06、AU13），其中 AU13 文本有瑕疵 → 可用 1 条",
+  "Q4_sentences_with_reliable_start_end": "严格口径 0 句；可给出候选边界的 8 句（AU06）",
+  "Q5_status_counts": {
+   "CONFIRMED": 0,
+   "CANDIDATE": 1,
+   "NEEDS_REVIEW": 14
+  },
+  "Q6_multi_sentence_audio": "当前不可靠：AU06 8 句 vs 14 声学段；AU13 9 句 vs 42 段；AU07 42 段",
+  "Q7_bottleneck": "无转写/ASR；教材文本-活动关系不完整；填空类教材文本不完整；版面提取瑕疵",
+  "Q8_automation": {
+   "auto": [
+    "音频清单与 SHA 校验",
+    "离线解码",
+    "声学段计算",
+    "教材句子候选抽取",
+    "活动归属（(unit,section,activity_no) 解析）",
+    "等级初判"
+   ],
+   "manual": [
+    "句级时间边界（听音频逐句确认）",
+    "文本提取瑕疵清理",
+    "空位类练习排除",
+    "CANDIDATE→CONFIRMED 升级"
+   ]
+  }
+ },
+ "inventory": {
+  "official_audio": [
+   {
+    "code": "AU01",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+    "unit": "Starter",
+    "section": "GET_READY",
+    "activity_id": "A:E43CCEC75481",
+    "audio_file": "01_Starter_Get ready_2 Read and complete. Then listen and check.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 60709,
+    "speech_runs": 25,
+    "sentence_count": 0,
+    "material_method": "text_references",
+    "material_blank_bearing": false,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材文本未解析出完整句子（文本关系缺失或该音频内容不印在教材上）",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU02",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU02",
+    "unit": "Starter",
+    "section": "GET_READY",
+    "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+    "audio_file": "02_Starter_Get ready_3 Listen and complete the conversation with aan or a number.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 33541,
+    "speech_runs": 16,
+    "sentence_count": 5,
+    "material_method": "instruction_walk",
+    "material_blank_bearing": true,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU03",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+    "unit": "Starter",
+    "section": "GET_READY",
+    "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+    "audio_file": "03_Starter_Get ready_10 Listen and choose.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 58149,
+    "speech_runs": 21,
+    "sentence_count": 13,
+    "material_method": "text_references",
+    "material_blank_bearing": true,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU04",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU04",
+    "unit": "Starter",
+    "section": "KNOW_YOUR_SCHOOL",
+    "activity_id": "A:40EEA0B8FBEF",
+    "audio_file": "04_Starter_Know your school_1 Read and complete.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 85891,
+    "speech_runs": 27,
+    "sentence_count": 8,
+    "material_method": "text_references",
+    "material_blank_bearing": true,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU05",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+    "unit": "Starter",
+    "section": "GET_TO_KNOW_EACH_OTHER",
+    "activity_id": "A:069B23C293AF",
+    "audio_file": "05_Starter_Get to know each other_1 Read and complete.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 56320,
+    "speech_runs": 18,
+    "sentence_count": 16,
+    "material_method": "text_references",
+    "material_blank_bearing": true,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU06",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+    "unit": "Starter",
+    "section": "GET_TO_KNOW_EACH_OTHER",
+    "activity_id": "A:02FCFB87E6C8",
+    "audio_file": "06_Starter_Get to know each other_4 Read and check your answers.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 43337,
+    "speech_runs": 14,
+    "sentence_count": 8,
+    "material_method": "text_references",
+    "material_blank_bearing": false,
+    "verification_status": "CANDIDATE",
+    "reason": "教材句子完整、音频归属确定；一段音频含多句，句级边界需人工/转写核验",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "medium"
+   },
+   {
+    "code": "AU07",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU07",
+    "unit": "Unit 1",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+    "audio_file": "07_Unit 1_Understanding ideas_2 Read the passage. What does the writer do in his first lesson.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 109427,
+    "speech_runs": 42,
+    "sentence_count": 13,
+    "material_method": "instruction_walk",
+    "material_blank_bearing": true,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU08",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+    "unit": "Unit 1",
+    "section": "UNDERSTANDING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+    "audio_file": "08_Unit 1_Understanding ideas_8 Work in pairs. Talk about a teacher you like.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 72464,
+    "speech_runs": 22,
+    "sentence_count": 4,
+    "material_method": "text_references",
+    "material_blank_bearing": true,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU09",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+    "unit": "Unit 1",
+    "section": "DEVELOPING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+    "audio_file": "09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 51096,
+    "speech_runs": 18,
+    "sentence_count": 0,
+    "material_method": "text_references",
+    "material_blank_bearing": false,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材文本未解析出完整句子（文本关系缺失或该音频内容不印在教材上）",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU10",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU10",
+    "unit": "Unit 1",
+    "section": "DEVELOPING_IDEAS",
+    "activity_id": null,
+    "audio_file": "10_Unit 1_Developing ideas _Phonetics in use.mp3",
+    "audio_scope": "section",
+    "duration_ms": 68284,
+    "speech_runs": 29,
+    "sentence_count": 0,
+    "material_method": null,
+    "material_blank_bearing": false,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "section 级音频（词表 / 语音板块），不是完整句子材料",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU11",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+    "unit": "Unit 1",
+    "section": "DEVELOPING_IDEAS",
+    "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+    "audio_file": "11_Unit 1_Developing ideas _2 Listen again and complete the poster.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 44147,
+    "speech_runs": 16,
+    "sentence_count": 6,
+    "material_method": "text_references",
+    "material_blank_bearing": true,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU12",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU12",
+    "unit": "Unit 1",
+    "section": "DEVELOPING_IDEAS",
+    "activity_id": "A:26AB1A30FD52",
+    "audio_file": "12_Unit 1_Developing ideas _3 Listen to the conversation and complete the table.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 175020,
+    "speech_runs": 60,
+    "sentence_count": 19,
+    "material_method": "text_references",
+    "material_blank_bearing": true,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "教材原题含作答空位 → 完整句子文本不完整，无法与音频逐句对齐",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU13",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+    "unit": "Unit 1",
+    "section": "READING_FOR_WRITING",
+    "activity_id": "A:46D86F27A64D",
+    "audio_file": "13_Unit 1_Developing ideas _Reading for writing_2 Read the passage and find out the meaning of the title.mp3",
+    "audio_scope": "activity",
+    "duration_ms": 101381,
+    "speech_runs": 42,
+    "sentence_count": 9,
+    "material_method": "text_references",
+    "material_blank_bearing": false,
+    "verification_status": "CANDIDATE",
+    "reason": "教材句子完整、音频归属确定；一段音频含多句，句级边界需人工/转写核验",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "medium"
+   },
+   {
+    "code": "AU48",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU48",
+    "unit": "Starter",
+    "section": "WORDS_AND_EXPRESSIONS",
+    "activity_id": null,
+    "audio_file": "48_Starter_Words and expressions_Words and expressions-Starter.mp3",
+    "audio_scope": "section",
+    "duration_ms": 90175,
+    "speech_runs": 34,
+    "sentence_count": 0,
+    "material_method": null,
+    "material_blank_bearing": false,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "section 级音频（词表 / 语音板块），不是完整句子材料",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   },
+   {
+    "code": "AU49",
+    "audio_id": "FLTRP-EN-7A-2022CUR:AU49",
+    "unit": "Unit 1",
+    "section": "WORDS_AND_EXPRESSIONS",
+    "activity_id": null,
+    "audio_file": "49_Unit 1_Words and expressions_Words and expressions-Unit 1.mp3",
+    "audio_scope": "section",
+    "duration_ms": 92082,
+    "speech_runs": 37,
+    "sentence_count": 0,
+    "material_method": null,
+    "material_blank_bearing": false,
+    "verification_status": "NEEDS_REVIEW",
+    "reason": "section 级音频（词表 / 语音板块），不是完整句子材料",
+    "boundary_method": "silence_boundary(aux) + existing_resource_mapping",
+    "confidence": "low"
+   }
+  ],
+  "text_side": {
+   "source": "contentpack content_block（只读）",
+   "material_methods": [
+    "text_references",
+    "single_activity_page",
+    "instruction_walk"
+   ],
+   "excluded": [
+    "instruction",
+    "heading",
+    "footer_text",
+    "sidebar_tip",
+    "排版标记（活动号 / 图片标签）"
+   ]
+  }
+ },
+ "method": {
+  "decode": "builder/mp3_to_wav.ps1（WinRT MediaTranscoder，离线，无安装、无网络）",
+  "acoustic": {
+   "hop_ms": 10,
+   "min_speech_ms": 140,
+   "min_gap_ms": 200,
+   "threshold": "max(10分位 + 12dB, -45dB)",
+   "note": "与 builder/build_word_audio_v01.py 完全一致"
+  },
+  "boundary_policy": "声学边界仅作辅助证据；不使用 AI、不使用相似度或时长比例推断句子归属",
+  "existing_mapping_used": "structured/audio/exercise_audio_map_v3.json（status=CONFIRMED）"
+ },
+ "samples": {
+  "candidate": [
+   {
+    "unit": "Starter",
+    "activity": "GET_TO_KNOW_EACH_OTHER A4",
+    "audio": "AU06",
+    "duration_ms": 43400,
+    "sentences": 8,
+    "speech_runs": 14,
+    "sample_sentence": "Hello everyone!",
+    "evidence": "教材文本完整（P15:B3，无空位）+ 活动级音频映射 CONFIRMED；句级边界待人工",
+    "status": "CANDIDATE"
+   }
+  ],
+  "needs_review": [
+   {
+    "unit": "Starter",
+    "activity": "GET_TO_KNOW_EACH_OTHER A1",
+    "audio": "AU05",
+    "reason": "同题含作答空位"
+   },
+   {
+    "unit": "Starter",
+    "activity": "GET_READY A10",
+    "audio": "AU03",
+    "reason": "教材原题为听录音选择，含 8 处空位"
+   },
+   {
+    "unit": "Unit 1",
+    "activity": "UNDERSTANDING_IDEAS A2",
+    "audio": "AU07",
+    "reason": "文本关系只到 instruction + 段落编号误判为空位"
+   },
+   {
+    "unit": "Unit 1",
+    "activity": "READING_FOR_WRITING A2",
+    "audio": "AU13",
+    "reason": "文本提取瑕疵（重复片段、说话人标签粘连）"
+   },
+   {
+    "unit": "Unit 1",
+    "activity": "DEVELOPING_IDEAS A1",
+    "audio": "AU09",
+    "reason": "听力材料原文不印在教材"
+   },
+   {
+    "unit": "Unit 1",
+    "activity": "DEVELOPING_IDEAS（Phonetics in use）",
+    "audio": "AU10",
+    "reason": "板块级语音材料，不是完整句子"
+   },
+   {
+    "unit": "Starter",
+    "activity": "WORDS_AND_EXPRESSIONS",
+    "audio": "AU48",
+    "reason": "词表音频"
+   },
+   {
+    "unit": "Unit 1",
+    "activity": "WORDS_AND_EXPRESSIONS",
+    "audio": "AU49",
+    "reason": "词表音频"
+   }
+  ],
+  "note": "CONFIRMED = 0，未按要求补足 5 条样例（不凑数）"
+ },
+ "recommendation": [
+  "先建活动级跟读库：活动 → 官方完整音频 → 教材完整印刷文本（归属与音频均已有 CONFIRMED 证据，无需切割）",
+  "句级路线需先补 transcript（人工或本地离线转写），再基于文本对齐切分",
+  "前置修复：text_references 全量几何重建 + 补齐音频映射 target_id"
+ ],
+ "baseline": {
+  "learning_db_sha256": "0C27267BF83A70A75BB400F0055B62CB2985A83EDD120B9AC790A7FD5E59CF91",
+  "learning_db_mtime": "2026-09-13 15:50:09",
+  "learning_db_records": 21,
+  "learning_db_note": "该差异来自 2026-09-13 15:50:08 的真机词汇学习记录（V:EAB999ECEC5C, done），发生在 P3-01 开始之前，非本任务写入；本任务 start/end 完全一致",
+  "contentpack_sha256": "ACEBC8C29CF5D11BAB50BF7962FBEE5DE42CD9CFC7FE48AB6316699D265E1A3F",
+  "audio_files_modified": 0,
+  "web_modified": false,
+  "learning_modified": false,
+  "android_modified": false,
+  "v121_modified": false,
+  "tests_run": false,
+  "temp_artifacts": [
+   "audit/P3-01_tmp/p301_analyze.py",
+   "audit/P3-01_tmp/p301_classify.py",
+   "audit/P3-01_tmp/p301_audio_analysis.json",
+   "audit/P3-01_tmp/p301_classified.json",
+   "audit/P3-01_tmp/wav/*.wav"
+  ]
+ },
+ "stop": "只读验证完成，立即停止；未切音频、未建正式表、未改 UI/APP、未接入跟读或 AI 评分、未处理 Unit 2–6。"
+}

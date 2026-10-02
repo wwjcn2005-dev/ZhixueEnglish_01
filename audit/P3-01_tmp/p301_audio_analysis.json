@@ -1,0 +1,2872 @@
+[
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU01",
+  "code": "AU01",
+  "filename": "01_Starter_Get ready_2 Read and complete. Then listen and check.mp3",
+  "unit": "Starter",
+  "section": "GET_READY",
+  "activity_no": 2,
+  "target_type": "activity",
+  "target_id": null,
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 60709,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "A:E43CCEC75481",
+  "activity_meta": {
+   "unit": "Starter",
+   "section": "GET_READY",
+   "activity_no": 2,
+   "page": 8,
+   "instruction": "Read and complete. Then listen and check."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P8:B6",
+   "FLTRP-EN-7A-2022CUR:P8:B7"
+  ],
+  "material_text": "3 4",
+  "material_blank_bearing": false,
+  "sentences": [],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 60720,
+   "speech_ms": 35470,
+   "runs": [
+    {
+     "start_ms": 480,
+     "end_ms": 2160,
+     "dur_ms": 1680
+    },
+    {
+     "start_ms": 2700,
+     "end_ms": 3280,
+     "dur_ms": 580
+    },
+    {
+     "start_ms": 3900,
+     "end_ms": 5490,
+     "dur_ms": 1590
+    },
+    {
+     "start_ms": 6110,
+     "end_ms": 7090,
+     "dur_ms": 980
+    },
+    {
+     "start_ms": 9120,
+     "end_ms": 10060,
+     "dur_ms": 940
+    },
+    {
+     "start_ms": 11000,
+     "end_ms": 13480,
+     "dur_ms": 2480
+    },
+    {
+     "start_ms": 14920,
+     "end_ms": 15890,
+     "dur_ms": 970
+    },
+    {
+     "start_ms": 16810,
+     "end_ms": 18200,
+     "dur_ms": 1390
+    },
+    {
+     "start_ms": 19140,
+     "end_ms": 20750,
+     "dur_ms": 1610
+    },
+    {
+     "start_ms": 21390,
+     "end_ms": 22360,
+     "dur_ms": 970
+    },
+    {
+     "start_ms": 22710,
+     "end_ms": 23580,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 25600,
+     "end_ms": 29750,
+     "dur_ms": 4150
+    },
+    {
+     "start_ms": 30360,
+     "end_ms": 31410,
+     "dur_ms": 1050
+    },
+    {
+     "start_ms": 32140,
+     "end_ms": 33100,
+     "dur_ms": 960
+    },
+    {
+     "start_ms": 33960,
+     "end_ms": 35780,
+     "dur_ms": 1820
+    },
+    {
+     "start_ms": 36520,
+     "end_ms": 37480,
+     "dur_ms": 960
+    },
+    {
+     "start_ms": 38450,
+     "end_ms": 40860,
+     "dur_ms": 2410
+    },
+    {
+     "start_ms": 41750,
+     "end_ms": 42350,
+     "dur_ms": 600
+    },
+    {
+     "start_ms": 42680,
+     "end_ms": 43940,
+     "dur_ms": 1260
+    },
+    {
+     "start_ms": 44480,
+     "end_ms": 45590,
+     "dur_ms": 1110
+    },
+    {
+     "start_ms": 46120,
+     "end_ms": 47070,
+     "dur_ms": 950
+    },
+    {
+     "start_ms": 47670,
+     "end_ms": 49290,
+     "dur_ms": 1620
+    },
+    {
+     "start_ms": 50020,
+     "end_ms": 51990,
+     "dur_ms": 1970
+    },
+    {
+     "start_ms": 53270,
+     "end_ms": 55220,
+     "dur_ms": 1950
+    },
+    {
+     "start_ms": 56070,
+     "end_ms": 56670,
+     "dur_ms": 600
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU02",
+  "code": "AU02",
+  "filename": "02_Starter_Get ready_3 Listen and complete the conversation with aan or a number.mp3",
+  "unit": "Starter",
+  "section": "GET_READY",
+  "activity_no": 3,
+  "target_type": "activity",
+  "target_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 0.99）",
+  "duration_ms": 33541,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A3",
+  "activity_meta": {
+   "unit": "Starter",
+   "section": "GET_READY",
+   "activity_no": 3,
+   "page": 8,
+   "instruction": "Listen and complete the conversation with a / an or a number."
+  },
+  "material_method": "instruction_walk",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P8:B23",
+   "FLTRP-EN-7A-2022CUR:P8:B24",
+   "FLTRP-EN-7A-2022CUR:P8:B16",
+   "FLTRP-EN-7A-2022CUR:P8:B18",
+   "FLTRP-EN-7A-2022CUR:P8:B17",
+   "FLTRP-EN-7A-2022CUR:P8:B20",
+   "FLTRP-EN-7A-2022CUR:P8:B19",
+   "FLTRP-EN-7A-2022CUR:P8:B9",
+   "FLTRP-EN-7A-2022CUR:P8:B7"
+  ],
+  "material_text": "oneseventwoeightthreefourfivesix nineteneleventwelve Mum:\t How about you, Li Meng?Li Meng:\t \u0007I am ready, too. Look. I have 2  pens. I also have 1  pencils and 4  ruler. They are all in my pencil case. 3  eraser and Know more about numbers and articles ⇢ p131 4",
+  "material_blank_bearing": true,
+  "sentences": [
+   "oneseventwoeightthreefourfivesix nineteneleventwelve Mum: How about you, Li Meng?",
+   "Li Meng: \u0007I am ready, too.",
+   "I have 2 pens.",
+   "I also have 1 pencils and 4 ruler.",
+   "They are all in my pencil case. 3 eraser and Know more about numbers and articles ⇢ p131 4"
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 33550,
+   "speech_ms": 21320,
+   "runs": [
+    {
+     "start_ms": 320,
+     "end_ms": 1850,
+     "dur_ms": 1530
+    },
+    {
+     "start_ms": 2650,
+     "end_ms": 3230,
+     "dur_ms": 580
+    },
+    {
+     "start_ms": 3620,
+     "end_ms": 6150,
+     "dur_ms": 2530
+    },
+    {
+     "start_ms": 6380,
+     "end_ms": 6720,
+     "dur_ms": 340
+    },
+    {
+     "start_ms": 7300,
+     "end_ms": 7630,
+     "dur_ms": 330
+    },
+    {
+     "start_ms": 7910,
+     "end_ms": 8420,
+     "dur_ms": 510
+    },
+    {
+     "start_ms": 9010,
+     "end_ms": 10000,
+     "dur_ms": 990
+    },
+    {
+     "start_ms": 11810,
+     "end_ms": 13610,
+     "dur_ms": 1800
+    },
+    {
+     "start_ms": 14610,
+     "end_ms": 16510,
+     "dur_ms": 1900
+    },
+    {
+     "start_ms": 17060,
+     "end_ms": 17690,
+     "dur_ms": 630
+    },
+    {
+     "start_ms": 18310,
+     "end_ms": 20480,
+     "dur_ms": 2170
+    },
+    {
+     "start_ms": 20920,
+     "end_ms": 21210,
+     "dur_ms": 290
+    },
+    {
+     "start_ms": 21440,
+     "end_ms": 22740,
+     "dur_ms": 1300
+    },
+    {
+     "start_ms": 23770,
+     "end_ms": 26060,
+     "dur_ms": 2290
+    },
+    {
+     "start_ms": 26570,
+     "end_ms": 27950,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 29050,
+     "end_ms": 31800,
+     "dur_ms": 2750
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU03",
+  "code": "AU03",
+  "filename": "03_Starter_Get ready_10 Listen and choose.mp3",
+  "unit": "Starter",
+  "section": "GET_READY",
+  "activity_no": 10,
+  "target_type": "activity",
+  "target_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 58149,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "FLTRP-EN-7A-2022CUR:STARTER:GET_READY:A10",
+  "activity_meta": {
+   "unit": "Starter",
+   "section": "GET_READY",
+   "activity_no": 10,
+   "page": 10,
+   "instruction": "Listen and choose."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P10:B17",
+   "FLTRP-EN-7A-2022CUR:P10:B5",
+   "FLTRP-EN-7A-2022CUR:P10:B7",
+   "FLTRP-EN-7A-2022CUR:P10:B8",
+   "FLTRP-EN-7A-2022CUR:P10:B10",
+   "FLTRP-EN-7A-2022CUR:P10:B9",
+   "FLTRP-EN-7A-2022CUR:P10:B11",
+   "FLTRP-EN-7A-2022CUR:P10:B12",
+   "FLTRP-EN-7A-2022CUR:P10:B13"
+  ],
+  "material_text": "10 Nana:\t Hi, Wang Tao. What are you going to wear tomorrow for school? Wang Tao:\t \u0007My school uniform, of course. I’m going to wear a 2 . How about you?\tNana:\t \u0007I’m also going to wear my school uniform. I have a 3 ,  a 5 .Wang Tao:\t What shoes are you going to wear?\tNana:\t I’m going to wear a pair of 4  and a 6 . How about you?Wang Tao:\t I’ll wear 7 .\tNana:\t Oh, don’t forget your 8 .Wang Tao:\t Thanks, I won’t.",
+  "material_blank_bearing": true,
+  "sentences": [
+   "10 Nana: Hi, Wang Tao.",
+   "What are you going to wear tomorrow for school?",
+   "Wang Tao: \u0007My school uniform, of course.",
+   "I’m going to wear a 2 .",
+   "How about you?",
+   "Nana: \u0007I’m also going to wear my school uniform.",
+   "I have a 3 , a 5 .",
+   "Wang Tao: What shoes are you going to wear?",
+   "Nana: I’m going to wear a pair of 4 and a 6 .",
+   "How about you?",
+   "Wang Tao: I’ll wear 7 .",
+   "Nana: Oh, don’t forget your 8 .",
+   "Wang Tao: Thanks, I won’t."
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 58160,
+   "speech_ms": 39240,
+   "runs": [
+    {
+     "start_ms": 330,
+     "end_ms": 1860,
+     "dur_ms": 1530
+    },
+    {
+     "start_ms": 2810,
+     "end_ms": 3430,
+     "dur_ms": 620
+    },
+    {
+     "start_ms": 3730,
+     "end_ms": 4800,
+     "dur_ms": 1070
+    },
+    {
+     "start_ms": 6730,
+     "end_ms": 8110,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 9280,
+     "end_ms": 12330,
+     "dur_ms": 3050
+    },
+    {
+     "start_ms": 12910,
+     "end_ms": 15500,
+     "dur_ms": 2590
+    },
+    {
+     "start_ms": 16460,
+     "end_ms": 19960,
+     "dur_ms": 3500
+    },
+    {
+     "start_ms": 20670,
+     "end_ms": 23090,
+     "dur_ms": 2420
+    },
+    {
+     "start_ms": 24050,
+     "end_ms": 25170,
+     "dur_ms": 1120
+    },
+    {
+     "start_ms": 26120,
+     "end_ms": 29410,
+     "dur_ms": 3290
+    },
+    {
+     "start_ms": 30070,
+     "end_ms": 32120,
+     "dur_ms": 2050
+    },
+    {
+     "start_ms": 32660,
+     "end_ms": 33900,
+     "dur_ms": 1240
+    },
+    {
+     "start_ms": 34260,
+     "end_ms": 35900,
+     "dur_ms": 1640
+    },
+    {
+     "start_ms": 36700,
+     "end_ms": 39050,
+     "dur_ms": 2350
+    },
+    {
+     "start_ms": 39830,
+     "end_ms": 43180,
+     "dur_ms": 3350
+    },
+    {
+     "start_ms": 43550,
+     "end_ms": 44630,
+     "dur_ms": 1080
+    },
+    {
+     "start_ms": 45660,
+     "end_ms": 48570,
+     "dur_ms": 2910
+    },
+    {
+     "start_ms": 49270,
+     "end_ms": 49670,
+     "dur_ms": 400
+    },
+    {
+     "start_ms": 50320,
+     "end_ms": 52570,
+     "dur_ms": 2250
+    },
+    {
+     "start_ms": 53270,
+     "end_ms": 53930,
+     "dur_ms": 660
+    },
+    {
+     "start_ms": 54360,
+     "end_ms": 55100,
+     "dur_ms": 740
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU04",
+  "code": "AU04",
+  "filename": "04_Starter_Know your school_1 Read and complete.mp3",
+  "unit": "Starter",
+  "section": "KNOW_YOUR_SCHOOL",
+  "activity_no": 1,
+  "target_type": "activity",
+  "target_id": null,
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 85891,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "A:40EEA0B8FBEF",
+  "activity_meta": {
+   "unit": "Starter",
+   "section": "KNOW_YOUR_SCHOOL",
+   "activity_no": 1,
+   "page": 11,
+   "instruction": "Read and complete."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P11:B2",
+   "FLTRP-EN-7A-2022CUR:P11:B4",
+   "FLTRP-EN-7A-2022CUR:P11:B6",
+   "FLTRP-EN-7A-2022CUR:P11:B5"
+  ],
+  "material_text": "teaching buildingdining hallplaygroundlibrary This is your new school. There are three buildings and a playground. It’s not big, but it is beautiful. Let’s go around the school together! 1 . It has three floors. There are 30 classrooms on the first and second floors. And there are 10 science labs and eight computer labs on the third floor. This is the",
+  "material_blank_bearing": true,
+  "sentences": [
+   "teaching buildingdining hallplaygroundlibrary This is your new school.",
+   "There are three buildings and a playground.",
+   "It’s not big, but it is beautiful.",
+   "Let’s go around the school together! 1 .",
+   "It has three floors.",
+   "There are 30 classrooms on the first and second floors.",
+   "And there are 10 science labs and eight computer labs on the third floor.",
+   "This is the"
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 85900,
+   "speech_ms": 55500,
+   "runs": [
+    {
+     "start_ms": 290,
+     "end_ms": 1830,
+     "dur_ms": 1540
+    },
+    {
+     "start_ms": 2740,
+     "end_ms": 4150,
+     "dur_ms": 1410
+    },
+    {
+     "start_ms": 5120,
+     "end_ms": 6910,
+     "dur_ms": 1790
+    },
+    {
+     "start_ms": 8910,
+     "end_ms": 9880,
+     "dur_ms": 970
+    },
+    {
+     "start_ms": 11580,
+     "end_ms": 14080,
+     "dur_ms": 2500
+    },
+    {
+     "start_ms": 14980,
+     "end_ms": 16970,
+     "dur_ms": 1990
+    },
+    {
+     "start_ms": 17400,
+     "end_ms": 18890,
+     "dur_ms": 1490
+    },
+    {
+     "start_ms": 19810,
+     "end_ms": 21170,
+     "dur_ms": 1360
+    },
+    {
+     "start_ms": 21730,
+     "end_ms": 23730,
+     "dur_ms": 2000
+    },
+    {
+     "start_ms": 24750,
+     "end_ms": 27900,
+     "dur_ms": 3150
+    },
+    {
+     "start_ms": 29760,
+     "end_ms": 32060,
+     "dur_ms": 2300
+    },
+    {
+     "start_ms": 32910,
+     "end_ms": 34780,
+     "dur_ms": 1870
+    },
+    {
+     "start_ms": 35760,
+     "end_ms": 40490,
+     "dur_ms": 4730
+    },
+    {
+     "start_ms": 41420,
+     "end_ms": 43880,
+     "dur_ms": 2460
+    },
+    {
+     "start_ms": 44180,
+     "end_ms": 46180,
+     "dur_ms": 2000
+    },
+    {
+     "start_ms": 46420,
+     "end_ms": 47680,
+     "dur_ms": 1260
+    },
+    {
+     "start_ms": 49760,
+     "end_ms": 51670,
+     "dur_ms": 1910
+    },
+    {
+     "start_ms": 52590,
+     "end_ms": 54360,
+     "dur_ms": 1770
+    },
+    {
+     "start_ms": 55390,
+     "end_ms": 57430,
+     "dur_ms": 2040
+    },
+    {
+     "start_ms": 58150,
+     "end_ms": 60280,
+     "dur_ms": 2130
+    },
+    {
+     "start_ms": 62260,
+     "end_ms": 64670,
+     "dur_ms": 2410
+    },
+    {
+     "start_ms": 65570,
+     "end_ms": 68450,
+     "dur_ms": 2880
+    },
+    {
+     "start_ms": 69560,
+     "end_ms": 70650,
+     "dur_ms": 1090
+    },
+    {
+     "start_ms": 70980,
+     "end_ms": 74410,
+     "dur_ms": 3430
+    },
+    {
+     "start_ms": 76510,
+     "end_ms": 78650,
+     "dur_ms": 2140
+    },
+    {
+     "start_ms": 79440,
+     "end_ms": 80590,
+     "dur_ms": 1150
+    },
+    {
+     "start_ms": 81050,
+     "end_ms": 82780,
+     "dur_ms": 1730
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU05",
+  "code": "AU05",
+  "filename": "05_Starter_Get to know each other_1 Read and complete.mp3",
+  "unit": "Starter",
+  "section": "GET_TO_KNOW_EACH_OTHER",
+  "activity_no": 1,
+  "target_type": "activity",
+  "target_id": null,
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 56320,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "A:069B23C293AF",
+  "activity_meta": {
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": 1,
+   "page": 14,
+   "instruction": "Read and complete."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P14:B8",
+   "FLTRP-EN-7A-2022CUR:P14:B6",
+   "FLTRP-EN-7A-2022CUR:P14:B7",
+   "FLTRP-EN-7A-2022CUR:P14:B3",
+   "FLTRP-EN-7A-2022CUR:P14:B4"
+  ],
+  "material_text": "Good morning, everyone! Good morning, Teacher! Welcome to junior high. I’m Mr Pan, your English teacher. I’m so happy to meet you all. I like playing the piano, reading books and travelling. And I love working with students. This year, we’ll explore the world of English together. It’ll be a lot of fun! Now, it’s your turn to introduce yourselves. Please tell us your name and your hobby. Who wants to go first? 1\tMr Pan is a(n)   teacher.2\tMr Pan likes  ,   and  .3\tThe students will   the world of English together.4\tThe students are going to   themselves. Good morning.Good afternoon.Good evening.Good night.",
+  "material_blank_bearing": true,
+  "sentences": [
+   "Good morning, everyone!",
+   "Good morning, Teacher!",
+   "Welcome to junior high.",
+   "I’m Mr Pan, your English teacher.",
+   "I’m so happy to meet you all.",
+   "I like playing the piano, reading books and travelling.",
+   "And I love working with students.",
+   "This year, we’ll explore the world of English together.",
+   "It’ll be a lot of fun!",
+   "Now, it’s your turn to introduce yourselves.",
+   "Please tell us your name and your hobby.",
+   "Who wants to go first? 1 Mr Pan is a(n) teacher.2 Mr Pan likes , and .3 The students will the world of English together.4 The students are going to themselves.",
+   "Good morning.",
+   "Good afternoon.",
+   "Good evening.",
+   "Good night."
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 56330,
+   "speech_ms": 38610,
+   "runs": [
+    {
+     "start_ms": 300,
+     "end_ms": 2310,
+     "dur_ms": 2010
+    },
+    {
+     "start_ms": 3510,
+     "end_ms": 4910,
+     "dur_ms": 1400
+    },
+    {
+     "start_ms": 5810,
+     "end_ms": 6320,
+     "dur_ms": 510
+    },
+    {
+     "start_ms": 6580,
+     "end_ms": 7670,
+     "dur_ms": 1090
+    },
+    {
+     "start_ms": 9530,
+     "end_ms": 11570,
+     "dur_ms": 2040
+    },
+    {
+     "start_ms": 12070,
+     "end_ms": 13910,
+     "dur_ms": 1840
+    },
+    {
+     "start_ms": 14490,
+     "end_ms": 16740,
+     "dur_ms": 2250
+    },
+    {
+     "start_ms": 17350,
+     "end_ms": 20660,
+     "dur_ms": 3310
+    },
+    {
+     "start_ms": 21400,
+     "end_ms": 23910,
+     "dur_ms": 2510
+    },
+    {
+     "start_ms": 25240,
+     "end_ms": 27330,
+     "dur_ms": 2090
+    },
+    {
+     "start_ms": 27830,
+     "end_ms": 30370,
+     "dur_ms": 2540
+    },
+    {
+     "start_ms": 30950,
+     "end_ms": 34270,
+     "dur_ms": 3320
+    },
+    {
+     "start_ms": 35480,
+     "end_ms": 39480,
+     "dur_ms": 4000
+    },
+    {
+     "start_ms": 40110,
+     "end_ms": 42030,
+     "dur_ms": 1920
+    },
+    {
+     "start_ms": 43330,
+     "end_ms": 46650,
+     "dur_ms": 3320
+    },
+    {
+     "start_ms": 47410,
+     "end_ms": 49230,
+     "dur_ms": 1820
+    },
+    {
+     "start_ms": 49590,
+     "end_ms": 50610,
+     "dur_ms": 1020
+    },
+    {
+     "start_ms": 51670,
+     "end_ms": 53290,
+     "dur_ms": 1620
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU06",
+  "code": "AU06",
+  "filename": "06_Starter_Get to know each other_4 Read and check your answers.mp3",
+  "unit": "Starter",
+  "section": "GET_TO_KNOW_EACH_OTHER",
+  "activity_no": 4,
+  "target_type": "activity",
+  "target_id": null,
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 43337,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "A:02FCFB87E6C8",
+  "activity_meta": {
+   "unit": "Starter",
+   "section": "GET_TO_KNOW_EACH_OTHER",
+   "activity_no": 4,
+   "page": 15,
+   "instruction": "Read and check your answers."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P15:B3"
+  ],
+  "material_text": "Hello everyone! My name is Zhu Xiaomeng. I’m thirteen years old. My birthday is in May. I love sports very much. I like running, playing football and swimming. I’m a bit nervous now, but I’m also happy to meet you. I want to make friends with you all!",
+  "material_blank_bearing": false,
+  "sentences": [
+   "Hello everyone!",
+   "My name is Zhu Xiaomeng.",
+   "I’m thirteen years old.",
+   "My birthday is in May.",
+   "I love sports very much.",
+   "I like running, playing football and swimming.",
+   "I’m a bit nervous now, but I’m also happy to meet you.",
+   "I want to make friends with you all!"
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 43350,
+   "speech_ms": 26520,
+   "runs": [
+    {
+     "start_ms": 590,
+     "end_ms": 2060,
+     "dur_ms": 1470
+    },
+    {
+     "start_ms": 2910,
+     "end_ms": 3400,
+     "dur_ms": 490
+    },
+    {
+     "start_ms": 3700,
+     "end_ms": 5430,
+     "dur_ms": 1730
+    },
+    {
+     "start_ms": 7360,
+     "end_ms": 8730,
+     "dur_ms": 1370
+    },
+    {
+     "start_ms": 9990,
+     "end_ms": 13100,
+     "dur_ms": 3110
+    },
+    {
+     "start_ms": 14210,
+     "end_ms": 16310,
+     "dur_ms": 2100
+    },
+    {
+     "start_ms": 17450,
+     "end_ms": 19860,
+     "dur_ms": 2410
+    },
+    {
+     "start_ms": 21260,
+     "end_ms": 23800,
+     "dur_ms": 2540
+    },
+    {
+     "start_ms": 24830,
+     "end_ms": 26150,
+     "dur_ms": 1320
+    },
+    {
+     "start_ms": 26850,
+     "end_ms": 28150,
+     "dur_ms": 1300
+    },
+    {
+     "start_ms": 28650,
+     "end_ms": 29800,
+     "dur_ms": 1150
+    },
+    {
+     "start_ms": 30820,
+     "end_ms": 32960,
+     "dur_ms": 2140
+    },
+    {
+     "start_ms": 33600,
+     "end_ms": 36270,
+     "dur_ms": 2670
+    },
+    {
+     "start_ms": 37470,
+     "end_ms": 40190,
+     "dur_ms": 2720
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU07",
+  "code": "AU07",
+  "filename": "07_Unit 1_Understanding ideas_2 Read the passage. What does the writer do in his first lesson.mp3",
+  "unit": "Unit 1",
+  "section": "UNDERSTANDING_IDEAS",
+  "activity_no": 2,
+  "target_type": "activity",
+  "target_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 109427,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A2",
+  "activity_meta": {
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "activity_no": 2,
+   "page": 21,
+   "instruction": "Read the passage. What does the writer do in his first lesson?"
+  },
+  "material_method": "instruction_walk",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P22:B0",
+   "FLTRP-EN-7A-2022CUR:P22:B1",
+   "FLTRP-EN-7A-2022CUR:P22:B2",
+   "FLTRP-EN-7A-2022CUR:P22:B3",
+   "FLTRP-EN-7A-2022CUR:P22:B4",
+   "FLTRP-EN-7A-2022CUR:P22:B5",
+   "FLTRP-EN-7A-2022CUR:P22:B6",
+   "FLTRP-EN-7A-2022CUR:P22:B7",
+   "FLTRP-EN-7A-2022CUR:P22:B8",
+   "FLTRP-EN-7A-2022CUR:P22:B9",
+   "FLTRP-EN-7A-2022CUR:P23:B1"
+  ],
+  "material_text": "1\t Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.” 2\t We start to write. I write down the first word  and stop. 3\t “That’s not right. But is it OK to point out the mistake? Is that polite, in the first lesson?” Questions jump into my mind. 4\t “Why aren’t you writing, Wang Han?” 5\t I look up at Ms Chen. My eyes meet hers. My mouth feels dry. 6\t But then I think about the meaning of the sentence. I put up my hand. 7\t “Ms Chen, there’s a mistake,” I say. “That sentence is from Confucius, not from Mencius.” 8\t “Well done, Wang Han. In fact, this is my first lesson for all of you. You are now in junior high school. Learning will be more difficult. You need to think more in your learning. Please always remember this.” 9\t That’s really an important lesson! 3",
+  "material_blank_bearing": true,
+  "sentences": [
+   "1 Our English teacher Ms Chen writes the sentence on the blackboard and says, “Please write this down.” 2 We start to write.",
+   "I write down the first word and stop. 3 “That’s not right.",
+   "But is it OK to point out the mistake?",
+   "Is that polite, in the first lesson?” Questions jump into my mind. 4 “Why aren’t you writing, Wang Han?” 5 I look up at Ms Chen.",
+   "My eyes meet hers.",
+   "My mouth feels dry. 6 But then I think about the meaning of the sentence.",
+   "I put up my hand. 7 “Ms Chen, there’s a mistake,” I say.",
+   "“That sentence is from Confucius, not from Mencius.” 8 “Well done, Wang Han.",
+   "In fact, this is my first lesson for all of you.",
+   "You are now in junior high school.",
+   "Learning will be more difficult.",
+   "You need to think more in your learning.",
+   "Please always remember this.” 9 That’s really an important lesson! 3"
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 109440,
+   "speech_ms": 74240,
+   "runs": [
+    {
+     "start_ms": 300,
+     "end_ms": 1350,
+     "dur_ms": 1050
+    },
+    {
+     "start_ms": 2100,
+     "end_ms": 3510,
+     "dur_ms": 1410
+    },
+    {
+     "start_ms": 4840,
+     "end_ms": 6680,
+     "dur_ms": 1840
+    },
+    {
+     "start_ms": 7540,
+     "end_ms": 8880,
+     "dur_ms": 1340
+    },
+    {
+     "start_ms": 9840,
+     "end_ms": 11220,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 12150,
+     "end_ms": 15520,
+     "dur_ms": 3370
+    },
+    {
+     "start_ms": 17530,
+     "end_ms": 19030,
+     "dur_ms": 1500
+    },
+    {
+     "start_ms": 20740,
+     "end_ms": 22430,
+     "dur_ms": 1690
+    },
+    {
+     "start_ms": 22780,
+     "end_ms": 23720,
+     "dur_ms": 940
+    },
+    {
+     "start_ms": 24120,
+     "end_ms": 26590,
+     "dur_ms": 2470
+    },
+    {
+     "start_ms": 26780,
+     "end_ms": 27170,
+     "dur_ms": 390
+    },
+    {
+     "start_ms": 27570,
+     "end_ms": 28350,
+     "dur_ms": 780
+    },
+    {
+     "start_ms": 29060,
+     "end_ms": 30880,
+     "dur_ms": 1820
+    },
+    {
+     "start_ms": 31840,
+     "end_ms": 33450,
+     "dur_ms": 1610
+    },
+    {
+     "start_ms": 34700,
+     "end_ms": 36920,
+     "dur_ms": 2220
+    },
+    {
+     "start_ms": 37320,
+     "end_ms": 38110,
+     "dur_ms": 790
+    },
+    {
+     "start_ms": 39090,
+     "end_ms": 40480,
+     "dur_ms": 1390
+    },
+    {
+     "start_ms": 41090,
+     "end_ms": 44030,
+     "dur_ms": 2940
+    },
+    {
+     "start_ms": 44870,
+     "end_ms": 47460,
+     "dur_ms": 2590
+    },
+    {
+     "start_ms": 48520,
+     "end_ms": 50770,
+     "dur_ms": 2250
+    },
+    {
+     "start_ms": 51840,
+     "end_ms": 54360,
+     "dur_ms": 2520
+    },
+    {
+     "start_ms": 55330,
+     "end_ms": 57480,
+     "dur_ms": 2150
+    },
+    {
+     "start_ms": 58250,
+     "end_ms": 60130,
+     "dur_ms": 1880
+    },
+    {
+     "start_ms": 60930,
+     "end_ms": 61670,
+     "dur_ms": 740
+    },
+    {
+     "start_ms": 62000,
+     "end_ms": 63130,
+     "dur_ms": 1130
+    },
+    {
+     "start_ms": 64130,
+     "end_ms": 67840,
+     "dur_ms": 3710
+    },
+    {
+     "start_ms": 68760,
+     "end_ms": 70100,
+     "dur_ms": 1340
+    },
+    {
+     "start_ms": 71410,
+     "end_ms": 72360,
+     "dur_ms": 950
+    },
+    {
+     "start_ms": 73070,
+     "end_ms": 74360,
+     "dur_ms": 1290
+    },
+    {
+     "start_ms": 74700,
+     "end_ms": 75310,
+     "dur_ms": 610
+    },
+    {
+     "start_ms": 76410,
+     "end_ms": 79600,
+     "dur_ms": 3190
+    },
+    {
+     "start_ms": 80270,
+     "end_ms": 81920,
+     "dur_ms": 1650
+    },
+    {
+     "start_ms": 82700,
+     "end_ms": 85210,
+     "dur_ms": 2510
+    },
+    {
+     "start_ms": 85560,
+     "end_ms": 86400,
+     "dur_ms": 840
+    },
+    {
+     "start_ms": 86780,
+     "end_ms": 90160,
+     "dur_ms": 3380
+    },
+    {
+     "start_ms": 90670,
+     "end_ms": 91540,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 91740,
+     "end_ms": 93720,
+     "dur_ms": 1980
+    },
+    {
+     "start_ms": 94000,
+     "end_ms": 96150,
+     "dur_ms": 2150
+    },
+    {
+     "start_ms": 96780,
+     "end_ms": 97450,
+     "dur_ms": 670
+    },
+    {
+     "start_ms": 97650,
+     "end_ms": 99510,
+     "dur_ms": 1860
+    },
+    {
+     "start_ms": 100270,
+     "end_ms": 102530,
+     "dur_ms": 2260
+    },
+    {
+     "start_ms": 103350,
+     "end_ms": 106140,
+     "dur_ms": 2790
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU08",
+  "code": "AU08",
+  "filename": "08_Unit 1_Understanding ideas_8 Work in pairs. Talk about a teacher you like.mp3",
+  "unit": "Unit 1",
+  "section": "UNDERSTANDING_IDEAS",
+  "activity_no": 8,
+  "target_type": "activity",
+  "target_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令是教材指令前缀（相似度 0.38，教材另有补充句）",
+  "duration_ms": 72464,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "FLTRP-EN-7A-2022CUR:U1:UNDERSTANDING_IDEAS:A8",
+  "activity_meta": {
+   "unit": "Unit 1",
+   "section": "UNDERSTANDING_IDEAS",
+   "activity_no": 8,
+   "page": 25,
+   "instruction": "Work in pairs. Talk about a teacher you like. Use the thinking map to organise your ideas. Use the words and expressions from the reading passage and the Useful expressions to help you."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P25:B1",
+   "FLTRP-EN-7A-2022CUR:P25:B6",
+   "FLTRP-EN-7A-2022CUR:P25:B14",
+   "FLTRP-EN-7A-2022CUR:P25:B7",
+   "FLTRP-EN-7A-2022CUR:P25:B11",
+   "FLTRP-EN-7A-2022CUR:P25:B12"
+  ],
+  "material_text": "8 Example What lesson does he / she teach? Who is he / she? Why do you like  him / her? What do you learn from his / her lessons?",
+  "material_blank_bearing": true,
+  "sentences": [
+   "8 Example What lesson does he / she teach?",
+   "Who is he / she?",
+   "Why do you like him / her?",
+   "What do you learn from his / her lessons?"
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 72470,
+   "speech_ms": 51710,
+   "runs": [
+    {
+     "start_ms": 490,
+     "end_ms": 2010,
+     "dur_ms": 1520
+    },
+    {
+     "start_ms": 3180,
+     "end_ms": 4560,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 5440,
+     "end_ms": 7600,
+     "dur_ms": 2160
+    },
+    {
+     "start_ms": 8540,
+     "end_ms": 10030,
+     "dur_ms": 1490
+    },
+    {
+     "start_ms": 10270,
+     "end_ms": 12280,
+     "dur_ms": 2010
+    },
+    {
+     "start_ms": 13270,
+     "end_ms": 15450,
+     "dur_ms": 2180
+    },
+    {
+     "start_ms": 15640,
+     "end_ms": 17100,
+     "dur_ms": 1460
+    },
+    {
+     "start_ms": 17370,
+     "end_ms": 20060,
+     "dur_ms": 2690
+    },
+    {
+     "start_ms": 21260,
+     "end_ms": 23000,
+     "dur_ms": 1740
+    },
+    {
+     "start_ms": 24930,
+     "end_ms": 27680,
+     "dur_ms": 2750
+    },
+    {
+     "start_ms": 28340,
+     "end_ms": 30250,
+     "dur_ms": 1910
+    },
+    {
+     "start_ms": 31050,
+     "end_ms": 32940,
+     "dur_ms": 1890
+    },
+    {
+     "start_ms": 33660,
+     "end_ms": 35530,
+     "dur_ms": 1870
+    },
+    {
+     "start_ms": 36370,
+     "end_ms": 41050,
+     "dur_ms": 4680
+    },
+    {
+     "start_ms": 41940,
+     "end_ms": 45190,
+     "dur_ms": 3250
+    },
+    {
+     "start_ms": 45720,
+     "end_ms": 49150,
+     "dur_ms": 3430
+    },
+    {
+     "start_ms": 49820,
+     "end_ms": 52520,
+     "dur_ms": 2700
+    },
+    {
+     "start_ms": 53260,
+     "end_ms": 55300,
+     "dur_ms": 2040
+    },
+    {
+     "start_ms": 56190,
+     "end_ms": 60370,
+     "dur_ms": 4180
+    },
+    {
+     "start_ms": 61110,
+     "end_ms": 62970,
+     "dur_ms": 1860
+    },
+    {
+     "start_ms": 63280,
+     "end_ms": 65420,
+     "dur_ms": 2140
+    },
+    {
+     "start_ms": 66100,
+     "end_ms": 68480,
+     "dur_ms": 2380
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU09",
+  "code": "AU09",
+  "filename": "09_Unit 1_Developing ideas _1 Listen to the radio. What's the biggest problem for new students.mp3",
+  "unit": "Unit 1",
+  "section": "DEVELOPING_IDEAS",
+  "activity_no": 1,
+  "target_type": "activity",
+  "target_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令是教材指令前缀（相似度 0.67，教材另有补充句）",
+  "duration_ms": 51096,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A1",
+  "activity_meta": {
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "activity_no": 1,
+   "page": 26,
+   "instruction": "Listen to the radio. What’s the biggest problem for new students? a It’s hard to make new friends. b It’s hard to plan their time."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P26:B1"
+  ],
+  "material_text": "1",
+  "material_blank_bearing": false,
+  "sentences": [],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 51100,
+   "speech_ms": 34690,
+   "runs": [
+    {
+     "start_ms": 560,
+     "end_ms": 2550,
+     "dur_ms": 1990
+    },
+    {
+     "start_ms": 3280,
+     "end_ms": 4660,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 5840,
+     "end_ms": 7510,
+     "dur_ms": 1670
+    },
+    {
+     "start_ms": 8620,
+     "end_ms": 10410,
+     "dur_ms": 1790
+    },
+    {
+     "start_ms": 10620,
+     "end_ms": 12050,
+     "dur_ms": 1430
+    },
+    {
+     "start_ms": 14050,
+     "end_ms": 17100,
+     "dur_ms": 3050
+    },
+    {
+     "start_ms": 17530,
+     "end_ms": 19780,
+     "dur_ms": 2250
+    },
+    {
+     "start_ms": 20500,
+     "end_ms": 23060,
+     "dur_ms": 2560
+    },
+    {
+     "start_ms": 23670,
+     "end_ms": 25030,
+     "dur_ms": 1360
+    },
+    {
+     "start_ms": 26380,
+     "end_ms": 27690,
+     "dur_ms": 1310
+    },
+    {
+     "start_ms": 27940,
+     "end_ms": 29320,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 29770,
+     "end_ms": 31430,
+     "dur_ms": 1660
+    },
+    {
+     "start_ms": 31760,
+     "end_ms": 33240,
+     "dur_ms": 1480
+    },
+    {
+     "start_ms": 34170,
+     "end_ms": 36690,
+     "dur_ms": 2520
+    },
+    {
+     "start_ms": 37440,
+     "end_ms": 40780,
+     "dur_ms": 3340
+    },
+    {
+     "start_ms": 41990,
+     "end_ms": 44660,
+     "dur_ms": 2670
+    },
+    {
+     "start_ms": 44890,
+     "end_ms": 46580,
+     "dur_ms": 1690
+    },
+    {
+     "start_ms": 47380,
+     "end_ms": 48540,
+     "dur_ms": 1160
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU10",
+  "code": "AU10",
+  "filename": "10_Unit 1_Developing ideas _Phonetics in use.mp3",
+  "unit": "Unit 1",
+  "section": "DEVELOPING_IDEAS",
+  "activity_no": null,
+  "target_type": "section",
+  "target_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS",
+  "kind": "phonetics",
+  "audio_scope": "section",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "Developing ideas 页出现 Phonetics in use 标题",
+  "duration_ms": 68284,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": null,
+  "activity_meta": null,
+  "material_method": null,
+  "material_blocks": [],
+  "material_text": "",
+  "material_blank_bearing": false,
+  "sentences": [],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 68290,
+   "speech_ms": 21230,
+   "runs": [
+    {
+     "start_ms": 300,
+     "end_ms": 1790,
+     "dur_ms": 1490
+    },
+    {
+     "start_ms": 2810,
+     "end_ms": 4060,
+     "dur_ms": 1250
+    },
+    {
+     "start_ms": 6010,
+     "end_ms": 6490,
+     "dur_ms": 480
+    },
+    {
+     "start_ms": 8190,
+     "end_ms": 8740,
+     "dur_ms": 550
+    },
+    {
+     "start_ms": 9920,
+     "end_ms": 10600,
+     "dur_ms": 680
+    },
+    {
+     "start_ms": 12630,
+     "end_ms": 12980,
+     "dur_ms": 350
+    },
+    {
+     "start_ms": 14460,
+     "end_ms": 15520,
+     "dur_ms": 1060
+    },
+    {
+     "start_ms": 16530,
+     "end_ms": 17190,
+     "dur_ms": 660
+    },
+    {
+     "start_ms": 19260,
+     "end_ms": 19600,
+     "dur_ms": 340
+    },
+    {
+     "start_ms": 20980,
+     "end_ms": 21830,
+     "dur_ms": 850
+    },
+    {
+     "start_ms": 22710,
+     "end_ms": 23580,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 25650,
+     "end_ms": 27240,
+     "dur_ms": 1590
+    },
+    {
+     "start_ms": 28890,
+     "end_ms": 29510,
+     "dur_ms": 620
+    },
+    {
+     "start_ms": 29750,
+     "end_ms": 30680,
+     "dur_ms": 930
+    },
+    {
+     "start_ms": 32680,
+     "end_ms": 33220,
+     "dur_ms": 540
+    },
+    {
+     "start_ms": 34590,
+     "end_ms": 35500,
+     "dur_ms": 910
+    },
+    {
+     "start_ms": 37040,
+     "end_ms": 37660,
+     "dur_ms": 620
+    },
+    {
+     "start_ms": 39240,
+     "end_ms": 40110,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 41930,
+     "end_ms": 42550,
+     "dur_ms": 620
+    },
+    {
+     "start_ms": 44680,
+     "end_ms": 45030,
+     "dur_ms": 350
+    },
+    {
+     "start_ms": 46730,
+     "end_ms": 47500,
+     "dur_ms": 770
+    },
+    {
+     "start_ms": 49030,
+     "end_ms": 49430,
+     "dur_ms": 400
+    },
+    {
+     "start_ms": 51210,
+     "end_ms": 51920,
+     "dur_ms": 710
+    },
+    {
+     "start_ms": 53410,
+     "end_ms": 54070,
+     "dur_ms": 660
+    },
+    {
+     "start_ms": 56260,
+     "end_ms": 56580,
+     "dur_ms": 320
+    },
+    {
+     "start_ms": 58390,
+     "end_ms": 59110,
+     "dur_ms": 720
+    },
+    {
+     "start_ms": 60450,
+     "end_ms": 61260,
+     "dur_ms": 810
+    },
+    {
+     "start_ms": 62660,
+     "end_ms": 63240,
+     "dur_ms": 580
+    },
+    {
+     "start_ms": 64730,
+     "end_ms": 65360,
+     "dur_ms": 630
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU11",
+  "code": "AU11",
+  "filename": "11_Unit 1_Developing ideas _2 Listen again and complete the poster.mp3",
+  "unit": "Unit 1",
+  "section": "DEVELOPING_IDEAS",
+  "activity_no": 2,
+  "target_type": "activity",
+  "target_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 44147,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "FLTRP-EN-7A-2022CUR:U1:DEVELOPING_IDEAS:A2",
+  "activity_meta": {
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "activity_no": 2,
+   "page": 27,
+   "instruction": "Listen again and complete the poster."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P27:B8",
+   "FLTRP-EN-7A-2022CUR:P27:B7",
+   "FLTRP-EN-7A-2022CUR:P27:B9",
+   "FLTRP-EN-7A-2022CUR:P27:B12",
+   "FLTRP-EN-7A-2022CUR:P27:B1",
+   "FLTRP-EN-7A-2022CUR:P27:B0",
+   "FLTRP-EN-7A-2022CUR:P27:B3",
+   "FLTRP-EN-7A-2022CUR:P27:B2",
+   "FLTRP-EN-7A-2022CUR:P27:B5",
+   "FLTRP-EN-7A-2022CUR:P27:B4",
+   "FLTRP-EN-7A-2022CUR:P27:B10",
+   "FLTRP-EN-7A-2022CUR:P27:B11"
+  ],
+  "material_text": "1  is beginning.What are the The new school 2  students’ problems? The biggest problem 3  and more homework. They have more 4  activities. They also have 5 ? How can they make good use of their The Students’ Union will hold a talk this 6  to help you.",
+  "material_blank_bearing": true,
+  "sentences": [
+   "1 is beginning.",
+   "What are the The new school 2 students’ problems?",
+   "The biggest problem 3 and more homework.",
+   "They have more 4 activities.",
+   "They also have 5 ?",
+   "How can they make good use of their The Students’ Union will hold a talk this 6 to help you."
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 44160,
+   "speech_ms": 30360,
+   "runs": [
+    {
+     "start_ms": 360,
+     "end_ms": 1660,
+     "dur_ms": 1300
+    },
+    {
+     "start_ms": 2770,
+     "end_ms": 3720,
+     "dur_ms": 950
+    },
+    {
+     "start_ms": 4200,
+     "end_ms": 5850,
+     "dur_ms": 1650
+    },
+    {
+     "start_ms": 7120,
+     "end_ms": 10170,
+     "dur_ms": 3050
+    },
+    {
+     "start_ms": 10610,
+     "end_ms": 12860,
+     "dur_ms": 2250
+    },
+    {
+     "start_ms": 13570,
+     "end_ms": 16130,
+     "dur_ms": 2560
+    },
+    {
+     "start_ms": 16740,
+     "end_ms": 18100,
+     "dur_ms": 1360
+    },
+    {
+     "start_ms": 19450,
+     "end_ms": 20770,
+     "dur_ms": 1320
+    },
+    {
+     "start_ms": 21010,
+     "end_ms": 22390,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 22840,
+     "end_ms": 24500,
+     "dur_ms": 1660
+    },
+    {
+     "start_ms": 24840,
+     "end_ms": 26320,
+     "dur_ms": 1480
+    },
+    {
+     "start_ms": 27240,
+     "end_ms": 29760,
+     "dur_ms": 2520
+    },
+    {
+     "start_ms": 30510,
+     "end_ms": 33850,
+     "dur_ms": 3340
+    },
+    {
+     "start_ms": 35060,
+     "end_ms": 37740,
+     "dur_ms": 2680
+    },
+    {
+     "start_ms": 37960,
+     "end_ms": 39650,
+     "dur_ms": 1690
+    },
+    {
+     "start_ms": 40450,
+     "end_ms": 41620,
+     "dur_ms": 1170
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU12",
+  "code": "AU12",
+  "filename": "12_Unit 1_Developing ideas _3 Listen to the conversation and complete the table.mp3",
+  "unit": "Unit 1",
+  "section": "DEVELOPING_IDEAS",
+  "activity_no": 3,
+  "target_type": "activity",
+  "target_id": null,
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 175020,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "A:26AB1A30FD52",
+  "activity_meta": {
+   "unit": "Unit 1",
+   "section": "DEVELOPING_IDEAS",
+   "activity_no": 3,
+   "page": 28,
+   "instruction": "Listen to the conversation and complete the table."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P28:B31",
+   "FLTRP-EN-7A-2022CUR:P28:B30",
+   "FLTRP-EN-7A-2022CUR:P28:B19",
+   "FLTRP-EN-7A-2022CUR:P28:B24",
+   "FLTRP-EN-7A-2022CUR:P28:B23",
+   "FLTRP-EN-7A-2022CUR:P28:B20",
+   "FLTRP-EN-7A-2022CUR:P28:B21",
+   "FLTRP-EN-7A-2022CUR:P28:B22",
+   "FLTRP-EN-7A-2022CUR:P28:B27",
+   "FLTRP-EN-7A-2022CUR:P28:B29",
+   "FLTRP-EN-7A-2022CUR:P28:B0",
+   "FLTRP-EN-7A-2022CUR:P28:B1",
+   "FLTRP-EN-7A-2022CUR:P28:B2",
+   "FLTRP-EN-7A-2022CUR:P28:B3",
+   "FLTRP-EN-7A-2022CUR:P28:B5",
+   "FLTRP-EN-7A-2022CUR:P28:B11",
+   "FLTRP-EN-7A-2022CUR:P28:B6",
+   "FLTRP-EN-7A-2022CUR:P28:B7",
+   "FLTRP-EN-7A-2022CUR:P28:B14"
+  ],
+  "material_text": "Wang Peng Li Lin They have more subjects and more homework. It’s 2  down your tasks and the time for each task. Every day, 1  to plan their time. There are so many tasks. A project may take weeks. Turn a big task into 5  on them day by day. Describing problems  Sometimes, we need to describe our problems to get help. We can first state our problem. For example, It’s hard to plan time. Then we can provide more details. For example, There are so many tasks. There is a lot of homework today. It’s hard to decide what to do first. Problem 1 I have a problem. It’s hard to... Can you give me some advice?A It takes one month to finish a book report. It’s hard to finish it on time. Problem 2 But how about...?A",
+  "material_blank_bearing": true,
+  "sentences": [
+   "Wang Peng Li Lin They have more subjects and more homework.",
+   "It’s 2 down your tasks and the time for each task.",
+   "Every day, 1 to plan their time.",
+   "There are so many tasks.",
+   "A project may take weeks.",
+   "Turn a big task into 5 on them day by day.",
+   "Describing problems Sometimes, we need to describe our problems to get help.",
+   "We can first state our problem.",
+   "For example, It’s hard to plan time.",
+   "Then we can provide more details.",
+   "For example, There are so many tasks.",
+   "There is a lot of homework today.",
+   "It’s hard to decide what to do first.",
+   "Problem 1 I have a problem.",
+   "It’s hard to...",
+   "Can you give me some advice?",
+   "A It takes one month to finish a book report.",
+   "It’s hard to finish it on time.",
+   "Problem 2 But how about...?"
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 175030,
+   "speech_ms": 119400,
+   "runs": [
+    {
+     "start_ms": 2070,
+     "end_ms": 3570,
+     "dur_ms": 1500
+    },
+    {
+     "start_ms": 4630,
+     "end_ms": 6380,
+     "dur_ms": 1750
+    },
+    {
+     "start_ms": 6760,
+     "end_ms": 8470,
+     "dur_ms": 1710
+    },
+    {
+     "start_ms": 10480,
+     "end_ms": 11240,
+     "dur_ms": 760
+    },
+    {
+     "start_ms": 11690,
+     "end_ms": 14840,
+     "dur_ms": 3150
+    },
+    {
+     "start_ms": 15600,
+     "end_ms": 17140,
+     "dur_ms": 1540
+    },
+    {
+     "start_ms": 17960,
+     "end_ms": 18550,
+     "dur_ms": 590
+    },
+    {
+     "start_ms": 18910,
+     "end_ms": 23480,
+     "dur_ms": 4570
+    },
+    {
+     "start_ms": 24420,
+     "end_ms": 28120,
+     "dur_ms": 3700
+    },
+    {
+     "start_ms": 28760,
+     "end_ms": 30690,
+     "dur_ms": 1930
+    },
+    {
+     "start_ms": 31640,
+     "end_ms": 33530,
+     "dur_ms": 1890
+    },
+    {
+     "start_ms": 34350,
+     "end_ms": 35040,
+     "dur_ms": 690
+    },
+    {
+     "start_ms": 36100,
+     "end_ms": 38760,
+     "dur_ms": 2660
+    },
+    {
+     "start_ms": 39770,
+     "end_ms": 40640,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 41240,
+     "end_ms": 43250,
+     "dur_ms": 2010
+    },
+    {
+     "start_ms": 43630,
+     "end_ms": 46100,
+     "dur_ms": 2470
+    },
+    {
+     "start_ms": 46840,
+     "end_ms": 49120,
+     "dur_ms": 2280
+    },
+    {
+     "start_ms": 49800,
+     "end_ms": 52670,
+     "dur_ms": 2870
+    },
+    {
+     "start_ms": 53640,
+     "end_ms": 56650,
+     "dur_ms": 3010
+    },
+    {
+     "start_ms": 57360,
+     "end_ms": 59830,
+     "dur_ms": 2470
+    },
+    {
+     "start_ms": 60570,
+     "end_ms": 61940,
+     "dur_ms": 1370
+    },
+    {
+     "start_ms": 62710,
+     "end_ms": 64130,
+     "dur_ms": 1420
+    },
+    {
+     "start_ms": 64970,
+     "end_ms": 67480,
+     "dur_ms": 2510
+    },
+    {
+     "start_ms": 68320,
+     "end_ms": 68900,
+     "dur_ms": 580
+    },
+    {
+     "start_ms": 69090,
+     "end_ms": 70130,
+     "dur_ms": 1040
+    },
+    {
+     "start_ms": 70510,
+     "end_ms": 72010,
+     "dur_ms": 1500
+    },
+    {
+     "start_ms": 72720,
+     "end_ms": 75160,
+     "dur_ms": 2440
+    },
+    {
+     "start_ms": 75860,
+     "end_ms": 76340,
+     "dur_ms": 480
+    },
+    {
+     "start_ms": 76820,
+     "end_ms": 78650,
+     "dur_ms": 1830
+    },
+    {
+     "start_ms": 79160,
+     "end_ms": 80330,
+     "dur_ms": 1170
+    },
+    {
+     "start_ms": 82280,
+     "end_ms": 87570,
+     "dur_ms": 5290
+    },
+    {
+     "start_ms": 89210,
+     "end_ms": 90270,
+     "dur_ms": 1060
+    },
+    {
+     "start_ms": 90980,
+     "end_ms": 95400,
+     "dur_ms": 4420
+    },
+    {
+     "start_ms": 97370,
+     "end_ms": 98120,
+     "dur_ms": 750
+    },
+    {
+     "start_ms": 98580,
+     "end_ms": 101730,
+     "dur_ms": 3150
+    },
+    {
+     "start_ms": 102490,
+     "end_ms": 104030,
+     "dur_ms": 1540
+    },
+    {
+     "start_ms": 104840,
+     "end_ms": 105440,
+     "dur_ms": 600
+    },
+    {
+     "start_ms": 105800,
+     "end_ms": 110370,
+     "dur_ms": 4570
+    },
+    {
+     "start_ms": 111310,
+     "end_ms": 115010,
+     "dur_ms": 3700
+    },
+    {
+     "start_ms": 115640,
+     "end_ms": 117580,
+     "dur_ms": 1940
+    },
+    {
+     "start_ms": 118530,
+     "end_ms": 120420,
+     "dur_ms": 1890
+    },
+    {
+     "start_ms": 121240,
+     "end_ms": 121920,
+     "dur_ms": 680
+    },
+    {
+     "start_ms": 122990,
+     "end_ms": 125650,
+     "dur_ms": 2660
+    },
+    {
+     "start_ms": 126650,
+     "end_ms": 127520,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 128130,
+     "end_ms": 130140,
+     "dur_ms": 2010
+    },
+    {
+     "start_ms": 130510,
+     "end_ms": 132990,
+     "dur_ms": 2480
+    },
+    {
+     "start_ms": 133730,
+     "end_ms": 136010,
+     "dur_ms": 2280
+    },
+    {
+     "start_ms": 136680,
+     "end_ms": 139560,
+     "dur_ms": 2880
+    },
+    {
+     "start_ms": 140530,
+     "end_ms": 143540,
+     "dur_ms": 3010
+    },
+    {
+     "start_ms": 144250,
+     "end_ms": 146720,
+     "dur_ms": 2470
+    },
+    {
+     "start_ms": 147450,
+     "end_ms": 148830,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 149600,
+     "end_ms": 151020,
+     "dur_ms": 1420
+    },
+    {
+     "start_ms": 151860,
+     "end_ms": 154370,
+     "dur_ms": 2510
+    },
+    {
+     "start_ms": 155210,
+     "end_ms": 155780,
+     "dur_ms": 570
+    },
+    {
+     "start_ms": 155970,
+     "end_ms": 157020,
+     "dur_ms": 1050
+    },
+    {
+     "start_ms": 157390,
+     "end_ms": 158900,
+     "dur_ms": 1510
+    },
+    {
+     "start_ms": 159600,
+     "end_ms": 162050,
+     "dur_ms": 2450
+    },
+    {
+     "start_ms": 162740,
+     "end_ms": 163230,
+     "dur_ms": 490
+    },
+    {
+     "start_ms": 163710,
+     "end_ms": 165540,
+     "dur_ms": 1830
+    },
+    {
+     "start_ms": 166040,
+     "end_ms": 167220,
+     "dur_ms": 1180
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU13",
+  "code": "AU13",
+  "filename": "13_Unit 1_Developing ideas _Reading for writing_2 Read the passage and find out the meaning of the title.mp3",
+  "unit": "Unit 1",
+  "section": "READING_FOR_WRITING",
+  "activity_no": 2,
+  "target_type": "activity",
+  "target_id": null,
+  "kind": "exercise",
+  "audio_scope": "activity",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "文件名指令与教材指令一致（文本相似度 1.00）",
+  "duration_ms": 101381,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": "A:46D86F27A64D",
+  "activity_meta": {
+   "unit": "Unit 1",
+   "section": "READING_FOR_WRITING",
+   "activity_no": 2,
+   "page": 29,
+   "instruction": "Read the passage and find out the meaning of the title."
+  },
+  "material_method": "text_references",
+  "material_blocks": [
+   "FLTRP-EN-7A-2022CUR:P29:B8",
+   "FLTRP-EN-7A-2022CUR:P29:B13",
+   "FLTRP-EN-7A-2022CUR:P29:B11",
+   "FLTRP-EN-7A-2022CUR:P29:B15",
+   "FLTRP-EN-7A-2022CUR:P29:B10",
+   "FLTRP-EN-7A-2022CUR:P29:B7",
+   "FLTRP-EN-7A-2022CUR:P29:B17",
+   "FLTRP-EN-7A-2022CUR:P29:B9",
+   "FLTRP-EN-7A-2022CUR:P29:B14",
+   "FLTRP-EN-7A-2022CUR:P29:B12",
+   "FLTRP-EN-7A-2022CUR:P29:B16"
+  ],
+  "material_text": "Dad Mia, how do you feel about your first day in junior high tomorrow? Mia Don’t worry. We’ve got something for you! Look! Well, I’m a little nervous. Mum MiaA paper boat? MiaA paper boat? Dad Yes, and it’s also a letter from Mum and me. We want to share some thoughts with you. Mia Oh, thank you!",
+  "material_blank_bearing": false,
+  "sentences": [
+   "Dad Mia, how do you feel about your first day in junior high tomorrow?",
+   "Mia Don’t worry.",
+   "We’ve got something for you!",
+   "Well, I’m a little nervous.",
+   "Mum MiaA paper boat?",
+   "MiaA paper boat?",
+   "Dad Yes, and it’s also a letter from Mum and me.",
+   "We want to share some thoughts with you.",
+   "Mia Oh, thank you!"
+  ],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 101390,
+   "speech_ms": 63660,
+   "runs": [
+    {
+     "start_ms": 260,
+     "end_ms": 1830,
+     "dur_ms": 1570
+    },
+    {
+     "start_ms": 2390,
+     "end_ms": 3710,
+     "dur_ms": 1320
+    },
+    {
+     "start_ms": 4550,
+     "end_ms": 5780,
+     "dur_ms": 1230
+    },
+    {
+     "start_ms": 6190,
+     "end_ms": 8720,
+     "dur_ms": 2530
+    },
+    {
+     "start_ms": 10630,
+     "end_ms": 12760,
+     "dur_ms": 2130
+    },
+    {
+     "start_ms": 14640,
+     "end_ms": 15130,
+     "dur_ms": 490
+    },
+    {
+     "start_ms": 15850,
+     "end_ms": 20670,
+     "dur_ms": 4820
+    },
+    {
+     "start_ms": 21440,
+     "end_ms": 22170,
+     "dur_ms": 730
+    },
+    {
+     "start_ms": 22840,
+     "end_ms": 24800,
+     "dur_ms": 1960
+    },
+    {
+     "start_ms": 25500,
+     "end_ms": 26670,
+     "dur_ms": 1170
+    },
+    {
+     "start_ms": 27070,
+     "end_ms": 29070,
+     "dur_ms": 2000
+    },
+    {
+     "start_ms": 29540,
+     "end_ms": 30130,
+     "dur_ms": 590
+    },
+    {
+     "start_ms": 30890,
+     "end_ms": 31160,
+     "dur_ms": 270
+    },
+    {
+     "start_ms": 31410,
+     "end_ms": 31980,
+     "dur_ms": 570
+    },
+    {
+     "start_ms": 32170,
+     "end_ms": 32860,
+     "dur_ms": 690
+    },
+    {
+     "start_ms": 33690,
+     "end_ms": 34280,
+     "dur_ms": 590
+    },
+    {
+     "start_ms": 35000,
+     "end_ms": 38400,
+     "dur_ms": 3400
+    },
+    {
+     "start_ms": 39530,
+     "end_ms": 41680,
+     "dur_ms": 2150
+    },
+    {
+     "start_ms": 42450,
+     "end_ms": 43240,
+     "dur_ms": 790
+    },
+    {
+     "start_ms": 43460,
+     "end_ms": 44550,
+     "dur_ms": 1090
+    },
+    {
+     "start_ms": 46610,
+     "end_ms": 47260,
+     "dur_ms": 650
+    },
+    {
+     "start_ms": 48110,
+     "end_ms": 49380,
+     "dur_ms": 1270
+    },
+    {
+     "start_ms": 50500,
+     "end_ms": 52270,
+     "dur_ms": 1770
+    },
+    {
+     "start_ms": 52960,
+     "end_ms": 54680,
+     "dur_ms": 1720
+    },
+    {
+     "start_ms": 56180,
+     "end_ms": 58690,
+     "dur_ms": 2510
+    },
+    {
+     "start_ms": 59560,
+     "end_ms": 61170,
+     "dur_ms": 1610
+    },
+    {
+     "start_ms": 61980,
+     "end_ms": 64770,
+     "dur_ms": 2790
+    },
+    {
+     "start_ms": 65820,
+     "end_ms": 67200,
+     "dur_ms": 1380
+    },
+    {
+     "start_ms": 67420,
+     "end_ms": 68270,
+     "dur_ms": 850
+    },
+    {
+     "start_ms": 69210,
+     "end_ms": 72600,
+     "dur_ms": 3390
+    },
+    {
+     "start_ms": 73740,
+     "end_ms": 75520,
+     "dur_ms": 1780
+    },
+    {
+     "start_ms": 76650,
+     "end_ms": 78180,
+     "dur_ms": 1530
+    },
+    {
+     "start_ms": 78900,
+     "end_ms": 80000,
+     "dur_ms": 1100
+    },
+    {
+     "start_ms": 80400,
+     "end_ms": 82630,
+     "dur_ms": 2230
+    },
+    {
+     "start_ms": 83620,
+     "end_ms": 83930,
+     "dur_ms": 310
+    },
+    {
+     "start_ms": 84240,
+     "end_ms": 85180,
+     "dur_ms": 940
+    },
+    {
+     "start_ms": 85540,
+     "end_ms": 86430,
+     "dur_ms": 890
+    },
+    {
+     "start_ms": 87620,
+     "end_ms": 90260,
+     "dur_ms": 2640
+    },
+    {
+     "start_ms": 91700,
+     "end_ms": 94570,
+     "dur_ms": 2870
+    },
+    {
+     "start_ms": 95460,
+     "end_ms": 95920,
+     "dur_ms": 460
+    },
+    {
+     "start_ms": 96950,
+     "end_ms": 97270,
+     "dur_ms": 320
+    },
+    {
+     "start_ms": 97730,
+     "end_ms": 98290,
+     "dur_ms": 560
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU48",
+  "code": "AU48",
+  "filename": "48_Starter_Words and expressions_Words and expressions-Starter.mp3",
+  "unit": "Starter",
+  "section": "WORDS_AND_EXPRESSIONS",
+  "activity_no": null,
+  "target_type": "section",
+  "target_id": "FLTRP-EN-7A-2022CUR:APPENDIX:WORDS_AND_EXPRESSIONS",
+  "kind": "word_list",
+  "audio_scope": "section",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "附录词表页覆盖本单元词条 100%",
+  "duration_ms": 90175,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": null,
+  "activity_meta": null,
+  "material_method": null,
+  "material_blocks": [],
+  "material_text": "",
+  "material_blank_bearing": false,
+  "sentences": [],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 90180,
+   "speech_ms": 30300,
+   "runs": [
+    {
+     "start_ms": 360,
+     "end_ms": 2100,
+     "dur_ms": 1740
+    },
+    {
+     "start_ms": 2580,
+     "end_ms": 3320,
+     "dur_ms": 740
+    },
+    {
+     "start_ms": 5550,
+     "end_ms": 6240,
+     "dur_ms": 690
+    },
+    {
+     "start_ms": 7760,
+     "end_ms": 8650,
+     "dur_ms": 890
+    },
+    {
+     "start_ms": 10330,
+     "end_ms": 11160,
+     "dur_ms": 830
+    },
+    {
+     "start_ms": 12830,
+     "end_ms": 13970,
+     "dur_ms": 1140
+    },
+    {
+     "start_ms": 15660,
+     "end_ms": 16590,
+     "dur_ms": 930
+    },
+    {
+     "start_ms": 18330,
+     "end_ms": 19290,
+     "dur_ms": 960
+    },
+    {
+     "start_ms": 20950,
+     "end_ms": 21710,
+     "dur_ms": 760
+    },
+    {
+     "start_ms": 23660,
+     "end_ms": 24270,
+     "dur_ms": 610
+    },
+    {
+     "start_ms": 25990,
+     "end_ms": 26780,
+     "dur_ms": 790
+    },
+    {
+     "start_ms": 28480,
+     "end_ms": 29710,
+     "dur_ms": 1230
+    },
+    {
+     "start_ms": 31450,
+     "end_ms": 32330,
+     "dur_ms": 880
+    },
+    {
+     "start_ms": 34050,
+     "end_ms": 34930,
+     "dur_ms": 880
+    },
+    {
+     "start_ms": 36540,
+     "end_ms": 37940,
+     "dur_ms": 1400
+    },
+    {
+     "start_ms": 39770,
+     "end_ms": 40640,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 42390,
+     "end_ms": 43090,
+     "dur_ms": 700
+    },
+    {
+     "start_ms": 45060,
+     "end_ms": 46370,
+     "dur_ms": 1310
+    },
+    {
+     "start_ms": 48350,
+     "end_ms": 49350,
+     "dur_ms": 1000
+    },
+    {
+     "start_ms": 51150,
+     "end_ms": 51850,
+     "dur_ms": 700
+    },
+    {
+     "start_ms": 54290,
+     "end_ms": 54910,
+     "dur_ms": 620
+    },
+    {
+     "start_ms": 56260,
+     "end_ms": 57120,
+     "dur_ms": 860
+    },
+    {
+     "start_ms": 59040,
+     "end_ms": 59870,
+     "dur_ms": 830
+    },
+    {
+     "start_ms": 61310,
+     "end_ms": 62120,
+     "dur_ms": 810
+    },
+    {
+     "start_ms": 64020,
+     "end_ms": 64970,
+     "dur_ms": 950
+    },
+    {
+     "start_ms": 66370,
+     "end_ms": 66950,
+     "dur_ms": 580
+    },
+    {
+     "start_ms": 68350,
+     "end_ms": 69410,
+     "dur_ms": 1060
+    },
+    {
+     "start_ms": 70940,
+     "end_ms": 71910,
+     "dur_ms": 970
+    },
+    {
+     "start_ms": 73630,
+     "end_ms": 74210,
+     "dur_ms": 580
+    },
+    {
+     "start_ms": 76050,
+     "end_ms": 76780,
+     "dur_ms": 730
+    },
+    {
+     "start_ms": 78790,
+     "end_ms": 79660,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 81250,
+     "end_ms": 81850,
+     "dur_ms": 600
+    },
+    {
+     "start_ms": 83390,
+     "end_ms": 84020,
+     "dur_ms": 630
+    },
+    {
+     "start_ms": 85610,
+     "end_ms": 86770,
+     "dur_ms": 1160
+    }
+   ]
+  }
+ },
+ {
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU49",
+  "code": "AU49",
+  "filename": "49_Unit 1_Words and expressions_Words and expressions-Unit 1.mp3",
+  "unit": "Unit 1",
+  "section": "WORDS_AND_EXPRESSIONS",
+  "activity_no": null,
+  "target_type": "section",
+  "target_id": "FLTRP-EN-7A-2022CUR:APPENDIX:WORDS_AND_EXPRESSIONS",
+  "kind": "word_list",
+  "audio_scope": "section",
+  "audio_status": "CONFIRMED",
+  "mapping_reason": "附录词表页覆盖本单元词条 100%",
+  "duration_ms": 92082,
+  "mp3_exists": true,
+  "sha_ok": true,
+  "activity_id": null,
+  "activity_meta": null,
+  "material_method": null,
+  "material_blocks": [],
+  "material_text": "",
+  "material_blank_bearing": false,
+  "sentences": [],
+  "acoustic": {
+   "sample_rate": 48000,
+   "thr_db": -45.0,
+   "total_ms": 92090,
+   "speech_ms": 28590,
+   "runs": [
+    {
+     "start_ms": 330,
+     "end_ms": 1950,
+     "dur_ms": 1620
+    },
+    {
+     "start_ms": 2440,
+     "end_ms": 3330,
+     "dur_ms": 890
+    },
+    {
+     "start_ms": 5830,
+     "end_ms": 6620,
+     "dur_ms": 790
+    },
+    {
+     "start_ms": 8240,
+     "end_ms": 9270,
+     "dur_ms": 1030
+    },
+    {
+     "start_ms": 10780,
+     "end_ms": 11730,
+     "dur_ms": 950
+    },
+    {
+     "start_ms": 13560,
+     "end_ms": 14390,
+     "dur_ms": 830
+    },
+    {
+     "start_ms": 16020,
+     "end_ms": 16770,
+     "dur_ms": 750
+    },
+    {
+     "start_ms": 18510,
+     "end_ms": 19180,
+     "dur_ms": 670
+    },
+    {
+     "start_ms": 20440,
+     "end_ms": 21180,
+     "dur_ms": 740
+    },
+    {
+     "start_ms": 22670,
+     "end_ms": 23350,
+     "dur_ms": 680
+    },
+    {
+     "start_ms": 25090,
+     "end_ms": 25800,
+     "dur_ms": 710
+    },
+    {
+     "start_ms": 27790,
+     "end_ms": 28550,
+     "dur_ms": 760
+    },
+    {
+     "start_ms": 30040,
+     "end_ms": 30940,
+     "dur_ms": 900
+    },
+    {
+     "start_ms": 32540,
+     "end_ms": 33140,
+     "dur_ms": 600
+    },
+    {
+     "start_ms": 34750,
+     "end_ms": 35580,
+     "dur_ms": 830
+    },
+    {
+     "start_ms": 37220,
+     "end_ms": 37930,
+     "dur_ms": 710
+    },
+    {
+     "start_ms": 39560,
+     "end_ms": 40530,
+     "dur_ms": 970
+    },
+    {
+     "start_ms": 42320,
+     "end_ms": 42880,
+     "dur_ms": 560
+    },
+    {
+     "start_ms": 44570,
+     "end_ms": 45200,
+     "dur_ms": 630
+    },
+    {
+     "start_ms": 47060,
+     "end_ms": 47830,
+     "dur_ms": 770
+    },
+    {
+     "start_ms": 49530,
+     "end_ms": 50250,
+     "dur_ms": 720
+    },
+    {
+     "start_ms": 51940,
+     "end_ms": 52740,
+     "dur_ms": 800
+    },
+    {
+     "start_ms": 54310,
+     "end_ms": 55140,
+     "dur_ms": 830
+    },
+    {
+     "start_ms": 56900,
+     "end_ms": 57550,
+     "dur_ms": 650
+    },
+    {
+     "start_ms": 59480,
+     "end_ms": 60270,
+     "dur_ms": 790
+    },
+    {
+     "start_ms": 62190,
+     "end_ms": 62760,
+     "dur_ms": 570
+    },
+    {
+     "start_ms": 64270,
+     "end_ms": 64940,
+     "dur_ms": 670
+    },
+    {
+     "start_ms": 66810,
+     "end_ms": 67960,
+     "dur_ms": 1150
+    },
+    {
+     "start_ms": 69280,
+     "end_ms": 69900,
+     "dur_ms": 620
+    },
+    {
+     "start_ms": 71750,
+     "end_ms": 72560,
+     "dur_ms": 810
+    },
+    {
+     "start_ms": 74320,
+     "end_ms": 74940,
+     "dur_ms": 620
+    },
+    {
+     "start_ms": 76760,
+     "end_ms": 77400,
+     "dur_ms": 640
+    },
+    {
+     "start_ms": 79290,
+     "end_ms": 79990,
+     "dur_ms": 700
+    },
+    {
+     "start_ms": 81230,
+     "end_ms": 81840,
+     "dur_ms": 610
+    },
+    {
+     "start_ms": 83640,
+     "end_ms": 84380,
+     "dur_ms": 740
+    },
+    {
+     "start_ms": 85690,
+     "end_ms": 86560,
+     "dur_ms": 870
+    },
+    {
+     "start_ms": 88270,
+     "end_ms": 88680,
+     "dur_ms": 410
+    }
+   ]
+  }
+ }
+]

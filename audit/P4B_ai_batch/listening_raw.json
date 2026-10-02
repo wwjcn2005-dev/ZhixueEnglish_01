@@ -1,0 +1,62 @@
+{
+ "run": {
+  "model": "deepseek-v4-pro",
+  "prompt_version": "p4b-listening-v1"
+ },
+ "items": [
+  {
+   "audio": "AU25",
+   "unit": "Unit 3",
+   "section": "DEVELOPING_IDEAS",
+   "segment_id": "ASR:AU25:003",
+   "start_ms": 6620,
+   "end_ms": 12720,
+   "stem": "What is the talk mainly about?",
+   "options": [
+    "Problem children",
+    "Problem parents",
+    "Actresses at parks",
+    "Tina's mother"
+   ],
+   "answer_index": 1,
+   "quote": "We all know problem children, but do you know problem parents?",
+   "skill": "gist"
+  },
+  {
+   "audio": "AU25",
+   "unit": "Unit 3",
+   "section": "DEVELOPING_IDEAS",
+   "segment_id": "ASR:AU25:005",
+   "start_ms": 19620,
+   "end_ms": 23980,
+   "stem": "What does Tina's mother do?",
+   "options": [
+    "She is a queen.",
+    "She is an actress at a park.",
+    "She is a teacher.",
+    "She is a police officer."
+   ],
+   "answer_index": 1,
+   "quote": "For example, Tina's mother is an actress at a park.",
+   "skill": "detail"
+  },
+  {
+   "audio": "AU25",
+   "unit": "Unit 3",
+   "section": "DEVELOPING_IDEAS",
+   "segment_id": "ASR:AU25:008",
+   "start_ms": 38140,
+   "end_ms": 46460,
+   "stem": "What is the speaker's advice for Tina?",
+   "options": [
+    "To have a good talk with her mother.",
+    "To call the speaker again.",
+    "To dress up as a queen.",
+    "To stop going to the park."
+   ],
+   "answer_index": 0,
+   "quote": "My advice for her is have a good talk with her mother.",
+   "skill": "detail"
+  }
+ ]
+}

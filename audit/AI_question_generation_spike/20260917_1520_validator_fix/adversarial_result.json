@@ -1,0 +1,102 @@
+{
+ "note": "全部为合成坏样本，仅用于验证校验器拦截能力；不涉及任何 AI 输出",
+ "cases": [
+  {
+   "case": "A 教材外词汇出现在选项",
+   "expect_fail_on": "5_vocab_scope",
+   "caught": true,
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": false,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT"
+  },
+  {
+   "case": "B 答案无教材支持（世界知识）",
+   "expect_fail_on": "4_answer_support",
+   "caught": true,
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": false,
+    "5_vocab_scope": false,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "UNSUPPORTED"
+  },
+  {
+   "case": "C 引用被编造",
+   "expect_fail_on": "3_evidence_quote",
+   "caught": true,
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": false,
+    "4_answer_support": false,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "UNSUPPORTED"
+  },
+  {
+   "case": "D 证据 id 不存在",
+   "expect_fail_on": "2_evidence_ids",
+   "caught": true,
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": false,
+    "3_evidence_quote": false,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT"
+  },
+  {
+   "case": "E fill 题没有空位",
+   "expect_fail_on": "8_type_rules",
+   "caught": true,
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": true,
+    "7_dedup": true,
+    "8_type_rules": false
+   },
+   "answer_support_type": "EXACT"
+  },
+  {
+   "case": "F correct_option 与答案不一致",
+   "expect_fail_on": "6_options",
+   "caught": true,
+   "checks": {
+    "1_location": true,
+    "2_evidence_ids": true,
+    "3_evidence_quote": true,
+    "4_answer_support": true,
+    "5_vocab_scope": true,
+    "6_options": false,
+    "7_dedup": true,
+    "8_type_rules": true
+   },
+   "answer_support_type": "EXACT"
+  }
+ ],
+ "all_caught": true
+}

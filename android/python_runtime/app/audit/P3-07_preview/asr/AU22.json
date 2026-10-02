@@ -1,0 +1,594 @@
+{
+  "audio_id": "FLTRP-EN-7A-2022CUR:AU22",
+  "audio_num": "AU22",
+  "filename": "22_Unit 3_Understanding ideas_8 Draw and write about a loving family moment. Then share it with the class.mp3",
+  "duration_ms": 67500,
+  "segment_count": 15,
+  "word_count": 100,
+  "segments": [
+    {
+      "start_ms": 0,
+      "end_ms": 1560,
+      "text": "Activity 8"
+    },
+    {
+      "start_ms": 2580,
+      "end_ms": 6500,
+      "text": "Draw and write about a loving family moment."
+    },
+    {
+      "start_ms": 7080,
+      "end_ms": 9300,
+      "text": "Then share it with the class."
+    },
+    {
+      "start_ms": 10340,
+      "end_ms": 13840,
+      "text": "Use the words and expressions from the reading passage"
+    },
+    {
+      "start_ms": 13840,
+      "end_ms": 17260,
+      "text": "and the useful expressions to help you."
+    },
+    {
+      "start_ms": 18340,
+      "end_ms": 19340,
+      "text": "Example"
+    },
+    {
+      "start_ms": 20460,
+      "end_ms": 22240,
+      "text": "Hi everyone."
+    },
+    {
+      "start_ms": 23060,
+      "end_ms": 24740,
+      "text": "Look at my picture."
+    },
+    {
+      "start_ms": 24740,
+      "end_ms": 30580,
+      "text": "It is about a loving moment between my grandma and me."
+    },
+    {
+      "start_ms": 31680,
+      "end_ms": 37260,
+      "text": "Look! This is me. This is grandma."
+    },
+    {
+      "start_ms": 38900,
+      "end_ms": 42160,
+      "text": "We are at grandma's house in the countryside."
+    },
+    {
+      "start_ms": 43500,
+      "end_ms": 51100,
+      "text": "Grandma makes a heart with corn on the ground and birds come to eat it."
+    },
+    {
+      "start_ms": 51100,
+      "end_ms": 54060,
+      "text": "They make a heart for me."
+    },
+    {
+      "start_ms": 55540,
+      "end_ms": 60320,
+      "text": "The photo brings back my memory of the wonderful moment."
+    },
+    {
+      "start_ms": 61140,
+      "end_ms": 63060,
+      "text": "I'm happy about it."
+    }
+  ],
+  "words": [
+    {
+      "word": "Activity",
+      "start_ms": 0,
+      "end_ms": 1060
+    },
+    {
+      "word": "8",
+      "start_ms": 1060,
+      "end_ms": 1560
+    },
+    {
+      "word": "Draw",
+      "start_ms": 2580,
+      "end_ms": 3160
+    },
+    {
+      "word": "and",
+      "start_ms": 3160,
+      "end_ms": 3620
+    },
+    {
+      "word": "write",
+      "start_ms": 3620,
+      "end_ms": 4000
+    },
+    {
+      "word": "about",
+      "start_ms": 4000,
+      "end_ms": 4500
+    },
+    {
+      "word": "a",
+      "start_ms": 4500,
+      "end_ms": 4800
+    },
+    {
+      "word": "loving",
+      "start_ms": 4800,
+      "end_ms": 5240
+    },
+    {
+      "word": "family",
+      "start_ms": 5240,
+      "end_ms": 5920
+    },
+    {
+      "word": "moment.",
+      "start_ms": 5920,
+      "end_ms": 6500
+    },
+    {
+      "word": "Then",
+      "start_ms": 7080,
+      "end_ms": 7700
+    },
+    {
+      "word": "share",
+      "start_ms": 7700,
+      "end_ms": 8100
+    },
+    {
+      "word": "it",
+      "start_ms": 8100,
+      "end_ms": 8420
+    },
+    {
+      "word": "with",
+      "start_ms": 8420,
+      "end_ms": 8660
+    },
+    {
+      "word": "the",
+      "start_ms": 8660,
+      "end_ms": 8880
+    },
+    {
+      "word": "class.",
+      "start_ms": 8880,
+      "end_ms": 9300
+    },
+    {
+      "word": "Use",
+      "start_ms": 10340,
+      "end_ms": 10880
+    },
+    {
+      "word": "the",
+      "start_ms": 10880,
+      "end_ms": 11160
+    },
+    {
+      "word": "words",
+      "start_ms": 11160,
+      "end_ms": 11520
+    },
+    {
+      "word": "and",
+      "start_ms": 11520,
+      "end_ms": 11720
+    },
+    {
+      "word": "expressions",
+      "start_ms": 11720,
+      "end_ms": 12300
+    },
+    {
+      "word": "from",
+      "start_ms": 12300,
+      "end_ms": 12900
+    },
+    {
+      "word": "the",
+      "start_ms": 12900,
+      "end_ms": 13060
+    },
+    {
+      "word": "reading",
+      "start_ms": 13060,
+      "end_ms": 13420
+    },
+    {
+      "word": "passage",
+      "start_ms": 13420,
+      "end_ms": 13840
+    },
+    {
+      "word": "and",
+      "start_ms": 13840,
+      "end_ms": 14820
+    },
+    {
+      "word": "the",
+      "start_ms": 14820,
+      "end_ms": 15120
+    },
+    {
+      "word": "useful",
+      "start_ms": 15120,
+      "end_ms": 15540
+    },
+    {
+      "word": "expressions",
+      "start_ms": 15540,
+      "end_ms": 16180
+    },
+    {
+      "word": "to",
+      "start_ms": 16180,
+      "end_ms": 16700
+    },
+    {
+      "word": "help",
+      "start_ms": 16700,
+      "end_ms": 16900
+    },
+    {
+      "word": "you.",
+      "start_ms": 16900,
+      "end_ms": 17260
+    },
+    {
+      "word": "Example",
+      "start_ms": 18340,
+      "end_ms": 19340
+    },
+    {
+      "word": "Hi",
+      "start_ms": 20460,
+      "end_ms": 21460
+    },
+    {
+      "word": "everyone.",
+      "start_ms": 21460,
+      "end_ms": 22240
+    },
+    {
+      "word": "Look",
+      "start_ms": 23060,
+      "end_ms": 23580
+    },
+    {
+      "word": "at",
+      "start_ms": 23580,
+      "end_ms": 23860
+    },
+    {
+      "word": "my",
+      "start_ms": 23860,
+      "end_ms": 24140
+    },
+    {
+      "word": "picture.",
+      "start_ms": 24140,
+      "end_ms": 24740
+    },
+    {
+      "word": "It",
+      "start_ms": 24740,
+      "end_ms": 26100
+    },
+    {
+      "word": "is",
+      "start_ms": 26100,
+      "end_ms": 26380
+    },
+    {
+      "word": "about",
+      "start_ms": 26380,
+      "end_ms": 26700
+    },
+    {
+      "word": "a",
+      "start_ms": 26700,
+      "end_ms": 27040
+    },
+    {
+      "word": "loving",
+      "start_ms": 27040,
+      "end_ms": 27520
+    },
+    {
+      "word": "moment",
+      "start_ms": 27520,
+      "end_ms": 28160
+    },
+    {
+      "word": "between",
+      "start_ms": 28160,
+      "end_ms": 28700
+    },
+    {
+      "word": "my",
+      "start_ms": 28700,
+      "end_ms": 29140
+    },
+    {
+      "word": "grandma",
+      "start_ms": 29140,
+      "end_ms": 29520
+    },
+    {
+      "word": "and",
+      "start_ms": 29520,
+      "end_ms": 30220
+    },
+    {
+      "word": "me.",
+      "start_ms": 30220,
+      "end_ms": 30580
+    },
+    {
+      "word": "Look!",
+      "start_ms": 31680,
+      "end_ms": 32260
+    },
+    {
+      "word": "This",
+      "start_ms": 33260,
+      "end_ms": 33700
+    },
+    {
+      "word": "is",
+      "start_ms": 33700,
+      "end_ms": 34160
+    },
+    {
+      "word": "me.",
+      "start_ms": 34160,
+      "end_ms": 34540
+    },
+    {
+      "word": "This",
+      "start_ms": 35760,
+      "end_ms": 36300
+    },
+    {
+      "word": "is",
+      "start_ms": 36300,
+      "end_ms": 36800
+    },
+    {
+      "word": "grandma.",
+      "start_ms": 36800,
+      "end_ms": 37260
+    },
+    {
+      "word": "We",
+      "start_ms": 38900,
+      "end_ms": 39400
+    },
+    {
+      "word": "are",
+      "start_ms": 39400,
+      "end_ms": 39660
+    },
+    {
+      "word": "at",
+      "start_ms": 39660,
+      "end_ms": 39900
+    },
+    {
+      "word": "grandma's",
+      "start_ms": 39900,
+      "end_ms": 40680
+    },
+    {
+      "word": "house",
+      "start_ms": 40680,
+      "end_ms": 41020
+    },
+    {
+      "word": "in",
+      "start_ms": 41020,
+      "end_ms": 41340
+    },
+    {
+      "word": "the",
+      "start_ms": 41340,
+      "end_ms": 41500
+    },
+    {
+      "word": "countryside.",
+      "start_ms": 41500,
+      "end_ms": 42160
+    },
+    {
+      "word": "Grandma",
+      "start_ms": 43500,
+      "end_ms": 44380
+    },
+    {
+      "word": "makes",
+      "start_ms": 44380,
+      "end_ms": 45040
+    },
+    {
+      "word": "a",
+      "start_ms": 45040,
+      "end_ms": 45260
+    },
+    {
+      "word": "heart",
+      "start_ms": 45260,
+      "end_ms": 45720
+    },
+    {
+      "word": "with",
+      "start_ms": 45720,
+      "end_ms": 46100
+    },
+    {
+      "word": "corn",
+      "start_ms": 46100,
+      "end_ms": 46580
+    },
+    {
+      "word": "on",
+      "start_ms": 46580,
+      "end_ms": 47080
+    },
+    {
+      "word": "the",
+      "start_ms": 47080,
+      "end_ms": 47240
+    },
+    {
+      "word": "ground",
+      "start_ms": 47240,
+      "end_ms": 47720
+    },
+    {
+      "word": "and",
+      "start_ms": 47720,
+      "end_ms": 49040
+    },
+    {
+      "word": "birds",
+      "start_ms": 49040,
+      "end_ms": 49560
+    },
+    {
+      "word": "come",
+      "start_ms": 49560,
+      "end_ms": 50100
+    },
+    {
+      "word": "to",
+      "start_ms": 50100,
+      "end_ms": 50480
+    },
+    {
+      "word": "eat",
+      "start_ms": 50480,
+      "end_ms": 50760
+    },
+    {
+      "word": "it.",
+      "start_ms": 50760,
+      "end_ms": 51100
+    },
+    {
+      "word": "They",
+      "start_ms": 51100,
+      "end_ms": 52340
+    },
+    {
+      "word": "make",
+      "start_ms": 52340,
+      "end_ms": 52740
+    },
+    {
+      "word": "a",
+      "start_ms": 52740,
+      "end_ms": 52980
+    },
+    {
+      "word": "heart",
+      "start_ms": 52980,
+      "end_ms": 53440
+    },
+    {
+      "word": "for",
+      "start_ms": 53440,
+      "end_ms": 53760
+    },
+    {
+      "word": "me.",
+      "start_ms": 53760,
+      "end_ms": 54060
+    },
+    {
+      "word": "The",
+      "start_ms": 55540,
+      "end_ms": 55960
+    },
+    {
+      "word": "photo",
+      "start_ms": 55960,
+      "end_ms": 56480
+    },
+    {
+      "word": "brings",
+      "start_ms": 56480,
+      "end_ms": 57080
+    },
+    {
+      "word": "back",
+      "start_ms": 57080,
+      "end_ms": 57460
+    },
+    {
+      "word": "my",
+      "start_ms": 57460,
+      "end_ms": 57760
+    },
+    {
+      "word": "memory",
+      "start_ms": 57760,
+      "end_ms": 58240
+    },
+    {
+      "word": "of",
+      "start_ms": 58240,
+      "end_ms": 58860
+    },
+    {
+      "word": "the",
+      "start_ms": 58860,
+      "end_ms": 59040
+    },
+    {
+      "word": "wonderful",
+      "start_ms": 59040,
+      "end_ms": 59680
+    },
+    {
+      "word": "moment.",
+      "start_ms": 59680,
+      "end_ms": 60320
+    },
+    {
+      "word": "I'm",
+      "start_ms": 61140,
+      "end_ms": 61800
+    },
+    {
+      "word": "happy",
+      "start_ms": 61800,
+      "end_ms": 62240
+    },
+    {
+      "word": "about",
+      "start_ms": 62240,
+      "end_ms": 62600
+    },
+    {
+      "word": "it.",
+      "start_ms": 62600,
+      "end_ms": 63060
+    }
+  ],
+  "runtime": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "local_files_only": true,
+    "elapsed_s": 7.9
+  }
+}

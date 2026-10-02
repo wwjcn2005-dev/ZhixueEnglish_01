@@ -1,0 +1,142 @@
+{
+  "phase": "P1-06-B1.7-C",
+  "generated_at": "2026-09-12T13:57:31+08:00",
+  "two_pass_digest": {
+    "pass1": "8E8F347652ECF883E3EDD6BA6E90C716978981241A4E64F77A7CA06512298F11",
+    "pass2": "8E8F347652ECF883E3EDD6BA6E90C716978981241A4E64F77A7CA06512298F11",
+    "identical": true
+  },
+  "baseline": {
+    "v1_sha256": "B7372AAC3782DF88D1965160B93A4F50E82A6364593497FB4B858BE645BA68E3",
+    "v2_sha256": "C97B0F4EB09811F2477723A40A01B695DA984DDF1BD5FA5668B59ADC61ED0430",
+    "pdf_sha256": "C732051E91121BC991DBDD01235662629620DF6BFCCBBBD834EAEA6FCECD4F2F",
+    "mp3_count": 54
+  },
+  "totals": {
+    "vocabulary": 287,
+    "requirement": {
+      "CORE": 243,
+      "RECOGNITION": 43,
+      "NEED_REVIEW": 1
+    },
+    "emphasis_pairs": {
+      "(('Vocabulary A-Z', 'BOLD'), ('Words and expressions', 'BOLD'))": 243,
+      "(('Vocabulary A-Z', 'PLAIN'), ('Words and expressions', 'PLAIN'))": 43,
+      "(('Vocabulary A-Z', 'PLAIN'), ('Words and expressions', 'BOLD'))": 1
+    },
+    "conflicts": [
+      "peaceful"
+    ],
+    "unknown": 0
+  },
+  "old_91": {
+    "count": 91,
+    "cause_counts": {
+      "cross_block_merge": 65,
+      "pos_null+cross_block_merge": 3,
+      "pos_null": 22,
+      "other": 1
+    },
+    "new_requirement": {
+      "CORE": 66,
+      "RECOGNITION": 24,
+      "NEED_REVIEW": 1
+    },
+    "pos_null_count": 25,
+    "pos_null_still_need_review": 0
+  },
+  "workbench_25": {
+    "count": 25,
+    "requirement": {
+      "CORE": 2,
+      "RECOGNITION": 23
+    },
+    "bold_items": [
+      "each",
+      "several"
+    ],
+    "plain_count": 23
+  },
+  "each_several": [
+    {
+      "canonical": "each",
+      "emphasis": {
+        "Words and expressions": "BOLD",
+        "Vocabulary A-Z": "BOLD"
+      },
+      "req": "CORE"
+    },
+    {
+      "canonical": "several",
+      "emphasis": {
+        "Words and expressions": "BOLD",
+        "Vocabulary A-Z": "BOLD"
+      },
+      "req": "CORE"
+    }
+  ],
+  "peaceful": [
+    {
+      "item_id": "FLTRP-EN-7A-2022CUR:V:39B1841BEC92",
+      "display": "peaceful /ˈpiːsfəl/ adj. 和平的, 非暴力的 104",
+      "old_review": "NEED_REVIEW",
+      "req": "NEED_REVIEW",
+      "conflict": true,
+      "sources": {
+        "Words and expressions": {
+          "textbook_emphasis": "BOLD",
+          "font_name": "FrutigerNextLTW1G-Medium",
+          "pdf_page": 162,
+          "textbook_page": 157,
+          "block": "FLTRP-EN-7A-2022CUR:P162:B13",
+          "text": "peaceful /ˈpiːsfəl/ adj. 和平的, "
+        },
+        "Vocabulary A-Z": {
+          "textbook_emphasis": "PLAIN",
+          "font_name": "FrutigerNextLTW1G-Regula",
+          "pdf_page": 170,
+          "textbook_page": 165,
+          "block": "FLTRP-EN-7A-2022CUR:P170:B0",
+          "text": "peaceful /ˈpiːsfəl/ adj. 和平的, "
+        }
+      }
+    }
+  ],
+  "merge_68": {
+    "count": 68,
+    "requirement": {
+      "CORE": 65,
+      "RECOGNITION": 2,
+      "NEED_REVIEW": 1
+    },
+    "unknown": 0,
+    "conflicts": [
+      "peaceful"
+    ]
+  },
+  "stability": {
+    "item_id_ok": 287,
+    "content_hash_ok": 287,
+    "total": 287
+  },
+  "knock_around": [
+    {
+      "item_id": "FLTRP-EN-7A-2022CUR:V:F642720E6AA5",
+      "canonical": "knock around (",
+      "display": "knock around (在某处)悠闲地度过 96",
+      "req": "RECOGNITION",
+      "sources": {
+        "Words and expressions": {
+          "head_text": "knock around (在某处)悠闲地度过 96",
+          "font": "FrutigerNextLTW1G-Regula",
+          "pdf_page": 161
+        },
+        "Vocabulary A-Z": {
+          "head_text": "knock around (在某处)悠闲地度过 96",
+          "font": "FrutigerNextLTW1G-Regula",
+          "pdf_page": 168
+        }
+      }
+    }
+  ]
+}

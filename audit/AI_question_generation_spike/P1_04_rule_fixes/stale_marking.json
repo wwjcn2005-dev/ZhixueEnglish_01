@@ -1,0 +1,13 @@
+{
+ "marked_at": "2026-09-17T19:10:00+08:00",
+ "marked": [
+  {
+   "question_id": "AIQ:7EBCDBC29563",
+   "version": 1,
+   "reason": "fill must not carry options (P1-04: fill = 纯填空)",
+   "lifecycle_unchanged": "PENDING_REVIEW"
+  }
+ ],
+ "business_fields_changed": [],
+ "result": "PASS"
+}
